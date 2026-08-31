@@ -45,7 +45,7 @@ W, H = 1200, 630
 # build (sankey visual) from tools/build-medicaid-og-card.py, and a run of
 # this generic script must never overwrite it.
 GIZMOS = [
-    ("gospel-of-claude-code", "Music Theory with LLMs, or, The Gospel of Claude Code",
+    ("gospel-of-claude-code", "Music Theory with LLMs",
      ["Music", "Using AI"]),
     ("data-center-restriction-cost", "Pricing the Fear of Data Centers",
      ["State Government", "City Government"]),

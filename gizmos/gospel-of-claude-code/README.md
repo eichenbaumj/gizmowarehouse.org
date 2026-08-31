@@ -1,4 +1,4 @@
-# Music Theory with LLMs, or, The Gospel of Claude Code — source
+# Music Theory with LLMs — source
 
 Source materials for [the gizmo](../../src/content/gospel-of-claude-code.ts).
 

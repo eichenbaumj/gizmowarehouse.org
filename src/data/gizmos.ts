@@ -31,7 +31,7 @@ export const ALL_CATEGORIES: Category[] = ["Public Safety", "Music", "Using AI",
 export const gizmos: Gizmo[] = [
   {
     slug: "gospel-of-claude-code",
-    title: "Music Theory with LLMs, or, The Gospel of Claude Code",
+    title: "Music Theory with LLMs",
     categories: ["Music", "Using AI"],
     date: "2026-08",
     summary: "Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task.",

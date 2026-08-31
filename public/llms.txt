@@ -18,5 +18,5 @@ Joe is a partner at 17A, a consulting firm serving state and local government. M
 - [The Math on NYC's Public Grocery Plan](/gizmo/nyc-public-grocery-math): A 10-year P&L for Mamdani's five city-owned grocery stores plus a ranked comparison of alternative spending.
 - [Reducing Violent Crime Without New Budget, New Staff, or More Arrests](/gizmo/reducing-violence-whitepaper): Whitepaper on environmental interventions and cross-department coordination, with a Dallas case study.
 - [Jazz Fakebook Maker](/gizmo/fakebook-maker): Python tool that converts plain-text chord charts into a searchable, bookmarked PDF fake book.
-- [Music Theory with LLMs, or, The Gospel of Claude Code](/gizmo/gospel-of-claude-code): Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task. Code: https://github.com/eichenbaumj/fakebook-maker
+- [Music Theory with LLMs](/gizmo/gospel-of-claude-code): Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task. Code: https://github.com/eichenbaumj/fakebook-maker
 - [Using Claude Code to Understand How I Use Claude Code — and My Time](/gizmo/claude-code-usage): Usage analysis of ~95 hours of Claude Code across 81 sessions.
