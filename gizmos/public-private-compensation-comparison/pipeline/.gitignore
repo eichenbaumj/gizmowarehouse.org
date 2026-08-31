@@ -1,0 +1,6 @@
+# Raw pulls and intermediate parquet — regenerable from the staged scripts.
+raw/
+output/
+.env
+__pycache__/
+*.pyc

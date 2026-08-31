@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="$lang$" xml:lang="$lang$">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  $for(author-meta)$<meta name="author" content="$author-meta$">$endfor$
+  $if(date-meta)$<meta name="dcterms.date" content="$date-meta$">$endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <link rel="stylesheet" href="preview-styles.css">
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+</head>
+<body>
+$for(include-before)$
+$include-before$
+$endfor$
+
+<header class="cover-band">
+  <h1 class="cover-title">Buying AI for a Government Agency</h1>
+  <p class="cover-subtitle">A procurement checklist for state &amp; local government</p>
+  <div class="cover-meta">
+    <img class="cover-logo"
+         src="file://__BRAND_ROOT__/logos/svg/Logo SolidColor White.svg"
+         alt="17A">
+    <span class="cover-byline">
+      From Joe Eichenbaum's gizmo warehouse <span class="cover-sep">·</span> gizmowarehouse.org/gizmo/microsoft-copilot
+    </span>
+  </div>
+</header>
+
+<main>
+$body$
+</main>
+
+$for(include-after)$
+$include-after$
+$endfor$
+</body>
+</html>

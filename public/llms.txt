@@ -1,0 +1,22 @@
+# Gizmo Warehouse
+
+> Shareable tools, analyses, and work products from Joe Eichenbaum at 17A — a running collection of things built that aren't covered by an NDA.
+
+Joe is a partner at 17A, a consulting firm serving state and local government. Most of his work is confidential; this site is where the shareable residue lives — tools, write-ups, and analyses across public safety, city government, music, and AI.
+
+## Pages
+
+- [Home](/): Browse all gizmos, filterable by category.
+
+## Gizmos
+
+- [The New Math on NYC's Public Grocery Stores](/gizmo/nyc-public-grocery-new-math): The announced 30%-off basket priced out — a ~$167M ten-year public bill reaching ~29,000 New Yorkers a year, with a live dial on the model.
+- [High Floor, Low Ceiling: How Public-Sector Wage Compression Erodes Public Service](/gizmo/public-private-compensation-comparison): The public-sector pay gap by skill, domain, level of government, and over time, from ACS PUMS and payroll files.
+- [These 5 Million People Are About to Lose Their Medicaid — But They Don't Have To](/gizmo/medicaid-work-requirements): Nationwide bottom-up model of who the 2027 federal Medicaid work requirement puts at risk and what each state can verify.
+- [How to Save the Government from Microsoft Copilot](/gizmo/microsoft-copilot): Why state and local government defaults to M365 Copilot, the head-to-head numbers, and a procurement checklist.
+- [NYC Property Tax: Who Pays, Who Doesn't](/gizmo/nyc-property-tax-map): Interactive parcel-level map of NYC effective property-tax rates and why neighbors pay wildly different bills.
+- [The Math on NYC's Public Grocery Plan](/gizmo/nyc-public-grocery-math): A 10-year P&L for Mamdani's five city-owned grocery stores plus a ranked comparison of alternative spending.
+- [Reducing Violent Crime Without New Budget, New Staff, or More Arrests](/gizmo/reducing-violence-whitepaper): Whitepaper on environmental interventions and cross-department coordination, with a Dallas case study.
+- [Jazz Fakebook Maker](/gizmo/fakebook-maker): Python tool that converts plain-text chord charts into a searchable, bookmarked PDF fake book.
+- [Music Theory with LLMs, or, The Gospel of Claude Code](/gizmo/gospel-of-claude-code): Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task. Code: https://github.com/eichenbaumj/fakebook-maker
+- [Using Claude Code to Understand How I Use Claude Code — and My Time](/gizmo/claude-code-usage): Usage analysis of ~95 hours of Claude Code across 81 sessions.

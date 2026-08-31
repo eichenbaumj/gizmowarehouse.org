@@ -1,0 +1,369 @@
+{
+  "_meta": {
+    "description": "Observed share of completed Medicaid/CHIP renewals conducted on an ex parte (automatic) basis, by state. Volume-weighted across all reporting periods: rate = sum(renewed_ex_parte) / sum(renewed_total). 'Updated' records preferred over 'Original' per (state, reporting_period).",
+    "source": "CMS State Medicaid and CHIP Eligibility Processing Data (data.medicaid.gov dataset 5abea2e0-3f8e-4b49-a50d-d63d5fd9103c), reporting periods 2023-03 through 2026-02. Validates against KFF/MACPAC published anchors (NC ~99%, RI/AZ ~90%+, PA/TX <20%, national ~61-68%).",
+    "interpretation": "This measures realized auto-renewal capability for income/eligibility verification during and after the unwinding. It is the best available empirical proxy for whether a state can clear an enrollee without forcing them to act. It is necessary but not sufficient for OBBBA work-requirement verification, which also needs hours/exemption data feeds (captured separately in the data_sources score).",
+    "national_rate": 0.6662,
+    "period": "2023-03 to 2026-02",
+    "retrieved": "2026-05-30"
+  },
+  "states": {
+    "02": {
+      "abbr": "AK",
+      "observed_ex_parte_rate": 0.5984,
+      "renewed_total": 304467,
+      "renewed_ex_parte": 182198,
+      "months_reported": 34
+    },
+    "01": {
+      "abbr": "AL",
+      "observed_ex_parte_rate": 0.5197,
+      "renewed_total": 2584540,
+      "renewed_ex_parte": 1343238,
+      "months_reported": 33
+    },
+    "05": {
+      "abbr": "AR",
+      "observed_ex_parte_rate": 0.7946,
+      "renewed_total": 1565785,
+      "renewed_ex_parte": 1244111,
+      "months_reported": 35
+    },
+    "04": {
+      "abbr": "AZ",
+      "observed_ex_parte_rate": 0.8839,
+      "renewed_total": 4775967,
+      "renewed_ex_parte": 4221410,
+      "months_reported": 35
+    },
+    "06": {
+      "abbr": "CA",
+      "observed_ex_parte_rate": 0.7566,
+      "renewed_total": 24152617,
+      "renewed_ex_parte": 18273944,
+      "months_reported": 33
+    },
+    "08": {
+      "abbr": "CO",
+      "observed_ex_parte_rate": 0.628,
+      "renewed_total": 2357375,
+      "renewed_ex_parte": 1480399,
+      "months_reported": 34
+    },
+    "09": {
+      "abbr": "CT",
+      "observed_ex_parte_rate": 0.8762,
+      "renewed_total": 2793974,
+      "renewed_ex_parte": 2448067,
+      "months_reported": 35
+    },
+    "11": {
+      "abbr": "DC",
+      "observed_ex_parte_rate": 0.8699,
+      "renewed_total": 629168,
+      "renewed_ex_parte": 547305,
+      "months_reported": 34
+    },
+    "10": {
+      "abbr": "DE",
+      "observed_ex_parte_rate": 0.5283,
+      "renewed_total": 474252,
+      "renewed_ex_parte": 250545,
+      "months_reported": 33
+    },
+    "12": {
+      "abbr": "FL",
+      "observed_ex_parte_rate": 0.3592,
+      "renewed_total": 6086588,
+      "renewed_ex_parte": 2186080,
+      "months_reported": 35
+    },
+    "13": {
+      "abbr": "GA",
+      "observed_ex_parte_rate": 0.7433,
+      "renewed_total": 4182119,
+      "renewed_ex_parte": 3108520,
+      "months_reported": 34
+    },
+    "15": {
+      "abbr": "HI",
+      "observed_ex_parte_rate": 0.7868,
+      "renewed_total": 923562,
+      "renewed_ex_parte": 726641,
+      "months_reported": 34
+    },
+    "19": {
+      "abbr": "IA",
+      "observed_ex_parte_rate": 0.5913,
+      "renewed_total": 1568371,
+      "renewed_ex_parte": 927450,
+      "months_reported": 35
+    },
+    "16": {
+      "abbr": "ID",
+      "observed_ex_parte_rate": 0.6547,
+      "renewed_total": 521073,
+      "renewed_ex_parte": 341136,
+      "months_reported": 36
+    },
+    "17": {
+      "abbr": "IL",
+      "observed_ex_parte_rate": 0.791,
+      "renewed_total": 6285532,
+      "renewed_ex_parte": 4971931,
+      "months_reported": 33
+    },
+    "18": {
+      "abbr": "IN",
+      "observed_ex_parte_rate": 0.744,
+      "renewed_total": 2858601,
+      "renewed_ex_parte": 2126664,
+      "months_reported": 35
+    },
+    "20": {
+      "abbr": "KS",
+      "observed_ex_parte_rate": 0.5142,
+      "renewed_total": 845689,
+      "renewed_ex_parte": 434871,
+      "months_reported": 35
+    },
+    "21": {
+      "abbr": "KY",
+      "observed_ex_parte_rate": 0.8792,
+      "renewed_total": 1917638,
+      "renewed_ex_parte": 1686051,
+      "months_reported": 34
+    },
+    "22": {
+      "abbr": "LA",
+      "observed_ex_parte_rate": 0.7825,
+      "renewed_total": 3010352,
+      "renewed_ex_parte": 2355523,
+      "months_reported": 33
+    },
+    "25": {
+      "abbr": "MA",
+      "observed_ex_parte_rate": 0.7215,
+      "renewed_total": 2445230,
+      "renewed_ex_parte": 1764337,
+      "months_reported": 34
+    },
+    "24": {
+      "abbr": "MD",
+      "observed_ex_parte_rate": 0.7299,
+      "renewed_total": 2782839,
+      "renewed_ex_parte": 2031303,
+      "months_reported": 34
+    },
+    "23": {
+      "abbr": "ME",
+      "observed_ex_parte_rate": 0.6277,
+      "renewed_total": 979174,
+      "renewed_ex_parte": 614601,
+      "months_reported": 34
+    },
+    "26": {
+      "abbr": "MI",
+      "observed_ex_parte_rate": 0.6733,
+      "renewed_total": 4978941,
+      "renewed_ex_parte": 3352202,
+      "months_reported": 33
+    },
+    "27": {
+      "abbr": "MN",
+      "observed_ex_parte_rate": 0.7594,
+      "renewed_total": 2531337,
+      "renewed_ex_parte": 1922379,
+      "months_reported": 33
+    },
+    "29": {
+      "abbr": "MO",
+      "observed_ex_parte_rate": 0.8439,
+      "renewed_total": 2010792,
+      "renewed_ex_parte": 1696931,
+      "months_reported": 33
+    },
+    "28": {
+      "abbr": "MS",
+      "observed_ex_parte_rate": 0.4347,
+      "renewed_total": 1246252,
+      "renewed_ex_parte": 541806,
+      "months_reported": 33
+    },
+    "30": {
+      "abbr": "MT",
+      "observed_ex_parte_rate": 0.5461,
+      "renewed_total": 303109,
+      "renewed_ex_parte": 165520,
+      "months_reported": 34
+    },
+    "37": {
+      "abbr": "NC",
+      "observed_ex_parte_rate": 0.9947,
+      "renewed_total": 5901096,
+      "renewed_ex_parte": 5869644,
+      "months_reported": 33
+    },
+    "38": {
+      "abbr": "ND",
+      "observed_ex_parte_rate": 0.4744,
+      "renewed_total": 215253,
+      "renewed_ex_parte": 102122,
+      "months_reported": 34
+    },
+    "31": {
+      "abbr": "NE",
+      "observed_ex_parte_rate": 0.6301,
+      "renewed_total": 675331,
+      "renewed_ex_parte": 425533,
+      "months_reported": 35
+    },
+    "33": {
+      "abbr": "NH",
+      "observed_ex_parte_rate": 0.7553,
+      "renewed_total": 339797,
+      "renewed_ex_parte": 256647,
+      "months_reported": 36
+    },
+    "34": {
+      "abbr": "NJ",
+      "observed_ex_parte_rate": 0.5401,
+      "renewed_total": 2316844,
+      "renewed_ex_parte": 1251224,
+      "months_reported": 33
+    },
+    "35": {
+      "abbr": "NM",
+      "observed_ex_parte_rate": 0.6331,
+      "renewed_total": 1179969,
+      "renewed_ex_parte": 747087,
+      "months_reported": 35
+    },
+    "32": {
+      "abbr": "NV",
+      "observed_ex_parte_rate": 0.8398,
+      "renewed_total": 1768771,
+      "renewed_ex_parte": 1485492,
+      "months_reported": 34
+    },
+    "36": {
+      "abbr": "NY",
+      "observed_ex_parte_rate": 0.5512,
+      "renewed_total": 11417135,
+      "renewed_ex_parte": 6292796,
+      "months_reported": 33
+    },
+    "39": {
+      "abbr": "OH",
+      "observed_ex_parte_rate": 0.8011,
+      "renewed_total": 7281845,
+      "renewed_ex_parte": 5833823,
+      "months_reported": 35
+    },
+    "40": {
+      "abbr": "OK",
+      "observed_ex_parte_rate": 0.508,
+      "renewed_total": 1493769,
+      "renewed_ex_parte": 758903,
+      "months_reported": 36
+    },
+    "41": {
+      "abbr": "OR",
+      "observed_ex_parte_rate": 0.7875,
+      "renewed_total": 1941000,
+      "renewed_ex_parte": 1528480,
+      "months_reported": 32
+    },
+    "42": {
+      "abbr": "PA",
+      "observed_ex_parte_rate": 0.16,
+      "renewed_total": 6008746,
+      "renewed_ex_parte": 961690,
+      "months_reported": 35
+    },
+    "44": {
+      "abbr": "RI",
+      "observed_ex_parte_rate": 0.9164,
+      "renewed_total": 507125,
+      "renewed_ex_parte": 464754,
+      "months_reported": 34
+    },
+    "45": {
+      "abbr": "SC",
+      "observed_ex_parte_rate": 0.7594,
+      "renewed_total": 1950074,
+      "renewed_ex_parte": 1480932,
+      "months_reported": 33
+    },
+    "46": {
+      "abbr": "SD",
+      "observed_ex_parte_rate": 0.4693,
+      "renewed_total": 175171,
+      "renewed_ex_parte": 82202,
+      "months_reported": 28
+    },
+    "47": {
+      "abbr": "TN",
+      "observed_ex_parte_rate": 0.7582,
+      "renewed_total": 2413631,
+      "renewed_ex_parte": 1830072,
+      "months_reported": 33
+    },
+    "48": {
+      "abbr": "TX",
+      "observed_ex_parte_rate": 0.1439,
+      "renewed_total": 6456245,
+      "renewed_ex_parte": 928952,
+      "months_reported": 33
+    },
+    "49": {
+      "abbr": "UT",
+      "observed_ex_parte_rate": 0.5625,
+      "renewed_total": 600465,
+      "renewed_ex_parte": 337762,
+      "months_reported": 35
+    },
+    "51": {
+      "abbr": "VA",
+      "observed_ex_parte_rate": 0.6118,
+      "renewed_total": 4313872,
+      "renewed_ex_parte": 2639124,
+      "months_reported": 34
+    },
+    "50": {
+      "abbr": "VT",
+      "observed_ex_parte_rate": 0.8178,
+      "renewed_total": 316190,
+      "renewed_ex_parte": 258579,
+      "months_reported": 34
+    },
+    "53": {
+      "abbr": "WA",
+      "observed_ex_parte_rate": 0.9114,
+      "renewed_total": 3524034,
+      "renewed_ex_parte": 3211726,
+      "months_reported": 34
+    },
+    "55": {
+      "abbr": "WI",
+      "observed_ex_parte_rate": 0.4402,
+      "renewed_total": 1807756,
+      "renewed_ex_parte": 795717,
+      "months_reported": 33
+    },
+    "54": {
+      "abbr": "WV",
+      "observed_ex_parte_rate": 0.5927,
+      "renewed_total": 836584,
+      "renewed_ex_parte": 495840,
+      "months_reported": 35
+    },
+    "56": {
+      "abbr": "WY",
+      "observed_ex_parte_rate": 0.5585,
+      "renewed_total": 127533,
+      "renewed_ex_parte": 71221,
+      "months_reported": 35
+    }
+  }
+}

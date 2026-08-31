@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "version": "v5.0-2026-05-27",
+    "purpose": "Per-state Section 1115 work-requirement experience prior to OBBBA. Used as the historical-churn factor (15% weight) in the ex parte composite, alongside the observed ex parte rate (50%) and data sources (35%). Higher score = better historical outcome for enrollees (lower procedural denial rate).",
+    "formula": "historical_churn_score = round((1 - denial_rate) * 100). For states without prior implementation, neutral prior = 50.",
+    "neutral_prior": 50,
+    "scope": "Only the four states with publicly-documented prior work-requirement experience receive a non-neutral score. All other states (including non-expansion) use the neutral 50 prior.",
+    "notes_on_non_expansion": "Georgia is a non-expansion state, but its 'Pathways to Coverage' Section 1115 program is the most directly relevant operational analog for the OBBBA work requirement. We document GA's experience here for the methodology narrative, but it does not affect a composite score because GA receives score=null under the standard pipeline (no expansion pathway)."
+  },
+  "states": {
+    "05": {
+      "abbr": "AR",
+      "historical_churn_score": 70,
+      "denial_rate": 0.30,
+      "implementation_window": "2018-06 to 2019-03 (federal court halt)",
+      "people_affected": "~18,164 dropped of ~60,700 subject (ages 30-49, Dec 2018) in 9 months",
+      "primary_source": "Sommers, BD, et al. 2019. \"Medicaid Work Requirements — Results from the First Year in Arkansas.\" NEJM 381:1073-1082. doi:10.1056/NEJMsr1901772",
+      "context_note": "Arkansas's 2018 Section 1115 demonstration was the only state where work-requirement disenrollments actually happened at scale before federal courts halted further implementation. ~18,164 of the ~60,700 adults subject in a given month (ages 30-49, Dec 2018) lost coverage — roughly 30% of those subject, about 18% of the ~100,000 targeted (Sommers et al. 2019, NEJM). That ~30% per-cycle procedural-denial rate is a reasonable ceiling-of-what-can-go-wrong reference for OBBBA, given that Arkansas was an early implementer with limited time and integration."
+    },
+    "13": {
+      "abbr": "GA",
+      "historical_churn_score": 20,
+      "denial_rate": 0.80,
+      "implementation_window": "2023-07 to present",
+      "people_affected": "~5,500 enrolled of 100,000+ projected eligible in first 18 months",
+      "primary_source": "KFF tracking of GA Pathways to Coverage enrollment; HHS OIG audit findings 2024-2025",
+      "context_note": "Georgia is a non-expansion state, but Pathways to Coverage is a Section 1115 limited-expansion-with-work-requirement program — the most directly relevant operational analog for OBBBA. Enrollment has lagged projections by 90%+. This historical score is documented for methodology reference but does not affect a composite score (GA receives null under the standard pipeline)."
+    },
+    "21": {
+      "abbr": "KY",
+      "historical_churn_score": 50,
+      "denial_rate": null,
+      "implementation_window": "2018 proposal; halted by federal court before implementation",
+      "people_affected": "none — never implemented",
+      "primary_source": "Stewart v. Azar (D.D.C. 2018) — district court vacated CMS approval before disenrollments began",
+      "context_note": "Kentucky's Section 1115 work requirement was approved by CMS in 2018 but vacated by a federal district court before any disenrollments occurred. No operational data exists; we apply the neutral 50 prior."
+    },
+    "33": {
+      "abbr": "NH",
+      "historical_churn_score": 70,
+      "denial_rate": 0.30,
+      "implementation_window": "2019-06 to 2019-07 (federal court halt after one month)",
+      "people_affected": "~17,000 reportedly at risk of disenrollment when court halted further action",
+      "primary_source": "Philbrick v. Azar (D.D.C. 2019); KFF NH implementation tracker 2019",
+      "context_note": "New Hampshire's Granite Advantage work requirement reached one month of active enforcement before federal court halt. ~17K of 25K subject enrollees were reportedly heading for non-compliance disenrollment when stopped. We use a generous 30% projected denial (score 70) because the program was halted before steady-state operations could stabilize; the early-implementation churn rate is not directly comparable to what NH would have produced at 12+ months."
+    }
+  }
+}

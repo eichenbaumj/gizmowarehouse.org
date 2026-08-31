@@ -1,0 +1,15 @@
+raw/
+output/
+*.pmtiles
+*.zip
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.geojson
+*.tif
+__pycache__/
+*.pyc
+.env
+.env.local

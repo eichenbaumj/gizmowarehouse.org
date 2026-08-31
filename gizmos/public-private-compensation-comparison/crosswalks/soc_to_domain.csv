@@ -1,0 +1,12 @@
+soc_prefix,domain,domain_label,is_elite,note
+151,software_it,Software & IT,1,"SOC 15-1 computer & mathematical (developers, analysts, admins)"
+132,finance,Finance & Accounting,1,"SOC 13-2 financial specialists (accountants, analysts, examiners)"
+172,engineering,Engineering,1,"SOC 17-2 engineers"
+11,management,Management,1,"SOC 11 management occupations"
+23,legal,Legal,1,"SOC 23 legal occupations (lawyers, judges, paralegals)"
+29,healthcare,Healthcare,0,"SOC 29 health diagnosing/treating practitioners"
+25,education,Education,0,"SOC 25 educational instruction & library"
+33,protective_service,Protective Service,0,"SOC 33 police/fire/corrections"
+47,skilled_trades,Skilled Trades,0,"SOC 47 construction & extraction"
+49,skilled_trades,Skilled Trades,0,"SOC 49 installation/maintenance/repair (folds into skilled_trades)"
+43,admin_clerical,Office & Admin,0,"SOC 43 office & administrative support"

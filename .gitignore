@@ -1,0 +1,48 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Gizmo pipelines: raw + derived data is too big for git, reproducible
+# from the pipeline scripts. (** so nested sub-studies are covered too,
+# e.g. gizmos/<slug>/<sub-study>/pipeline/raw/.)
+gizmos/**/pipeline/raw/
+gizmos/**/pipeline/output/
+gizmos/**/pipeline/pipeline_log*.txt
+
+# Research scratch caches (large, regenerable from research scripts).
+gizmos/*/research/acris_cache/
+
+# Large deployed data files (ship from R2/CDN, not the repo).
+public/data/parcels-citywide.pmtiles
+public/data/parcels-local.pmtiles
+public/data/parcels-manifest.json
+public/parcels.pmtiles
+public/data/medicaid-hex-5mi.geojson
+
+# PDF-build intermediates (regenerate via gizmos/*/build-*.sh).
+gizmos/*/preview.html
+gizmos/*/preview-styles.css
+gizmos/*/assets/
+public/_dev-preview/
+
+# Local caches for off-repo inputs (bake scripts download these on demand).
+tools/.cache/
+
+# Python bytecode + Claude internals.
+__pycache__/
+.claude/
+tools/.fonts-cache/

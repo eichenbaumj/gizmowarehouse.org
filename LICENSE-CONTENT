@@ -1,0 +1,17 @@
+Content license: CC BY 4.0
+
+The written content in this repository — the gizmo write-ups (src/content/),
+methodology documents, and the data files produced by the pipelines — is
+licensed under the Creative Commons Attribution 4.0 International license
+(CC BY 4.0). You may share and adapt it for any purpose, including
+commercially, provided you give appropriate credit to Joe Eichenbaum and
+link to https://gizmowarehouse.org.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Underlying public data (Census, BLS, city open-data portals, and similar
+government sources referenced by the pipelines) carries its own terms; this
+license applies to the derived analysis and presentation, not the upstream
+sources.
+
+The code in this repository is separately licensed under MIT — see LICENSE.

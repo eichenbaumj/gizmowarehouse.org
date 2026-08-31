@@ -1,0 +1,644 @@
+/* Print stylesheet for per-state Medicaid Work Requirements brief.
+   17A brand: Cobalt #1F1FD6 / Carolina #21A8E0 / Charcoal #3B3B3B / Amber #E69138.
+   Fonts: Source Serif 4 (display), Source Sans 3 (body) — loaded via @font-face
+   below from __BRAND_ROOT__ placeholders that 12_build_state_pdfs.py resolves
+   from the BRAND_ROOT env var. WeasyPrint reads the @page rules for page numbers + headers.
+*/
+
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("file://__BRAND_ROOT__/fonts/SourceSerif4-Variable.ttf");
+  font-weight: 200 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("file://__BRAND_ROOT__/fonts/SourceSans3-VariableFont_wght.ttf");
+  font-weight: 200 900;
+  font-style: normal;
+}
+
+:root {
+  --cobalt: #1F1FD6;
+  --carolina: #21A8E0;
+  --charcoal: #3B3B3B;
+  --amber: #E69138;
+  --slate-50: #F8FAFC;
+  --slate-100: #F1F5F9;
+  --slate-200: #E2E8F0;
+  --slate-300: #CBD5E1;
+  --slate-500: #64748B;
+  --slate-700: #334155;
+}
+
+@page {
+  size: Letter;
+  margin: 0.6in 0.7in 0.85in 0.7in;
+
+  @bottom-left {
+    content: "Medicaid Work Requirements — " string(state-name);
+    font-family: "Source Sans 3", -apple-system, sans-serif;
+    font-size: 8pt;
+    color: var(--slate-500);
+  }
+  @bottom-right {
+    content: "Page " counter(page) " of " counter(pages);
+    font-family: "Source Sans 3", -apple-system, sans-serif;
+    font-size: 8pt;
+    color: var(--slate-500);
+  }
+}
+@page :first {
+  @bottom-left { content: ""; }
+  @bottom-right { content: ""; }
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: var(--charcoal);
+  font-size: 10.5pt;
+  line-height: 1.45;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Source Serif 4", Georgia, serif;
+  color: var(--cobalt);
+  font-weight: 600;
+  margin: 0 0 8pt 0;
+  line-height: 1.15;
+}
+h1 { font-size: 26pt; }
+h2 { font-size: 17pt; margin-top: 4pt; }
+h3 { font-size: 13pt; color: var(--charcoal); margin-top: 12pt; }
+h4 { font-size: 11pt; color: var(--charcoal); margin-top: 8pt; }
+
+p { margin: 0 0 8pt 0; }
+strong { font-weight: 600; color: var(--charcoal); }
+
+a { color: var(--cobalt); text-decoration: underline; text-decoration-color: rgba(31, 31, 214, 0.4); }
+
+/* String-set for running header (per-page) */
+.state-name { string-set: state-name content(); display: none; }
+
+section { break-before: page; }
+section.cover { break-before: avoid; }
+
+/* ─── Cover (page 1) ─────────────────────────────────────────────── */
+
+.cover { padding-top: 4pt; }
+
+.cover-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18pt;
+}
+
+.cover-meta {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9pt;
+  color: var(--slate-500);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cover .logo-block {
+  font-family: "Source Serif 4", serif;
+  font-size: 11pt;
+  color: var(--cobalt);
+  font-weight: 600;
+  text-align: right;
+}
+.cover .logo-block small {
+  display: block;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 8pt;
+  color: var(--slate-500);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.cover h1 {
+  font-size: 32pt;
+  color: var(--cobalt);
+  line-height: 1.08;
+  margin-bottom: 6pt;
+}
+
+.cover .subtitle {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 11pt;
+  color: var(--slate-500);
+  margin-bottom: 22pt;
+}
+
+.hero-number {
+  font-family: "Source Serif 4", serif;
+  font-size: 64pt;
+  font-weight: 600;
+  color: var(--cobalt);
+  line-height: 1;
+  margin: 18pt 0 4pt 0;
+}
+
+.hero-caption {
+  font-size: 11.5pt;
+  color: var(--charcoal);
+  max-width: 5.5in;
+  line-height: 1.45;
+  margin-bottom: 18pt;
+}
+
+.stats-strip {
+  display: flex;
+  gap: 24pt;
+  padding: 14pt 0;
+  border-top: 1.5pt solid var(--cobalt);
+  border-bottom: 0.75pt solid var(--slate-300);
+  margin-top: 14pt;
+}
+.stat {
+  flex: 1;
+}
+.stat .label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 8.5pt;
+  color: var(--slate-500);
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  font-weight: 600;
+  margin-bottom: 3pt;
+}
+.stat .value {
+  font-family: "Source Serif 4", serif;
+  font-size: 22pt;
+  font-weight: 600;
+  color: var(--cobalt);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.stat .sub {
+  font-size: 8.5pt;
+  color: var(--slate-500);
+  margin-top: 2pt;
+}
+
+.cover-framing {
+  font-size: 11pt;
+  color: var(--charcoal);
+  margin-top: 22pt;
+  max-width: 6in;
+  line-height: 1.5;
+}
+
+/* ─── Section common ────────────────────────────────────────────── */
+
+section.geography,
+section.within-county,
+section.demographics,
+section.ex-parte-page,
+section.action,
+section.appendix {
+  padding-top: 4pt;
+}
+
+/* ---- v9 PDF rebuild: sankey lead, ex parte page, notes ---- */
+.sankey { margin: 6pt 0 10pt 0; }
+.sankey svg { width: 100%; height: auto; }
+
+.section-note {
+  font-size: 8.5pt;
+  color: #64748B;
+  line-height: 1.45;
+  margin-top: 6pt;
+}
+
+.score-hero {
+  border: 1pt solid #CBD5E1;
+  border-left: 3pt solid var(--cobalt);
+  border-radius: 4pt;
+  padding: 10pt 14pt;
+  margin: 8pt 0 10pt 0;
+  background: #F8FAFF;
+}
+.score-hero--low  { border-left-color: #047857; background: #F0FDF9; }
+.score-hero--high { border-left-color: #B45309; background: #FFFBEB; }
+.score-value {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 30pt; font-weight: 700; color: var(--cobalt); line-height: 1;
+}
+.score-hero--low  .score-value { color: #047857; }
+.score-hero--high .score-value { color: #B45309; }
+.score-of { font-size: 13pt; font-weight: 400; color: #94A3B8; margin-left: 4pt; }
+.score-band { font-size: 10pt; font-style: italic; color: var(--charcoal); margin-top: 1pt; }
+.score-bar { margin-top: 6pt; height: 7pt; background: #E2E8F0; border-radius: 4pt; overflow: hidden; }
+.score-bar-fill { height: 100%; background: var(--cobalt); border-radius: 4pt; }
+.score-hero--low  .score-bar-fill { background: #047857; }
+.score-hero--high .score-bar-fill { background: #B45309; }
+
+.ex-parte-table { width: 100%; border-collapse: collapse; margin: 4pt 0 8pt 0; }
+.ex-parte-table td { padding: 3pt 6pt; vertical-align: baseline; border-bottom: 0.5pt solid #EEF2F7; }
+.ex-parte-table .exp-name { font-weight: 600; color: var(--charcoal); white-space: nowrap; }
+.ex-parte-table .exp-score {
+  font-family: 'Source Sans 3', sans-serif; font-variant-numeric: tabular-nums;
+  color: var(--charcoal); white-space: nowrap;
+}
+.ex-parte-table .exp-note { font-size: 8.5pt; color: #64748B; }
+.ex-parte-table .exp-context td,
+.ex-parte-table .exp-context .exp-name { color: #94A3B8; }
+
+.section-intro {
+  font-size: 10.5pt;
+  color: var(--charcoal);
+  margin-bottom: 10pt;
+  max-width: 6.5in;
+}
+
+img.map, img.chart {
+  display: block;
+  max-width: 100%;
+  max-height: 3.7in;
+  height: auto;
+  margin: 6pt 0 10pt 0;
+  break-inside: avoid;
+}
+
+/* ─── Tables ────────────────────────────────────────────────────── */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin: 6pt 0 12pt 0;
+  break-inside: avoid;
+}
+thead th {
+  background: var(--cobalt);
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 6pt 8pt;
+  font-size: 8.5pt;
+  letter-spacing: 0.02em;
+}
+tbody td {
+  padding: 5pt 8pt;
+  border-bottom: 0.5pt solid var(--slate-200);
+  font-variant-numeric: tabular-nums;
+  color: var(--charcoal);
+}
+tbody tr:nth-child(even) td { background: var(--slate-50); }
+tbody td.right { text-align: right; }
+tbody td.county-name { font-weight: 500; color: var(--slate-700); }
+
+table.appendix {
+  font-size: 8pt;
+  break-inside: auto;  /* allow flow across pages */
+}
+table.appendix thead {
+  display: table-header-group;  /* repeat header on each page */
+}
+table.appendix tr {
+  break-inside: avoid;
+}
+table.appendix thead th,
+table.appendix tbody td {
+  padding: 3pt 5pt;
+}
+
+/* ─── Callouts ──────────────────────────────────────────────────── */
+
+.callout {
+  background: rgba(31, 31, 214, 0.06);
+  border-left: 3pt solid var(--cobalt);
+  padding: 9pt 12pt;
+  margin: 10pt 0 12pt 0;
+  break-inside: avoid;
+  font-size: 10.5pt;
+  color: var(--charcoal);
+  line-height: 1.45;
+}
+.callout .headline {
+  font-family: "Source Serif 4", serif;
+  font-size: 13pt;
+  font-weight: 600;
+  color: var(--cobalt);
+  margin-bottom: 4pt;
+  line-height: 1.2;
+}
+.callout .implication {
+  margin-top: 6pt;
+  font-size: 9.5pt;
+  color: var(--slate-700);
+}
+
+.callout.amber {
+  background: #FEF3C7;
+  border-left-color: var(--amber);
+}
+.callout.amber .headline { color: var(--amber); }
+
+/* ─── Checklist ─────────────────────────────────────────────────── */
+
+ol.checklist {
+  list-style: none;
+  padding: 0;
+  margin: 6pt 0 12pt 0;
+  counter-reset: cl;
+}
+ol.checklist li {
+  position: relative;
+  padding-left: 22pt;
+  padding-right: 4pt;
+  margin-bottom: 4pt;
+  counter-increment: cl;
+  break-inside: avoid;
+  font-size: 9.5pt;
+  color: var(--charcoal);
+  line-height: 1.34;
+}
+ol.checklist li::before {
+  content: counter(cl);
+  position: absolute;
+  left: 0;
+  top: -0.5pt;
+  width: 16pt;
+  height: 16pt;
+  background: var(--cobalt);
+  color: white;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 16pt;
+}
+
+/* ─── Buttons / links (CSV) ─────────────────────────────────────── */
+
+.csv-button {
+  display: inline-block;
+  background: var(--cobalt);
+  color: white;
+  text-decoration: none;
+  padding: 8pt 14pt;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 10pt;
+  font-weight: 600;
+  border-radius: 3pt;
+  margin-top: 10pt;
+}
+
+/* ─── Methodology / footer ─────────────────────────────────────── */
+
+.methodology {
+  font-size: 8pt;
+  color: var(--slate-500);
+  line-height: 1.4;
+  margin-top: 8pt;
+  padding-top: 6pt;
+  border-top: 0.75pt solid var(--slate-300);
+}
+.methodology strong { color: var(--slate-700); }
+
+.footer {
+  margin-top: 14pt;
+  font-size: 8pt;
+  color: var(--slate-500);
+}
+
+/* ─── Loss-breakdown page ──────────────────────────────────────── */
+
+.loss-breakdown {
+  break-before: page;
+}
+
+.loss-summary {
+  display: flex;
+  gap: 8pt;
+  margin: 12pt 0 14pt;
+}
+
+.loss-bucket {
+  flex: 1;
+  border-radius: 4pt;
+  padding: 8pt 10pt;
+  border-top: 3pt solid var(--cobalt);
+}
+
+.loss-bucket--workdoc {
+  background: #EEF2FB;
+  border-top-color: var(--cobalt);
+}
+
+.loss-bucket--exemption {
+  background: #E8F4FA;
+  border-top-color: var(--carolina);
+}
+
+.loss-bucket--noncompliant {
+  background: #F1F5F9;
+  border-top-color: var(--slate-500);
+}
+
+.bucket-label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9pt;
+  font-weight: 600;
+  color: var(--slate-700);
+  text-transform: uppercase;
+  letter-spacing: 0.4pt;
+}
+
+.bucket-value {
+  font-family: "Source Serif 4", serif;
+  font-size: 22pt;
+  font-weight: 700;
+  color: var(--charcoal);
+  margin: 3pt 0;
+}
+
+.bucket-share {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9pt;
+  color: var(--slate-500);
+}
+
+.loss-columns {
+  display: flex;
+  gap: 16pt;
+  margin-top: 4pt;
+}
+
+.loss-column {
+  flex: 1;
+  min-width: 0;
+}
+
+.loss-col-head {
+  font-family: "Source Serif 4", serif;
+  font-size: 11pt;
+  font-weight: 700;
+  margin: 0 0 6pt;
+}
+
+.loss-col-head--workdoc { color: var(--cobalt); }
+.loss-col-head--exemption { color: var(--carolina); }
+
+.loss-subgroups {
+  width: 100%;
+  font-size: 8.5pt;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.loss-subgroups td {
+  padding: 2.5pt 0;
+  vertical-align: middle;
+  border: 0;
+}
+
+.loss-sub-label {
+  width: 56%;
+  color: var(--slate-700);
+  padding-right: 6pt;
+}
+
+.loss-sub-bar {
+  width: 32%;
+}
+
+.loss-sub-count {
+  width: 12%;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  color: var(--slate-700);
+  font-weight: 600;
+}
+
+.loss-bar {
+  height: 6pt;
+  border-radius: 2pt;
+  min-width: 1pt;
+}
+
+.loss-bar--workdoc { background: var(--cobalt); }
+.loss-bar--exemption { background: var(--carolina); }
+
+/* ─── Narrative page (two-paths story) ────────────────────────── */
+
+.narrative-page {
+  break-before: page;
+}
+
+.narrative-paths {
+  display: flex;
+  flex-direction: column;
+  gap: 14pt;
+  margin-top: 12pt;
+}
+
+.narrative-path {
+  padding: 12pt 14pt 10pt;
+  border-radius: 4pt;
+  border-left: 4pt solid var(--cobalt);
+  background: #F8FAFC;
+  break-inside: avoid-page;
+}
+
+.narrative-path--cobalt {
+  border-left-color: var(--cobalt);
+  background: #EEF2FB;
+}
+
+.narrative-path--carolina {
+  border-left-color: var(--carolina);
+  background: #E8F4FA;
+}
+
+.narrative-path--amber {
+  border-left-color: #B45309;
+  background: #FEF5E7;
+}
+
+.narrative-path-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8pt;
+  border-bottom: 0.5pt solid var(--slate-200);
+  padding-bottom: 4pt;
+  margin-bottom: 6pt;
+}
+
+.narrative-path-name {
+  font-family: "Source Serif 4", serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: var(--charcoal);
+}
+
+.narrative-path--cobalt .narrative-path-name { color: var(--cobalt); }
+.narrative-path--carolina .narrative-path-name { color: var(--carolina); }
+.narrative-path--amber .narrative-path-name { color: #B45309; }
+
+.narrative-path-metric {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: var(--slate-700);
+}
+
+.narrative-path-counties {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9pt;
+  font-style: italic;
+  color: var(--slate-500);
+  margin-bottom: 8pt;
+}
+
+.narrative-path-body p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  color: var(--charcoal);
+  margin: 0 0 6pt;
+  text-align: justify;
+}
+
+.narrative-path-body p:last-child {
+  margin-bottom: 0;
+}
+
+.narrative-convergence {
+  margin-top: 14pt;
+  padding: 10pt 12pt;
+  border-radius: 4pt;
+  background: #F1F5F9;
+  border-left: 3pt solid var(--slate-500);
+  break-inside: avoid-page;
+}
+
+.narrative-convergence-label {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 8.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6pt;
+  color: var(--slate-500);
+  margin-bottom: 4pt;
+}
+
+.narrative-convergence p {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.55;
+  color: var(--charcoal);
+  margin: 0;
+  text-align: justify;
+}

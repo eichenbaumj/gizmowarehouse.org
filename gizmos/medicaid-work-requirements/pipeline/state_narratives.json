@@ -1,0 +1,194 @@
+{
+  "_meta": {
+    "version": "v1.1-2026-05-23",
+    "purpose": "Per-state authored narratives that surface state-specific implementation nuances in the PDF brief. Optional — only states with a documented sub-state structural distinction (e.g., NYC vs. ROS, Cook County vs. ROS Illinois) get an entry here. States without an entry fall through to the generic concentration callout.",
+    "schema": {
+      "cover_callout": "Optional. A single-paragraph replacement for the cover-page concentration sentence. Should lead with the most-striking concentration fact, then promise the deeper story on the next page.",
+      "section_title": "Optional. H2 title for the dedicated narrative page (e.g., 'NYC vs. Rest-of-State: two paths'). Defaults to 'Within-state variation'.",
+      "section_intro": "Optional. 1-2 sentence orienting paragraph at the top of the narrative page.",
+      "paths": "Array of path objects. Each path describes a sub-state region and its distinct operational profile.",
+      "path.name": "Region name (e.g., 'New York City').",
+      "path.metric_label": "One-line metric callout (e.g., '952k subject enrollees · 52.7% of state').",
+      "path.counties_label": "Optional. Short list/summary of counties in this region.",
+      "path.color_class": "Optional CSS class hint: 'cobalt' (primary), 'carolina' (secondary), 'amber' (tertiary). Defaults to alternating.",
+      "path.body_paragraphs": "Array of paragraphs (string) for this region's narrative.",
+      "convergence_note": "Optional. Closing paragraph that synthesizes both/all paths and points to the operational implication."
+    },
+    "authorship_standard": "Every named entity (MCO, eligibility system, CBO, regulator, dataset, statute) must be verifiable from public sources. Numeric claims must trace to a published source or to the gizmo's own pipeline. Treat the narrative pages as the deliverable a state Medicaid director would forward to their team unedited."
+  },
+
+  "36": {
+    "cover_callout": "Four New York counties (Brooklyn, the Bronx, Queens, and Manhattan, every NYC borough except Staten Island) hold **52.7%** of the state's Medicaid expansion-adult subject pool. The verification work in those four counties is a different job from the work in the other 58. See the next page.",
+    "section_title": "NYC and Rest-of-State: two paths",
+    "section_intro": "New York's Medicaid expansion-adult population splits roughly evenly between four New York City counties and the other 58. The failure modes that dominate verification in NYC (gig income, limited English, unstable addresses) are not the failure modes that dominate upstate (LDSS capacity, dual-benefit data plumbing, regional staffing). Same federal deadline, two different operational builds.",
+    "paths": [
+      {
+        "name": "New York City",
+        "metric_label": "≈952k subject enrollees · 52.7% of the state · 4 of 62 counties",
+        "counties_label": "Brooklyn (Kings), Bronx, Queens, Manhattan (New York)",
+        "color_class": "cobalt",
+        "body_paragraphs": [
+          "NYC concentrates the populations most likely to fail OBBBA verification despite being eligible. The city has roughly 90,000 TLC-licensed for-hire drivers (Uber, Lyft, black car, yellow taxi) and tens of thousands of active food-delivery couriers. Most are paid via 1099 with no monthly pay stub that fits a typical state-portal upload. The cash-paid construction trades workforce is large, particularly in non-union residential sectors in Brooklyn and Queens. About 24% of NYC adults are limited-English-proficient, against roughly 6% in the rest of the state. For a quarter of the city's subject pool, portal language coverage is the binding constraint, not a courtesy.",
+          "The eligibility infrastructure differs too. Expansion-adult Medicaid applications route through NYSoH (NY State of Health, the state marketplace), but ongoing case management for NYC enrollees runs through HRA's ACCESS HRA and IPM systems, separate from the 57 county Local Departments of Social Services that handle the rest of the state. HRA historically runs higher procedural-disenrollment rates at renewal than upstate LDSS offices, and its mail-based notice infrastructure fails at elevated rates against unstable NYC addresses.",
+          "The MCO landscape is concentrated. Fidelis Care, Healthfirst, MetroPlus Health (NYC Health + Hospitals' own plan), EmblemHealth (HIP/GHI), and Empire BCBS together cover the overwhelming majority of NYC's expansion population. State DOH can pool claims data across these five carriers under §1902(xx)(4)(B) for medically-frail exemption auto-matching, which would resolve a substantial share of the city's exemption-documentation failures before any enrollee is asked for a provider letter.",
+          "Four things the NYC implementation needs to get right. Text and portal-push communication channels in addition to mail, because NYC enrollee addresses are unstable enough that mail-only loses people. Portal infrastructure in Spanish, Mandarin, Bengali, and Russian at minimum, which are the four largest non-English languages in the NYC Medicaid-eligible population. Coordination with the city's existing CBO and navigator network (Community Service Society HealthAssist, ENROLL NY, ActionNYC, NYC H+H community outreach), which has more reach into immigrant and gig populations than HRA's own outreach budget can match. And a self-attestation pathway for gig-platform earnings that doesn't require an enrollee to upload a screenshot of every week's app dashboard."
+        ]
+      },
+      {
+        "name": "Rest of New York",
+        "metric_label": "≈848k subject enrollees · 47.3% of the state · 58 of 62 counties",
+        "counties_label": "Buffalo (Erie), Rochester (Monroe), Syracuse (Onondaga), Albany, Long Island (Suffolk, Nassau), the Hudson Valley, North Country, Mohawk Valley",
+        "color_class": "carolina",
+        "body_paragraphs": [
+          "The rest-of-state subject pool looks more like a conventional Medicaid expansion population. W-2 employment dominates: manufacturing pockets in Buffalo and Rochester, healthcare and education statewide, agriculture in the Finger Lakes and Mohawk Valley (NAICS 11 dairy and produce), retail and hospitality across Long Island and the Hudson Valley. LEP rates outside NYC are roughly a quarter of the city's rate. Cash-construction trades exist but at much lower density.",
+          "The MCO market splits among different carriers than NYC. MVP Health Care covers the Capital Region and Hudson Valley. Excellus BlueCross BlueShield covers Western New York, Central New York, the Finger Lakes, and the Southern Tier. CDPHP runs in the Capital Region; Univera Healthcare and Independent Health divide the Buffalo metro. Auto-matching for medically-frail exemptions across this fragmented MCO landscape is operationally harder than NYC's five-carrier consolidation, even though each individual carrier's claims data is high-quality.",
+          "Case management routes through 57 county Local Departments of Social Services, which vary enormously in eligibility-system modernization. The largest upstate counties (Erie, Monroe, Onondaga, Albany, Suffolk, Nassau, Westchester) have modern WMS workflows and dedicated Medicaid enrollment staff. Smaller North Country and Southern Tier counties operate with a fraction of that capacity, and cannot absorb monthly verification-traffic volume without DOH technical assistance.",
+          "The rest-of-state implementation has three priorities. Maximize UI wage match against the NYSDOL quarterly wage file, which should auto-resolve work-hours verification for the majority of W-2 enrollees outside NYC. Build regional support centers aligned to the 10 NYS Economic Development regions, one per region, sharing staff across the smaller counties. And front-load SNAP/TANF compliance data matching for the dual-benefit caseload, which is concentrated in the same upstate areas with the highest Medicaid expansion enrollment."
+        ]
+      }
+    ],
+    "convergence_note": "The asymmetry is unusual. Four county-level outreach campaigns reach 52.7% of the state's pool; the other 47.3% requires 58 simultaneous deployments of varying technical maturity. Staff the NYC path against documentation-failure modes (gig, LEP, mail) and the ROS path against geographic-fragmentation modes (LDSS variance, dual-benefit data plumbing, regional staffing). Treating the two paths as a single problem, and especially budgeting against population rather than failure-mode, is the most common way state implementations of work requirements get the operational mix wrong."
+  },
+
+  "37": {
+    "cover_callout": "NC expanded Medicaid on December 1, 2023, the most recent expansion state. Roughly **700,000 newly-eligible adults** enrolled in the first 18 months, with verification scheduled to begin barely 13 months after the expansion went live. The Urban Crescent (Charlotte, Triangle, Triad) holds **~30%** of the subject pool; the other ~70% is spread across 95 mostly-rural counties whose verification problems on the eastern coastal plain look nothing like the verification problems in the western Appalachian mountains. See the next page.",
+    "section_title": "NC's three paths: Urban Crescent, Eastern NC, Western NC",
+    "section_intro": "North Carolina's late expansion (Dec 2023) means most of the subject pool has under two years of Medicaid claims history when verification begins. That limits the depth of in-state data available for medically-frail and SUD-treatment auto-matching, especially for the most recently-enrolled. The geographic split compounds the data thinness: the I-85/I-40 metro corridor needs a gig-and-immigrant verification build; the eastern coastal plain needs a rural-Black-majority broadband-and-LDSS-capacity build; the western mountains need an Appalachian-poverty-and-opioid build. Three paths.",
+    "paths": [
+      {
+        "name": "Urban Crescent",
+        "metric_label": "~30% of subject · 6 metro counties",
+        "counties_label": "Mecklenburg (Charlotte), Wake + Durham (Triangle), Guilford + Forsyth (Triad), Buncombe (Asheville)",
+        "color_class": "cobalt",
+        "body_paragraphs": [
+          "Charlotte (Mecklenburg) anchors the Southeast's financial-services sector (Bank of America HQ, Wells Fargo's east-coast operations) with a growing Amazon and tech presence. The Medicaid expansion population there skews younger than the rest of the state, with a higher share of gig and contract work (DoorDash, Instacart, Lyft, and Charlotte's growing Amazon Flex delivery workforce). The Triangle (Raleigh, Durham, Chapel Hill) has the Research Triangle Park's biotech and IT workforce, but the low-wage tail (janitorial, food service, contract maintenance at Duke, UNC, and NC State) sits squarely in the expansion population. The Triad (Greensboro, Winston-Salem) has the FedEx Express hub, a major Honda jet engine plant, and a hospitality sector that lost union manufacturing decades ago and never recovered the income mix.",
+          "NC moved to Medicaid managed care in July 2021, and the Urban Crescent is where the five Standard Plan MCOs (Healthy Blue, AmeriHealth Caritas, Carolina Complete Health, UnitedHealthcare, WellCare) compete most actively. That competition produces relatively dense claims data for enrollees who've been on managed care since 2021. The newly-expanded population from Dec 2023 onward has only 12 to 18 months of claims at most. Medically-frail auto-matching against MCO data will work much better for the legacy Medicaid population than for the recent expansion adults.",
+          "The four regional Tailored Plans (Alliance Health, Partners Health Management, Trillium Health Resources, Vaya Health) hold the BH and SUD-treatment data that matters for the disabling-mental-disorder exemption. Coordination between Standard Plans and Tailored Plans is a known operational gap in NC's managed care implementation, and it sits on the critical path for OBBBA verification.",
+          "The Urban Crescent implementation needs Wi-Fi-accessible enrollment kiosks at hospitals and FQHCs (Mecklenburg County Public Health, the Triangle's six largest FQHCs), aggressive UI wage match against the NCDES quarterly file for W-2 workers, and a self-attestation pathway for gig income that doesn't require platform-level transaction history."
+        ]
+      },
+      {
+        "name": "Eastern North Carolina",
+        "metric_label": "~25% of subject · 41 coastal-plain counties",
+        "counties_label": "Cumberland (Fayetteville), Pitt (Greenville), Robeson, New Hanover (Wilmington), Halifax, Edgecombe, Bertie, Hertford",
+        "color_class": "carolina",
+        "body_paragraphs": [
+          "The eastern coastal plain is rural, agricultural (NAICS 11: tobacco, hog farming, soybeans), and majority-Black in many counties (Halifax, Edgecombe, Northampton, Bertie, Hertford are all above 50% Black). Cumberland is anchored by Fort Liberty (formerly Fort Bragg) and has a substantial military-dependent population. Robeson County is the demographic outlier: majority Lumbee tribe, with the lowest broadband penetration in the state. Pitt has East Carolina University's medical center, anchoring regional health-care employment.",
+          "The verification-failure mode here is access. Rural broadband is limited (FCC Form 477 shows large stretches below the 25/3 Mbps definition). Seasonal agricultural workers have weeks-worked well under 40 even in good years, so the 80-hours-per-month threshold breaks during the off-season. The county DSS network in the smallest counties runs with 1 to 3 caseworkers total, and Robeson's DSS in particular has been under capacity strain throughout the Dec 2023 expansion rollout.",
+          "Eastern NC needs three operational moves. Extend the existing NC Health Access Coalition's enrollment-assistance network into the smallest 20 counties. Coordinate with the Lumbee Tribal Government on enrollment outreach in Robeson and adjacent counties. And structure paper-fallback workflows for the rural broadband-poor population, which the OBBBA self-attestation provisions allow under §1902(xx)(4)(D)."
+        ]
+      },
+      {
+        "name": "Western North Carolina",
+        "metric_label": "~13% of subject · 19 Appalachian mountain counties",
+        "counties_label": "Buncombe (Asheville), Henderson, Haywood, Watauga (Boone), Cherokee, Macon, Avery, Mitchell",
+        "color_class": "amber",
+        "body_paragraphs": [
+          "Western NC is Appalachia: geographically isolated, opioid-epidemic-affected, structurally poor. Per-capita overdose deaths in Cherokee, Graham, and Mitchell counties ranked among the highest in the state through 2024 (NC DHHS injury and violence prevention data). Buncombe (Asheville) is the regional anchor and the only Western county with significant gig and tourism employment. Watauga has Appalachian State University. The rest of the region runs on some combination of forestry, manufacturing legacy, Christmas tree farming, and tourism service work.",
+          "SUD-treatment exemption auto-match is the highest-leverage data play here. Western NC counties have the densest concentration of expansion adults with active SUD-treatment claims in the state, but the data has to flow from the regional Tailored Plan (Vaya Health, which covers most of Western NC) into NCFAST's verification view. That data plumbing is not operational as of May 2026.",
+          "The Western NC implementation needs Vaya Health's claims data feed into NCFAST before December 2026, mobile-clinic enrollment assistance through the regional FQHC network (Mountain Community Health Partnership, Blue Ridge Health, Mission Hospital's rural clinics), and pre-flagging of MAT (medication-assisted treatment) enrollees for exemption."
+        ]
+      }
+    ],
+    "convergence_note": "All three NC paths share the same Dec 1, 2026 verification-go-live date with only 24 months of expansion-population claims history to draw on. The late-expansion timing is the implementation problem behind the implementation problem. Sequence the build to weight the Vaya Health data plumbing first (longest engineering lead time), the Eastern NC DSS capacity hiring second (long lead time, no shortcut), and the Urban Crescent gig self-attestation pathway third (the workforce is concentrated enough that a single-region rollout will catch most of the affected enrollees in those six counties)."
+  },
+
+  "51": {
+    "cover_callout": "Virginia expanded Medicaid on January 1, 2019. Today's subject pool concentrates in the **Urban Crescent (Northern Virginia, the Richmond metro, and Hampton Roads)**, which together hold **~39%** of the state's expansion adults. The remaining ~61% is split between Southside Black Belt counties along the NC border and Southwest VA's Appalachian coal counties. VA's unique constitutional structure (95 counties plus 38 independent cities, each with its own DSS) adds an operational dimension that no other state in this brief shares. See the next page.",
+    "section_title": "VA's two paths: Urban Crescent vs Southside + Southwest Appalachia",
+    "section_intro": "Virginia's Medicaid expansion population is tri-polar geographically (NoVA, Richmond, Hampton Roads), with a long tail of rural Black Southside counties and Appalachian Southwest counties. The Urban Crescent's verification problem is immigrants, gig workers, and military dependents. Southside and Southwest VA's problem is the legacy of structural disinvestment: broadband gaps, hollowed-out social-service capacity, and an opioid epidemic that has lasted longer than the state's expansion has been in effect.",
+    "paths": [
+      {
+        "name": "Urban Crescent",
+        "metric_label": "~39% of subject · NoVA + Richmond + Hampton Roads",
+        "counties_label": "Fairfax + Prince William + Loudoun + Arlington + Alexandria (NoVA); Richmond city + Henrico + Chesterfield + Hanover (Richmond metro); Norfolk + Virginia Beach + Newport News + Hampton + Chesapeake + Portsmouth (Hampton Roads)",
+        "color_class": "cobalt",
+        "body_paragraphs": [
+          "Northern Virginia's Medicaid expansion population is dominated by recent-immigrant communities. Salvadoran and Bolivian construction trades workers, Korean and Vietnamese restaurant workers, Afghan resettlees (Fairfax took the largest Afghan SIV cohort in the country from 2021 through 2024), Ethiopian and Eritrean transportation workers. Fairfax County alone has the largest LEP population in the state. Cash-paid construction trades concentrate in Prince William and eastern Loudoun. NoVA also has dense gig-platform workforce, since the metro shares DC's labor market for Uber, Lyft, and food delivery.",
+          "Richmond metro is the state-government employment anchor, but the Medicaid expansion population there skews toward Richmond city's predominantly Black low-wage service workforce and the Henrico-Chesterfield retail-and-hospitality belt. Hampton Roads runs on a different economy: Naval Station Norfolk and Newport News Shipbuilding employ a large Medicaid-adjacent civilian workforce (defense contractor support staff, base civilians, shipyard support contractors), with a dependent population mixed between Medicaid and TRICARE.",
+          "Cardinal Care (VA's MCO program) runs five primary MCOs after the 2024 Sentara-Virginia Premier consolidation: Aetna Better Health of Virginia, Anthem HealthKeepers Plus, Molina Complete Care, Sentara Community Plan, and UnitedHealthcare Community Plan. NoVA's expansion population sits primarily with Anthem and United; Hampton Roads sits with Sentara through Sentara Healthcare's regional dominance; Richmond is more mixed. The absence of a single dominant carrier complicates claims-data pooling for medically-frail auto-matching at scale.",
+          "The Urban Crescent implementation needs three things. NoVA needs LEP-tested portal infrastructure in Spanish, Korean, Vietnamese, Amharic, and Pashto/Dari at minimum. Hampton Roads needs explicit coordination with TRICARE eligibility to avoid double-disenrollment of military dependent populations. Richmond needs HRA-style proactive outreach to the city's high-mobility low-income workforce, which the existing VaCMS notice cadence does not handle well."
+        ]
+      },
+      {
+        "name": "Southside + Southwest Appalachia",
+        "metric_label": "~20% of subject · 50+ rural counties",
+        "counties_label": "Southside Black Belt: Halifax, Mecklenburg (VA), Brunswick, Pittsylvania, Charlotte, Patrick. Southwest coal counties: Wise, Buchanan, Dickenson, Lee, Russell, Tazewell, Scott",
+        "color_class": "carolina",
+        "body_paragraphs": [
+          "Southside Virginia's Black Belt counties have the highest poverty rates in the state. Halifax, Mecklenburg, Brunswick, Charlotte, and Patrick all run above 20% poverty per the most recent ACS. The workforce is rural with significant agriculture and forestry employment, and a long-tail manufacturing decline that hollowed out the towns of Danville, South Boston, South Hill, and Emporia between 1990 and 2010. The Southside geography is contiguous with NC's Eastern NC, and the two share most of the same structural problems.",
+          "Southwest VA, the seven coal counties along the Kentucky and Tennessee borders, is the state's Appalachian region. Coal employment collapsed from 30,000+ in the 1980s to under 3,000 today. The opioid epidemic hit Buchanan, Dickenson, Lee, and Wise harder than almost any other counties in the country. Buchanan recorded per-capita drug overdose mortality exceeding 60 per 100,000 in peak years per CDC WONDER. Disability rates run above 25% in some Southwest counties, which means much of the expansion-eligible adult population qualifies for medically-frail exemption on physical, SUD, or mental-health grounds, but the documentation infrastructure to prove it is thin.",
+          "The Southside-Southwest implementation needs the regional SUD-treatment claims feed from Mountain Empire Older Citizens and Highlands Community Services in the Southwest, and from Crossroads Community Services Board in Southside, plumbed into VaCMS before December. It needs mobile enrollment assistance through the regional FQHC network (Stone Mountain Health Services, Tri-Area Community Health, Southwest Virginia Community Health Systems). And it needs broadband-fallback paper workflows that ride the existing Virginia 211 hotline's infrastructure."
+        ]
+      }
+    ],
+    "convergence_note": "Virginia's 95-county plus 38-independent-city DSS structure means 133 separate eligibility-administration units instead of the more common single-state or large-county model. The smallest of these (counties like Highland, Bath, Craig, each with under 200 expansion-adult subject enrollees) cannot absorb monthly verification traffic with their existing staff. The operational answer is shared services: route the 50 smallest DSS units' verification workflow through DMAS regional support centers rather than expecting each independent unit to staff up. That regional-support build-out and the Cardinal Care MCO data-pooling work are the two longest-lead-time items on the state timeline; everything else can move in parallel once those start."
+  },
+
+  "17": {
+    "cover_callout": "**Cook County alone holds 45.7%** of Illinois's Medicaid expansion-adult subject pool, the most concentrated single-county share of any state in this brief. Cook also operates the only county-government-run Medicaid MCO in the United States (CountyCare, via Cook County Health). The verification problem in Cook County is shaped differently from the problem in the other 101 Illinois counties, and the data infrastructure to solve it is partly already built. See the next page.",
+    "section_title": "IL's two paths: Cook County vs Rest of Illinois",
+    "section_intro": "Illinois's Medicaid expansion population is the most county-concentrated in the country. Nearly half of all subject enrollees live in Cook. That concentration creates both the largest single implementation lever in the state (one county-level coordination effort reaches 388,000 people) and the unique opportunity to leverage CountyCare, the only county-operated MCO in the US. The remaining 54.3% spreads across 101 counties with very different verification challenges.",
+    "paths": [
+      {
+        "name": "Cook County",
+        "metric_label": "45.7% of subject · ~389k enrollees · 1 county",
+        "counties_label": "Chicago + ~130 suburbs (north and west Cook County)",
+        "color_class": "cobalt",
+        "body_paragraphs": [
+          "Cook County has one of the densest Medicaid populations in the country. The expansion-adult population is majority non-white: a large Black population on Chicago's South and West sides; the Mexican-American population in Pilsen, Little Village, and the southwest side; dense Polish, Indian, and Filipino populations in north Cook County; and a growing African and Middle Eastern refugee population. LEP rates are high, with roughly 22% of Cook County adults having limited English proficiency per the most recent ACS, dominated by Spanish and Polish, followed by Mandarin, Arabic, and Tagalog.",
+          "The gig economy is dense. Chicago has roughly 75,000 active rideshare drivers per the City of Chicago BACP's TNC reporting, a substantial food-delivery workforce, and a large 1099 contract-trades sector that includes both NoVA-style residential construction and Chicago-specific union-and-non-union industrial maintenance subcontractors.",
+          "The eligibility infrastructure is the state's IES (Integrated Eligibility System), which is modern, integrated with SNAP and TANF, and operated by IDHS for traditional Medicaid and HFS for managed care. The MCO market includes Aetna Better Health, Blue Cross Community Health Plans (BCBSIL), Meridian Health Plan, Molina Healthcare, and the unique entry: **CountyCare**, operated by Cook County Health & Hospitals System. CountyCare carries roughly 390,000 enrollees, all in Cook County, and its claims data flows through county-government infrastructure that is already linked to county hospitals, the county jail, and county social services. That makes it the single most powerful auto-match data source in the state for Cook's expansion population, and it doesn't exist anywhere else.",
+          "Cook County's implementation has four leverage points. Use CountyCare's claims data for medically-frail and SUD auto-match (this is the structural advantage and the work should start now). Deploy IES portal infrastructure in Spanish, Polish, Mandarin, and Arabic. Coordinate with Chicago's dense FQHC network (Erie Family Health, PCC Community Wellness, PrimeCare Health, Lawndale Christian Health, Sinai Health System). And structure outreach via the existing Cook County Health enrollment-assistance teams, which are already on county payroll and have ongoing contact with the affected population."
+        ]
+      },
+      {
+        "name": "Rest of Illinois",
+        "metric_label": "54.3% of subject · ~461k enrollees · 101 counties",
+        "counties_label": "Collar counties (DuPage, Lake, Will, Kane, McHenry); downstate metros (Winnebago/Rockford, Peoria, Champaign, Sangamon/Springfield, St. Clair/East St. Louis, Madison); rural Illinois (southern IL Appalachian-adjacent, central IL ag belt)",
+        "color_class": "carolina",
+        "body_paragraphs": [
+          "The collar counties (DuPage, Lake, Will, Kane, McHenry) are suburban-Chicago-adjacent with mostly W-2 employment and a smaller LEP population than Cook. The downstate metros include Rockford (manufacturing, recent investment in EV battery manufacturing), Peoria (Caterpillar's HQ-region, mixed manufacturing and healthcare), Champaign-Urbana (University of Illinois low-wage support workforce), and the East St. Louis metro (high poverty, predominantly Black, with Metro East's industrial-decline legacy).",
+          "Rural southern Illinois (Saline, Williamson, Franklin, Jefferson, Wayne, Wabash counties) is Appalachian-adjacent in poverty profile and SUD prevalence. Central Illinois ag counties (Logan, Mason, Pike, Brown) are sparsely-populated, with a W-2 farm-labor workforce concentrated in seasonal employment.",
+          "The MCO landscape outside Cook is Aetna Better Health, BCBSIL, Meridian, and Molina, with no CountyCare. UI wage match through IDES (Illinois Department of Employment Security) is the highest-leverage data source for the W-2 collar counties and downstate metros. The 101 county DHS field offices outside Cook are state-staffed (not county-staffed like Cook), which makes the modernization story more uniform but also more dependent on the IES rollout pace.",
+          "The Rest-of-Illinois implementation needs four moves: prioritize IDES UI wage match for collar counties (high-leverage, low-effort); build regional support centers for the five or six downstate metros (one per metro, sharing staff with surrounding rural counties); deploy SUD-treatment data feeds from IDHS Division of Substance Use Prevention and Recovery for southern Illinois; and front-load SNAP/TANF compliance data matching for the dual-benefit population (most concentrated in East St. Louis, Rockford, and rural southern IL)."
+        ]
+      }
+    ],
+    "convergence_note": "Illinois has the most asymmetric implementation problem in this brief: one county (Cook) accounts for 46% of the subject pool and has its own MCO and its own county-government data infrastructure. Treat Cook as a separate operational track from the outset, with a dedicated coordination team co-located with HFS Chicago staff and working directly against CountyCare's data systems. The 101-county Rest-of-Illinois track is a more conventional Medicaid implementation problem: prioritize IDES wage-match plumbing, build regional support centers for the downstate metros, and deploy SUD-treatment auto-match for southern Illinois. Treating Cook as one of 102 equally-weighted counties is the single most common way state implementations of this scale lose enrollees who would otherwise have been auto-verified."
+  },
+
+  "39": {
+    "cover_callout": "Ohio's Medicaid expansion-adult subject pool concentrates in the **Big Six metros (Cleveland, Columbus, Cincinnati, Dayton, Toledo, Akron)**, which together hold **~47.5%** of the state's pool. The other ~52.5% includes Ohio's 28 designated Appalachian counties in the southeast, plus a Rust Belt belt across Mahoning Valley, Stark, Richland, and Trumbull. These two groups face different verification problems and sit in different MCO and data-system landscapes, with one MCO (CareSource) shaping the Appalachian story specifically. See the next page.",
+    "section_title": "OH's two paths: Big Six Metros vs Appalachian Ohio + Rust Belt",
+    "section_intro": "Ohio's Medicaid expansion adults split roughly evenly between the state's six large metro areas and the rural-plus-deindustrialized rest of the state. The metros are where the gig economy, immigrant communities, and conventional W-2 workforce concentrate. Appalachian Ohio is where the opioid epidemic hit hardest and where disability rates exceed the national average by wide margins. Both groups need different verification infrastructure, and Ohio's MCO market (uniquely dominated in Appalachian counties by Dayton-based CareSource) already shapes how claims data flows in each.",
+    "paths": [
+      {
+        "name": "Big Six Metros",
+        "metric_label": "~47.5% of subject · 6 metro counties",
+        "counties_label": "Cuyahoga (Cleveland), Franklin (Columbus), Hamilton (Cincinnati), Montgomery (Dayton), Lucas (Toledo), Summit (Akron)",
+        "color_class": "cobalt",
+        "body_paragraphs": [
+          "Cleveland (Cuyahoga) and Columbus (Franklin) are the state's two largest metros, each carrying ~12.7% of the subject pool individually. Columbus has been the state's fastest-growing metro for the past decade, and Intel's chip-fab investment in suburban Licking County (announced at $20B in 2022 and subsequently expanded) is reshaping the central-Ohio labor market. Cleveland's expansion-adult population is older, more Black, and concentrated in the East Side neighborhoods served by the MetroHealth and Cleveland Clinic FQHC networks. Cincinnati (Hamilton) has the Procter & Gamble HQ region with a substantial low-wage service workforce mixed in.",
+          "Dayton (Montgomery), Toledo (Lucas), and Akron (Summit) are the smaller Big Six metros, each with substantial manufacturing legacy (GM/Delphi in Dayton, Jeep/Stellantis in Toledo, Goodyear/Bridgestone in Akron) and the corresponding deindustrialization tail. Montgomery is also CareSource's home county, since CareSource was founded as a Dayton-based nonprofit Medicaid managed care plan in 1989.",
+          "The eligibility infrastructure is OBIE (Ohio Benefits Integrated Eligibility), modernized after a multi-year rebuild starting in 2017 with substantial CMS Medicaid Enterprise Systems modernization funding. OBIE is notably more capable than most state systems for cross-program data matching. ODJFS operates at the county level (88 counties), with the largest metro counties (Cuyahoga, Franklin, Hamilton) running modern OBIE workflows and dedicated Medicaid-eligibility staff.",
+          "The MCO market is competitive after the 2022 rebid. CareSource is the dominant statewide carrier (with a particularly strong Appalachian Ohio book), followed by Anthem Blue Cross and Blue Shield, Buckeye Health Plan, Molina, UnitedHealthcare, AmeriHealth Caritas Ohio, and Humana Healthy Horizons. In the Big Six metros, most carriers compete actively, which produces fragmented claims data but at high per-carrier quality.",
+          "The Big Six implementation can rely on OBIE's existing cross-program matching infrastructure, which is pre-built and substantially ahead of where most states sit. It needs in-person enrollment assistance through the dense FQHC network in each metro (Cleveland's NEON and NeighborCare; Columbus's PrimaryOne and Lower Lights; Cincinnati's Northern Kentucky Health; Dayton's Five Rivers Health; Toledo's NHA; Akron's AxessPointe). And it needs LEP infrastructure for Columbus's Somali population, Cleveland's growing Bhutanese and Nepali community, Cincinnati's Hispanic population, and Toledo's Arab-American community."
+        ]
+      },
+      {
+        "name": "Appalachian Ohio + Rust Belt",
+        "metric_label": "~30% of subject · ~40 rural and small-metro counties",
+        "counties_label": "Appalachian SE Ohio: Scioto, Athens, Lawrence, Pike, Jackson, Vinton, Meigs, Hocking, Adams, Gallia. Rust Belt: Mahoning (Youngstown), Trumbull (Warren), Stark (Canton), Richland (Mansfield), Belmont",
+        "color_class": "carolina",
+        "body_paragraphs": [
+          "Southeastern Ohio's 28 designated Appalachian counties were the epicenter of the opioid epidemic in the United States. Scioto County (Portsmouth) was the original pill-mill capital of the country in the early 2010s, and its prescription-opioid mortality rate in that period was among the highest in the nation. The downstream effects, more than a decade later, are visible in the state's data. SUD-related Medicaid enrollment is concentrated here, as are disability claims and long-term mental-health-treatment claims. Per-capita rates for medically-frail-exemption-eligible populations exceed national averages by wide margins in Scioto, Pike, Lawrence, Adams, and Vinton.",
+          "The Mahoning Valley (Youngstown-Warren) and Stark-Richland Rust Belt counties share a different but adjacent structural-decline story. Youngstown lost roughly 65% of its peak manufacturing employment between 1970 and 2010, and Warren's Lordstown GM plant closure in 2019 was the most recent in a long sequence. The Medicaid expansion population here is older, mixed-race, and tied to manufacturing-decline poverty rather than the SUD-and-disability profile that dominates Appalachian Ohio.",
+          "CareSource has the strongest Appalachian-Ohio book of any MCO. As a Dayton-based nonprofit, CareSource has historically built its network around exactly these counties, and its claims data on the SUD-treatment and chronic-disease populations there is the deepest of any carrier in the state. State DOH coordinating directly with CareSource on SUD and medically-frail auto-matching for Appalachian Ohio would resolve a substantial share of the exemption documentation for the populations most at risk.",
+          "The Appalachian-and-Rust-Belt implementation has three priorities. The CareSource SUD-and-medically-frail claims data feed into OBIE before December 2026 is the single highest-leverage data plumbing in the state's implementation. Mobile enrollment assistance through the FQHC network in Portsmouth, Athens, Marietta, and the Mahoning Valley reaches the harder-to-locate enrollees. Broadband-fallback paper workflows are necessary because FCC broadband-coverage data shows southeastern Ohio remains the worst-served region in the state."
+        ]
+      }
+    ],
+    "convergence_note": "Ohio's implementation problem is MCO-shaped in a way no other state in this brief shares. CareSource's Appalachian dominance and the seven-MCO Big Six competition create an asymmetric claims-data landscape. Structure the state's data-pooling work around that asymmetry: a CareSource-specific feed for the Appalachian-and-Rust-Belt counties, and a Big-Six-MCO-pool for the metro counties. OBIE's existing data-match capability gives Ohio more operational headroom than most states in this brief, but only if it gets used for OBBBA verification rather than treated as a from-scratch build. Nebraska's May 2026 launch and Montana's July 2026 launch will produce the first empirical churn data, and OH should refine OBIE's data-match logic against those rollouts before December 2026 rather than after."
+  }
+}

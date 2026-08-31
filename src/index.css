@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 17A Brand: Cobalt Blue primary, Carolina Blue accent, Charcoal text */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 23%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 23%;
+
+    --primary: 240 75% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 4% 95%;
+    --secondary-foreground: 0 0% 23%;
+
+    --muted: 240 4% 95%;
+    --muted-foreground: 0 0% 53%;
+
+    --accent: 197 76% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --border: 210 11% 90%;
+    --input: 210 11% 90%;
+    --ring: 240 75% 48%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-weight: 400;
+  }
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}

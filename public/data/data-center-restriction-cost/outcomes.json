@@ -1,0 +1,1097 @@
+{
+ "snapshot_date": "2026-08-19",
+ "tally": {
+  "died": 10,
+  "rerouted": 1,
+  "delayed_then_built": 4,
+  "pending_litigating": 13
+ },
+ "projects": [
+  {
+   "id": "pw-digital-gateway",
+   "name": "Prince William Digital Gateway",
+   "developer": "QTS + Compass (Blackstone-backed)",
+   "jurisdiction": "Prince William County, VA",
+   "state": "VA",
+   "lat": 38.83,
+   "lon": -77.56,
+   "claimed_capex_usd_b": 24.7,
+   "capex_label": "county-estimate",
+   "mw": null,
+   "decision_date": "2025-08-07",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "The Dec 2023 rezoning for the would-be world's largest data center campus was voided by the circuit court over defective public notice, the Court of Appeals affirmed March 31, 2026, and QTS withdrew its Virginia Supreme Court petitions on July 2, 2026, ending the project. The $24.7B figure is the county finance office's investment estimate; no relocation of the campus has been documented.",
+   "sources": [
+    {
+     "name": "WTOP (project dies, Jul 2026)",
+     "url": "https://wtop.com/prince-william-county/2026/07/digital-gateway-data-center-project-dies-after-final-developer-withdraws-appeal/"
+    },
+    {
+     "name": "Potomac Local (QTS withdraws appeal)",
+     "url": "https://www.potomaclocal.com/2026/07/03/qts-withdraws-supreme-court-appeal-ending-proposed-digital-gateway-data-center-project/"
+    },
+    {
+     "name": "WTOP (circuit court voids rezoning, Aug 2025)",
+     "url": "https://wtop.com/prince-william-county/2025/08/judge-voids-digital-gateway-rezoning-in-prince-william-county/"
+    },
+    {
+     "name": "Virginia Business (appeals court affirms)",
+     "url": "https://virginiabusiness.com/virginia-appeals-court-upholds-block-on-prince-william-digital-gateway-project/"
+    }
+   ]
+  },
+  {
+   "id": "king-george-amazon",
+   "name": "King George County Amazon campus",
+   "developer": "Amazon",
+   "jurisdiction": "King George County, VA",
+   "state": "VA",
+   "lat": 38.27,
+   "lon": -77.18,
+   "claimed_capex_usd_b": 6,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2024-01-02",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "A new anti-data-center board voted Jan 2, 2024 to walk back the performance agreement signed weeks earlier. The dispute is pending in King George Circuit Court with trial rescheduled for September 2026, and a 7.5-hour June 2026 board meeting ended without a decision. Amazon is meanwhile building in four neighboring Fredericksburg-region counties, but those campuses were announced in 2023 under the same state framework that included King George, before the January 2024 vote, and Amazon is still pursuing the King George site in court, so no relocation of this project is coded.",
+   "sources": [
+    {
+     "name": "Fredericksburg Free Lance-Star (board votes to renegotiate)",
+     "url": "https://fredericksburg.com/news/local/new-king-george-board-wants-to-renegotiate-amazon-deal/article_02279da2-ab3c-11ee-a2e2-af1512472c9e.html"
+    },
+    {
+     "name": "Bisnow ($6B campus setback)",
+     "url": "https://www.bisnow.com/national/news/data-center/virginia-county-backtracks-on-agreement-with-amazon-for-6b-data-center-campus-122327"
+    },
+    {
+     "name": "DCD (still no decision after marathon meeting)",
+     "url": "https://www.datacenterdynamics.com/en/news/still-no-decision-on-amazon-data-center-proposal-in-virginias-king-george-county/"
+    },
+    {
+     "name": "GovTech (circuit court case pending)",
+     "url": "https://www.govtech.com/artificial-intelligence/virginia-court-case-could-influence-other-data-center-fights"
+    }
+   ]
+  },
+  {
+   "id": "warrenton-amazon",
+   "name": "Warrenton Amazon data center",
+   "developer": "Amazon",
+   "jurisdiction": "Warrenton (Fauquier County), VA",
+   "state": "VA",
+   "lat": 38.7135,
+   "lon": -77.7953,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2025-07-08",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "The special use permit approved Feb 2023 remains unbuilt: a citizens' lawsuit went to trial in March 2026 with final arguments June 15, 2026 and no ruling on the permit's validity as of early August 2026 (an Aug 2026 procedural ruling only denied the citizens' group's bid to join a related case), the town found in 2025 that Amazon lacks vested rights (appeal parked at the BZA Feb 3, 2026), and the council voted 6-0 on July 8, 2025 to strip data centers from its zoning ordinance. The town's own attorney now argues alongside the plaintiffs.",
+   "sources": [
+    {
+     "name": "FauquierNow (council removes data centers from zoning, Jul 8 2025)",
+     "url": "https://www.fauquiernow.com/news/warrenton-town-council-pushes-back-against-data-centers-amends-zoning-ordinance/article_67ce814a-e880-4c95-8099-bac067988a25.html"
+    },
+    {
+     "name": "Prince William Times (trial and pending ruling)",
+     "url": "https://www.princewilliamtimes.com/news/citizens-group-town-of-warrenton-head-to-court-again-over-towns-1-approved-data-center/article_45c580d9-7d32-5624-9d2f-954a5d36539c.html"
+    },
+    {
+     "name": "Fauquier Times (BZA pauses vested-rights appeal)",
+     "url": "https://www.fauquier.com/localnews/warrenton-board-of-zoning-appeals-defers-action-on-amazon-appeal/article_3873160f-4e91-430e-afd6-d9941c20946a.html"
+    }
+   ]
+  },
+  {
+   "id": "culpeper-brandy-station",
+   "name": "Brandy Station campus (Culpeper Acquisitions)",
+   "developer": "Culpeper Acquisitions",
+   "jurisdiction": "Culpeper County, VA",
+   "state": "VA",
+   "lat": 38.5068,
+   "lon": -77.8936,
+   "claimed_capex_usd_b": 12,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2024-06-12",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "medium",
+   "note": "The planning commission unanimously recommended denial of the 426-acre, 4.6M sq ft rezoning on June 12, 2024, and the board of supervisors vote has been deferred at the applicant's request ever since. No final board action, withdrawal, or relocation has been reported as of August 2026; the pending status rests partly on the absence of subsequent coverage.",
+   "sources": [
+    {
+     "name": "DCD (planners recommend denial)",
+     "url": "https://www.datacenterdynamics.com/en/news/county-planners-recommend-denial-of-brandy-station-data-center-campus-in-culpeper-county/"
+    },
+    {
+     "name": "Piedmont Environmental Council (proposal background)",
+     "url": "https://www.pecva.org/region/culpeper/new-data-center-proposals-in-brandy-station-and-near-the-town-of-culpeper/"
+    },
+    {
+     "name": "Daily Progress (commission rejects rezoning)",
+     "url": "https://dailyprogress.com/news/state-regional/planning-commission-rejects-rezoning-for-brandy-station-data-centers/article_e17cf5f5-c95b-57b7-8be8-d058ae2280c3.html"
+    }
+   ]
+  },
+  {
+   "id": "loudoun-active-infrastructure",
+   "name": "Active Infrastructure campus (780MW)",
+   "developer": "Active Infrastructure",
+   "jurisdiction": "Loudoun County, VA",
+   "state": "VA",
+   "lat": 39.04,
+   "lon": -77.57,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": 780,
+   "decision_date": "2026-07-23",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "The Planning Commission voted unanimously on July 23, 2026 to recommend denial of the 780MW, 3.25M sq ft Spring Valley Technology Park rezoning on Evergreen Mills Road, but the final Board of Supervisors decision is still pending. The county is simultaneously drafting options, due September 15, 2026, for a moratorium on all new data center applications.",
+   "sources": [
+    {
+     "name": "Loudoun Now",
+     "url": "https://www.loudounnow.com/news/loudoun-planning-commission-rejects-3m-square-foot-data-center-campus/article_35f01dc9-af58-4afb-a364-e93b96b50e43.html"
+    },
+    {
+     "name": "Data Center Dynamics",
+     "url": "https://www.datacenterdynamics.com/en/news/loudoun-county-considering-moratorium-on-new-data-center-applications-rejects-325-million-sq-ft-campus/"
+    },
+    {
+     "name": "MLQ News",
+     "url": "https://mlq.ai/news/loudoun-county-moves-toward-data-center-moratorium-rejects-780mw-active-infrastructure-campus/"
+    },
+    {
+     "name": "Virginia Mercury",
+     "url": "https://virginiamercury.com/2026/07/30/loudoun-county-other-virginia-localities-consider-hitting-the-brakes-on-data-center-development/"
+    }
+   ]
+  },
+  {
+   "id": "culpeper-stevensburg",
+   "name": "Stevensburg Amazon rezoning",
+   "developer": "Amazon",
+   "jurisdiction": "Culpeper County, VA",
+   "state": "VA",
+   "lat": 38.46,
+   "lon": -77.9,
+   "claimed_capex_usd_b": 0.5,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2022-05-10",
+   "outcome": "delayed_then_built",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Supervisors approved the 243-acre rezoning 4-3 in April 2022 over a planning commission recommendation to deny; neighboring landowners sued in May 2022 alleging illegal spot zoning but the suit did not stop the project. The two-building, 427,000 sq ft campus was built on the same site and is reported fully operational, with local hiring underway by fall 2024.",
+   "sources": [
+    {
+     "name": "Bisnow",
+     "url": "https://www.bisnow.com/national/news/data-center/proposed-data-center-development-prompts-lawsuit-in-northern-virginia-112941"
+    },
+    {
+     "name": "The Register",
+     "url": "https://www.theregister.com/on-prem/2022/05/10/virginians-sue-to-block-rural-amazon-datacenter-construction/1542390"
+    },
+    {
+     "name": "Culpeper Star-Exponent",
+     "url": "https://starexponent.com/localbusinesses/article_7365c512-819b-11ef-a52e-3b0a2414e697.html"
+    },
+    {
+     "name": "Baxtel facility page",
+     "url": "https://baxtel.com/data-center/amazon-stevensburg"
+    }
+   ]
+  },
+  {
+   "id": "project-blue",
+   "name": "Project Blue",
+   "developer": "Beale Infrastructure / Blue Owl (AWS tenant, exited)",
+   "jurisdiction": "Tucson, AZ",
+   "state": "AZ",
+   "lat": 32.05,
+   "lon": -110.77,
+   "claimed_capex_usd_b": 3.6,
+   "capex_label": "developer-announced",
+   "mw": 286,
+   "decision_date": "2025-08-06",
+   "outcome": "delayed_then_built",
+   "destination": null,
+   "followup": null,
+   "months_lost": 4,
+   "confidence": "high",
+   "note": "Tucson's council voted 7-0 on August 6, 2025 to rescind the planned annexation and development agreement, but the 290-acre site, county-owned land north of the Pima County Fairgrounds, was never inside the city, and the developer's June 2025 purchase agreement with Pima County predated the vote. Beale waived the annexation and city-water closing conditions, supervisors approved a revised deal 3-2 in December 2025, the sale closed December 24, 2025, and construction began April 24, 2026 under county-only approvals with state-permitted groundwater, reportedly scaled back and with Amazon stepping away as end user. The project never moved. The vote removed the city from the deal, along with its development agreement, reclaimed-water arrangement, and tax share. An opponents' lawsuit challenging the approval process was dismissed in April 2026.",
+   "sources": [
+    {
+     "name": "Pima County Project Blue FAQ",
+     "url": "https://www.pima.gov/3552/Project-Blue-FAQ"
+    },
+    {
+     "name": "Tucson Sentinel (council vote)",
+     "url": "https://www.tucsonsentinel.com/local/report/080625_project_blue/"
+    },
+    {
+     "name": "KOLD (county approval)",
+     "url": "https://www.kold.com/2025/12/16/pima-county-votes-move-forward-with-project-blue/"
+    },
+    {
+     "name": "AZPM (lawsuit dismissed)",
+     "url": "https://news.azpm.org/p/azpmnews/2026/4/13/229275-pima-county-judge-tosses-lawsuit-over-project-blue-data-center-rezoning/"
+    },
+    {
+     "name": "AZPM (water meter revoked)",
+     "url": "https://news.azpm.org/p/azpmnews/2026/5/6/229644-project-blue-developers-improperly-used-tucson-water-city-has-shut-it-off/"
+    },
+    {
+     "name": "AZPM (wells approved)",
+     "url": "https://news.azpm.org/p/environmentnews/2026/5/28/229919-arizona-water-officials-approve-wells-tied-to-project-blue-data-center/"
+    }
+   ]
+  },
+  {
+   "id": "tract-project-range",
+   "name": "Project Range",
+   "developer": "Tract",
+   "jurisdiction": "Goodyear/Buckeye area (Maricopa County), AZ",
+   "state": "AZ",
+   "lat": 33.43,
+   "lon": -112.5,
+   "claimed_capex_usd_b": 14,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2024-05-02",
+   "outcome": "rerouted",
+   "destination": {
+    "name": "Buckeye (Buckeye Municipal Airport area), AZ",
+    "lat": 33.42,
+    "lon": -112.7,
+    "same_metro": true,
+    "distance_mi": 12
+   },
+   "followup": null,
+   "months_lost": 4,
+   "confidence": "high",
+   "note": "Tract withdrew its $14B, roughly 1,000-acre Project Range rezoning in unincorporated Maricopa County in May 2024 after objections from Goodyear and Buckeye; in August 2024 it closed on a 2,069-acre replacement site near Buckeye Municipal Airport, a $20B, up-to-1.8GW park backed by Buckeye's mayor. Utility planning and early infrastructure preparation were reported progressing into 2026. Neither the county planning commission nor the Board of Supervisors ever voted on the original applications, which a county spokesperson confirmed were withdrawn and closed.",
+   "sources": [
+    {
+     "name": "The Real Deal",
+     "url": "https://therealdeal.com/national/phoenix/2024/05/02/tract-drops-14b-plan-to-build-data-centers-outside-phoenix/"
+    },
+    {
+     "name": "Tract press release (GlobeNewswire)",
+     "url": "https://www.globenewswire.com/news-release/2024/08/28/2937145/0/en/Tract-Closes-Acquisition-of-2-069-acres-in-Buckeye-Arizona.html"
+    },
+    {
+     "name": "AZFamily",
+     "url": "https://www.azfamily.com/2024/08/30/developer-wants-power-future-ai-buckeye-with-new-data-center/"
+    },
+    {
+     "name": "AZ Big Media",
+     "url": "https://azbigmedia.com/real-estate/2069-acre-parcel-will-become-a20-billion-data-center-park-in-buckeye/"
+    }
+   ]
+  },
+  {
+   "id": "franklin-township-google",
+   "name": "Franklin Township campus (Project Flo)",
+   "developer": "Google",
+   "jurisdiction": "Franklin Township (Indianapolis), IN",
+   "state": "IN",
+   "lat": 39.66,
+   "lon": -86.02,
+   "claimed_capex_usd_b": 1,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2025-09-22",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Google pulled its 468-acre rezoning minutes before the Indianapolis City-County Council vote on Sept 22, 2025, and formally withdrew Oct 1 after months of opposition over farmland, secrecy, and water/power; the confirmed initial investment was about $1B. As of August 2026 it has not refiled. The City-County Council voted 23-1 on August 10, 2026 to pause new data-center approvals in Marion County through the end of 2027, with final commission action scheduled for August 19, superseding the special-use zoning class it had been advancing.",
+   "sources": [
+    {
+     "name": "WFYI - Google backs down from proposed data center",
+     "url": "https://www.wfyi.org/wfyi-news/2025-09-22/indianapolis-council-google-data-center-vote-withdrawl"
+    },
+    {
+     "name": "IBJ - Google officially withdraws plans",
+     "url": "https://www.ibj.com/articles/google-formally-withdraws-plans-for-data-center-campus-in-franklin-township"
+    },
+    {
+     "name": "InkFreeNews - Google confirms it is behind $1B Indiana data center",
+     "url": "https://www.inkfreenews.com/2025/08/21/google-confirms-it-is-behind-1b-indiana-data-center/"
+    },
+    {
+     "name": "WFYI - Data center rules proposal clears initial vote (July 1, 2026)",
+     "url": "https://www.wfyi.org/wfyi-news/2026-07-01/data-center-rules-proposal-clears-initial-vote-in-indianapolis"
+    },
+    {
+     "name": "DCD - Google withdraws rezoning proposal for 468-acre project",
+     "url": "https://www.datacenterdynamics.com/en/news/google-withdraws-rezoning-proposal-for-468-acre-data-center-project-in-franklin-township-indianapolis/"
+    },
+    {
+     "name": "WFYI - Indy council advances pause on data centers (Aug 10, 2026)",
+     "url": "https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval"
+    }
+   ]
+  },
+  {
+   "id": "valparaiso-agincourt",
+   "name": "Agincourt project",
+   "developer": "Agincourt",
+   "jurisdiction": "Valparaiso, IN",
+   "state": "IN",
+   "lat": 41.4731,
+   "lon": -87.0611,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2025-03-11",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Mayor Jon Costas announced March 11, 2025 that Agincourt had agreed to withdraw and release its land option after residents objected over water, power, noise, and property values; no formal plans were ever filed. No relocation or revival has been documented as of August 2026.",
+   "sources": [
+    {
+     "name": "Lakeshore Public Media - Valpo pulls plug on data center proposal",
+     "url": "https://www.lakeshorepublicmedia.org/local-news/2025-03-11/valpo-pulls-plug-on-data-center-proposal-following-public-opposition"
+    },
+    {
+     "name": "GovTech - Valparaiso mayor says data center dead after outcry",
+     "url": "https://www.govtech.com/products/valparaiso-ind-mayor-says-data-center-dead-after-outcry"
+    },
+    {
+     "name": "DCD - Valparaiso pulls the plug on Agincourt data center project",
+     "url": "https://www.datacenterdynamics.com/en/news/indianas-city-of-valparaiso-pulls-the-plug-on-agincourt-data-center-project/"
+    }
+   ]
+  },
+  {
+   "id": "pike-township-american-tower",
+   "name": "Pike Township edge data center",
+   "developer": "American Tower",
+   "jurisdiction": "Pike Township (Indianapolis), IN",
+   "state": "IN",
+   "lat": 39.87,
+   "lon": -86.26,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": 4,
+   "decision_date": "2026-02-02",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "American Tower withdrew its rezoning petition for a 20,000 sq ft, roughly 4MW edge facility on Feb 2, 2026 amid neighborhood opposition, saying it would prefer to revisit the project after Indianapolis finishes its data-center zoning revisions. The new SU-47 special-use district cleared the Metropolitan Development Commission 5-3 on July 1, 2026, but the City-County Council instead voted 23-1 on August 10, 2026 to pause new data-center approvals in Marion County through the end of 2027, with final commission action scheduled for August 19, so the project is paused at least through 2027 rather than clearly abandoned.",
+   "sources": [
+    {
+     "name": "Mirror Indy - Pike Township residents win data center fight for now",
+     "url": "https://mirrorindy.org/pike-township-data-center-petition-withdrawn/"
+    },
+    {
+     "name": "Axios Indianapolis - Pike Township data center stalls (Feb 4, 2026)",
+     "url": "https://www.axios.com/local/indianapolis/2026/02/04/pike-township-data-center-stalls-indiana-lawmakers-incentivize"
+    },
+    {
+     "name": "DCD - American Tower pauses plans for Edge data center in Indianapolis",
+     "url": "https://www.datacenterdynamics.com/en/news/american-tower-pauses-plans-for-edge-data-center-in-indianapolis-indiana/"
+    },
+    {
+     "name": "WFYI - Data center rules proposal clears initial vote (July 1, 2026)",
+     "url": "https://www.wfyi.org/wfyi-news/2026-07-01/data-center-rules-proposal-clears-initial-vote-in-indianapolis"
+    },
+    {
+     "name": "WFYI - Indy council advances pause on data centers (Aug 10, 2026)",
+     "url": "https://www.wfyi.org/wfyi-news/2026-08-10/indy-council-advances-pause-on-data-centers-sends-to-commission-for-final-approval"
+    }
+   ]
+  },
+  {
+   "id": "peculiar-diode",
+   "name": "Peculiar campus (Harper Road Technology Park)",
+   "developer": "Diode Ventures",
+   "jurisdiction": "Peculiar (Cass County), MO",
+   "state": "MO",
+   "lat": 38.7195,
+   "lon": -94.4586,
+   "claimed_capex_usd_b": 1.5,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2024-10-17",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Peculiar blocked Diode Ventures' $1.5B, 508-acre Harper Road Technology Park by deleting data centers from its zoning ordinance, effective Oct 17, 2024, after the 'Don't Dump Data in Peculiar' opposition campaign. No relocation of this specific project has been documented, though Diode continues separate Kansas City-area campuses it was already pursuing.",
+   "sources": [
+    {
+     "name": "DCD - Peculiar officials remove data centers from ordinance, blocking $1.5bn Diode project",
+     "url": "https://www.datacenterdynamics.com/en/news/peculiar-officials-in-missouri-remove-data-centers-from-ordinance-blocking-15bn-diode-project/"
+    },
+    {
+     "name": "KSHB - Peculiar reverses zoning for data center after cries from neighbors",
+     "url": "https://www.kshb.com/news/local-news/peculiar-reverses-zoning-for-data-center-after-cries-from-neighbors"
+    },
+    {
+     "name": "DCD - Diode Ventures develops another 220MW+ campus next to Meta's Kansas City site",
+     "url": "https://www.datacenterdynamics.com/en/news/diode-ventures-looks-to-develop-another-220mw-campus-next-to-metas-kansas-city-site/"
+    }
+   ]
+  },
+  {
+   "id": "kc-quality-hill",
+   "name": "Quality Hill downtown data center",
+   "developer": "Revitalization Unlimited",
+   "jurisdiction": "Kansas City, MO",
+   "state": "MO",
+   "lat": 39.102,
+   "lon": -94.59,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2026-08-05",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "The City Plan Commission voted August 5, 2026 to deny the 20-story tower at 10th and Central after 475 opposition letters and none in support; the denial is a recommendation, and Miami-based Revitalization Unlimited can still ask City Council to override it. The developer has said only that it will take things one step at a time, and Mayor Lucas called a reversal highly unlikely.",
+   "sources": [
+    {
+     "name": "KSHB 41 Kansas City",
+     "url": "https://www.kshb.com/news/local-news/missouri/kansas-city/kcmo-city-plan-commission-votes-to-deny-application-for-proposed-downtown-data-center"
+    },
+    {
+     "name": "KCTV5",
+     "url": "https://www.kctv5.com/2026/08/05/kansas-city-plan-commission-blocks-data-center-plan-historic-quality-hill-site/"
+    },
+    {
+     "name": "KCUR",
+     "url": "https://www.kcur.org/politics-elections-and-government/2026-07-22/kansas-city-downtown-data-center-western-newspaper-union-quality-hill-20-story"
+    }
+   ]
+  },
+  {
+   "id": "oldham-county-whp",
+   "name": "Oldham County campus (Project Lincoln)",
+   "developer": "Western Hospitality Partners",
+   "jurisdiction": "Oldham County, KY",
+   "state": "KY",
+   "lat": 38.407,
+   "lon": -85.379,
+   "claimed_capex_usd_b": 6,
+   "capex_label": "developer-announced",
+   "mw": 600,
+   "decision_date": "2025-07-01",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "WHP scrapped its original $6B/600MW Highway 53 proposal in June 2025 in favor of a smaller $1.5B/100MW plan at the Sauerbeck drive-in site, then withdrew that too on July 3, 2025, two days after the fiscal court passed a 150-day moratorium (July 1, 2025) that stripped an exemption for WHP's pending application, saying the project will not proceed. Anti-data-center candidates prevailed in the 2026 county primaries and permanent county regulations went from planning and zoning to the fiscal court June 23, 2026; no relocation of the project is documented.",
+   "sources": [
+    {
+     "name": "Louisville Public Media",
+     "url": "https://www.lpm.org/news/2025-07-02/oldham-county-passes-sweeping-data-center-moratorium-executive-fired-over-recording"
+    },
+    {
+     "name": "WAVE 3 News",
+     "url": "https://www.wave3.com/2025/07/03/plans-oldham-county-data-center-project-withdrawn/"
+    },
+    {
+     "name": "Data Center Dynamics",
+     "url": "https://www.datacenterdynamics.com/en/news/kentuckys-oldham-county-passes-150-day-data-center-moratorium/"
+    },
+    {
+     "name": "Louisville Public Media (June 2026 primaries)",
+     "url": "https://www.lpm.org/news/2026-06-08/the-fight-over-data-centers-was-front-and-center-in-local-kentucky-primary-elections"
+    },
+    {
+     "name": "Oldham Era",
+     "url": "https://www.pmg-ky1.com/oldham_era/news/p-z-sends-revised-data-center-regulations-to-fiscal-court/article_9f7dc88d-b0bd-5af9-8b1d-2777c748ee73.html"
+    }
+   ]
+  },
+  {
+   "id": "caledonia-microsoft",
+   "name": "Caledonia site (Project Nova)",
+   "developer": "Microsoft",
+   "jurisdiction": "Caledonia (Racine County), WI",
+   "state": "WI",
+   "lat": 42.824,
+   "lon": -87.876,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2025-10-08",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Microsoft abandoned the 244-acre Project Nova site on October 8, 2025, days after plan-commission approval, citing community feedback, and said it would work with Caledonia and Racine County to identify an alternate site; no replacement site had been announced as of August 2026. Microsoft's separate Mount Pleasant expansion of more than $13B approved January 2026 continues, but no source documents it as a relocation of this project.",
+   "sources": [
+    {
+     "name": "Wisconsin Public Radio",
+     "url": "https://www.wpr.org/news/microsoft-caledonia-data-center-site-ozaukee-county"
+    },
+    {
+     "name": "TMJ4",
+     "url": "https://www.tmj4.com/news/racine-county/microsoft-pulls-plug-on-plans-for-244-acre-data-center-in-caledonia-after-community-pushback"
+    },
+    {
+     "name": "Data Center Dynamics",
+     "url": "https://www.datacenterdynamics.com/en/news/microsoft-cancels-plans-for-data-center-caledonia-wisconsin/"
+    },
+    {
+     "name": "ConstructConnect (pre-cancellation approval)",
+     "url": "https://news.constructconnect.com/microsofts-third-wisconsin-data-center-project-plan-advances-in-racine-county"
+    },
+    {
+     "name": "CNBC (Mount Pleasant expansion)",
+     "url": "https://www.cnbc.com/2026/01/26/microsoft-wins-approval-for-15-data-centers-at-wisconsin-foxconn-site.html"
+    }
+   ]
+  },
+  {
+   "id": "port-washington-lighthouse",
+   "name": "Lighthouse (Stargate) campus",
+   "developer": "Vantage Data Centers / Cloverleaf (OpenAI/Oracle anchor)",
+   "jurisdiction": "Port Washington (Ozaukee County), WI",
+   "state": "WI",
+   "lat": 43.387,
+   "lon": -87.876,
+   "claimed_capex_usd_b": 15,
+   "capex_label": "developer-announced",
+   "mw": 1300,
+   "decision_date": "2026-04-07",
+   "outcome": "delayed_then_built",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Construction began with a December 2025 groundbreaking and was underway through mid-2026 despite protests, a failed mayoral recall effort, and the April 7, 2026 referendum (66%), which constrains only future incentives over $10M and not the existing $458M TID. Three suits were active as of July 2026 (Sierra Club/MEA v. DNR over the skipped environmental impact statement, business groups over the TID-referendum ordinance, Oracle v. PSC over financial rules); none has halted construction, though on August 6, 2026 the PSC ruled ATC's transmission-line application incomplete, restarting that separate approval process.",
+   "sources": [
+    {
+     "name": "BizTimes Milwaukee (groundbreaking)",
+     "url": "https://biztimes.com/groundbreaking-held-as-construction-begins-on-15b-port-washington-data-center/"
+    },
+    {
+     "name": "Wisconsin Public Radio (DNR lawsuit)",
+     "url": "https://www.wpr.org/news/lawsuit-wisconsin-dnr-environmental-review-port-washington-data-centers"
+    },
+    {
+     "name": "Sierra Club press release",
+     "url": "https://www.sierraclub.org/press-releases/2026/07/sierra-club-wisconsin-and-mea-file-lawsuit-after-state-regulators-abandon"
+    },
+    {
+     "name": "GMToday (TID ordinance lawsuit)",
+     "url": "https://www.gmtoday.com/news_graphic/business/proposed-tid-referendum-port-washington/article_222578b6-7bd1-5931-bcdf-1f270b0df00a.html"
+    },
+    {
+     "name": "The Daily Reporter (Oracle v. PSC)",
+     "url": "https://dailyreporter.com/2026/06/24/oracle-sues-wisconsin-public-service-commission-data-center-rules/"
+    }
+   ]
+  },
+  {
+   "id": "farmington-tract",
+   "name": "Farmington campus (708MW)",
+   "developer": "Tract",
+   "jurisdiction": "Farmington (Dakota County), MN",
+   "state": "MN",
+   "lat": 44.6402,
+   "lon": -93.1436,
+   "claimed_capex_usd_b": 5,
+   "capex_label": "developer-announced",
+   "mw": 708,
+   "decision_date": "2024-11-29",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "The city approved the 12-building, 2.5M sq ft campus, but two lawsuits remain active (the resident coalition's, filed Nov 29, 2024, and neighboring Castle Rock Township's); a Nov 13, 2025 ruling denied the city's motion to dismiss the township's suit, with trial expected summer to fall 2026, though the court earlier denied the township's request for a temporary injunction. No construction and no resolution as of Aug 2026.",
+   "sources": [
+    {
+     "name": "GovTech (Star Tribune reprint) - Farmington residents sue to stop data center park",
+     "url": "https://www.govtech.com/infrastructure/farmington-minn-residents-sue-to-stop-data-center-park"
+    },
+    {
+     "name": "Coalition for Responsible Data Center Development - timeline and project specs",
+     "url": "https://www.datacenterresponsibility.com/whatishappening"
+    },
+    {
+     "name": "Sun Thisweek/hometownsource - Judge denies Farmington's motion to dismiss lawsuit (Perzel ruling)",
+     "url": "https://www.hometownsource.com/sun_thisweek/community/dakota_county/judge-denies-farmingtons-motion-to-dismiss-lawsuit/article_54651c1e-c9af-4516-9409-6eaf4c0c83a7.html"
+    },
+    {
+     "name": "Sun Thisweek/hometownsource (Apr 2026) - Tract speaks about updated Farmington Technology Park",
+     "url": "https://www.hometownsource.com/sun_thisweek/community/dakota_county/tract-speaks-about-updated-farmington-technology-park/article_43acd923-b4d8-42ee-a192-b34612835e02.html"
+    },
+    {
+     "name": "MinnPost (July 2026) - Minnesota courts pausing data centers",
+     "url": "https://www.minnpost.com/greater-minnesota/2026/07/in-pausing-data-centers-minnesota-courts-did-what-local-officials-wouldnt/"
+    }
+   ]
+  },
+  {
+   "id": "faribault-dc",
+   "name": "Faribault data center",
+   "developer": "Archer Datacenters",
+   "jurisdiction": "Faribault (Rice County), MN",
+   "state": "MN",
+   "lat": 44.295,
+   "lon": -93.2688,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2026-06-08",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "The Minnesota Court of Appeals ruled June 8, 2026 that Faribault's environmental review of Archer Datacenters' 500,000 sq ft project violated state law, halting the project pending a fuller review. The city council extended Archer's deadline to submit additional environmental information into 2027, leaving the project on hold as of Aug 2026.",
+   "sources": [
+    {
+     "name": "Minnesota Center for Environmental Advocacy - legal updates on data center cases",
+     "url": "https://www.mncenter.org/legal-updates-mceas-data-center-cases"
+    },
+    {
+     "name": "Mankato Free Press (MinnPost) - courts pausing data centers, Faribault status",
+     "url": "https://www.mankatofreepress.com/news/state_national_news/in-pausing-data-centers-minnesota-courts-did-what-local-officials-wouldn-t/article_29717f29-ce24-45ee-9a51-7ec8b027cae6.html"
+    },
+    {
+     "name": "Goldberg Segalla - Minnesota Court of Appeals pauses hyperscale data center",
+     "url": "https://www.goldbergsegalla.com/blog/environmental-law-monitor/appellate-court/minnesota-court-of-appeals-pauses-construction-of-hyperscale-data-center/"
+    },
+    {
+     "name": "Minnesota Lawyer - Court of Appeals: Faribault data center review inadequate",
+     "url": "https://minnlawyer.com/2026/06/08/court-of-appeals-faribault-data-center-review-inadequate/"
+    }
+   ]
+  },
+  {
+   "id": "howell-meta",
+   "name": "Howell Township campus",
+   "developer": "Meta-linked ($1B, fronted by unnamed Fortune 100)",
+   "jurisdiction": "Howell Township (Livingston County), MI",
+   "state": "MI",
+   "lat": 42.63,
+   "lon": -83.95,
+   "claimed_capex_usd_b": 1,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2025-12-08",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "After a unanimous township planning-commission denial on Sept 23, 2025, a county planning commission vote against the project on Nov 19, and a six-month township moratorium on Nov 20, the developer withdrew its 1,077-acre rezoning application, announced Dec 8, 2025. As of Aug 2026 the township is drafting a data-center ordinance with a possible industrial overlay district, and the project has not been refiled or documented at any alternative site.",
+   "sources": [
+    {
+     "name": "GovTech - Michigan community works on data center rules after Meta withdraws",
+     "url": "https://www.govtech.com/products/michigan-community-works-on-data-center-rules-after-meta-withdraws"
+    },
+    {
+     "name": "Michigan Advance - trustee says Meta is behind Howell data center; moratorium",
+     "url": "https://michiganadvance.com/2025/11/21/local-michigan-township-trustee-says-meta-is-behind-data-center-project-planned-near-howell/"
+    },
+    {
+     "name": "Planet Detroit - Data center developers hit pause on $1 billion Howell Township proposal",
+     "url": "https://planetdetroit.org/2025/12/billion-dollar-data-center-paused/"
+    },
+    {
+     "name": "CBS Detroit - Howell Township data center developer withdraws application",
+     "url": "https://www.cbsnews.com/detroit/news/howell-township-data-center-developer-withdraws-project-application"
+    },
+    {
+     "name": "WILX - Howell Township Planning Commission votes to deny rezoning",
+     "url": "https://www.wilx.com/2025/09/24/howell-township-planning-commission-votes-deny-rezoning-proposed-data-center/"
+    }
+   ]
+  },
+  {
+   "id": "montour-talen",
+   "name": "Montour County rezoning (Talen-linked)",
+   "developer": "Talen Energy-linked",
+   "jurisdiction": "Montour County, PA",
+   "state": "PA",
+   "lat": 41.03,
+   "lon": -76.66,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2026-02-10",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "County commissioners unanimously denied Talen's request to rezone roughly 870 farmland acres near the Montour Preserve on Feb 10, 2026, after a petition of just under 3,000 signatures and school-board opposition. Talen says it still intends to develop a data center near its Montour plant and will return with a refined petition, and PA DEP accepted its air-permit application for two new gas turbines there in June 2026, but no new zoning application had been decided as of Aug 2026.",
+   "sources": [
+    {
+     "name": "Pennsylvania Capital-Star - Montour County denies rezoning plan for data center",
+     "url": "https://penncapital-star.com/energy-environment/montour-county-denies-rezoning-plan-that-would-have-allowed-a-data-center/"
+    },
+    {
+     "name": "Inside Climate News - Pennsylvania county denies Talen Energy data center rezoning",
+     "url": "https://insideclimatenews.org/news/11022026/pennsylvania-talen-energy-data-center-rezoning-denied/"
+    },
+    {
+     "name": "WNEP - Montour County commissioners won't rezone near preserve",
+     "url": "https://www.wnep.com/article/news/local/montour-county/data-center-talen-energy-montour-preserve-rezoning-vote/523-bd9d45bc-58b7-4590-80a1-1d2b30351550"
+    },
+    {
+     "name": "Bucks County Beacon (Mar 2026) - Montour County aftermath and Talen's stated plans",
+     "url": "https://buckscountybeacon.com/2026/03/montour-county-residents-prove-how-community-organizing-can-defeat-data-centers/"
+    },
+    {
+     "name": "Marcellus Drilling News - PA DEP posts details on Talen's proposed Montour gas-fired plant",
+     "url": "https://marcellusdrilling.com/2026/06/pa-dep-posts-details-on-talens-proposed-montour-gas-fired-plant/"
+    }
+   ]
+  },
+  {
+   "id": "east-whiteland-green-fig",
+   "name": "Green Fig data center",
+   "developer": "Green Fig LLC (with Sentinel Data Centers)",
+   "jurisdiction": "East Whiteland Township (Chester County), PA",
+   "state": "PA",
+   "lat": 40.033,
+   "lon": -75.551,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2026-05-05",
+   "outcome": "delayed_then_built",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "After months of opposition the developer scrapped the expanded 1.7M sq ft application in May 2026 and reverted to a previously approved 1.5M sq ft plan on the same Superfund site; a judge rejected residents' challenges in June, construction began in July, and after a brief township stop-work order over soil-safety review, East Whiteland allowed work to resume in late July 2026.",
+   "sources": [
+    {
+     "name": "Philadelphia Inquirer (May 5, 2026) - developers revert to 1.5M sq ft plan",
+     "url": "https://www.inquirer.com/news/pennsylvania/east-whiteland-data-center-20260505.html"
+    },
+    {
+     "name": "Food & Water Watch (May 5, 2026) - expanded application withdrawn",
+     "url": "https://www.foodandwaterwatch.org/2026/05/05/east-whiteland-pa-data-center-developer-withdraws-application-after-fierce-public-opposition/"
+    },
+    {
+     "name": "Philadelphia Inquirer (June 11, 2026) - judge denies challenges",
+     "url": "https://www.inquirer.com/news/pennsylvania/east-whiteland-data-center-judge-denial-challenges-20260611.html"
+    },
+    {
+     "name": "Philadelphia Inquirer (July 30, 2026) - work allowed to resume",
+     "url": "https://www.inquirer.com/news/pennsylvania/east-whiteland-data-center-project-20260730.html"
+    }
+   ]
+  },
+  {
+   "id": "east-vincent-pennhurst",
+   "name": "Pennhurst campus",
+   "developer": "Penn Hurst Holdings DE LLC",
+   "jurisdiction": "East Vincent Township (Chester County), PA",
+   "state": "PA",
+   "lat": 40.172,
+   "lon": -75.567,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2026-05-21",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Township supervisors unanimously denied the conditional-use application for the 1.9M sq ft campus on 123 acres of the historic Pennhurst property on May 21, 2026 (written decision June 2). The developer appealed to the Chester County Court of Common Pleas on June 26, 2026; no hearing date was set as of early August 2026.",
+   "sources": [
+    {
+     "name": "Philadelphia Inquirer (May 22, 2026) - denial coverage",
+     "url": "https://www.inquirer.com/news/pennsylvania/pennhurst-data-center-rejected-east-vincent-20260522.html"
+    },
+    {
+     "name": "WFMZ - East Vincent rejects Pennhurst proposal, developer plans court fight",
+     "url": "https://www.wfmz.com/news/area/southeastern-pa/northern-chester-county/east-vincent-rejects-pennhurst-data-center-proposal-developer-plans-to-take-fight-to-court/article_a2a347e4-0a34-4842-b366-cdb732326783.html"
+    },
+    {
+     "name": "Vista Today (July 2026) - appeal filed in Chester County court",
+     "url": "https://vista.today/2026/07/pennhurst-data-center-appeal-east-vincent/"
+    }
+   ]
+  },
+  {
+   "id": "blakely-campus",
+   "name": "Blakely campus",
+   "developer": "Jim Marzolino and Alpesh Patel",
+   "jurisdiction": "Blakely (Lackawanna County), PA",
+   "state": "PA",
+   "lat": 41.481,
+   "lon": -75.595,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2025-09-12",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Developers withdrew the rezoning request for the roughly 200-acre, four-building campus in September 2025, days before a scheduled hearing, after the borough declined to hold another informational meeting amid heavy resident opposition; no refiled data center application was found as of August 2026. The developers said they would continue generic site work (clearing, grading) under existing zoning, but no relocation of the project is documented.",
+   "sources": [
+    {
+     "name": "Fox56 (Sept 12, 2025) - developers withdraw zoning request",
+     "url": "https://fox56.com/news/local/blakely-data-center-developers-withdraw-zoning-request"
+    },
+    {
+     "name": "WNEP - data center proposal for Blakely withdrawn",
+     "url": "https://www.wnep.com/article/news/local/lackawanna-county/data-center-developer-withdraws-proposal-for-blakely-construction/523-976b3357-7ae2-4da0-b0f5-55eb44fb7afa"
+    },
+    {
+     "name": "Times-Tribune via Yahoo - withdrawn days ahead of zoning hearing",
+     "url": "https://www.yahoo.com/news/articles/data-center-project-withdrawn-blakely-190200268.html"
+    },
+    {
+     "name": "Lackawanna County - withdrawal notice",
+     "url": "https://www.lackawannacounty.com/news/blakely-data-center-developers-withdraw-zoning-request"
+    }
+   ]
+  },
+  {
+   "id": "plymouth-township-dc",
+   "name": "Plymouth Township data center",
+   "developer": "Brian J. O'Neill",
+   "jurisdiction": "Plymouth Township (Montgomery County), PA",
+   "state": "PA",
+   "lat": 40.095,
+   "lon": -75.288,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2025-11-17",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": 6,
+   "confidence": "high",
+   "note": "The 2M sq ft proposal for the closed Cleveland-Cliffs steel mill at 900 Conshohocken Road was withdrawn November 17, 2025 over a legal-standing defect (unfinalized agreement of sale), then resubmitted roughly six months later in spring 2026. Zoning hearing board proceedings were still underway and contentious as of a packed August 6, 2026 hearing, with the township council, county commissioners, and Governor Shapiro publicly opposed, and the developer has since filed a substantive validity challenge arguing the zoning ordinance fails to provide for data centers. No decision has been issued.",
+   "sources": [
+    {
+     "name": "6abc (Nov 18, 2025) - developer withdraws plan after legal issue",
+     "url": "https://6abc.com/post/developer-withdraws-plymouth-township-data-center-plan-legal-issue-halts-zoning-meeting/18167772/"
+    },
+    {
+     "name": "Philadelphia Inquirer (Aug 7, 2026) - raucous zoning hearing on O'Neill plan",
+     "url": "https://www.inquirer.com/real-estate/commercial/plymouth-township-data-center-brian-oneill-20260807.html"
+    },
+    {
+     "name": "WHYY - proposal resubmitted six months after forced withdrawal",
+     "url": "https://whyy.org/articles/conshohocken-data-center-proposal-plymouth-township-pushes-back/"
+    },
+    {
+     "name": "Montco Today (July 2026) - 43 conditions dispute",
+     "url": "https://montco.today/2026/07/plymouth-township-data-center-fight-oneill-conditions/"
+    }
+   ]
+  },
+  {
+   "id": "edgecombe-ess",
+   "name": "Kingsboro megasite project",
+   "developer": "Energy Storage Solutions",
+   "jurisdiction": "Edgecombe County (Tarboro), NC",
+   "state": "NC",
+   "lat": 35.897,
+   "lon": -77.536,
+   "claimed_capex_usd_b": 19.2,
+   "capex_label": "developer-announced",
+   "mw": 900,
+   "decision_date": "2025-09-08",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Tarboro's town council denied the special-use permit 7-1 on September 8, 2025, the county denied a separate permit, and ESS's withdrawal was announced at the July 6, 2026 commissioners meeting, with the company citing investors' push toward 'friendlier communities' and saying it had reached a settlement to drop its lawsuit against Tarboro. No relocation of the $19.2B Kingsboro project has been documented.",
+   "sources": [
+    {
+     "name": "Data Center Dynamics",
+     "url": "https://www.datacenterdynamics.com/en/news/north-carolina-ai-data-center-proposal-withdrawn-as-county-officials-mull-moratorium/"
+    },
+    {
+     "name": "Bisnow",
+     "url": "https://www.bisnow.com/national/news/data-center-development/north-carolina-data-center-canceled-as-county-debates-moratorium-135338"
+    },
+    {
+     "name": "CBS17",
+     "url": "https://www.cbs17.com/news/local-news/tarboro-data-center-project-appeals-rejection-by-town-council-saying-site-would-generate-11-million-per-year-in-revenue/"
+    },
+    {
+     "name": "My Tarboro Today",
+     "url": "https://mytarborotoday.com/council-denies-data-center-application-applicant-promises-appeal-in-s-p2757-106.htm"
+    },
+    {
+     "name": "Rocky Mount Telegram / Reflector",
+     "url": "http://www.reflector.com/news/local/company-that-eyed-edgecombe-for-data-center-withdraws/article_44994c99-d9ae-52de-9d1a-32475164f8bb.html"
+    },
+    {
+     "name": "WRAL",
+     "url": "https://www.wral.com/news/local/tarboro-town-council-rejects-data-center-plan-environmental-community-concerns-sept-2025/"
+    }
+   ]
+  },
+  {
+   "id": "san-marcos-rezoning",
+   "name": "San Marcos data center rezoning",
+   "developer": "Highlander SM One LLC",
+   "jurisdiction": "San Marcos (Hays County), TX",
+   "state": "TX",
+   "lat": 29.883,
+   "lon": -97.941,
+   "claimed_capex_usd_b": 1.5,
+   "capex_label": "developer-announced",
+   "mw": null,
+   "decision_date": "2026-02-18",
+   "outcome": "died",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Council denied Highlander SM One's ~200-acre rezoning 5-2 near 3 a.m. on February 18, 2026 after roughly nine hours of testimony, the site's second failed application since August 2025, then voted 4-3 on June 16, 2026 to remove data centers from every zoning district, making San Marcos the first Texas city with a citywide ban. The $1.5B figure is the project's reported potential valuation; no relocation has been documented, though a state senator has threatened a legal challenge to the ban itself.",
+   "sources": [
+    {
+     "name": "Community Impact",
+     "url": "https://communityimpact.com/austin/san-marcos-buda-kyle/government/2026/06/17/san-marcos-council-votes-to-prohibit-data-centers-in-all-zoning-districts/"
+    },
+    {
+     "name": "The University Star",
+     "url": "https://universitystar.com/34645/news/city-council-votes-to-deny-francis-harris-lane-data-center-project/"
+    },
+    {
+     "name": "Texas Tribune",
+     "url": "https://www.texastribune.org/2026/06/30/texas-san-marcos-data-center-ban-zoning-laws/"
+    },
+    {
+     "name": "KVUE",
+     "url": "https://www.kvue.com/article/news/local/hays-county/san-marcos-data-center-debate/269-26ebd1b0-1dfa-443b-b5ec-05016bcc0b7c"
+    },
+    {
+     "name": "KXAN",
+     "url": "https://www.kxan.com/news/local/san-marcos/state-senator-plans-to-challenge-san-marcos-data-center-ban-says-city-lacks-legal-authority/"
+    },
+    {
+     "name": "Spectrum News",
+     "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/02/18/san-marcos-city-council-rejects-data-center-land-plan"
+    }
+   ]
+  },
+  {
+   "id": "coweta-project-sail",
+   "name": "Project Sail",
+   "developer": "Prologis (Atlas Development LLC)",
+   "jurisdiction": "Coweta County, GA",
+   "state": "GA",
+   "lat": 33.35,
+   "lon": -84.76,
+   "claimed_capex_usd_b": 17,
+   "capex_label": "developer-announced",
+   "mw": 900,
+   "decision_date": "2026-05-05",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": null,
+   "confidence": "high",
+   "note": "Commissioners approved the 829-acre, 900MW, $17B campus 3-2 on April 7, 2026, and nearly 20 residents sued in Coweta County Superior Court on May 5, 2026 to void the rezoning over procedural and wetlands-review claims. No court ruling had been reported as of early August 2026, and the county has separately kept a freeze on new data center applications.",
+   "sources": [
+    {
+     "name": "The Citizen",
+     "url": "https://thecitizen.com/2026/05/11/coweta-residents-sue-to-block-project-sail-data-center/"
+    },
+    {
+     "name": "Data Center Dynamics",
+     "url": "https://www.datacenterdynamics.com/en/news/prologis-900mw-project-sail-gets-the-go-ahead-in-coweta-county-georgia/"
+    },
+    {
+     "name": "Atlanta Journal-Constitution",
+     "url": "https://www.ajc.com/business/2026/04/coweta-votes-to-turn-this-800-acre-forest-into-17b-data-center-campus/"
+    },
+    {
+     "name": "WSB-TV",
+     "url": "https://www.wsbtv.com/news/local/residents-sue-county-government-developer-over-17b-data-center-construction/FJP7PCHLCNCYBGQ6HGGQJWABSE/"
+    },
+    {
+     "name": "Times-Herald (Newnan)",
+     "url": "https://www.times-herald.com/news/coweta-extends-data-center-freeze-amid-competing-resident-demands/article_8eadd95e-6b70-4217-a79f-525e424cd009.html"
+    }
+   ]
+  },
+  {
+   "id": "stokes-county-1800",
+   "name": "Stokes County 1,800-acre project (Project Delta)",
+   "developer": "Engineered Land Solutions",
+   "jurisdiction": "Stokes County (Walnut Cove), NC",
+   "state": "NC",
+   "lat": 36.295,
+   "lon": -80.141,
+   "claimed_capex_usd_b": null,
+   "capex_label": null,
+   "mw": null,
+   "decision_date": "2026-03-12",
+   "outcome": "pending_litigating",
+   "destination": null,
+   "followup": null,
+   "months_lost": 7,
+   "confidence": "high",
+   "note": "Commissioners approved the 1,848-acre Project Delta rezoning on January 12, 2026, then voided it in April 2026 after a March 12 SCSJ/SELC lawsuit exposed a defective hearing notice. The board rejected a recommended moratorium and re-opened a permitting path on July 13, 2026. The developer resubmitted the week of July 20, the planning board recommended denial of the new application on August 14, 2026, and the commissioners' public hearing is set for September 8, so nothing has been rebuilt or re-approved yet.",
+   "sources": [
+    {
+     "name": "Clean Water for North Carolina",
+     "url": "https://cwfnc.org/stokes/"
+    },
+    {
+     "name": "Southern Coalition for Social Justice explainer",
+     "url": "https://southerncoalition.org/resource/stokes-county-and-data-centers-explainer/"
+    },
+    {
+     "name": "FOX8 WGHP",
+     "url": "https://myfox8.com/news/north-carolina/stokes/stokes-county-votes-to-start-proposed-data-center-development-over-again-after-lawsuit/"
+    },
+    {
+     "name": "WFMY News 2",
+     "url": "https://www.wfmynews2.com/article/news/local/stokes-county-commissioners-reject-data-center-moratorium-project-delta-looms/83-dd17b48a-79f1-442c-a13c-afca1868db37"
+    },
+    {
+     "name": "Inside Climate News",
+     "url": "https://insideclimatenews.org/news/19032026/north-carolina-county-data-center-rezoning-lawsuit/"
+    }
+   ]
+  }
+ ]
+}

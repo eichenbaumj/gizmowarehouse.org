@@ -1,0 +1,18 @@
+{
+  "_comment": "Manual corrections from the 2026-08-09 spot-check and dedup eyeball (see raw/chores_verdicts.json). Applied by build_actions.build_dct_actions. Keys are the merged dataset ids (dct-<upstream id>).",
+  "exclude": {
+    "dct-oldham-county-ky-moratorium-2026-07-01": "Duplicate of mn:ky-oldham-county-fiscal-court-2025 — same 150-day moratorium (KOC 25-910-508) with the year shifted to 2026 in DCT; passage was July 1, 2025 per Louisville Public Media (2025-07-02), WHAS11, and the Oldham Era.",
+    "dct-cherokee-county-sc-2025-06-01": "Miscategorized: the row describes the Cielo Digital Infrastructure project APPROVAL with incentives (SC Governor's release 2025-06-04; county tax breaks approved 2025-06-23), not a restriction. Cherokee County's separate Jan 2026 data-center limits are a different action on a different date and can be added as their own row if sourced."
+  },
+  "patch": {
+    "dct-east-manchester-township-pa-2025-10-14": {
+      "date": "2026-04-08",
+      "status": "enacted",
+      "_reason": "The Oct 14, 2025 hearing was continued; the board passed a curative amendment Oct 21, 2025, and adopted both the Data Center Regulation Ordinance and the Overlay District Ordinance on April 8, 2026 per the township's official timeline."
+    },
+    "dct-bernards-township-nj-ban-2026-06-18": {
+      "date": "2026-06-23",
+      "_reason": "Ordinance #2599 passed first reading 2026-05-26 and was adopted on final reading 2026-06-23 per the township clerk's public notice (not 06-18/06-24)."
+    }
+  }
+}

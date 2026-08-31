@@ -1,0 +1,27 @@
+soc_prefix,workgroup,workgroup_label,note
+25,education,Teachers & instructors,SOC 25 educational instruction & library (mostly teachers)
+33,protective,"Police, fire & corrections",SOC 33 protective service (incl. guards on the private side)
+11,management,Management,SOC 11 management occupations
+43,admin,Office & admin,SOC 43 office & administrative support (incl. postal)
+29,healthcare,Healthcare practitioners,SOC 29 health diagnosing/treating practitioners
+21,social,Community & social service,SOC 21 counselors/social workers/clergy
+53,transportation,Transportation,SOC 53 transportation & material moving (bus/transit/truck)
+47,trades,Skilled trades,SOC 47 construction & extraction
+49,trades,Skilled trades,SOC 49 installation/maintenance/repair (folds into trades)
+37,building_grounds,Building & grounds,SOC 37 building cleaning & grounds maintenance
+132,finance,Finance & accounting,SOC 13-2 financial specialists (must precede 13)
+13,business_ops,Business operations,SOC 13 business & financial operations (HR/analysts/buyers)
+151,tech,Software & IT,SOC 15-1 computer occupations (must precede 15)
+15,science,"Science, math & research",SOC 15-2 mathematical (folds into science bucket)
+172,engineering,Engineering,SOC 17-2 engineers (must precede 17)
+17,engineering,Engineering,SOC 17 architects/surveyors/drafters (fold to engineering)
+23,legal,Legal,SOC 23 legal occupations
+31,healthcare_support,Healthcare support,SOC 31 aides/orderlies/assistants
+19,science,"Science, math & research",SOC 19 life/physical/social science
+51,production,Production,SOC 51 production occupations
+41,sales,Sales,SOC 41 sales & related
+35,food,Food service,SOC 35 food preparation & serving
+39,personal_care,Personal care,SOC 39 personal care & service
+27,arts_media,"Arts, design & media",SOC 27 arts/design/entertainment/media
+55,military,Active-duty military,SOC 55 military-specific occupations (armed forces are reclassified to military by ESR in stage 07)
+45,farming,Farming & forestry,SOC 45 farming/fishing/forestry

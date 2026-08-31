@@ -1,0 +1,2230 @@
+{
+  "_meta": {
+    "version": "v9.0-2026-06-02",
+    "source": "KFF May 2026 implementation survey (43 states + DC responded) + state eligibility-system vendor public filings + CMS T-MSIS Technical Assessment summary 2025-Q4",
+    "purpose": "Per-state composite 'ex parte verification capability' score (0-100). Higher scores indicate the state's eligibility system can verify employment, exemption status, and qualifying activity against existing administrative data without forcing the enrollee to re-prove what the state already knows. Lower scores indicate Arkansas-grade reliance on enrollee self-reporting through a portal.",
+    "scoring_formula": "Observed-rate-led composite. Score A (OBSERVED ex parte, 0-100): the state's actual share of Medicaid renewals completed ex parte, from CMS eligibility-processing data (2023-03 to 2026-02), × 100. This is the dominant factor — a realized measure of auto-renewal capability, not a proxy. Score B (data sources, 0-100): wage 30pts (ui_wage 30; income-verification tools — credit-agency, consent-based — are not scored, see §3.5) + frailty 30pts (medicaid_claims 20 + behavioral_health_mco 10) + other 20pts (snap_tanf 5 + vital_records 4 + workforce_dev 4 + corrections 4 + child_welfare 3) — the work-requirement-specific feeds that income-renewal ex parte didn't test. Score C (historical churn, 0-100): round((1 - prior_section_1115_denial_rate) × 100); neutral 50 prior for states without documented prior work-requirement experience. Composite = round(0.50 × Score A + 0.35 × Score B + 0.15 × Score C). A legacy vendor-tier capability score is retained as context only and does not feed the composite. Bands: composite ≥ 70 'low churn', 45-69 'mid', < 45 'high churn'. See METHODOLOGY.md §3.5.",
+    "data_source_flags": {
+      "medicaid_claims_match": "State will use Medicaid claims data to auto-identify medically-frail enrollees (KFF May 2026 survey Q14).",
+      "behavioral_health_mco_match": "State will use behavioral health MCO enrollment to auto-identify SUD/disabling-mental-disorder exemptions (KFF Q15).",
+      "ui_wage_match": "State will use unemployment-insurance wage records for employment verification (T-MSIS technical assessment + KFF Q16).",
+      "snap_tanf_compliance_match": "State will use SNAP/TANF work-compliance rolls to auto-apply §1902(xx)(2)(F) exemption (KFF Q17).",
+      "corrections_records_match": "State has data-sharing agreement with state DOC for recent-incarceration exemption auto-application (KFF Q18; secondary research where unanswered).",
+      "child_welfare_records_match": "State will use child-welfare / vital-records data to auto-apply caregiver-of-minor exemption (KFF Q19).",
+      "self_attestation_accepted": "State will accept enrollee self-attestation (with subsequent audit) for activity hours and exemption status, as federally permitted under §1902(xx)(4)(D) (KFF Q20). v4 note: this flag now contributes to Score A (core capability — self_attestation_policy 0-15) rather than Score B (data sources), reflecting that self-attestation is a state policy lever, not a data source.",
+      "vital_records_match": "State vital-records department integration with the eligibility system. Drives pregnancy exemption auto-application via birth-registry feeds and supports caregiver-of-minor verification independently of child-welfare records. v4 addition; research-in-progress, only documented top-tier states populated TRUE.",
+      "workforce_dev_records_match": "State DOL / WIOA training database integration. Drives qualifying-activity auto-verification for adults in approved workforce-development programs (OBBBA §1902(xx)(2)(C)). v4 addition; research-in-progress, only documented top-tier states populated TRUE."
+    },
+    "integration_bonus_basis": "States with documented modern integrated eligibility systems (CalSAWS, IES, IE, HBE) and prior CMS Innovator-pathway grants for data integration get a 20-point bonus reflecting that the 'will use' flags are operationally backed. States with legacy systems (MMIS-only, late-generation Cúram, in-house) where T-MSIS quality scores in 2024 were below the median get 0 bonus.",
+    "non_expansion_states": "10 non-expansion states (AL, FL, GA, KS, MS, SC, TN, TX, WI, WY) receive score=null. The OBBBA work requirement does not apply to their working-age Medicaid population through the expansion pathway.",
+    "uncertainty": "The observed ex parte rate measures realized income/eligibility auto-renewal during the unwinding — necessary but not sufficient for work-requirement verification, which also needs the hours and exemption feeds captured in Score B. Treat the composite as a relative state-by-state ranking, not a prediction of work-requirement admin-churn rates. Score C is documented for the four states with prior Section 1115 work-requirement experience (AR, NH, GA, KY) and is a neutral 50 prior elsewhere.",
+    "observed_ex_parte_source": "CMS State Medicaid & CHIP Eligibility Processing Data (data.medicaid.gov 5abea2e0), share of completed renewals conducted ex parte, volume-weighted 2023-03 to 2026-02. National ~66.6%."
+  },
+  "states": {
+    "01": {
+      "abbr": "AL",
+      "score": null,
+      "notes": "Non-expansion state; provision does not apply through expansion pathway.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "MMIS legacy",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "02": {
+      "abbr": "AK",
+      "score": 57,
+      "notes": "Survey response: undecided on most data matches. Small population, limited integration history.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "ARIES (planned migration)",
+      "scores": {
+        "composite": 57,
+        "observed_ex_parte": 60,
+        "core_capability": 18,
+        "data_sources": 55,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 5,
+        "account_matching": 4,
+        "deduplication": 3,
+        "identity_proofing": 2,
+        "operational_sla": 4,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5984
+    },
+    "04": {
+      "abbr": "AZ",
+      "score": 75,
+      "notes": "Health-e-Arizona Plus has mature wage and SNAP integration; SUD/BH and corrections weaker.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 15,
+      "system_vendor": "HEAplus / Cúram",
+      "scores": {
+        "composite": 75,
+        "observed_ex_parte": 88,
+        "core_capability": 54,
+        "data_sources": 68,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 11,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 8
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.8839
+    },
+    "05": {
+      "abbr": "AR",
+      "score": 69,
+      "notes": "ARIES system; Arkansas's 2018 Section 1115 work-requirement experience showed extensive data-match gaps. KFF survey shows minimal expansion of data sources for OBBBA implementation. Early-implementer Jul 2026; high admin-churn precedent.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 0,
+      "system_vendor": "ARIES (Northrop Grumman, legacy)",
+      "scores": {
+        "composite": 69,
+        "observed_ex_parte": 79,
+        "core_capability": 14,
+        "data_sources": 55,
+        "historical_churn": 70
+      },
+      "core_components": {
+        "system_integration": 5,
+        "account_matching": 4,
+        "deduplication": 3,
+        "identity_proofing": 2,
+        "operational_sla": 0,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "low",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "low"
+      },
+      "churn_band": "mid",
+      "historical_experience": {
+        "denial_rate": 0.3,
+        "implementation_window": "2018-06 to 2019-03 (federal court halt)",
+        "people_affected": "~18,164 dropped of ~60,700 subject (ages 30-49, Dec 2018) in 9 months",
+        "primary_source": "Sommers, BD, et al. 2019. \"Medicaid Work Requirements — Results from the First Year in Arkansas.\" NEJM 381:1073-1082. doi:10.1056/NEJMsr1901772",
+        "context_note": "Arkansas's 2018 Section 1115 demonstration was the only state where work-requirement disenrollments actually happened at scale before federal courts halted further implementation. ~18,164 of the ~60,700 adults subject in a given month (ages 30-49, Dec 2018) lost coverage — roughly 30% of those subject, about 18% of the ~100,000 targeted (Sommers et al. 2019, NEJM). That ~30% per-cycle procedural-denial rate is a reasonable ceiling-of-what-can-go-wrong reference for OBBBA, given that Arkansas was an early implementer with limited time and integration."
+      },
+      "observed_ex_parte_rate": 0.7946
+    },
+    "06": {
+      "abbr": "CA",
+      "score": 74,
+      "notes": "CalSAWS is the most mature integrated eligibility system in the country; full UI/SNAP/TANF wage match operational since 2023. Survey: all 8 data sources will be used. Integration with corrections via CalDataHub.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": true
+      },
+      "integration_bonus": 20,
+      "system_vendor": "CalSAWS",
+      "scores": {
+        "composite": 74,
+        "observed_ex_parte": 76,
+        "core_capability": 100,
+        "data_sources": 80,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 15,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 20
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.7566
+    },
+    "08": {
+      "abbr": "CO",
+      "score": 66,
+      "notes": "CBMS has good UI and SNAP integration; modernization complete 2024. Self-attestation explicitly allowed under state plan amendment.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": true
+      },
+      "integration_bonus": 20,
+      "system_vendor": "CBMS",
+      "scores": {
+        "composite": 66,
+        "observed_ex_parte": 63,
+        "core_capability": 100,
+        "data_sources": 76,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 15,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 16
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.628
+    },
+    "09": {
+      "abbr": "CT",
+      "score": 75,
+      "notes": "ConneCT/ImpaCT has SNAP/TANF and UI integration. BH and corrections weaker.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 15,
+      "system_vendor": "ImpaCT",
+      "scores": {
+        "composite": 75,
+        "observed_ex_parte": 88,
+        "core_capability": 69,
+        "data_sources": 68,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 11,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 8
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.8762
+    },
+    "10": {
+      "abbr": "DE",
+      "score": 57,
+      "notes": "ASSIST has UI and SNAP integration; smaller-state limited BH and corrections.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "ASSIST",
+      "scores": {
+        "composite": 57,
+        "observed_ex_parte": 53,
+        "core_capability": 66,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 8,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5283
+    },
+    "11": {
+      "abbr": "DC",
+      "score": 76,
+      "notes": "DCAS has full SNAP/TANF integration; BH and corrections via OCFS/DOC data-sharing.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "DCAS",
+      "scores": {
+        "composite": 76,
+        "observed_ex_parte": 87,
+        "core_capability": 64,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 8,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.8699
+    },
+    "12": {
+      "abbr": "FL",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "ACCESS Florida",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "13": {
+      "abbr": "GA",
+      "score": null,
+      "notes": "Non-expansion state (Pathways to Coverage covers a separate eligibility group with its own state-specific work req through 2026-12-31).",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "Gateway",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null,
+      "historical_experience": {
+        "denial_rate": 0.8,
+        "implementation_window": "2023-07 to present",
+        "people_affected": "~5,500 enrolled of 100,000+ projected eligible in first 18 months",
+        "primary_source": "KFF tracking of GA Pathways to Coverage enrollment; HHS OIG audit findings 2024-2025",
+        "context_note": "Georgia is a non-expansion state, but Pathways to Coverage is a Section 1115 limited-expansion-with-work-requirement program — the most directly relevant operational analog for OBBBA. Enrollment has lagged projections by 90%+. This historical score is documented for methodology reference but does not affect a composite score (GA receives null under the standard pipeline)."
+      }
+    },
+    "15": {
+      "abbr": "HI",
+      "score": 68,
+      "notes": "KOLEA has Medicaid claims + UI match; smaller-state integration limits.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": false,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 15,
+      "system_vendor": "KOLEA",
+      "scores": {
+        "composite": 68,
+        "observed_ex_parte": 79,
+        "core_capability": 82,
+        "data_sources": 60,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 11,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 0
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.7868
+    },
+    "16": {
+      "abbr": "ID",
+      "score": 59,
+      "notes": "iBES has UI and SNAP integration; limited BH/corrections.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "iBES",
+      "scores": {
+        "composite": 59,
+        "observed_ex_parte": 65,
+        "core_capability": 66,
+        "data_sources": 55,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 8,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.6547
+    },
+    "17": {
+      "abbr": "IL",
+      "score": 72,
+      "notes": "IES is fully integrated; SUD/BH via IDHS; corrections via IDOC data-share since 2022.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 20,
+      "system_vendor": "IES",
+      "scores": {
+        "composite": 72,
+        "observed_ex_parte": 79,
+        "core_capability": 85,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 15,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.791
+    },
+    "18": {
+      "abbr": "IN",
+      "score": 62,
+      "notes": "ICES is on the older Cúram stack; KFF survey shows IN declining most data-match expansions for OBBBA. Indiana is one of 4 confirmed non-adopters of the high-unemployment hardship exception; signals tight implementation posture.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": false,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 0,
+      "system_vendor": "ICES (Cúram)",
+      "scores": {
+        "composite": 62,
+        "observed_ex_parte": 74,
+        "core_capability": 14,
+        "data_sources": 50,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 5,
+        "account_matching": 4,
+        "deduplication": 3,
+        "identity_proofing": 2,
+        "operational_sla": 0,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 0
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "low",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.744
+    },
+    "19": {
+      "abbr": "IA",
+      "score": 56,
+      "notes": "ABE has UI and SNAP integration; KFF survey shows IA limiting data-match expansion. Non-adopter of high-unemployment hardship exception; early implementer Dec 2026.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 0,
+      "system_vendor": "ABE",
+      "scores": {
+        "composite": 56,
+        "observed_ex_parte": 59,
+        "core_capability": 43,
+        "data_sources": 55,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 0,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5913
+    },
+    "20": {
+      "abbr": "KS",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "KEES",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "21": {
+      "abbr": "KY",
+      "score": 75,
+      "notes": "KYHBE / kynect has UI and SNAP integration; BH via DBHDID data-share.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "kynect",
+      "scores": {
+        "composite": 75,
+        "observed_ex_parte": 88,
+        "core_capability": 64,
+        "data_sources": 68,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 8,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 8
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "historical_experience": {
+        "denial_rate": null,
+        "implementation_window": "2018 proposal; halted by federal court before implementation",
+        "people_affected": "none — never implemented",
+        "primary_source": "Stewart v. Azar (D.D.C. 2018) — district court vacated CMS approval before disenrollments began",
+        "context_note": "Kentucky's Section 1115 work requirement was approved by CMS in 2018 but vacated by a federal district court before any disenrollments occurred. No operational data exists; we apply the neutral 50 prior."
+      },
+      "observed_ex_parte_rate": 0.8792
+    },
+    "22": {
+      "abbr": "LA",
+      "score": 69,
+      "notes": "LaMEDS modernization underway; UI integration operational, BH partial.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "LaMEDS",
+      "scores": {
+        "composite": 69,
+        "observed_ex_parte": 78,
+        "core_capability": 47,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.7825
+    },
+    "23": {
+      "abbr": "ME",
+      "score": 63,
+      "notes": "ACES integrated with SNAP/TANF; UI match operational. BH via DHHS internal data.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "ACES",
+      "scores": {
+        "composite": 63,
+        "observed_ex_parte": 63,
+        "core_capability": 62,
+        "data_sources": 68,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 8
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.6277
+    },
+    "24": {
+      "abbr": "MD",
+      "score": 71,
+      "notes": "MA EE has full SNAP/TANF/UI integration; BH via BHA. Modern eligibility system since 2022 redesign.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": true,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 15,
+      "system_vendor": "MA EE",
+      "scores": {
+        "composite": 71,
+        "observed_ex_parte": 73,
+        "core_capability": 81,
+        "data_sources": 76,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 11,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 16
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.7299
+    },
+    "25": {
+      "abbr": "MA",
+      "score": 72,
+      "notes": "HIX/IES (HBE) is among the most mature integrated systems; full data matching across the 8 sources operational since 2024.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": true
+      },
+      "integration_bonus": 15,
+      "system_vendor": "HIX-IES",
+      "scores": {
+        "composite": 72,
+        "observed_ex_parte": 72,
+        "core_capability": 96,
+        "data_sources": 80,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 11,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 20
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.7215
+    },
+    "26": {
+      "abbr": "MI",
+      "score": 65,
+      "notes": "Bridges has UI and SNAP integration; BH via MDHHS internal data; corrections data-share active since 2023.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "Bridges / MiBridges",
+      "scores": {
+        "composite": 65,
+        "observed_ex_parte": 67,
+        "core_capability": 79,
+        "data_sources": 69,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 8,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 9
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "low",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.6733
+    },
+    "27": {
+      "abbr": "MN",
+      "score": 74,
+      "notes": "METS has full SNAP/TANF/UI integration; BH/SUD via DHS; corrections via DOC data-share.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": true
+      },
+      "integration_bonus": 15,
+      "system_vendor": "METS",
+      "scores": {
+        "composite": 74,
+        "observed_ex_parte": 76,
+        "core_capability": 96,
+        "data_sources": 80,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 11,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 20
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.7594
+    },
+    "28": {
+      "abbr": "MS",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "MEDS",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "29": {
+      "abbr": "MO",
+      "score": 67,
+      "notes": "FAMIS has limited data integration. KFF survey: Missouri planning minimum data-match infrastructure. Non-adopter of high-unemployment hardship exception.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": false,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "FAMIS",
+      "scores": {
+        "composite": 67,
+        "observed_ex_parte": 84,
+        "core_capability": 18,
+        "data_sources": 50,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 5,
+        "account_matching": 4,
+        "deduplication": 3,
+        "identity_proofing": 2,
+        "operational_sla": 4,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 0
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "low",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.8439
+    },
+    "30": {
+      "abbr": "MT",
+      "score": 54,
+      "notes": "CHIMES has UI integration; smaller-state limited BH/corrections. Early implementer Jul 2026.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "CHIMES",
+      "scores": {
+        "composite": 54,
+        "observed_ex_parte": 55,
+        "core_capability": 47,
+        "data_sources": 55,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 10,
+        "account_matching": 8,
+        "deduplication": 6,
+        "identity_proofing": 4,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5461
+    },
+    "31": {
+      "abbr": "NE",
+      "score": 62,
+      "notes": "N-FOCUS has UI integration; modernization underway. Early implementer May 2026 (live now); empirical churn data should land Q3 2026.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "N-FOCUS",
+      "scores": {
+        "composite": 62,
+        "observed_ex_parte": 63,
+        "core_capability": 32,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 10,
+        "account_matching": 8,
+        "deduplication": 6,
+        "identity_proofing": 4,
+        "operational_sla": 4,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.6301
+    },
+    "32": {
+      "abbr": "NV",
+      "score": 72,
+      "notes": "Nevada ACCESS has UI and SNAP integration; BH partial.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "ACCESS Nevada",
+      "scores": {
+        "composite": 72,
+        "observed_ex_parte": 84,
+        "core_capability": 62,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.8398
+    },
+    "33": {
+      "abbr": "NH",
+      "score": 71,
+      "notes": "NH EASY has UI and SNAP integration; modest scale limits BH/corrections.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "NH EASY",
+      "scores": {
+        "composite": 71,
+        "observed_ex_parte": 76,
+        "core_capability": 62,
+        "data_sources": 65,
+        "historical_churn": 70
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "low"
+      },
+      "churn_band": "low",
+      "historical_experience": {
+        "denial_rate": 0.3,
+        "implementation_window": "2019-06 to 2019-07 (federal court halt after one month)",
+        "people_affected": "~17,000 reportedly at risk of disenrollment when court halted further action",
+        "primary_source": "Philbrick v. Azar (D.D.C. 2019); KFF NH implementation tracker 2019",
+        "context_note": "New Hampshire's Granite Advantage work requirement reached one month of active enforcement before federal court halt. ~17K of 25K subject enrollees were reportedly heading for non-compliance disenrollment when stopped. We use a generous 30% projected denial (score 70) because the program was halted before steady-state operations could stabilize; the early-implementation churn rate is not directly comparable to what NH would have produced at 12+ months."
+      },
+      "observed_ex_parte_rate": 0.7553
+    },
+    "34": {
+      "abbr": "NJ",
+      "score": 60,
+      "notes": "NJ FamilyCare has UI/SNAP integration; BH via DMHAS; corrections via NJDOC data-share.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "NJ FamilyCare",
+      "scores": {
+        "composite": 60,
+        "observed_ex_parte": 54,
+        "core_capability": 64,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 8,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5401
+    },
+    "35": {
+      "abbr": "NM",
+      "score": 62,
+      "notes": "ASPEN has UI/SNAP integration; BH via HSD/BHSD partial.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "ASPEN",
+      "scores": {
+        "composite": 62,
+        "observed_ex_parte": 63,
+        "core_capability": 62,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.6331
+    },
+    "36": {
+      "abbr": "NY",
+      "score": 62,
+      "notes": "NY State of Health (NYSoH) + WMS-Common Benefit Identification have full data matching across the 8 sources; corrections via DOCCS data-share since 2021.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 20,
+      "system_vendor": "NYSoH / WMS",
+      "scores": {
+        "composite": 62,
+        "observed_ex_parte": 55,
+        "core_capability": 100,
+        "data_sources": 76,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 15,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 16
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5512
+    },
+    "37": {
+      "abbr": "NC",
+      "score": 81,
+      "notes": "NCFAST has UI/SNAP integration; BH via DHHS partial; corrections via NCDPS data-share recent.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "NCFAST",
+      "scores": {
+        "composite": 81,
+        "observed_ex_parte": 99,
+        "core_capability": 64,
+        "data_sources": 69,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 8,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 9
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.9947
+    },
+    "38": {
+      "abbr": "ND",
+      "score": 50,
+      "notes": "Vision has UI/SNAP integration; smaller-state BH/corrections limited.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "Vision",
+      "scores": {
+        "composite": 50,
+        "observed_ex_parte": 47,
+        "core_capability": 47,
+        "data_sources": 55,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 10,
+        "account_matching": 8,
+        "deduplication": 6,
+        "identity_proofing": 4,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.4744
+    },
+    "39": {
+      "abbr": "OH",
+      "score": 73,
+      "notes": "OBIE has UI/SNAP integration; BH via ODMH partial; recent corrections data-share.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "OBIE / Ohio Benefits",
+      "scores": {
+        "composite": 73,
+        "observed_ex_parte": 80,
+        "core_capability": 78,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 8,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.8011
+    },
+    "40": {
+      "abbr": "OK",
+      "score": 50,
+      "notes": "Soonercare/IMS has UI integration; KFF survey shows OK limiting data-match expansion. Non-adopter of high-unemployment hardship exception.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": false,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "Soonercare IMS",
+      "scores": {
+        "composite": 50,
+        "observed_ex_parte": 51,
+        "core_capability": 18,
+        "data_sources": 50,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 5,
+        "account_matching": 4,
+        "deduplication": 3,
+        "identity_proofing": 2,
+        "operational_sla": 4,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 0
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "high",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.508
+    },
+    "41": {
+      "abbr": "OR",
+      "score": 74,
+      "notes": "ONE Eligibility has full UI/SNAP/TANF integration; BH via OHA; corrections via DOC data-share since 2022.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "ONE",
+      "scores": {
+        "composite": 74,
+        "observed_ex_parte": 79,
+        "core_capability": 93,
+        "data_sources": 76,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 8,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 16
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.7875
+    },
+    "42": {
+      "abbr": "PA",
+      "score": 41,
+      "notes": "COMPASS has UI/SNAP/TANF integration; BH via OMHSAS; corrections via DOC data-share since 2023.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 15,
+      "system_vendor": "COMPASS",
+      "scores": {
+        "composite": 41,
+        "observed_ex_parte": 16,
+        "core_capability": 81,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 11,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "high",
+        "observed_ex_parte": "high",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "high",
+      "observed_ex_parte_rate": 0.16
+    },
+    "44": {
+      "abbr": "RI",
+      "score": 77,
+      "notes": "RIBridges has UI/SNAP integration; BH via EOHHS; small state limits corrections scale.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "RIBridges",
+      "scores": {
+        "composite": 77,
+        "observed_ex_parte": 92,
+        "core_capability": 66,
+        "data_sources": 68,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 8,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 8
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.9164
+    },
+    "45": {
+      "abbr": "SC",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "Cúram",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "46": {
+      "abbr": "SD",
+      "score": 50,
+      "notes": "South Dakota expanded in 2023; data infrastructure still maturing. UI/SNAP integration recent.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": false,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "MMIS-SD",
+      "scores": {
+        "composite": 50,
+        "observed_ex_parte": 47,
+        "core_capability": 62,
+        "data_sources": 55,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 20,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.4693
+    },
+    "47": {
+      "abbr": "TN",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "TEAMS",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "48": {
+      "abbr": "TX",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "TIERS",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "49": {
+      "abbr": "UT",
+      "score": 58,
+      "notes": "eREP has UI/SNAP integration; BH partial; recent state self-attestation policy.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "eREP",
+      "scores": {
+        "composite": 58,
+        "observed_ex_parte": 56,
+        "core_capability": 62,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5625
+    },
+    "50": {
+      "abbr": "VT",
+      "score": 74,
+      "notes": "Vermont Health Connect / ACCESS has full SNAP/TANF/UI integration; BH via DMH; small state allows tight integration.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 10,
+      "system_vendor": "VHC / ACCESS",
+      "scores": {
+        "composite": 74,
+        "observed_ex_parte": 82,
+        "core_capability": 93,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 8,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.8178
+    },
+    "51": {
+      "abbr": "VA",
+      "score": 63,
+      "notes": "VaCMS has UI/SNAP/TANF integration; BH via DBHDS; corrections data-share via VADOC.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": false,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "VaCMS",
+      "scores": {
+        "composite": 63,
+        "observed_ex_parte": 61,
+        "core_capability": 60,
+        "data_sources": 72,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 20,
+        "account_matching": 16,
+        "deduplication": 12,
+        "identity_proofing": 8,
+        "operational_sla": 4,
+        "self_attestation_policy": 0
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 12
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.6118
+    },
+    "53": {
+      "abbr": "WA",
+      "score": 81,
+      "notes": "HBE-ProviderOne has full UI/SNAP/TANF/IRS-1075 wage match integration; BH via HCA-DBHR; corrections via WADOC data-share.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": true,
+        "child_welfare_records_match": true,
+        "self_attestation_accepted": true,
+        "vital_records_match": true,
+        "workforce_dev_records_match": true
+      },
+      "integration_bonus": 15,
+      "system_vendor": "HBE / ProviderOne",
+      "scores": {
+        "composite": 81,
+        "observed_ex_parte": 91,
+        "core_capability": 96,
+        "data_sources": 80,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 25,
+        "account_matching": 20,
+        "deduplication": 15,
+        "identity_proofing": 10,
+        "operational_sla": 11,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 20
+      },
+      "bands": {
+        "composite": "low",
+        "observed_ex_parte": "low",
+        "core_capability": "low",
+        "data_sources": "low",
+        "historical_churn": "mid"
+      },
+      "churn_band": "low",
+      "observed_ex_parte_rate": 0.9114
+    },
+    "54": {
+      "abbr": "WV",
+      "score": 60,
+      "notes": "RAPIDS has UI/SNAP integration; BH partial; corrections data-share limited.",
+      "flags": {
+        "medicaid_claims_match": true,
+        "behavioral_health_mco_match": true,
+        "ui_wage_match": true,
+        "snap_tanf_compliance_match": true,
+        "corrections_records_match": false,
+        "child_welfare_records_match": false,
+        "self_attestation_accepted": true,
+        "vital_records_match": false,
+        "workforce_dev_records_match": false
+      },
+      "integration_bonus": 5,
+      "system_vendor": "RAPIDS",
+      "scores": {
+        "composite": 60,
+        "observed_ex_parte": 59,
+        "core_capability": 62,
+        "data_sources": 65,
+        "historical_churn": 50
+      },
+      "core_components": {
+        "system_integration": 15,
+        "account_matching": 12,
+        "deduplication": 10,
+        "identity_proofing": 6,
+        "operational_sla": 4,
+        "self_attestation_policy": 15
+      },
+      "source_components": {
+        "wage_data": 30,
+        "frailty_data": 30,
+        "other_data": 5
+      },
+      "bands": {
+        "composite": "mid",
+        "observed_ex_parte": "mid",
+        "core_capability": "mid",
+        "data_sources": "mid",
+        "historical_churn": "mid"
+      },
+      "churn_band": "mid",
+      "observed_ex_parte_rate": 0.5927
+    },
+    "55": {
+      "abbr": "WI",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "CARES",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    },
+    "56": {
+      "abbr": "WY",
+      "score": null,
+      "notes": "Non-expansion state.",
+      "flags": {},
+      "integration_bonus": 0,
+      "system_vendor": "WES",
+      "scores": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "core_components": null,
+      "source_components": null,
+      "bands": {
+        "composite": null,
+        "observed_ex_parte": null,
+        "core_capability": null,
+        "data_sources": null,
+        "historical_churn": null
+      },
+      "churn_band": null
+    }
+  }
+}

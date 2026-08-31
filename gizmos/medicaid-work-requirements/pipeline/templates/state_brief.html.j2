@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicaid Work Requirements: {{ state.name }}</title>
+  <link rel="stylesheet" href="state_brief.css">
+</head>
+<body>
+
+<div class="state-name">{{ state.name }}</div>
+
+{# ============ Page 1 — Cover + hero ============ #}
+<section class="cover">
+  <div class="cover-header">
+    <div class="cover-meta">
+      OBBBA Section 71119 · §1902(xx)<br>
+      Effective December 31, 2026
+    </div>
+    <div class="logo-block">
+      17A<br>
+      <small>State &amp; Local AI · Operations Briefing</small>
+    </div>
+  </div>
+
+  <h1>Medicaid Work Requirements:<br>{{ state.name }}</h1>
+  <div class="subtitle">Operational briefing for state Medicaid leadership</div>
+
+  {% if state.expansion %}
+    <div class="hero-number">{{ state.subject_count_compact }}</div>
+    <p class="hero-caption">
+      adults in {{ state.name }} are estimated to be subject to the 80-hour-per-month
+      work requirement starting <strong>December 31, 2026</strong>. About
+      <strong>{% if loss_breakdown %}{{ loss_breakdown.total_loss_compact }}{% else %}{{ state.loss_exposure_compact }}{% endif %}</strong> are projected to lose Medicaid coverage by 2034 —
+      most not because they fail to work, but because they can't clear the six-month renewal paperwork.
+    </p>
+
+    <div class="stats-strip">
+      <div class="stat">
+        <div class="label">Subject to verification</div>
+        <div class="value">{{ state.subject_count_compact }}</div>
+        <div class="sub">{{ state.subject_count_full }} adults</div>
+      </div>
+      <div class="stat">
+        <div class="label">Projected loss by 2034</div>
+        <div class="value">{% if loss_breakdown %}{{ loss_breakdown.total_loss_compact }}{% else %}{{ state.loss_exposure_compact }}{% endif %}</div>
+        <div class="sub">{% if loss_breakdown %}{{ loss_breakdown.total_loss_full }}{% else %}{{ state.loss_exposure_full }}{% endif %} people</div>
+      </div>
+      <div class="stat">
+        <div class="label">Ex parte capability</div>
+        <div class="value">{% if loss_breakdown and loss_breakdown.ex_parte_score is not none %}{{ loss_breakdown.ex_parte_scores.composite if loss_breakdown.ex_parte_scores else loss_breakdown.ex_parte_score }}{% else %}—{% endif %}</div>
+        <div class="sub">/ 100 composite</div>
+      </div>
+    </div>
+
+    <p class="cover-framing">
+      {% if concentration.n50 %}
+        Within {{ state.name }}, the burden is not evenly spread. <strong>{{ concentration.n50 }} counties
+        ({{ concentration.pct_counties_for_50 }} of all {{ concentration.total_counties }} statewide) hold 50% of the
+        affected enrollees</strong>, led by <strong>{{ concentration.top_county_name }}</strong>
+        at {{ concentration.top_county_share }} of the state's subject pool.
+      {% endif %}
+      This brief has five parts: why your losses will look the way they do, where verification will
+      fail hardest, how capable your state already is at automatic verification, and what to do before
+      the deadline.
+    </p>
+
+  {% else %}
+    {# Non-expansion state — short cover only #}
+    <div class="callout amber">
+      <div class="headline">{{ state.name }} has not adopted ACA Medicaid expansion.</div>
+      <div>
+        The OBBBA work requirement applies specifically to the Medicaid expansion-adult eligibility
+        group (Category VIII, ages 19–64, ≤138% FPL), which does not exist here. The working-age
+        uninsured population that <em>would</em> be subject if your state expanded is shown
+        separately. The verification-system build is moot in your current policy posture.
+      </div>
+      {% if state.note %}<div style="margin-top:8pt; font-style: italic;">{{ state.note }}</div>{% endif %}
+    </div>
+    <p class="cover-framing">
+      This brief covers the working-age uninsured baseline and peer-state comparisons that may inform
+      future expansion-policy decisions.
+    </p>
+  {% endif %}
+</section>
+
+{% if state.expansion %}
+
+{# ============ Page 2 — Why your losses look the way they do (sankey lead) ============ #}
+{% if loss_breakdown %}
+<section class="loss-breakdown">
+  <h2>Why your state's losses will look the way they do</h2>
+  <p class="section-intro">
+    Our bottom-up model projects <strong>{{ loss_breakdown.total_loss_full }}</strong> {{ state.name }} adults will lose
+    Medicaid by 2034 under this provision. Most are not losing it because they aren't working. They lose it
+    because the verification system can't confirm what's already true about them.{% if loss_breakdown.top_driver %}
+    In {{ state.name }}, the single largest at-risk group is <strong>{{ loss_breakdown.top_driver.label }}</strong>
+    (about {{ loss_breakdown.top_driver.count_compact }}).{% endif %}
+  </p>
+
+  {% if loss_breakdown.sankey_svg %}
+    <div class="sankey">{{ loss_breakdown.sankey_svg | safe }}</div>
+  {% endif %}
+
+  <div class="loss-summary">
+    <div class="loss-bucket loss-bucket--workdoc">
+      <div class="bucket-label">Compliant but can't prove it</div>
+      <div class="bucket-value">{{ loss_breakdown.workdoc_total_compact }}</div>
+      <div class="bucket-share">{{ loss_breakdown.workdoc_pct }} of state loss</div>
+    </div>
+    <div class="loss-bucket loss-bucket--exemption">
+      <div class="bucket-label">Eligible for exemption, can't prove it</div>
+      <div class="bucket-value">{{ loss_breakdown.exemption_total_compact }}</div>
+      <div class="bucket-share">{{ loss_breakdown.exemption_pct }} of state loss</div>
+    </div>
+    <div class="loss-bucket loss-bucket--noncompliant">
+      <div class="bucket-label">Not in qualifying activity</div>
+      <div class="bucket-value">{{ loss_breakdown.noncompliant_compact }}</div>
+      <div class="bucket-share">{{ loss_breakdown.noncompliant_pct }} of state loss</div>
+    </div>
+  </div>
+
+  <p class="section-note">
+    Each subgroup is sized bottom-up from ACS PUMS, SAMHSA, BJS, and the academic Section 1115
+    work-requirement literature; the full parameter set is in the methodology on the last page. Every
+    county, with subject count and projected loss, is in the CSV download.
+  </p>
+</section>
+{% endif %}
+
+{# ============ Page 3 — Where verification will fail hardest ============ #}
+{% if appendix|length > 0 %}
+<section class="geography">
+  <h2>Where verification will fail hardest</h2>
+  <p class="section-intro">
+    Even in capable states, some share of subjects ends up on the paperwork path. The compliance-burden
+    index marks where that path is most likely to defeat eligible enrollees. It's a composite of three
+    predictors from prior Section 1115 implementations (Arkansas 2018, Georgia Pathways 2023–):
+    limited-English households, low broadband access, and concentrated seasonal, gig, and hospitality
+    employment. Counties above the national median aren't where people work less; they're where the
+    paperwork fails more often.
+  </p>
+
+  {% if maps.state_burden %}
+    <img class="map" src="{{ maps.state_burden }}" alt="{{ state.name }} compliance-burden index map" />
+  {% endif %}
+
+  {% if burden_top5 %}
+    <h3>Highest-burden counties in {{ state.name }}</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>County</th>
+          <th class="right">Burden index</th>
+          <th class="right">Subject enrollees</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for r in burden_top5 %}
+        <tr>
+          <td class="county-name">{{ r.name }}</td>
+          <td class="right">{{ r.burden }}</td>
+          <td class="right">{{ "{:,}".format(r.subject) }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+</section>
+{% endif %}
+
+{# ============ Page 4 — Ex parte verification capability ============ #}
+{% if loss_breakdown and loss_breakdown.ex_parte_score is not none %}
+<section class="ex-parte-page">
+  <h2>Ex parte verification capability</h2>
+  <p class="section-intro">
+    Ex parte verification confirms an enrollee's hours or exemption against data the state already holds,
+    so they never have to prove it themselves. It is the single biggest lever on the loss number above,
+    and it has to be built before December 31, 2026. Here is how {{ state.name }} scores today.
+  </p>
+
+  {% set band = loss_breakdown.ex_parte_band %}
+  {% set comp = loss_breakdown.ex_parte_scores.composite if loss_breakdown.ex_parte_scores else loss_breakdown.ex_parte_score %}
+  <div class="score-hero {% if band == 'high' %}score-hero--high{% elif band == 'low' %}score-hero--low{% endif %}">
+    <div class="score-value">{{ comp }}<span class="score-of">/ 100</span></div>
+    <div class="score-band">{{ loss_breakdown.ex_parte_band_label }}</div>
+    <div class="score-bar"><div class="score-bar-fill" style="width: {{ comp }}%;"></div></div>
+  </div>
+
+  <table class="ex-parte-table">
+    {% if loss_breakdown.ex_parte_scores and loss_breakdown.ex_parte_scores.observed_ex_parte is not none %}
+    <tr>
+      <td class="exp-name">Observed ex parte</td>
+      <td class="exp-score">{{ loss_breakdown.ex_parte_scores.observed_ex_parte }} / 100</td>
+      <td class="exp-note">Realized auto-renewal rate, CMS unwinding data 2023–2026 (50% of composite)</td>
+    </tr>
+    {% endif %}
+    {% if loss_breakdown.ex_parte_scores and loss_breakdown.ex_parte_scores.data_sources is not none %}
+    <tr>
+      <td class="exp-name">Data sources</td>
+      <td class="exp-score">{{ loss_breakdown.ex_parte_scores.data_sources }} / 100</td>
+      <td class="exp-note">Work-requirement-specific feeds (35% of composite): wage 50%, frailty 30%, other 20%</td>
+    </tr>
+    {% endif %}
+    {% if loss_breakdown.ex_parte_scores and loss_breakdown.ex_parte_scores.core_capability is not none %}
+    <tr class="exp-context">
+      <td class="exp-name">Core capability</td>
+      <td class="exp-score">{{ loss_breakdown.ex_parte_scores.core_capability }} / 100</td>
+      <td class="exp-note">Vendor-tier plumbing, shown for context (not in the composite)</td>
+    </tr>
+    {% endif %}
+  </table>
+
+  <p>
+    The 0–100 composite leads with {{ state.name }}'s observed ex parte rate: the share of Medicaid
+    renewals it actually auto-completed during the 2023–2026 unwinding (CMS eligibility-processing data),
+    a realized measure of whether it can clear an enrollee without making them act. That carries 50%.
+    Data sources (the work-requirement-specific feeds income renewals didn't test: UI wage match,
+    Medicaid claims and behavioral-health MCO, and the rest of the auto-match feeds) carry 35%, and
+    documented prior Section 1115 work-requirement churn carries 15%.
+    {% if loss_breakdown.system_vendor %}&nbsp;Eligibility system: <strong>{{ loss_breakdown.system_vendor }}</strong>.{% endif %}
+  </p>
+  <p class="section-note">
+    Higher scores mean more enrollees can be verified against existing records without re-proving status.
+    We don't publish a per-state predicted churn rate: the gap between "data source available" and "data
+    source operationally integrated by the December 2026 deadline" is large and not yet observable. The
+    score moves through operational work in 2026, not through anything that happens after the rule activates.
+  </p>
+</section>
+{% endif %}
+
+{# ============ Page 5 — What to do before December 31, 2026 ============ #}
+<section class="action">
+  <h2>What to do before December 31, 2026</h2>
+
+  <ol class="checklist">
+    {% for item in checklist %}
+    <li>{{ item | safe }}</li>
+    {% endfor %}
+  </ol>
+
+  {% if peers %}
+    <h3>Peer states</h3>
+    <p class="section-intro" style="margin-bottom: 4pt;">
+      Comparable expansion populations, solving the same problem.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>State</th>
+          <th class="right">Subject pool</th>
+          <th class="right">Burden index</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for p in peers %}
+        <tr>
+          <td class="county-name">{{ p.name }} ({{ p.abbr }})</td>
+          <td class="right">{{ "{:,}".format(p.subject_count | round | int) }}</td>
+          <td class="right">{{ "%+.1f"|format(p.burden_index) }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  {% endif %}
+
+  <p style="margin-top: 10pt; margin-bottom: 5pt;">
+    Every {{ state.name }} county, with subject count, projected loss, rate, and burden index, is in the CSV:
+  </p>
+  <a class="csv-button" href="{{ csv_url }}">Download {{ state.abbr }} county breakdown (CSV) →</a>
+
+  <div class="methodology">
+    <strong>Methodology, in brief.</strong>
+    State counts are calibrated to CMS T-MSIS enrollment and the CBO national total; within-state detail and
+    exemptions come from per-state ACS PUMS 2020-2024, SAMHSA, and BJS, with Section 1931 parents removed as
+    covered outside expansion. The ex parte composite leads with the state's observed 2023-2026 renewal rate.
+    Full methodology, sources, and limitations: <strong>gizmowarehouse.org/gizmo/medicaid-work-requirements</strong>.
+    Corrections: <strong>joe@group17a.com</strong>. Built by 17A.
+  </div>
+</section>
+
+{% endif %} {# end if state.expansion #}
+
+</body>
+</html>
