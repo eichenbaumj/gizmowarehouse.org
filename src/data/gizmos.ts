@@ -34,7 +34,7 @@ export const gizmos: Gizmo[] = [
     title: "Music Theory with LLMs, or, The Gospel of Claude Code",
     categories: ["Music", "Using AI"],
     date: "2026-08",
-    summary: "Using Claude Code to write gospel reharmonizations for the fake book — and why next-chord prediction is a natural LLM task.",
+    summary: "Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task.",
     links: [
       {
         label: "Download the fakebook (public-domain edition)",
