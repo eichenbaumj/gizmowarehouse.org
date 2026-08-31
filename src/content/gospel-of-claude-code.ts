@@ -3,7 +3,7 @@ Earlier this year I built a [fakebook maker](/gizmo/fakebook-maker) with Claude 
 
 ## Making chord charts with Claude Code
 
-The workflow hasn't changed. Chords over lyrics in a text file, run the build, get a bookmarked PDF. What's new is an \`/add-tune\` command that fetches a chart, formats it, rebuilds the book, and verifies the output. Adding a song takes one sentence.
+The workflow is simple. Chords over lyrics in a text file, run the build, get a bookmarked PDF. An \`/add-tune\` command fetches a chart, formats it, rebuilds the book, and verifies the output. Adding a song takes one sentence.
 
 ## Why LLMs are natural band leaders
 
