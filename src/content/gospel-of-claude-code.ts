@@ -7,7 +7,7 @@ The workflow is simple. Chords over lyrics in a text file, run the build, get a 
 
 ## Why LLMs are natural band leaders
 
-A chord chart is just text, and songs move through chords in patterns so conventional that musicians name them like grammar. Establish the home chord, build tension, resolve it home. Gospel and jazz players decorate that skeleton the same ways every time, with bass lines that climb stepwise into the next chord, a "secondary dominant" that briefly treats the next chord as home, and the "amen" cadence you hear at the end of a hymn.
+A chord chart is just text, and songs move through chords in patterns so conventional that musicians name them like grammar. Establish the home chord, build tension, resolve it home. Gospel and jazz players decorate that skeleton in modestly predictable ways, with bass lines that climb stepwise into the next chord, a "secondary dominant" that briefly treats the next chord as home, and the "amen" cadence you hear at the end of a hymn.
 
 An LLM has read a million chord charts, and predicting the next chord in a progression is the same thing it does with words all day. Ask it to gospel-ify a three-chord song and it isn't improvising; it's autocompleting from a century of gospel piano. The results held up at the piano. Here's the intro to "If I Had a Hammer," before and after:
 
