@@ -53,7 +53,7 @@ export const gizmos: Gizmo[] = [
     date: "2026-08",
     dek: "What saying no actually costs, and what to demand instead",
     summary:
-      "When a town says no to a data center, the record goes quiet: in the fights we traced to an ending, nine of eleven blocked projects left no documented second act, and the most famous rejection was built anyway, on the same land, with the city cut out of the deal. A map of every documented restriction in the country, a calculator for what one campus pays a town, and the conditions that work better than a ban.",
+      "A town that says no to a data center gives up tax revenue, not jobs, and how much depends on the local tax regime. Opposition is not partisan, legislatures are choosing conditions over bans, and blocked projects go quiet more than they resurface. A national map of restrictions and conditions, a calculator for what one campus pays a town, and the terms to demand if the answer is yes.",
     metaDescription:
       "Every documented US data-center restriction on one map, what a town gives up when it says no, and the conditions that beat a ban.",
     links: [
