@@ -9,6 +9,7 @@ import medicaidWorkRequirements, { bluf as medicaidBluf } from "./medicaid-work-
 import publicPrivateCompensation, { bluf as compgapBluf } from "./public-private-compensation-comparison";
 import dataCenterRestrictionCost from "./data-center-restriction-cost";
 import gospelOfClaudeCode from "./gospel-of-claude-code";
+import onlyWayToStartIsByStarting from "./only-way-to-start-is-by-starting";
 
 export const gizmoContent: Record<string, string> = {
   "data-center-restriction-cost": dataCenterRestrictionCost,
@@ -22,6 +23,7 @@ export const gizmoContent: Record<string, string> = {
   "microsoft-copilot": microsoftCopilot,
   "medicaid-work-requirements": medicaidWorkRequirements,
   "gospel-of-claude-code": gospelOfClaudeCode,
+  "only-way-to-start-is-by-starting": onlyWayToStartIsByStarting,
 };
 
 // Optional short-form ("BLUF") variants, keyed by the same slug. A gizmo has a

@@ -11,6 +11,7 @@ snapshot commits, so file history here is intentionally shallow.
 
 ## The gizmos
 
+- **[The Only Way to Start Is by Starting](https://gizmowarehouse.org/gizmo/only-way-to-start-is-by-starting)** (2026-09) — A short paper on how a state or local agency can get real value from AI in ninety days with one accountable owner, a handful of paid licenses, and one well-chosen piece of real work.
 - **[Music Theory with LLMs](https://gizmowarehouse.org/gizmo/gospel-of-claude-code)** (2026-08) — Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task.
 - **[Pricing the Fear of Data Centers](https://gizmowarehouse.org/gizmo/data-center-restriction-cost)** (2026-08) — A town that says no to a data center gives up tax revenue, not jobs, and how much depends on the local tax regime. Opposition is not partisan, legislatures are choosing conditions over bans, and blocked projects go quiet more than they resurface. A national map of restrictions and conditions, a calculator for what one campus pays a town, and the terms to demand if the answer is yes.
 - **[The New Math on NYC's Public Grocery Stores](https://gizmowarehouse.org/gizmo/nyc-public-grocery-new-math)** (2026-08) — Mayor Mamdani's stores will sell a core basket 30% below market, and nobody has priced that promise. This update does: about $167M over ten years, reaching roughly 12,000 households when the same money could reach six to fifteen times as many.

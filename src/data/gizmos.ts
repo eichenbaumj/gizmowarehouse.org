@@ -30,6 +30,19 @@ export const ALL_CATEGORIES: Category[] = ["Public Safety", "Music", "Using AI",
 
 export const gizmos: Gizmo[] = [
   {
+    slug: "only-way-to-start-is-by-starting",
+    title: "The Only Way to Start Is by Starting",
+    categories: ["Using AI", "State Government", "City Government"],
+    date: "2026-09",
+    summary: "A short paper on how a state or local agency can get real value from AI in ninety days with one accountable owner, a handful of paid licenses, and one well-chosen piece of real work.",
+    links: [
+      {
+        label: "Read the whitepaper",
+        url: "https://drive.google.com/file/d/1RUKPoaWzY0dXMomO3f9TzNI4E5SJAiWL/view",
+      },
+    ],
+  },
+  {
     slug: "gospel-of-claude-code",
     title: "Music Theory with LLMs",
     categories: ["Music", "Using AI"],
