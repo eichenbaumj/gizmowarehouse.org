@@ -12,7 +12,7 @@ The existing resources for Daf Yomi are limited. The tech offerings for Christia
 The fun part was designing exactly how the Talmud meets the AI. The first build of the site was done with Claude Code running Claude Fable 5.1, and that is still how I work on it. The nightly notes are written by Claude Opus 5 through Anthropic's API. I tried to give the process principles, rules, and tests, including:
 
 - Each night Claude writes three sentences and one question about the day's page.
-- The model gets the English text of that daf, which is Rabbi Steinsaltz's translation with his explanation woven in, and nothing else. No web, no Rashi, no other commentaries.
+- The model gets the English text of that daf, which is Rabbi Steinsaltz's translation with his explanation woven in, and nothing else. No web, no Rashi, no outside commentaries. Nothing but the Talmud itself, in Rabbi Steinsaltz's edition.
 - Every quoted phrase must appear verbatim in the source. No later authorities, no halacha stated as practice, no sermon, exactly one question. Fail twice and the page shows no note rather than a wrong one.
 - Every note says an AI wrote it, above the words, every day.
 
