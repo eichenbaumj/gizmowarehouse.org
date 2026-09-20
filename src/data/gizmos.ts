@@ -40,6 +40,10 @@ export const gizmos: Gizmo[] = [
         label: "Open daf-yomi.dev",
         url: "https://daf-yomi.dev",
       },
+      {
+        label: "Source on GitHub",
+        url: "https://github.com/eichenbaumj/daf-yomi",
+      },
     ],
   },
   {
