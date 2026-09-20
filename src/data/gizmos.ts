@@ -34,7 +34,7 @@ export const gizmos: Gizmo[] = [
     title: "Introducing Daf Yomi Dot Dev",
     categories: ["Using AI"],
     date: "2026-09",
-    summary: "A Yom Kippur promise to read a page of Talmud a day, and the site built for it in a morning: the daf in English, where it sits in the whole Talmud, and a nightly AI note with rules it cannot break. Lives at daf-yomi.dev.",
+    summary: "I built a Daf Yomi Machine with Claude. I hope it causes me to read a little more Talmud. I explain how I made it. I hope you use it if you're interested!",
     links: [
       {
         label: "Open daf-yomi.dev",

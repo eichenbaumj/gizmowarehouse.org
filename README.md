@@ -11,7 +11,7 @@ snapshot commits, so file history here is intentionally shallow.
 
 ## The gizmos
 
-- **[Introducing Daf Yomi Dot Dev](https://gizmowarehouse.org/gizmo/daf-yomi)** (2026-09) — A Yom Kippur promise to read a page of Talmud a day, and the site built for it in a morning: the daf in English, where it sits in the whole Talmud, and a nightly AI note with rules it cannot break. Lives at daf-yomi.dev.
+- **[Introducing Daf Yomi Dot Dev](https://gizmowarehouse.org/gizmo/daf-yomi)** (2026-09) — I built a Daf Yomi Machine with Claude. I hope it causes me to read a little more Talmud. I explain how I made it. I hope you use it if you're interested!
 - **[The Only Way to Start Is by Starting](https://gizmowarehouse.org/gizmo/only-way-to-start-is-by-starting)** (2026-09) — A short paper on how a state or local agency can get real value from AI in ninety days with one accountable owner, a handful of paid licenses, and one well-chosen piece of real work.
 - **[Music Theory with LLMs](https://gizmowarehouse.org/gizmo/gospel-of-claude-code)** (2026-08) — Using Claude Code to write gospel reharmonizations for the fake book, and why next-chord prediction is a natural LLM task.
 - **[Pricing the Fear of Data Centers](https://gizmowarehouse.org/gizmo/data-center-restriction-cost)** (2026-08) — A town that says no to a data center gives up tax revenue, not jobs, and how much depends on the local tax regime. Opposition is not partisan, legislatures are choosing conditions over bans, and blocked projects go quiet more than they resurface. A national map of restrictions and conditions, a calculator for what one campus pays a town, and the terms to demand if the answer is yes.
