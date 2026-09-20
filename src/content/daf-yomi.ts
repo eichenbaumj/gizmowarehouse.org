@@ -5,7 +5,7 @@ I have never read the Babylonian Talmud in its entirety. One common modern pract
 
 This Yom Kippur I made a flimsy, non-guaranteed, best-effort promise to God that I would try to read the Babylonian Talmud one page at a time. I suspect I won't manage every day. The goal is to read a little more Talmud than the zero I read now.
 
-The existing resources for Daf Yomi are limited. The tech offerings for Christian Bible study, by contrast, are fantastic and varied, and the Talmud has a vastly weirder structure than the New Testament. Before Claude could code, [daf-yomi.dev](https://daf-yomi.dev) would have taken a person months of evenings. This was a morning. I hope it's useful.
+The existing resources for Daf Yomi are limited. The tech offerings for Christian Bible study, by contrast, are fantastic and varied. Before Claude could code, [daf-yomi.dev](https://daf-yomi.dev) would have taken a person months of evenings. This was a morning. I hope it's useful.
 
 [Daf-yomi.dev](https://daf-yomi.dev) is an AI gizmo, but it does not live at the Gizmo Warehouse. This is just a post celebrating its birth.
 
