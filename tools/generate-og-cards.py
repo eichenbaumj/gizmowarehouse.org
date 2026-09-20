@@ -45,6 +45,8 @@ W, H = 1200, 630
 # build (sankey visual) from tools/build-medicaid-og-card.py, and a run of
 # this generic script must never overwrite it.
 GIZMOS = [
+    ("daf-yomi", "Introducing Daf Yomi Dot Dev",
+     ["Using AI"]),
     ("gospel-of-claude-code", "Music Theory with LLMs",
      ["Music", "Using AI"]),
     ("data-center-restriction-cost", "Pricing the Fear of Data Centers",

@@ -30,6 +30,19 @@ export const ALL_CATEGORIES: Category[] = ["Public Safety", "Music", "Using AI",
 
 export const gizmos: Gizmo[] = [
   {
+    slug: "daf-yomi",
+    title: "Introducing Daf Yomi Dot Dev",
+    categories: ["Using AI"],
+    date: "2026-09",
+    summary: "A Yom Kippur promise to read a page of Talmud a day, and the site built for it in a morning: the daf in English, where it sits in the whole Talmud, and a nightly AI note with rules it cannot break. Lives at daf-yomi.dev.",
+    links: [
+      {
+        label: "Open daf-yomi.dev",
+        url: "https://daf-yomi.dev",
+      },
+    ],
+  },
+  {
     slug: "only-way-to-start-is-by-starting",
     title: "The Only Way to Start Is by Starting",
     categories: ["Using AI", "State Government", "City Government"],

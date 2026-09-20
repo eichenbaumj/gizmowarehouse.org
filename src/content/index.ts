@@ -10,6 +10,7 @@ import publicPrivateCompensation, { bluf as compgapBluf } from "./public-private
 import dataCenterRestrictionCost from "./data-center-restriction-cost";
 import gospelOfClaudeCode from "./gospel-of-claude-code";
 import onlyWayToStartIsByStarting from "./only-way-to-start-is-by-starting";
+import dafYomi from "./daf-yomi";
 
 export const gizmoContent: Record<string, string> = {
   "data-center-restriction-cost": dataCenterRestrictionCost,
@@ -24,6 +25,7 @@ export const gizmoContent: Record<string, string> = {
   "medicaid-work-requirements": medicaidWorkRequirements,
   "gospel-of-claude-code": gospelOfClaudeCode,
   "only-way-to-start-is-by-starting": onlyWayToStartIsByStarting,
+  "daf-yomi": dafYomi,
 };
 
 // Optional short-form ("BLUF") variants, keyed by the same slug. A gizmo has a
