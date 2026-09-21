@@ -17,4 +17,6 @@ The fun part was designing exactly how the Talmud meets the AI. The first build 
 - Every note says an AI wrote it, above the words, every day.
 
 The rest is one Cloudflare Worker, Sefaria's open API, and a cron. It costs a few cents a day.
+
+Since this post went up the site has grown a daily email. One message a day with the daf, the AI note and its question, at whatever hour you choose. Sign up at [daf-yomi.dev/newsletter](https://daf-yomi.dev/newsletter).
 `;
