@@ -14,6 +14,8 @@
 // Non-expansion states (10) render gray-hatched with a click-card explaining
 // why; an "Uninsured Adults" overlay surfaces their would-be-affected population.
 
+import { CARTO_ATTRIBUTION, cartoRasterTiles } from "./basemap";
+
 export const MEDICAID_MAP_CONFIG = {
   center: [-97.5, 39.0] as [number, number],
   zoom: 4,
@@ -24,22 +26,11 @@ export const MEDICAID_MAP_CONFIG = {
     [-66, 50],
   ] as [[number, number], [number, number]],
 
-  // Carto Voyager light raster — same basemap as NPE.
-  basemapTiles: [
-    "https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-    "https://b.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-    "https://c.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-    "https://d.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-  ],
-  basemapAttribution:
-    '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+  // Carto Voyager light raster — same basemap as NPE. Key + builders: ./basemap.ts
+  basemapTiles: cartoRasterTiles("voyager_nolabels"),
+  basemapAttribution: CARTO_ATTRIBUTION,
   // Labels overlay (renders above the choropleth so place names stay legible)
-  labelsTiles: [
-    "https://a.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-    "https://b.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-    "https://c.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-    "https://d.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png?key=cb1_271o_1_f779989250ccc009272193f4",
-  ],
+  labelsTiles: cartoRasterTiles("voyager_only_labels"),
 
   // Data sources — states + counties + state summary ship from /public/data
   // (small files). 5-mi hex GeoJSON (57 MB) and 1-mi grid PMTiles (100 MB)

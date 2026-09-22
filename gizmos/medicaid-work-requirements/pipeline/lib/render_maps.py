@@ -95,8 +95,12 @@ def _plot_choropleth(
     if basemap:
         try:
             import contextily as cx
-            # Use Carto Voyager to match the web map's basemap.
-            cx.add_basemap(ax, crs=gdf.crs, source=cx.providers.CartoDB.VoyagerNoLabels, zoom="auto")
+            # Use Carto Voyager to match the web map's basemap. CARTO key-enforces
+            # its free basemaps (2026-08-26); keyless tiles come back watermarked.
+            # Same public key as src/config/basemap.ts.
+            provider = cx.providers.CartoDB.VoyagerNoLabels
+            provider = provider(url=provider.url + "?key=cb1_271o_1_f779989250ccc009272193f4")
+            cx.add_basemap(ax, crs=gdf.crs, source=provider, zoom="auto")
         except Exception as e:
             print(f"  (basemap skipped: {e})")
 

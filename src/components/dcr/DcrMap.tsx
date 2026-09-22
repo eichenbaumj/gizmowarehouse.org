@@ -38,6 +38,7 @@ import {
   type StateStatusKey,
 } from "@/config/dataCenterRestrictionCost";
 import { deriveCountyDisplay, type CountyDisplay } from "./countyCategories";
+import { cartoTransformRequest } from "@/config/basemap";
 
 const CIRCLE_MINZOOM = 4.5; // circles appear once county fills get cramped
 
@@ -620,6 +621,7 @@ export default function DcrMap() {
     try {
       map = new maplibregl.Map({
         container: mapContainer.current,
+        transformRequest: cartoTransformRequest,
         style: { version: 8, glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf", sources, layers } as any,
         center: [-97, 38.5],
         zoom: 3.2,

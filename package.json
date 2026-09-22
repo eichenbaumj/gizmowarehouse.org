@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate-sitemap && vite build && npm run prerender",
-    "build:dev": "npm run generate-sitemap && vite build --mode development && npm run prerender",
+    "build": "npm run check:basemap && npm run generate-sitemap && vite build && npm run prerender",
+    "build:dev": "npm run check:basemap && npm run generate-sitemap && vite build --mode development && npm run prerender",
+    "check:basemap": "tsx tools/check-basemap-key.ts",
     "generate-sitemap": "tsx tools/generate-sitemap.ts",
     "prerender": "tsx tools/prerender.ts",
     "preview": "vite preview"

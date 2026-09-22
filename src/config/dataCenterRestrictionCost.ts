@@ -8,6 +8,8 @@
 // Keep values as plain numeric literals on single lines — the verify gate
 // reads them by regex.
 
+import { CARTO_ATTRIBUTION, cartoRasterTiles } from "./basemap";
+
 // ---------------------------------------------------------------------------
 // Types mirroring public/data/data-center-restriction-cost/*.json
 // ---------------------------------------------------------------------------
@@ -157,24 +159,13 @@ export interface OutcomesData {
 }
 
 // ---------------------------------------------------------------------------
-// Basemap (same CARTO voyager rasters as the other map gizmos)
+// Basemap (CARTO voyager rasters; key + URL builders live in ./basemap.ts)
 // ---------------------------------------------------------------------------
 
 export const BASEMAP = {
-  tiles: [
-    "https://a.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
-    "https://b.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
-    "https://c.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
-    "https://d.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}.png",
-  ],
-  labels: [
-    "https://a.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png",
-    "https://b.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png",
-    "https://c.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png",
-    "https://d.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}.png",
-  ],
-  attribution:
-    '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+  tiles: cartoRasterTiles("voyager_nolabels"),
+  labels: cartoRasterTiles("voyager_only_labels"),
+  attribution: CARTO_ATTRIBUTION,
   statesGeoJsonUrl: "/data/us-states.geojson",
   actionsUrl: "/data/data-center-restriction-cost/actions.json",
   outcomesUrl: "/data/data-center-restriction-cost/outcomes.json",

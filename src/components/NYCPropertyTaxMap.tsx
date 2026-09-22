@@ -4,6 +4,7 @@ import { Protocol } from "pmtiles";
 import "maplibre-gl/dist/maplibre-gl.css";
 
 import { NYC_TAX_MAP_CONFIG, NycTaxMapMode } from "@/config/nycPropertyTaxMap";
+import { cartoStyleUrl, cartoTransformRequest } from "@/config/basemap";
 import { bldgClassLabel } from "@/lib/bldgClass";
 
 // Format a ratio (etr / median) as a plain-language multiplier.
@@ -317,7 +318,8 @@ export default function NYCPropertyTaxMap() {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: "https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json",
+      transformRequest: cartoTransformRequest,
+      style: cartoStyleUrl("voyager"),
       center: NYC_TAX_MAP_CONFIG.center,
       zoom: NYC_TAX_MAP_CONFIG.zoom,
       minZoom: NYC_TAX_MAP_CONFIG.minZoom,

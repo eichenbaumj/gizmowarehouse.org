@@ -23,6 +23,7 @@ import MedicaidLegend from "@/components/MedicaidLegend";
 import MethodologyInfo from "@/components/MethodologyInfo";
 import MedicaidTargetList, { type TargetCell } from "@/components/MedicaidTargetList";
 import { METHODOLOGY_DOC_URL, getDisclosure } from "@/lib/methodologyDisclosures";
+import { cartoTransformRequest } from "@/config/basemap";
 
 const TARGET_LIST_LOCAL_STORAGE_KEY = "medicaid_target_list";
 
@@ -447,6 +448,7 @@ export default function MedicaidWorkRequirementsMap() {
       const defaultMode = MEDICAID_MAP_CONFIG.defaultMode;
       map = new maplibregl.Map({
         container: mapContainer.current,
+        transformRequest: cartoTransformRequest,
         cooperativeGestures: lite,
         style: {
           version: 8,

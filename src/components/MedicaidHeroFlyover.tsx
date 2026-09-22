@@ -21,6 +21,7 @@ import { MEDICAID_MAP_CONFIG, type MedicaidMapMode } from "@/config/medicaidWork
 import { useInViewStep } from "@/hooks/useInViewStep";
 import { isTouchPrimary } from "@/lib/isTouchPrimary";
 import MethodologyInfo from "@/components/MethodologyInfo";
+import { cartoTransformRequest } from "@/config/basemap";
 
 // On touch devices the hero drops the 57 MB hex layer (see the map-init effect),
 // so the county choropleth has to carry the whole color story by itself. The
@@ -200,6 +201,7 @@ export default function MedicaidHeroFlyover() {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
+      transformRequest: cartoTransformRequest,
       style: {
         version: 8,
         glyphs: "https://demotiles.maplibre.org/font/{fontstack}/{range}.pbf",
