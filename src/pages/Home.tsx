@@ -3,29 +3,11 @@ import type { Category } from "@/data/gizmos";
 import { gizmos } from "@/data/gizmos";
 import CategoryFilter from "@/components/CategoryFilter";
 import GizmoCard from "@/components/GizmoCard";
-import { SITE_URL, usePageMeta } from "@/lib/usePageMeta";
+import { usePageMeta } from "@/lib/usePageMeta";
+import { homeSeo } from "@/lib/seo";
 
 export default function Home() {
-  usePageMeta({
-    title: "Gizmo Warehouse | 17A",
-    description: "Shareable tools, analyses, and work products from Joe Eichenbaum at 17A.",
-    canonical: `${SITE_URL}/`,
-    jsonLd: [
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: "Gizmo Warehouse",
-        url: SITE_URL,
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "17A",
-        url: "https://www.17a.co",
-        founder: { "@type": "Person", name: "Joe Eichenbaum" },
-      },
-    ],
-  });
+  usePageMeta(homeSeo());
 
   const [selected, setSelected] = useState<Category | null>(null);
 

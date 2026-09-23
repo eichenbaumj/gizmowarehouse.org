@@ -1,4 +1,5 @@
-import type { Category } from "@/data/gizmos";
+import { Link } from "react-router-dom";
+import { categorySlug, type Category } from "@/data/gizmos";
 import { cn } from "@/lib/utils";
 
 const colorMap: Record<Category, string> = {
@@ -11,10 +12,14 @@ const colorMap: Record<Category, string> = {
   "NYC": "bg-sky-100 text-sky-800",
 };
 
-export default function CategoryBadge({ category }: { category: Category }) {
-  return (
-    <span className={cn("text-xs font-sans font-semibold px-2.5 py-0.5 rounded-full", colorMap[category])}>
-      {category}
-    </span>
-  );
+export default function CategoryBadge({ category, link = false }: { category: Category; link?: boolean }) {
+  const cls = cn("text-xs font-sans font-semibold px-2.5 py-0.5 rounded-full", colorMap[category]);
+  if (link) {
+    return (
+      <Link to={`/category/${categorySlug(category)}`} className={cn(cls, "hover:underline")}>
+        {category}
+      </Link>
+    );
+  }
+  return <span className={cls}>{category}</span>;
 }

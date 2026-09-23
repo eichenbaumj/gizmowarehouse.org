@@ -1,0 +1,6909 @@
+{
+  "version": "v9.0-2026-05-30",
+  "_meta": {
+    "method": "per_record_pums_joint_counts",
+    "categories": [
+      "W",
+      "P",
+      "M",
+      "S"
+    ],
+    "category_labels": {
+      "W": "Working \u2265 qualifying hours / income",
+      "P": "Parent caregiver of child \u226413",
+      "M": "Medically frail",
+      "S": "Full-time student"
+    },
+    "combination_work_school_note": "combination_work_school counts subjects who work part-time (WKHP 10-18, \u224843-78 monthly hours \u2014 under the 80-hr work-alone bar) AND are enrolled in school. They clear OBBBA's 80-hour threshold only if the state sums hours across activities, which the statute permits. A FLOOR: volunteer and job-training hours that would also combine are not observable in PUMS.",
+    "source": "ACS PUMS 5-Year 2020-2024 records classified per state in stage 04b. Each subject in the post-filter sample (Medicaid + age 19-64 + POVPIP \u2264138) is assigned to exactly one of 16 cells based on four boolean flags: W (WKHP \u2265 19, i.e. ~80 hrs/month), P (parent caregiver of child \u226413 via household RELSHIPP linkage), M (medically frail: DIS=1 AND \u22652 specific functional flags), S (full-time student: SCH \u2208 {2,3} AND SCHG \u2265 15). Cell counts are PWGTP-weighted. National = sum of state cells.",
+    "limitation": "Very small expansion states (typically WY, VT, AK, ND, SD) have thinner PUMS samples; cell counts there are noisier than in larger states. Exemptions surfaced in the loss-breakdown Sankey (SUD treatment, recent incarceration, kinship caregivers, caregivers of disabled adults, AI/AN tribal membership, former foster youth, AYA cancer survivor) are not among the four categories shown here; subjects whose only qualifying status is one of those appear in the zero-bucket band of this view but in the appropriate exempt subgroup of the loss-breakdown. The subject pool here excludes Section 1931 parents and recent non-citizens."
+  },
+  "_national": {
+    "subject_count": 18499999,
+    "cells": [
+      {
+        "key": "----",
+        "categories": [],
+        "count": 7090025,
+        "share": 0.3832
+      },
+      {
+        "key": "W---",
+        "categories": [
+          "W"
+        ],
+        "count": 3612568,
+        "share": 0.1953
+      },
+      {
+        "key": "--M-",
+        "categories": [
+          "M"
+        ],
+        "count": 2768540,
+        "share": 0.1497
+      },
+      {
+        "key": "WP--",
+        "categories": [
+          "W",
+          "P"
+        ],
+        "count": 2013515,
+        "share": 0.1088
+      },
+      {
+        "key": "---S",
+        "categories": [
+          "S"
+        ],
+        "count": 901235,
+        "share": 0.0487
+      },
+      {
+        "key": "-P--",
+        "categories": [
+          "P"
+        ],
+        "count": 896488,
+        "share": 0.0485
+      },
+      {
+        "key": "W--S",
+        "categories": [
+          "W",
+          "S"
+        ],
+        "count": 540008,
+        "share": 0.0292
+      },
+      {
+        "key": "W-M-",
+        "categories": [
+          "W",
+          "M"
+        ],
+        "count": 218892,
+        "share": 0.0118
+      },
+      {
+        "key": "WP-S",
+        "categories": [
+          "W",
+          "P",
+          "S"
+        ],
+        "count": 146395,
+        "share": 0.0079
+      },
+      {
+        "key": "-PM-",
+        "categories": [
+          "P",
+          "M"
+        ],
+        "count": 113884,
+        "share": 0.0062
+      },
+      {
+        "key": "-P-S",
+        "categories": [
+          "P",
+          "S"
+        ],
+        "count": 71347,
+        "share": 0.0039
+      },
+      {
+        "key": "--MS",
+        "categories": [
+          "M",
+          "S"
+        ],
+        "count": 64161,
+        "share": 0.0035
+      },
+      {
+        "key": "WPM-",
+        "categories": [
+          "W",
+          "P",
+          "M"
+        ],
+        "count": 41292,
+        "share": 0.0022
+      },
+      {
+        "key": "W-MS",
+        "categories": [
+          "W",
+          "M",
+          "S"
+        ],
+        "count": 13630,
+        "share": 0.0007
+      },
+      {
+        "key": "-PMS",
+        "categories": [
+          "P",
+          "M",
+          "S"
+        ],
+        "count": 4243,
+        "share": 0.0002
+      },
+      {
+        "key": "WPMS",
+        "categories": [
+          "W",
+          "P",
+          "M",
+          "S"
+        ],
+        "count": 3777,
+        "share": 0.0002
+      }
+    ],
+    "by_category_count": {
+      "0": 7090025,
+      "1": 8178831,
+      "2": 3021807,
+      "3": 205560,
+      "4": 3777
+    },
+    "marginal_totals": {
+      "W": 6590077,
+      "P": 3290941,
+      "M": 3228419,
+      "S": 1744796
+    },
+    "combination_work_school": 205080
+  },
+  "states": {
+    "06": {
+      "abbr": "CA",
+      "name": "California",
+      "subject_count": 4700448,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 1950216,
+          "share": 0.4149
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 1058820,
+          "share": 0.2253
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 603593,
+          "share": 0.1284
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 378368,
+          "share": 0.0805
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 298989,
+          "share": 0.0636
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 183282,
+          "share": 0.039
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 124343,
+          "share": 0.0265
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 39043,
+          "share": 0.0083
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 22718,
+          "share": 0.0048
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 17599,
+          "share": 0.0037
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 8873,
+          "share": 0.0019
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 6726,
+          "share": 0.0014
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 3945,
+          "share": 0.0008
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 2985,
+          "share": 0.0006
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 765,
+          "share": 0.0002
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 182,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 1950216,
+        "1": 2165124,
+        "2": 559631,
+        "3": 25294,
+        "4": 182
+      },
+      "marginal_totals": {
+        "W": 1604845,
+        "P": 461422,
+        "M": 679957,
+        "S": 614772
+      },
+      "combination_work_school": 69044
+    },
+    "36": {
+      "abbr": "NY",
+      "name": "New York",
+      "subject_count": 1861115,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 751601,
+          "share": 0.4038
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 348957,
+          "share": 0.1875
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 255862,
+          "share": 0.1375
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 216266,
+          "share": 0.1162
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 105301,
+          "share": 0.0566
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 93342,
+          "share": 0.0502
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 41716,
+          "share": 0.0224
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 14273,
+          "share": 0.0077
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 9396,
+          "share": 0.005
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 8564,
+          "share": 0.0046
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 6459,
+          "share": 0.0035
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 5901,
+          "share": 0.0032
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1676,
+          "share": 0.0009
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 1005,
+          "share": 0.0005
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 575,
+          "share": 0.0003
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 222,
+          "share": 0.0001
+        }
+      ],
+      "by_category_count": {
+        "0": 751601,
+        "1": 803462,
+        "2": 293179,
+        "3": 12652,
+        "4": 222
+      },
+      "marginal_totals": {
+        "W": 633511,
+        "P": 335942,
+        "M": 288636,
+        "S": 170575
+      },
+      "combination_work_school": 18068
+    },
+    "42": {
+      "abbr": "PA",
+      "name": "Pennsylvania",
+      "subject_count": 769098,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 266892,
+          "share": 0.347
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 131117,
+          "share": 0.1705
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 127459,
+          "share": 0.1657
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 117728,
+          "share": 0.1531
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 51199,
+          "share": 0.0666
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 21333,
+          "share": 0.0277
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 15964,
+          "share": 0.0208
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 12456,
+          "share": 0.0162
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 8404,
+          "share": 0.0109
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 7804,
+          "share": 0.0101
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 2926,
+          "share": 0.0038
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 2827,
+          "share": 0.0037
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 2233,
+          "share": 0.0029
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 553,
+          "share": 0.0007
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 109,
+          "share": 0.0001
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 94,
+          "share": 0.0001
+        }
+      ],
+      "by_category_count": {
+        "0": 266892,
+        "1": 331108,
+        "2": 159612,
+        "3": 11392,
+        "4": 94
+      },
+      "marginal_totals": {
+        "W": 284984,
+        "P": 191091,
+        "M": 157892,
+        "S": 50917
+      },
+      "combination_work_school": 6030
+    },
+    "17": {
+      "abbr": "IL",
+      "name": "Illinois",
+      "subject_count": 761540,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 272396,
+          "share": 0.3577
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 141530,
+          "share": 0.1858
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 111302,
+          "share": 0.1462
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 104967,
+          "share": 0.1378
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 48124,
+          "share": 0.0632
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 28027,
+          "share": 0.0368
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 18703,
+          "share": 0.0246
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 10533,
+          "share": 0.0138
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 9541,
+          "share": 0.0125
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 5724,
+          "share": 0.0075
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 4760,
+          "share": 0.0062
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 2823,
+          "share": 0.0037
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1987,
+          "share": 0.0026
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 873,
+          "share": 0.0011
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 116,
+          "share": 0.0002
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 135,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 272396,
+        "1": 322648,
+        "2": 152017,
+        "3": 14345,
+        "4": 135
+      },
+      "marginal_totals": {
+        "W": 295440,
+        "P": 183517,
+        "M": 126166,
+        "S": 65134
+      },
+      "combination_work_school": 8230
+    },
+    "22": {
+      "abbr": "LA",
+      "name": "Louisiana",
+      "subject_count": 694370,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 260078,
+          "share": 0.3746
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 136035,
+          "share": 0.1959
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 100132,
+          "share": 0.1442
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 92268,
+          "share": 0.1329
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 40958,
+          "share": 0.059
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 20761,
+          "share": 0.0299
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 15090,
+          "share": 0.0217
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 10434,
+          "share": 0.015
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 5681,
+          "share": 0.0082
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 4990,
+          "share": 0.0072
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 3412,
+          "share": 0.0049
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 2604,
+          "share": 0.0038
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1508,
+          "share": 0.0022
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 169,
+          "share": 0.0002
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 105,
+          "share": 0.0002
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 145,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 260078,
+        "1": 290022,
+        "2": 130813,
+        "3": 13312,
+        "4": 145
+      },
+      "marginal_totals": {
+        "W": 269535,
+        "P": 163535,
+        "M": 107470,
+        "S": 51624
+      },
+      "combination_work_school": 5089
+    },
+    "26": {
+      "abbr": "MI",
+      "name": "Michigan",
+      "subject_count": 670143,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 244075,
+          "share": 0.3642
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 124852,
+          "share": 0.1863
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 102079,
+          "share": 0.1523
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 95645,
+          "share": 0.1427
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 41026,
+          "share": 0.0612
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 17958,
+          "share": 0.0268
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 15571,
+          "share": 0.0232
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 10641,
+          "share": 0.0159
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 5643,
+          "share": 0.0084
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 4959,
+          "share": 0.0074
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 2522,
+          "share": 0.0038
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 2155,
+          "share": 0.0032
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1935,
+          "share": 0.0029
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 723,
+          "share": 0.0011
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 174,
+          "share": 0.0003
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 187,
+          "share": 0.0003
+        }
+      ],
+      "by_category_count": {
+        "0": 244075,
+        "1": 285915,
+        "2": 131493,
+        "3": 8475,
+        "4": 187
+      },
+      "marginal_totals": {
+        "W": 255197,
+        "P": 152091,
+        "M": 122853,
+        "S": 44933
+      },
+      "combination_work_school": 4719
+    },
+    "39": {
+      "abbr": "OH",
+      "name": "Ohio",
+      "subject_count": 659491,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 257918,
+          "share": 0.3911
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 140857,
+          "share": 0.2136
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 114896,
+          "share": 0.1742
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 67113,
+          "share": 0.1018
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 20673,
+          "share": 0.0313
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 17562,
+          "share": 0.0266
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 15736,
+          "share": 0.0239
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 12186,
+          "share": 0.0185
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 5026,
+          "share": 0.0076
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 2277,
+          "share": 0.0035
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 1989,
+          "share": 0.003
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1598,
+          "share": 0.0024
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1107,
+          "share": 0.0017
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 488,
+          "share": 0.0007
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 66,
+          "share": 0.0001
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 257918,
+        "1": 293988,
+        "2": 100408,
+        "3": 7178,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 243004,
+        "P": 97572,
+        "M": 133500,
+        "S": 42262
+      },
+      "combination_work_school": 5778
+    },
+    "41": {
+      "abbr": "OR",
+      "name": "Oregon",
+      "subject_count": 644844,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 211593,
+          "share": 0.3281
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 123337,
+          "share": 0.1913
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 102497,
+          "share": 0.1589
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 84384,
+          "share": 0.1309
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 43873,
+          "share": 0.068
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 24573,
+          "share": 0.0381
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 20829,
+          "share": 0.0323
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 12392,
+          "share": 0.0192
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 7464,
+          "share": 0.0116
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 5291,
+          "share": 0.0082
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 2899,
+          "share": 0.0045
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 2377,
+          "share": 0.0037
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 2088,
+          "share": 0.0032
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 721,
+          "share": 0.0011
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 457,
+          "share": 0.0007
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 71,
+          "share": 0.0001
+        }
+      ],
+      "by_category_count": {
+        "0": 211593,
+        "1": 294280,
+        "2": 130056,
+        "3": 8460,
+        "4": 457
+      },
+      "marginal_totals": {
+        "W": 249788,
+        "P": 146816,
+        "M": 128067,
+        "S": 56929
+      },
+      "combination_work_school": 8255
+    },
+    "37": {
+      "abbr": "NC",
+      "name": "North Carolina",
+      "subject_count": 625855,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 216348,
+          "share": 0.3457
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 105762,
+          "share": 0.169
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 95160,
+          "share": 0.152
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 92685,
+          "share": 0.1481
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 47293,
+          "share": 0.0756
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 21122,
+          "share": 0.0337
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 14480,
+          "share": 0.0231
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 8955,
+          "share": 0.0143
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 8238,
+          "share": 0.0132
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 6767,
+          "share": 0.0108
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 4830,
+          "share": 0.0077
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1995,
+          "share": 0.0032
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1574,
+          "share": 0.0025
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 384,
+          "share": 0.0006
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 115,
+          "share": 0.0002
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 147,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 216348,
+        "1": 266862,
+        "2": 131470,
+        "3": 11028,
+        "4": 147
+      },
+      "marginal_totals": {
+        "W": 220152,
+        "P": 166312,
+        "M": 124982,
+        "S": 52028
+      },
+      "combination_work_school": 6034
+    },
+    "51": {
+      "abbr": "VA",
+      "name": "Virginia",
+      "subject_count": 588843,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 198271,
+          "share": 0.3367
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 104025,
+          "share": 0.1767
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 95151,
+          "share": 0.1616
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 84525,
+          "share": 0.1435
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 39842,
+          "share": 0.0677
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 22005,
+          "share": 0.0374
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 17566,
+          "share": 0.0298
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 6875,
+          "share": 0.0117
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 6478,
+          "share": 0.011
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 6354,
+          "share": 0.0108
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 3073,
+          "share": 0.0052
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 2398,
+          "share": 0.0041
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1948,
+          "share": 0.0033
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 180,
+          "share": 0.0003
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 153,
+          "share": 0.0003
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 198271,
+        "1": 250397,
+        "2": 131020,
+        "3": 9003,
+        "4": 153
+      },
+      "marginal_totals": {
+        "W": 232376,
+        "P": 153396,
+        "M": 102036,
+        "S": 52250
+      },
+      "combination_work_school": 5992
+    },
+    "53": {
+      "abbr": "WA",
+      "name": "Washington",
+      "subject_count": 559112,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 193541,
+          "share": 0.3462
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 95488,
+          "share": 0.1708
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 94019,
+          "share": 0.1682
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 65869,
+          "share": 0.1178
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 37977,
+          "share": 0.0679
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 24293,
+          "share": 0.0434
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 18726,
+          "share": 0.0335
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 8201,
+          "share": 0.0147
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 6035,
+          "share": 0.0108
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 5788,
+          "share": 0.0104
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 3039,
+          "share": 0.0054
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 2647,
+          "share": 0.0047
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 2052,
+          "share": 0.0037
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 907,
+          "share": 0.0016
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 435,
+          "share": 0.0008
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 96,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 193541,
+        "1": 251777,
+        "2": 104270,
+        "3": 9429,
+        "4": 96
+      },
+      "marginal_totals": {
+        "W": 197374,
+        "P": 121291,
+        "M": 114145,
+        "S": 56178
+      },
+      "combination_work_school": 8410
+    },
+    "34": {
+      "abbr": "NJ",
+      "name": "New Jersey",
+      "subject_count": 511168,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 171966,
+          "share": 0.3364
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 83404,
+          "share": 0.1632
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 81053,
+          "share": 0.1586
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 65671,
+          "share": 0.1285
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 45343,
+          "share": 0.0887
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 25456,
+          "share": 0.0498
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 12535,
+          "share": 0.0245
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 8426,
+          "share": 0.0165
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 6787,
+          "share": 0.0133
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 4736,
+          "share": 0.0093
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 4069,
+          "share": 0.008
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 705,
+          "share": 0.0014
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 595,
+          "share": 0.0012
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 141,
+          "share": 0.0003
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 174,
+          "share": 0.0003
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 107,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 171966,
+        "1": 219874,
+        "2": 111414,
+        "3": 7807,
+        "4": 107
+      },
+      "marginal_totals": {
+        "W": 188834,
+        "P": 147298,
+        "M": 76198,
+        "S": 54221
+      },
+      "combination_work_school": 5331
+    },
+    "18": {
+      "abbr": "IN",
+      "name": "Indiana",
+      "subject_count": 484416,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 152952,
+          "share": 0.3157
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 87015,
+          "share": 0.1796
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 82982,
+          "share": 0.1713
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 74590,
+          "share": 0.154
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 36274,
+          "share": 0.0749
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 11662,
+          "share": 0.0241
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 11503,
+          "share": 0.0237
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 8033,
+          "share": 0.0166
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 6262,
+          "share": 0.0129
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 5861,
+          "share": 0.0121
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 2617,
+          "share": 0.0054
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 2610,
+          "share": 0.0054
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1245,
+          "share": 0.0026
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 304,
+          "share": 0.0006
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 280,
+          "share": 0.0006
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 226,
+          "share": 0.0005
+        }
+      ],
+      "by_category_count": {
+        "0": 152952,
+        "1": 209541,
+        "2": 112241,
+        "3": 9456,
+        "4": 226
+      },
+      "marginal_totals": {
+        "W": 198911,
+        "P": 137136,
+        "M": 93149,
+        "S": 34099
+      },
+      "combination_work_school": 3730
+    },
+    "04": {
+      "abbr": "AZ",
+      "name": "Arizona",
+      "subject_count": 476311,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 209395,
+          "share": 0.4396
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 97274,
+          "share": 0.2042
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 67320,
+          "share": 0.1413
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 37808,
+          "share": 0.0794
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 22581,
+          "share": 0.0474
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 13374,
+          "share": 0.0281
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 13358,
+          "share": 0.028
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 7342,
+          "share": 0.0154
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 2498,
+          "share": 0.0052
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 1582,
+          "share": 0.0033
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1350,
+          "share": 0.0028
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1196,
+          "share": 0.0025
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 791,
+          "share": 0.0017
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 223,
+          "share": 0.0005
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 170,
+          "share": 0.0004
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 49,
+          "share": 0.0001
+        }
+      ],
+      "by_category_count": {
+        "0": 209395,
+        "1": 200533,
+        "2": 62652,
+        "3": 3561,
+        "4": 170
+      },
+      "marginal_totals": {
+        "W": 159480,
+        "P": 57606,
+        "M": 78673,
+        "S": 41441
+      },
+      "combination_work_school": 4627
+    },
+    "21": {
+      "abbr": "KY",
+      "name": "Kentucky",
+      "subject_count": 434069,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 149682,
+          "share": 0.3448
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 75364,
+          "share": 0.1736
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 69039,
+          "share": 0.1591
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 68129,
+          "share": 0.157
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 30789,
+          "share": 0.0709
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 9060,
+          "share": 0.0209
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 8347,
+          "share": 0.0192
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 6232,
+          "share": 0.0144
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 6238,
+          "share": 0.0144
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 5583,
+          "share": 0.0129
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 2464,
+          "share": 0.0057
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1770,
+          "share": 0.0041
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1032,
+          "share": 0.0024
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 181,
+          "share": 0.0004
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 110,
+          "share": 0.0003
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 49,
+          "share": 0.0001
+        }
+      ],
+      "by_category_count": {
+        "0": 149682,
+        "1": 183539,
+        "2": 92500,
+        "3": 8167,
+        "4": 181
+      },
+      "marginal_totals": {
+        "W": 167084,
+        "P": 115203,
+        "M": 83996,
+        "S": 27481
+      },
+      "combination_work_school": 2743
+    },
+    "08": {
+      "abbr": "CO",
+      "name": "Colorado",
+      "subject_count": 357248,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 123955,
+          "share": 0.347
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 80217,
+          "share": 0.2245
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 47545,
+          "share": 0.1331
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 40592,
+          "share": 0.1136
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 17880,
+          "share": 0.05
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 17411,
+          "share": 0.0487
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 14453,
+          "share": 0.0405
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 5850,
+          "share": 0.0164
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 3964,
+          "share": 0.0111
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 1728,
+          "share": 0.0048
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1219,
+          "share": 0.0034
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1145,
+          "share": 0.0032
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 638,
+          "share": 0.0018
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 325,
+          "share": 0.0009
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 207,
+          "share": 0.0006
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 118,
+          "share": 0.0003
+        }
+      ],
+      "by_category_count": {
+        "0": 123955,
+        "1": 163053,
+        "2": 64480,
+        "3": 5641,
+        "4": 118
+      },
+      "marginal_totals": {
+        "W": 146664,
+        "P": 66853,
+        "M": 57556,
+        "S": 38335
+      },
+      "combination_work_school": 5419
+    },
+    "29": {
+      "abbr": "MO",
+      "name": "Missouri",
+      "subject_count": 327567,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 102780,
+          "share": 0.3138
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 69004,
+          "share": 0.2107
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 53616,
+          "share": 0.1637
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 44865,
+          "share": 0.137
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 25784,
+          "share": 0.0787
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 7331,
+          "share": 0.0224
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 6058,
+          "share": 0.0185
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 5410,
+          "share": 0.0165
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 5084,
+          "share": 0.0155
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 3198,
+          "share": 0.0098
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1700,
+          "share": 0.0052
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1569,
+          "share": 0.0048
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 486,
+          "share": 0.0015
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 373,
+          "share": 0.0011
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 283,
+          "share": 0.0009
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 26,
+          "share": 0.0001
+        }
+      ],
+      "by_category_count": {
+        "0": 102780,
+        "1": 146984,
+        "2": 72354,
+        "3": 5076,
+        "4": 373
+      },
+      "marginal_totals": {
+        "W": 115372,
+        "P": 91350,
+        "M": 82235,
+        "S": 19455
+      },
+      "combination_work_school": 2834
+    },
+    "25": {
+      "abbr": "MA",
+      "name": "Massachusetts",
+      "subject_count": 321878,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 156081,
+          "share": 0.4849
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 70742,
+          "share": 0.2198
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 61874,
+          "share": 0.1922
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 16306,
+          "share": 0.0507
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 10727,
+          "share": 0.0333
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 3890,
+          "share": 0.0121
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1370,
+          "share": 0.0043
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 396,
+          "share": 0.0012
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 348,
+          "share": 0.0011
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 51,
+          "share": 0.0002
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 35,
+          "share": 0.0001
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 29,
+          "share": 0.0001
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 29,
+          "share": 0.0001
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 156081,
+        "1": 148957,
+        "2": 16412,
+        "3": 428,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 77315,
+        "P": 540,
+        "M": 76408,
+        "S": 28802
+      },
+      "combination_work_school": 4129
+    },
+    "24": {
+      "abbr": "MD",
+      "name": "Maryland",
+      "subject_count": 310140,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 140759,
+          "share": 0.4539
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 70638,
+          "share": 0.2278
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 53557,
+          "share": 0.1727
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 14945,
+          "share": 0.0482
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 10646,
+          "share": 0.0343
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 10159,
+          "share": 0.0328
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 3796,
+          "share": 0.0122
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 3289,
+          "share": 0.0106
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 754,
+          "share": 0.0024
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 711,
+          "share": 0.0023
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 390,
+          "share": 0.0013
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 188,
+          "share": 0.0006
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 164,
+          "share": 0.0005
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 114,
+          "share": 0.0004
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 29,
+          "share": 0.0001
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 140759,
+        "1": 142429,
+        "2": 25657,
+        "3": 1265,
+        "4": 29
+      },
+      "marginal_totals": {
+        "W": 96533,
+        "P": 15141,
+        "M": 58878,
+        "S": 27102
+      },
+      "combination_work_school": 3483
+    },
+    "09": {
+      "abbr": "CT",
+      "name": "Connecticut",
+      "subject_count": 294652,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 139898,
+          "share": 0.4748
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 65414,
+          "share": 0.222
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 56066,
+          "share": 0.1903
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 16235,
+          "share": 0.0551
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 11764,
+          "share": 0.0399
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 2738,
+          "share": 0.0093
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 1102,
+          "share": 0.0037
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 626,
+          "share": 0.0021
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 603,
+          "share": 0.002
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 207,
+          "share": 0.0007
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 139898,
+        "1": 138318,
+        "2": 16230,
+        "3": 207,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 80749,
+        "P": 1229,
+        "M": 60113,
+        "S": 29308
+      },
+      "combination_work_school": 4695
+    },
+    "32": {
+      "abbr": "NV",
+      "name": "Nevada",
+      "subject_count": 265520,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 95510,
+          "share": 0.3597
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 53099,
+          "share": 0.2
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 41723,
+          "share": 0.1571
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 30605,
+          "share": 0.1153
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 19624,
+          "share": 0.0739
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 9780,
+          "share": 0.0368
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 4659,
+          "share": 0.0175
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 2883,
+          "share": 0.0109
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 2830,
+          "share": 0.0107
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 1652,
+          "share": 0.0062
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1319,
+          "share": 0.005
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 758,
+          "share": 0.0029
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 767,
+          "share": 0.0029
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 123,
+          "share": 0.0005
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 138,
+          "share": 0.0005
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 51,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 95510,
+        "1": 113108,
+        "2": 52994,
+        "3": 3771,
+        "4": 138
+      },
+      "marginal_totals": {
+        "W": 106222,
+        "P": 68104,
+        "M": 36977,
+        "S": 19658
+      },
+      "combination_work_school": 1709
+    },
+    "35": {
+      "abbr": "NM",
+      "name": "New Mexico",
+      "subject_count": 231344,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 82571,
+          "share": 0.3569
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 50255,
+          "share": 0.2172
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 30856,
+          "share": 0.1334
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 29865,
+          "share": 0.1291
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 12378,
+          "share": 0.0535
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 7834,
+          "share": 0.0339
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 6797,
+          "share": 0.0294
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 3455,
+          "share": 0.0149
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 2873,
+          "share": 0.0124
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 2121,
+          "share": 0.0092
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 915,
+          "share": 0.004
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 612,
+          "share": 0.0026
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 469,
+          "share": 0.002
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 166,
+          "share": 0.0007
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 107,
+          "share": 0.0005
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 70,
+          "share": 0.0003
+        }
+      ],
+      "by_category_count": {
+        "0": 82571,
+        "1": 100332,
+        "2": 44031,
+        "3": 4340,
+        "4": 70
+      },
+      "marginal_totals": {
+        "W": 95084,
+        "P": 50514,
+        "M": 36283,
+        "S": 19813
+      },
+      "combination_work_school": 1857
+    },
+    "40": {
+      "abbr": "OK",
+      "name": "Oklahoma",
+      "subject_count": 224018,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 74731,
+          "share": 0.3336
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 36797,
+          "share": 0.1643
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 36318,
+          "share": 0.1621
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 35256,
+          "share": 0.1574
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 18285,
+          "share": 0.0816
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 4993,
+          "share": 0.0223
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 4371,
+          "share": 0.0195
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 3567,
+          "share": 0.0159
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 3024,
+          "share": 0.0135
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 2874,
+          "share": 0.0128
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1526,
+          "share": 0.0068
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1149,
+          "share": 0.0051
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 635,
+          "share": 0.0028
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 235,
+          "share": 0.001
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 214,
+          "share": 0.001
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 43,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 74731,
+        "1": 94852,
+        "2": 49920,
+        "3": 4472,
+        "4": 43
+      },
+      "marginal_totals": {
+        "W": 84271,
+        "P": 63933,
+        "M": 45185,
+        "S": 14891
+      },
+      "combination_work_school": 942
+    },
+    "05": {
+      "abbr": "AR",
+      "name": "Arkansas",
+      "subject_count": 218860,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 76781,
+          "share": 0.3508
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 37948,
+          "share": 0.1734
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 34543,
+          "share": 0.1578
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 32521,
+          "share": 0.1486
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 18261,
+          "share": 0.0834
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 4128,
+          "share": 0.0189
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 3491,
+          "share": 0.0159
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 3115,
+          "share": 0.0142
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 2575,
+          "share": 0.0118
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 2209,
+          "share": 0.0101
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1374,
+          "share": 0.0063
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 1080,
+          "share": 0.0049
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 490,
+          "share": 0.0022
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 188,
+          "share": 0.0009
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 83,
+          "share": 0.0004
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 75,
+          "share": 0.0003
+        }
+      ],
+      "by_category_count": {
+        "0": 76781,
+        "1": 92858,
+        "2": 45588,
+        "3": 3447,
+        "4": 188
+      },
+      "marginal_totals": {
+        "W": 76314,
+        "P": 61221,
+        "M": 45930,
+        "S": 11662
+      },
+      "combination_work_school": 1179
+    },
+    "27": {
+      "abbr": "MN",
+      "name": "Minnesota",
+      "subject_count": 198564,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 81972,
+          "share": 0.4128
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 49276,
+          "share": 0.2482
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 41198,
+          "share": 0.2075
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 9995,
+          "share": 0.0503
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 9047,
+          "share": 0.0456
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 4757,
+          "share": 0.024
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 761,
+          "share": 0.0038
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 723,
+          "share": 0.0036
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 561,
+          "share": 0.0028
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 274,
+          "share": 0.0014
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 81972,
+        "1": 99795,
+        "2": 16236,
+        "3": 561,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 65312,
+        "P": 997,
+        "M": 47277,
+        "S": 20364
+      },
+      "combination_work_school": 3800
+    },
+    "19": {
+      "abbr": "IA",
+      "name": "Iowa",
+      "subject_count": 167799,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 50515,
+          "share": 0.301
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 32340,
+          "share": 0.1927
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 31910,
+          "share": 0.1902
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 25525,
+          "share": 0.1521
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 10173,
+          "share": 0.0606
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 5204,
+          "share": 0.031
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 4668,
+          "share": 0.0278
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 2821,
+          "share": 0.0168
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 1957,
+          "share": 0.0117
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 1338,
+          "share": 0.008
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 570,
+          "share": 0.0034
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 321,
+          "share": 0.0019
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 238,
+          "share": 0.0014
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 135,
+          "share": 0.0008
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 44,
+          "share": 0.0003
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 41,
+          "share": 0.0002
+        }
+      ],
+      "by_category_count": {
+        "0": 50515,
+        "1": 73242,
+        "2": 41545,
+        "3": 2454,
+        "4": 44
+      },
+      "marginal_totals": {
+        "W": 74196,
+        "P": 46354,
+        "M": 30463,
+        "S": 12857
+      },
+      "combination_work_school": 2675
+    },
+    "54": {
+      "abbr": "WV",
+      "name": "West Virginia",
+      "subject_count": 159195,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 60887,
+          "share": 0.3825
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 26818,
+          "share": 0.1685
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 23279,
+          "share": 0.1462
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 22761,
+          "share": 0.143
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 12443,
+          "share": 0.0782
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 3471,
+          "share": 0.0218
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2897,
+          "share": 0.0182
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 2009,
+          "share": 0.0126
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1481,
+          "share": 0.0093
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 1343,
+          "share": 0.0084
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 683,
+          "share": 0.0043
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 493,
+          "share": 0.0031
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 448,
+          "share": 0.0028
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 170,
+          "share": 0.0011
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 13,
+          "share": 0.0001
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 60887,
+        "1": 66011,
+        "2": 30089,
+        "3": 2209,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 52614,
+        "P": 39745,
+        "M": 31622,
+        "S": 8835
+      },
+      "combination_work_school": 681
+    },
+    "15": {
+      "abbr": "HI",
+      "name": "Hawaii",
+      "subject_count": 122248,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 59878,
+          "share": 0.4898
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 26337,
+          "share": 0.2154
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 18139,
+          "share": 0.1484
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 6049,
+          "share": 0.0495
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 5287,
+          "share": 0.0432
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 2155,
+          "share": 0.0176
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2083,
+          "share": 0.017
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1049,
+          "share": 0.0086
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 639,
+          "share": 0.0052
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 250,
+          "share": 0.002
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 139,
+          "share": 0.0011
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 127,
+          "share": 0.001
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 118,
+          "share": 0.001
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 59878,
+        "1": 52680,
+        "2": 9324,
+        "3": 368,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 35124,
+        "P": 7826,
+        "M": 20204,
+        "S": 9278
+      },
+      "combination_work_school": 1260
+    },
+    "11": {
+      "abbr": "DC",
+      "name": "District of Columbia",
+      "subject_count": 111318,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 64264,
+          "share": 0.5773
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 21096,
+          "share": 0.1895
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 16204,
+          "share": 0.1456
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 5517,
+          "share": 0.0496
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2332,
+          "share": 0.0209
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1189,
+          "share": 0.0107
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 537,
+          "share": 0.0048
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 137,
+          "share": 0.0012
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 42,
+          "share": 0.0004
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 64264,
+        "1": 42817,
+        "2": 4195,
+        "3": 42,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 25196,
+        "P": 537,
+        "M": 17572,
+        "S": 8028
+      },
+      "combination_work_school": 728
+    },
+    "23": {
+      "abbr": "ME",
+      "name": "Maine",
+      "subject_count": 90445,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 38804,
+          "share": 0.429
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 22518,
+          "share": 0.249
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 13331,
+          "share": 0.1474
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 6283,
+          "share": 0.0695
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 2431,
+          "share": 0.0269
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 2253,
+          "share": 0.0249
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 1499,
+          "share": 0.0166
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1260,
+          "share": 0.0139
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 851,
+          "share": 0.0094
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 574,
+          "share": 0.0063
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 277,
+          "share": 0.0031
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 217,
+          "share": 0.0024
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 123,
+          "share": 0.0014
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 24,
+          "share": 0.0003
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 38804,
+        "1": 40533,
+        "2": 10110,
+        "3": 998,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 23371,
+        "P": 10004,
+        "M": 24776,
+        "S": 5596
+      },
+      "combination_work_school": 587
+    },
+    "16": {
+      "abbr": "ID",
+      "name": "Idaho",
+      "subject_count": 83021,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 23126,
+          "share": 0.2786
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 15963,
+          "share": 0.1923
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 12862,
+          "share": 0.1549
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 11740,
+          "share": 0.1414
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 8819,
+          "share": 0.1062
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2045,
+          "share": 0.0246
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 2018,
+          "share": 0.0243
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 1942,
+          "share": 0.0234
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1415,
+          "share": 0.017
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1280,
+          "share": 0.0154
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 1004,
+          "share": 0.0121
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 742,
+          "share": 0.0089
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 54,
+          "share": 0.0006
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 9,
+          "share": 0.0001
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 3,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 23126,
+        "1": 35439,
+        "2": 21761,
+        "3": 2696,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 34837,
+        "P": 29894,
+        "M": 14832,
+        "S": 7486
+      },
+      "combination_work_school": 770
+    },
+    "49": {
+      "abbr": "UT",
+      "name": "Utah",
+      "subject_count": 77239,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 23229,
+          "share": 0.3007
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 13992,
+          "share": 0.1812
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 10986,
+          "share": 0.1422
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 10086,
+          "share": 0.1306
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 6621,
+          "share": 0.0857
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 3471,
+          "share": 0.0449
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2604,
+          "share": 0.0337
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 1925,
+          "share": 0.0249
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1274,
+          "share": 0.0165
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 1005,
+          "share": 0.013
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 762,
+          "share": 0.0099
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 566,
+          "share": 0.0073
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 321,
+          "share": 0.0042
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 153,
+          "share": 0.002
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 127,
+          "share": 0.0016
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 115,
+          "share": 0.0015
+        }
+      ],
+      "by_category_count": {
+        "0": 23229,
+        "1": 34170,
+        "2": 16952,
+        "3": 2759,
+        "4": 127
+      },
+      "marginal_totals": {
+        "W": 27721,
+        "P": 22107,
+        "M": 17310,
+        "S": 9721
+      },
+      "combination_work_school": 1787
+    },
+    "44": {
+      "abbr": "RI",
+      "name": "Rhode Island",
+      "subject_count": 71519,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 31906,
+          "share": 0.4461
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 15909,
+          "share": 0.2224
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 12020,
+          "share": 0.1681
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 3625,
+          "share": 0.0507
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 3110,
+          "share": 0.0435
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 2658,
+          "share": 0.0372
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 1236,
+          "share": 0.0173
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 339,
+          "share": 0.0047
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 325,
+          "share": 0.0045
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 268,
+          "share": 0.0037
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 57,
+          "share": 0.0008
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 27,
+          "share": 0.0004
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 24,
+          "share": 0.0003
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 15,
+          "share": 0.0002
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 31906,
+        "1": 32790,
+        "2": 6513,
+        "3": 310,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 18437,
+        "P": 4270,
+        "M": 16672,
+        "S": 7367
+      },
+      "combination_work_school": 941
+    },
+    "30": {
+      "abbr": "MT",
+      "name": "Montana",
+      "subject_count": 70455,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 22323,
+          "share": 0.3168
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 15435,
+          "share": 0.2191
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 10947,
+          "share": 0.1554
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 10191,
+          "share": 0.1446
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 4091,
+          "share": 0.0581
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2167,
+          "share": 0.0308
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1726,
+          "share": 0.0245
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 944,
+          "share": 0.0134
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 813,
+          "share": 0.0115
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 583,
+          "share": 0.0083
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 404,
+          "share": 0.0057
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 346,
+          "share": 0.0049
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 294,
+          "share": 0.0042
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 82,
+          "share": 0.0012
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 55,
+          "share": 0.0008
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 55,
+          "share": 0.0008
+        }
+      ],
+      "by_category_count": {
+        "0": 22323,
+        "1": 31417,
+        "2": 15417,
+        "3": 1244,
+        "4": 55
+      },
+      "marginal_totals": {
+        "W": 30763,
+        "P": 16428,
+        "M": 14146,
+        "S": 4866
+      },
+      "combination_work_school": 297
+    },
+    "31": {
+      "abbr": "NE",
+      "name": "Nebraska",
+      "subject_count": 65179,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 19611,
+          "share": 0.3009
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 11525,
+          "share": 0.1768
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 11177,
+          "share": 0.1715
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 10581,
+          "share": 0.1623
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 3730,
+          "share": 0.0572
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 2835,
+          "share": 0.0435
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 2183,
+          "share": 0.0335
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 1109,
+          "share": 0.017
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 867,
+          "share": 0.0133
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 714,
+          "share": 0.0109
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 393,
+          "share": 0.006
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 204,
+          "share": 0.0031
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 150,
+          "share": 0.0023
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 84,
+          "share": 0.0013
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 17,
+          "share": 0.0003
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 19611,
+        "1": 28615,
+        "2": 15836,
+        "3": 1101,
+        "4": 17
+      },
+      "marginal_totals": {
+        "W": 27168,
+        "P": 16263,
+        "M": 13644,
+        "S": 6583
+      },
+      "combination_work_school": 966
+    },
+    "10": {
+      "abbr": "DE",
+      "name": "Delaware",
+      "subject_count": 63962,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 25466,
+          "share": 0.3981
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 12320,
+          "share": 0.1926
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 10834,
+          "share": 0.1694
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 6933,
+          "share": 0.1084
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 2787,
+          "share": 0.0436
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 2190,
+          "share": 0.0342
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 1715,
+          "share": 0.0268
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 731,
+          "share": 0.0114
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 472,
+          "share": 0.0074
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 178,
+          "share": 0.0028
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 159,
+          "share": 0.0025
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 141,
+          "share": 0.0022
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 35,
+          "share": 0.0006
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 25466,
+        "1": 28131,
+        "2": 9751,
+        "3": 613,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 22312,
+        "P": 9932,
+        "M": 11900,
+        "S": 5328
+      },
+      "combination_work_school": 586
+    },
+    "02": {
+      "abbr": "AK",
+      "name": "Alaska",
+      "subject_count": 61244,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 30051,
+          "share": 0.4907
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 13756,
+          "share": 0.2246
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 10750,
+          "share": 0.1755
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 2196,
+          "share": 0.0359
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 1639,
+          "share": 0.0268
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 970,
+          "share": 0.0158
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 843,
+          "share": 0.0138
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 829,
+          "share": 0.0135
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 122,
+          "share": 0.002
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 36,
+          "share": 0.0006
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 28,
+          "share": 0.0005
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 25,
+          "share": 0.0004
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 30051,
+        "1": 26319,
+        "2": 4811,
+        "3": 64,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 18484,
+        "P": 3092,
+        "M": 11737,
+        "S": 2820
+      },
+      "combination_work_school": 80
+    },
+    "50": {
+      "abbr": "VT",
+      "name": "Vermont",
+      "subject_count": 57297,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 21543,
+          "share": 0.376
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 9892,
+          "share": 0.1727
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 9184,
+          "share": 0.1603
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 6102,
+          "share": 0.1065
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 4453,
+          "share": 0.0777
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 2588,
+          "share": 0.0452
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 1302,
+          "share": 0.0227
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 888,
+          "share": 0.0155
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 505,
+          "share": 0.0088
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 364,
+          "share": 0.0064
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 241,
+          "share": 0.0042
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 128,
+          "share": 0.0022
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 74,
+          "share": 0.0013
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 30,
+          "share": 0.0005
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 4,
+          "share": 0.0001
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 21543,
+        "1": 26117,
+        "2": 9042,
+        "3": 522,
+        "4": 74
+      },
+      "marginal_totals": {
+        "W": 18269,
+        "P": 12280,
+        "M": 10813,
+        "S": 4701
+      },
+      "combination_work_school": 892
+    },
+    "33": {
+      "abbr": "NH",
+      "name": "New Hampshire",
+      "subject_count": 56968,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 20131,
+          "share": 0.3534
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 12966,
+          "share": 0.2276
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 9239,
+          "share": 0.1622
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 6191,
+          "share": 0.1087
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 3081,
+          "share": 0.0541
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 1491,
+          "share": 0.0262
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 1389,
+          "share": 0.0244
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 911,
+          "share": 0.016
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 537,
+          "share": 0.0094
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 366,
+          "share": 0.0064
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 334,
+          "share": 0.0059
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 229,
+          "share": 0.004
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 61,
+          "share": 0.0011
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 42,
+          "share": 0.0007
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 20131,
+        "1": 26675,
+        "2": 9420,
+        "3": 742,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 18532,
+        "P": 10612,
+        "M": 15019,
+        "S": 3578
+      },
+      "combination_work_school": 242
+    },
+    "46": {
+      "abbr": "SD",
+      "name": "South Dakota",
+      "subject_count": 27916,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 9229,
+          "share": 0.3306
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 6885,
+          "share": 0.2466
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 3737,
+          "share": 0.1339
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 3362,
+          "share": 0.1204
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 2022,
+          "share": 0.0724
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 741,
+          "share": 0.0266
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 695,
+          "share": 0.0249
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 568,
+          "share": 0.0203
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 312,
+          "share": 0.0112
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 172,
+          "share": 0.0062
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 68,
+          "share": 0.0024
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 57,
+          "share": 0.002
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 46,
+          "share": 0.0017
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 23,
+          "share": 0.0008
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 9229,
+        "1": 13385,
+        "2": 5006,
+        "3": 297,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 8659,
+        "P": 5959,
+        "M": 7936,
+        "S": 1734
+      },
+      "combination_work_school": 160
+    },
+    "38": {
+      "abbr": "ND",
+      "name": "North Dakota",
+      "subject_count": 23560,
+      "cells": [
+        {
+          "key": "----",
+          "categories": [],
+          "count": 7104,
+          "share": 0.3015
+        },
+        {
+          "key": "W---",
+          "categories": [
+            "W"
+          ],
+          "count": 4795,
+          "share": 0.2035
+        },
+        {
+          "key": "--M-",
+          "categories": [
+            "M"
+          ],
+          "count": 3897,
+          "share": 0.1654
+        },
+        {
+          "key": "WP--",
+          "categories": [
+            "W",
+            "P"
+          ],
+          "count": 3346,
+          "share": 0.142
+        },
+        {
+          "key": "-P--",
+          "categories": [
+            "P"
+          ],
+          "count": 1552,
+          "share": 0.0659
+        },
+        {
+          "key": "W-M-",
+          "categories": [
+            "W",
+            "M"
+          ],
+          "count": 837,
+          "share": 0.0355
+        },
+        {
+          "key": "W--S",
+          "categories": [
+            "W",
+            "S"
+          ],
+          "count": 693,
+          "share": 0.0294
+        },
+        {
+          "key": "---S",
+          "categories": [
+            "S"
+          ],
+          "count": 485,
+          "share": 0.0206
+        },
+        {
+          "key": "WP-S",
+          "categories": [
+            "W",
+            "P",
+            "S"
+          ],
+          "count": 239,
+          "share": 0.0101
+        },
+        {
+          "key": "--MS",
+          "categories": [
+            "M",
+            "S"
+          ],
+          "count": 195,
+          "share": 0.0083
+        },
+        {
+          "key": "-PM-",
+          "categories": [
+            "P",
+            "M"
+          ],
+          "count": 149,
+          "share": 0.0063
+        },
+        {
+          "key": "-P-S",
+          "categories": [
+            "P",
+            "S"
+          ],
+          "count": 139,
+          "share": 0.0059
+        },
+        {
+          "key": "WPM-",
+          "categories": [
+            "W",
+            "P",
+            "M"
+          ],
+          "count": 105,
+          "share": 0.0044
+        },
+        {
+          "key": "W-MS",
+          "categories": [
+            "W",
+            "M",
+            "S"
+          ],
+          "count": 27,
+          "share": 0.0011
+        },
+        {
+          "key": "-PMS",
+          "categories": [
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "key": "WPMS",
+          "categories": [
+            "W",
+            "P",
+            "M",
+            "S"
+          ],
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "by_category_count": {
+        "0": 7104,
+        "1": 10729,
+        "2": 5359,
+        "3": 371,
+        "4": 0
+      },
+      "marginal_totals": {
+        "W": 10042,
+        "P": 5530,
+        "M": 5210,
+        "S": 1778
+      },
+      "combination_work_school": 300
+    }
+  }
+}

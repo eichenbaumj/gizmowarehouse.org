@@ -319,6 +319,8 @@ export default function NYCPropertyTaxMap() {
     const map = new maplibregl.Map({
       container: containerRef.current,
       transformRequest: cartoTransformRequest,
+      // Keeps the WebGL buffer readable so element screenshots (tools/social-capture.mjs) aren't blank.
+      canvasContextAttributes: { preserveDrawingBuffer: true } as any,
       style: cartoStyleUrl("voyager"),
       center: NYC_TAX_MAP_CONFIG.center,
       zoom: NYC_TAX_MAP_CONFIG.zoom,

@@ -38,28 +38,18 @@ SOFT = (245, 247, 252)
 
 W, H = 1200, 630
 
-# Keep in sync with src/data/gizmos.ts. Only listed gizmos get a card;
-# the others fall back to the sitewide og:image in index.html.
+# The gizmo list comes from src/data/gizmos.ts via tools/dump-gizmos.ts, so a
+# new gizmo gets a card without editing this file. Hidden gizmos are skipped.
 #
-# medicaid-work-requirements is deliberately NOT listed: its card is a custom
+# medicaid-work-requirements is deliberately EXCLUDED: its card is a custom
 # build (sankey visual) from tools/build-medicaid-og-card.py, and a run of
-# this generic script must never overwrite it.
-GIZMOS = [
-    ("daf-yomi", "Introducing Daf Yomi Dot Dev",
-     ["Using AI"]),
-    ("gospel-of-claude-code", "Music Theory with LLMs",
-     ["Music", "Using AI"]),
-    ("data-center-restriction-cost", "Pricing the Fear of Data Centers",
-     ["State Government", "City Government"]),
-    ("nyc-public-grocery-new-math", "The New Math on NYC's Public Grocery Stores",
-     ["City Government"]),
-    ("microsoft-copilot", "How to Save the Government from Microsoft Copilot",
-     ["Using AI", "City Government"]),
-    ("nyc-property-tax-map", "NYC Property Tax: Who Pays, Who Doesn't",
-     ["City Government", "State Government", "Using AI"]),
-    ("nyc-public-grocery-math", "The Math on NYC's Public Grocery Plan",
-     ["City Government"]),
-]
+# this generic script must never overwrite it. Add any other custom card here.
+CUSTOM_CARDS = {"medicaid-work-requirements"}
+
+import json, subprocess, sys
+_dump = subprocess.run(["npx", "tsx", "tools/dump-gizmos.ts"], cwd=REPO_ROOT, capture_output=True, text=True, check=True).stdout
+GIZMOS = [(g["slug"], g["title"], g["categories"]) for g in json.loads(_dump) if not g.get("hidden") and g["slug"] not in CUSTOM_CARDS]
+ONLY = set(sys.argv[1:])  # optional: slugs to (re)generate; default = every card that is missing
 
 serif_bold = lambda s: ImageFont.truetype(f"{FONTS}/SourceSerif4-Bold.ttf", s)
 sans_semi = lambda s: ImageFont.truetype(f"{FONTS}/SourceSans3-Semibold.ttf", s)
@@ -134,5 +124,27 @@ def render(slug, title, cats):
     img.save(path, "PNG", optimize=True)
     print("wrote", path)
 
+# Sitewide default card (homepage, category pages, any gizmo without its own).
+def render_default():
+    img = Image.new("RGB", (W, H), WHITE)
+    d = ImageDraw.Draw(img)
+    d.rectangle([(0,0),(18,H)], fill=COBALT)
+    d.text((80, 150), "Gizmo Warehouse", font=serif_bold(96), fill=COBALT)
+    d.text((80, 280), "Things I built that seemed worth keeping.", font=sans_reg(38), fill=CHARCOAL)
+    d.text((80, 340), "Public policy models, maps, whitepapers, and tools.", font=sans_reg(38), fill=CHARCOAL)
+    d.text((80, H - 90), "GIZMO WAREHOUSE", font=sans_semi(26), fill=COBALT)
+    d.text((80, H - 55), "gizmowarehouse.org  ·  Joe Eichenbaum, 17A", font=sans_reg(22), fill=STEEL)
+    d.rectangle([(W-120, H-18),(W, H)], fill=CAROLINA)
+    path = f"{OUT}/default.png"
+    img.save(path, "PNG", optimize=True)
+    print("wrote", path)
+
+if not ONLY or "default" in ONLY:
+    if not os.path.exists(f"{OUT}/default.png") or "default" in ONLY:
+        render_default()
 for slug, title, cats in GIZMOS:
+    if ONLY and slug not in ONLY:
+        continue
+    if not ONLY and os.path.exists(f"{OUT}/{slug}.png"):
+        continue  # existing cards are kept; pass the slug to regenerate one
     render(slug, title, cats)

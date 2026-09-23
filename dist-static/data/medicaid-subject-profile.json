@@ -1,0 +1,1304 @@
+{
+  "06": {
+    "state_fips": "06",
+    "state_abbr": "CA",
+    "state_name": "California",
+    "subject_total": 4700448,
+    "age_band": {
+      "19-24": 0.1866,
+      "25-34": 0.2031,
+      "35-44": 0.1682,
+      "45-54": 0.1782,
+      "55-64": 0.264
+    },
+    "has_kids_under_14": {
+      "yes": 0.289,
+      "no": 0.711
+    },
+    "work_hours_per_wk": {
+      "0": 0.5754,
+      "1-19": 0.0107,
+      "20-79": 0.0735,
+      "80_plus": 0.3404
+    },
+    "not_working_breakdown": {
+      "disabled": 0.3759,
+      "caretaker": 0.1856,
+      "postpartum": 0.0042,
+      "student": 0.0697,
+      "other": 0.3645
+    },
+    "share_parents_covered_outside_expansion": 0.7501
+  },
+  "36": {
+    "state_fips": "36",
+    "state_abbr": "NY",
+    "state_name": "New York",
+    "subject_total": 1861115,
+    "age_band": {
+      "19-24": 0.144,
+      "25-34": 0.2048,
+      "35-44": 0.1953,
+      "45-54": 0.1922,
+      "55-64": 0.2636
+    },
+    "has_kids_under_14": {
+      "yes": 0.2987,
+      "no": 0.7013
+    },
+    "work_hours_per_wk": {
+      "0": 0.5785,
+      "1-19": 0.0101,
+      "20-79": 0.0724,
+      "80_plus": 0.339
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4192,
+      "caretaker": 0.1515,
+      "postpartum": 0.0062,
+      "student": 0.0516,
+      "other": 0.3715
+    },
+    "share_parents_covered_outside_expansion": 0.4535
+  },
+  "42": {
+    "state_fips": "42",
+    "state_abbr": "PA",
+    "state_name": "Pennsylvania",
+    "subject_total": 769098,
+    "age_band": {
+      "19-24": 0.1267,
+      "25-34": 0.2227,
+      "35-44": 0.2104,
+      "45-54": 0.1805,
+      "55-64": 0.2597
+    },
+    "has_kids_under_14": {
+      "yes": 0.3546,
+      "no": 0.6454
+    },
+    "work_hours_per_wk": {
+      "0": 0.5582,
+      "1-19": 0.0077,
+      "20-79": 0.0643,
+      "80_plus": 0.3699
+    },
+    "not_working_breakdown": {
+      "disabled": 0.523,
+      "caretaker": 0.1473,
+      "postpartum": 0.0024,
+      "student": 0.0238,
+      "other": 0.3035
+    },
+    "share_parents_covered_outside_expansion": 0.2732
+  },
+  "17": {
+    "state_fips": "17",
+    "state_abbr": "IL",
+    "state_name": "Illinois",
+    "subject_total": 761540,
+    "age_band": {
+      "19-24": 0.1476,
+      "25-34": 0.2178,
+      "35-44": 0.2116,
+      "45-54": 0.1836,
+      "55-64": 0.2394
+    },
+    "has_kids_under_14": {
+      "yes": 0.362,
+      "no": 0.638
+    },
+    "work_hours_per_wk": {
+      "0": 0.532,
+      "1-19": 0.0087,
+      "20-79": 0.0719,
+      "80_plus": 0.3873
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4451,
+      "caretaker": 0.1881,
+      "postpartum": 0.0035,
+      "student": 0.0322,
+      "other": 0.3311
+    },
+    "share_parents_covered_outside_expansion": 0.2711
+  },
+  "22": {
+    "state_fips": "22",
+    "state_abbr": "LA",
+    "state_name": "Louisiana",
+    "subject_total": 694370,
+    "age_band": {
+      "19-24": 0.1587,
+      "25-34": 0.2338,
+      "35-44": 0.2035,
+      "45-54": 0.1742,
+      "55-64": 0.2298
+    },
+    "has_kids_under_14": {
+      "yes": 0.3712,
+      "no": 0.6288
+    },
+    "work_hours_per_wk": {
+      "0": 0.56,
+      "1-19": 0.0078,
+      "20-79": 0.0441,
+      "80_plus": 0.3881
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4627,
+      "caretaker": 0.1699,
+      "postpartum": 0.0024,
+      "student": 0.0312,
+      "other": 0.3339
+    },
+    "share_parents_covered_outside_expansion": 0.2175
+  },
+  "26": {
+    "state_fips": "26",
+    "state_abbr": "MI",
+    "state_name": "Michigan",
+    "subject_total": 670143,
+    "age_band": {
+      "19-24": 0.139,
+      "25-34": 0.2199,
+      "35-44": 0.2029,
+      "45-54": 0.1877,
+      "55-64": 0.2505
+    },
+    "has_kids_under_14": {
+      "yes": 0.3439,
+      "no": 0.6561
+    },
+    "work_hours_per_wk": {
+      "0": 0.5503,
+      "1-19": 0.0075,
+      "20-79": 0.0618,
+      "80_plus": 0.3803
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4854,
+      "caretaker": 0.1628,
+      "postpartum": 0.0032,
+      "student": 0.0252,
+      "other": 0.3234
+    },
+    "share_parents_covered_outside_expansion": 0.3872
+  },
+  "39": {
+    "state_fips": "39",
+    "state_abbr": "OH",
+    "state_name": "Ohio",
+    "subject_total": 659491,
+    "age_band": {
+      "19-24": 0.143,
+      "25-34": 0.1999,
+      "35-44": 0.1794,
+      "45-54": 0.1931,
+      "55-64": 0.2846
+    },
+    "has_kids_under_14": {
+      "yes": 0.2701,
+      "no": 0.7299
+    },
+    "work_hours_per_wk": {
+      "0": 0.5634,
+      "1-19": 0.009,
+      "20-79": 0.0598,
+      "80_plus": 0.3679
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5399,
+      "caretaker": 0.1084,
+      "postpartum": 0.0016,
+      "student": 0.0208,
+      "other": 0.3294
+    },
+    "share_parents_covered_outside_expansion": 0.6615
+  },
+  "41": {
+    "state_fips": "41",
+    "state_abbr": "OR",
+    "state_name": "Oregon",
+    "subject_total": 644844,
+    "age_band": {
+      "19-24": 0.1367,
+      "25-34": 0.2358,
+      "35-44": 0.2058,
+      "45-54": 0.184,
+      "55-64": 0.2378
+    },
+    "has_kids_under_14": {
+      "yes": 0.3107,
+      "no": 0.6893
+    },
+    "work_hours_per_wk": {
+      "0": 0.5133,
+      "1-19": 0.0116,
+      "20-79": 0.0895,
+      "80_plus": 0.3856
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5087,
+      "caretaker": 0.1479,
+      "postpartum": 0.002,
+      "student": 0.0334,
+      "other": 0.3081
+    },
+    "share_parents_covered_outside_expansion": 0.2253
+  },
+  "37": {
+    "state_fips": "37",
+    "state_abbr": "NC",
+    "state_name": "North Carolina",
+    "subject_total": 625855,
+    "age_band": {
+      "19-24": 0.1653,
+      "25-34": 0.2239,
+      "35-44": 0.2009,
+      "45-54": 0.1676,
+      "55-64": 0.2424
+    },
+    "has_kids_under_14": {
+      "yes": 0.4055,
+      "no": 0.5945
+    },
+    "work_hours_per_wk": {
+      "0": 0.5908,
+      "1-19": 0.0059,
+      "20-79": 0.0521,
+      "80_plus": 0.3512
+    },
+    "not_working_breakdown": {
+      "disabled": 0.534,
+      "caretaker": 0.1712,
+      "postpartum": 0.0026,
+      "student": 0.0282,
+      "other": 0.264
+    },
+    "share_parents_covered_outside_expansion": 0.2696
+  },
+  "51": {
+    "state_fips": "51",
+    "state_abbr": "VA",
+    "state_name": "Virginia",
+    "subject_total": 588843,
+    "age_band": {
+      "19-24": 0.1379,
+      "25-34": 0.2218,
+      "35-44": 0.2233,
+      "45-54": 0.1816,
+      "55-64": 0.2355
+    },
+    "has_kids_under_14": {
+      "yes": 0.3766,
+      "no": 0.6234
+    },
+    "work_hours_per_wk": {
+      "0": 0.5331,
+      "1-19": 0.0106,
+      "20-79": 0.0623,
+      "80_plus": 0.394
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5045,
+      "caretaker": 0.1647,
+      "postpartum": 0.0013,
+      "student": 0.0352,
+      "other": 0.2943
+    },
+    "share_parents_covered_outside_expansion": 0.2642
+  },
+  "53": {
+    "state_fips": "53",
+    "state_abbr": "WA",
+    "state_name": "Washington",
+    "subject_total": 559112,
+    "age_band": {
+      "19-24": 0.1449,
+      "25-34": 0.2326,
+      "35-44": 0.2177,
+      "45-54": 0.1681,
+      "55-64": 0.2367
+    },
+    "has_kids_under_14": {
+      "yes": 0.3211,
+      "no": 0.6789
+    },
+    "work_hours_per_wk": {
+      "0": 0.5504,
+      "1-19": 0.0139,
+      "20-79": 0.0841,
+      "80_plus": 0.3516
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5256,
+      "caretaker": 0.1511,
+      "postpartum": 0.0011,
+      "student": 0.0405,
+      "other": 0.2817
+    },
+    "share_parents_covered_outside_expansion": 0.297
+  },
+  "34": {
+    "state_fips": "34",
+    "state_abbr": "NJ",
+    "state_name": "New Jersey",
+    "subject_total": 511168,
+    "age_band": {
+      "19-24": 0.1415,
+      "25-34": 0.2074,
+      "35-44": 0.2155,
+      "45-54": 0.192,
+      "55-64": 0.2436
+    },
+    "has_kids_under_14": {
+      "yes": 0.4039,
+      "no": 0.5961
+    },
+    "work_hours_per_wk": {
+      "0": 0.5454,
+      "1-19": 0.0097,
+      "20-79": 0.0759,
+      "80_plus": 0.369
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4005,
+      "caretaker": 0.2151,
+      "postpartum": 0.0029,
+      "student": 0.0427,
+      "other": 0.3387
+    },
+    "share_parents_covered_outside_expansion": 0.1793
+  },
+  "18": {
+    "state_fips": "18",
+    "state_abbr": "IN",
+    "state_name": "Indiana",
+    "subject_total": 484416,
+    "age_band": {
+      "19-24": 0.1406,
+      "25-34": 0.237,
+      "35-44": 0.2159,
+      "45-54": 0.1769,
+      "55-64": 0.2296
+    },
+    "has_kids_under_14": {
+      "yes": 0.3896,
+      "no": 0.6104
+    },
+    "work_hours_per_wk": {
+      "0": 0.5243,
+      "1-19": 0.0087,
+      "20-79": 0.0567,
+      "80_plus": 0.4103
+    },
+    "not_working_breakdown": {
+      "disabled": 0.531,
+      "caretaker": 0.1691,
+      "postpartum": 0.002,
+      "student": 0.024,
+      "other": 0.2739
+    },
+    "share_parents_covered_outside_expansion": 0.1854
+  },
+  "04": {
+    "state_fips": "04",
+    "state_abbr": "AZ",
+    "state_name": "Arizona",
+    "subject_total": 476311,
+    "age_band": {
+      "19-24": 0.1613,
+      "25-34": 0.2137,
+      "35-44": 0.168,
+      "45-54": 0.1791,
+      "55-64": 0.2779
+    },
+    "has_kids_under_14": {
+      "yes": 0.3095,
+      "no": 0.6905
+    },
+    "work_hours_per_wk": {
+      "0": 0.5927,
+      "1-19": 0.0112,
+      "20-79": 0.0619,
+      "80_plus": 0.3342
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4389,
+      "caretaker": 0.1752,
+      "postpartum": 0.0032,
+      "student": 0.0417,
+      "other": 0.341
+    },
+    "share_parents_covered_outside_expansion": 0.7306
+  },
+  "21": {
+    "state_fips": "21",
+    "state_abbr": "KY",
+    "state_name": "Kentucky",
+    "subject_total": 434069,
+    "age_band": {
+      "19-24": 0.1253,
+      "25-34": 0.2235,
+      "35-44": 0.2183,
+      "45-54": 0.1927,
+      "55-64": 0.2402
+    },
+    "has_kids_under_14": {
+      "yes": 0.3851,
+      "no": 0.6149
+    },
+    "work_hours_per_wk": {
+      "0": 0.5673,
+      "1-19": 0.0051,
+      "20-79": 0.0429,
+      "80_plus": 0.3847
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5426,
+      "caretaker": 0.1633,
+      "postpartum": 0.001,
+      "student": 0.0165,
+      "other": 0.2766
+    },
+    "share_parents_covered_outside_expansion": 0.1921
+  },
+  "08": {
+    "state_fips": "08",
+    "state_abbr": "CO",
+    "state_name": "Colorado",
+    "subject_total": 357248,
+    "age_band": {
+      "19-24": 0.1596,
+      "25-34": 0.226,
+      "35-44": 0.1939,
+      "45-54": 0.1677,
+      "55-64": 0.2528
+    },
+    "has_kids_under_14": {
+      "yes": 0.2939,
+      "no": 0.7061
+    },
+    "work_hours_per_wk": {
+      "0": 0.4923,
+      "1-19": 0.0123,
+      "20-79": 0.0854,
+      "80_plus": 0.41
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4697,
+      "caretaker": 0.1469,
+      "postpartum": 0.0015,
+      "student": 0.0439,
+      "other": 0.3379
+    },
+    "share_parents_covered_outside_expansion": 0.4731
+  },
+  "29": {
+    "state_fips": "29",
+    "state_abbr": "MO",
+    "state_name": "Missouri",
+    "subject_total": 327567,
+    "age_band": {
+      "19-24": 0.1185,
+      "25-34": 0.2206,
+      "35-44": 0.215,
+      "45-54": 0.1842,
+      "55-64": 0.2618
+    },
+    "has_kids_under_14": {
+      "yes": 0.3782,
+      "no": 0.6218
+    },
+    "work_hours_per_wk": {
+      "0": 0.5828,
+      "1-19": 0.0046,
+      "20-79": 0.062,
+      "80_plus": 0.3506
+    },
+    "not_working_breakdown": {
+      "disabled": 0.598,
+      "caretaker": 0.1461,
+      "postpartum": 0.0033,
+      "student": 0.0163,
+      "other": 0.2363
+    },
+    "share_parents_covered_outside_expansion": 0.1692
+  },
+  "25": {
+    "state_fips": "25",
+    "state_abbr": "MA",
+    "state_name": "Massachusetts",
+    "subject_total": 321878,
+    "age_band": {
+      "19-24": 0.1446,
+      "25-34": 0.1716,
+      "35-44": 0.1336,
+      "45-54": 0.1958,
+      "55-64": 0.3544
+    },
+    "has_kids_under_14": {
+      "yes": 0.1252,
+      "no": 0.8748
+    },
+    "work_hours_per_wk": {
+      "0": 0.6623,
+      "1-19": 0.0136,
+      "20-79": 0.0857,
+      "80_plus": 0.2383
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5357,
+      "caretaker": 0.0713,
+      "postpartum": 0.0018,
+      "student": 0.0366,
+      "other": 0.3546
+    },
+    "share_parents_covered_outside_expansion": 0.9958
+  },
+  "24": {
+    "state_fips": "24",
+    "state_abbr": "MD",
+    "state_name": "Maryland",
+    "subject_total": 310140,
+    "age_band": {
+      "19-24": 0.1625,
+      "25-34": 0.1855,
+      "35-44": 0.1555,
+      "45-54": 0.1822,
+      "55-64": 0.3143
+    },
+    "has_kids_under_14": {
+      "yes": 0.2045,
+      "no": 0.7955
+    },
+    "work_hours_per_wk": {
+      "0": 0.6111,
+      "1-19": 0.0119,
+      "20-79": 0.0666,
+      "80_plus": 0.3103
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5078,
+      "caretaker": 0.1158,
+      "postpartum": 0.0032,
+      "student": 0.0409,
+      "other": 0.3324
+    },
+    "share_parents_covered_outside_expansion": 0.8797
+  },
+  "09": {
+    "state_fips": "09",
+    "state_abbr": "CT",
+    "state_name": "Connecticut",
+    "subject_total": 294652,
+    "age_band": {
+      "19-24": 0.1869,
+      "25-34": 0.1522,
+      "35-44": 0.1381,
+      "45-54": 0.1912,
+      "55-64": 0.3316
+    },
+    "has_kids_under_14": {
+      "yes": 0.1331,
+      "no": 0.8669
+    },
+    "work_hours_per_wk": {
+      "0": 0.6374,
+      "1-19": 0.0092,
+      "20-79": 0.0815,
+      "80_plus": 0.2719
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4879,
+      "caretaker": 0.0796,
+      "postpartum": 0.0008,
+      "student": 0.031,
+      "other": 0.4007
+    },
+    "share_parents_covered_outside_expansion": 0.9915
+  },
+  "32": {
+    "state_fips": "32",
+    "state_abbr": "NV",
+    "state_name": "Nevada",
+    "subject_total": 265520,
+    "age_band": {
+      "19-24": 0.1216,
+      "25-34": 0.255,
+      "35-44": 0.2102,
+      "45-54": 0.1774,
+      "55-64": 0.2358
+    },
+    "has_kids_under_14": {
+      "yes": 0.3994,
+      "no": 0.6006
+    },
+    "work_hours_per_wk": {
+      "0": 0.5361,
+      "1-19": 0.0081,
+      "20-79": 0.0561,
+      "80_plus": 0.3996
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4101,
+      "caretaker": 0.2025,
+      "postpartum": 0.003,
+      "student": 0.0432,
+      "other": 0.3413
+    },
+    "share_parents_covered_outside_expansion": 0.2278
+  },
+  "35": {
+    "state_fips": "35",
+    "state_abbr": "NM",
+    "state_name": "New Mexico",
+    "subject_total": 231344,
+    "age_band": {
+      "19-24": 0.1548,
+      "25-34": 0.2298,
+      "35-44": 0.2105,
+      "45-54": 0.1734,
+      "55-64": 0.2314
+    },
+    "has_kids_under_14": {
+      "yes": 0.3771,
+      "no": 0.6229
+    },
+    "work_hours_per_wk": {
+      "0": 0.5258,
+      "1-19": 0.0106,
+      "20-79": 0.0538,
+      "80_plus": 0.4099
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4515,
+      "caretaker": 0.2015,
+      "postpartum": 0.0021,
+      "student": 0.0353,
+      "other": 0.3096
+    },
+    "share_parents_covered_outside_expansion": 0.2965
+  },
+  "40": {
+    "state_fips": "40",
+    "state_abbr": "OK",
+    "state_name": "Oklahoma",
+    "subject_total": 224018,
+    "age_band": {
+      "19-24": 0.1532,
+      "25-34": 0.2391,
+      "35-44": 0.2185,
+      "45-54": 0.1654,
+      "55-64": 0.2238
+    },
+    "has_kids_under_14": {
+      "yes": 0.4014,
+      "no": 0.5986
+    },
+    "work_hours_per_wk": {
+      "0": 0.5727,
+      "1-19": 0.0069,
+      "20-79": 0.0449,
+      "80_plus": 0.3755
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5506,
+      "caretaker": 0.1656,
+      "postpartum": 0.0036,
+      "student": 0.0231,
+      "other": 0.2571
+    },
+    "share_parents_covered_outside_expansion": 0.2656
+  },
+  "05": {
+    "state_fips": "05",
+    "state_abbr": "AR",
+    "state_name": "Arkansas",
+    "subject_total": 218860,
+    "age_band": {
+      "19-24": 0.1297,
+      "25-34": 0.2285,
+      "35-44": 0.2126,
+      "45-54": 0.175,
+      "55-64": 0.2541
+    },
+    "has_kids_under_14": {
+      "yes": 0.3966,
+      "no": 0.6034
+    },
+    "work_hours_per_wk": {
+      "0": 0.5991,
+      "1-19": 0.0058,
+      "20-79": 0.0467,
+      "80_plus": 0.3484
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5571,
+      "caretaker": 0.1613,
+      "postpartum": 0.001,
+      "student": 0.0129,
+      "other": 0.2676
+    },
+    "share_parents_covered_outside_expansion": 0.1561
+  },
+  "27": {
+    "state_fips": "27",
+    "state_abbr": "MN",
+    "state_name": "Minnesota",
+    "subject_total": 198564,
+    "age_band": {
+      "19-24": 0.1965,
+      "25-34": 0.1716,
+      "35-44": 0.145,
+      "45-54": 0.1776,
+      "55-64": 0.3094
+    },
+    "has_kids_under_14": {
+      "yes": 0.1084,
+      "no": 0.8916
+    },
+    "work_hours_per_wk": {
+      "0": 0.5465,
+      "1-19": 0.0165,
+      "20-79": 0.109,
+      "80_plus": 0.3281
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5703,
+      "caretaker": 0.0587,
+      "postpartum": 0.0012,
+      "student": 0.0279,
+      "other": 0.3418
+    },
+    "share_parents_covered_outside_expansion": 0.9916
+  },
+  "19": {
+    "state_fips": "19",
+    "state_abbr": "IA",
+    "state_name": "Iowa",
+    "subject_total": 167799,
+    "age_band": {
+      "19-24": 0.1486,
+      "25-34": 0.2282,
+      "35-44": 0.2204,
+      "45-54": 0.1748,
+      "55-64": 0.2281
+    },
+    "has_kids_under_14": {
+      "yes": 0.3558,
+      "no": 0.6442
+    },
+    "work_hours_per_wk": {
+      "0": 0.4641,
+      "1-19": 0.0122,
+      "20-79": 0.0819,
+      "80_plus": 0.4418
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5469,
+      "caretaker": 0.1486,
+      "postpartum": 0.0017,
+      "student": 0.0234,
+      "other": 0.2794
+    },
+    "share_parents_covered_outside_expansion": 0.2641
+  },
+  "54": {
+    "state_fips": "54",
+    "state_abbr": "WV",
+    "state_name": "West Virginia",
+    "subject_total": 159195,
+    "age_band": {
+      "19-24": 0.1197,
+      "25-34": 0.2187,
+      "35-44": 0.2285,
+      "45-54": 0.1923,
+      "55-64": 0.2408
+    },
+    "has_kids_under_14": {
+      "yes": 0.3552,
+      "no": 0.6448
+    },
+    "work_hours_per_wk": {
+      "0": 0.625,
+      "1-19": 0.0078,
+      "20-79": 0.037,
+      "80_plus": 0.3302
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5058,
+      "caretaker": 0.1644,
+      "postpartum": 0.0026,
+      "student": 0.0226,
+      "other": 0.3045
+    },
+    "share_parents_covered_outside_expansion": 0.1935
+  },
+  "15": {
+    "state_fips": "15",
+    "state_abbr": "HI",
+    "state_name": "Hawaii",
+    "subject_total": 122248,
+    "age_band": {
+      "19-24": 0.1311,
+      "25-34": 0.2171,
+      "35-44": 0.1831,
+      "45-54": 0.1896,
+      "55-64": 0.2791
+    },
+    "has_kids_under_14": {
+      "yes": 0.2563,
+      "no": 0.7437
+    },
+    "work_hours_per_wk": {
+      "0": 0.6143,
+      "1-19": 0.0108,
+      "20-79": 0.094,
+      "80_plus": 0.2809
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4183,
+      "caretaker": 0.1753,
+      "postpartum": 0.0095,
+      "student": 0.0345,
+      "other": 0.3624
+    },
+    "share_parents_covered_outside_expansion": 0.7894
+  },
+  "11": {
+    "state_fips": "11",
+    "state_abbr": "DC",
+    "state_name": "District of Columbia",
+    "subject_total": 111318,
+    "age_band": {
+      "19-24": 0.1576,
+      "25-34": 0.1813,
+      "35-44": 0.1456,
+      "45-54": 0.1965,
+      "55-64": 0.319
+    },
+    "has_kids_under_14": {
+      "yes": 0.1759,
+      "no": 0.8241
+    },
+    "work_hours_per_wk": {
+      "0": 0.7057,
+      "1-19": 0.0077,
+      "20-79": 0.0603,
+      "80_plus": 0.2263
+    },
+    "not_working_breakdown": {
+      "disabled": 0.408,
+      "caretaker": 0.1229,
+      "postpartum": 0.0052,
+      "student": 0.0498,
+      "other": 0.4142
+    },
+    "share_parents_covered_outside_expansion": 0.9869
+  },
+  "23": {
+    "state_fips": "23",
+    "state_abbr": "ME",
+    "state_name": "Maine",
+    "subject_total": 90445,
+    "age_band": {
+      "19-24": 0.1047,
+      "25-34": 0.1791,
+      "35-44": 0.1691,
+      "45-54": 0.2252,
+      "55-64": 0.322
+    },
+    "has_kids_under_14": {
+      "yes": 0.2016,
+      "no": 0.7984
+    },
+    "work_hours_per_wk": {
+      "0": 0.6612,
+      "1-19": 0.0094,
+      "20-79": 0.0709,
+      "80_plus": 0.2584
+    },
+    "not_working_breakdown": {
+      "disabled": 0.6332,
+      "caretaker": 0.0758,
+      "postpartum": 0.0002,
+      "student": 0.0152,
+      "other": 0.2757
+    },
+    "share_parents_covered_outside_expansion": 0.6808
+  },
+  "16": {
+    "state_fips": "16",
+    "state_abbr": "ID",
+    "state_name": "Idaho",
+    "subject_total": 83021,
+    "age_band": {
+      "19-24": 0.1318,
+      "25-34": 0.2795,
+      "35-44": 0.2165,
+      "45-54": 0.167,
+      "55-64": 0.2053
+    },
+    "has_kids_under_14": {
+      "yes": 0.4557,
+      "no": 0.5443
+    },
+    "work_hours_per_wk": {
+      "0": 0.4817,
+      "1-19": 0.0126,
+      "20-79": 0.0868,
+      "80_plus": 0.4189
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4878,
+      "caretaker": 0.2313,
+      "postpartum": 0.0046,
+      "student": 0.0159,
+      "other": 0.2604
+    },
+    "share_parents_covered_outside_expansion": 0.1356
+  },
+  "49": {
+    "state_fips": "49",
+    "state_abbr": "UT",
+    "state_name": "Utah",
+    "subject_total": 77239,
+    "age_band": {
+      "19-24": 0.1504,
+      "25-34": 0.2549,
+      "35-44": 0.2268,
+      "45-54": 0.1675,
+      "55-64": 0.2003
+    },
+    "has_kids_under_14": {
+      "yes": 0.3961,
+      "no": 0.6039
+    },
+    "work_hours_per_wk": {
+      "0": 0.5335,
+      "1-19": 0.0184,
+      "20-79": 0.0897,
+      "80_plus": 0.3583
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5384,
+      "caretaker": 0.1812,
+      "postpartum": 0.0033,
+      "student": 0.0257,
+      "other": 0.2514
+    },
+    "share_parents_covered_outside_expansion": 0.1974
+  },
+  "44": {
+    "state_fips": "44",
+    "state_abbr": "RI",
+    "state_name": "Rhode Island",
+    "subject_total": 71519,
+    "age_band": {
+      "19-24": 0.162,
+      "25-34": 0.1777,
+      "35-44": 0.1406,
+      "45-54": 0.2072,
+      "55-64": 0.3125
+    },
+    "has_kids_under_14": {
+      "yes": 0.1696,
+      "no": 0.8304
+    },
+    "work_hours_per_wk": {
+      "0": 0.6386,
+      "1-19": 0.0114,
+      "20-79": 0.0922,
+      "80_plus": 0.2578
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5476,
+      "caretaker": 0.0654,
+      "postpartum": 0.0011,
+      "student": 0.034,
+      "other": 0.3518
+    },
+    "share_parents_covered_outside_expansion": 0.8415
+  },
+  "30": {
+    "state_fips": "30",
+    "state_abbr": "MT",
+    "state_name": "Montana",
+    "subject_total": 70455,
+    "age_band": {
+      "19-24": 0.1668,
+      "25-34": 0.2314,
+      "35-44": 0.2056,
+      "45-54": 0.1651,
+      "55-64": 0.2311
+    },
+    "has_kids_under_14": {
+      "yes": 0.3409,
+      "no": 0.6591
+    },
+    "work_hours_per_wk": {
+      "0": 0.4807,
+      "1-19": 0.0125,
+      "20-79": 0.0703,
+      "80_plus": 0.4366
+    },
+    "not_working_breakdown": {
+      "disabled": 0.508,
+      "caretaker": 0.1792,
+      "postpartum": 0.0007,
+      "student": 0.0104,
+      "other": 0.3018
+    },
+    "share_parents_covered_outside_expansion": 0.2053
+  },
+  "31": {
+    "state_fips": "31",
+    "state_abbr": "NE",
+    "state_name": "Nebraska",
+    "subject_total": 65179,
+    "age_band": {
+      "19-24": 0.1492,
+      "25-34": 0.2112,
+      "35-44": 0.1956,
+      "45-54": 0.1799,
+      "55-64": 0.264
+    },
+    "has_kids_under_14": {
+      "yes": 0.3415,
+      "no": 0.6585
+    },
+    "work_hours_per_wk": {
+      "0": 0.4907,
+      "1-19": 0.0194,
+      "20-79": 0.0734,
+      "80_plus": 0.4166
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5957,
+      "caretaker": 0.1308,
+      "postpartum": 0.002,
+      "student": 0.0236,
+      "other": 0.2479
+    },
+    "share_parents_covered_outside_expansion": 0.3945
+  },
+  "10": {
+    "state_fips": "10",
+    "state_abbr": "DE",
+    "state_name": "Delaware",
+    "subject_total": 63962,
+    "age_band": {
+      "19-24": 0.1434,
+      "25-34": 0.2504,
+      "35-44": 0.167,
+      "45-54": 0.1546,
+      "55-64": 0.2846
+    },
+    "has_kids_under_14": {
+      "yes": 0.3294,
+      "no": 0.6706
+    },
+    "work_hours_per_wk": {
+      "0": 0.5472,
+      "1-19": 0.0196,
+      "20-79": 0.0844,
+      "80_plus": 0.3489
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4609,
+      "caretaker": 0.1816,
+      "postpartum": 0.0044,
+      "student": 0.05,
+      "other": 0.3032
+    },
+    "share_parents_covered_outside_expansion": 0.5892
+  },
+  "02": {
+    "state_fips": "02",
+    "state_abbr": "AK",
+    "state_name": "Alaska",
+    "subject_total": 61244,
+    "age_band": {
+      "19-24": 0.1258,
+      "25-34": 0.2205,
+      "35-44": 0.1753,
+      "45-54": 0.1733,
+      "55-64": 0.3051
+    },
+    "has_kids_under_14": {
+      "yes": 0.2364,
+      "no": 0.7636
+    },
+    "work_hours_per_wk": {
+      "0": 0.6235,
+      "1-19": 0.011,
+      "20-79": 0.0647,
+      "80_plus": 0.3008
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5024,
+      "caretaker": 0.1329,
+      "postpartum": 0.0005,
+      "student": 0.018,
+      "other": 0.3462
+    },
+    "share_parents_covered_outside_expansion": 0.8929
+  },
+  "50": {
+    "state_fips": "50",
+    "state_abbr": "VT",
+    "state_name": "Vermont",
+    "subject_total": 57297,
+    "age_band": {
+      "19-24": 0.1281,
+      "25-34": 0.1965,
+      "35-44": 0.2095,
+      "45-54": 0.1937,
+      "55-64": 0.2722
+    },
+    "has_kids_under_14": {
+      "yes": 0.2643,
+      "no": 0.7357
+    },
+    "work_hours_per_wk": {
+      "0": 0.5517,
+      "1-19": 0.0149,
+      "20-79": 0.1154,
+      "80_plus": 0.318
+    },
+    "not_working_breakdown": {
+      "disabled": 0.556,
+      "caretaker": 0.1044,
+      "postpartum": 0.0077,
+      "student": 0.0321,
+      "other": 0.2998
+    },
+    "share_parents_covered_outside_expansion": 0.2388
+  },
+  "33": {
+    "state_fips": "33",
+    "state_abbr": "NH",
+    "state_name": "New Hampshire",
+    "subject_total": 56968,
+    "age_band": {
+      "19-24": 0.1213,
+      "25-34": 0.2418,
+      "35-44": 0.1979,
+      "45-54": 0.1423,
+      "55-64": 0.2966
+    },
+    "has_kids_under_14": {
+      "yes": 0.3109,
+      "no": 0.6891
+    },
+    "work_hours_per_wk": {
+      "0": 0.592,
+      "1-19": 0.0116,
+      "20-79": 0.0723,
+      "80_plus": 0.3241
+    },
+    "not_working_breakdown": {
+      "disabled": 0.6149,
+      "caretaker": 0.1067,
+      "postpartum": 0.0,
+      "student": 0.0167,
+      "other": 0.2617
+    },
+    "share_parents_covered_outside_expansion": 0.3159
+  },
+  "46": {
+    "state_fips": "46",
+    "state_abbr": "SD",
+    "state_name": "South Dakota",
+    "subject_total": 27916,
+    "age_band": {
+      "19-24": 0.1734,
+      "25-34": 0.1583,
+      "35-44": 0.2357,
+      "45-54": 0.1528,
+      "55-64": 0.2798
+    },
+    "has_kids_under_14": {
+      "yes": 0.3655,
+      "no": 0.6345
+    },
+    "work_hours_per_wk": {
+      "0": 0.5818,
+      "1-19": 0.018,
+      "20-79": 0.0933,
+      "80_plus": 0.3069
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5919,
+      "caretaker": 0.1935,
+      "postpartum": 0.0055,
+      "student": 0.0212,
+      "other": 0.1879
+    },
+    "share_parents_covered_outside_expansion": 0.4011
+  },
+  "38": {
+    "state_fips": "38",
+    "state_abbr": "ND",
+    "state_name": "North Dakota",
+    "subject_total": 23560,
+    "age_band": {
+      "19-24": 0.1892,
+      "25-34": 0.1828,
+      "35-44": 0.2303,
+      "45-54": 0.1694,
+      "55-64": 0.2283
+    },
+    "has_kids_under_14": {
+      "yes": 0.3479,
+      "no": 0.6521
+    },
+    "work_hours_per_wk": {
+      "0": 0.4739,
+      "1-19": 0.0173,
+      "20-79": 0.0834,
+      "80_plus": 0.4254
+    },
+    "not_working_breakdown": {
+      "disabled": 0.5641,
+      "caretaker": 0.1664,
+      "postpartum": 0.0,
+      "student": 0.014,
+      "other": 0.2556
+    },
+    "share_parents_covered_outside_expansion": 0.369
+  },
+  "_national": {
+    "state_fips": "_national",
+    "state_abbr": "US",
+    "state_name": "All expansion states",
+    "subject_total": 18499979,
+    "age_band": {
+      "19-24": 0.1556,
+      "25-34": 0.213,
+      "35-44": 0.1909,
+      "45-54": 0.1815,
+      "55-64": 0.259
+    },
+    "has_kids_under_14": {
+      "yes": 0.3166,
+      "no": 0.6834
+    },
+    "work_hours_per_wk": {
+      "0": 0.5658,
+      "1-19": 0.0099,
+      "20-79": 0.069,
+      "80_plus": 0.3553
+    },
+    "not_working_breakdown": {
+      "disabled": 0.4616,
+      "caretaker": 0.1622,
+      "postpartum": 0.0032,
+      "student": 0.0424,
+      "other": 0.3307
+    },
+    "share_parents_covered_outside_expansion": 0.4878
+  }
+}

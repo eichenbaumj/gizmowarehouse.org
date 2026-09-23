@@ -258,12 +258,18 @@ def scaffold() -> None:
 
         1. `python tools/new-gizmo.py --publish {slug}` (wires the blocks below)
         2. `npm run dev` — review http://localhost:8080/gizmo/{slug}
+           SEO before wiring: add `seoTitle` (what people type, ≤90 chars)
+           and `metaDescription` (≤155 chars, answers the query first, no
+           em dashes) to the gizmos.ts block below, then
+           `python3 tools/generate-og-cards.py` for the social card.
+           `npm test` checks both.
         3. Review the mirror stanza in `tools/mirror/manifest.ts` — add any
            config/component/data paths the gizmo grew.
         4. Commit + push to main.
         5. Lovable syncs the push, but production needs **Publish → Publish
            changes** in the Lovable editor. Verify
-           https://gizmowarehouse.org/gizmo/{slug} live.
+           https://gizmowarehouse.org/gizmo/{slug} live, then
+           `npm run seo:ping -- /gizmo/{slug}` (IndexNow).
         6. The mirror-sync Action (same push) polls the live site and mirrors
            the gizmo automatically once it's live. Nothing else to do.
 

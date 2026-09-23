@@ -5,11 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run check:basemap && npm run generate-sitemap && vite build && npm run prerender",
-    "build:dev": "npm run check:basemap && npm run generate-sitemap && vite build --mode development && npm run prerender",
-    "check:basemap": "tsx tools/check-basemap-key.ts",
-    "generate-sitemap": "tsx tools/generate-sitemap.ts",
+    "build": "npm run check:basemap && npm run derive-data && npm run generate-sitemap && vite build && npm run build:static && npm run prerender",
+    "build:dev": "npm run check:basemap && npm run derive-data && npm run generate-sitemap && vite build --mode development && npm run build:static && npm run prerender",
+    "build:static": "vite build --ssr src/entry-static.tsx --outDir dist-static --emptyOutDir",
     "prerender": "tsx tools/prerender.ts",
+    "derive-data": "tsx tools/derive-data.ts",
+    "generate-sitemap": "tsx tools/generate-sitemap.ts",
+    "check:basemap": "tsx tools/check-basemap-key.ts",
+    "seo:ping": "tsx tools/indexnow.ts",
+    "test": "vitest run",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -38,10 +43,12 @@
     "@vitejs/plugin-react-swc": "^3.11.0",
     "autoprefixer": "^10.4.21",
     "lovable-tagger": "^1.1.13",
+    "playwright": "^1.63.0",
     "postcss": "^8.5.6",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.19.0",
     "typescript": "^5.8.3",
-    "vite": "^5.4.19"
+    "vite": "^5.4.19",
+    "vitest": "^2.1.9"
   }
 }

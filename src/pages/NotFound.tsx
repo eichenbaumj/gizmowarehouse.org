@@ -1,13 +1,11 @@
 import { Link } from "react-router-dom";
-import { SITE_URL, usePageMeta } from "@/lib/usePageMeta";
+import { usePageMeta } from "@/lib/usePageMeta";
+import { notFoundSeo } from "@/lib/seo";
 
 export default function NotFound() {
-  usePageMeta({
-    title: "Not Found | Gizmo Warehouse",
-    description:
-      "The page you're looking for doesn't exist. Head back to the Gizmo Warehouse to browse all available tools and analyses.",
-    canonical: `${SITE_URL}/`,
-  });
+  // Lovable's host can't return a 404 status for an SPA route, so the page
+  // declares itself noindex and canonicalizes to the homepage instead.
+  usePageMeta(notFoundSeo());
 
   return (
     <div className="py-20 text-center">

@@ -11,7 +11,10 @@ import { ReadModeContext } from "@/lib/readMode";
 import { gizmoContent, gizmoBlufContent } from "@/content";
 import { gizmoEmbeds } from "@/content/embeds";
 import { interpolateTokens } from "@/lib/interpolateTokens";
-import { SITE_URL, usePageMeta } from "@/lib/usePageMeta";
+import { usePageMeta } from "@/lib/usePageMeta";
+import { gizmoSeo, notFoundSeo, relatedGizmos } from "@/lib/seo";
+import { useStaticData } from "@/lib/staticData";
+import GizmoCard from "@/components/GizmoCard";
 
 // Custom HTML-style tags in markdown (e.g. <nyc-tax-map />) resolve to React
 // components from the embed registry. `gizmoEmbeds` is a stable module-scope
@@ -68,35 +71,7 @@ export default function GizmoPage() {
   const { slug } = useParams<{ slug: string }>();
   const gizmo = gizmos.find((g) => g.slug === slug);
 
-  usePageMeta(
-    gizmo
-      ? {
-          title: `${gizmo.title} | Gizmo Warehouse`,
-          description: gizmo.metaDescription || gizmo.summary,
-          canonical: `${SITE_URL}/gizmo/${gizmo.slug}`,
-          ogType: "article",
-          ogImage: `${SITE_URL}/og/${gizmo.slug}.png`,
-          jsonLd: {
-            "@context": "https://schema.org",
-            "@type": "Article",
-            headline: gizmo.title,
-            description: gizmo.metaDescription || gizmo.summary,
-            datePublished: gizmo.date,
-            url: `${SITE_URL}/gizmo/${gizmo.slug}`,
-            author: {
-              "@type": "Person",
-              name: "Joe Eichenbaum",
-              affiliation: { "@type": "Organization", name: "17A", url: "https://www.17a.co" },
-            },
-          },
-        }
-      : {
-          title: "Not Found | Gizmo Warehouse",
-          description:
-            "The gizmo you're looking for doesn't exist. Head back to the Gizmo Warehouse to browse all available tools and analyses.",
-          canonical: `${SITE_URL}/`,
-        }
-  );
+  usePageMeta(gizmo ? gizmoSeo(gizmo) : notFoundSeo());
 
   if (!gizmo) {
     return (
@@ -129,9 +104,15 @@ export default function GizmoPage() {
   const rawContent =
     (mode === "bluf" ? gizmoBlufContent[gizmo.slug] : gizmoContent[gizmo.slug]) || "";
 
-  // Load optional data context for {tokenName} interpolation.
-  const [dataContext, setDataContext] = useState<Record<string, any> | null>(null);
+  // Load optional data context for {tokenName} interpolation. At build time
+  // the static renderer supplies it up front (src/lib/staticData.tsx) so the
+  // figures are baked into the crawlable HTML; in the browser we fetch it.
+  const staticData = useStaticData();
+  const [dataContext, setDataContext] = useState<Record<string, any> | null>(
+    () => (gizmo.dataContextUrl ? (staticData.dataContexts[gizmo.dataContextUrl] as Record<string, any>) ?? null : null)
+  );
   useEffect(() => {
+    if (staticData.isStatic) return;
     if (!gizmo.dataContextUrl) {
       setDataContext(null);
       return;
@@ -140,8 +121,9 @@ export default function GizmoPage() {
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))))
       .then(setDataContext)
       .catch(() => setDataContext(null));
-  }, [gizmo.dataContextUrl]);
+  }, [gizmo.dataContextUrl, staticData.isStatic]);
 
+  const related = relatedGizmos(gizmo, gizmos);
   const content = interpolateTokens(rawContent, dataContext);
 
   return (
@@ -156,7 +138,7 @@ export default function GizmoPage() {
 
       <div className="flex flex-wrap gap-1.5 mb-4">
         {gizmo.categories.map((cat) => (
-          <CategoryBadge key={cat} category={cat} />
+          <CategoryBadge key={cat} category={cat} link />
         ))}
       </div>
 
@@ -200,6 +182,17 @@ export default function GizmoPage() {
           </ReactMarkdown>
         </ReadModeContext.Provider>
       </article>
+
+      {related.length > 0 && (
+        <aside className="mt-16 pt-8 border-t border-carolina/30" aria-labelledby="related-heading">
+          <h2 id="related-heading" className="font-serif font-bold text-xl text-cobalt mb-5">More from the warehouse</h2>
+          <div className="grid gap-5 sm:grid-cols-3">
+            {related.map((g) => (
+              <GizmoCard key={g.slug} gizmo={g} compact />
+            ))}
+          </div>
+        </aside>
+      )}
     </div>
   );
 }

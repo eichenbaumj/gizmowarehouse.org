@@ -1,0 +1,2077 @@
+{
+  "version": "v2-2026-06-03",
+  "vintage": {
+    "acs": "5-Year 2024",
+    "bls_laus": "Feb 2025 - Jan 2026",
+    "obbba_section": "71119 (\u00a71902(xx))",
+    "effective_date": "2026-12-31"
+  },
+  "national": {
+    "subject_count_strict": 18625070.778957825,
+    "subject_count_permissive": 18252569.363378666,
+    "loss_exposure_strict": 5461400.0,
+    "cbo_subject_target": 18500000,
+    "cbo_loss_target_2034": 5200000,
+    "urban_loss_2028_high_mitigation": 4900000,
+    "urban_loss_2028_low_mitigation": 10100000
+  },
+  "states": [
+    {
+      "state_fips": "06",
+      "state_abbr": "CA",
+      "state_name": "California",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 5024843.0,
+      "subject_count_strict": 4700448.294060031,
+      "subject_count_permissive": 4606439.328178829,
+      "loss_exposure_strict": 1022390.0,
+      "burden_index_centered": 0.3089327875584168,
+      "subject_rate": 0.1960203896834813,
+      "top_counties": [
+        {
+          "county_fips": "037",
+          "GEOID": "06037",
+          "subject_count_strict": 1135381.293467531
+        },
+        {
+          "county_fips": "059",
+          "GEOID": "06059",
+          "subject_count_strict": 388786.81738692103
+        },
+        {
+          "county_fips": "073",
+          "GEOID": "06073",
+          "subject_count_strict": 380226.4922473732
+        }
+      ]
+    },
+    {
+      "state_fips": "36",
+      "state_abbr": "NY",
+      "state_name": "New York",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 1989557.9999999998,
+      "subject_count_strict": 1861115.761633445,
+      "subject_count_permissive": 1823893.446400776,
+      "loss_exposure_strict": 406888.0,
+      "burden_index_centered": -0.11141612496422465,
+      "subject_rate": 0.15538494196770516,
+      "top_counties": [
+        {
+          "county_fips": "047",
+          "GEOID": "36047",
+          "subject_count_strict": 214811.05240295676
+        },
+        {
+          "county_fips": "081",
+          "GEOID": "36081",
+          "subject_count_strict": 203970.8809709001
+        },
+        {
+          "county_fips": "103",
+          "GEOID": "36103",
+          "subject_count_strict": 146465.24699550253
+        }
+      ]
+    },
+    {
+      "state_fips": "42",
+      "state_abbr": "PA",
+      "state_name": "Pennsylvania",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 822177.0,
+      "subject_count_strict": 769098.7513570859,
+      "subject_count_permissive": 753716.7763299441,
+      "loss_exposure_strict": 217271.0,
+      "burden_index_centered": 0.2619400565014187,
+      "subject_rate": 0.10066984645985565,
+      "top_counties": [
+        {
+          "county_fips": "101",
+          "GEOID": "42101",
+          "subject_count_strict": 79039.66040489485
+        },
+        {
+          "county_fips": "003",
+          "GEOID": "42003",
+          "subject_count_strict": 71522.95671759441
+        },
+        {
+          "county_fips": "091",
+          "GEOID": "42091",
+          "subject_count_strict": 49807.02068124831
+        }
+      ]
+    },
+    {
+      "state_fips": "17",
+      "state_abbr": "IL",
+      "state_name": "Illinois",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 814097.0,
+      "subject_count_strict": 761540.3814307011,
+      "subject_count_permissive": 746309.5738020872,
+      "loss_exposure_strict": 211377.0,
+      "burden_index_centered": -0.031136197632488066,
+      "subject_rate": 0.10019200999981662,
+      "top_counties": [
+        {
+          "county_fips": "031",
+          "GEOID": "17031",
+          "subject_count_strict": 291453.3102873314
+        },
+        {
+          "county_fips": "043",
+          "GEOID": "17043",
+          "subject_count_strict": 57039.86769830946
+        },
+        {
+          "county_fips": "097",
+          "GEOID": "17097",
+          "subject_count_strict": 43852.865593773044
+        }
+      ]
+    },
+    {
+      "state_fips": "22",
+      "state_abbr": "LA",
+      "state_name": "Louisiana",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 742292.0,
+      "subject_count_strict": 694370.9813608918,
+      "subject_count_permissive": 680483.5617336739,
+      "loss_exposure_strict": 261774.0,
+      "burden_index_centered": 3.038049157133855,
+      "subject_rate": 0.2572695319828929,
+      "top_counties": [
+        {
+          "county_fips": "033",
+          "GEOID": "22033",
+          "subject_count_strict": 72841.82106453388
+        },
+        {
+          "county_fips": "051",
+          "GEOID": "22051",
+          "subject_count_strict": 64694.839360000304
+        },
+        {
+          "county_fips": "071",
+          "GEOID": "22071",
+          "subject_count_strict": 51332.57892488411
+        }
+      ]
+    },
+    {
+      "state_fips": "26",
+      "state_abbr": "MI",
+      "state_name": "Michigan",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 716393.0,
+      "subject_count_strict": 670143.97359809,
+      "subject_count_permissive": 656741.0941261281,
+      "loss_exposure_strict": 216131.0,
+      "burden_index_centered": 0.21437810174709263,
+      "subject_rate": 0.11299633491630626,
+      "top_counties": [
+        {
+          "county_fips": "163",
+          "GEOID": "26163",
+          "subject_count_strict": 107114.13931157505
+        },
+        {
+          "county_fips": "125",
+          "GEOID": "26125",
+          "subject_count_strict": 82575.6954361293
+        },
+        {
+          "county_fips": "099",
+          "GEOID": "26099",
+          "subject_count_strict": 55962.488126916636
+        }
+      ]
+    },
+    {
+      "state_fips": "39",
+      "state_abbr": "OH",
+      "state_name": "Ohio",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 705005.0,
+      "subject_count_strict": 659491.1621226359,
+      "subject_count_permissive": 646301.3388801831,
+      "loss_exposure_strict": 224631.0,
+      "burden_index_centered": 0.547724195855335,
+      "subject_rate": 0.09552108203482704,
+      "top_counties": [
+        {
+          "county_fips": "035",
+          "GEOID": "39035",
+          "subject_count_strict": 67349.35115865292
+        },
+        {
+          "county_fips": "049",
+          "GEOID": "39049",
+          "subject_count_strict": 66478.63740317491
+        },
+        {
+          "county_fips": "061",
+          "GEOID": "39061",
+          "subject_count_strict": 44829.59226971193
+        }
+      ]
+    },
+    {
+      "state_fips": "41",
+      "state_abbr": "OR",
+      "state_name": "Oregon",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 689347.0,
+      "subject_count_strict": 644844.0140647977,
+      "subject_count_permissive": 631947.1337835016,
+      "loss_exposure_strict": 192348.0,
+      "burden_index_centered": -1.1246603995189846,
+      "subject_rate": 0.25331322079242097,
+      "top_counties": [
+        {
+          "county_fips": "051",
+          "GEOID": "41051",
+          "subject_count_strict": 102494.10212485524
+        },
+        {
+          "county_fips": "067",
+          "GEOID": "41067",
+          "subject_count_strict": 83885.87036524407
+        },
+        {
+          "county_fips": "005",
+          "GEOID": "41005",
+          "subject_count_strict": 65181.620897894965
+        }
+      ]
+    },
+    {
+      "state_fips": "37",
+      "state_abbr": "NC",
+      "state_name": "North Carolina",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 669048.0,
+      "subject_count_strict": 625855.480508401,
+      "subject_count_permissive": 613338.3708982329,
+      "loss_exposure_strict": 246441.0,
+      "burden_index_centered": 0.47946396068254576,
+      "subject_rate": 0.09777000582903168,
+      "top_counties": [
+        {
+          "county_fips": "183",
+          "GEOID": "37183",
+          "subject_count_strict": 64205.98673998528
+        },
+        {
+          "county_fips": "119",
+          "GEOID": "37119",
+          "subject_count_strict": 60354.06375139565
+        },
+        {
+          "county_fips": "081",
+          "GEOID": "37081",
+          "subject_count_strict": 32293.537244255436
+        }
+      ]
+    },
+    {
+      "state_fips": "51",
+      "state_abbr": "VA",
+      "state_name": "Virginia",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 629482.0,
+      "subject_count_strict": 588843.7893565025,
+      "subject_count_permissive": 577066.9135693725,
+      "loss_exposure_strict": 198960.0,
+      "burden_index_centered": -1.5882709405945685,
+      "subject_rate": 0.11234586777227966,
+      "top_counties": [
+        {
+          "county_fips": "059",
+          "GEOID": "51059",
+          "subject_count_strict": 77677.60528806814
+        },
+        {
+          "county_fips": "153",
+          "GEOID": "51153",
+          "subject_count_strict": 31388.722570463986
+        },
+        {
+          "county_fips": "810",
+          "GEOID": "51810",
+          "subject_count_strict": 28324.526372235756
+        }
+      ]
+    },
+    {
+      "state_fips": "53",
+      "state_abbr": "WA",
+      "state_name": "Washington",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 597699.0,
+      "subject_count_strict": 559112.6419096848,
+      "subject_count_permissive": 547930.3890714911,
+      "loss_exposure_strict": 138417.0,
+      "burden_index_centered": -1.7082444317217962,
+      "subject_rate": 0.11754773797931466,
+      "top_counties": [
+        {
+          "county_fips": "033",
+          "GEOID": "53033",
+          "subject_count_strict": 150985.3838078326
+        },
+        {
+          "county_fips": "053",
+          "GEOID": "53053",
+          "subject_count_strict": 62632.77105923254
+        },
+        {
+          "county_fips": "061",
+          "GEOID": "53061",
+          "subject_count_strict": 57622.24325654619
+        }
+      ]
+    },
+    {
+      "state_fips": "34",
+      "state_abbr": "NJ",
+      "state_name": "New Jersey",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 546446.0,
+      "subject_count_strict": 511168.44217738294,
+      "subject_count_permissive": 500945.0733338353,
+      "loss_exposure_strict": 163511.0,
+      "burden_index_centered": -2.0622081296415136,
+      "subject_rate": 0.09145339948323188,
+      "top_counties": [
+        {
+          "county_fips": "003",
+          "GEOID": "34003",
+          "subject_count_strict": 53666.77908272661
+        },
+        {
+          "county_fips": "023",
+          "GEOID": "34023",
+          "subject_count_strict": 48100.79636274747
+        },
+        {
+          "county_fips": "013",
+          "GEOID": "34013",
+          "subject_count_strict": 43263.05509049609
+        }
+      ]
+    },
+    {
+      "state_fips": "18",
+      "state_abbr": "IN",
+      "state_name": "Indiana",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "not_adopting",
+      "early_implementer": null,
+      "expansion_pool": 517848.0,
+      "subject_count_strict": 484416.67693545815,
+      "subject_count_permissive": 474728.343396749,
+      "loss_exposure_strict": 229055.0,
+      "burden_index_centered": 1.781956798700625,
+      "subject_rate": 0.12066763896644854,
+      "top_counties": [
+        {
+          "county_fips": "097",
+          "GEOID": "18097",
+          "subject_count_strict": 61597.72280515534
+        },
+        {
+          "county_fips": "089",
+          "GEOID": "18089",
+          "subject_count_strict": 35156.523429793284
+        },
+        {
+          "county_fips": "003",
+          "GEOID": "18003",
+          "subject_count_strict": 26696.2869256944
+        }
+      ]
+    },
+    {
+      "state_fips": "04",
+      "state_abbr": "AZ",
+      "state_name": "Arizona",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "undecided",
+      "early_implementer": null,
+      "expansion_pool": 509183.0,
+      "subject_count_strict": 476311.0735428686,
+      "subject_count_permissive": 466784.8520720112,
+      "loss_exposure_strict": 155925.0,
+      "burden_index_centered": -0.4098277869513926,
+      "subject_rate": 0.11106747128889104,
+      "top_counties": [
+        {
+          "county_fips": "013",
+          "GEOID": "04013",
+          "subject_count_strict": 282389.70916109736
+        },
+        {
+          "county_fips": "019",
+          "GEOID": "04019",
+          "subject_count_strict": 72049.92180939583
+        },
+        {
+          "county_fips": "021",
+          "GEOID": "04021",
+          "subject_count_strict": 30319.950977785564
+        }
+      ]
+    },
+    {
+      "state_fips": "21",
+      "state_abbr": "KY",
+      "state_name": "Kentucky",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 464026.00000000006,
+      "subject_count_strict": 434069.327160968,
+      "subject_count_permissive": 425387.9406177486,
+      "loss_exposure_strict": 153075.0,
+      "burden_index_centered": 2.2076988755764724,
+      "subject_rate": 0.1626520669760814,
+      "top_counties": [
+        {
+          "county_fips": "111",
+          "GEOID": "21111",
+          "subject_count_strict": 73105.51137321728
+        },
+        {
+          "county_fips": "067",
+          "GEOID": "21067",
+          "subject_count_strict": 32474.387954067475
+        },
+        {
+          "county_fips": "117",
+          "GEOID": "21117",
+          "subject_count_strict": 16362.45612942304
+        }
+      ]
+    },
+    {
+      "state_fips": "08",
+      "state_abbr": "CO",
+      "state_name": "Colorado",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 381904.0,
+      "subject_count_strict": 357248.97380767955,
+      "subject_count_permissive": 350103.99433152593,
+      "loss_exposure_strict": 86786.0,
+      "burden_index_centered": -2.9949560385308978,
+      "subject_rate": 0.09812118304622573,
+      "top_counties": [
+        {
+          "county_fips": "041",
+          "GEOID": "08041",
+          "subject_count_strict": 42185.037937241956
+        },
+        {
+          "county_fips": "005",
+          "GEOID": "08005",
+          "subject_count_strict": 38460.41327787854
+        },
+        {
+          "county_fips": "031",
+          "GEOID": "08031",
+          "subject_count_strict": 36084.092160255386
+        }
+      ]
+    },
+    {
+      "state_fips": "29",
+      "state_abbr": "MO",
+      "state_name": "Missouri",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "not_adopting",
+      "early_implementer": null,
+      "expansion_pool": 350174.0,
+      "subject_count_strict": 327567.40477745817,
+      "subject_count_permissive": 321016.056681909,
+      "loss_exposure_strict": 164291.0,
+      "burden_index_centered": 0.4061258294155689,
+      "subject_rate": 0.09045997087027732,
+      "top_counties": [
+        {
+          "county_fips": "189",
+          "GEOID": "29189",
+          "subject_count_strict": 52336.86181364693
+        },
+        {
+          "county_fips": "095",
+          "GEOID": "29095",
+          "subject_count_strict": 35738.55883809013
+        },
+        {
+          "county_fips": "183",
+          "GEOID": "29183",
+          "subject_count_strict": 22077.73801132549
+        }
+      ]
+    },
+    {
+      "state_fips": "25",
+      "state_abbr": "MA",
+      "state_name": "Massachusetts",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 344092.0,
+      "subject_count_strict": 321878.047612573,
+      "subject_count_permissive": 315440.4866603215,
+      "loss_exposure_strict": 72142.0,
+      "burden_index_centered": -2.8858638634975056,
+      "subject_rate": 0.07456120727728399,
+      "top_counties": [
+        {
+          "county_fips": "017",
+          "GEOID": "25017",
+          "subject_count_strict": 72982.45764523745
+        },
+        {
+          "county_fips": "027",
+          "GEOID": "25027",
+          "subject_count_strict": 39735.64749084671
+        },
+        {
+          "county_fips": "009",
+          "GEOID": "25009",
+          "subject_count_strict": 37330.6698851934
+        }
+      ]
+    },
+    {
+      "state_fips": "24",
+      "state_abbr": "MD",
+      "state_name": "Maryland",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 331544.0,
+      "subject_count_strict": 310140.1236229348,
+      "subject_count_permissive": 303937.3211504761,
+      "loss_exposure_strict": 83399.0,
+      "burden_index_centered": -2.826868067448057,
+      "subject_rate": 0.0834127297615648,
+      "top_counties": [
+        {
+          "county_fips": "031",
+          "GEOID": "24031",
+          "subject_count_strict": 53726.55336871301
+        },
+        {
+          "county_fips": "033",
+          "GEOID": "24033",
+          "subject_count_strict": 46340.71248388199
+        },
+        {
+          "county_fips": "005",
+          "GEOID": "24005",
+          "subject_count_strict": 43603.33661746444
+        }
+      ]
+    },
+    {
+      "state_fips": "09",
+      "state_abbr": "CT",
+      "state_name": "Connecticut",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 314988.0,
+      "subject_count_strict": 294652.9488084266,
+      "subject_count_permissive": 288759.88983225805,
+      "loss_exposure_strict": 65444.0,
+      "burden_index_centered": -2.1927574441911073,
+      "subject_rate": 0.13563541381894298,
+      "top_counties": [
+        {
+          "county_fips": "110",
+          "GEOID": "09110",
+          "subject_count_strict": 79521.62950811857
+        },
+        {
+          "county_fips": "190",
+          "GEOID": "09190",
+          "subject_count_strict": 50729.96324763591
+        },
+        {
+          "county_fips": "170",
+          "GEOID": "09170",
+          "subject_count_strict": 46279.431845638326
+        }
+      ]
+    },
+    {
+      "state_fips": "32",
+      "state_abbr": "NV",
+      "state_name": "Nevada",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 283845.0,
+      "subject_count_strict": 265520.4841280552,
+      "subject_count_permissive": 260210.07444549407,
+      "loss_exposure_strict": 83853.0,
+      "burden_index_centered": 1.7143727654865293,
+      "subject_rate": 0.13852409096498988,
+      "top_counties": [
+        {
+          "county_fips": "003",
+          "GEOID": "32003",
+          "subject_count_strict": 188533.28926168187
+        },
+        {
+          "county_fips": "031",
+          "GEOID": "32031",
+          "subject_count_strict": 43568.174582438405
+        },
+        {
+          "county_fips": "019",
+          "GEOID": "32019",
+          "subject_count_strict": 5790.821238432701
+        }
+      ]
+    },
+    {
+      "state_fips": "35",
+      "state_abbr": "NM",
+      "state_name": "New Mexico",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 247310.0,
+      "subject_count_strict": 231344.11714037354,
+      "subject_count_permissive": 226717.23479756605,
+      "loss_exposure_strict": 85410.0,
+      "burden_index_centered": 2.9040893429011883,
+      "subject_rate": 0.18920209410814812,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "35001",
+          "subject_count_strict": 69712.17959878169
+        },
+        {
+          "county_fips": "013",
+          "GEOID": "35013",
+          "subject_count_strict": 26086.486004668026
+        },
+        {
+          "county_fips": "049",
+          "GEOID": "35049",
+          "subject_count_strict": 18762.228284161105
+        }
+      ]
+    },
+    {
+      "state_fips": "40",
+      "state_abbr": "OK",
+      "state_name": "Oklahoma",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "not_adopting",
+      "early_implementer": null,
+      "expansion_pool": 239479.0,
+      "subject_count_strict": 224018.67222780932,
+      "subject_count_permissive": 219538.29878325312,
+      "loss_exposure_strict": 126302.0,
+      "burden_index_centered": 1.8577822107342539,
+      "subject_rate": 0.09535198752006506,
+      "top_counties": [
+        {
+          "county_fips": "109",
+          "GEOID": "40109",
+          "subject_count_strict": 42599.575698724446
+        },
+        {
+          "county_fips": "143",
+          "GEOID": "40143",
+          "subject_count_strict": 36585.929392867845
+        },
+        {
+          "county_fips": "027",
+          "GEOID": "40027",
+          "subject_count_strict": 18034.20111826216
+        }
+      ]
+    },
+    {
+      "state_fips": "05",
+      "state_abbr": "AR",
+      "state_name": "Arkansas",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": "2026-07-01 soft, 2027-01 full",
+      "expansion_pool": 233965.0,
+      "subject_count_strict": 218860.64601814526,
+      "subject_count_permissive": 214483.4330977823,
+      "loss_exposure_strict": 99469.0,
+      "burden_index_centered": 3.2034340982527887,
+      "subject_rate": 0.12382098343541129,
+      "top_counties": [
+        {
+          "county_fips": "119",
+          "GEOID": "05119",
+          "subject_count_strict": 26960.25081099749
+        },
+        {
+          "county_fips": "007",
+          "GEOID": "05007",
+          "subject_count_strict": 20260.52221061039
+        },
+        {
+          "county_fips": "143",
+          "GEOID": "05143",
+          "subject_count_strict": 19438.22696245052
+        }
+      ]
+    },
+    {
+      "state_fips": "27",
+      "state_abbr": "MN",
+      "state_name": "Minnesota",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 212268.0,
+      "subject_count_strict": 198564.36479379248,
+      "subject_count_permissive": 194593.0774979166,
+      "loss_exposure_strict": 48600.0,
+      "burden_index_centered": -1.6994384456917786,
+      "subject_rate": 0.059063138342542156,
+      "top_counties": [
+        {
+          "county_fips": "053",
+          "GEOID": "27053",
+          "subject_count_strict": 40799.234015603004
+        },
+        {
+          "county_fips": "123",
+          "GEOID": "27123",
+          "subject_count_strict": 17432.09167416454
+        },
+        {
+          "county_fips": "037",
+          "GEOID": "27037",
+          "subject_count_strict": 14751.960601328225
+        }
+      ]
+    },
+    {
+      "state_fips": "19",
+      "state_abbr": "IA",
+      "state_name": "Iowa",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "not_adopting",
+      "early_implementer": "2026-12-01",
+      "expansion_pool": 179380.0,
+      "subject_count_strict": 167799.55413303224,
+      "subject_count_permissive": 164443.5630503716,
+      "loss_exposure_strict": 74381.0,
+      "burden_index_centered": 0.8606764237075888,
+      "subject_rate": 0.09088199046875693,
+      "top_counties": [
+        {
+          "county_fips": "153",
+          "GEOID": "19153",
+          "subject_count_strict": 22915.54856095856
+        },
+        {
+          "county_fips": "113",
+          "GEOID": "19113",
+          "subject_count_strict": 11481.223330456074
+        },
+        {
+          "county_fips": "103",
+          "GEOID": "19103",
+          "subject_count_strict": 8909.928413909784
+        }
+      ]
+    },
+    {
+      "state_fips": "54",
+      "state_abbr": "WV",
+      "state_name": "West Virginia",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 170182.0,
+      "subject_count_strict": 159195.36024901154,
+      "subject_count_permissive": 156011.45304403134,
+      "loss_exposure_strict": 51586.0,
+      "burden_index_centered": 2.974473845517277,
+      "subject_rate": 0.1551663874165472,
+      "top_counties": [
+        {
+          "county_fips": "039",
+          "GEOID": "54039",
+          "subject_count_strict": 15403.915854279898
+        },
+        {
+          "county_fips": "061",
+          "GEOID": "54061",
+          "subject_count_strict": 11325.294631534245
+        },
+        {
+          "county_fips": "003",
+          "GEOID": "54003",
+          "subject_count_strict": 10453.588346803175
+        }
+      ]
+    },
+    {
+      "state_fips": "15",
+      "state_abbr": "HI",
+      "state_name": "Hawaii",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "undecided",
+      "early_implementer": null,
+      "expansion_pool": 130685.0,
+      "subject_count_strict": 122248.21458287057,
+      "subject_count_permissive": 119803.25029121315,
+      "loss_exposure_strict": 29771.0,
+      "burden_index_centered": -0.7883952015770431,
+      "subject_rate": 0.14616033823953498,
+      "top_counties": [
+        {
+          "county_fips": "003",
+          "GEOID": "15003",
+          "subject_count_strict": 81144.70242795843
+        },
+        {
+          "county_fips": "001",
+          "GEOID": "15001",
+          "subject_count_strict": 19658.20146539276
+        },
+        {
+          "county_fips": "009",
+          "GEOID": "15009",
+          "subject_count_strict": 14830.533139124262
+        }
+      ]
+    },
+    {
+      "state_fips": "55",
+      "state_abbr": "WI",
+      "state_name": "Wisconsin",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": true,
+      "waiver_listed": true,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": "BadgerCare Plus childless adults (Section 1115 waiver, \u2264100% FPL)",
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 198000.0,
+      "subject_count_strict": 121154.66846207998,
+      "subject_count_permissive": 118731.57509283838,
+      "loss_exposure_strict": 38753.0,
+      "burden_index_centered": 0.41569877393710514,
+      "subject_rate": 0.034853564847810284,
+      "top_counties": [
+        {
+          "county_fips": "079",
+          "GEOID": "55079",
+          "subject_count_strict": 16788.90574823651
+        },
+        {
+          "county_fips": "025",
+          "GEOID": "55025",
+          "subject_count_strict": 11810.570425031063
+        },
+        {
+          "county_fips": "133",
+          "GEOID": "55133",
+          "subject_count_strict": 8573.177419060012
+        }
+      ]
+    },
+    {
+      "state_fips": "11",
+      "state_abbr": "DC",
+      "state_name": "District of Columbia",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 119000.99999999997,
+      "subject_count_strict": 111318.51232793496,
+      "subject_count_permissive": 109092.14208137625,
+      "loss_exposure_strict": 30319.0,
+      "burden_index_centered": -6.409618366385237,
+      "subject_rate": 0.24351050131838015,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "11001",
+          "subject_count_strict": 111318.51232793495
+        }
+      ]
+    },
+    {
+      "state_fips": "23",
+      "state_abbr": "ME",
+      "state_name": "Maine",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 96688.0,
+      "subject_count_strict": 90445.99894087762,
+      "subject_count_permissive": 88637.07896206004,
+      "loss_exposure_strict": 27119.0,
+      "burden_index_centered": -0.8269709684639575,
+      "subject_rate": 0.11166455316570063,
+      "top_counties": [
+        {
+          "county_fips": "005",
+          "GEOID": "23005",
+          "subject_count_strict": 18916.690064003313
+        },
+        {
+          "county_fips": "031",
+          "GEOID": "23031",
+          "subject_count_strict": 14218.632851285332
+        },
+        {
+          "county_fips": "019",
+          "GEOID": "23019",
+          "subject_count_strict": 10324.976945027303
+        }
+      ]
+    },
+    {
+      "state_fips": "16",
+      "state_abbr": "ID",
+      "state_name": "Idaho",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 88751.0,
+      "subject_count_strict": 83021.39719512066,
+      "subject_count_permissive": 81360.96925121825,
+      "loss_exposure_strict": 33487.0,
+      "burden_index_centered": -0.10747016249758307,
+      "subject_rate": 0.07488056894125028,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "16001",
+          "subject_count_strict": 21102.213396747826
+        },
+        {
+          "county_fips": "027",
+          "GEOID": "16027",
+          "subject_count_strict": 10137.252952362594
+        },
+        {
+          "county_fips": "055",
+          "GEOID": "16055",
+          "subject_count_strict": 7752.540047757057
+        }
+      ]
+    },
+    {
+      "state_fips": "49",
+      "state_abbr": "UT",
+      "state_name": "Utah",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "undecided",
+      "early_implementer": null,
+      "expansion_pool": 82570.0,
+      "subject_count_strict": 77239.43128980084,
+      "subject_count_permissive": 75694.64266400482,
+      "loss_exposure_strict": 27676.0,
+      "burden_index_centered": -2.840682976125675,
+      "subject_rate": 0.03874662051373804,
+      "top_counties": [
+        {
+          "county_fips": "035",
+          "GEOID": "49035",
+          "subject_count_strict": 25502.68423940425
+        },
+        {
+          "county_fips": "049",
+          "GEOID": "49049",
+          "subject_count_strict": 17185.361055961323
+        },
+        {
+          "county_fips": "011",
+          "GEOID": "49011",
+          "subject_count_strict": 8003.164457843376
+        }
+      ]
+    },
+    {
+      "state_fips": "44",
+      "state_abbr": "RI",
+      "state_name": "Rhode Island",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 76455.0,
+      "subject_count_strict": 71519.20454477078,
+      "subject_count_permissive": 70088.82045387535,
+      "loss_exposure_strict": 19422.0,
+      "burden_index_centered": -0.9097854165660856,
+      "subject_rate": 0.10664464443899965,
+      "top_counties": [
+        {
+          "county_fips": "007",
+          "GEOID": "44007",
+          "subject_count_strict": 40870.03571187356
+        },
+        {
+          "county_fips": "003",
+          "GEOID": "44003",
+          "subject_count_strict": 10842.777805382591
+        },
+        {
+          "county_fips": "009",
+          "GEOID": "44009",
+          "subject_count_strict": 10180.755464196307
+        }
+      ]
+    },
+    {
+      "state_fips": "30",
+      "state_abbr": "MT",
+      "state_name": "Montana",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": "2026-07-01",
+      "expansion_pool": 75318.0,
+      "subject_count_strict": 70455.60719250598,
+      "subject_count_permissive": 69046.49504865587,
+      "loss_exposure_strict": 31982.0,
+      "burden_index_centered": 0.12401711378531478,
+      "subject_rate": 0.1093963219559437,
+      "top_counties": [
+        {
+          "county_fips": "111",
+          "GEOID": "30111",
+          "subject_count_strict": 9837.478110491085
+        },
+        {
+          "county_fips": "031",
+          "GEOID": "30031",
+          "subject_count_strict": 8501.948541329592
+        },
+        {
+          "county_fips": "063",
+          "GEOID": "30063",
+          "subject_count_strict": 7582.124653700754
+        }
+      ]
+    },
+    {
+      "state_fips": "31",
+      "state_abbr": "NE",
+      "state_name": "Nebraska",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": "2026-05-01 (live)",
+      "expansion_pool": 69678.0,
+      "subject_count_strict": 65179.7153131978,
+      "subject_count_permissive": 63876.12100693385,
+      "loss_exposure_strict": 27359.0,
+      "burden_index_centered": 0.12112902611282654,
+      "subject_rate": 0.057378252520167025,
+      "top_counties": [
+        {
+          "county_fips": "055",
+          "GEOID": "31055",
+          "subject_count_strict": 17708.923020491617
+        },
+        {
+          "county_fips": "109",
+          "GEOID": "31109",
+          "subject_count_strict": 11570.872193392874
+        },
+        {
+          "county_fips": "153",
+          "GEOID": "31153",
+          "subject_count_strict": 5797.570057665002
+        }
+      ]
+    },
+    {
+      "state_fips": "10",
+      "state_abbr": "DE",
+      "state_name": "Delaware",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 68377.0,
+      "subject_count_strict": 63962.70550203114,
+      "subject_count_permissive": 62683.451391990515,
+      "loss_exposure_strict": 19735.0,
+      "burden_index_centered": -1.3381089478635078,
+      "subject_rate": 0.10914420383990324,
+      "top_counties": [
+        {
+          "county_fips": "003",
+          "GEOID": "10003",
+          "subject_count_strict": 34239.2368183884
+        },
+        {
+          "county_fips": "005",
+          "GEOID": "10005",
+          "subject_count_strict": 18681.306890399697
+        },
+        {
+          "county_fips": "001",
+          "GEOID": "10001",
+          "subject_count_strict": 11042.161793243044
+        }
+      ]
+    },
+    {
+      "state_fips": "02",
+      "state_abbr": "AK",
+      "state_name": "Alaska",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "undecided",
+      "early_implementer": null,
+      "expansion_pool": 65470.99999999999,
+      "subject_count_strict": 61244.31156563583,
+      "subject_count_permissive": 60019.42533432311,
+      "loss_exposure_strict": 35542.0,
+      "burden_index_centered": -0.11305972432328701,
+      "subject_rate": 0.13667584967972665,
+      "top_counties": [
+        {
+          "county_fips": "020",
+          "GEOID": "02020",
+          "subject_count_strict": 22507.55316279717
+        },
+        {
+          "county_fips": "170",
+          "GEOID": "02170",
+          "subject_count_strict": 9609.263327842782
+        },
+        {
+          "county_fips": "090",
+          "GEOID": "02090",
+          "subject_count_strict": 7789.340314014596
+        }
+      ]
+    },
+    {
+      "state_fips": "50",
+      "state_abbr": "VT",
+      "state_name": "Vermont",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 61252.0,
+      "subject_count_strict": 57297.682516202985,
+      "subject_count_permissive": 56151.728865878926,
+      "loss_exposure_strict": 16488.0,
+      "burden_index_centered": -1.8558358561028279,
+      "subject_rate": 0.15003713769986904,
+      "top_counties": [
+        {
+          "county_fips": "007",
+          "GEOID": "50007",
+          "subject_count_strict": 14859.810698005384
+        },
+        {
+          "county_fips": "021",
+          "GEOID": "50021",
+          "subject_count_strict": 5427.6363564564
+        },
+        {
+          "county_fips": "023",
+          "GEOID": "50023",
+          "subject_count_strict": 5286.38646953185
+        }
+      ]
+    },
+    {
+      "state_fips": "33",
+      "state_abbr": "NH",
+      "state_name": "New Hampshire",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "adopting",
+      "early_implementer": null,
+      "expansion_pool": 60900.0,
+      "subject_count_strict": 56968.40699465751,
+      "subject_count_permissive": 55829.03885476435,
+      "loss_exposure_strict": 19288.0,
+      "burden_index_centered": -2.84852036842706,
+      "subject_rate": 0.06774175009130291,
+      "top_counties": [
+        {
+          "county_fips": "011",
+          "GEOID": "33011",
+          "subject_count_strict": 16476.371821197034
+        },
+        {
+          "county_fips": "015",
+          "GEOID": "33015",
+          "subject_count_strict": 12897.957885183656
+        },
+        {
+          "county_fips": "013",
+          "GEOID": "33013",
+          "subject_count_strict": 6199.075583647358
+        }
+      ]
+    },
+    {
+      "state_fips": "46",
+      "state_abbr": "SD",
+      "state_name": "South Dakota",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 29843.0,
+      "subject_count_strict": 27916.390311027324,
+      "subject_count_permissive": 27358.06250480678,
+      "loss_exposure_strict": 13611.0,
+      "burden_index_centered": 0.5072026532890299,
+      "subject_rate": 0.054513339746822556,
+      "top_counties": [
+        {
+          "county_fips": "099",
+          "GEOID": "46099",
+          "subject_count_strict": 5650.769848905481
+        },
+        {
+          "county_fips": "103",
+          "GEOID": "46103",
+          "subject_count_strict": 3550.0713149952776
+        },
+        {
+          "county_fips": "083",
+          "GEOID": "46083",
+          "subject_count_strict": 1952.2266068934932
+        }
+      ]
+    },
+    {
+      "state_fips": "38",
+      "state_abbr": "ND",
+      "state_name": "North Dakota",
+      "expansion": true,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "no_qualifying_counties",
+      "early_implementer": null,
+      "expansion_pool": 25187.0,
+      "subject_count_strict": 23560.97318513036,
+      "subject_count_permissive": 23089.753721427747,
+      "loss_exposure_strict": 10994.0,
+      "burden_index_centered": -0.001998453790046719,
+      "subject_rate": 0.05143211162038373,
+      "top_counties": [
+        {
+          "county_fips": "017",
+          "GEOID": "38017",
+          "subject_count_strict": 5799.300061184393
+        },
+        {
+          "county_fips": "015",
+          "GEOID": "38015",
+          "subject_count_strict": 2922.6767352365882
+        },
+        {
+          "county_fips": "035",
+          "GEOID": "38035",
+          "subject_count_strict": 2450.7109450075636
+        }
+      ]
+    },
+    {
+      "state_fips": "13",
+      "state_abbr": "GA",
+      "state_name": "Georgia",
+      "expansion": false,
+      "partial_expansion": true,
+      "subject_via_waiver": true,
+      "waiver_listed": true,
+      "loss_quantified": true,
+      "already_work_conditional": true,
+      "waiver_note": "Pathways to Coverage enrollees (Section 1115 waiver; already work-conditional)",
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 8000.0,
+      "subject_count_strict": 3916.110495744,
+      "subject_count_permissive": 3837.7882858291196,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.22620833586641623,
+      "subject_rate": 0.0005924031724963258,
+      "top_counties": [
+        {
+          "county_fips": "121",
+          "GEOID": "13121",
+          "subject_count_strict": 360.73890524515764
+        },
+        {
+          "county_fips": "135",
+          "GEOID": "13135",
+          "subject_count_strict": 345.5769807659901
+        },
+        {
+          "county_fips": "067",
+          "GEOID": "13067",
+          "subject_count_strict": 272.602068072307
+        }
+      ]
+    },
+    {
+      "state_fips": "01",
+      "state_abbr": "AL",
+      "state_name": "Alabama",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "01001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "101",
+          "GEOID": "01101",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "073",
+          "GEOID": "01073",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "12",
+      "state_abbr": "FL",
+      "state_name": "Florida",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "12001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "101",
+          "GEOID": "12101",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "075",
+          "GEOID": "12075",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "20",
+      "state_abbr": "KS",
+      "state_name": "Kansas",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "20001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "107",
+          "GEOID": "20107",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "155",
+          "GEOID": "20155",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "28",
+      "state_abbr": "MS",
+      "state_name": "Mississippi",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "28001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "123",
+          "GEOID": "28123",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "119",
+          "GEOID": "28119",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "45",
+      "state_abbr": "SC",
+      "state_name": "South Carolina",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "45001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "069",
+          "GEOID": "45069",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "051",
+          "GEOID": "45051",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "47",
+      "state_abbr": "TN",
+      "state_name": "Tennessee",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": true,
+      "loss_quantified": false,
+      "already_work_conditional": false,
+      "waiver_note": "TennCare III 1115 'MEC Additions' adults (~17.7K parents/caretakers \u2264100% FPL) \u2014 near-all exempt as parents of a child <14",
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "47001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "121",
+          "GEOID": "47121",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "139",
+          "GEOID": "47139",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "48",
+      "state_abbr": "TX",
+      "state_name": "Texas",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "48001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "349",
+          "GEOID": "48349",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "323",
+          "GEOID": "48323",
+          "subject_count_strict": 0.0
+        }
+      ]
+    },
+    {
+      "state_fips": "56",
+      "state_abbr": "WY",
+      "state_name": "Wyoming",
+      "expansion": false,
+      "partial_expansion": false,
+      "subject_via_waiver": false,
+      "waiver_listed": false,
+      "loss_quantified": true,
+      "already_work_conditional": false,
+      "waiver_note": null,
+      "hardship_exception_status": "non_expansion",
+      "early_implementer": null,
+      "expansion_pool": 0.0,
+      "subject_count_strict": 0.0,
+      "subject_count_permissive": 0.0,
+      "loss_exposure_strict": 0.0,
+      "burden_index_centered": 0.0,
+      "subject_rate": 0.0,
+      "top_counties": [
+        {
+          "county_fips": "001",
+          "GEOID": "56001",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "025",
+          "GEOID": "56025",
+          "subject_count_strict": 0.0
+        },
+        {
+          "county_fips": "043",
+          "GEOID": "56043",
+          "subject_count_strict": 0.0
+        }
+      ]
+    }
+  ],
+  "percentile_cutoffs": {
+    "subject_count": {
+      "counties": {
+        "50": 831.0,
+        "60": 1410.8,
+        "67": 2095.36,
+        "70": 2398.2,
+        "75": 3153.0,
+        "80": 4428.800000000001,
+        "85": 6504.399999999998,
+        "90": 10854.200000000015,
+        "95": 23644.19999999998,
+        "97": 37879.55999999989,
+        "99": 82331.68000000023
+      },
+      "hex5mi": {
+        "50": 20.3,
+        "60": 31.2,
+        "67": 42.57,
+        "70": 48.95599999999992,
+        "75": 62.79,
+        "80": 83.50400000000009,
+        "85": 122.09,
+        "90": 213.88399999999993,
+        "95": 553.9039999999983,
+        "97": 1002.1759999999969,
+        "99": 2246.8187999999964
+      },
+      "grid": {
+        "50": 1.6590177110147093,
+        "60": 2.4653880040887377,
+        "67": 3.280049553057108,
+        "70": 3.745535072098515,
+        "75": 4.773662806736692,
+        "80": 6.226200054004457,
+        "85": 8.956183462688692,
+        "90": 15.260903047640793,
+        "95": 40.047258833968044,
+        "97": 77.94116056224357,
+        "99": 211.39842138934108
+      }
+    },
+    "subject_rate": {
+      "counties": {
+        "50": 0.0962,
+        "60": 0.1064,
+        "67": 0.11443600000000001,
+        "70": 0.1184,
+        "75": 0.1263,
+        "80": 0.1353,
+        "85": 0.15339999999999987,
+        "90": 0.1698,
+        "95": 0.20663999999999996,
+        "97": 0.25176399999999965,
+        "99": 0.28944400000000003
+      },
+      "hex5mi": {
+        "50": 0.1149,
+        "60": 0.1268,
+        "67": 0.1368,
+        "70": 0.1427,
+        "75": 0.1543,
+        "80": 0.1687,
+        "85": 0.19,
+        "90": 0.2215,
+        "95": 0.2806,
+        "97": 0.3119,
+        "99": 0.3652
+      },
+      "grid": {
+        "50": 0.11525642620372731,
+        "60": 0.12742456533412858,
+        "67": 0.1372758181398737,
+        "70": 0.14268477014578768,
+        "75": 0.15393190544162194,
+        "80": 0.16817457032163563,
+        "85": 0.18919202005326835,
+        "90": 0.22075700353694644,
+        "95": 0.28260000896536064,
+        "97": 0.3148173735884659,
+        "99": 0.37040107389478794
+      }
+    },
+    "burden_index": {
+      "counties": {
+        "50": 1.8,
+        "60": 3.1799999999999957,
+        "67": 4.1,
+        "70": 4.4,
+        "75": 5.2,
+        "80": 6.0,
+        "85": 7.0,
+        "90": 8.0,
+        "95": 9.8,
+        "97": 10.8,
+        "99": 13.1
+      },
+      "hex5mi": {
+        "50": 3.6,
+        "60": 4.8,
+        "67": 5.8,
+        "70": 6.2,
+        "75": 7.0,
+        "80": 7.9,
+        "85": 8.9,
+        "90": 10.6,
+        "95": 13.5,
+        "97": 15.8,
+        "99": 22.1
+      },
+      "grid": {
+        "50": 3.6590131364507243,
+        "60": 4.953994968682821,
+        "67": 5.9832122046215055,
+        "70": 6.426290651485537,
+        "75": 7.291076086712547,
+        "80": 8.208934677342747,
+        "85": 9.282712937191864,
+        "90": 11.110030216940572,
+        "95": 14.152742558366818,
+        "97": 16.515012072655004,
+        "99": 22.518295869168732
+      }
+    },
+    "loss_exposure": {
+      "counties": {
+        "50": 309.0,
+        "60": 525.8,
+        "67": 739.0,
+        "70": 847.1999999999998,
+        "75": 1130.0,
+        "80": 1512.4,
+        "85": 2167.1999999999975,
+        "90": 3575.800000000001,
+        "95": 7343.199999999996,
+        "97": 11092.759999999995,
+        "99": 24971.440000000046
+      },
+      "hex5mi": {
+        "50": 8.13,
+        "60": 12.36,
+        "67": 16.82,
+        "70": 19.28,
+        "75": 24.64,
+        "80": 32.57,
+        "85": 46.87,
+        "90": 81.42399999999995,
+        "95": 207.79399999999967,
+        "97": 377.6231999999996,
+        "99": 830.7903999999994
+      },
+      "grid": {
+        "50": 0.657678325884406,
+        "60": 0.9640160567208228,
+        "67": 1.294309885706584,
+        "70": 1.479677782859219,
+        "75": 1.867826499915826,
+        "80": 2.424113551087189,
+        "85": 3.4248016941282375,
+        "90": 5.745643545592182,
+        "95": 14.984062230978033,
+        "97": 29.519752613503027,
+        "99": 79.44820761125531
+      }
+    }
+  },
+  "concentration": {
+    "share_in_top_n_counties": {
+      "5": 0.13560487693412052,
+      "10": 0.19976785076945117,
+      "25": 0.3107708306649981,
+      "50": 0.4134660110036089,
+      "100": 0.5391703294933526,
+      "250": 0.7234617998690568,
+      "500": 0.8464960660108084
+    },
+    "p90_county_subject_count": 10854.200000000015,
+    "p95_county_subject_count": 23644.19999999998,
+    "p99_county_subject_count": 82331.68000000023
+  }
+}

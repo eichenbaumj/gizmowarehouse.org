@@ -46,3 +46,6 @@ tools/.cache/
 __pycache__/
 .claude/
 tools/.fonts-cache/
+
+# Static-render bundle (rebuilt by npm run build:static)
+dist-static/

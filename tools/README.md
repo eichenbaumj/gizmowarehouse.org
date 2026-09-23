@@ -19,15 +19,21 @@ Then write the markdown in `src/content/<slug>.ts`, drop any served files (PDFs,
 
 ## Deploy
 
-Push to `main` on GitHub. Lovable watches the repo and auto-deploys; no separate build/deploy step is needed from this repo.
+Push to `main` on GitHub. Lovable syncs the push and builds it, but production only changes when you click **Publish → Publish changes** in the Lovable editor. Verify on the live URL, then run `npm run seo:ping` (IndexNow) so Bing and the engines that share the protocol fetch the changed pages.
 
 ## SEO
 
-Per-route `<title>` / `description` / `canonical` / `og:*` tags are set in JS via [`src/lib/usePageMeta.ts`](../src/lib/usePageMeta.ts). The pre-JS HTML in [`index.html`](../index.html) holds the homepage-level fallback for crawlers that don't run JS.
+Everything a page's `<head>` needs comes from one place, [`src/lib/seo.ts`](../src/lib/seo.ts): titles (`seoTitle` is the search-facing `<title>`; `title` stays the H1, the card, and og:title), descriptions, canonical, OG image, and JSON-LD. Pages call `usePageMeta(...)` at runtime with the same object the prerenderer bakes at build time, so the two views agree.
 
-[`generate-sitemap.ts`](generate-sitemap.ts) reads `src/data/gizmos.ts` and writes `public/sitemap.xml`. It runs automatically as part of `npm run build`, so new gizmos get a sitemap entry on the next deploy without any manual step. To regenerate ad-hoc: `npm run generate-sitemap`.
+`npm run build` does, in order: `check:basemap` → `derive-data` (CSV/geojson → the JSON the data pages read) → `generate-sitemap` (`public/sitemap.xml` with lastmod from git, `public/llms.txt`, `src/data/lastmod.json`) → `vite build` → `build:static` (an SSR bundle of the app with the interactive embeds swapped for [`src/content/embeds.static.tsx`](../src/content/embeds.static.tsx)) → `prerender` (one full-body HTML file per route in `dist/`, plus `404.html` and alias stubs). Crawlers that skip JavaScript get the whole page; the browser mounts React on top and replaces it.
 
-`public/robots.txt` allows everything and points crawlers at the sitemap.
+Routes live in [`src/lib/routes.ts`](../src/lib/routes.ts) (sitemap + prerender) and [`src/AppRoutes.tsx`](../src/AppRoutes.tsx) (the router); `test/routes.test.ts` keeps them in step. Programmatic data pages (one per state, county, city, jurisdiction) are declared in [`src/data/dataPages/`](../src/data/dataPages/): a `DatasetSpec` names its files and a pure `build`; every sentence is a template filled from the data, and `test/data-pages.test.ts` asserts the numbers equal the source rows.
+
+OG cards: `python3 tools/generate-og-cards.py` makes a card for any gizmo without one (reads `gizmos.ts`; pass slugs to regenerate). `npm test` fails if a live gizmo has no card.
+
+IndexNow: `npm run seo:ping` after a Publish (default cap 200 URLs; `-- /path` for specific pages). The key file in `public/` is public by design. `public/robots.txt` allows everything and points at the sitemap.
+
+The traffic plan, Search Console baseline, weekly loop, and the ad kit are in `gizmos/_seo/` (private, never mirrored).
 
 ## Domains
 

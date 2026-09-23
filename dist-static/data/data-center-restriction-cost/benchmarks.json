@@ -1,0 +1,41 @@
+{
+ "snapshot_date": "2026-08-15",
+ "horizon_years": 10,
+ "jobs_per_facility_permanent": 50,
+ "regimes": [
+  {
+   "id": "aggressive_abatement",
+   "case": "Morrow County OR (enterprise zone)",
+   "annual_local_usd_m_low": 2,
+   "annual_local_usd_m_high": 3,
+   "note": "2023 enterprise-zone deal traded >$1B in property taxes on five AWS data centers for ~$40M in fees over 15 years (~$2.7M/yr)."
+  },
+  {
+   "id": "partial_abatement",
+   "case": "Georgia audit representative campus / El Paso Meta",
+   "annual_local_usd_m_low": 27.8,
+   "annual_local_usd_m_high": 56,
+   "gross_annual_usd_m": 33.6,
+   "abated_annual_usd_m": 5.9,
+   "note": "Low end: Georgia DOAA audit's representative 3-building metro-Atlanta campus ($33.6M gross, $5.9M abated, $27.8M collected). High end: El Paso Meta, ~$56M/yr blended across all local entities."
+  },
+  {
+   "id": "unabated_equipment_tax",
+   "case": "Virginia-style rates (Loudoun is the ceiling)",
+   "annual_local_usd_m_low": 50,
+   "annual_local_usd_m_high": 90,
+   "note": "Unabated equipment-tax regimes; per-campus range is a modeling band anchored at the corpus's '$50M+/yr unabated at Virginia-style rates' floor. Loudoun's aggregate is the ceiling, not a per-campus figure."
+  }
+ ],
+ "reference_campus": {
+  "name": "Project Blue scale",
+  "capex_usd_b": 3.6,
+  "mw": 286,
+  "local_10yr_usd_m": 157,
+  "note": "$97M city + $60M county over 10 years per Pima County's FAQ"
+ },
+ "counterfactual": {
+  "discount_applied": null,
+  "note": "The calculator assumes a live proposal and applies no counterfactual discount (2026-08-17 design decision) — the same undiscounted basis as Pima County's own Project Blue estimate. The audit evidence on the would-it-have-come question (JLARC ~90% but-for vs Georgia's 30%) is cited in the prose, not modeled."
+ }
+}
