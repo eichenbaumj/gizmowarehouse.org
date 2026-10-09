@@ -62,7 +62,7 @@ export default function SicCoreChart() {
     <SicCard>
       <Eyebrow>New York, {data.window[0]} to {data.window[1]}</Eyebrow>
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h3 className="font-serif text-lg font-bold text-cobalt">What each government spent on liability, by how it finances it</h3>
+        <h3 className="font-serif text-lg font-bold text-cobalt">How a government pays its claims doesn't predict what it spends</h3>
         <div className="flex gap-1 text-xs">
           {(["cor_pc_mean", "cor_share_mean"] as Metric[]).map((m) => (
             <button
@@ -78,7 +78,7 @@ export default function SicCoreChart() {
       <Sub>Average yearly cost of premiums plus judgments and claims per resident, in 2024 dollars, for every county, city, town, and village whose arrangement was read from its audited statements.</Sub>
       <div className="relative">
         <svg viewBox={`0 0 ${VB_W} ${H}`} className="w-full" style={{ overflow: "visible" }} role="img"
-          aria-label="Scatter of New York counties and cities by population and liability cost, colored by insurance structure">
+          aria-label={`Scatter of ${rows.length} New York counties, cities, towns, and villages by population and liability cost, colored by how each pays its claims`}>
           {yTicks.map((t, i) => (
             <g key={i}>
               <line x1={M.left} x2={VB_W - M.right} y1={plot.sy(t)} y2={plot.sy(t)} stroke={GRID} strokeWidth={1} />
@@ -91,22 +91,6 @@ export default function SicCoreChart() {
             </text>
           ))}
           <text x={M.left + plot.innerW / 2} y={H - 4} textAnchor="middle" fontSize={11} fill={STEEL} fontFamily="'Source Sans 3', sans-serif">population (log scale)</text>
-          {/* bin medians: short horizontal bars at bin centers, one per structure */}
-          {Object.entries(data.bins).map(([key, b]) => {
-            const [cls, bin] = key.split("|");
-            if (metric !== "cor_pc_mean") return null;
-            const edges = data.pop_bins;
-            const lo = Math.max(edges[Number(bin)], 1000), hi = Math.min(edges[Number(bin) + 1], 3e6);
-            const x0 = Math.max(plot.sx(Math.log10(lo)), M.left), x1 = Math.min(plot.sx(Math.log10(hi)), VB_W - M.right);
-            return (["self", "covered"] as const).map((t) => {
-              const v = b[t]?.median_cor_pc;
-              if (v == null || (b[t]?.n ?? 0) < 3) return null;
-              const y = plot.sy(v);
-              if (cls === "village") return null;
-              return <line key={key + t} x1={x0 + 4} x2={x1 - 4} y1={y} y2={y} stroke={STRUCTURE_STYLE[t].color} strokeWidth={cls === "county" ? 2 : 1}
-                strokeDasharray={cls === "city" ? "4 3" : cls === "town" ? "1 3" : undefined} opacity={0.55} />;
-            });
-          })}
           {rows.map((r) => {
             const t = treatOf(r);
             const x = plot.sx(Math.log10(r.pop_mean as number));
@@ -172,7 +156,6 @@ export default function SicCoreChart() {
         <span className="inline-flex items-center gap-1.5"><span className="inline-block h-3 w-3 rounded-sm bg-charcoal" /> city</span>
         <span className="inline-flex items-center gap-1.5"><span className="inline-block h-2.5 w-2.5 rotate-45 bg-charcoal" /> town</span>
         <span className="inline-flex items-center gap-1.5"><span className="inline-block h-0 w-0 border-x-[6px] border-b-[10px] border-x-transparent border-b-charcoal" /> village</span>
-        <span className="text-steel">Horizontal ticks: median of each population band by structure (solid counties, dashed cities, dotted towns).</span>
       </div>
       {data.holdouts.length > 0 && (
         <p className="mt-2 text-xs text-steel">

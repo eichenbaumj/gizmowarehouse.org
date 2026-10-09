@@ -23,7 +23,7 @@ New York is the place to test it, because New York has excellent data going back
 
 <sic-core-chart></sic-core-chart>
 
-The chart looks like noise. Dark blue marks, governments that carry their own liability, and light blue marks, governments that buy coverage, are mixed together at every size, and neither color sits consistently above the other.
+Each of the 102 marks is a real government whose audited statements I read. Hover over or tap one to see its numbers. Bigger places spend less per resident, but at any size the dark marks (governments that carry their own liability) and the light marks (governments that buy coverage) are mixed together. Neither kind consistently spends more.
 
 Cities cannot be tested, since every New York city above about 45,000 residents carries its own liability and only three buy coverage. So I tested counties and large towns. In every size band, the self-insured counties and large towns spent the same or less per resident than the covered ones. Put the bands together, comparing each government only with others of its type and size, and the self-insured spent about as much as the covered. The range the data allow runs from roughly half to roughly 1.8 times.
 

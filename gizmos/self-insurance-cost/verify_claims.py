@@ -143,6 +143,10 @@ def main() -> int:
     check(near(body, "working paper", "Vallejo", 400), "Vallejo must be labeled a working paper")
     check(near(body, "Cities cannot be tested", "45,000"), "the cities-cannot-be-tested sentence with the 45,000 threshold is required")
     check(near(body, "the same or less", "every size band"), "the per-band finding sentence is required")
+    if ents:
+        plotted = [r for r in ents.get("rows", []) if r.get("label_source") == "document" and (r.get("pop_mean") or 0) > 0
+                   and not r.get("jc_contaminated") and not r.get("coded_elsewhere_holdout") and r.get("cor_pc_mean") is not None and (r.get("n_years") or 0) >= 8]
+        check(f"Each of the {len(plotted)} marks" in body, f"chart mark count in prose must match the plotted governments ({len(plotted)})")
     check(near(body, "understate what self-insurers pay", "booked elsewhere"), "the measurement-direction sentence is required")
     if "sic-transit-scatter" in body or "transit agencies" in body.lower():
         check("picture, not a test" in body, "transit must be labeled 'a picture, not a test'")
