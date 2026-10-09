@@ -3,7 +3,7 @@ export default `
 
 ## Hidden costs
 
-On occasion, people get hurt when using a government service. A snowplow hits a parked car. An inmate is hurt in jail. A bus brakes suddenly, causing someone to strain their knee. When people are injured, they oftentimes sue whoever is responsible, or rather, whoever is readily liable.
+On occasion, people get hurt when using a government service. A bus hits a pedestrian. A police officer uses force. An inmate is hurt in jail. When people are injured, they oftentimes sue whoever is responsible, or rather, whoever is readily liable.
 
 Almost every time, those lawsuits end in settlements rather than jury trials. In New York, local governments outside New York City spend roughly $500 million to $650 million a year on liability insurance and on court judgments and claims, and [New York City alone paid about $1.9 billion](https://comptroller.nyc.gov/newsroom/comptroller-landers-new-dashboard-tracks-city-claims-city-paid-nearly-2b-in-settlements-last-fiscal-year) to settle claims in fiscal 2024. The direct source of that settlement money varies quite widely depending on who you're suing.
 
