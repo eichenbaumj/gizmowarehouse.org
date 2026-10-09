@@ -51781,6 +51781,23 @@ function categoryFromSlug(slug) {
 }
 const gizmos = [
   {
+    slug: "self-insurance-cost",
+    title: "The Price of Insuring Yourself",
+    dek: "Governments that carry their own liability don't pay more. Their bills swing twice as hard. Police budget, not financing, drives the size of the bill.",
+    categories: ["State Government", "City Government"],
+    date: "2026-10",
+    summary: "My colleague thought governments that carry their own liability pay far more to settle claims. I read how 117 New York counties, cities, towns, and villages handle liability and compared like with like over ten years. The totals land in the same range. What differs is how hard the bill swings from year to year, and what sets its size is police.",
+    seoTitle: "Self-Insurance vs Risk Pools: What Local Governments Pay for Liability",
+    metaDescription: "Do self-insured governments pay more for liability? Every NY county and large city, labeled from audited statements, compared over ten years.",
+    links: [
+      { label: "Download the New York panel (.csv)", url: "/assets/self-insurance-cost-ny-panel.csv" },
+      { label: "Download the transit panel (.csv)", url: "/assets/self-insurance-cost-ntd-panel.csv" },
+      { label: "Structure labels with sources (.csv)", url: "/assets/self-insurance-cost-treatment-labels.csv" },
+      { label: "Methodology & sources (.md)", url: "/assets/self-insurance-cost-methodology.md" },
+      { label: "Code and data pipeline (GitHub)", url: "https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost" }
+    ]
+  },
+  {
     slug: "daf-yomi",
     title: "Introducing Daf Yomi Dot Dev",
     categories: ["Using AI"],
@@ -54546,6 +54563,8 @@ function GizmoCard({ gizmo, compact = false }) {
 
 const lastmod = {
 	"/": "2026-09-23",
+	"/gizmo/self-insurance-cost": "2026-10-09",
+	"self-insurance-cost": "2026-10-09",
 	"/gizmo/daf-yomi": "2026-09-20",
 	"daf-yomi": "2026-09-20",
 	"/gizmo/only-way-to-start-is-by-starting": "2026-09-16",
@@ -92999,6 +93018,87 @@ The rest is one Cloudflare Worker, Sefaria's open API, and a cron. It costs a fe
 Since this post went up the site has grown a daily email. One message a day with the daf, the AI note and its question, at whatever hour you choose. Sign up at [daf-yomi.dev/newsletter](https://daf-yomi.dev/newsletter).
 `;
 
+const selfInsuranceCost = `
+*Up to date as of October 8, 2026. The Comptroller's data refreshes yearly and the structure labels were read from audited statements by hand, so this will drift. We may update or rerun it.*
+
+## Hidden costs
+
+On occasion, people get hurt when using a government service. A snowplow hits a parked car. An inmate is hurt in jail. A bus brakes suddenly, causing someone to strain their knee. When people are injured, they oftentimes sue whoever is responsible, or rather, whoever is readily liable.
+
+Almost every time, those lawsuits end in settlements rather than jury trials. In New York, local governments outside New York City spend roughly $500 million to $650 million a year on liability insurance and on court judgments and claims, and [New York City alone paid about $1.9 billion](https://comptroller.nyc.gov/newsroom/comptroller-landers-new-dashboard-tracks-city-claims-city-paid-nearly-2b-in-settlements-last-fiscal-year) to settle claims in fiscal 2024. The direct source of that settlement money varies quite widely depending on who you're suing.
+
+My colleague had a hypothesis about government settlement outcomes. She argued that governments that carry their own liability - i.e., those that are self-insured - pay far more to settle cases than governments that buy insurance coverage, because nobody with money at stake pushes back on each claim. I thought that was probably right.
+
+## How a government buys risk
+
+A government has three ways to pay the claims it will someday lose. It can buy a policy from an insurance company. It can join a risk pool, a few hundred towns forming their own insurer to pay the claims. Or it can keep the risk, budget a reserve, and write the checks when the verdicts come in. That is self-insurance, and most large governments do it.
+
+What separates them is who writes the check when a claim settles, and whether anyone's price moves afterward. In New York, more than a thousand of the state's roughly 1,600 general-purpose local governments belong to one pool, NYMIR. When a town in NYMIR is sued, the town is the defendant but NYMIR handles the claim and pays the first $750,000 of any loss, and next year's premium goes up because of it.
+
+When Nassau County is sued, Nassau is both defendant and payer. It paid $87 million in judgments and claims in 2024 from its own general fund, after its own lawyers decided what each case was worth, and no premium went up afterward.
+
+## The bill is the same
+
+New York is the place to test it, because New York has excellent data going back to 1995. Every local government in New York reports their total insurance premiums, and their judgments and claims, to the State Comptroller. I read the risk-management note in the audited statements of all 57 counties, the 20 largest cities, and the 40 largest towns and villages, then compared governments of the same type and size band over 2015 to 2024.
+
+<sic-core-chart></sic-core-chart>
+
+Cities cannot be tested, since every New York city above about 45,000 residents carries its own liability and only three buy coverage. So I tested counties and large towns. In every size band, the self-insured counties and large towns spent the same or less per resident than the covered ones. Put the bands together, comparing each government only with others of its type and size, and the self-insured spent about as much as the covered. The range the data allow runs from roughly half to roughly 1.8 times.
+
+My colleague's hypothesis is wrong, at least in its strong form. Self-insured governments do not pay far more. But I have only tested the surface. The books understate what self-insurers pay, since lawyers and reserves are booked elsewhere. The biggest governments, New York City among them, have no insured peers to compare against. And while I found no difference overall, there may be one for certain kinds of governments. As it turns out, in police-heavy cities and villages, self-insurers do seem to pay more, but there are only one or two covered governments to compare them with, too few to trust. Where self-insurance clearly does show up is in how much the bill swings, most of all where police spending is high.
+
+## Why the obvious story is wrong
+
+The hypothesis assumes a settlement's size is a negotiation someone wins. Mostly it is set upstream, by what the government does and by state tort law, identical for everyone here. The only thing that moves the bill is police. Each extra ten percent of a budget spent on police raises liability cost per resident by roughly 40 percent. Once that is in the model, how a government pays its claims adds nothing, and no type of government, not counties with big jails, not towns with big police forces, not transit systems, shows a credible self-insurance premium in the public books.
+
+The hypothesis also assumes only an insurer fights claims. A self-insurer's law department fights them too. What a pool does not do is price each member precisely. Tom Clark, a political scientist at Stanford, traces how that played out in [Vallejo, California](https://www.cityofvallejo.net) in [a 2026 working paper](https://www.tomclarkphd.com/files/police_insurance.pdf). Vallejo's pool charged members by payroll, so a city whose claims ran more than two and a half times what the pool expected paid the same rate as everyone else. In 2018 the pool raised Vallejo's share of each claim from $500,000 to $2.5 million, and the city left for market-priced coverage. Its premium went from $392,000 to $2.4 million by 2024. A premium is roughly the claims a government would have paid plus the pool's overhead.
+
+There is a lot I cannot see, and some of it could rescue the hypothesis. Whether self-insurers settle each claim more generously, whether their reserves are honest, whether politics leans on their lawyers, what the hospital counties actually pay. None of that is in public books. The books can only say that the totals look the same and the swings do not.
+
+## What structure actually buys
+
+So what does a pool buy you, if not a lower bill? Coverage buys you a bill that you can plan around. Self-insured governments' liability costs swing about twice as much from year to year as covered governments' do, in every class of government, and worse as the police share of the budget rises.
+
+<sic-volatility></sic-volatility>
+
+Police claims are lumpy. A pool spreads the lump across a thousand members. A self-insurer eats it, and its worst year in the window ran about 40 percent above its average. A county with no police and a billion-dollar budget barely notices. A village with its own police and a twenty-million-dollar budget notices little else. That is the real penalty of self-insurance, and it falls on the governments least able to carry it.
+
+## What a government could do
+
+If the bill is set by exposure, the levers that lower it are operational. Claims data that someone reads, as New York City's ClaimStat and Chicago's 2019 review recommend, and the police practices they point at. The choice between pooling and self-insuring is about keeping the bill steady. Joanna Schwartz, a law professor at UCLA, studied how 100 jurisdictions across the country pay for police lawsuits in [a 2016 article](https://www.uclalawreview.org/wp-content/uploads/2019/09/Schwartz-63-5.pdf). The risk-pool experts she interviewed said governments under about 100,000 residents generally pool or buy insurance. A government that small belongs in a pool, especially a police-heavy one. A large one can keep the risk if it holds a stated retention with excess coverage above it, as NYMIR does, and a reserve sized for its worst year. Whether any of that would move the numbers I cannot say from public books. That part is illustrative.
+
+## Housekeeping
+
+Every label, with its document and quote, and the panels are in the pills above. The code is [public](https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost). If a number is wrong, tell me at joe@group17a.com.
+
+<details id="methodology">
+<summary class="font-serif text-2xl font-bold text-cobalt cursor-pointer select-none mt-8 mb-4">Methodology</summary>
+
+**Data.** New York State Comptroller, Financial Data for Local Governments, account-level files for counties, cities, towns, and villages, fiscal years 1995 to 2026. Cost of risk = Unallocated Insurance (1910) + Judgments and Claims (1930) + Property Loss (1931), all funds, divided by population (Census estimates), in 2024 dollars. Workers' compensation and the self-insurance fund family (benefit claims) are carried separately. Federal Transit Administration, National Transit Database, operating expenses by type (object class 506, casualty and liability) and service by mode, 2022 to 2024, directly operated full reporters.
+
+**Labels.** The general-liability arrangement of all 57 counties, the 20 largest cities, and the 30 largest towns and 10 largest villages was read from the GASB Statement 10 risk-management note in each government's most recent audited financial statements (FY2024 for most), and recorded with the document, page, and a verbatim quote. A retention at or below $100,000 is treated as a deductible, not self-insurance. The NYMIR subscriber list (July 2026) was used only to describe pool membership. Transit labels were read the same way from the largest agencies' statements.
+
+**Comparison.** Entity averages over 2015 to 2024, matched within class and population band, ratio of self-insured to covered means with a county-clustered bootstrap range; a regression with size and service-mix controls as the twin. Entities whose judgments line carries benefit claims (large and smooth), or whose documented claims payments do not appear on the Comptroller's lines, are held out and listed. A premium-only signature was tested as a label for smaller governments and agreed with the documents only about half the time, so it is not used.
+
+**What the comparison cannot do.** It cannot say what a self-insured city would pay with an insurer, because no insurer writes the large ones. It holds New York's tort law constant and does not travel. It is a comparison of spending as booked, not of pure loss.
+
+</details>
+
+<details>
+<summary class="font-serif text-2xl font-bold text-cobalt cursor-pointer select-none mt-8 mb-4">Sources</summary>
+
+- New York State Comptroller, Financial Data for Local Governments (account-level bulk files).
+- New York City Comptroller, Claims Dashboard, fiscal 2024 ($1.94 billion across 13,397 resolved claims).
+- Audited financial statements of each labeled government (Federal Audit Clearinghouse and government websites), cited row by row in the labels download.
+- NYMIR subscriber list by county, as of July 31, 2026; NY Department of Financial Services examination report on NYMIR as of December 31, 2020.
+- Federal Transit Administration, National Transit Database, 2022 to 2024.
+- Joanna Schwartz, "How Governments Pay," 63 UCLA Law Review 1144 (2016). John Rappaport, "How Private Insurers Regulate Public Police," 130 Harvard Law Review 1539 (2017). Tom Clark, "Municipal Liability Insurance as Police Oversight: Evidence from Vallejo, California," working paper, April 2026.
+- Christian Science Monitor, "Cities pool their risks and insure themselves," June 20, 1986. Governing, "Massive Legal Costs Weigh on Local Budgets," October 2016. Chicago Office of Financial Analysis, lawsuit cost study, 2019.
+- Matthiesen, Wickert & Lehrer, municipal governmental immunity and tort liability chart, February 2022.
+
+</details>
+`;
+
 const gizmoContent = {
   "data-center-restriction-cost": dataCenterRestrictionCost,
   "nyc-public-grocery-new-math": groceryMath30,
@@ -93012,7 +93112,8 @@ const gizmoContent = {
   "medicaid-work-requirements": medicaidWorkRequirements,
   "gospel-of-claude-code": gospelOfClaudeCode,
   "only-way-to-start-is-by-starting": onlyWayToStartIsByStarting,
-  "daf-yomi": dafYomi
+  "daf-yomi": dafYomi,
+  "self-insurance-cost": selfInsuranceCost
 };
 const gizmoBlufContent = {
   "public-private-compensation-comparison": bluf,
@@ -107829,6 +107930,187 @@ function computeDial(revPerSqft, blend, personsPerHH) {
   };
 }
 
+const window$1 = [
+	2015,
+	2024
+];
+const summary = {
+	covered: {
+		n: 43,
+		n_county: 27,
+		n_city: 2,
+		median_cor_pc: 12.6,
+		median_ins_pc: 7.7,
+		median_jc_pc: 2.4,
+		median_p90: 13.6,
+		mean_cor_pc: 17.5,
+		mean_ins_pc: 12.2,
+		mean_jc_pc: 5.3,
+		premium_share_of_cost: 0.697
+	},
+	self: {
+		n: 45,
+		n_county: 15,
+		n_city: 12,
+		median_cor_pc: 16.4,
+		median_ins_pc: 4.7,
+		median_jc_pc: 8.6,
+		median_p90: 23.8,
+		mean_cor_pc: 26.4,
+		mean_ins_pc: 10,
+		mean_jc_pc: 16.4,
+		premium_share_of_cost: 0.378
+	}
+};
+const bins = {
+	"city|2": {
+		covered: {
+			n: 1,
+			median_cor_pc: 14.3
+		},
+		self: {
+			n: 5,
+			median_cor_pc: 36.2
+		}
+	},
+	"city|3": {
+		covered: {
+			n: 1,
+			median_cor_pc: 33.5
+		},
+		self: {
+			n: 4,
+			median_cor_pc: 16.4
+		}
+	},
+	"city|4": {
+		self: {
+			n: 3,
+			median_cor_pc: 38.5
+		}
+	},
+	"county|1": {
+		covered: {
+			n: 1,
+			median_cor_pc: 23.2
+		}
+	},
+	"county|2": {
+		covered: {
+			n: 9,
+			median_cor_pc: 7.8
+		},
+		self: {
+			n: 3,
+			median_cor_pc: 12.7
+		}
+	},
+	"county|3": {
+		covered: {
+			n: 11,
+			median_cor_pc: 8.2
+		},
+		self: {
+			n: 5,
+			median_cor_pc: 6.2
+		}
+	},
+	"county|4": {
+		covered: {
+			n: 6,
+			median_cor_pc: 6.1
+		},
+		self: {
+			n: 7,
+			median_cor_pc: 8.6
+		}
+	},
+	"town|2": {
+		covered: {
+			n: 8,
+			median_cor_pc: 23.4
+		},
+		self: {
+			n: 1,
+			median_cor_pc: 41
+		}
+	},
+	"town|3": {
+		covered: {
+			n: 5,
+			median_cor_pc: 23.9
+		},
+		self: {
+			n: 7,
+			median_cor_pc: 19.4
+		}
+	},
+	"town|4": {
+		self: {
+			n: 7,
+			median_cor_pc: 11.2
+		}
+	},
+	"village|2": {
+		covered: {
+			n: 1,
+			median_cor_pc: 36.2
+		},
+		self: {
+			n: 2,
+			median_cor_pc: 109.5
+		}
+	},
+	"village|3": {
+		self: {
+			n: 1,
+			median_cor_pc: 78
+		}
+	}
+};
+const sicEntities = {
+	window: window$1,
+	summary: summary,
+	bins: bins};
+
+const ny = {
+	volatility: {
+		by_class: {
+			city: {
+				n_self: 12,
+				n_covered: 2,
+				yoy_cv_self: 0.623,
+				yoy_cv_covered: 0.28
+			},
+			county: {
+				n_self: 15,
+				n_covered: 27,
+				yoy_cv_self: 0.527,
+				yoy_cv_covered: 0.343,
+				ratio: 1.004,
+				lo: 0.612,
+				hi: 1.649
+			},
+			town: {
+				n_self: 15,
+				n_covered: 13,
+				yoy_cv_self: 0.575,
+				yoy_cv_covered: 0.225,
+				ratio: 1.041,
+				lo: 0.467,
+				hi: 2.322
+			},
+			village: {
+				n_self: 3,
+				n_covered: 1,
+				yoy_cv_self: 0.72,
+				yoy_cv_covered: 0.119
+			}
+		}}
+};
+const sicModels = {
+	ny: ny};
+
 const n0$1 = (v) => Math.round(v).toLocaleString("en-US");
 const pct$1 = (v, d = 1) => `${(v * 100).toFixed(d)}%`;
 const money = (v) => `$${n0$1(v)}`;
@@ -107845,6 +108127,40 @@ function Table({ head, rows }) {
   ] });
 }
 const Nothing = () => null;
+const SicCoreStatic = () => {
+  const s = sicEntities.summary;
+  const bins = sicEntities.bins;
+  const label = ["under 2,500", "2,500 to 10,000", "10,000 to 50,000", "50,000 to 150,000", "150,000 and up"];
+  return /* @__PURE__ */ jsxRuntimeExports.jsxs(Figure, { id: "sic-core-chart", caption: `Interactive chart in the browser. New York counties and cities with a documented liability arrangement, ${sicEntities.window[0]} to ${sicEntities.window[1]} averages per resident, 2024 dollars. Source: NY State Comptroller account-level data; audited financial statements.`, children: [
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Table,
+      {
+        head: ["Group", "Governments", "Median cost of risk per resident", "Median premiums", "Median judgments and claims", "Median worst year"],
+        rows: ["self", "covered"].filter((k) => s[k]).map((k) => [k === "self" ? "Carries its own liability" : "Buys coverage", s[k].n, money(s[k].median_cor_pc), money(s[k].median_ins_pc), money(s[k].median_jc_pc), money(s[k].median_p90)])
+      }
+    ),
+    /* @__PURE__ */ jsxRuntimeExports.jsx(
+      Table,
+      {
+        head: ["Class and population band", "Self-insured (n)", "Median per resident", "Covered (n)", "Median per resident"],
+        rows: Object.entries(bins).map(([k, b]) => {
+          const [cls, bin] = k.split("|");
+          return [`${cls}, ${label[Number(bin)]}`, b.self?.n ?? 0, b.self ? money(b.self.median_cor_pc) : "", b.covered?.n ?? 0, b.covered ? money(b.covered.median_cor_pc) : ""];
+        })
+      }
+    )
+  ] });
+};
+const SicVolatilityStatic = () => {
+  const v = sicModels.ny.volatility;
+  return /* @__PURE__ */ jsxRuntimeExports.jsx(Figure, { id: "sic-volatility", caption: "Median year-to-year swing in liability cost per resident (standard deviation over mean, 2015 to 2024), by class and structure.", children: /* @__PURE__ */ jsxRuntimeExports.jsx(
+    Table,
+    {
+      head: ["Class", "Carries its own (n)", "Swing", "Buys coverage (n)", "Swing"],
+      rows: Object.entries(v?.by_class ?? {}).map(([c, r]) => [c, r.n_self, r.yoy_cv_self == null ? "" : pct$1(r.yoy_cv_self, 0), r.n_covered, r.yoy_cv_covered == null ? "" : pct$1(r.yoy_cv_covered, 0)])
+    }
+  ) });
+};
 const states = [...stateSummary.states].sort((a, b) => a.state_name.localeCompare(b.state_name));
 const nat = stateSummary.national;
 const MedicaidHero = () => /* @__PURE__ */ jsxRuntimeExports.jsx(
@@ -108127,6 +108443,8 @@ const NycTaxMap = () => {
   ] });
 };
 const gizmoEmbeds = {
+  "sic-core-chart": SicCoreStatic,
+  "sic-volatility": SicVolatilityStatic,
   "dcr-map": DcrMap,
   "dcr-town-calc": DcrTownCalc,
   "dcr-footprint-bars": DcrFootprintBars,

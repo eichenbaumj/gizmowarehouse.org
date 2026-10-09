@@ -46,6 +46,23 @@ export function categoryFromSlug(slug: string): Category | undefined {
 
 export const gizmos: Gizmo[] = [
   {
+    slug: "self-insurance-cost",
+    title: "The Price of Insuring Yourself",
+    dek: "Governments that carry their own liability don't pay more. Their bills swing twice as hard. Police budget, not financing, drives the size of the bill.",
+    categories: ["State Government", "City Government"],
+    date: "2026-10",
+    summary: "My colleague thought governments that carry their own liability pay far more to settle claims. I read how 117 New York counties, cities, towns, and villages handle liability and compared like with like over ten years. The totals land in the same range. What differs is how hard the bill swings from year to year, and what sets its size is police.",
+    seoTitle: "Self-Insurance vs Risk Pools: What Local Governments Pay for Liability",
+    metaDescription: "Do self-insured governments pay more for liability? Every NY county and large city, labeled from audited statements, compared over ten years.",
+    links: [
+      { label: "Download the New York panel (.csv)", url: "/assets/self-insurance-cost-ny-panel.csv" },
+      { label: "Download the transit panel (.csv)", url: "/assets/self-insurance-cost-ntd-panel.csv" },
+      { label: "Structure labels with sources (.csv)", url: "/assets/self-insurance-cost-treatment-labels.csv" },
+      { label: "Methodology & sources (.md)", url: "/assets/self-insurance-cost-methodology.md" },
+      { label: "Code and data pipeline (GitHub)", url: "https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost" },
+    ],
+  },
+  {
     slug: "daf-yomi",
     title: "Introducing Daf Yomi Dot Dev",
     categories: ["Using AI"],

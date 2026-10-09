@@ -40,3 +40,7 @@ cd gizmos/medicaid-work-requirements/pipeline
 ```
 
 See METHODOLOGY.md for everything the build is actually doing.
+
+## Exports
+
+- The Connecticut housing PUMS file `raw/pums/csv_hct.zip` was added to this pipeline's raw dir on 2026-09-24 for a state-level export built outside this repo (not used by any stage yet).

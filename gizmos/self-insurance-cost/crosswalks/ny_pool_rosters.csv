@@ -1,0 +1,987 @@
+county,cls,entity_name,pool,member_as_of,source_url
+Albany,city,City of Cohoes,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of Berne,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of Coeymans,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of Green Island,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of Knox,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of New Scotland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of Rensselaerville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,town,Town of Westerlo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Albany,village,Village of Voorheesville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,county,County of Allegany,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Alfred,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Almond,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Amity,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Andover,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Angelica,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Birdsall,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Bolivar,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Burns,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Centerville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Friendship,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Genesee,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Granger,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Grove,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Independence,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Lyndon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Rushford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Ward,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Wellsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Willing,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,town,Town of Wirt,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,village,Village of Almond,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,village,Village of Bolivar,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,village,Village of Canaseraga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,village,Village of Richburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Allegany,village,Village of Wellsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Barker,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Binghamton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Chenango,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Dickinson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Fenton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Lisle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Maine,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Nanticoke,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Sanford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Triangle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Vestal,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,town,Town of Windsor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,village,Village of Deposit,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,village,Village of Lisle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Broome,village,Village of Whitney Point,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,county,County of Cattaraugus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,city,City of Salamanca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Allegany,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Ashford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Carrollton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Coldspring,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Dayton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of East Otto,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Freedom,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Great Valley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Hinsdale,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Ischua,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Leon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Little Valley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Machias,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Mansfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Perrysburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Persia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,town,Town of Salamanca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,village,Village of Ellicottville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,village,Village of Franklinville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cattaraugus,village,Village of Gowanda,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,county,County of Cayuga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,city,City of Auburn,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Aurelius,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Brutus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Cato,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Moravia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Conquest,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Fleming,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Genoa,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Ira,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Ledyard,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Locke,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Mentz,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Montezuma,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Owasco,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Scipio,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Sempronius,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Sennett,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Springport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Sterling,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Throop,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Venice,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,town,Town of Victory,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Aurora,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Cato,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Cayuga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Fair Haven,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Meridian,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Port Byron,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Union Springs,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cayuga,village,Village of Weedsport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,county,County of Chautauqua,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,city,City of Jamestown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Arkwright,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Busti,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Carroll,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Charlotte,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Cherry Creek,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Kiantone,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Mina,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of North Harmony,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Portland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Ripley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,town,Town of Westfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,village,Village of Bemus Point,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,village,Village of Fredonia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chautauqua,village,Village of Mayville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Ashland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Baldwin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Catlin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Chemung,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Erin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Horseheads,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,town,Town of Veteran,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chemung,village,Village of Millport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,city,City of Norwich,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Afton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Coventry,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of German,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Greene,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of McDonough,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of North Norwich,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Otselic,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Oxford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Pharsalia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Pitcher,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Plymouth,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Preston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,town,Town of Smyrna,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,village,Village of Afton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,village,Village of Earlville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,village,Village of Greene,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,village,Village of New Berlin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,village,Village of Oxford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Chenango County,village,Village of Smyrna,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,county,County of Clinton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Ausable,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Beekmantown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Black Brook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Champlain,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Chazy,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Clinton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Dannemora,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Ellenburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Mooers,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Peru,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Plattsburgh,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,town,Town of Saranac,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,village,Village of Champlain,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,village,Village of Dannemora,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Clinton,village,Village of Rouses Point,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,city,City of Hudson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,county,County of Columbia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,village,Village of Philmont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Austerlitz,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Canaan,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Chatham,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Clermont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Germantown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Ghent,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Greenport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Hillsdale,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Kinderhook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Livingston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of New Lebanon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Stockport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Stuyvesant,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,town,Town of Taghkanic,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,village,Village of Chatham,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Columbia,village,Village of Kinderhook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,county,County of Cortland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Cincinnatus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Cuyler,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Freetown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Harford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Lapeer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Marathon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Preble,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Scott,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Taylor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Cortland,town,Town of Virgil,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,county,County of Delaware,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Bovina,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Davenport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Delhi,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Deposit,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Franklin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Hamden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Hancock,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Harpersfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Kortright,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Masonville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Roxbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Sidney,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Stamford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Tompkins,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,town,Town of Walton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,village,Village of Delhi,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,village,Village of Fleischmanns,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,village,Village of Hancock,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,village,Village of Sidney,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,village,Village of Stamford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Delaware,village,Village of Walton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,city,City of Beacon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,city,City of Poughkeepsie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,county,County of Dutchess,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Amenia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Beekman,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Clinton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Dover,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of East Fishkill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Fishkill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Hyde Park,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Milan,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of North East,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Pleasant Valley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Poughkeepsie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Red Hook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Rhinebeck,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Stanford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Union Vale,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Wappinger,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,town,Town of Washington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Fishkill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Millbrook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Millerton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Red Hook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Rhinebeck,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Tivoli,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Dutchess,village,Village of Wappingers Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,city,City of Lackawanna,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,city,City of Tonawanda,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Boston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Clarence,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Concord,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Elma,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Evans,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Hamburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Holland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Orchard Park,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of Sardinia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,town,Town of West Seneca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,village,Village of Alden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,village,Village of Angola,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,village,Village of Blasdell,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,village,Village of Farnham,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,village,Village of Hamburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Erie,village,Village of Williamsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,county,County of Essex,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,village,Village of Lake Placid,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Chesterfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Crown Point,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Elizabethtown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Essex,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Jay,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Keene,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Lewis,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Minerva,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Newcomb,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of North Elba,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Saint Armand,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Ticonderoga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Westport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Essex,town,Town of Wilmington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,county,County of Franklin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Bangor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Bellmont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Bombay,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Brandon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Brighton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Burke,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Chateaugay,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Constable,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Dickinson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Duane,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Fort Covington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Franklin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Harrietstown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Malone,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Moira,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Tupper Lake,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Waverly,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,town,Town of Westville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,village,Village of Brushton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,village,Village of Chateaugay,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,village,Village of Malone,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Franklin,village,Village of Tupper Lake,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,city,City of Gloversville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,county,County of Fulton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Bleecker,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Broadalbin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Caroga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Ephratah,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Johnstown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Mayfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Northampton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Oppenheim,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Perth,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,town,Town of Stratford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,village,Village of Dolgeville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,village,Village of Mayfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Fulton,village,Village of Northville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,county,County of Genesee,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Alexander,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Batavia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Bergen,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Bethany,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Byron,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Elba,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Oakfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Pavilion,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,town,Town of Stafford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,village,Village of Bergen,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,village,Village of Corfu,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,village,Village of Elba,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,village,Village of Leroy,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Genesee,village,Village of Oakfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,county,County of Greene,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Athens,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Cairo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Catskill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Greenville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Halcott,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Hunter,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Jewett,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Lexington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,town,Town of Windham,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,village,Village of Athens,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,village,Village of Catskill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,village,Village of Coxsackie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,village,Village of Hunter,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Greene,village,Village of Tannersville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,county,County of Hamilton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Arietta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Benson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Hope,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Indian Lake,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Inlet,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Lake Pleasant,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Long Lake,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,town,Town of Morehouse,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Hamilton,village,Village of Speculator,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,city,City of Little Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,county,County of Herkimer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Columbia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Danube,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Fairfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Herkimer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Litchfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Little Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Manheim,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Newport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Ohio,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Salisbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Schuyler,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,town,Town of Webb,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of Cold Brook,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of Frankfort,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of Herkimer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of Middleville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of Newport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of Poland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Herkimer,village,Village of West Winfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,county,County of Jefferson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Adams,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Brownville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Cape Vincent,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Champion,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Ellisburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Henderson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Hounsfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Lorraine,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Lyme,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Orleans,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Pamelia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Philadelphia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Rodman,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Rutland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Theresa,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Wilna,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,town,Town of Worth,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Adams,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Alexandria Bay,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Brownville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Cape Vincent,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Carthage,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Chaumont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Deferiet,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Dexter,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Ellisburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Evans Mills,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Glen Park,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Mannsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of Philadelphia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Jefferson,village,Village of West Carthage,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,county,County of Lewis,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Denmark,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Diana,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Greig,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Harrisburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Lewis,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Leyden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Lowville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Lyonsdale,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Martinsburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Montague,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Osceola,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Pinckney,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,town,Town of Turin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,village,Village of Constableville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,village,Village of Copenhagen,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,village,Village of Lowville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,village,Village of Lyons Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Lewis,village,Village of Port Leyden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,county,County of Livingston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Avon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Caledonia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Conesus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Geneseo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Groveland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Leicester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Lima,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Livonia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of North Dansville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Nunda,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Ossian,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Portage,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Sparta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of Springwater,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of West Sparta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,town,Town of York,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,village,Village of Caledonia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,village,Village of Dansville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,village,Village of Geneseo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,village,Village of Lima,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Livingston,village,Village of Livonia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Brookfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Cazenovia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Eaton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Georgetown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Hamilton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Lebanon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Lenox,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Lincoln,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of Munnsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,town,Town of Nelson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of Cazenovia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of DeRutyer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of Hamilton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of Madison,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of Morrisville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Madison,village,Village of Wampsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,town,Town of Brighton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,town,Town of Chili,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,town,Town of Henrietta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,town,Town of Mendon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,town,Town of Rush,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,town,Town of Wheatland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,village,Village of Hilton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,village,Village of Honeoye Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,village,Village of Scottsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Monroe,village,Village of Webster,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,city,City of Amsterdam,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,county,County of Montgomery,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,town,Town of Florida,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,town,Town of Minden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,town,Town of Palatine,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,town,Town of Root,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,town,Town of St. Johnsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,village,Village of Fonda,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,village,Village of Fultonville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,village,Village of Hagaman,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,village,Village of Nelliston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Montgomery,village,Village of St. Johnsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,city,City of Glen Cove,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,city,City of Long Beach,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Baxter Estates,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Cedarhurst,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of East Rockaway,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Lawrence,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Floral Park,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of New Hyde Park,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Plandome Heights,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Port Washington North,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of New York Mills,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Roslyn,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Valley Stream,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,town,Town of North Hempstead,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,town,Town of Oyster Bay,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Manorhaven,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Rockville Centre,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Roslyn Harbor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Westbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Nassau,village,Village of Upper Brookville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,city,City of Lockport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,city,City of Niagara Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,city,City of North Tonawanda,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,town,Town of Lockport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,town,Town of Pendleton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,village,Village of Barker,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,village,Village of Lewiston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,town,Town of Hartland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,village,Village of Middleport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Niagara,village,Village of Youngstown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,city,City of Utica,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,county,County of Oneida,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Annsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Ava,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Boonville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Bridgewater,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Camden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Deerfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Forestport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Kirkland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Lee,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Marcy,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Marshall,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Paris,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Sangerfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Steuben,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Vernon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Verona,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Vienna,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Western,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,town,Town of Westmoreland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,village,Village of Camden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,village,Village of Oriskany Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,village,Village of Sylvan Beach,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oneida,village,Village of Waterville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Elbridge,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Otisco,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Pompey,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Skaneateles,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Spafford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Tully,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,town,Town of Van Buren,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Camillus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of East Syracuse,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Elbridge,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Fayetteville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Jordan,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Manlius,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Minoa,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of North Syracuse,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Onondaga,village,Village of Tully,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,city,City of Canandaigua,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,city,City of Geneva,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,county,County of Ontario,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Bristol,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Canadice,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of East Bloomfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Farmington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Geneva,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Gorham,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Hopewell,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Manchester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Naples,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Phelps,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Richmond,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of South Bristol,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of Victor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,town,Town of West Bloomfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,village,Village of Bloomfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,village,Village of Manchester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ontario,village,Village of Naples,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Chester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Minisink,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Monroe,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Palm Tree,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Wallkill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Wawayanda,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,town,Town of Woodbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,village,Village of Kiryas Joel,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,village,Village of Monroe,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,village,Village of Warwick,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,village,Village of Washingtonville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orange,village,Village of Woodbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,county,County of Orleans,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Albion,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Barre,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Carlton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Clarendon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Gaines,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Kendall,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Murray,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Ridgeway,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,town,Town of Shelby,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,village,Village of Albion,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Orleans,village,Village of Holley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,city,City of Fulton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,city,City of Oswego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,county,County of Oswego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Albion,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Amboy,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Boylston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Constantia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Granby,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Hannibal,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Hastings,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Mexico,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Minetto,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of New Haven,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Orwell,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Oswego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Palermo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Parish,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Redfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Richland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Sandy Creek,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Scriba,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Schroeppel,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Volney,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of West Monroe,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,town,Town of Williamstown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Central Square,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Cleveland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Hannibal,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Lacona,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Mexico,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Parish,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Phoenix,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Pulaski,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Oswego,village,Village of Sandy Creek,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,city,City of Oneonta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,county,County of Otsego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Burlington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Decatur,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Exeter,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Hartwick,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Laurens,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Maryland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Middlefield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Milford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Morris,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Oneonta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Otego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Otsego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Pittsfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Richfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Springfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Unadilla,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,town,Town of Worcester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,village,Village of Cooperstown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,village,Village of Gilbertsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,village,Village of Laurens,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,village,Village of Milford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Otsego,village,Village of Unadilla,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,county,County of Putnam,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,town,Town of Carmel,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,town,Town of Kent,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,town,Town of Patterson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,town,Town of Putnam Valley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,town,Town of Southeast,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Putnam,village,Village of Cold Spring,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,county,County of Rensselaer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Berlin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Brunswick,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Hoosick,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of North Greenbush,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Petersburgh,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Pittstown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Poestenkill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Sand Lake,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Schaghticoke,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Schodack,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,town,Town of Stephentown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,village,Village of Castleton-on-Hudson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,village,Village of East Nassau,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,village,Village of Hoosick Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rensselaer,village,Village of Valley Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,town,Town of Stony Point,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of Airmont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of Grand View on Hudson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of Haverstraw,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of New Hempstead,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of New Square,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of Nyack,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Rockland,village,Village of Upper Nyack,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,city,City of Saratoga Springs,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Ballston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Corinth,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Day,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Edinburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Galway,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Greenfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Halfmoon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Malta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Milton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Northumberland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Providence,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Saratoga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,town,Town of Stillwater,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,village,Village of Ballston Spa,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,village,Village of Corinth,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,village,Village of South Glens Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,village,Village of Stillwater,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Saratoga,village,Village of Waterford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schenectady,town,Town of Glenville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schenectady,town,Town of Princetown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schenectady,village,Village of Delanson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,county,County of Schoharie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Blenheim,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Broome,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Carlisle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Cobleskill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Conesville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Esperance,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Fulton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Gilboa,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Jefferson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Middleburgh,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Richmondville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Schoharie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Seward,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Sharon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Summit,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,town,Town of Wright,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,village,Village of Cobleskill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,village,Village of Middleburgh,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,village,Village of Richmondville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,village,Village of Schoharie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schoharie,village,Village of Sharon Springs,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schuyler,county,County of Schuyler,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schuyler,town,Town of Cayuta,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schuyler,town,Town of Montour,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schuyler,town,Town of Orange,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schuyler,town,Town of Tyrone,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Schuyler,village,Village of Odessa,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,county,County of Seneca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Covert,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Junius,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Lodi,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Ovid,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Romulus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Seneca Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Tyre,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Varick,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,town,Town of Waterloo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,village,Village of Interlaken,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,village,Village of Lodi,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,village,Village of Ovid,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Seneca,village,Village of Waterloo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Brasher,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Canton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Clare,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Clifton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Colton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of DeKalb,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Depeyster,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Edwards,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Fine,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Fowler,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Gouverneur,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Hammond,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Hermon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Hopkinton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Lawrence,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Lisbon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Madrid,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Massena,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Morristown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Norfolk,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Oswegatchie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Parishville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Piercefield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Pierrepont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Pitcairn,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Potsdam,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Rossie,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Stockholm,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,town,Town of Waddington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Canton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Hammond,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Heuvelton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Norwood,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Potsdam,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Rensselaer Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Richville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+St. Lawrence,village,Village of Waddington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,county,County of Steuben,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,city,City of Corning,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Addison,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Avoca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Bath,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Bradford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Campbell,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Caton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Corning,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Dansville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Erwin,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Fremont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Hartsville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Hornby,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Howard,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Lindley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Prattsburgh,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Pulteney,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Rathbone,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Thurston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Urbana,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Wayland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Wayne,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Wheeler,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,town,Town of Woodhull,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Addison,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Avoca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Cohocton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Hammondsport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Painted Post,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Riverside,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Savona,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of South Corning,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Steuben,village,Village of Wayland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Asharoken,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Belle Terre,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of East Hampton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Lindenhurst,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of North Haven,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Northport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Patchogue,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Saltaire,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Shoreham,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of The Branch,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Westhampton Beach Village of Nichols,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,town,Town of Babylon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,town,Town of East Hampton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,town,Town of Shelter Island,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,town,Town of Southampton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,town,Town of Southold,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Greenport,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Ocean Beach,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Port Jefferson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Quogue,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Sagaponack,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Suffolk,village,Village of Southampton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,village,Village of Jeffersonville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Bethel,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Callicoon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Cochecton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Cohocton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Delaware,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Forestburgh,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Fremont,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Highland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Liberty,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Lumberland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Rockland,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Thompson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,town,Town of Tusten,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,village,Village of Bloomingburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,village,Village of Monticello,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,village,Village of Woodridge,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Sullivan,village,Village of Wurtsboro,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,county,County of Tioga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Barton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Berkshire,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Candor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Newark Valley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Nichols,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Richford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Spencer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,town,Town of Tioga,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,village,Village of Candor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,village,Village of Newark Valley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,village,Village of Owego,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,village,Village of Spencer,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tioga,village,Village of Waverly,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,county,County of Tompkins,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Caroline,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Danby,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Dryden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Enfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Ithaca,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Lansing,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,town,Town of Truxton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Tompkins,village,Village of Cayuga Heights,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,city,City of Kingston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Denning,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Esopus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Gardiner,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Hurley,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Kingston,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Lloyd,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of New Paltz,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Plattekill,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Rosendale,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,town,Town of Woodstock,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,county,County of Ulster,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Ulster,village,Village of New Paltz,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,city,City of Glens Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Bolton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Johnsburg,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Lake George,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Lake Luzerne,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Queensbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Stony Creek,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,town,Town of Thurman,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Warren,village,Village of Lake George,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Argyle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Cambridge,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Dresden,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Easton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Fort Edward,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Granville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Greenwich,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Hampton,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Hartford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Hebron,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Jackson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Kingsbury,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Putnam,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Salem,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of White Creek,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,town,Town of Whitehall,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Argyle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Cambridge,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Fort Ann,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Granville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Greenwich,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Hudson Falls,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,village,Village of Whitehall,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Washington,county,County of Washington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Arcadia,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Butler,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Galen,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Lyons,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Macedon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Marion,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Palmyra,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Savannah,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Sodus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Walworth,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,town,Town of Wolcott,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,village,Village of Clyde,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,village,Village of Red Creek,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,village,Village of Sodus,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,village,Village of Wolcott,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wayne,county,County of Wayne,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,city,City of New Rochelle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Bedford,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Lewisboro,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Mamaroneck,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Ossining,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Pound Ridge,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Rye,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Briarcliff Manor,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Croton on Hudson,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Irvington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Mount Kisco,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,town,Town of Mount Kisco,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Mamaroneck,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Pleasantville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Port Chester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Sleepy Hollow,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Tarrytown,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,village,Village of Tuckahoe,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Westchester,county,County of Westchester,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Arcade,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Attica,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Eagle,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Gainesville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Java,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Sheldon,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,town,Town of Wethersfield,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,village,Village of Gainesville,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,village,Village of Warsaw,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,village,Village of Wyoming,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Wyoming,county,County of Wyoming,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Yates,town,Town of Barrington,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Yates,town,Town of Italy,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Yates,town,Town of Jerusalem,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Yates,town,Town of Milo,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Yates,town,Town of Starkey,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf
+Yates,village,Village of Penn Yan,NYMIR,2026-07-31,https://nymir.org/wp-content/uploads/2026/07/SUBSCRIBER-LIST-BY-COUNTY-07.31.26.pdf

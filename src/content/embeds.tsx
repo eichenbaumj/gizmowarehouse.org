@@ -39,6 +39,8 @@ import GroceryDial from "@/components/grocery/GroceryDial";
 import DcrMap from "@/components/dcr/DcrMap";
 import DcrTownCalc from "@/components/dcr/DcrTownCalc";
 import DcrFootprintBars from "@/components/dcr/DcrFootprintBars";
+import SicCoreChart from "@/components/sic/SicCoreChart";
+import SicVolatility from "@/components/sic/SicVolatility";
 
 // Some embed components are intentionally unregistered: unregistering drops
 // their source strings from the JS bundle while the .tsx files stay on disk;
@@ -75,6 +77,8 @@ const DcrMapLazy: ComponentType = () => (
 );
 
 export const gizmoEmbeds: Record<string, ComponentType> = {
+  "sic-core-chart": SicCoreChart,
+  "sic-volatility": SicVolatility,
   "dcr-map": DcrMapLazy,
   "dcr-town-calc": DcrTownCalc,
   "dcr-footprint-bars": DcrFootprintBars,
