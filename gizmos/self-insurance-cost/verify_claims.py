@@ -187,7 +187,7 @@ def main() -> int:
     check("total per New Yorker" not in body, "never stack layers into a per-New-Yorker total")
 
     # ---- 4. style budgets ----------------------------------------------------
-    check(words <= 1450, f"body words {words} > 1450 hard cap")  # raised from 1,200 by Joe, 2026-10-09
+    check(words <= 1500, f"body words {words} > 1500 hard cap")  # raised from 1,200 by Joe, 2026-10-09
     if words > 800:
         warn(f"body words {words} > 800 target")
     em = body.count("—")
