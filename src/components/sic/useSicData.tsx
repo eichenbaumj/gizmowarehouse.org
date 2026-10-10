@@ -69,4 +69,4 @@ export function Err({ msg }: { msg: string }) {
   return <div className="my-6 text-sm text-steel">Chart data unavailable ({msg}).</div>;
 }
 export const fmtMoney = (v: number, d = 0) => `$${v.toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d })}`;
-export const fmtPop = (v: number) => (v >= 1e6 ? `${(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `${Math.round(v / 1e3)}K` : `${Math.round(v)}`);
+export const fmtPop = (v: number) => (v >= 1e6 ? `${+(v / 1e6).toFixed(1)}M` : v >= 1e3 ? `${Math.round(v / 1e3)}K` : `${Math.round(v)}`);

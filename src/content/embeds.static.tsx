@@ -54,27 +54,39 @@ function Table({ head, rows }: { head: string[]; rows: (string | number)[][] }) 
 const Nothing: ComponentType = () => null;
 // ---------------------------------------------------------------- self-insurance-cost
 import sicEntities from "../../public/data/self-insurance-cost/ny_entities.json";
-import sicModels from "../../public/data/self-insurance-cost/models.json";
+import { CLASS_NAME, MIN_TICK, classOrder, fx, summarize, swingRows, type ClassKey } from "@/components/sic/sicVolatilityModel";
 
 const SicCoreStatic: ComponentType = () => {
-  const s = sicEntities.summary as Record<string, { n: number; median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_p90: number }>;
-  const bins = sicEntities.bins as Record<string, Record<string, { n: number; median_cor_pc: number }>>;
+  const s = sicEntities.summary as Record<string, { n: number; median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_max: number }>;
+  const bins = sicEntities.bins as Record<string, Record<string, { n: number; mean_cor_pc: number; median_cor_pc: number }>>;
   const label = ["under 2,500", "2,500 to 10,000", "10,000 to 50,000", "50,000 to 150,000", "150,000 and up"];
   return (
-    <Figure id="sic-core-chart" caption={`Interactive chart in the browser. New York counties and cities with a documented liability arrangement, ${sicEntities.window[0]} to ${sicEntities.window[1]} averages per resident, 2024 dollars. Source: NY State Comptroller account-level data; audited financial statements.`}>
-      <Table head={["Group", "Governments", "Median cost of risk per resident", "Median premiums", "Median judgments and claims", "Median worst year"]}
-        rows={(["self", "covered"] as const).filter((k) => s[k]).map((k) => [k === "self" ? "Carries its own liability" : "Buys coverage", s[k].n, money(s[k].median_cor_pc), money(s[k].median_ins_pc), money(s[k].median_jc_pc), money(s[k].median_p90)])} />
-      <Table head={["Class and population band", "Self-insured (n)", "Median per resident", "Covered (n)", "Median per resident"]}
-        rows={Object.entries(bins).map(([k, b]) => { const [cls, bin] = k.split("|"); return [`${cls}, ${label[Number(bin)]}`, b.self?.n ?? 0, b.self ? money(b.self.median_cor_pc) : "", b.covered?.n ?? 0, b.covered ? money(b.covered.median_cor_pc) : ""]; })} />
+    <Figure id="sic-core-chart" caption={`Interactive chart in the browser. New York counties, cities, towns, and villages with a documented liability arrangement, ${sicEntities.window[0]} to ${sicEntities.window[1]} averages of insurance premiums plus judgments and claims per resident, 2024 dollars. Source: NY State Comptroller account-level data; audited financial statements.`}>
+      <Table head={["Group", "Governments", "Typical (median) cost per resident", "Premiums", "Judgments and claims", "Worst year"]}
+        rows={(["self", "covered"] as const).filter((k) => s[k]).map((k) => [k === "self" ? "Carries its own liability" : "Buys coverage", s[k].n, money(s[k].median_cor_pc), money(s[k].median_ins_pc), money(s[k].median_jc_pc), money(s[k].median_max)])} />
+      <Table head={["Class and population band", "Self-insured (n)", "Average per resident", "Covered (n)", "Average per resident"]}
+        rows={Object.entries(bins).map(([k, b]) => { const [cls, bin] = k.split("|"); return [`${cls}, ${label[Number(bin)]}`, b.self?.n ?? 0, b.self ? money(b.self.mean_cor_pc) : "", b.covered?.n ?? 0, b.covered ? money(b.covered.mean_cor_pc) : ""]; })} />
     </Figure>
   );
 };
 const SicVolatilityStatic: ComponentType = () => {
-  const v = (sicModels.ny as { volatility?: { by_class: Record<string, { n_self: number; n_covered: number; yoy_cv_self: number | null; yoy_cv_covered: number | null }> } }).volatility;
+  const { drawn } = swingRows(sicEntities.rows as unknown as Parameters<typeof swingRows>[0]);
+  const S = summarize(drawn);
+  const join = (xs: string[]) => (xs.length === 1 ? xs[0] : `${xs.slice(0, -1).join(", ")} and ${xs[xs.length - 1]}`);
+  const cell = (k: "all" | ClassKey, side: "self" | "covered") => {
+    const h = S[k][side];
+    if (!h.n) return "none";
+    if (h.n < MIN_TICK) {
+      const pl = h.n > 1;
+      return `Only ${h.n} ${pl ? "governments" : "government"}, worst year${pl ? "s" : ""} ${join(h.ratios.map(fx))}, swing${pl ? "s" : ""} ${join(h.swings.map((x) => `${Math.round(x * 100)}%`))}`;
+    }
+    return `Worst year ${fx(h.ratio ?? 0)}, swing ${Math.round((h.swing ?? 0) * 100)}% (${h.n} governments)`;
+  };
+  const keys: ("all" | ClassKey)[] = ["all", ...classOrder(S)];
   return (
-    <Figure id="sic-volatility" caption="Median year-to-year swing in liability cost per resident (standard deviation over mean, 2015 to 2024), by class and structure.">
-      <Table head={["Class", "Carries its own (n)", "Swing", "Buys coverage (n)", "Swing"]}
-        rows={Object.entries(v?.by_class ?? {}).map(([c, r]) => [c, r.n_self, r.yoy_cv_self == null ? "" : pct(r.yoy_cv_self, 0), r.n_covered, r.yoy_cv_covered == null ? "" : pct(r.yoy_cv_covered, 0)])} />
+    <Figure id="sic-volatility" caption="Interactive chart in the browser. New York governments with a documented liability arrangement, 2015 to 2024. Worst year is the costliest year as a multiple of the government's own ten-year average. Swing is how far a typical year's bill lands from that average, as a share of it. Each figure is for the typical government, the middle one of its group; groups under five list every government. Source: NY State Comptroller account-level data; audited financial statements.">
+      <Table head={["Type of government", "Carry their own liability", "Buy coverage from a pool or insurer"]}
+        rows={keys.map((k) => [k === "all" ? "All governments" : CLASS_NAME[k][0], cell(k, "self"), cell(k, "covered")])} />
     </Figure>
   );
 };

@@ -4,7 +4,7 @@
 // read them by regex and lock them to the pipeline's JSON. Bump DATA_VERSION on every
 // re-export so Lovable's edge cache serves the new JSON.
 
-export const DATA_VERSION = 1;
+export const DATA_VERSION = 2;
 export const dataUrl = (name: "ny_entities" | "ntd_agencies" | "models" | "attribution" | "ny_switchers") =>
   `/data/self-insurance-cost/${name}.json?v=${DATA_VERSION}`;
 
@@ -14,16 +14,19 @@ export const SIC_MODEL = {
   windowStart: 2015,
   windowEnd: 2024,
   nCountiesRead: 57,
-  nCitiesRead: 20,
+  nRead: 135,
   nTransitRead: 104,
-  coreSelf: 34,
-  coreCovered: 42,
-  ratioCentral: 1.032,
-  ratioLow: 0.514,
-  ratioHigh: 1.791,
-  policeRatioPer10pts: 1.428,
-  swingSelf: 0.54,
-  swingCovered: 0.272,
+  coreSelf: 35,
+  coreCovered: 49,
+  ratioCentral: 1.224,
+  ratioLow: 0.831,
+  ratioHigh: 2.018,
+  swingSelf: 0.514,
+  swingCovered: 0.232,
+  swingMatched: 1.809,
+  worstSelf: 2.041,
+  worstCovered: 1.409,
+  policeDeptRatio: 2.359,
 } as const;
 
 // Structure palette. Validated with the dataviz skill's validator (2026-10-08): Cobalt vs Carolina pass the
@@ -31,8 +34,8 @@ export const SIC_MODEL = {
 // Charcoal reads as gray, so "unclear" rows get a neutral hollow marker rather than a third hue.
 export const STRUCTURE_STYLE = {
   self: { color: "#1F1FD6", label: "Carries its own liability" },
-  covered: { color: "#21A8E0", label: "Buys coverage (pool or insurer)" },
-  other: { color: "#AEB9D6", label: "Unclear or mixed" },
+  covered: { color: "#21A8E0", label: "Buys coverage from a pool or insurer" },
+  other: { color: "#AEB9D6", label: "Unclear or mixed (hollow)" },
 } as const;
 export type Treat = keyof typeof STRUCTURE_STYLE;
 
@@ -45,12 +48,17 @@ export interface NyEntityRow {
   pop_mean: number | null;
   pop_bin: number | null;
   n_years: number;
-  ins_pc_mean: number | null;
-  jc_pc_mean: number | null;
+  cor_liab_pc_mean: number | null;
+  ins_liab_pc_mean: number | null;
+  jc_liab_pc_mean: number | null;
+  cor_liab_pc_max: number | null;
+  cor_liab_pc_p90: number | null;
+  cor_liab_share_mean: number | null;
   cor_pc_mean: number | null;
   cor_op_pc_mean: number | null;
-  cor_share_mean: number | null;
-  cor_pc_p90: number | null;
+  cor_liab_budget_share: number | null;
+  worst_year_budget_share: number | null;
+  has_police_dept: boolean | null;
   structure: string;
   structure_raw: string | null;
   sir_per_occurrence: string | null;
@@ -60,11 +68,19 @@ export interface NyEntityRow {
   sig_structure: string;
   jc_contaminated: boolean;
   coded_elsewhere_holdout: boolean;
+  premiums_elsewhere_holdout: boolean | null;
+  holdout_reason: string | null;
+  in_label_rule: boolean | null;
+  plotted: boolean;
+  n_neg_years?: number | null;
+  worst_fy?: number | null;
+  worst_over_mean?: number | null;
+  swing?: number | null;
   treat: "self" | "covered" | "other";
 }
 export interface GroupSummary {
   n: number; n_county: number; n_city: number;
-  median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_p90: number;
+  median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_max: number;
   mean_cor_pc: number; mean_ins_pc: number; mean_jc_pc: number; premium_share_of_cost: number;
 }
 export interface NyEntitiesData {
@@ -72,9 +88,12 @@ export interface NyEntitiesData {
   window: [number, number];
   rows: NyEntityRow[];
   summary: Partial<Record<"self" | "covered", GroupSummary>>;
-  summary_by_class: Record<string, Partial<Record<"self" | "covered", { n: number; median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_p90: number }>>>;
-  bins: Record<string, Partial<Record<"self" | "covered", { n: number; median_cor_pc: number }>>>;
-  holdouts: { entity_name: string; structure: string; jc_contaminated: boolean; coded_elsewhere_holdout: boolean }[];
+  summary_by_class: Record<string, Partial<Record<"self" | "covered", { n: number; median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_max: number }>>>;
+  bins: Record<string, Partial<Record<"self" | "covered", { n: number; mean_cor_pc: number; median_cor_pc: number }>>>;
+  holdouts: { entity_name: string; structure: string; holdout_reason: string }[];
+  thin: { entity_name: string; n_years: number }[];
+  years: number[];
+  series: Record<string, (number | null)[]>;
   pop_bins: number[];
 }
 export interface NtdAgencyRow {
@@ -89,15 +108,18 @@ export interface ModelSpec {
   strata?: { stratum: string; n_self: number; n_covered: number; self: number; covered: number }[] | null;
 }
 export interface VolatilityData {
-  yoy_cv_self: number; yoy_cv_covered: number; p90_over_mean_self: number; p90_over_mean_covered: number;
-  by_class: Record<string, { n_self: number; n_covered: number; yoy_cv_self: number | null; yoy_cv_covered: number | null; ratio?: number; lo?: number; hi?: number }>;
-  police_terciles: Record<string, Partial<Record<"self" | "covered", { n: number; median_cor_pc: number; yoy_cv: number; police_share: number }>>>;
+  yoy_cv_self: number; yoy_cv_covered: number; n_self: number; n_covered: number;
+  max_over_mean_self: number; max_over_mean_covered: number; p90_over_mean_self: number; p90_over_mean_covered: number;
+  matched_ratio: number; matched_lo: number; matched_hi: number;
+  controlled_ratio: number; controlled_lo: number; controlled_hi: number;
+  left_out: { muni_code: string; entity_name: string; cls: string; treat: string; n_neg_years: number }[];
+  by_class: Record<string, { n_self: number; n_covered: number; yoy_cv_self: number | null; yoy_cv_covered: number | null; max_over_mean_self: number | null; max_over_mean_covered: number | null }>;
 }
 export interface ModelsData {
   snapshot: string;
   ny: { specs: ModelSpec[]; sample: Record<string, unknown>; volatility?: VolatilityData;
-        exposure?: { ratio_per_10pts: number; lo_per_10pts: number; hi_per_10pts: number; self_ratio_same_model: number; n: number };
-        heterogeneity?: Record<string, { n: number; n_self: number; ratio: number; lo: number; hi: number }> };
+        exposure?: Record<string, unknown>;
+        heterogeneity?: Record<string, { n: number; n_self: number; n_covered: number; ratio: number; lo: number; hi: number; matched: number | null }> };
   ntd: Record<string, unknown>;
 }
 

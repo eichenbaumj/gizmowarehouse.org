@@ -81,11 +81,17 @@ ACCT_SELF_INS_ADMIN = "1710"     # Self Insurance, Administration (MS / S funds)
 ACCT_DUES = "1920"               # Municipal Association Dues (placebo outcome)
 ACCT_OTHER_GG = "1989"           # General Government Support, Other (suspected hiding place)
 ACCT_LAW = "1420"                # Law department (defense cost sensitivity)
-ACCT_POLICE = "3120"
+ACCT_POLICE = "3120"              # municipal police department (cities, towns, villages; Westchester's county police)
+ACCT_SHERIFF = "3110"
+POLICE_DEPT_MIN_SHARE = 0.01      # a police department = 3120 spending at 1% or more of total spending on average             # county sheriff (road patrol, civil, courts); counties book law enforcement here
 ACCT_JAIL = "3150"
 ACCT_HIGHWAY = "5110"
 ACCT_WORKERS_COMP = "9040"       # carried separately, out of the headline
 ACCT_INTERFUND_TRANSFER = "9901"
+# GASB 84 custodial fund (from FY2020): taxes collected for and passed through to counties and school districts
+# (account 1935 "Other Custodial Activities"). Not the government's own spending, so it is out of total_exp
+# (audit 2026-10-10: it was 13% of statewide reported spending in 2024 and $3.06B of Hempstead's $3.9B).
+FUND_CUSTODIAL = "TC"
 GL_CLAIMS_PAYABLE = "686"        # W686 Judgments and Claims Payable (claims liability)
 GL_INSURANCE_RESERVE = "863"     # A863 Insurance Reserve
 REV_INSURANCE_RECOVERIES = "2680"
@@ -96,9 +102,24 @@ SELF_INS_ADMIN_FUNDS = {"MS", "S", "CS"}
 # entities under 1720 and even 1930, so the operating-fund outcome variant excludes these funds entirely.
 SELF_INS_FUND_FAMILY = {"M", "MS", "S", "CS"}
 
+# Per-line coding (crosswalks/ny_line_coding.csv, path below; audit 2026-10-10). The headline outcome counts
+# operating-fund 1910/1930/1931 lines, plus fund-family lines and 1722 excess-insurance lines coded liability, minus
+# operating lines coded as internal charges. All-funds and operating-only stay as sensitivities.
+# Liability share per coding when the statements give no split:
+FUND_FAMILY_DEFAULT_SHARE = {"liability": 1.0, "benefit": 0.0, "internal_charge": 0.0}
+ACCT_EXCESS = "1722"                 # Excess insurance (self-insurance plans' excess cover; liability or comp)
+FUND_FAMILY_UNRESOLVED_SHARE = 1.0   # coded mixed/unknown with no documented split: kept as booked (sensitivity at 0)
+FUND_FAMILY_UNCODED_SHARE = 1.0      # fund-family lines not in the coding file (the unread periphery): kept as booked
+EXCESS_UNCODED_SHARE = 0.0           # 1722 lines not in the coding file stay out, as before the audit
+
 # Entities held out of every estimate until their claim coding is reconciled
 # against audited statements (DECISIONS.md, 2026-10-08).
 CODED_ELSEWHERE_HOLDOUT = {"County of Suffolk", "County of Erie"}
+# The documented reason, where a government's own statements say what its line carries (shown in the chart note)
+HOLDOUT_NOTES = {
+    "County of Nassau": "judgments line is about half property-tax refunds, $43.9M of $86.8M in 2024",
+    "County of Cattaraugus": "judgments line carries its self-insured health plan",
+}
 
 # Window for the headline decade means and for switcher detection
 HEADLINE_YEARS = (2015, 2024)
@@ -133,6 +154,14 @@ VALID_STRUCTURES = {
 }
 VALID_LABEL_SOURCES = {"document", "inferred", "unknown"}
 NY_LABELS_CSV = CROSSWALK_DIR / "ny_treatment_labels.csv"
+NY_LABEL_READINGS_DIR = CROSSWALK_DIR / "ny_label_readings"   # the hand readings 04b compiles (one CSV per batch)
+# Per-line coding read from each government's statements: the self-insurance-fund-family 1910/1930/1931 lines,
+# the 1722 excess-insurance lines, and operating-fund 1910 lines that are internal charges into a self-insurance
+# fund (counted where the fund pays, not twice). One row per entity x fund x account, with quote and page.
+LINE_CODING_CSV = CROSSWALK_DIR / "ny_line_coding.csv"
+# Which governments were read: every county outside NYC, plus the largest cities, towns, and villages by 2015-2024
+# mean population (governments read beyond these are kept and flagged in the labels download).
+LABEL_TOP_N = {"city": 20, "town": 30, "village": 10}
 POOL_ROSTER_CSV = CROSSWALK_DIR / "ny_pool_rosters.csv"   # NYMIR subscriber list, 2026-07-31
 # "Self-insured with excess" with a retention at or below this is a deductible, not self-insurance
 # (Schwartz 2016 treats $250K as the floor for self-insurance; we use $100K so $250K retentions count as self-insured).
@@ -162,6 +191,15 @@ PIN_TOTALS = {
     "village": {"insurance": 59.8e6, "judgments": 12.1e6},
 }
 PIN_TOLERANCE = 0.005
+# Bootstrap draws: the headline and its named sensitivities get enough draws that the printed range is stable to
+# the second decimal (B=300 put the published upper end at 1.79, a low draw; audit 2026-10-10).
+B_HEADLINE = int(os.environ.get("SIC_B_HEADLINE", 2000))        # env override for quick dev runs only
+B_EXPLORATORY = int(os.environ.get("SIC_B_EXPLORATORY", 300))
+# Reconciliation holdouts (symmetric, audit 2026-10-10)
+RECON_MIN_DOLLARS = 250_000      # documented liability claims paid (at least this much) exceed everything the OSC lines
+                                 # show for liability that year, premiums included: the claims are booked elsewhere
+RECON_TOLERANCE = 1.05           # ...by more than 5% (statements and OSC lines are on slightly different bases)
+COVERED_MIN_PREMIUM_PC = 1.0     # a covered government booking under $1/resident a year of 1910 books premiums elsewhere
 ZERO_COR_WARN_SHARE = 0.15
 
 # ---------------------------------------------------------------------------
@@ -190,9 +228,11 @@ ASSET_NTD_PANEL_CSV = ASSETS_DIR / f"{SLUG}-ntd-panel.csv"
 ASSET_LABELS_CSV = ASSETS_DIR / f"{SLUG}-treatment-labels.csv"
 ASSET_METHODOLOGY_MD = ASSETS_DIR / f"{SLUG}-methodology.md"
 CSV_HEADER_COMMENT = (
-    f"# {SLUG} — gizmowarehouse.org — snapshot {SNAPSHOT_DATE} — license CC-BY-4.0 — "
+    f"# {SLUG} | gizmowarehouse.org | snapshot {SNAPSHOT_DATE} | license CC-BY-4.0 | "
     "sources: NY State Comptroller local government financial data; FTA National Transit Database; "
-    "audited financial statements (GASB 10 notes) — questions: joe@group17a.com"
+    "audited financial statements (GASB 10 notes) | questions: joe@group17a.com"
 )
 
-PRIMARY_SPEC = "ny_core_classbin_cor_pc"  # document core, class x pop-bin matching, 2015-2024 means
+# document core, class x pop-bin matching, 2015-2024 means of liability cost of risk (operating funds + fund-family
+# lines coded liability). Pre-registered match also used region; that version is reported (thinner strata).
+PRIMARY_SPEC = "ny_core_classbin_cor_liab_pc"

@@ -3,18 +3,27 @@
 From output/osc_long.parquet. One row per (cls, muni_code, fy) with:
   ins_premium      all-fund 1910 Unallocated Insurance
   judgments        all-fund 1930 Judgments and Claims + 1931 Property Loss
-  self_ins_admin   1710 Self Insurance Administration in the MS/S/CS funds
-  cost_of_risk     ins_premium + judgments + self_ins_admin   (the headline numerator)
+  *_op             the same excluding the M/MS/S/CS self-insurance fund family
+  ins_liab, judgments_liab
+                   liability lines as coded in crosswalks/ny_line_coding.csv (read from each government's statements):
+                   operating-fund lines count unless they are internal charges into a self-insurance fund; fund-family
+                   and 1722 excess-insurance lines count when they pay liability (workers' comp and health are out)
+  cost_of_risk     ins_premium + judgments (all funds; sensitivity)
+  cost_of_risk_op  operating funds only (sensitivity)
+  cost_of_risk_liab  ins_liab + judgments_liab (the headline numerator)
+  self_ins_admin   1710 Self Insurance Administration in the MS/S/CS funds (separate; in practice comp overhead)
   wc_cost          9040 Workers' Compensation (separate; not in the headline)
-  law_exp 1420, dues 1920 (placebo), other_gg 1989, police 3120, jail 3150, highway 5110
+  law_exp 1420, dues 1920 (placebo), other_gg 1989, police 3120, sheriff 3110, jail 3150, highway 5110
   capital_outlay   object digit 2 across all expenditure accounts
-  total_exp        all expenditures minus interfund transfers (99xx) and debt principal (97xx object 6)
+  custodial_exp    GASB 84 custodial fund (TC): taxes collected for others and passed through
+  total_exp        all expenditures minus interfund transfers (99xx), debt principal (97xx object 6), and custodial
   total_exp_gross  all expenditures
   b_fund_share     B-fund (town outside village) share of total_exp
   claims_liability GL W686 Judgments and Claims Payable; insurance_reserve A863; recoveries 2680
   population       decennial (OSC/NHGIS 1970–2020) + Census subcounty estimates 2000–2024, interpolated
   cpi_factor       CPI-U at fiscal-year-end month rebased to the 2024 average
-  *_real, cor_pc (cost of risk per capita, 2024 $), cor_share (per dollar of total_exp), jc_pc, ins_pc
+  *_real, cor_pc / cor_op_pc / cor_liab_pc (per resident, 2024 $), cor_liab_share (per dollar of total_exp),
+  police_share (3120), law_enf_share (3120 + 3110), jail_share, capital_share
 
 Population exists only for counties, cities, towns, villages. School and fire districts carry NaN
 and are compared per dollar of spending only.
@@ -99,6 +108,27 @@ def _population() -> pd.DataFrame:
     return out
 
 
+def _line_shares() -> dict[tuple[str, str, str], tuple[float, float]]:
+    """(entity_name, fund, acct) -> (liability share, strict share) from the per-line coding.
+
+    The strict share sends lines coded mixed/unknown without a documented split to 0 (a sensitivity)."""
+    if not config.LINE_CODING_CSV.exists():
+        print("  NOTE: no line coding; fund-family lines count as booked, 1722 stays out")
+        return {}
+    c = pd.read_csv(config.LINE_CODING_CSV, dtype=str).fillna("")
+    out = {}
+    for _, r in c.iterrows():
+        share = pd.to_numeric(r.get("liability_share", ""), errors="coerce")
+        if pd.notna(share):
+            out[(r["entity_name"], r["fund"], r["acct"])] = (float(share), float(share))
+        elif r["coding"] in config.FUND_FAMILY_DEFAULT_SHARE:
+            v = config.FUND_FAMILY_DEFAULT_SHARE[r["coding"]]
+            out[(r["entity_name"], r["fund"], r["acct"])] = (v, v)
+        else:
+            out[(r["entity_name"], r["fund"], r["acct"])] = (config.FUND_FAMILY_UNRESOLVED_SHARE, 0.0)
+    return out
+
+
 def _cpi() -> pd.DataFrame:
     cpi = fetchers.fetch_fred(config.CPI_SERIES)
     cpi["ym"] = cpi["date"].dt.strftime("%Y-%m")
@@ -141,12 +171,14 @@ def main(argv: list[str] | None = None) -> int:
         s(a == config.ACCT_DUES, "dues"),
         s(a == config.ACCT_OTHER_GG, "other_gg"),
         s(a == config.ACCT_POLICE, "police_exp"),
+        s(a == config.ACCT_SHERIFF, "sheriff_exp"),
         s(a == config.ACCT_JAIL, "jail_exp"),
         s(a == config.ACCT_HIGHWAY, "highway_exp"),
         s(ex["obj"] == "2", "capital_outlay"),
         s(a.str.startswith("99"), "interfund_transfers"),
         s(a.str.startswith("97") & (ex["obj"] == "6"), "debt_principal"),
         s(ex["fund"] == "B", "b_fund_exp"),
+        s(ex["fund"] == config.FUND_CUSTODIAL, "custodial_exp"),
         ex.groupby(key)["amount"].sum().rename("total_exp_gross"),
     ]
     gl = long[long["section"] == "GL"]
@@ -154,6 +186,22 @@ def main(argv: list[str] | None = None) -> int:
     parts.append(gl[(gl["acct"] == config.GL_INSURANCE_RESERVE)].groupby(key)["amount"].sum().rename("insurance_reserve"))
     rv = long[long["section"] == "REVENUE"]
     parts.append(rv[rv["acct"] == config.REV_INSURANCE_RECOVERIES].groupby(key)["amount"].sum().rename("insurance_recoveries"))
+    # liability lines, weighted by their documented liability share: operating 1910/1930/1931 count unless coded
+    # as internal charges; fund-family lines count per their coding; 1722 excess insurance counts only where coded
+    shares = _line_shares()
+    lm = a.isin([config.ACCT_INSURANCE, config.ACCT_JUDGMENTS, config.ACCT_PROPERTY_LOSS, config.ACCT_EXCESS])
+    ln = ex[lm].groupby(key + ["entity_name", "fund", "acct"])["amount"].sum().reset_index()
+    fam = ln["fund"].isin(config.SELF_INS_FUND_FAMILY)
+    default = np.where(ln["acct"] == config.ACCT_EXCESS, config.EXCESS_UNCODED_SHARE,
+                       np.where(fam, config.FUND_FAMILY_UNCODED_SHARE, 1.0))
+    got = [shares.get((e, f_, ac)) for e, f_, ac in zip(ln["entity_name"], ln["fund"], ln["acct"])]
+    ln["share"] = [g[0] if g else d for g, d in zip(got, default)]
+    ln["share_strict"] = [g[1] if g else d for g, d in zip(got, default)]
+    ln["is_ins"] = ln["acct"].isin([config.ACCT_INSURANCE, config.ACCT_EXCESS])
+    for col, sh in (("", "share"), ("_strict", "share_strict")):
+        ln["liab"] = ln["amount"] * ln[sh]
+        parts.append(ln[ln["is_ins"]].groupby(key)["liab"].sum().rename(f"ins_liab{col}"))
+        parts.append(ln[~ln["is_ins"]].groupby(key)["liab"].sum().rename(f"judgments_liab{col}"))
     panel = pd.concat(parts, axis=1).fillna(0.0).reset_index()
     names = (long.sort_values("fy").groupby(["cls", "muni_code"])
              .agg(entity_name=("entity_name", "last"), county=("county", "last"), fy_end=("fy_end", "last")).reset_index())
@@ -165,7 +213,11 @@ def main(argv: list[str] | None = None) -> int:
     panel["cost_of_risk"] = panel["ins_premium"] + panel["judgments"]
     # Operating-fund variant: excludes the M/MS/S/CS self-insurance fund family (benefit claims live there)
     panel["cost_of_risk_op"] = panel["ins_premium_op"] + panel["judgments_op"]
-    panel["total_exp"] = panel["total_exp_gross"] - panel["interfund_transfers"] - panel["debt_principal"]
+    # Headline: the liability lines as coded (ins_liab / judgments_liab built above); strict sends unresolved lines to 0
+    panel["cost_of_risk_liab"] = panel["ins_liab"] + panel["judgments_liab"]
+    panel["cost_of_risk_liab_strict"] = panel["ins_liab_strict"] + panel["judgments_liab_strict"]
+    panel["law_enf_exp"] = panel["police_exp"] + panel["sheriff_exp"]
+    panel["total_exp"] = panel["total_exp_gross"] - panel["interfund_transfers"] - panel["debt_principal"] - panel["custodial_exp"]
     panel["b_fund_share"] = np.where(panel["total_exp"] > 0, panel["b_fund_exp"] / panel["total_exp"], np.nan)
 
     # population + CPI
@@ -175,17 +227,25 @@ def main(argv: list[str] | None = None) -> int:
     fe = pd.to_datetime(panel["fy_end"], errors="coerce")
     panel["fy_end_ym"] = fe.dt.strftime("%Y-%m")
     panel = panel.merge(cpi, left_on="fy_end_ym", right_on="ym", how="left").drop(columns=["ym"])
-    # rows whose fy_end is missing or past the CPI series: use the fiscal year's December
+    # rows whose fy_end is missing or past the CPI series: use June of the fiscal year
     miss = panel["cpi_factor"].isna()
     fallback = panel.loc[miss, "fy"].astype(int).astype(str) + "-06"
     panel.loc[miss, "cpi_factor"] = fallback.map(dict(zip(cpi["ym"], cpi["cpi_factor"])))
     panel["cpi_factor"] = panel["cpi_factor"].fillna(1.0)
 
-    for c in ("ins_premium", "judgments", "self_ins_admin", "cost_of_risk", "cost_of_risk_op", "wc_cost", "law_exp", "total_exp"):
+    for c in ("ins_premium", "judgments", "self_ins_admin", "cost_of_risk", "cost_of_risk_op", "cost_of_risk_liab", "cost_of_risk_liab_strict",
+              "ins_liab", "judgments_liab", "wc_cost", "law_exp", "total_exp"):
         panel[f"{c}_real"] = panel[c] * panel["cpi_factor"]
     with np.errstate(divide="ignore", invalid="ignore"):
         panel["cor_pc"] = panel["cost_of_risk_real"] / panel["population"]
         panel["cor_op_pc"] = panel["cost_of_risk_op_real"] / panel["population"]
+        panel["cor_liab_pc"] = panel["cost_of_risk_liab_real"] / panel["population"]
+        panel["cor_strict_pc"] = panel["cost_of_risk_liab_strict_real"] / panel["population"]
+        panel["ins_liab_pc"] = panel["ins_liab_real"] / panel["population"]
+        panel["jc_liab_pc"] = panel["judgments_liab_real"] / panel["population"]
+        panel["cor_liab_share"] = np.where(panel["total_exp"] > 0, panel["cost_of_risk_liab"] / panel["total_exp"], np.nan)
+        panel["law_enf_share"] = np.where(panel["total_exp"] > 0, panel["law_enf_exp"] / panel["total_exp"], np.nan)
+        panel["jail_share"] = np.where(panel["total_exp"] > 0, panel["jail_exp"] / panel["total_exp"], np.nan)
         panel["ins_pc"] = panel["ins_premium_real"] / panel["population"]
         panel["jc_pc"] = panel["judgments_real"] / panel["population"]
         panel["cor_share"] = np.where(panel["total_exp"] > 0, panel["cost_of_risk"] / panel["total_exp"], np.nan)

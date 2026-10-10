@@ -33,43 +33,68 @@ def main(argv: list[str] | None = None) -> int:
     ent = pd.read_parquet(config.LABELS_INFERRED_PARQUET)
     ent["region"] = ent["county"].map(m07.region_of)
     ent["treat"] = ent.apply(m07.treat_of, axis=1)
-    keep = ["cls", "muni_code", "entity_name", "county", "region", "pop_mean", "pop_bin", "n_years", "ins_pc_mean", "jc_pc_mean",
-            "cor_pc_mean", "cor_op_pc_mean", "cor_share_mean", "cor_pc_p90", "structure", "structure_raw", "sir_per_occurrence",
-            "pool_name", "nymir_member", "label_source", "sig_structure", "jc_contaminated", "coded_elsewhere_holdout", "treat"]
-    for c in ("structure_raw", "sir_per_occurrence", "pool_name", "nymir_member"):
+    keep = ["cls", "muni_code", "entity_name", "county", "region", "pop_mean", "pop_bin", "n_years",
+            "cor_liab_pc_mean", "ins_liab_pc_mean", "jc_liab_pc_mean", "cor_liab_pc_max", "cor_liab_pc_p90", "cor_liab_share_mean",
+            "cor_pc_mean", "cor_op_pc_mean", "cor_liab_budget_share", "worst_year_budget_share", "has_police_dept",
+            "structure", "structure_raw", "sir_per_occurrence", "pool_name", "nymir_member", "label_source", "sig_structure",
+            "jc_contaminated", "coded_elsewhere_holdout", "premiums_elsewhere_holdout", "holdout_reason", "in_label_rule", "treat"]
+    for c in ("structure_raw", "sir_per_occurrence", "pool_name", "nymir_member", "premiums_elsewhere_holdout", "holdout_reason", "in_label_rule"):
         if c not in ent.columns:
             ent[c] = None
     # the chart plots the document core; the periphery rides in the CSV download, not the page JSON
     e = ent[(ent["label_source"] == "document") | ent["cls"].isin(["county", "city"])][keep].copy()
     for c in ("pop_mean",):
         e[c] = e[c].round(0)
-    for c in ("ins_pc_mean", "jc_pc_mean", "cor_pc_mean", "cor_op_pc_mean", "cor_pc_p90"):
+    for c in ("cor_liab_pc_mean", "ins_liab_pc_mean", "jc_liab_pc_mean", "cor_liab_pc_max", "cor_liab_pc_p90", "cor_pc_mean", "cor_op_pc_mean"):
         e[c] = e[c].round(2)
-    e["cor_share_mean"] = e["cor_share_mean"].round(5)
+    for c in ("cor_liab_share_mean", "cor_liab_budget_share", "worst_year_budget_share"):
+        e[c] = e[c].round(5)
+    # group summary for the static stand-ins: document core, usable rows only (the stage-07 rule)
+    core = m07.usable(e[e["label_source"] == "document"])
+    # the core chart plots every read government whose books carry the comparison, unclear and mixed ones as hollow marks
+    e["plotted"] = ((e["label_source"] == "document") & ~m07.held_out(e) & (e["n_years"] >= 8) & (e["pop_mean"] > 0))
     rows = e.replace({np.nan: None}).to_dict(orient="records")
-    # group summary for the mix exhibit and the static stand-ins: document core, usable rows only
-    core = e[(e["label_source"] == "document") & e["treat"].isin(["self", "covered"]) & ~e["jc_contaminated"].astype(bool)
-             & ~e["coded_elsewhere_holdout"].astype(bool) & (e["n_years"] >= 8)]
     summary = {}
     for t_, g in core.groupby("treat"):
         summary[t_] = {"n": int(len(g)), "n_county": int((g["cls"] == "county").sum()), "n_city": int((g["cls"] == "city").sum()),
-                       "median_cor_pc": round(float(g["cor_pc_mean"].median()), 1), "median_ins_pc": round(float(g["ins_pc_mean"].median()), 1),
-                       "median_jc_pc": round(float(g["jc_pc_mean"].median()), 1), "median_p90": round(float(g["cor_pc_p90"].median()), 1),
-                       "mean_cor_pc": round(float(g["cor_pc_mean"].mean()), 1), "mean_ins_pc": round(float(g["ins_pc_mean"].mean()), 1),
-                       "mean_jc_pc": round(float(g["jc_pc_mean"].mean()), 1),
-                       "premium_share_of_cost": round(float(g["ins_pc_mean"].sum() / max(g["cor_pc_mean"].sum(), 1e-9)), 3)}
+                       "median_cor_pc": round(float(g["cor_liab_pc_mean"].median()), 1), "median_ins_pc": round(float(g["ins_liab_pc_mean"].median()), 1),
+                       "median_jc_pc": round(float(g["jc_liab_pc_mean"].median()), 1), "median_max": round(float(g["cor_liab_pc_max"].median()), 1),
+                       "mean_cor_pc": round(float(g["cor_liab_pc_mean"].mean()), 1), "mean_ins_pc": round(float(g["ins_liab_pc_mean"].mean()), 1),
+                       "mean_jc_pc": round(float(g["jc_liab_pc_mean"].mean()), 1),
+                       "premium_share_of_cost": round(float(g["ins_liab_pc_mean"].sum() / max(g["cor_liab_pc_mean"].sum(), 1e-9)), 3)}
     summary_by_class = {}
     for (cls_, t_), g in core.groupby(["cls", "treat"]):
-        summary_by_class.setdefault(cls_, {})[t_] = {"n": int(len(g)), "median_cor_pc": round(float(g["cor_pc_mean"].median()), 1),
-            "median_ins_pc": round(float(g["ins_pc_mean"].median()), 1), "median_jc_pc": round(float(g["jc_pc_mean"].median()), 1),
-            "median_p90": round(float(g["cor_pc_p90"].median()), 1)}
+        summary_by_class.setdefault(cls_, {})[t_] = {"n": int(len(g)), "median_cor_pc": round(float(g["cor_liab_pc_mean"].median()), 1),
+            "median_ins_pc": round(float(g["ins_liab_pc_mean"].median()), 1), "median_jc_pc": round(float(g["jc_liab_pc_mean"].median()), 1),
+            "median_max": round(float(g["cor_liab_pc_max"].median()), 1)}
     bins = {}
     for (cls_, b), g in core.groupby(["cls", "pop_bin"]):
-        bins[f"{cls_}|{int(b)}"] = {t_: {"n": int(len(h)), "median_cor_pc": round(float(h["cor_pc_mean"].median()), 1)} for t_, h in g.groupby("treat")}
-    holdouts = e[(e["label_source"] == "document") & (e["jc_contaminated"].astype(bool) | e["coded_elsewhere_holdout"].astype(bool))][["entity_name", "structure", "jc_contaminated", "coded_elsewhere_holdout"]].to_dict(orient="records")
+        bins[f"{cls_}|{int(b)}"] = {t_: {"n": int(len(h)), "mean_cor_pc": round(float(h["cor_liab_pc_mean"].mean()), 1),
+                                         "median_cor_pc": round(float(h["cor_liab_pc_mean"].median()), 1)} for t_, h in g.groupby("treat")}
+    hmask = (e["label_source"] == "document") & m07.held_out(e)
+    holdouts = e[hmask][["entity_name", "structure", "holdout_reason"]].to_dict(orient="records")
+    thin = e[(e["label_source"] == "document") & ~hmask & (e["n_years"] < 8)][["entity_name", "n_years"]].to_dict(orient="records")
+    # year-by-year liability cost per resident for every plotted government (the swing exhibit draws these)
+    pnl = pd.read_parquet(config.NY_PANEL_PARQUET, columns=["muni_code", "fy", "cor_liab_pc"])
+    pnl = pnl[pnl["muni_code"].isin(set(core["muni_code"])) & pnl["fy"].between(*config.HEADLINE_YEARS)]
+    years = list(range(config.HEADLINE_YEARS[0], config.HEADLINE_YEARS[1] + 1))
+    series = {mc: [None if pd.isna(v) else round(float(v), 2) for v in g.set_index("fy")["cor_liab_pc"].reindex(years)]
+              for mc, g in pnl.groupby("muni_code")}
+    # per-government swing fields the swing exhibit reads (stage 07 leaves out governments with a negative year)
+    stats = {}
+    for mc, g in pnl.groupby("muni_code"):
+        v = g.set_index("fy")["cor_liab_pc"].reindex(years).dropna()
+        mean = float(v.mean()) if len(v) else float("nan")
+        n_neg = int((v < 0).sum())
+        ok = n_neg == 0 and mean > 0
+        stats[mc] = {"n_neg_years": n_neg, "worst_fy": int(v.idxmax()) if len(v) else None,
+                     "worst_over_mean": round(float(v.max() / mean), 3) if ok else None,
+                     "swing": round(float(v.std(ddof=1) / mean), 3) if ok and len(v) > 1 else None}
+    for r in rows:
+        r.update(stats.get(r["muni_code"], {"n_neg_years": None, "worst_fy": None, "worst_over_mean": None, "swing": None}))
     fetchers.write_json(config.PUBLIC_JSON["ny_entities"], {"snapshot": config.SNAPSHOT_DATE, "window": list(config.HEADLINE_YEARS), "rows": rows,
                                                             "summary": summary, "summary_by_class": summary_by_class, "bins": bins, "holdouts": holdouts,
-                                                            "pop_bins": config.POP_BINS})
+                                                            "thin": thin, "years": years, "series": series, "pop_bins": config.POP_BINS})
 
     models = json.loads(config.MODELS_NY_JSON.read_text()) if config.MODELS_NY_JSON.exists() else {}
     ntd_models = json.loads(config.MODELS_NTD_JSON.read_text()) if config.MODELS_NTD_JSON.exists() else {}
@@ -102,16 +127,36 @@ def main(argv: list[str] | None = None) -> int:
 
     # downloads
     panel = pd.read_parquet(config.NY_PANEL_PARQUET)
-    cols = ["cls", "muni_code", "entity_name", "county", "fy", "fy_end", "population", "ins_premium", "judgments", "self_ins_admin",
-            "cost_of_risk", "cost_of_risk_op", "wc_cost", "law_exp", "police_exp", "total_exp", "claims_liability", "cpi_factor", "cor_pc", "cor_share"]
+    cols = ["cls", "muni_code", "entity_name", "county", "fy", "fy_end", "population", "ins_premium", "judgments", "ins_liab", "judgments_liab",
+            "cost_of_risk_liab", "cost_of_risk", "cost_of_risk_op", "self_ins_admin", "wc_cost", "law_exp", "police_exp", "sheriff_exp", "jail_exp",
+            "custodial_exp", "total_exp", "claims_liability", "cpi_factor", "cor_liab_pc", "cor_pc", "cor_liab_share"]
     p = panel[panel["cls"].isin(config.OSC_CORE_CLASSES)][cols].copy()
-    for c in ("population", "ins_premium", "judgments", "self_ins_admin", "cost_of_risk", "cost_of_risk_op", "wc_cost", "law_exp", "police_exp", "total_exp", "claims_liability"):
+    for c in ("population", "ins_premium", "judgments", "ins_liab", "judgments_liab", "cost_of_risk_liab", "self_ins_admin", "cost_of_risk",
+              "cost_of_risk_op", "wc_cost", "law_exp", "police_exp", "sheriff_exp", "jail_exp", "custodial_exp", "total_exp", "claims_liability"):
         p[c] = p[c].round(0)
-    p["cpi_factor"] = p["cpi_factor"].round(4); p["cor_pc"] = p["cor_pc"].round(2); p["cor_share"] = p["cor_share"].round(5)
+    p["cpi_factor"] = p["cpi_factor"].round(4)
+    for c in ("cor_liab_pc", "cor_pc"):
+        p[c] = p[c].round(2)
+    p["cor_liab_share"] = p["cor_liab_share"].round(5)
     _csv_with_header(p, config.ASSET_NY_PANEL_CSV)
     _csv_with_header(a.round(4), config.ASSET_NTD_PANEL_CSV)
     if config.NY_LABELS_CSV.exists():
         lab = pd.read_csv(config.NY_LABELS_CSV, dtype=str).fillna("")
+        # what the comparison did with each label (the $100K rule and the holdouts move some rows)
+        side = {"self": "self-insured", "covered": "covered", "other": "not compared (unclear or mixed)"}
+        cmp_ = ent[ent["label_source"] == "document"].set_index("entity_name")
+        def compared_as(n: str) -> str:
+            if n not in cmp_.index:
+                return "not in panel"
+            r = cmp_.loc[n]
+            if bool(r.get("jc_contaminated")) or bool(r.get("coded_elsewhere_holdout")) or bool(r.get("premiums_elsewhere_holdout")):
+                return f"held out: {r.get('holdout_reason') or 'books cannot carry the comparison'}"
+            if r["n_years"] < 8:
+                return "not compared (fewer than 8 years of filings)"
+            return side.get(r["treat"], "not compared")
+        lab["compared_as"] = lab["entity_name"].map(compared_as)
+        lab["selection"] = lab["entity_name"].map(lambda n: "" if n not in cmp_.index else
+                                                  ("labeling rule" if bool(cmp_.loc[n].get("in_label_rule")) else "read beyond the rule"))
         if config.NTD_LABELS_CSV.exists():
             lab = pd.concat([lab, pd.read_csv(config.NTD_LABELS_CSV, dtype=str).fillna("")], ignore_index=True)
         _csv_with_header(lab, config.ASSET_LABELS_CSV)

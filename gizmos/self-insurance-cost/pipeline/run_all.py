@@ -27,7 +27,6 @@ STAGES = [
     ("01", "01_fetch_osc"),
     ("02", "02_tidy_osc"),
     ("03", "03_build_ny_panel"),
-    ("04a", "04a_fetch_risk_notes"),
     ("04b", "04b_compile_labels"),
     ("04c", "04c_infer_signatures"),
     ("04d", "04d_validate_labels"),
@@ -156,9 +155,10 @@ def validate(report: Report) -> None:
             size = path.stat().st_size
             report.add(FAIL if size > config.PUBLIC_JSON_MAX_BYTES else PASS, f"public {name}.json {size/1024:.0f} KB")
             if name in ("models", "attribution", "ny_switchers"):
-                txt = path.read_text().lower()
-                hit = re.search(r"\bmta\b|metropolitan transportation", txt)
-                report.add(FAIL if hit else PASS, f"MTA gate on {name}.json: {'HIT' if hit else 'clean'}")
+                # client rule (Joe, 2026-10-10): agencies may be named from public data among peers; no output
+                # may describe any agency as a client or carry engagement detail
+                hit = re.search(r"\bclients?\b|engagement", path.read_text(), re.I)
+                report.add(FAIL if hit else PASS, f"client-language gate on {name}.json: {'HIT' if hit else 'clean'}")
     for p in (config.ASSET_NY_PANEL_CSV, config.ASSET_NTD_PANEL_CSV, config.ASSET_LABELS_CSV):
         if p.exists():
             first = p.open(encoding="utf-8").readline()

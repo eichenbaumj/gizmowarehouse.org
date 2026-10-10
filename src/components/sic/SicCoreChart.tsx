@@ -1,10 +1,10 @@
 // SicCoreChart — <sic-core-chart></sic-core-chart>
 //
-// The test, as a picture: every New York county and city whose audited statements say how it finances
-// liability, placed by population (x, log) and by what it spent on insurance plus judgments and claims
-// per resident over the window (y). Cobalt = carries its own liability; Carolina = buys coverage.
-// Hollow gray = the statement was unclear or mixed. Entities held out of the comparison (benefit claims
-// on the judgments line, or claims booked elsewhere) are listed under the chart, not plotted.
+// The test, as a picture: every New York county, city, town, and village whose audited statements say how it
+// finances liability, placed by population (x, log) and by what it spent on liability insurance plus judgments
+// and claims per resident over the window (y). Cobalt = carries its own liability; Carolina = buys coverage.
+// Hollow gray = the statement was unclear or mixed. Governments whose books cannot carry the comparison are
+// listed under the chart with the reason, not plotted (the stage-07 `usable` rule; `plotted` in the JSON).
 // Hand-rolled SVG per the repo idiom (compgap/TimeSeriesChart.tsx).
 
 import { useMemo, useState } from "react";
@@ -13,20 +13,17 @@ import { useSicData, useIsNarrow, SicCard, Eyebrow, Sub, Loading, Err, fmtMoney,
 
 const M = { top: 18, right: 18, bottom: 40, left: 54 };
 
-type Metric = "cor_pc_mean" | "cor_share_mean";
+type Metric = "cor_liab_pc_mean" | "cor_liab_share_mean";
 
 export default function SicCoreChart() {
   const { data, err } = useSicData<NyEntitiesData>("ny_entities");
   const narrow = useIsNarrow();
-  const [metric, setMetric] = useState<Metric>("cor_pc_mean");
+  const [metric, setMetric] = useState<Metric>("cor_liab_pc_mean");
   const [hover, setHover] = useState<NyEntityRow | null>(null);
 
   const rows = useMemo(() => {
     if (!data) return [];
-    return data.rows.filter(
-      (r) => r.label_source === "document" && r.pop_mean && r.pop_mean > 0
-        && !r.jc_contaminated && !r.coded_elsewhere_holdout && r[metric] != null && (r.n_years ?? 0) >= 8,
-    );
+    return data.rows.filter((r) => r.plotted && r.pop_mean && r.pop_mean > 0 && r[metric] != null);
   }, [data, metric]);
 
   const VB_W = narrow ? 420 : 720;
@@ -39,7 +36,7 @@ export default function SicCoreChart() {
     const sorted = [...ys].sort((a, b) => a - b);
     const cap = sorted[Math.floor(sorted.length * 0.95)] * 1.15;
     // nice axis: pick a step from {5,10,20,25,50} dollars (or 0.5% / 1% shares) and round the cap up to it
-    const steps = metric === "cor_pc_mean" ? [5, 10, 20, 25, 50] : [0.0025, 0.005, 0.01, 0.02];
+    const steps = metric === "cor_liab_pc_mean" ? [5, 10, 20, 25, 50] : [0.0025, 0.005, 0.01, 0.02];
     const step = steps.find((s) => cap / s <= 5) ?? steps[steps.length - 1];
     const yMax = Math.ceil(cap / step) * step;
     const innerW = VB_W - M.left - M.right, innerH = H - M.top - M.bottom;
@@ -51,10 +48,10 @@ export default function SicCoreChart() {
   if (err) return <Err msg={err} />;
   if (!data || !plot) return <Loading h={H} />;
 
-  const nTick = Math.round(plot.yMax / (metric === "cor_pc_mean" ? ([5, 10, 20, 25, 50].find((s) => plot.yMax / s <= 5) ?? 50) : ([0.0025, 0.005, 0.01, 0.02].find((s) => plot.yMax / s <= 5) ?? 0.02)));
+  const nTick = Math.round(plot.yMax / (metric === "cor_liab_pc_mean" ? ([5, 10, 20, 25, 50].find((s) => plot.yMax / s <= 5) ?? 50) : ([0.0025, 0.005, 0.01, 0.02].find((s) => plot.yMax / s <= 5) ?? 0.02)));
   const yTicks = Array.from({ length: nTick + 1 }, (_, i) => (plot.yMax * i) / nTick);
-  const xTicks = [4, 4.5, 5, 5.5, 6, 6.5].filter((t) => t >= plot.xMin && t <= plot.xMax);
-  const fmtY = (v: number) => (metric === "cor_pc_mean" ? fmtMoney(v) : `${(v * 100).toFixed(1)}%`);
+  const xTicks = [3e3, 1e4, 3e4, 1e5, 3e5, 1e6, 3e6].map(Math.log10).filter((t) => t >= plot.xMin && t <= plot.xMax);
+  const fmtY = (v: number) => (metric === "cor_liab_pc_mean" ? fmtMoney(v) : `${(v * 100).toFixed(1)}%`);
   const treatOf = (r: NyEntityRow): Treat => (r.treat === "self" || r.treat === "covered" ? r.treat : "other");
   const summary = data.summary;
 
@@ -62,20 +59,25 @@ export default function SicCoreChart() {
     <SicCard>
       <Eyebrow>New York, {data.window[0]} to {data.window[1]}</Eyebrow>
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h3 className="font-serif text-lg font-bold text-cobalt">How a government pays its claims doesn't predict what it spends</h3>
+        <h3 className="font-serif text-lg font-bold text-cobalt">Self-insured and covered governments are mixed together within each type</h3>
         <div className="flex gap-1 text-xs">
-          {(["cor_pc_mean", "cor_share_mean"] as Metric[]).map((m) => (
+          {(["cor_liab_pc_mean", "cor_liab_share_mean"] as Metric[]).map((m) => (
             <button
               key={m}
               onClick={() => setMetric(m)}
               className={`rounded-full border px-3 py-1 ${metric === m ? "border-cobalt bg-cobalt text-white" : "border-slate-300 text-charcoal"}`}
             >
-              {m === "cor_pc_mean" ? "per resident" : "per dollar of spending"}
+              {m === "cor_liab_pc_mean" ? "per resident" : "per dollar of spending"}
             </button>
           ))}
         </div>
       </div>
-      <Sub>Average yearly cost of premiums plus judgments and claims per resident, in 2024 dollars, for every county, city, town, and village whose arrangement was read from its audited statements.</Sub>
+      <Sub>
+        {metric === "cor_liab_pc_mean"
+          ? "Average yearly cost of insurance premiums plus judgments and claims per resident, 2015 to 2024, in 2024 dollars."
+          : "Average yearly cost of insurance premiums plus judgments and claims per dollar the government spends, 2015 to 2024."}{" "}
+        One mark per government whose arrangement I read from its audited statements, except those listed below.
+      </Sub>
       <div className="relative">
         <svg viewBox={`0 0 ${VB_W} ${H}`} className="w-full" style={{ overflow: "visible" }} role="img"
           aria-label={`Scatter of ${rows.length} New York counties, cities, towns, and villages by population and liability cost, colored by how each pays its claims`}>
@@ -137,9 +139,9 @@ export default function SicCoreChart() {
           <div className="pointer-events-none absolute left-2 top-2 max-w-[260px] rounded-lg border border-slate-200 bg-white p-3 text-xs shadow-md">
             <div className="font-semibold text-charcoal">{hover.entity_name}</div>
             <div className="text-steel">{hover.cls} · {fmtPop(hover.pop_mean ?? 0)} residents · {STRUCTURE_STYLE[treatOf(hover)].label.toLowerCase()}</div>
-            <div className="mt-1">Cost of risk: <b>{fmtMoney(hover.cor_pc_mean ?? 0)}</b> per resident per year</div>
-            <div>Premiums {fmtMoney(hover.ins_pc_mean ?? 0)} · judgments and claims {fmtMoney(hover.jc_pc_mean ?? 0)}</div>
-            <div>Worst year in the window: {fmtMoney(hover.cor_pc_p90 ?? 0)}</div>
+            <div className="mt-1">Liability cost: <b>{fmtMoney(hover.cor_liab_pc_mean ?? 0)}</b> per resident per year</div>
+            <div>Premiums {fmtMoney(hover.ins_liab_pc_mean ?? 0)} · judgments and claims {fmtMoney(hover.jc_liab_pc_mean ?? 0)}</div>
+            <div>Worst year in the window: {fmtMoney(hover.cor_liab_pc_max ?? 0)}</div>
             {hover.sir_per_occurrence && <div className="text-steel">Retains the first {fmtMoney(Number(hover.sir_per_occurrence))} of each claim</div>}
           </div>
         )}
@@ -159,7 +161,16 @@ export default function SicCoreChart() {
       </div>
       {data.holdouts.length > 0 && (
         <p className="mt-2 text-xs text-steel">
-          Not plotted: {data.holdouts.map((h) => h.entity_name.replace(/^(County|City) of /, "")).join(", ")}. Their judgments line carries benefit claims or their claims are booked under other accounts; the methodology lists each.
+          Not plotted, because the books cannot carry the comparison:{" "}
+          {Object.entries(
+            data.holdouts.reduce<Record<string, string[]>>((acc, h) => {
+              (acc[h.holdout_reason] ??= []).push(h.entity_name.replace(/^County of (.*)$/, "$1 County"));
+              return acc;
+            }, {}),
+          )
+            .map(([why, names]) => `${names.join(", ")} (${why})`)
+            .join("; ")}
+          {data.thin.length > 0 && `. Also not plotted: ${data.thin.map((t) => t.entity_name.replace(/^County of (.*)$/, "$1 County")).join(", ")} (fewer than eight years of filings)`}.
         </p>
       )}
     </SicCard>

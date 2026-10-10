@@ -28,6 +28,7 @@ def main(argv: list[str] | None = None) -> int:
     dm = (a.groupby("ntd_id", as_index=False)
           .agg(agency=("agency", "last"), state=("state", "last"), structure=("structure", "last"), label_source=("label_source", "last"),
                cl_share=("cl_share", "mean"), cl_per_vrm=("cl_per_vrm", "mean"), vrm=("vrm", "mean"),
+               cl_per_1k_upt=("cl_per_1k_upt", "mean"),
                total_opex=("total_opex", "mean"), n=("fy", "count")))
     dm["bin"] = dm["structure"].map(lambda s: "self" if s in SELF else "covered" if s in COVERED else "unknown")
     out = {"n_agencies": int(len(dm)), "n_labeled": int((dm.label_source == "document").sum()),
@@ -49,7 +50,25 @@ def main(argv: list[str] | None = None) -> int:
         b, se = m.params["self"], m.bse["self"]
         out["size_adjusted_ratio"] = {"coef": round(float(np.exp(b)), 3), "lo": round(float(np.exp(b - 1.96 * se)), 3),
                                       "hi": round(float(np.exp(b + 1.96 * se)), 3), "n": int(m.nobs),
-                                      "note": "descriptive; structure is nearly collinear with size across states"}
+                                      "note": "per vehicle revenue mile; descriptive; structure is nearly collinear with size across states"}
+        # the same comparison on the other yardsticks a reader could pick (audit 2026-10-10): per passenger trip,
+        # as a share of operating cost, and per mile within state
+        yard = {}
+        for name, col in (("per_trip", "cl_per_1k_upt"), ("share_of_operating_cost", "cl_share")):
+            d = lab[(lab[col] > 0) & np.isfinite(lab[col])].copy()
+            d["yy"] = np.log(d[col])
+            mm = smf.ols("yy ~ self + lx + I(lx**2)", data=d).fit(cov_type="HC1")
+            bb, ss = mm.params["self"], mm.bse["self"]
+            yard[name] = {"coef": round(float(np.exp(bb)), 3), "lo": round(float(np.exp(bb - 1.96 * ss)), 3),
+                          "hi": round(float(np.exp(bb + 1.96 * ss)), 3), "n": int(mm.nobs)}
+        mm = smf.ols("ly ~ self + lx + I(lx**2) + C(state)", data=lab).fit(cov_type="HC1")
+        bb, ss = mm.params["self"], mm.bse["self"]
+        yard["per_mile_within_state"] = {"coef": round(float(np.exp(bb)), 3), "lo": round(float(np.exp(bb - 1.96 * ss)), 3),
+                                         "hi": round(float(np.exp(bb + 1.96 * ss)), 3), "n": int(mm.nobs)}
+        cov_max = lab[lab.bin == "covered"]["total_opex"].max()
+        yard["largest_covered_opex"] = round(float(cov_max), -5)
+        yard["n_self_above_largest_covered"] = int(((lab.bin == "self") & (lab.total_opex > cov_max)).sum())
+        out["yardsticks"] = yard
     for st in ("CA", "WA", "OH"):
         g = dm[dm.state == st]
         out["within_state"][st] = {b: {"n": int(len(h)), "cl_per_vrm_median": round(float(h.cl_per_vrm.median()), 3),

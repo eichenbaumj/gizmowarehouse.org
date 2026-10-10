@@ -1,6 +1,6 @@
 """Stage 09: how much of the raw gap is size, services, place, and how much is left over.
 
-Oaxaca–Blinder decomposition of the difference in mean log(1 + cost of risk per resident) between
+Oaxaca–Blinder decomposition of the difference in mean log(1 + liability cost of risk per resident) between
 self-insured and covered entities, pooled coefficients, covariates grouped: size (log pop, log pop^2),
 service mix (police share, capital share, b-fund share), place (class, region). The unexplained
 residual is reported as the CEILING on what insurance structure could explain (SCOPING.md). Bootstrap
@@ -39,7 +39,7 @@ def design(d: pd.DataFrame) -> tuple[pd.DataFrame, dict]:
 
 
 def decompose(d: pd.DataFrame) -> dict:
-    y = np.log1p(d["cor_pc_mean_w"].values)
+    y = np.log1p(d["cor_liab_pc_mean_w"].values)
     X, groups = design(d)
     self_ = (d["treat"] == "self").values
     beta = sm.OLS(y, X).fit().params  # pooled coefficients
@@ -54,9 +54,9 @@ def main(argv: list[str] | None = None) -> int:
     ent = pd.read_parquet(config.LABELS_INFERRED_PARQUET)
     ent["region"] = ent["county"].map(m07.region_of)
     ent["treat"] = ent.apply(m07.treat_of, axis=1)
-    base = ent[(ent["n_years"] >= 8) & ~ent["jc_contaminated"] & ~ent["coded_elsewhere_holdout"]
-               & ent["treat"].isin(["self", "covered"]) & (ent["pop_mean"] > 0) & (ent["label_source"] == "document")].copy()
-    base["cor_pc_mean_w"] = base.groupby("cls")["cor_pc_mean"].transform(m07.winsor)
+    base = m07.usable(ent)
+    base = base[base["label_source"] == "document"].copy()
+    base["cor_liab_pc_mean_w"] = base.groupby("cls")["cor_liab_pc_mean"].transform(m07.winsor)
     if (base.treat == "self").sum() < 10:
         config.ATTRIBUTION_JSON.write_text(json.dumps({"note": "fewer than 10 self-insured entities; no decomposition"}))
         print("  attribution skipped (too few self-insured)")

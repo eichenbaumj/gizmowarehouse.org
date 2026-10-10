@@ -4,22 +4,27 @@
 Locks four surfaces to each other:
   - src/config/selfInsuranceCost.ts            (constants, parsed by regex)
   - public/data/self-insurance-cost/*.json     (pipeline outputs)
-  - src/content/self-insurance-cost.ts         (the prose)
-  - public/assets/self-insurance-cost-*.csv/.md (the downloads)
+  - src/content/self-insurance-cost.ts         (the prose, Methodology, Sources)
+  - public/assets/self-insurance-cost-*.csv/.md (the downloads) and the card in src/data/gizmos.ts
+
+Rebuilt after the 2026-10-10 adversarial audit (gizmos/self-insurance-cost/research/AUDIT_2026-10-10.md, not
+mirrored): wherever the prose states a number or a quantifier ("every", "about twice", "a third", a range), the
+gate recomputes it from the pipeline outputs and requires the prose's words to match, instead of pinning a phrase.
 
 Sections:
   1. Config literals == models.json / ny_entities.json
-  2. Prose MUST-contain (co-location of each number with its framing)
-  3. Prose MUST-NOT (the never-claim list, the MTA rule, policy-not-person, AI and stats tells)
+  2. Prose numbers and quantifiers, recomputed
+  3. Prose MUST-NOT (never-claim list, client language, causal verbs, policy-not-person, AI and stats tells)
   4. Style budgets (words, em dashes, semicolons, colon setups, embed tags)
   5. Downloads and card surfaces
-  6. Intervention section: every would/could/should sentence anchored or labeled illustrative
+  6. Intervention section: every would/could/should sentence anchored or labeled
 
 Exit non-zero on any failure. Run from anywhere: python3 gizmos/self-insurance-cost/verify_claims.py
 """
 
 from __future__ import annotations
 
+import csv
 import json
 import re
 import sys
@@ -33,7 +38,9 @@ DATA_DIR = ROOT / f"public/data/{SLUG}"
 ASSETS = ROOT / "public/assets"
 COMPONENTS = ROOT / "src/components/sic"
 GIZMOS_TS = ROOT / "src/data/gizmos.ts"
-CHECKLIST = ROOT / f"gizmos/{SLUG}/PUBLISH_CHECKLIST.md"
+CROSSWALKS = ROOT / f"gizmos/{SLUG}/crosswalks"
+RAW_ACFR = ROOT / f"gizmos/{SLUG}/pipeline/raw/acfr"
+PRIMARY = "ny_core_classbin_cor_liab_pc"
 
 failures: list[str] = []
 warnings: list[str] = []
@@ -60,130 +67,178 @@ def ts_number(src: str, key: str) -> float:
     return float(m.group(1))
 
 
-def near(text: str, a: str, b: str, window: int = 120) -> bool:
+def near(text: str, a: str, b: str, window: int = 160) -> bool:
     return bool(re.search(rf"{a}.{{0,{window}}}{b}|{b}.{{0,{window}}}{a}", text, re.S | re.I))
+
+
+def spec(models: dict, sid: str) -> dict | None:
+    return next((s for s in models["ny"]["specs"] if s["spec_id"] == sid), None)
+
+
+NUM = {2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten", 11: "eleven", 12: "twelve"}
+
+
+# ---- words the prose must use for a given number ----------------------------------------------------------
+def level_words(c: float) -> str:
+    if 0.9 <= c <= 1.15:
+        return "as much as"
+    if 1.15 < c <= 1.3:
+        return "a fifth more than"
+    return f"{c:.1f} times"
+
+
+def lo_words(lo: float) -> str:
+    return "about half" if 0.45 <= lo < 0.55 else f"about {lo:.1f} times"
+
+
+def hi_words(hi: float) -> str:
+    return "about double" if 1.95 <= hi < 2.05 else f"about {hi:.1f} times"
+
+
+def times_words(x: float) -> str:
+    if 1.9 <= x < 2.1:
+        return "about twice"
+    if 1.45 <= x < 1.55:
+        return "about one and a half times"
+    return f"about {x:.1f} times"
+
+
+def share_words(x: float) -> str:
+    for lo, hi, w in ((0.28, 0.38, "a third"), (0.38, 0.45, "two-fifths"), (0.45, 0.56, "half"), (0.2, 0.28, "a quarter")):
+        if lo <= x < hi:
+            return w
+    return f"{round(x * 100)} percent"
 
 
 def main() -> int:
     config = CONFIG_TS.read_text()
     content = CONTENT_TS.read_text()
     body = content.split("<details", 1)[0]
+    meth = content.split("<details", 1)[1] if "<details" in content else ""
     words = len(re.findall(r"\b\w+\b", body))
+    models = json.loads((DATA_DIR / "models.json").read_text())
+    ents = json.loads((DATA_DIR / "ny_entities.json").read_text())
+    ny = models["ny"]
+    vol, expo, het, big, sw = ny["volatility"], ny["exposure"], ny["heterogeneity"], ny["big_governments"], ny["statewide"]
+    prim = spec(models, PRIMARY)
+    check(prim is not None, f"models.json lacks the primary spec {PRIMARY}")
+    rows = ents["rows"]
+    plotted = [r for r in rows if r.get("plotted")]
+    doc = [r for r in rows if r["label_source"] == "document"]
 
     # ---- 1. config == data -------------------------------------------------
-    models_p, ents_p = DATA_DIR / "models.json", DATA_DIR / "ny_entities.json"
-    if not models_p.exists() or not ents_p.exists():
-        fail("public data missing; run pipeline/run_all.py first")
-        models, ents = None, None
-    else:
-        models = json.loads(models_p.read_text())
-        ents = json.loads(ents_p.read_text())
-    if models:
-        prim_id = "ny_core_classbin_cor_pc"
-        prim = next((s for s in models["ny"]["specs"] if s["spec_id"] == prim_id), None)
-        check(prim is not None, f"models.json lacks the primary spec {prim_id}")
-        if prim:
-            check(ts_number(config, "ratioCentral") == prim["coef"], f"ratioCentral != models {prim['coef']}")
-            check(ts_number(config, "ratioLow") == prim["lo"], f"ratioLow != models {prim['lo']}")
-            check(ts_number(config, "ratioHigh") == prim["hi"], f"ratioHigh != models {prim['hi']}")
-            check(ts_number(config, "coreSelf") == prim["n_self"], f"coreSelf != models {prim['n_self']}")
-            check(ts_number(config, "coreCovered") == prim["n_covered"], f"coreCovered != models {prim['n_covered']}")
-        vol, expo = models["ny"].get("volatility", {}), models["ny"].get("exposure", {})
-        check(bool(vol) and bool(expo), "models.json lacks the volatility/exposure blocks (stage 07)")
-        if vol and expo:
-            check(ts_number(config, "swingSelf") == vol["yoy_cv_self"], f"swingSelf != {vol['yoy_cv_self']}")
-            check(ts_number(config, "swingCovered") == vol["yoy_cv_covered"], f"swingCovered != {vol['yoy_cv_covered']}")
-            check(ts_number(config, "policeRatioPer10pts") == expo["ratio_per_10pts"], f"policeRatioPer10pts != {expo['ratio_per_10pts']}")
-            pr = round((expo["ratio_per_10pts"] - 1) * 100 / 10) * 10
-            check(near(body, "police", rf"roughly {pr} percent", 200), f"police effect sentence must say 'roughly {pr} percent'")
-            ratio_sw = vol["yoy_cv_self"] / vol["yoy_cv_covered"]
-            check(1.6 <= ratio_sw <= 2.6 and near(body, "swing", "twice", 120), f"prose says swing 'twice'; models give {ratio_sw:.2f}")
-            p90 = vol["p90_over_mean_self"]
-            check(abs(p90 - 1.4) < 0.1 and near(body, "worst year", "40 percent"), f"worst-year sentence says 40 percent; models give {p90}")
-            check(expo["self_ratio_same_model"] is not None and 0.8 <= expo["self_ratio_same_model"] <= 1.25, "'adds nothing' requires the structure ratio near 1 in the exposure model")
-            het = models["ny"].get("heterogeneity", {})
-            check(all(h["lo"] <= 1 <= h["hi"] for h in het.values()), "'no type of government shows a credible premium' requires every heterogeneity range to span 1")
-            every = all((c["yoy_cv_self"] or 0) > (c["yoy_cv_covered"] or 0) for c in vol["by_class"].values() if c["yoy_cv_self"] and c["yoy_cv_covered"])
-            check(every, "'in every class' requires self-insured swing above covered swing in every class")
-        samp = models["ny"].get("sample", {})
-        check(ts_number(config, "windowStart") == samp.get("window", [0, 0])[0], "windowStart mismatch")
-        check(ts_number(config, "windowEnd") == samp.get("window", [0, 0])[1], "windowEnd mismatch")
-        check(re.search(r'snapshotDate:\s*"' + re.escape(models["snapshot"]) + '"', config) is not None, "snapshotDate != models.snapshot")
-        # the primary ratio's range must contain 1 if the prose says "about as much"; and the prose must carry the range
-        if prim and prim["lo"] is not None:
-            lo, hi = prim["lo"], prim["hi"]
-            hi_word = "roughly double" if 1.85 <= hi <= 2.15 else "roughly 1.8 times" if 1.65 <= hi < 1.85 else f"roughly {hi:.1f} times"
-            lo_word = "roughly half" if 0.4 <= lo <= 0.6 else f"roughly {lo:.1f} times"
-            check(near(body, lo_word, hi_word), f"prose must carry the primary range as '{lo_word} to {hi_word}' (models: {lo}, {hi})")
-            # "about as much" and "I found no difference overall" are honest only while the range contains 1; the range sentence is the bound
-            check(lo <= 1 <= hi, "prose says 'about as much' / 'no difference overall' but the primary range excludes 1")
-    if ents:
-        s = ents.get("summary", {})
-        if "self" in s and "covered" in s:
-            check(s["self"]["median_ins_pc"] < s["self"]["median_jc_pc"], "mix claim: self-insured medians should be judgments-heavy")
-            check(s["covered"]["median_ins_pc"] > s["covered"]["median_jc_pc"], "mix claim: covered medians should be premium-heavy")
-        check(ts_number(config, "nCountiesRead") == 57, "nCountiesRead != 57")
-        n_doc_county = sum(1 for r in ents["rows"] if r["label_source"] == "document" and r["cls"] == "county")
-        n_doc_city = sum(1 for r in ents["rows"] if r["label_source"] == "document" and r["cls"] == "city")
-        check(n_doc_county == 57, f"document-labeled counties in ny_entities.json: {n_doc_county} != 57")
-        check(n_doc_city == ts_number(config, "nCitiesRead"), f"document-labeled cities {n_doc_city} != nCitiesRead")
+    if prim:
+        for key, val in (("ratioCentral", prim["coef"]), ("ratioLow", prim["lo"]), ("ratioHigh", prim["hi"]),
+                         ("coreSelf", prim["n_self"]), ("coreCovered", prim["n_covered"])):
+            check(ts_number(config, key) == val, f"config {key} != models {val}")
+        check("B=2000" in prim["se_type"], f"primary range must come from 2,000 bootstrap draws ({prim['se_type']})")
+    for key, val in (("swingSelf", vol["yoy_cv_self"]), ("swingCovered", vol["yoy_cv_covered"]), ("swingMatched", vol["matched_ratio"]),
+                     ("worstSelf", vol["max_over_mean_self"]), ("worstCovered", vol["max_over_mean_covered"]),
+                     ("policeDeptRatio", expo["dept_model"]["police_dept"]["ratio"])):
+        check(ts_number(config, key) == val, f"config {key} != models {val}")
+    check(ts_number(config, "nRead") == len(doc), f"config nRead != {len(doc)} document-labeled governments")
+    check(ts_number(config, "nCountiesRead") == 57 and sum(r["cls"] == "county" for r in doc) == 57, "all 57 counties must be labeled")
+    check(ts_number(config, "windowStart") == ny["sample"]["window"][0] and ts_number(config, "windowEnd") == ny["sample"]["window"][1], "window mismatch")
+    check(re.search(r'snapshotDate:\s*"' + re.escape(models["snapshot"]) + '"', config) is not None, "snapshotDate != models.snapshot")
 
-    # ---- 2. prose MUST-contain ---------------------------------------------
-    lines = [ln.strip() for ln in content.splitlines() if ln.strip()]
-    header = lines[1] if lines and lines[0].startswith("export default") else (lines[0] if lines else "")
-    check(header.startswith("*") and "October 8, 2026" in header and "update or rerun" in header,
-          "italic as-of header (date + may update/rerun) missing or malformed")
-    check(near(body, "57 counties", "20 largest cities"), "prose must say how many statements were read (57 counties, 20 largest cities)")
-    check(near(body, r"\$750,000", "NYMIR"), "NYMIR's $750,000 retention must sit near its name")
-    check(near(body, r"more than a thousand", r"1,600"), "NYMIR subscriber framing (more than a thousand of ~1,600) required")
-    check(near(body, r"\$87 million", "Nassau"), "Nassau 2024 judgments figure must sit near its name")
-    if "650 percent" in body:
-        check(near(body, "650 percent", "National League of Cities"), "the 650 percent figure must be attributed to NLC")
-    check(near(body, "Vallejo", r"\$500,000 to \$2\.5 million") and near(body, r"\$392,000", r"\$2\.4 million"), "Vallejo retention and premium figures required")
-    check(near(body, "working paper", "Vallejo", 400), "Vallejo must be labeled a working paper")
-    check(near(body, "Cities cannot be tested", "45,000"), "the cities-cannot-be-tested sentence with the 45,000 threshold is required")
-    check(near(body, "the same or less", "every size band"), "the per-band finding sentence is required")
-    if ents:
-        plotted = [r for r in ents.get("rows", []) if r.get("label_source") == "document" and (r.get("pop_mean") or 0) > 0
-                   and not r.get("jc_contaminated") and not r.get("coded_elsewhere_holdout") and r.get("cor_pc_mean") is not None and (r.get("n_years") or 0) >= 8]
-        check(f"Each of the {len(plotted)} marks" in body, f"chart mark count in prose must match the plotted governments ({len(plotted)})")
-    check(near(body, "understate what self-insurers pay", "booked elsewhere"), "the measurement-direction sentence is required")
-    if "sic-transit-scatter" in body or "transit agencies" in body.lower():
-        check("picture, not a test" in body, "transit must be labeled 'a picture, not a test'")
-    check(near(body, "no type of government", "credible self-insurance premium", 160), "the no-type-shows-a-premium sentence is required")
-    check(near(body, "cannot see", "rescue the hypothesis", 200), "the what-the-books-cannot-see paragraph is required")
-    check(near(body, "hypothesis is wrong", "do not pay far more", 200), "the rejection sentence (hypothesis wrong in its strong form; do not pay far more) is required")
-    check(near(body, "found no difference overall", "certain kinds of governments"), "the no-difference-overall / maybe-for-some-kinds sentence is required")
-    check(near(body, "do seem to pay more", "too few to trust"), "the police-heavy cities/villages lean must carry its too-few-comparators caveat")
-    check(near(body, "cannot say", "public books") or near(body, "cannot say", "illustrative", 200), "the intervention section must disclaim with 'cannot say' and 'illustrative'")
-    check(near(body, "Schwartz", "100,000"), "the Schwartz 100,000 threshold must be attributed")
-    # order-of-magnitude sentence: NY outside NYC, cost of risk summed across counties/cities/towns/villages, nominal, FY2022-2024
-    check(near(body, r"\$500 million to \$650 million", r"outside New York City"), "the statewide-spend sentence ($500 million to $650 million outside NYC) is required")
-    check(near(body, r"\$1\.9 billion", r"New York City"), "the NYC $1.9 billion (FY2024 Comptroller dashboard) figure is required")
-    panel_csv = ASSETS / f"{SLUG}-ny-panel.csv"
-    if panel_csv.exists():
-        import csv
-        tot = {}
-        with panel_csv.open(encoding="utf-8") as f:
-            f.readline()
-            for r in csv.DictReader(f):
-                if r["cls"] in ("county", "city", "town", "village") and r["fy"] in ("2022", "2023", "2024") and r["cost_of_risk"]:
-                    tot[r["fy"]] = tot.get(r["fy"], 0.0) + float(r["cost_of_risk"])
-        if len(tot) == 3:
-            check(all(450e6 <= v <= 700e6 for v in tot.values()), f"'$500 million to $650 million' no longer matches FY2022-24 totals: { {k: round(v/1e6) for k, v in tot.items()} }")
-    check("MTA" not in body and "Metropolitan Transportation Authority" not in body, "MTA rule: not in the body")
+    # ---- 2. prose numbers and quantifiers, recomputed ----------------------
+    header = next((ln.strip() for ln in content.splitlines() if ln.strip().startswith("*Up to date")), "")
+    check("AI help" in header and "update or rerun" in header and re.search(r"as of \w+ \d+, 20\d\d", header) is not None,
+          "as-of header must carry the date, the AI-help disclosure, and 'update or rerun'")
+    check(f"{len(doc)} governments in all" in body, f"prose must say how many governments were read ({len(doc)})")
+    check(f"Each of the {len(plotted)} marks" in body, f"chart mark count must match the plotted governments ({len(plotted)})")
+    if prim:
+        lw, lo_w, hi_w = level_words(prim["coef"]), lo_words(prim["lo"]), hi_words(prim["hi"])
+        check(near(body, "spent about " + lw, "the covered", 20), f"level sentence must say 'spent about {lw} the covered' (primary {prim['coef']})")
+        check(near(body, lo_w, hi_w, 20), f"range must read '{lo_w} to {hi_w}' (primary {prim['lo']}-{prim['hi']})")
+        check(prim["lo"] <= 1 <= prim["hi"], "'about as much' needs a range that contains 1")
+    # 'does not pay several times as much' needs the top of every headline range under 2.5
+    tops = [s["hi"] for s in ny["specs"] if s["spec_id"].startswith(("ny_core_classbin_cor", "ny_core_counties_towns_cor", "ny_core_prereg_region_cor")) and s.get("hi")]
+    check(near(body, "do not pay several times as much", "strong form") and max(tops) < 3.0, f"'not several times as much' needs every headline range under 3x ({max(tops)})")
+    if prim and prim["coef"] > 1.1:
+        check("A smaller gap, up to about double, is plausible" in body and 1.85 <= prim["hi"] < 2.15,
+              "with a best estimate above 1.1 the prose must say a smaller gap, up to about double, is plausible (and the range must top out near double)")
+    # cities: Schenectady is the largest covered city
+    cc = big["ceilings"].get("city", {})
+    check(cc.get("largest_covered") == "City of Schenectady" and 60_000 <= cc.get("largest_covered_pop", 0) <= 70_000 and near(body, "Schenectady", "67,000"),
+          "cities sentence: Schenectady (about 67,000) must be the largest covered city read")
+    cv = het["cities_and_villages"]
+    check(near(body, f"only {NUM.get(cv['n_covered'], cv['n_covered'])} covered ones", "too few"), f"cities and villages: prose must say only {cv['n_covered']} covered ones")
+    # police
+    pd_ = expo["dept_model"]["police_dept"]  # the department contrast itself (no share term)
+    pw = "roughly twice as much" if 1.9 <= pd_["ratio"] < 2.15 else f"roughly {pd_['ratio']:.1f} times as much"
+    check(near(body, "police department", pw, 120), f"police sentence must say '{pw}' (ratio {pd_['ratio']})")
+    check(near(body, f"{pd_['lo']:.1f} to {pd_['hi']:.1f} times as much", "police department", 200), f"police range must read '{pd_['lo']:.1f} to {pd_['hi']:.1f} times as much'")
+    check(f"{pd_['ratio']:.2f} times the cost (range {pd_['lo']:.2f} to {pd_['hi']:.2f})" in meth, "Methodology must give the department contrast from the no-share model")
+    selfs = [expo[k]["self"] for k in ("dept_model", "police_share_model", "law_enf_share_model")]
+    check(all(x["ratio"] > 1 and x["lo"] <= 1 <= x["hi"] for x in selfs) and "the self-insured still come out somewhat higher, with ranges that include no difference" in body,
+          f"'still come out somewhat higher, with ranges that include no difference' needs every police-model structure ratio above 1 with a range containing 1 ({selfs})")
+    groups = [k for k in het if k != "cities_and_villages"]
+    check(all(het[k]["lo"] <= 1 <= het[k]["hi"] for k in groups), f"'no group ... clearly paying more' needs every subgroup range to contain 1 ({groups})")
+    yd = models["ntd"]["yardsticks"]
+    check("transit" not in body.lower() or near(body, "per mile", "per passenger"), "if the body mentions transit it must give both the per-mile and per-passenger readings")
+    check(near(meth, "per vehicle revenue mile", "per passenger trip", 200) and yd["per_trip"]["lo"] <= 1 <= yd["per_trip"]["hi"] and "description, not a test" in meth,
+          "Methodology must describe transit on every yardstick and call it a description, not a test")
+    # swing
+    ratio_pool = vol["yoy_cv_self"] / vol["yoy_cv_covered"]
+    check(1.7 <= vol["matched_ratio"] < 1.95 and 1.7 <= vol["controlled_ratio"] < 1.95 and near(body, "swing nearly twice", "same type and size", 200),
+          f"'swing nearly twice' needs the matched ({vol['matched_ratio']}) and controlled ({vol['controlled_ratio']}) ratios in 1.7-1.95")
+    check(vol["matched_lo"] > 1 and vol["controlled_lo"] > 1, "the swing gap's ranges must exclude no difference")
+    check(all((c["yoy_cv_self"] or 0) > (c["yoy_cv_covered"] or 9) for c in vol["by_class"].values()) and "every type of government" in body,
+          "'more in every class' requires self-insured swing above covered in every class")
+    check(near(body, "worst year", times_words(vol["max_over_mean_self"]) + " its average") and times_words(vol["max_over_mean_covered"]) in body,
+          f"worst-year sentence must say '{times_words(vol['max_over_mean_self'])} its average' against '{times_words(vol['max_over_mean_covered'])}'")
+    wy = f"{vol['worst_year_budget_share_self'] * 100:.1f}"
+    check(near(body, "worst year added about " + re.escape(wy) + " percent", "spending"), f"budget sentence must say 'about {wy} percent' of spending")
+    bands = list(big["self_worst_year_budget_share_by_band"].values())
+    check(bands == sorted(bands, reverse=True) and "more for small governments than large ones" in body, "'more for small governments' needs the worst-year share to fall with size")
+    check(vol["premium_share_covered"] > 0.75 and vol["cv_judgments_covered"] >= vol["cv_judgments_self"] * 0.9 and "mostly a steady premium" in body,
+          "'mostly a steady premium ... as lumpy as anyone's' needs covered bills mostly premium and covered judgments as lumpy as self-insured")
+    # big governments
+    county_ceiling = big["ceilings"]["county"]
+    others = [c["largest_covered_pop"] for k, c in big["ceilings"].items() if k != "county"]
+    check(county_ceiling["largest_covered"] == "County of Albany" and county_ceiling["n_above"] == county_ceiling["n_above_self"]
+          and all(c["n_above"] == c["n_above_self"] for c in big["ceilings"].values()) and max(others) < county_ceiling["largest_covered_pop"]
+          and near(body, "larger than Albany County", "312,000") and "larger than the biggest of its kind that buys coverage" in body,
+          "big-government sentence: nothing covered above each type's largest covered peer (Albany County, about 312,000, for counties)")
+    check(near(body, "about " + share_words(big["share_of_liability_dollars_above_ceilings"]), "liability dollars"),
+          f"big-government share must read 'about {share_words(big['share_of_liability_dollars_above_ceilings'])}'")
+    # statewide order of magnitude and named figures
+    vals = sw["liability_as_booked"] + sw["liability_net_flagged"]
+    check(all(200e6 <= v <= 900e6 for v in vals) and near(body, "several hundred million dollars", "outside New York City"),
+          f"'several hundred million dollars' must hold for FY2022-24 as booked and net of flagged lines ({[round(v / 1e6) for v in vals]})")
+    check(near(body, r"about \$1 billion", "injury and property-damage"), "NYC: about $1 billion of injury and property-damage claims (FY2024 tort, $1.04B)")
+    check(near(body, r"\$43 million", "Nassau", 200) and "lawsuit judgments and settlements" in body, "Nassau: $43 million in lawsuit judgments and settlements")
+    nassau = RAW_ACFR / "nassau_2024.txt"
+    if nassau.exists():
+        check("Suits and Damages" in nassau.read_text() and "42.9 million" in nassau.read_text(), "Nassau ACFR no longer shows $42.9M of suits and damages")
+    roster = CROSSWALKS / "ny_pool_rosters.csv"
+    if roster.exists():
+        with roster.open(encoding="utf-8") as f:
+            n_gp = sum(1 for r in csv.DictReader(f) if re.match(r"(County|City|Town|Village) of ", r.get("entity_name", "")))
+        check(900 <= n_gp < 1000 and "nearly a thousand" in body, f"NYMIR: roster has {n_gp} general-purpose subscribers; prose must say 'nearly a thousand'")
+    check(near(body, r"\$750,000", "NYMIR") and "passing the rest to its own insurers" in body, "NYMIR's $750,000 retention, described as its own retention before its reinsurers")
+    check(near(body, "Vallejo", r"\$500,000") and near(body, "Vallejo", r"\$2\.5 million", 400) and near(body, r"\$392,000", r"\$2\.4 million")
+          and near(body, "working paper", "Vallejo", 300) and "market-based" in body, "Vallejo retention, premium, working-paper label, and Clark's 'market-based' required")
+    check(near(body, "One risk-pool expert", "100,000", 200) and "Schwartz" in body, "Schwartz: the 100,000 line is one expert's estimate")
+    check(near(body, "very weak", "2024 review", 80) and near(body, "cannot say how much", "nationally", 80), "the in-house evidence must carry its strength caveats")
+    check("Counties spend less per resident" in body and all(
+        ents["summary_by_class"]["county"][t]["median_cor_pc"] < min(ents["summary_by_class"][c][t]["median_cor_pc"] for c in ("city", "town", "village") if t in ents["summary_by_class"][c])
+        for t in ("self", "covered")), "'Counties spend less per resident' needs county medians below the other classes on both sides")
 
     # ---- 3. prose MUST-NOT -------------------------------------------------
     banned = [r"statistically significant", r"\bsignificant\b", r"p-value", r"\bp\s*[<=]", r"\brobust\b", r"\bproves?\b", r"confidence interval",
               r"\bleverage\b", r"\bseamless\b", r"\bholistic\b", r"\bdelve\b", r"\bmoreover\b", r"\bfurthermore\b", r"\bunderscore", r"not just",
-              r"\bSCOPING\b", r"\bTODO\b", r"\bFIXME\b", r"\bClaude\b", r"working title"]
+              r"\bSCOPING\b", r"\bTODO\b", r"\bFIXME\b", r"\bClaude\b", r"working title", r"\bpills?\b", r"coefficient of variation",
+              r"only thing that moves", r"\b(drives|raises) (the bill|liability|cost)", r"police (sets|drives|raises)", r"\bAs it turns out\b"]
     for pat in banned:
         if re.search(pat, content, re.I):
             fail(f"banned phrase in content: /{pat}/")
-    for pat in [r"\bMTA\b", r"Metropolitan Transportation Authority", r"New York City Transit"]:
-        for p in [config, *[f.read_text() for f in COMPONENTS.glob("*.tsx")], (ASSETS / f"{SLUG}-methodology.md").read_text()]:
-            if re.search(pat, p):
-                fail(f"MTA rule: /{pat}/ found in config, components, or methodology")
+    # client rule (Joe, 2026-10-10): agencies may be named from public data among peers; never as a client
+    surfaces = [content, config, *[f.read_text() for f in COMPONENTS.glob("*.tsx")], (ASSETS / f"{SLUG}-methodology.md").read_text()]
+    for p in surfaces:
+        if re.search(r"\bclients?\b|\bengagements?\b", p, re.I):
+            fail("client rule: no surface may describe any agency as a client or mention an engagement")
     check(not re.search(r"\b(Mayor|Governor|Comptroller|Commissioner|Executive|Supervisor|Treasurer)\s+[A-Z][a-z]+", body),
           "policy-not-person: a titled official's name appears in the body")
     check(not re.search(r"\b(blame|mismanag|incompeten)", content, re.I), "policy-not-person: blame/mismanagement language")
@@ -194,22 +249,24 @@ def main() -> int:
     check(words <= 1500, f"body words {words} > 1500 hard cap")  # raised from 1,200 by Joe, 2026-10-09
     if words > 800:
         warn(f"body words {words} > 800 target")
-    em = body.count("—")
-    check(em <= max(3, words // 150), f"em dashes {em} over budget")
+    check(body.count("—") == 0, f"em dashes in body: {body.count('—')}")
+    check(meth.count("—") == 0, f"em dashes in Methodology/Sources: {meth.count('—')}")
     check(body.count(";") <= 3, f"semicolons in body: {body.count(';')} > 3")
-    colon_setups = [m.group(0) for m in re.finditer(r"[a-z]{3,}: [A-Za-z][^\n]{0,80}", body) if not re.search(r"https?:|Downloads:|tell me:", m.group(0))]
+    colon_setups = [m.group(0) for m in re.finditer(r"[a-z]{3,}: [A-Za-z][^\n]{0,80}", body) if not re.search(r"https?:|tell me:", m.group(0))]
     if colon_setups:
         warn(f"mid-sentence colon setups: {colon_setups[:4]}")
     tags = re.findall(r"<(sic-[a-z-]+)>", body)
     check(not re.search(r"<sic-[a-z-]+\s*/>", content), "self-closing embed tags are not allowed (use a pair)")
+    comp = {"sic-core-chart": "SicCoreChart.tsx", "sic-mix-bars": "SicMixBars.tsx", "sic-volatility": "SicVolatility.tsx", "sic-transit-scatter": "SicTransitScatter.tsx"}
     for tg in set(tags):
         check(body.count(f"<{tg}></{tg}>") == 1, f"embed {tg} must appear exactly once as a pair")
-        check((COMPONENTS / {"sic-core-chart": "SicCoreChart.tsx", "sic-mix-bars": "SicMixBars.tsx", "sic-volatility": "SicVolatility.tsx", "sic-transit-scatter": "SicTransitScatter.tsx"}.get(tg, "missing")).exists(),
-              f"no component file for {tg}")
+        check((COMPONENTS / comp.get(tg, "missing")).exists(), f"no component file for {tg}")
     embeds_tsx = (ROOT / "src/content/embeds.tsx").read_text()
-    if "sic-core-chart" in embeds_tsx:
-        for tg in set(tags):
-            check(tg in embeds_tsx and tg in (ROOT / "src/content/embeds.static.tsx").read_text(), f"{tg} registered in embeds.tsx but not embeds.static.tsx (or vice versa)")
+    for tg in set(tags):
+        check(tg in embeds_tsx and tg in (ROOT / "src/content/embeds.static.tsx").read_text(), f"{tg} must be registered in embeds.tsx and embeds.static.tsx")
+    for f in COMPONENTS.glob("*.tsx"):
+        t = f.read_text()
+        check("cor_pc_p90" not in t, f"{f.name}: a chart must not label the 90th-percentile year as the worst year")
 
     # ---- 5. downloads and card ---------------------------------------------
     for name in (f"{SLUG}-ny-panel.csv", f"{SLUG}-ntd-panel.csv", f"{SLUG}-treatment-labels.csv"):
@@ -218,43 +275,49 @@ def main() -> int:
             fail(f"download missing: {name}")
             continue
         first = p.open(encoding="utf-8").readline()
-        check(first.startswith("#") and "2026-10-08" in first and "CC-BY-4.0" in first and "joe@group17a.com" in first, f"{name}: attribution header line malformed")
+        check(first.startswith("#") and models["snapshot"] in first and "CC-BY-4.0" in first and "joe@group17a.com" in first and "—" not in first,
+              f"{name}: attribution header line malformed")
     labels = ASSETS / f"{SLUG}-treatment-labels.csv"
     if labels.exists():
-        import csv
         with labels.open(encoding="utf-8") as f:
             f.readline()
-            rows = list(csv.DictReader(f))
-        bad = [r.get("entity_name") or r.get("agency") for r in rows if not (r.get("source_doc_url") or "").strip() or not (r.get("quote") or "").strip()]
+            lrows = list(csv.DictReader(f))
+        bad = [r.get("entity_name") or r.get("agency") for r in lrows if not (r.get("source_doc_url") or "").strip() or not (r.get("quote") or "").strip()]
         check(not bad, f"label rows without source_doc_url + quote: {bad[:5]}")
-    meth = ASSETS / f"{SLUG}-methodology.md"
-    check(meth.exists(), "methodology download missing")
-    if meth.exists():
-        mt = meth.read_text()
-        check("cannot say what a large self-insured city would pay" in mt, "methodology must carry the no-counterfactual caveat")
-        check("agreed with the documents only about half the time" in mt, "methodology must carry the signature-validation caveat")
-    # card surfaces: the gizmos.ts entry (if published) or the checklist block
-    card_src = GIZMOS_TS.read_text() if f'slug: "{SLUG}"' in GIZMOS_TS.read_text() else CHECKLIST.read_text()
+        check(any(r.get("compared_as") for r in lrows), "labels download must say how each government was compared")
+    md = ASSETS / f"{SLUG}-methodology.md"
+    check(md.exists(), "methodology download missing")
+    if md.exists():
+        mt = md.read_text()
+        check(PRIMARY in mt or f"{prim['coef']}" in mt, "methodology download must state the current headline")
+        check("population-weighted" not in mt and "placebo" not in mt, "methodology download: no population-weighting or never-run placebo claims")
+        check("90th percentile" not in mt or "worst year" not in mt.split("90th percentile")[0][-80:], "methodology download: worst year is the maximum, not the 90th percentile")
+    card_src = GIZMOS_TS.read_text()
     m = re.search(rf'slug: "{SLUG}".*?\n  \}},', card_src, re.S)
+    check(m is not None, "card entry not found in gizmos.ts")
     if m:
-        card = m.group(1) if m.groups() else m.group(0)
-        md = re.search(r'metaDescription:\s*"([^"]*)"', card)
-        if md:
-            check(len(md.group(1)) <= 155 and "—" not in md.group(1) and "TODO" not in md.group(1), "metaDescription: <=155 chars, no em dash, no TODO")
+        card = m.group(0)
+        for fld in ("dek", "summary", "metaDescription"):
+            v = re.search(rf'{fld}:\s*"([^"]*)"', card)
+            if v:
+                check("—" not in v.group(1), f"card {fld}: no em dash")
+                check(not re.search(r"don't pay more|\bdrives\b|\braises\b|\bclient", v.group(1), re.I), f"card {fld}: no 'don't pay more', causal verbs, or client language")
+        md_ = re.search(r'metaDescription:\s*"([^"]*)"', card)
+        check(md_ is not None and len(md_.group(1)) <= 155, "metaDescription: <=155 chars")
         sm = re.search(r'summary:\s*"([^"]*)"', card)
-        if sm:
-            check("—" not in sm.group(1) and not re.search(r"\b(usually|rarely|mostly|typically|often)\b.{0,60}(self-insur|pool|overspend|cost)", sm.group(1), re.I),
-                  "card summary: no em dash, no frequency adverbs near fate words")
-            check("MTA" not in sm.group(1), "card summary: MTA rule")
+        if sm and re.search(r"\d{2,3} New York governments", sm.group(1)):
+            n = int(re.search(r"(\d{2,3}) New York governments", sm.group(1)).group(1))
+            check(n == len(doc) and re.search(r"read", sm.group(1)), f"card summary: {n} must be the number read ({len(doc)}) and say 'read'")
 
     # ---- 6. intervention section ---------------------------------------------
     sec = re.search(r"## What a government could do(.*?)## Housekeeping", body, re.S)
     check(sec is not None, "intervention section missing")
     if sec:
-        anchors = r"Vallejo|NYMIR|ClaimStat|Schwartz|Chicago|pool|retention|illustrative|cannot say"
+        anchors = r"Vallejo|NYMIR|ClaimStat|Schwartz|Chicago|pool|retention|illustrative|cannot say|insurer|hospital"
         for sent in re.split(r"(?<=[.!?])\s+", sec.group(1).strip()):
             if re.search(r"\b(would|could|should)\b", sent) and not re.search(anchors, sent):
                 fail(f"intervention sentence without an anchor or 'illustrative': {sent[:90]}")
+    check("My firm, 17A" in body, "the 17A disclosure line is required next to the in-house capacity point")
 
     for w in warnings:
         print(f"WARN  {w}")

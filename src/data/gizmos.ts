@@ -48,12 +48,12 @@ export const gizmos: Gizmo[] = [
   {
     slug: "self-insurance-cost",
     title: "The Price of Insuring Yourself",
-    dek: "Governments that carry their own liability don't pay more. Their bills swing twice as hard. Police budget, not financing, drives the size of the bill.",
+    dek: "Governments that carry their own liability spend somewhat more on lawsuits and insurance, about a fifth on the best estimate. Their bills swing nearly twice as much.",
     categories: ["State Government", "City Government"],
     date: "2026-10",
-    summary: "I compared what 117 New York governments spend on lawsuits and liability insurance. The ones that insure themselves don't pay more, but their bills swing about twice as much from year to year.",
+    summary: "I read the audited statements of 135 New York governments and compared what they spend on lawsuits and insurance. The ones that insure themselves spend somewhat more, about a fifth on the best estimate, and their bills swing nearly twice as much from year to year.",
     seoTitle: "Self-Insurance vs Risk Pools: What Local Governments Pay for Liability",
-    metaDescription: "Do self-insured governments pay more for liability? Every NY county and large city, labeled from audited statements, compared over ten years.",
+    metaDescription: "Do self-insured governments pay more for liability? 135 New York counties, cities, towns, and villages, labeled from audited statements, 2015 to 2024.",
     links: [
       { label: "Download the New York panel (.csv)", url: "/assets/self-insurance-cost-ny-panel.csv" },
       { label: "Download the transit panel (.csv)", url: "/assets/self-insurance-cost-ntd-panel.csv" },

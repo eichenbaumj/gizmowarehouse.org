@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import math
 import time
 from pathlib import Path
 
@@ -114,7 +115,18 @@ def fetch_fred(series_id: str) -> pd.DataFrame:
     return df
 
 
+def _clean(o):
+    """NaN/inf are not JSON; the browser's JSON.parse rejects them. Write null instead."""
+    if isinstance(o, float):
+        return o if math.isfinite(o) else None
+    if isinstance(o, dict):
+        return {k: _clean(v) for k, v in o.items()}
+    if isinstance(o, (list, tuple)):
+        return [_clean(v) for v in o]
+    return o
+
+
 def write_json(path: Path, obj) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, separators=(",", ":")))
+    path.write_text(json.dumps(_clean(obj), separators=(",", ":"), allow_nan=False))
     print(f"  wrote {path}  ({path.stat().st_size/1024:.1f} KB)")
