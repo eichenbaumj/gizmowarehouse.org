@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { FIRM_URL } from "../lib/seo";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -20,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <footer>
         <div className="h-px bg-carolina" />
         <div className="container max-w-4xl mx-auto px-6 py-6 text-sm text-steel">
-          Joe Eichenbaum | <a href="https://www.17a.co" target="_blank" rel="noopener noreferrer" className="hover:text-cobalt transition-colors">17A</a>
+          Joe Eichenbaum | <a href={FIRM_URL} target="_blank" rel="noopener noreferrer" className="hover:text-cobalt transition-colors">17A</a>
         </div>
       </footer>
     </div>

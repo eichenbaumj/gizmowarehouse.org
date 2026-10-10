@@ -7,6 +7,7 @@ import { renderRoute } from "../src/entry-static";
 import { publicRoutes } from "../src/lib/routes";
 import { gizmoEmbeds as liveEmbeds } from "../src/content/embeds";
 import { gizmoContent } from "../src/content";
+import { FIRM_URL } from "../src/lib/seo";
 
 const text = (html: string) => html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
 
@@ -29,6 +30,7 @@ describe("static render", () => {
     expect(html).toMatch(/<h1[^>]*>/);
     expect(text(html).length).toBeGreaterThan(300);
     expect(html).toContain("Gizmo Warehouse"); // layout header present
+    expect(html).toContain(`href="${FIRM_URL}"`); // footer 17A link
   });
 
   it("gizmo pages carry their prose, related links, and no unresolved tokens", () => {

@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { existsSync } from "node:fs";
 import { gizmos } from "../src/data/gizmos";
-import { gizmoDescription, gizmoSearchTitle, gizmoSeo, relatedGizmos } from "../src/lib/seo";
+import { FIRM_URL, gizmoDescription, gizmoSearchTitle, gizmoSeo, homeSeo, relatedGizmos } from "../src/lib/seo";
 
 const live = gizmos.filter((g) => !g.hidden);
 
@@ -38,6 +38,12 @@ describe("gizmo SEO fields", () => {
       expect(seo.socialTitle).toBe(g.title);
       expect(seo.title).toContain(gizmoSearchTitle(g));
     }
+  });
+  it("17A's author and org urls point at the live firm site, never the dead 17a.co", () => {
+    expect(FIRM_URL).toBe("https://www.group17a.com");
+    const ld = JSON.stringify([homeSeo(), ...live.map(gizmoSeo)].map((s) => s.jsonLd));
+    expect(ld).not.toMatch(/\b17a\.co(?!m)/);
+    expect(ld).toContain(`"url":"${FIRM_URL}"`);
   });
   it("related gizmos never include self or hidden, and prefer shared categories", () => {
     for (const g of live) {

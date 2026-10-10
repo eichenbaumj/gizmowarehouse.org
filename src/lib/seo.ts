@@ -18,12 +18,15 @@ export const SITE_NAME = "Gizmo Warehouse";
 export const SITE_TAGLINE = "Shareable tools, analyses, and work products from Joe Eichenbaum at 17A.";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`;
 export const OG_IMAGE_SIZE = { width: 1200, height: 630 };
+// 17A's site: the footer link and every JSON-LD author/org url. The www host
+// answers 200 directly (the apex 301s here). 17a.co had no DNS on 2026-10-10.
+export const FIRM_URL = "https://www.group17a.com";
 
 export const AUTHOR = {
   "@type": "Person",
   name: "Joe Eichenbaum",
-  url: "https://www.17a.co",
-  affiliation: { "@type": "Organization", name: "17A", url: "https://www.17a.co" },
+  url: FIRM_URL,
+  affiliation: { "@type": "Organization", name: "17A", url: FIRM_URL },
 } as const;
 
 export const PUBLISHER = {
@@ -153,7 +156,7 @@ export function homeSeo(): PageSeo {
         "@context": "https://schema.org",
         "@type": "Organization",
         name: "17A",
-        url: "https://www.17a.co",
+        url: FIRM_URL,
         founder: { "@type": "Person", name: "Joe Eichenbaum" },
       },
     ],

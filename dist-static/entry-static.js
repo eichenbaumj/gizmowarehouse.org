@@ -51752,6 +51752,209 @@ function encodeLocation(to) {
 }
 const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 
+const lastmod = {
+	"/": "2026-10-09",
+	"/gizmo/self-insurance-cost": "2026-10-09",
+	"self-insurance-cost": "2026-10-09",
+	"/gizmo/daf-yomi": "2026-09-20",
+	"daf-yomi": "2026-09-20",
+	"/gizmo/only-way-to-start-is-by-starting": "2026-09-16",
+	"only-way-to-start-is-by-starting": "2026-09-16",
+	"/gizmo/gospel-of-claude-code": "2026-08-31",
+	"gospel-of-claude-code": "2026-08-31",
+	"/gizmo/data-center-restriction-cost": "2026-08-19",
+	"data-center-restriction-cost": "2026-08-19",
+	"/gizmo/nyc-public-grocery-new-math": "2026-08-18",
+	"nyc-public-grocery-new-math": "2026-08-18",
+	"/gizmo/public-private-compensation-comparison": "2026-08-02",
+	"public-private-compensation-comparison": "2026-08-02",
+	"/gizmo/medicaid-work-requirements": "2026-06-25",
+	"medicaid-work-requirements": "2026-06-25",
+	"/gizmo/microsoft-copilot": "2026-05-15",
+	"microsoft-copilot": "2026-05-15",
+	"/gizmo/nyc-property-tax-map": "2026-05-12",
+	"nyc-property-tax-map": "2026-05-12",
+	"/gizmo/nyc-public-grocery-math": "2026-08-18",
+	"nyc-public-grocery-math": "2026-08-18",
+	"/gizmo/reducing-violence-whitepaper": "2026-04-05",
+	"reducing-violence-whitepaper": "2026-04-05",
+	"/gizmo/fakebook-maker": "2026-08-31",
+	"fakebook-maker": "2026-08-31",
+	"/gizmo/medicaid-work-requirements/methodology": "2026-06-25",
+	"/gizmo/public-private-compensation-comparison/methodology": "2026-06-23",
+	"/category/public-safety": "2026-10-09",
+	"/category/music": "2026-10-09",
+	"/category/using-ai": "2026-10-09",
+	"/category/city-government": "2026-10-09",
+	"/category/state-government": "2026-10-09",
+	"/category/healthcare-policy": "2026-10-09",
+	"/category/nyc": "2026-10-09"
+};
+
+const SITE_URL = "https://gizmowarehouse.org";
+const SITE_NAME = "Gizmo Warehouse";
+const SITE_TAGLINE = "Shareable tools, analyses, and work products from Joe Eichenbaum at 17A.";
+const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`;
+const OG_IMAGE_SIZE = { width: 1200, height: 630 };
+const FIRM_URL = "https://www.group17a.com";
+const AUTHOR = {
+  "@type": "Person",
+  name: "Joe Eichenbaum",
+  url: FIRM_URL,
+  affiliation: { "@type": "Organization", name: "17A", url: FIRM_URL }
+};
+const PUBLISHER = {
+  "@type": "Organization",
+  name: "Gizmo Warehouse",
+  url: SITE_URL,
+  logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.png` }
+};
+function gizmoUrl(g) {
+  return `${SITE_URL}/gizmo/${g.slug}`;
+}
+function gizmoOgImage(g) {
+  return `${SITE_URL}/og/${g.slug}.png`;
+}
+function gizmoSearchTitle(g) {
+  return g.seoTitle || g.title;
+}
+function gizmoDescription(g) {
+  return g.metaDescription || g.summary;
+}
+function isoDate(d) {
+  return /^\d{4}-\d{2}$/.test(d) ? `${d}-01` : d;
+}
+function gizmoLastmod(g) {
+  const v = lastmod[g.slug];
+  return v ? v.slice(0, 10) : isoDate(g.date);
+}
+function breadcrumbJsonLd(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((it, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: it.name,
+      item: it.url
+    }))
+  };
+}
+function gizmoSeo(g) {
+  const url = gizmoUrl(g);
+  const description = gizmoDescription(g);
+  const datePublished = isoDate(g.date);
+  const dateModified = gizmoLastmod(g);
+  const ogImage = gizmoOgImage(g);
+  return {
+    title: `${gizmoSearchTitle(g)} | ${SITE_NAME}`,
+    socialTitle: g.title,
+    description,
+    canonical: url,
+    ogImage,
+    ogType: "article",
+    datePublished,
+    dateModified,
+    noindex: !!g.hidden,
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        headline: gizmoSearchTitle(g),
+        alternativeHeadline: g.seoTitle ? g.title : void 0,
+        description,
+        image: [ogImage],
+        datePublished,
+        dateModified,
+        url,
+        mainEntityOfPage: { "@type": "WebPage", "@id": url },
+        author: AUTHOR,
+        publisher: PUBLISHER,
+        keywords: g.categories.join(", "),
+        isAccessibleForFree: true
+      },
+      breadcrumbJsonLd([
+        { name: SITE_NAME, url: `${SITE_URL}/` },
+        { name: g.title, url }
+      ])
+    ]
+  };
+}
+function homeSeo() {
+  return {
+    title: `${SITE_NAME} | 17A`,
+    description: SITE_TAGLINE,
+    canonical: `${SITE_URL}/`,
+    ogImage: DEFAULT_OG_IMAGE,
+    ogType: "website",
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: SITE_NAME,
+        url: SITE_URL,
+        description: SITE_TAGLINE,
+        publisher: PUBLISHER
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "17A",
+        url: FIRM_URL,
+        founder: { "@type": "Person", name: "Joe Eichenbaum" }
+      }
+    ]
+  };
+}
+function notFoundSeo() {
+  return {
+    title: `Not Found | ${SITE_NAME}`,
+    description: "That page doesn't exist. Head back to the Gizmo Warehouse to browse everything that does.",
+    canonical: `${SITE_URL}/`,
+    ogImage: DEFAULT_OG_IMAGE,
+    ogType: "website",
+    noindex: true
+  };
+}
+function relatedGizmos(g, all, n = 3) {
+  const mine = new Set(g.categories);
+  return all.filter((o) => o.slug !== g.slug && !o.hidden).map((o) => ({ o, shared: o.categories.filter((c) => mine.has(c)).length })).sort((a, b) => b.shared - a.shared || (a.o.date < b.o.date ? 1 : a.o.date > b.o.date ? -1 : 0)).slice(0, n).map((x) => x.o);
+}
+function dataPageSeo(p, parent) {
+  const url = `${SITE_URL}${p.path}`;
+  const ogImage = `${SITE_URL}/og/${p.parentSlug}.png`;
+  const datePublished = parent ? isoDate(parent.date) : p.snapshot;
+  return {
+    title: `${p.seoTitle || p.title} | ${SITE_NAME}`,
+    socialTitle: p.title,
+    description: p.description,
+    canonical: url,
+    ogImage,
+    ogType: "article",
+    datePublished,
+    dateModified: p.snapshot,
+    jsonLd: [
+      {
+        "@context": "https://schema.org",
+        "@type": p.isHub ? "CollectionPage" : "Article",
+        headline: p.seoTitle || p.title,
+        alternativeHeadline: p.seoTitle ? p.title : void 0,
+        description: p.description,
+        image: [ogImage],
+        datePublished,
+        dateModified: p.snapshot,
+        url,
+        mainEntityOfPage: { "@type": "WebPage", "@id": url },
+        author: AUTHOR,
+        publisher: PUBLISHER,
+        isPartOf: { "@type": "WebPage", "@id": `${SITE_URL}/gizmo/${p.parentSlug}` },
+        isAccessibleForFree: true
+      },
+      breadcrumbJsonLd(p.crumbs.map((c) => ({ name: c.name, url: `${SITE_URL}${c.path}` })))
+    ]
+  };
+}
+
 function Layout({ children }) {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "min-h-screen flex flex-col", children: [
     /* @__PURE__ */ jsxRuntimeExports.jsxs("header", { className: "border-b border-carolina/30", children: [
@@ -51766,7 +51969,7 @@ function Layout({ children }) {
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "h-px bg-carolina" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "container max-w-4xl mx-auto px-6 py-6 text-sm text-steel", children: [
         "Joe Eichenbaum | ",
-        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: "https://www.17a.co", target: "_blank", rel: "noopener noreferrer", className: "hover:text-cobalt transition-colors", children: "17A" })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("a", { href: FIRM_URL, target: "_blank", rel: "noopener noreferrer", className: "hover:text-cobalt transition-colors", children: "17A" })
       ] })
     ] })
   ] });
@@ -54559,208 +54762,6 @@ function GizmoCard({ gizmo, compact = false }) {
       ]
     }
   );
-}
-
-const lastmod = {
-	"/": "2026-09-23",
-	"/gizmo/self-insurance-cost": "2026-10-09",
-	"self-insurance-cost": "2026-10-09",
-	"/gizmo/daf-yomi": "2026-09-20",
-	"daf-yomi": "2026-09-20",
-	"/gizmo/only-way-to-start-is-by-starting": "2026-09-16",
-	"only-way-to-start-is-by-starting": "2026-09-16",
-	"/gizmo/gospel-of-claude-code": "2026-08-31",
-	"gospel-of-claude-code": "2026-08-31",
-	"/gizmo/data-center-restriction-cost": "2026-08-19",
-	"data-center-restriction-cost": "2026-08-19",
-	"/gizmo/nyc-public-grocery-new-math": "2026-08-18",
-	"nyc-public-grocery-new-math": "2026-08-18",
-	"/gizmo/public-private-compensation-comparison": "2026-08-02",
-	"public-private-compensation-comparison": "2026-08-02",
-	"/gizmo/medicaid-work-requirements": "2026-06-25",
-	"medicaid-work-requirements": "2026-06-25",
-	"/gizmo/microsoft-copilot": "2026-05-15",
-	"microsoft-copilot": "2026-05-15",
-	"/gizmo/nyc-property-tax-map": "2026-05-12",
-	"nyc-property-tax-map": "2026-05-12",
-	"/gizmo/nyc-public-grocery-math": "2026-08-18",
-	"nyc-public-grocery-math": "2026-08-18",
-	"/gizmo/reducing-violence-whitepaper": "2026-04-05",
-	"reducing-violence-whitepaper": "2026-04-05",
-	"/gizmo/fakebook-maker": "2026-08-31",
-	"fakebook-maker": "2026-08-31",
-	"/gizmo/medicaid-work-requirements/methodology": "2026-06-25",
-	"/gizmo/public-private-compensation-comparison/methodology": "2026-06-23",
-	"/category/public-safety": "2026-09-23",
-	"/category/music": "2026-09-23",
-	"/category/using-ai": "2026-09-23",
-	"/category/city-government": "2026-09-23",
-	"/category/state-government": "2026-09-23",
-	"/category/healthcare-policy": "2026-09-23",
-	"/category/nyc": "2026-09-23"
-};
-
-const SITE_URL = "https://gizmowarehouse.org";
-const SITE_NAME = "Gizmo Warehouse";
-const SITE_TAGLINE = "Shareable tools, analyses, and work products from Joe Eichenbaum at 17A.";
-const DEFAULT_OG_IMAGE = `${SITE_URL}/og/default.png`;
-const OG_IMAGE_SIZE = { width: 1200, height: 630 };
-const AUTHOR = {
-  "@type": "Person",
-  name: "Joe Eichenbaum",
-  url: "https://www.17a.co",
-  affiliation: { "@type": "Organization", name: "17A", url: "https://www.17a.co" }
-};
-const PUBLISHER = {
-  "@type": "Organization",
-  name: "Gizmo Warehouse",
-  url: SITE_URL,
-  logo: { "@type": "ImageObject", url: `${SITE_URL}/favicon.png` }
-};
-function gizmoUrl(g) {
-  return `${SITE_URL}/gizmo/${g.slug}`;
-}
-function gizmoOgImage(g) {
-  return `${SITE_URL}/og/${g.slug}.png`;
-}
-function gizmoSearchTitle(g) {
-  return g.seoTitle || g.title;
-}
-function gizmoDescription(g) {
-  return g.metaDescription || g.summary;
-}
-function isoDate(d) {
-  return /^\d{4}-\d{2}$/.test(d) ? `${d}-01` : d;
-}
-function gizmoLastmod(g) {
-  const v = lastmod[g.slug];
-  return v ? v.slice(0, 10) : isoDate(g.date);
-}
-function breadcrumbJsonLd(items) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: items.map((it, i) => ({
-      "@type": "ListItem",
-      position: i + 1,
-      name: it.name,
-      item: it.url
-    }))
-  };
-}
-function gizmoSeo(g) {
-  const url = gizmoUrl(g);
-  const description = gizmoDescription(g);
-  const datePublished = isoDate(g.date);
-  const dateModified = gizmoLastmod(g);
-  const ogImage = gizmoOgImage(g);
-  return {
-    title: `${gizmoSearchTitle(g)} | ${SITE_NAME}`,
-    socialTitle: g.title,
-    description,
-    canonical: url,
-    ogImage,
-    ogType: "article",
-    datePublished,
-    dateModified,
-    noindex: !!g.hidden,
-    jsonLd: [
-      {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        headline: gizmoSearchTitle(g),
-        alternativeHeadline: g.seoTitle ? g.title : void 0,
-        description,
-        image: [ogImage],
-        datePublished,
-        dateModified,
-        url,
-        mainEntityOfPage: { "@type": "WebPage", "@id": url },
-        author: AUTHOR,
-        publisher: PUBLISHER,
-        keywords: g.categories.join(", "),
-        isAccessibleForFree: true
-      },
-      breadcrumbJsonLd([
-        { name: SITE_NAME, url: `${SITE_URL}/` },
-        { name: g.title, url }
-      ])
-    ]
-  };
-}
-function homeSeo() {
-  return {
-    title: `${SITE_NAME} | 17A`,
-    description: SITE_TAGLINE,
-    canonical: `${SITE_URL}/`,
-    ogImage: DEFAULT_OG_IMAGE,
-    ogType: "website",
-    jsonLd: [
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        name: SITE_NAME,
-        url: SITE_URL,
-        description: SITE_TAGLINE,
-        publisher: PUBLISHER
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        name: "17A",
-        url: "https://www.17a.co",
-        founder: { "@type": "Person", name: "Joe Eichenbaum" }
-      }
-    ]
-  };
-}
-function notFoundSeo() {
-  return {
-    title: `Not Found | ${SITE_NAME}`,
-    description: "That page doesn't exist. Head back to the Gizmo Warehouse to browse everything that does.",
-    canonical: `${SITE_URL}/`,
-    ogImage: DEFAULT_OG_IMAGE,
-    ogType: "website",
-    noindex: true
-  };
-}
-function relatedGizmos(g, all, n = 3) {
-  const mine = new Set(g.categories);
-  return all.filter((o) => o.slug !== g.slug && !o.hidden).map((o) => ({ o, shared: o.categories.filter((c) => mine.has(c)).length })).sort((a, b) => b.shared - a.shared || (a.o.date < b.o.date ? 1 : a.o.date > b.o.date ? -1 : 0)).slice(0, n).map((x) => x.o);
-}
-function dataPageSeo(p, parent) {
-  const url = `${SITE_URL}${p.path}`;
-  const ogImage = `${SITE_URL}/og/${p.parentSlug}.png`;
-  const datePublished = parent ? isoDate(parent.date) : p.snapshot;
-  return {
-    title: `${p.seoTitle || p.title} | ${SITE_NAME}`,
-    socialTitle: p.title,
-    description: p.description,
-    canonical: url,
-    ogImage,
-    ogType: "article",
-    datePublished,
-    dateModified: p.snapshot,
-    jsonLd: [
-      {
-        "@context": "https://schema.org",
-        "@type": p.isHub ? "CollectionPage" : "Article",
-        headline: p.seoTitle || p.title,
-        alternativeHeadline: p.seoTitle ? p.title : void 0,
-        description: p.description,
-        image: [ogImage],
-        datePublished,
-        dateModified: p.snapshot,
-        url,
-        mainEntityOfPage: { "@type": "WebPage", "@id": url },
-        author: AUTHOR,
-        publisher: PUBLISHER,
-        isPartOf: { "@type": "WebPage", "@id": `${SITE_URL}/gizmo/${p.parentSlug}` },
-        isAccessibleForFree: true
-      },
-      breadcrumbJsonLd(p.crumbs.map((c) => ({ name: c.name, url: `${SITE_URL}${c.path}` })))
-    ]
-  };
 }
 
 function usePageMeta(seo) {
