@@ -171,10 +171,9 @@ export function swingCopy(rows: SwingRow[], leftOut: LeftOut[], v: SwingModelNum
   const rlo = Math.min(v.matched_lo, v.controlled_lo), rhi = Math.max(v.matched_hi, v.controlled_hi);
   const a = S.all;
   const sub =
-    `Each dot is one New York government, placed by its costliest year as a multiple of its own ten-year average. ` +
-    `For the typical government that carries its own liability, that year cost ${(a.self.ratio ?? 0).toFixed(1)} times its average; ` +
-    `for one that buys coverage, ${(a.covered.ratio ?? 0).toFixed(1)} times. Across all ten years, too, a self-insured bill ` +
-    `typically lands ${swing} as far from its own average as a covered bill of the same type and size.`;
+    `Each dot is one government, placed by its costliest year as a multiple of its own ten-year average. ` +
+    `The typical self-insured government's worst year cost ${(a.self.ratio ?? 0).toFixed(1)} times its average; ` +
+    `a covered government's, ${(a.covered.ratio ?? 0).toFixed(1)} times.`;
   const thin = (Object.keys(CLASS_NAME) as ClassKey[])
     .filter((k) => S[k].covered.n < THIN_JUDGE)
     .map((k) => `${word(S[k].covered.n)} ${S[k].covered.n === 1 ? CLASS_NAME[k][1] : CLASS_NAME[k][2]}`);
@@ -182,13 +181,13 @@ export function swingCopy(rows: SwingRow[], leftOut: LeftOut[], v: SwingModelNum
     ? ` Only ${thin.join(" and ")} ${thin.length === 1 && thin[0].startsWith("one ") ? "buys" : "buy"} coverage, too few to judge ${thin.length === 1 ? "that type" : "those types"} on their own.`
     : "";
   const loSentence = leftOut
-    .map((q) => ` ${shortName(q.name, true)}, which ${q.side === "self" ? "carries its own liability" : "buys coverage"}, is left out because its recorded cost fell below zero in ${word(q.nNeg)} of the ten years, leaving no meaningful average to measure against.`)
+    .map((q) => ` ${shortName(q.name, true)} is left out because its recorded cost fell below zero in ${word(q.nNeg)} of the ten years, leaving no meaningful average.`)
     .join("");
   const foot =
-    "Liability cost is insurance premiums plus judgments and claims, per resident, in 2024 dollars, from filings with the " +
-    "State Comptroller; each arrangement was read from audited statements. " +
-    `The dark tick marks the typical government, the middle one of its group, for groups of ${word(MIN_TICK)} or more.` +
-    thinSentence + loSentence +
-    ` The comparison of swings matches governments of the same type and similar size; the range the data allow runs from about ${rlo.toFixed(1)} to ${rhi.toFixed(1)} times. Tap or hover over a dot for its numbers.`;
+    `Across all ten years, a self-insured bill typically lands ${swing} as far from its own average as a covered bill of the same type and size ` +
+    `(the data allow about ${rlo.toFixed(1)} to ${rhi.toFixed(1)} times). ` +
+    "Liability cost is insurance premiums plus judgments and claims per resident, in 2024 dollars, from filings with the State Comptroller; " +
+    `each arrangement was read from audited statements. The dark tick marks the middle government of a group of ${word(MIN_TICK)} or more.` +
+    thinSentence + loSentence + " Tap or hover over a dot for its numbers.";
   return { sub, foot };
 }

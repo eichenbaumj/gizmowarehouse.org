@@ -17,7 +17,7 @@ Joe is a partner at 17A, a consulting firm serving state and local government. M
 
 ## Gizmos
 
-- [The Price of Insuring Yourself](/gizmo/self-insurance-cost) (2026-10): Do self-insured governments pay more for liability? 135 New York counties, cities, towns, and villages, labeled from audited statements, 2015 to 2024. Code and data pipeline (GitHub): https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost
+- [The Price of Insuring Yourself](/gizmo/self-insurance-cost) (2026-10): Self-insured New York governments may spend a fifth more on liability, and their bills swing nearly twice as much. 135 governments read, 2015 to 2024. Code and data pipeline (GitHub): https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost
 - [Introducing Daf Yomi Dot Dev](/gizmo/daf-yomi) (2026-09): daf-yomi.dev shows today's page of Talmud with a short AI-written note and one question, plus a daily email. How I built it with Claude, and why. Open daf-yomi.dev: https://daf-yomi.dev; Source on GitHub: https://github.com/eichenbaumj/daf-yomi
 - [The Only Way to Start Is by Starting](/gizmo/only-way-to-start-is-by-starting) (2026-09): A short whitepaper for agency leaders: one accountable owner, a handful of paid licenses, one real piece of work. The 90-day recipe for AI in government.
 - [Music Theory with LLMs](/gizmo/gospel-of-claude-code) (2026-08): I had Claude Code write gospel reharmonizations for my fake book. Why predicting the next chord is a natural job for a language model, with examples. Get the code on GitHub: https://github.com/eichenbaumj/fakebook-maker

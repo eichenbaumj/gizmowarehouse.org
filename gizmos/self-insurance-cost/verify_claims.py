@@ -152,12 +152,16 @@ def main() -> int:
         check(near(body, "spent about " + lw, "the covered", 20), f"level sentence must say 'spent about {lw} the covered' (primary {prim['coef']})")
         check(near(body, lo_w, hi_w, 20), f"range must read '{lo_w} to {hi_w}' (primary {prim['lo']}-{prim['hi']})")
         check(prim["lo"] <= 1 <= prim["hi"], "'about as much' needs a range that contains 1")
-    # 'does not pay several times as much' needs the top of every headline range under 2.5
-    tops = [s["hi"] for s in ny["specs"] if s["spec_id"].startswith(("ny_core_classbin_cor", "ny_core_counties_towns_cor", "ny_core_prereg_region_cor")) and s.get("hi")]
-    check(near(body, "do not pay several times as much", "strong form") and max(tops) < 3.0, f"'not several times as much' needs every headline range under 3x ({max(tops)})")
-    if prim and prim["coef"] > 1.1:
-        check("A smaller gap, up to about double, is plausible" in body and 1.85 <= prim["hi"] < 2.15,
-              "with a best estimate above 1.1 the prose must say a smaller gap, up to about double, is plausible (and the range must top out near double)")
+    # the verdict follows the headline: it leans the colleague's way only while the best estimate is above 1.1, and the
+    # prose must say the range leaves room for no gap while the range's low end is at or below 1
+    if prim:
+        check(("leans my colleague's way" in body) == (prim["coef"] > 1.1), f"'leans my colleague's way' must track the headline ({prim['coef']})")
+        check(("leaves room for no gap" in body) == (prim["lo"] <= 1), f"'leaves room for no gap' must track the range's low end ({prim['lo']})")
+        check(prim["hi"] < 3 and "falls short of far more" in body, f"'a fifth more falls short of far more' needs the top of the range under 3x ({prim['hi']})")
+        check(prim["coef"] > 1 and prim["lo"] <= 1 and "if anything, pays less for it" in body, "'if anything, pays less' needs a best estimate above 1 with a range containing 1")
+    sbc = ents["summary_by_class"]
+    higher = all(sbc[c]["self"]["median_cor_pc"] > sbc[c]["covered"]["median_cor_pc"] for c in sbc if "self" in sbc[c] and "covered" in sbc[c])
+    check(higher and "the typical dark mark sits higher" in body, "'the typical dark mark sits higher' needs the self-insured median above the covered median in every type")
     # cities: Schenectady is the largest covered city
     cc = big["ceilings"].get("city", {})
     check(cc.get("largest_covered") == "City of Schenectady" and 60_000 <= cc.get("largest_covered_pop", 0) <= 70_000 and near(body, "Schenectady", "67,000"),
@@ -221,6 +225,8 @@ def main() -> int:
     check(near(body, "Vallejo", r"\$500,000") and near(body, "Vallejo", r"\$2\.5 million", 400) and near(body, r"\$392,000", r"\$2\.4 million")
           and near(body, "working paper", "Vallejo", 300) and "market-based" in body, "Vallejo retention, premium, working-paper label, and Clark's 'market-based' required")
     check(near(body, "One risk-pool expert", "100,000", 200) and "Schwartz" in body, "Schwartz: the 100,000 line is one expert's estimate")
+    check("mixed together" not in content and "rescue the hypothesis" not in content and "no clear extra cost" not in content,
+          "leftover framing from the old null result")
     check(near(body, "very weak", "2024 review", 80) and near(body, "cannot say how much", "nationally", 80), "the in-house evidence must carry its strength caveats")
     check("Counties spend less per resident" in body and all(
         ents["summary_by_class"]["county"][t]["median_cor_pc"] < min(ents["summary_by_class"][c][t]["median_cor_pc"] for c in ("city", "town", "village") if t in ents["summary_by_class"][c])
@@ -257,7 +263,7 @@ def main() -> int:
         warn(f"mid-sentence colon setups: {colon_setups[:4]}")
     tags = re.findall(r"<(sic-[a-z-]+)>", body)
     check(not re.search(r"<sic-[a-z-]+\s*/>", content), "self-closing embed tags are not allowed (use a pair)")
-    comp = {"sic-core-chart": "SicCoreChart.tsx", "sic-mix-bars": "SicMixBars.tsx", "sic-volatility": "SicVolatility.tsx", "sic-transit-scatter": "SicTransitScatter.tsx"}
+    comp = {"sic-core-chart": "SicCoreChart.tsx", "sic-volatility": "SicVolatility.tsx", "sic-transit-scatter": "SicTransitScatter.tsx"}
     for tg in set(tags):
         check(body.count(f"<{tg}></{tg}>") == 1, f"embed {tg} must appear exactly once as a pair")
         check((COMPONENTS / comp.get(tg, "missing")).exists(), f"no component file for {tg}")

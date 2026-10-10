@@ -59,7 +59,7 @@ export default function SicCoreChart() {
     <SicCard>
       <Eyebrow>New York, {data.window[0]} to {data.window[1]}</Eyebrow>
       <div className="flex flex-wrap items-center justify-between gap-2">
-        <h3 className="font-serif text-lg font-bold text-cobalt">Self-insured and covered governments are mixed together within each type</h3>
+        <h3 className="font-serif text-lg font-bold text-cobalt">Cost per resident differs more by type of government than by how it pays its claims</h3>
         <div className="flex gap-1 text-xs">
           {(["cor_liab_pc_mean", "cor_liab_share_mean"] as Metric[]).map((m) => (
             <button

@@ -48,6 +48,6 @@ describe("swing exhibit", () => {
     for (const t of [sub, foot]) {
       expect(t).not.toMatch(/—|median|\bCV\b|coefficient|standard deviation|police/i);
     }
-    expect(foot).toContain(leftOut.length ? "left out because its recorded cost fell below zero" : "Tap or hover");
+    expect(foot).toContain(leftOut.length ? "is left out because its recorded cost fell below zero" : "Tap or hover");
   });
 });
