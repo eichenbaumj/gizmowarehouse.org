@@ -48,10 +48,10 @@ export const gizmos: Gizmo[] = [
   {
     slug: "self-insurance-cost",
     title: "The Price of Insuring Yourself",
-    dek: "Governments that carry their own liability have bills that swing nearly twice as much from year to year. They may also spend about a fifth more, a gap the data can't pin down.",
+    dek: "Governments that carry their own liability have bills that swing nearly twice as much from year to year. They may also spend about a fifth more, though the data can't pin that gap down.",
     categories: ["State Government", "City Government"],
     date: "2026-10",
-    summary: "I read the audited statements of 135 New York governments, and the ones that insure themselves have bills that swing nearly twice as much from year to year and may run about a fifth higher.",
+    summary: "I read the audited statements of 135 New York governments, and the ones that insure themselves have bills that swing nearly twice as much from year to year and may cost about a fifth more.",
     seoTitle: "Self-Insurance vs Risk Pools: What Local Governments Pay for Liability",
     metaDescription: "Self-insured New York governments may spend a fifth more on liability, and their bills swing nearly twice as much. 135 governments read, 2015 to 2024.",
     links: [

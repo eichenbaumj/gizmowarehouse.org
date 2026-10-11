@@ -172,8 +172,8 @@ export function swingCopy(rows: SwingRow[], leftOut: LeftOut[], v: SwingModelNum
   const a = S.all;
   const sub =
     `Each dot is one government, placed by its costliest year as a multiple of its own ten-year average. ` +
-    `The typical self-insured government's worst year cost ${(a.self.ratio ?? 0).toFixed(1)} times its average; ` +
-    `a covered government's, ${(a.covered.ratio ?? 0).toFixed(1)} times.`;
+    `In its worst year, the typical self-insured government spent ${(a.self.ratio ?? 0).toFixed(1)} times its average. ` +
+    `The typical covered government spent ${(a.covered.ratio ?? 0).toFixed(1)} times its average.`;
   const thin = (Object.keys(CLASS_NAME) as ClassKey[])
     .filter((k) => S[k].covered.n < THIN_JUDGE)
     .map((k) => `${word(S[k].covered.n)} ${S[k].covered.n === 1 ? CLASS_NAME[k][1] : CLASS_NAME[k][2]}`);
@@ -184,8 +184,8 @@ export function swingCopy(rows: SwingRow[], leftOut: LeftOut[], v: SwingModelNum
     .map((q) => ` ${shortName(q.name, true)} is left out because its recorded cost fell below zero in ${word(q.nNeg)} of the ten years, leaving no meaningful average.`)
     .join("");
   const foot =
-    `Across all ten years, a self-insured bill typically lands ${swing} as far from its own average as a covered bill of the same type and size ` +
-    `(the data allow about ${rlo.toFixed(1)} to ${rhi.toFixed(1)} times). ` +
+    `Over all ten years, a self-insured government's bill typically strays ${swing} as far from its own average as a covered government's bill does, ` +
+    `comparing governments of the same type and size (the data allow anywhere from about ${rlo.toFixed(1)} to ${rhi.toFixed(1)} times). ` +
     "Liability cost is insurance premiums plus judgments and claims per resident, in 2024 dollars, from filings with the State Comptroller; " +
     `each arrangement was read from audited statements. The dark tick marks the middle government of a group of ${word(MIN_TICK)} or more.` +
     thinSentence + loSentence + " Tap or hover over a dot for its numbers.";
