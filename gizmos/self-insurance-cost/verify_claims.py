@@ -157,9 +157,11 @@ def main() -> int:
     # the verdict follows the headline: it leans the colleague's way only while the best estimate is above 1.1, and the
     # prose must say the range leaves room for no gap while the range's low end is at or below 1
     if prim:
-        check(("hypothesis gets some support" in body) == (prim["coef"] > 1.1), f"'gets some support' must track the headline ({prim['coef']})")
-        check(("consistent with no difference at all" in body) == (prim["lo"] <= 1), f"'consistent with no difference at all' must track the range's low end ({prim['lo']})")
-        check(prim["hi"] < 3 and near(body, "gap of about a fifth", "falls well short of", 20), f"'a gap of about a fifth falls well short of far more' needs the top of the range under 3x ({prim['hi']})")
+        # the piece does not score the colleague's hypothesis; it says whether the gap could be noise
+        check(("could be noise" in body and "consistent with no difference at all" in body) == (prim["lo"] <= 1),
+              f"'could be noise ... consistent with no difference at all' must track the range's low end ({prim['lo']})")
+        check(f"{round((prim['coef'] - 1) * 10) * 10}% gap" in body, f"the gap sentence must give the headline as {round((prim['coef'] - 1) * 10) * 10}%")
+        check("gets some support" not in body and "hypothesis does not hold up" not in body, "the piece reports the gap; it does not score the colleague's hypothesis")
         check(prim["coef"] > 1 and prim["lo"] <= 1 and "if anything, pays less for it" in body, "'if anything, pays less' needs a best estimate above 1 with a range containing 1")
     sbc = ents["summary_by_class"]
     higher = all(sbc[c]["self"]["median_cor_pc"] > sbc[c]["covered"]["median_cor_pc"] for c in sbc if "self" in sbc[c] and "covered" in sbc[c])

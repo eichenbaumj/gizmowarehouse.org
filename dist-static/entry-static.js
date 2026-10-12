@@ -93048,7 +93048,7 @@ Each of the 109 marks is a government whose audited statements I read. Counties 
 
 Comparing each government only with others of its type and size, self-insured governments spent about a fifth more than covered ones. The data are consistent with anything from about 0.8 times the covered governments' spending to about double. Counting only counties and towns, the two groups spend about the same. Large cities barely enter the test, since the largest city I read that buys coverage, Schenectady, has about 67,000 residents.
 
-So my colleague's hypothesis gets some support. A gap of about a fifth falls well short of the "far more" she predicted, and the data are also consistent with no difference at all. If anything, the public books understate self-insured governments' spending, because their lawyers are paid from other budget lines. Among cities and villages, self-insured governments do seem to pay more, but only eight cities and villages that buy coverage are available to compare them with, too few to say how much. The clearer difference between self-insured and covered governments is in how much their bills swing from year to year.
+A 20% gap could be noise, and the data are also consistent with no difference at all. If anything, the public books understate self-insured governments' spending, because their lawyers are paid from other budget lines. Among cities and villages, self-insured governments do seem to pay more, but only eight cities and villages that buy coverage are available to compare them with, too few to say how much. The clearer difference between self-insured and covered governments is in how much their bills swing from year to year.
 
 ## What goes with a bigger bill
 
