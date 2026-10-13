@@ -226,8 +226,8 @@ def main() -> int:
         with roster.open(encoding="utf-8") as f:
             n_gp = sum(1 for r in csv.DictReader(f) if re.match(r"(County|City|Town|Village) of ", r.get("entity_name", "")))
         check(900 <= n_gp < 1000 and "nearly a thousand" in body, f"NYMIR: roster has {n_gp} general-purpose subscribers; prose must say 'nearly a thousand'")
-    check(near(body, "Vallejo", r"\$500,000") and near(body, "Vallejo", r"\$2\.5 million", 400) and near(body, r"\$392,000", r"\$2\.4 million")
-          and near(body, "working paper", "Vallejo", 300) and "market-based" in body, "Vallejo retention, premium, working-paper label, and Clark's 'market-based' required")
+    # Vallejo narrative cut 2026-10-12 (Joe: clutter); it survives only as the priced-out-of-a-pool example, linked to Clark
+    check(near(body, "priced out", "Vallejo", 200) and "tomclarkphd.com" in body and "$392,000" not in body, "Vallejo: kept only as the cited priced-out example")
     check(near(body, "One risk-pool expert", "100,000", 200) and "Schwartz" in body, "Schwartz: the 100,000 line is one expert's estimate")
     check("mixed together" not in content and "rescue the hypothesis" not in content and "no clear extra cost" not in content,
           "leftover framing from the old null result")
