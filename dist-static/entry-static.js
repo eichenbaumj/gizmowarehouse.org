@@ -93038,13 +93038,13 @@ When Nassau County is sued, Nassau is both defendant and payer. In 2024 it paid 
 
 ## Comparing the bills
 
-Every county, city, town, and village outside New York City reports its insurance and its judgments and claims to the State Comptroller, in files going back to 1995. I read the risk-management note in the audited statements of all 57 counties and the largest cities, towns, and villages, 135 governments in all, then compared what each spent from 2015 to 2024.
+Every county, city, town, and village outside New York City reports its insurance and its judgments and claims to the State Comptroller, in files going back to 1995. Their audited statements say how each one pays its claims, so I sorted all 57 counties and the largest cities, towns, and villages, 135 governments in all, by how they pay, then compared what each spent from 2015 to 2024.
 
 <sic-core-chart></sic-core-chart>
 
-Each of the 109 marks is a government whose audited statements I read. Counties spend less per resident than cities, towns, and villages. Within each type of government, the dark marks (governments that carry their own liability) and the light marks (governments that buy coverage) overlap, but the typical dark mark sits higher.
+Each of the 109 marks is one of those governments. Counties spend less per resident than cities, towns, and villages. Within each type of government, the dark marks (governments that carry their own liability) and the light marks (governments that buy coverage) overlap, but the typical dark mark sits higher.
 
-Comparing each government only with others of its type and size, self-insured governments spent about a fifth more than covered ones. The data are consistent with anything from about 0.8 times the covered governments' spending to about double. Counting only counties and towns, the two groups spend about the same. Large cities barely enter the test, since the largest city I read that buys coverage, Schenectady, has about 67,000 residents.
+Comparing each government only with others of its type and size, self-insured governments spent about a fifth more than covered ones. The data are consistent with anything from about 0.8 times the covered governments' spending to about double. Counting only counties and towns, the two groups spend about the same. Large cities barely enter the test, since the largest city that buys coverage, Schenectady, has about 67,000 residents.
 
 A 20% gap could be noise, and the data are also consistent with no difference at all. If anything, the public books understate self-insured governments' spending, because their lawyers are paid from other budget lines. Among cities and villages, self-insured governments do seem to pay more, but only eight cities and villages that buy coverage are available to compare them with, too few to say how much. The clearer difference between self-insured and covered governments is in how much their bills swing from year to year.
 
@@ -93052,13 +93052,13 @@ A 20% gap could be noise, and the data are also consistent with no difference at
 
 In the public books, a government's liability bill tracks its type and whether it runs a police department. A government with its own police department spends roughly 2.4 times as much per resident on liability as a government of the same type and size without one, anywhere from 1.7 to 3.3 times as much. Even comparing governments of the same type, size, and police status, self-insured governments still spend somewhat more than covered ones, though the data are also consistent with no difference.
 
-Even if insurers handle claims better, a pool may not charge each member according to its own record. Tom Clark, a political scientist at Stanford, traces how that played out in Vallejo, California, in [a 2026 working paper](https://www.tomclarkphd.com/files/police_insurance.pdf). Vallejo paid each claim itself up to $500,000, and its pool paid the rest. The pool charged members largely by payroll, so Vallejo, whose claims ran more than two and a half times what the pool expected, paid the same rate as every other member. In late 2017 the pool voted to make Vallejo pay the first $2.5 million of each claim, and the city moved to what Clark calls market-based coverage, with a $2 million deductible. Vallejo's premium went from $392,000 to $2.4 million by 2024, and Clark finds its police cleared more violent crimes after the switch.
+Even if insurers handle claims better, a pool may not price members by their own records. In [a 2026 working paper](https://www.tomclarkphd.com/files/police_insurance.pdf), Tom Clark, a Stanford political scientist, traces how that played out in Vallejo, California. Vallejo paid each claim itself up to $500,000 and its pool paid the rest. The pool charged members largely by payroll, so Vallejo paid the same rate as everyone else, although its claims ran more than two and a half times what the pool expected. After the pool voted in late 2017 to make Vallejo pay the first $2.5 million of each claim, the city moved to what Clark calls market-based coverage, with a $2 million deductible. Its premium rose from $392,000 to $2.4 million by 2024, and Clark finds its police cleared more violent crimes afterward.
 
 The public books cannot test my colleague's reasoning directly. They show dollars, not claims, so they cannot say whether self-insured governments draw more claims in the first place, pay more on each one, or settle under political pressure. And a government with a bad record can be priced out of a pool, as Vallejo was, and would show up here as a costly self-insurer.
 
 ## What coverage buys
 
-Coverage buys you a bill that you can plan around. Comparing governments of the same type and size, self-insured governments' bills swing nearly twice as much from year to year as covered governments' bills do, and the gap shows up in every type of government. A covered government's bill is mostly a steady premium. The claims a covered government still pays itself jump around too, but they are small.
+Coverage buys you a bill that you can plan around. Comparing governments of the same type and size, self-insured governments' bills swing nearly twice as much from year to year as covered governments' bills do, and the gap shows up in every type of government. A covered government's bill is mostly a steady premium.
 
 <sic-volatility></sic-volatility>
 

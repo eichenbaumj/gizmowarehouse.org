@@ -76,7 +76,7 @@ export default function SicCoreChart() {
         {metric === "cor_liab_pc_mean"
           ? "Average yearly cost of insurance premiums plus judgments and claims per resident, 2015 to 2024, in 2024 dollars."
           : "Average yearly cost of insurance premiums plus judgments and claims per dollar the government spends, 2015 to 2024."}{" "}
-        One mark per government whose arrangement I read from its audited statements, except those listed below.
+        One mark per government, sorted by the arrangement its audited statements describe, except those listed below.
       </Sub>
       <div className="relative">
         <svg viewBox={`0 0 ${VB_W} ${H}`} className="w-full" style={{ overflow: "visible" }} role="img"
