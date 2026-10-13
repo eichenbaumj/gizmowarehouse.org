@@ -51994,8 +51994,6 @@ const gizmos = [
     metaDescription: "Self-insured New York governments may spend a fifth more on liability, and their bills swing nearly twice as much. 135 governments read, 2015 to 2024.",
     links: [
       { label: "Download the New York panel (.csv)", url: "/assets/self-insurance-cost-ny-panel.csv" },
-      { label: "Download the transit panel (.csv)", url: "/assets/self-insurance-cost-ntd-panel.csv" },
-      { label: "Structure labels with sources (.csv)", url: "/assets/self-insurance-cost-treatment-labels.csv" },
       { label: "Methodology & sources (.md)", url: "/assets/self-insurance-cost-methodology.md" },
       { label: "Code and data pipeline (GitHub)", url: "https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost" }
     ]
@@ -93109,7 +93107,7 @@ The code is [public](https://github.com/eichenbaumj/gizmowarehouse.org/tree/main
 - New York State Comptroller, Financial Data for Local Governments (account-level bulk files).
 - New York City Comptroller, claims dashboard release, April 30, 2025 (fiscal 2024: $1.04 billion in injury and property-damage claims within $1.94 billion across 13,397 resolved claims).
 - Nassau County, 2024 Annual Comprehensive Financial Report (suits and damages, $42.9 million; tax certiorari refunds, $43.9 million).
-- Audited financial statements of each labeled government (Federal Audit Clearinghouse and government websites), cited row by row in the labels download.
+- Audited financial statements of each labeled government (Federal Audit Clearinghouse and government websites), cited row by row in [the labels table](https://github.com/eichenbaumj/gizmowarehouse.org/blob/main/gizmos/self-insurance-cost/data/treatment_labels.csv).
 - NYMIR subscriber list by county, as of July 31, 2026; NY Department of Financial Services examination report on NYMIR as of December 31, 2020.
 - Federal Transit Administration, National Transit Database, 2022 to 2024.
 - Joanna Schwartz, "How Governments Pay: Lawsuits, Budgets, and Police Reform," 63 UCLA Law Review 1144 (2016). John Rappaport, "How Private Insurers Regulate Public Police," 130 Harvard Law Review 1539 (2017). Tom Clark, "Municipal Liability Insurance as Police Oversight: Evidence from Vallejo, California," working paper, April 2026.

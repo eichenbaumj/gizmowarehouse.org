@@ -5,7 +5,7 @@ Locks four surfaces to each other:
   - src/config/selfInsuranceCost.ts            (constants, parsed by regex)
   - public/data/self-insurance-cost/*.json     (pipeline outputs)
   - src/content/self-insurance-cost.ts         (the prose, Methodology, Sources)
-  - public/assets/self-insurance-cost-*.csv/.md (the downloads) and the card in src/data/gizmos.ts
+  - public/assets/self-insurance-cost-*.csv/.md (the downloads), data/*.csv (on GitHub), and the card in src/data/gizmos.ts
 
 Rebuilt after the 2026-10-10 adversarial audit (gizmos/self-insurance-cost/research/AUDIT_2026-10-10.md, not
 mirrored): wherever the prose states a number or a quantifier ("every", "about twice", "a third", a range), the
@@ -36,6 +36,7 @@ CONFIG_TS = ROOT / "src/config/selfInsuranceCost.ts"
 CONTENT_TS = ROOT / f"src/content/{SLUG}.ts"
 DATA_DIR = ROOT / f"public/data/{SLUG}"
 ASSETS = ROOT / "public/assets"
+GIZMO = Path(__file__).resolve().parent
 COMPONENTS = ROOT / "src/components/sic"
 GIZMOS_TS = ROOT / "src/data/gizmos.ts"
 CROSSWALKS = ROOT / f"gizmos/{SLUG}/crosswalks"
@@ -278,15 +279,15 @@ def main() -> int:
         check("cor_pc_p90" not in t, f"{f.name}: a chart must not label the 90th-percentile year as the worst year")
 
     # ---- 5. downloads and card ---------------------------------------------
-    for name in (f"{SLUG}-ny-panel.csv", f"{SLUG}-ntd-panel.csv", f"{SLUG}-treatment-labels.csv"):
-        p = ASSETS / name
+    for p in (ASSETS / f"{SLUG}-ny-panel.csv", GIZMO / "data/ntd_panel.csv", GIZMO / "data/treatment_labels.csv"):
+        name = p.name
         if not p.exists():
             fail(f"download missing: {name}")
             continue
         first = p.open(encoding="utf-8").readline()
         check(first.startswith("#") and models["snapshot"] in first and "CC-BY-4.0" in first and "joe@group17a.com" in first and "—" not in first,
               f"{name}: attribution header line malformed")
-    labels = ASSETS / f"{SLUG}-treatment-labels.csv"
+    labels = GIZMO / "data/treatment_labels.csv"
     if labels.exists():
         with labels.open(encoding="utf-8") as f:
             f.readline()

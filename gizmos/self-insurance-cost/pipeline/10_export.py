@@ -1,7 +1,7 @@
 """Stage 10: export the files the site reads and the download pills.
 
 public/data/self-insurance-cost/{ny_entities,ny_switchers,ntd_agencies,models,attribution}.json
-public/assets/self-insurance-cost-{ny-panel,ntd-panel,treatment-labels}.csv (with the attribution header line)
+public/assets/self-insurance-cost-ny-panel.csv (the site download) and data/{ntd_panel,treatment_labels}.csv (on GitHub), each with the attribution header line
 """
 
 from __future__ import annotations

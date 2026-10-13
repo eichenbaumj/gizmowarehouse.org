@@ -160,7 +160,7 @@ NY_LABEL_READINGS_DIR = CROSSWALK_DIR / "ny_label_readings"   # the hand reading
 # fund (counted where the fund pays, not twice). One row per entity x fund x account, with quote and page.
 LINE_CODING_CSV = CROSSWALK_DIR / "ny_line_coding.csv"
 # Which governments were read: every county outside NYC, plus the largest cities, towns, and villages by 2015-2024
-# mean population (governments read beyond these are kept and flagged in the labels download).
+# mean population (governments read beyond these are kept and flagged in data/treatment_labels.csv).
 LABEL_TOP_N = {"city": 20, "town": 30, "village": 10}
 POOL_ROSTER_CSV = CROSSWALK_DIR / "ny_pool_rosters.csv"   # NYMIR subscriber list, 2026-07-31
 # "Self-insured with excess" with a retention at or below this is a deductible, not self-insurance
@@ -224,8 +224,10 @@ PUBLIC_JSON = {
 }
 PUBLIC_JSON_MAX_BYTES = 600_000
 ASSET_NY_PANEL_CSV = ASSETS_DIR / f"{SLUG}-ny-panel.csv"
-ASSET_NTD_PANEL_CSV = ASSETS_DIR / f"{SLUG}-ntd-panel.csv"
-ASSET_LABELS_CSV = ASSETS_DIR / f"{SLUG}-treatment-labels.csv"
+# The transit panel and the full labels table ship on GitHub (the public mirror), not as site downloads (Joe, 2026-10-12).
+GITHUB_DATA_DIR = GIZMO_DIR / "data"
+ASSET_NTD_PANEL_CSV = GITHUB_DATA_DIR / "ntd_panel.csv"
+ASSET_LABELS_CSV = GITHUB_DATA_DIR / "treatment_labels.csv"
 ASSET_METHODOLOGY_MD = ASSETS_DIR / f"{SLUG}-methodology.md"
 CSV_HEADER_COMMENT = (
     f"# {SLUG} | gizmowarehouse.org | snapshot {SNAPSHOT_DATE} | license CC-BY-4.0 | "

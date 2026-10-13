@@ -56,8 +56,6 @@ export const gizmos: Gizmo[] = [
     metaDescription: "Self-insured New York governments may spend a fifth more on liability, and their bills swing nearly twice as much. 135 governments read, 2015 to 2024.",
     links: [
       { label: "Download the New York panel (.csv)", url: "/assets/self-insurance-cost-ny-panel.csv" },
-      { label: "Download the transit panel (.csv)", url: "/assets/self-insurance-cost-ntd-panel.csv" },
-      { label: "Structure labels with sources (.csv)", url: "/assets/self-insurance-cost-treatment-labels.csv" },
       { label: "Methodology & sources (.md)", url: "/assets/self-insurance-cost-methodology.md" },
       { label: "Code and data pipeline (GitHub)", url: "https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost" },
     ],

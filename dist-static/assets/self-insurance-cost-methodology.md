@@ -31,7 +31,7 @@ Twenty-four labeled governments are left out because their books cannot carry th
 - They self-insure, but their documented liability claims paid exceed everything the Comptroller's lines show for liability that year (Suffolk County, Tonawanda, Hempstead, Brookhaven), or they show no claim payments in ten years and no self-insurance fund that pays them (Erie, Seneca, Otsego, Delaware, West Seneca).
 - They buy coverage but book premiums on department lines, averaging under $1 a resident of unallocated insurance (Albany, Chautauqua, Chemung, Herkimer, Oneida, Orleans, and Wyoming counties; Village of Harrison).
 
-Ithaca and Mount Vernon have fewer than eight years of filings. Every held-out government and its reason is in the labels download and under the chart.
+Ithaca and Mount Vernon have fewer than eight years of filings. Every held-out government and its reason is in the labels table on GitHub (data/treatment_labels.csv) and under the chart.
 
 ## The level comparison
 
