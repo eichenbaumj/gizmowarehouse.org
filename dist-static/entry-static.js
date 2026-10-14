@@ -91528,7 +91528,7 @@ The output is designed for a specific use case (14" laptop screen, piano stand, 
 
 The code is on GitHub. [github.com/eichenbaumj/fakebook-maker](https://github.com/eichenbaumj/fakebook-maker) has the build script, the chord-grammar QC tools, the tests, and two demo charts. Clone it, \`pip install reportlab\`, drop your own \`.txt\` charts in \`charts/\`, and run \`python3 fakebook/build.py\`.
 
-You can also **download my fakebook** (link above) to see what the output looks like. That copy is the public-domain edition, since most of the full book's lyrics are still under copyright. The public one carries the nine tunes old enough to share.
+You can also **download my fakebook** (link above) to see what the output looks like. That copy is the public-domain edition, since most of the full book's lyrics are still under copyright. The public one carries the ten tunes old enough to share.
 
 If you play from a laptop or tablet, this will change your life. If you play from paper, it'll at least make your binder more organized.
 `;
