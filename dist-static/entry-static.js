@@ -93050,7 +93050,7 @@ A 20% gap could be noise, and the data are also consistent with no difference at
 
 ## What goes with a bigger bill
 
-In the public books, a government's liability bill tracks its type and whether it runs a police department. A government with its own police department spends roughly 2.4 times as much per resident on liability as a government of the same type and size without one, anywhere from 1.7 to 3.3 times as much. Even comparing governments of the same type, size, and police status, self-insured governments still spend somewhat more than covered ones, though the data are also consistent with no difference.
+The biggest differences in liability bills come down to the type of government and whether it has its own police department. A government with its own police department spends roughly 2.4 times as much per resident on liability as a government of the same type and size without one, anywhere from 1.7 to 3.3 times as much. Even comparing governments of the same type, size, and police status, self-insured governments still spend somewhat more than covered ones, though the data are also consistent with no difference.
 
 The public books cannot test my colleague's reasoning directly. They show dollars, not claims, so they cannot say whether self-insured governments draw more claims in the first place, pay more on each one, or settle under political pressure. And a government with a bad record can be priced out of a pool, as [Vallejo, California, was](https://www.tomclarkphd.com/files/police_insurance.pdf), and would show up here as a costly self-insurer.
 
