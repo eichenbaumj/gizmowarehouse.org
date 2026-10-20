@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run check:basemap && npm run derive-data && npm run generate-sitemap && vite build && npm run build:static && npm run prerender",
+    "build": "npm run check:basemap && npm run derive-data && npm run generate-sitemap && vite build && npm run check:draft-leak && npm run build:static && npm run prerender",
+    "check:draft-leak": "tsx tools/check-draft-leak.ts",
     "build:dev": "npm run check:basemap && npm run derive-data && npm run generate-sitemap && vite build --mode development && npm run build:static && npm run prerender",
     "build:static": "vite build --ssr src/entry-static.tsx --outDir dist-static --emptyOutDir",
     "prerender": "tsx tools/prerender.ts",

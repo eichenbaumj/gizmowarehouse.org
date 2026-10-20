@@ -15,15 +15,18 @@ import { usePageMeta } from "@/lib/usePageMeta";
 import { gizmoSeo, notFoundSeo, relatedGizmos } from "@/lib/seo";
 import { useStaticData } from "@/lib/staticData";
 import GizmoCard from "@/components/GizmoCard";
+import { devDrafts } from "@/lib/devDrafts";
 
 // Custom HTML-style tags in markdown (e.g. <nyc-tax-map />) resolve to React
 // components from the embed registry. `gizmoEmbeds` is a stable module-scope
-// object, so component identities don't change across renders.
+// object, so component identities don't change across renders. Under the dev
+// server only, draft gizmos (src/lib/devDrafts.ts) add their own registry.
 //
 // Markdown auto-wraps standalone elements in a <p>, which is invalid HTML
 // when the child renders a <div> (which all our embeds do). Override `p` to
 // detect a registered embed child and unwrap.
-const embedTypes = new Set(Object.values(gizmoEmbeds));
+const allEmbeds = { ...gizmoEmbeds, ...(devDrafts?.embeds ?? {}) };
+const embedTypes = new Set(Object.values(allEmbeds));
 
 function childContainsEmbed(children: ReactNode): boolean {
   return Children.toArray(children).some((child) => {
@@ -48,7 +51,7 @@ function headingSlug(children: ReactNode): string {
 }
 
 const markdownComponents: Components = {
-  ...(gizmoEmbeds as Components),
+  ...(allEmbeds as Components),
   p: ({ children, ...props }) => {
     if (childContainsEmbed(children)) {
       return <Fragment>{children}</Fragment>;
@@ -69,7 +72,8 @@ const markdownComponents: Components = {
 
 export default function GizmoPage() {
   const { slug } = useParams<{ slug: string }>();
-  const gizmo = gizmos.find((g) => g.slug === slug);
+  const draft = devDrafts?.gizmos.find((g) => g.slug === slug);
+  const gizmo = gizmos.find((g) => g.slug === slug) ?? draft;
 
   usePageMeta(gizmo ? gizmoSeo(gizmo) : notFoundSeo());
 
@@ -102,7 +106,7 @@ export default function GizmoPage() {
     );
 
   const rawContent =
-    (mode === "bluf" ? gizmoBlufContent[gizmo.slug] : gizmoContent[gizmo.slug]) || "";
+    (mode === "bluf" ? gizmoBlufContent[gizmo.slug] : gizmoContent[gizmo.slug] ?? devDrafts?.content[gizmo.slug]) || "";
 
   // Load optional data context for {tokenName} interpolation. At build time
   // the static renderer supplies it up front (src/lib/staticData.tsx) so the
@@ -128,6 +132,11 @@ export default function GizmoPage() {
 
   return (
     <div>
+      {draft && (
+        <div className="mb-6 rounded-md border border-amber-400 bg-amber-50 px-4 py-2 text-sm text-amber-900">
+          DRAFT PREVIEW, localhost only. Not wired into the site, not mirrored, not live.
+        </div>
+      )}
       <Link
         to="/"
         className="inline-flex items-center gap-1.5 text-sm text-steel hover:text-cobalt transition-colors mb-8"

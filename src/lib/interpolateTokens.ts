@@ -4,7 +4,7 @@
 //
 // Tokens use the form {tokenName} or {tokenName:format} where format is one
 // of: "M" (millions, 1 decimal), "K" (thousands, no decimal), "%" (percent),
-// "n" (raw integer with thousands separators), or "raw" (no formatting).
+// "n" (raw integer with thousands separators), "1dp" (one decimal), or "raw" (no formatting).
 // Default format when omitted is "n".
 //
 // Lookup path: nested keys via dot notation. `{national.subject_count_strict:M}`
@@ -12,7 +12,7 @@
 
 export type TokenContext = Record<string, any>;
 
-const TOKEN_RE = /\{([a-zA-Z0-9_.]+)(?::([a-zA-Z%]+))?\}/g;
+const TOKEN_RE = /\{([a-zA-Z0-9_.]+)(?::([a-zA-Z0-9%_]+))?\}/g;
 
 function lookup(ctx: TokenContext, path: string): any {
   return path.split(".").reduce<any>((acc, key) => {
@@ -40,6 +40,8 @@ function formatValue(value: any, format: string): string {
       return Math.round(n * 100) + "%";
     case "raw":
       return String(value);
+    case "1dp":
+      return n.toFixed(1);
     case "n":
     default:
       return Math.round(n).toLocaleString("en-US");

@@ -51753,9 +51753,9 @@ function encodeLocation(to) {
 const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 
 const lastmod = {
-	"/": "2026-10-09",
-	"/gizmo/self-insurance-cost": "2026-10-09",
-	"self-insurance-cost": "2026-10-09",
+	"/": "2026-10-12",
+	"/gizmo/self-insurance-cost": "2026-10-14",
+	"self-insurance-cost": "2026-10-14",
 	"/gizmo/daf-yomi": "2026-09-20",
 	"daf-yomi": "2026-09-20",
 	"/gizmo/only-way-to-start-is-by-starting": "2026-09-16",
@@ -51778,17 +51778,17 @@ const lastmod = {
 	"nyc-public-grocery-math": "2026-08-18",
 	"/gizmo/reducing-violence-whitepaper": "2026-04-05",
 	"reducing-violence-whitepaper": "2026-04-05",
-	"/gizmo/fakebook-maker": "2026-08-31",
-	"fakebook-maker": "2026-08-31",
+	"/gizmo/fakebook-maker": "2026-10-14",
+	"fakebook-maker": "2026-10-14",
 	"/gizmo/medicaid-work-requirements/methodology": "2026-06-25",
 	"/gizmo/public-private-compensation-comparison/methodology": "2026-06-23",
-	"/category/public-safety": "2026-10-09",
-	"/category/music": "2026-10-09",
-	"/category/using-ai": "2026-10-09",
-	"/category/city-government": "2026-10-09",
-	"/category/state-government": "2026-10-09",
-	"/category/healthcare-policy": "2026-10-09",
-	"/category/nyc": "2026-10-09"
+	"/category/public-safety": "2026-10-12",
+	"/category/music": "2026-10-12",
+	"/category/using-ai": "2026-10-12",
+	"/category/city-government": "2026-10-12",
+	"/category/state-government": "2026-10-12",
+	"/category/healthcare-policy": "2026-10-12",
+	"/category/nyc": "2026-10-12"
 };
 
 const SITE_URL = "https://gizmowarehouse.org";
@@ -115338,7 +115338,7 @@ const gizmoEmbeds = {
   "grocery-dial": GroceryDial
 };
 
-const TOKEN_RE = /\{([a-zA-Z0-9_.]+)(?::([a-zA-Z%]+))?\}/g;
+const TOKEN_RE = /\{([a-zA-Z0-9_.]+)(?::([a-zA-Z0-9%_]+))?\}/g;
 function lookup(ctx, path) {
   return path.split(".").reduce((acc, key) => {
     if (acc == null) return void 0;
@@ -115364,6 +115364,8 @@ function formatValue(value, format) {
       return Math.round(n * 100) + "%";
     case "raw":
       return String(value);
+    case "1dp":
+      return n.toFixed(1);
     case "n":
     default:
       return Math.round(n).toLocaleString("en-US");
@@ -115383,7 +115385,10 @@ function useStaticData() {
   return reactExports.useContext(StaticDataContext);
 }
 
-const embedTypes = new Set(Object.values(gizmoEmbeds));
+const devDrafts = void 0;
+
+const allEmbeds = { ...gizmoEmbeds, ...{} };
+const embedTypes = new Set(Object.values(allEmbeds));
 function childContainsEmbed(children) {
   return reactExports.Children.toArray(children).some((child) => {
     if (reactExports.isValidElement(child)) {
@@ -115397,7 +115402,7 @@ function headingSlug$2(children) {
   return txt || "section";
 }
 const markdownComponents$2 = {
-  ...gizmoEmbeds,
+  ...allEmbeds,
   p: ({ children, ...props }) => {
     if (childContainsEmbed(children)) {
       return /* @__PURE__ */ jsxRuntimeExports.jsx(reactExports.Fragment, { children });
@@ -115411,7 +115416,8 @@ const markdownComponents$2 = {
 };
 function GizmoPage() {
   const { slug } = useParams();
-  const gizmo = gizmos.find((g) => g.slug === slug);
+  const draft = devDrafts?.gizmos.find((g) => g.slug === slug);
+  const gizmo = gizmos.find((g) => g.slug === slug) ?? draft;
   usePageMeta(gizmo ? gizmoSeo(gizmo) : notFoundSeo());
   if (!gizmo) {
     return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "py-20 text-center", children: [
@@ -115431,7 +115437,7 @@ function GizmoPage() {
     },
     { replace: false }
   );
-  const rawContent = (mode === "bluf" ? gizmoBlufContent[gizmo.slug] : gizmoContent[gizmo.slug]) || "";
+  const rawContent = (mode === "bluf" ? gizmoBlufContent[gizmo.slug] : gizmoContent[gizmo.slug] ?? devDrafts?.content[gizmo.slug]) || "";
   const staticData = useStaticData();
   const [dataContext, setDataContext] = reactExports.useState(
     () => gizmo.dataContextUrl ? staticData.dataContexts[gizmo.dataContextUrl] ?? null : null
@@ -115447,6 +115453,7 @@ function GizmoPage() {
   const related = relatedGizmos(gizmo, gizmos);
   const content = interpolateTokens(rawContent, dataContext);
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { children: [
+    draft,
     /* @__PURE__ */ jsxRuntimeExports.jsxs(
       Link,
       {
