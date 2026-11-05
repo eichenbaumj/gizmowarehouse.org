@@ -51,7 +51,7 @@ export const gizmos: Gizmo[] = [
     dek: "More violent complaints are recorded here than anywhere else in Brooklyn. The count has more than tripled since 2006, while the city's barely moved. A third of them are logged at one courthouse. I wanted to know what the rest are.",
     categories: ["Public Safety", "NYC"],
     date: "2026-11",
-    summary: "Twenty years of NYPD complaints on the Downtown Brooklyn block the crime map calls the second most violent in the city, and why a courthouse and a mall explain most of it.",
+    summary: "Downtown Brooklyn's Hoyt-Schermerhorn block has more violent complaints on record than anywhere else in Brooklyn. I went through twenty years of NYPD data to find out why. A third are logged at the courthouse on Schermerhorn Street, and the fastest-growing kind is robbery in the stores on Fulton Street.",
     seoTitle: "Hoyt-Schermerhorn Crime: What 20 Years of NYPD Complaints Say About Downtown Brooklyn",
     metaDescription: "Downtown Brooklyn's Hoyt-Schermerhorn ranks second in NYC for violent complaints. A courthouse and a mall explain most of it. Street robbery never rose.",
     dataContextUrl: "/data/hoyt-schermerhorn-crime-analysis/context.json",
