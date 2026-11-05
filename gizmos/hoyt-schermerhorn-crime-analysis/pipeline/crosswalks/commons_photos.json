@@ -1,0 +1,79 @@
+{
+ "arrive-fulton-east": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-arrive-fulton-east.jpg",
+  "caption": "Fulton Street at Bond Street, looking toward the mall",
+  "captured_at": "2026-04-23",
+  "facing_deg": 250,
+  "attribution": "Photo: ajay_suresh, Wikimedia Commons, CC BY 4.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Cookie%27s_Department_Stores_(55267413817).jpg",
+  "license": "CC BY 4.0",
+  "commons_title": "File:Cookie's Department Stores (55267413817).jpg"
+ },
+ "macys-block": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-macys-block.jpg",
+  "caption": "The former Abraham and Straus building, Macy's, on Fulton Street",
+  "captured_at": "2022-11-15",
+  "facing_deg": 20,
+  "attribution": "Photo: Kidfly182, Wikimedia Commons, CC BY-SA 4.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Macy%E2%80%99s_Downtown_Brooklyn.jpg",
+  "license": "CC BY-SA 4.0",
+  "commons_title": "File:Macy\u2019s Downtown Brooklyn.jpg"
+ },
+ "mid-mall": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-mid-mall.jpg",
+  "caption": "Fulton Street at Gallatin Place, the store block between Hoyt Street and Elm Place",
+  "captured_at": "2023-04-07",
+  "facing_deg": 70,
+  "attribution": "Photo: Tdorante10, Wikimedia Commons, CC BY-SA 4.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Fulton_St_Lawrence_St_Gallatin_Pl_td_(2023-04-07)_14.jpg",
+  "license": "CC BY-SA 4.0",
+  "commons_title": "File:Fulton St Lawrence St Gallatin Pl td (2023-04-07) 14.jpg"
+ },
+ "albee-square": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-albee-square.jpg",
+  "caption": "The City Point entrance on Fulton Street at Albee Square, the busiest larceny point in the circle",
+  "captured_at": "2026-04-23",
+  "facing_deg": 40,
+  "attribution": "Photo: ajay_suresh, Wikimedia Commons, CC BY 4.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:City_Point_-_Brooklyn_(55268461473).jpg",
+  "license": "CC BY 4.0",
+  "commons_title": "File:City Point - Brooklyn (55268461473).jpg"
+ },
+ "hoyt-stairs": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-hoyt-stairs.jpg",
+  "caption": "Hoyt-Schermerhorn station entrance on Schermerhorn Street",
+  "captured_at": "2026-05-07",
+  "facing_deg": 180,
+  "attribution": "Photo: Sashimi-b, Wikimedia Commons, CC BY 4.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Hoyt-Schermerhorn_entrance_between_Hoyt-Bond_streets.jpg",
+  "license": "CC BY 4.0",
+  "commons_title": "File:Hoyt-Schermerhorn entrance between Hoyt-Bond streets.jpg"
+ },
+ "dekalb-headhouse": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-dekalb-headhouse.jpg",
+  "caption": "DeKalb Avenue station entrance at Fleet Street and Flatbush Avenue Extension",
+  "captured_at": null,
+  "facing_deg": 120,
+  "attribution": "Photo: Harrison Leong, Wikimedia Commons, CC BY-SA 3.0",
+  "source_url": "https://commons.wikimedia.org/wiki/File:DeKalb_Avenue-Fleet_Street_Entrance.JPG",
+  "license": "CC BY-SA 3.0",
+  "commons_title": "File:DeKalb Avenue-Fleet Street Entrance.JPG"
+ },
+ "close-stairs": {
+  "status": "commons",
+  "file": "/assets/hoyt-schermerhorn-crime-analysis-photo-close-stairs.jpg",
+  "caption": "Looking east across Boerum Place at the Fulton Street Mall",
+  "captured_at": "2006-09 (month)",
+  "facing_deg": 70,
+  "attribution": "Photo: David Shankbone; cropped by Beyond My Ken (talk) 00:50, 14 January 2011 (UTC), Wikimedia Commons, CC BY 2.5",
+  "source_url": "https://commons.wikimedia.org/wiki/File:Fulton_Street_Mall_by_David_Shankbone_crop.jpg",
+  "license": "CC BY 2.5",
+  "commons_title": "File:Fulton Street Mall by David Shankbone crop.jpg"
+ }
+}

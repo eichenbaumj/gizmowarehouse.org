@@ -1,0 +1,215 @@
+{
+"type": "FeatureCollection",
+"features": [
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.985,
+40.6905
+]
+},
+"properties": {
+"name": "Fulton Mall",
+"kind": "street",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9836,
+40.6908
+]
+},
+"properties": {
+"name": "Albee Square",
+"kind": "place",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9826,
+40.6912
+]
+},
+"properties": {
+"name": "City Point",
+"kind": "place",
+"status": "unverified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.985,
+40.6885
+]
+},
+"properties": {
+"name": "Hoyt-Schermerhorn",
+"kind": "station",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9853,
+40.6905
+]
+},
+"properties": {
+"name": "Hoyt St",
+"kind": "station",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9814,
+40.6906
+]
+},
+"properties": {
+"name": "DeKalb Ave",
+"kind": "station",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9802,
+40.6883
+]
+},
+"properties": {
+"name": "Nevins St",
+"kind": "station",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9866,
+40.6923
+]
+},
+"properties": {
+"name": "Jay St-MetroTech",
+"kind": "station",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9887,
+40.6899
+]
+},
+"properties": {
+"name": "120 Schermerhorn: Criminal Court and Central Booking",
+"kind": "institution",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9906,
+40.6886
+]
+},
+"properties": {
+"name": "Brooklyn Detention Complex",
+"kind": "institution",
+"status": "unverified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.985,
+40.6893
+]
+},
+"properties": {
+"name": "Livingston St",
+"kind": "street",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.987,
+40.6886
+]
+},
+"properties": {
+"name": "Schermerhorn St",
+"kind": "street",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.981,
+40.6912
+]
+},
+"properties": {
+"name": "Flatbush Ave Ext",
+"kind": "street",
+"status": "verified"
+}
+},
+{
+"type": "Feature",
+"geometry": {
+"type": "Point",
+"coordinates": [
+-73.9862,
+40.689
+]
+},
+"properties": {
+"name": "Hoyt-Schermerhorn entrance (Schermerhorn St)",
+"kind": "station",
+"status": "verified"
+}
+}
+]
+}

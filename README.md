@@ -11,6 +11,7 @@ snapshot commits, so file history here is intentionally shallow.
 
 ## The gizmos
 
+- **[The Trouble With Hoyt-Schermerhorn](https://gizmowarehouse.org/gizmo/hoyt-schermerhorn-crime-analysis)** (2026-11) — Twenty years of NYPD complaints on the Downtown Brooklyn block the crime map calls the second most violent in the city, and why a courthouse and a mall explain most of it.
 - **[The Price of Insuring Yourself](https://gizmowarehouse.org/gizmo/self-insurance-cost)** (2026-10) — I read the audited statements of 135 New York governments, and the ones that insure themselves have bills that swing nearly twice as much from year to year and may cost about a fifth more.
 - **[Introducing Daf Yomi Dot Dev](https://gizmowarehouse.org/gizmo/daf-yomi)** (2026-09) — I built a Daf Yomi Machine with Claude. I hope it causes me to read a little more Talmud. I explain how I made it. I hope you use it if you're interested!
 - **[The Only Way to Start Is by Starting](https://gizmowarehouse.org/gizmo/only-way-to-start-is-by-starting)** (2026-09) — A short paper on how a state or local agency can get real value from AI in ninety days with one accountable owner, a handful of paid licenses, and one well-chosen piece of real work.

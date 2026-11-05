@@ -55,6 +55,7 @@ const Nothing: ComponentType = () => null;
 // ---------------------------------------------------------------- self-insurance-cost
 import sicEntities from "../../public/data/self-insurance-cost/ny_entities.json";
 import { CLASS_NAME, MIN_TICK, classOrder, fx, summarize, swingRows, type ClassKey } from "@/components/sic/sicVolatilityModel";
+import { hoytEmbedsStatic } from "@/components/hoyt/hoyt.static";
 
 const SicCoreStatic: ComponentType = () => {
   const s = sicEntities.summary as Record<string, { n: number; median_cor_pc: number; median_ins_pc: number; median_jc_pc: number; median_max: number }>;
@@ -401,4 +402,5 @@ export const gizmoEmbeds: Record<string, ComponentType> = {
   "compgap-compression": CompGapCaption("compgap-compression", "Wage compression: the ratio of 90th-percentile to median pay, public vs private. Chart in the browser."),
   "compgap-locality-card": CompGapLocalityCard,
   "grocery-dial": GroceryDial,
+  ...hoytEmbedsStatic,
 };

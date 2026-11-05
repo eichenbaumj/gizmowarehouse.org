@@ -46,6 +46,20 @@ export function categoryFromSlug(slug: string): Category | undefined {
 
 export const gizmos: Gizmo[] = [
   {
+    slug: "hoyt-schermerhorn-crime-analysis",
+    title: "The Trouble With Hoyt-Schermerhorn",
+    dek: "More violent complaints are recorded here than anywhere else in Brooklyn. The count has more than tripled since 2006, while the city's barely moved. A third of them are logged at one courthouse. I wanted to know what the rest are.",
+    categories: ["Public Safety", "NYC"],
+    date: "2026-11",
+    summary: "Twenty years of NYPD complaints on the Downtown Brooklyn block the crime map calls the second most violent in the city, and why a courthouse and a mall explain most of it.",
+    seoTitle: "Hoyt-Schermerhorn Crime: What 20 Years of NYPD Complaints Say About Downtown Brooklyn",
+    metaDescription: "Downtown Brooklyn's Hoyt-Schermerhorn ranks second in NYC for violent complaints. A courthouse and a mall explain most of it. Street robbery never rose.",
+    dataContextUrl: "/data/hoyt-schermerhorn-crime-analysis/context.json",
+    links: [
+      { label: "Download the data (.zip: four CSVs and a README)", url: "/assets/hoyt-schermerhorn-crime-analysis-data.zip" },
+    ],
+  },
+  {
     slug: "self-insurance-cost",
     title: "The Price of Insuring Yourself",
     dek: "Governments that carry their own liability have bills that swing nearly twice as much from year to year. They may also spend about a fifth more, though the data can't pin that gap down.",

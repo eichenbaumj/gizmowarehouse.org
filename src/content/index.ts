@@ -12,6 +12,7 @@ import gospelOfClaudeCode from "./gospel-of-claude-code";
 import onlyWayToStartIsByStarting from "./only-way-to-start-is-by-starting";
 import dafYomi from "./daf-yomi";
 import selfInsuranceCost from "./self-insurance-cost";
+import hoytSchermerhornCrimeAnalysis from "./hoyt-schermerhorn-crime-analysis";
 
 export const gizmoContent: Record<string, string> = {
   "data-center-restriction-cost": dataCenterRestrictionCost,
@@ -28,6 +29,7 @@ export const gizmoContent: Record<string, string> = {
   "only-way-to-start-is-by-starting": onlyWayToStartIsByStarting,
   "daf-yomi": dafYomi,
   "self-insurance-cost": selfInsuranceCost,
+  "hoyt-schermerhorn-crime-analysis": hoytSchermerhornCrimeAnalysis,
 };
 
 // Optional short-form ("BLUF") variants, keyed by the same slug. A gizmo has a

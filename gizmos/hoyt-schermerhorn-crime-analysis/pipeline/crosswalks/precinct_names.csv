@@ -1,0 +1,79 @@
+precinct,borough,neighborhoods
+1,Manhattan,Financial District; Tribeca; Battery Park City
+5,Manhattan,Chinatown; Little Italy; Lower East Side west
+6,Manhattan,Greenwich Village; West Village
+7,Manhattan,Lower East Side
+9,Manhattan,East Village; Alphabet City
+10,Manhattan,Chelsea; Hudson Yards
+13,Manhattan,Gramercy; Flatiron; Stuyvesant Town
+14,Manhattan,Midtown South; Garment District; Herald Square
+17,Manhattan,Murray Hill; Turtle Bay; Kips Bay
+18,Manhattan,Midtown North; Times Square; Hell's Kitchen south
+19,Manhattan,Upper East Side
+20,Manhattan,Upper West Side south
+22,Manhattan,Central Park
+23,Manhattan,East Harlem south
+24,Manhattan,Upper West Side north
+25,Manhattan,East Harlem north
+26,Manhattan,Morningside Heights; Manhattanville
+28,Manhattan,Central Harlem south
+30,Manhattan,Hamilton Heights; Sugar Hill
+32,Manhattan,Central Harlem north
+33,Manhattan,Washington Heights south
+34,Manhattan,Washington Heights north; Inwood
+40,Bronx,Mott Haven; Port Morris; Melrose
+41,Bronx,Hunts Point; Longwood
+42,Bronx,Morrisania; Claremont
+43,Bronx,Soundview; Parkchester; Castle Hill
+44,Bronx,Concourse; Highbridge; Yankee Stadium
+45,Bronx,Throggs Neck; Co-op City; Pelham Bay
+46,Bronx,Fordham; University Heights; Mount Hope
+47,Bronx,Wakefield; Williamsbridge; Woodlawn
+48,Bronx,Belmont; East Tremont; Fordham east
+49,Bronx,Pelham Parkway; Morris Park; Allerton
+50,Bronx,Riverdale; Kingsbridge
+52,Bronx,Bedford Park; Norwood; Fordham west
+60,Brooklyn,Coney Island; Brighton Beach
+61,Brooklyn,Sheepshead Bay; Gravesend
+62,Brooklyn,Bensonhurst; Bath Beach
+63,Brooklyn,Marine Park; Mill Basin; Bergen Beach
+66,Brooklyn,Borough Park; Kensington
+67,Brooklyn,East Flatbush
+68,Brooklyn,Bay Ridge; Dyker Heights
+69,Brooklyn,Canarsie
+70,Brooklyn,Flatbush; Midwood
+71,Brooklyn,Crown Heights south; Prospect Lefferts Gardens
+72,Brooklyn,Sunset Park; Windsor Terrace
+73,Brooklyn,Brownsville; Ocean Hill
+75,Brooklyn,East New York; Cypress Hills
+76,Brooklyn,Red Hook; Carroll Gardens; Gowanus
+77,Brooklyn,Crown Heights north; Prospect Heights
+78,Brooklyn,Park Slope; Prospect Park
+79,Brooklyn,Bedford-Stuyvesant west
+81,Brooklyn,Bedford-Stuyvesant east
+83,Brooklyn,Bushwick
+84,Brooklyn,Downtown Brooklyn; Brooklyn Heights; Boerum Hill; DUMBO
+88,Brooklyn,Fort Greene; Clinton Hill
+90,Brooklyn,Williamsburg south; East Williamsburg
+94,Brooklyn,Greenpoint; Williamsburg north
+100,Queens,Rockaway Peninsula west; Breezy Point
+101,Queens,Far Rockaway
+102,Queens,Richmond Hill; Kew Gardens; Woodhaven
+103,Queens,Jamaica; Hollis
+104,Queens,Ridgewood; Glendale; Maspeth; Middle Village
+105,Queens,Queens Village; Cambria Heights; Laurelton; Rosedale
+106,Queens,Ozone Park; Howard Beach
+107,Queens,Fresh Meadows; Briarwood; Jamaica Estates
+108,Queens,Long Island City; Sunnyside; Woodside
+109,Queens,Flushing; College Point; Whitestone
+110,Queens,Elmhurst; Corona
+111,Queens,Bayside; Douglaston; Little Neck
+112,Queens,Forest Hills; Rego Park
+113,Queens,South Jamaica; St. Albans; Springfield Gardens
+114,Queens,Astoria; Long Island City north
+115,Queens,Jackson Heights; East Elmhurst
+120,Staten Island,St. George; Stapleton; North Shore west
+121,Staten Island,Mariners Harbor; Port Richmond; Westerleigh
+122,Staten Island,New Dorp; South Beach; Mid-Island
+123,Staten Island,Tottenville; Great Kills; South Shore
+116,Queens,Rosedale; Springfield Gardens south; Brookville

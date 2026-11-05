@@ -1,0 +1,276 @@
+{
+ "snapshot": "2026-10-19",
+ "years": {
+  "first": 2006,
+  "last": 2026,
+  "partial": 2026,
+  "partial_through": "2026-06-30"
+ },
+ "cell": {
+  "id": "40_42",
+  "n_cells": 2854,
+  "count_2024_25": 438,
+  "rank_all": 2,
+  "rank_no_officer": 5,
+  "rank_no_officer_no_retail": 15,
+  "rank_no_courthouse": 21,
+  "count_no_courthouse": 266,
+  "times_square_count_2024_25": 607
+ },
+ "core": {
+  "radius_m": 400,
+  "violent_2006_2026": 2797,
+  "courthouse_point_total": 689,
+  "courthouse_point_2024_25": 172,
+  "courthouse_point_share_2024_25": 0.3122
+ },
+ "night": {
+  "core_share": 0.224,
+  "city_share": 0.3601,
+  "gap_pp": 13.61,
+  "gap_ci": [
+   12.06,
+   15.07
+  ],
+  "weekday_share_core": 0.767,
+  "weekday_share_city": 0.685
+ },
+ "index": {
+  "core_2024_25_vs_2010s": 2.604,
+  "core_ex_courthouse_2024_25_vs_2010s": 2.222,
+  "brooklyn_2024_25_vs_2010s": 0.996,
+  "city_2024_25_vs_2010s": 1.229,
+  "pct84_2024_25_vs_2010s": 2.067
+ },
+ "retail": {
+  "shoplift_robbery_base_per_year": 16.0,
+  "shoplift_robbery_2024": 73,
+  "shoplift_robbery_2025": 54,
+  "shoplift_code_first_year": 2011,
+  "petit_larceny_2010s_per_year": 708,
+  "petit_larceny_peak_year": 2024,
+  "petit_larceny_peak": 1469
+ },
+ "street_robbery": {
+  "vs_2010s": 0.992,
+  "min_year_count": 15,
+  "max_year_count": 59,
+  "publishable": true
+ },
+ "h1": {
+  "rule": "reported_by_june_30",
+  "core400": {
+   "2024": 132,
+   "2025": 126,
+   "2026": 137
+  },
+  "city": {
+   "2024": 22569,
+   "2025": 21794,
+   "2026": 21032
+  },
+  "brooklyn": {
+   "2024": 6047,
+   "2025": 5906,
+   "2026": 5668
+  },
+  "core400_ex_courthouse": {
+   "2024": 86,
+   "2025": 85,
+   "2026": 81
+  },
+  "courthouse": {
+   "2024": 46,
+   "2025": 41,
+   "2026": 56
+  },
+  "street_stores": {
+   "2024": 84,
+   "2025": 76,
+   "2026": 78
+  }
+ },
+ "words": {
+  "claim_1": {
+   "core": "about 2.5 times",
+   "brooklyn": "about the same",
+   "city": "about 23 percent higher",
+   "core_ex_courthouse": "about 2 times"
+  },
+  "claim_2": {
+   "vs_2010s": "about the same",
+   "vs_2006_08": "about 29 percent lower",
+   "range": "15 to 59 a year",
+   "trend": "-3.7 percent a year since 2006"
+  },
+  "claim_3": {
+   "base_per_year": "about 16 a year",
+   "2024": "73",
+   "2025": "54",
+   "base_years": "2012 to 2019"
+  },
+  "claim_4": {
+   "core": "about 3 times",
+   "core_ex_courthouse": "about 3 times",
+   "city": "about 46 percent higher"
+  },
+  "claim_5": {
+   "core": "22 percent",
+   "city": "36 percent",
+   "gap": "14 points (range 12 to 15)"
+  },
+  "claim_6": {
+   "share_2024_25": "31 percent",
+   "count_2024_25_core400": "172",
+   "count_2006_2026_core400": "689",
+   "core_total_2006_2026": "2797",
+   "footprint_word": "within 400 meters of the station"
+  },
+  "claim_7": {
+   "all": "#2",
+   "no_officer": "#5",
+   "no_officer_no_retail": "#15",
+   "of": "of 2,854 cells"
+  },
+  "claim_8": {
+   "core": "137 against 126 and 132",
+   "courthouse": "56 against 41 and 46",
+   "rest_of_core": "81 against 85 and 86",
+   "cell": "92 against 102 and 103",
+   "city_direction": "down",
+   "rule": "complaints reported by June 30 of each year"
+  }
+ },
+ "publishable": {
+  "claim_1": true,
+  "claim_2": true,
+  "claim_3": true,
+  "claim_4": true,
+  "claim_5": true,
+  "claim_6": true,
+  "claim_7": true,
+  "claim_8": true
+ },
+ "opening": {
+  "population_1990": 7322564,
+  "murders_2025": 305,
+  "murders_2024": 382,
+  "shootings_2025": 688,
+  "robberies_2025": 15065,
+  "robberies_2024": 16696,
+  "robbery_rate_2025_per_100k": 175.5,
+  "robbery_rank_2025": 10,
+  "lowest_murder_year": 2017,
+  "robbery_rank_of": 29,
+  "lowest_murder_count": 292,
+  "murders_1990": 2262,
+  "robberies_1990": 100280,
+  "murders_per_day_1990": 6.2,
+  "residents_per_robbery_1990": 73,
+  "robbery_rank_1990": 1,
+  "robbery_rank_1990_of": 28,
+  "robbery_rate_1990_per_100k": 1369.5,
+  "robbery_runner_up_1990": "Chicago",
+  "robbery_runner_up_1990_per_100k": 1334.8
+ },
+ "precincts": {
+  "murder_1990": 2262,
+  "murder_2025": 305,
+  "n": 77,
+  "n_with_change": 75,
+  "most_improved_1": "88th",
+  "most_improved_2": "81st",
+  "most_improved_3": "30th",
+  "pct84_change": -72.1,
+  "pct84_robbery_change": -87.4,
+  "pct84_fel_assault_change": 4.2
+ },
+ "improvers": {
+  "year_early": 2006,
+  "year_late": 2025,
+  "decline_1": "DeKalb Ave & Clinton Ave",
+  "decline_2": "Braddock Ave & 222nd St",
+  "decline_3": "127th Ave & Bedell St",
+  "decline_1_area": "Fort Greene",
+  "decline_2_area": "Queens Village",
+  "decline_3_area": "South Jamaica",
+  "decline_1_pct_abs": 88,
+  "decline_2_pct_abs": 88,
+  "decline_3_pct_abs": 84,
+  "decline_1_early": 43,
+  "decline_1_late": 5,
+  "decline_2_early": 50,
+  "decline_2_late": 6,
+  "decline_3_early": 86,
+  "decline_3_late": 14,
+  "p84_change_pct": 55,
+  "p84_change_pct_raw": 68,
+  "p84_n_down": 5,
+  "p84_n_up": 7,
+  "this_cell_early": 71,
+  "this_cell_late": 231,
+  "this_cell_change_pct": 225.4,
+  "city_change_pct": -1.5,
+  "city_change_pct_round": -2,
+  "city_change_pct_raw_round": 12,
+  "city_robbery_change_pct_abs": 34,
+  "city_fel_assault_change_pct": 44,
+  "city_fel_assault_change_pct_raw": 75,
+  "strangulation_2025": 4715,
+  "excluded_2025": 5295,
+  "top20pct_share": 0.728,
+  "top20pct_cells": 571,
+  "cells_for_half": 273,
+  "n_cells": 2854,
+  "cells_for_20pct": 72,
+  "area_pct_20": 2.5,
+  "area_pct_half": 10
+ },
+ "density": {
+  "rank_residents": 23,
+  "rank_jobs": 864,
+  "rank_residents_plus_jobs": 822,
+  "n_cells_residents": 2126,
+  "n_cells_jobs": 1153,
+  "n_cells_residents_plus_jobs": 2259,
+  "residents": 8239,
+  "jobs": 59290,
+  "per_1000_residents": 27,
+  "rank_residents_top_pct": 1.1
+ },
+ "timelapse": {
+  "year": 2025,
+  "month": 10,
+  "month_name": "October",
+  "violent": 24,
+  "petit_larceny": 117,
+  "grand_larceny": 25,
+  "misd_assault": 21
+ },
+ "growth": {
+  "street_robbery_2010s": 37,
+  "street_robbery_2024_25": 36,
+  "street_robbery_ratio": 1.0,
+  "retail_robbery_2010s": 15,
+  "retail_robbery_2024_25": 64,
+  "retail_robbery_ratio": 4.2,
+  "other_assault_2010s": 27,
+  "other_assault_2024_25": 78,
+  "other_assault_ratio": 2.9
+ },
+ "plaza": {
+  "pl_pre_max": 3,
+  "pl_2017": 220,
+  "pl_2024": 692,
+  "violent_2024_25": 43,
+  "robberies_2024_25": 26,
+  "shoplift_share_2024_25": 0.923,
+  "assaults_2024_25": 17,
+  "officer_assaults_2024_25": 6,
+  "peak_hour_label": "2 p.m."
+ },
+ "clock": {
+  "night_core_pct": 22,
+  "night_city_pct": 36
+ }
+}

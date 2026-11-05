@@ -41,6 +41,7 @@ import DcrTownCalc from "@/components/dcr/DcrTownCalc";
 import DcrFootprintBars from "@/components/dcr/DcrFootprintBars";
 import SicCoreChart from "@/components/sic/SicCoreChart";
 import SicVolatility from "@/components/sic/SicVolatility";
+import { hoytEmbeds } from "@/components/hoyt/hoytEmbeds";
 
 // Some embed components are intentionally unregistered: unregistering drops
 // their source strings from the JS bundle while the .tsx files stay on disk;
@@ -103,4 +104,5 @@ export const gizmoEmbeds: Record<string, ComponentType> = {
   "compgap-compression": CompGapCompression,
   "compgap-locality-card": CompGapLocalityCard,
   "grocery-dial": GroceryDial,
+  ...hoytEmbeds,
 };

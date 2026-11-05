@@ -1,0 +1,15 @@
+name,kind,lat,lon,status,note
+Fulton Mall,street,40.6905,-73.9850,verified,Fulton St pedestrian/bus street between Flatbush Ave Ext and Adams St
+Albee Square,place,40.6908,-73.9836,verified,plaza at Fulton St and Albee Sq W
+City Point,place,40.6912,-73.9826,unverified,445 Albee Sq W; retail tenants to confirm on the walk
+Hoyt-Schermerhorn,station,40.6885,-73.9850,verified,A/C/G station
+Hoyt St,station,40.6905,-73.9853,verified,2/3 station under Fulton St
+DeKalb Ave,station,40.6906,-73.9814,verified,B/Q/R station; head house at Flatbush Ave Ext
+Nevins St,station,40.6883,-73.9802,verified,2/3/4/5 station
+Jay St-MetroTech,station,40.6923,-73.9866,verified,A/C/F/R station
+120 Schermerhorn: Criminal Court and Central Booking,institution,40.6899,-73.9887,verified,Legal Aid Society arrest guide lists Brooklyn Central Booking here
+Brooklyn Detention Complex,institution,40.6886,-73.9906,unverified,275 Atlantic Ave; confirm current use
+Livingston St,street,40.6893,-73.9850,verified,one block south of Fulton
+Schermerhorn St,street,40.6886,-73.9870,verified,
+Flatbush Ave Ext,street,40.6912,-73.9810,verified,
+Hoyt-Schermerhorn entrance (Schermerhorn St),station,40.6890,-73.9862,verified,station entrance on Schermerhorn St between Hoyt and Bond; matches the Commons photo of the entrance
