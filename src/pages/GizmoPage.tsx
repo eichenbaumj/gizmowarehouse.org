@@ -52,20 +52,20 @@ function headingSlug(children: ReactNode): string {
 
 const markdownComponents: Components = {
   ...(allEmbeds as Components),
-  p: ({ children, ...props }) => {
+  p: ({ node: _node, children, ...props }) => {
     if (childContainsEmbed(children)) {
       return <Fragment>{children}</Fragment>;
     }
     return <p {...props}>{children}</p>;
   },
   // Auto-id H2/H3 so popup methodology links can scroll-target them via #anchor.
-  h2: ({ children, ...props }) => (
+  h2: ({ node: _node, children, ...props }) => (
     <h2 id={headingSlug(children)} {...props}>{children}</h2>
   ),
-  h3: ({ children, ...props }) => (
+  h3: ({ node: _node, children, ...props }) => (
     <h3 id={headingSlug(children)} {...props}>{children}</h3>
   ),
-  h4: ({ children, ...props }) => (
+  h4: ({ node: _node, children, ...props }) => (
     <h4 id={headingSlug(children)} {...props}>{children}</h4>
   ),
 };

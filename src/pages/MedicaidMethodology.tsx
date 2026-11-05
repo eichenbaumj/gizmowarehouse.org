@@ -25,9 +25,9 @@ function headingSlug(children: ReactNode): string {
 }
 
 const markdownComponents: Components = {
-  h2: ({ children, ...props }) => <h2 id={headingSlug(children)} {...props}>{children}</h2>,
-  h3: ({ children, ...props }) => <h3 id={headingSlug(children)} {...props}>{children}</h3>,
-  h4: ({ children, ...props }) => <h4 id={headingSlug(children)} {...props}>{children}</h4>,
+  h2: ({ node: _node, children, ...props }) => <h2 id={headingSlug(children)} {...props}>{children}</h2>,
+  h3: ({ node: _node, children, ...props }) => <h3 id={headingSlug(children)} {...props}>{children}</h3>,
+  h4: ({ node: _node, children, ...props }) => <h4 id={headingSlug(children)} {...props}>{children}</h4>,
 };
 
 const GIZMO_PATH = "/gizmo/medicaid-work-requirements";

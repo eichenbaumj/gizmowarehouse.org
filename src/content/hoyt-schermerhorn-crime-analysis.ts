@@ -9,6 +9,8 @@ New York City is one of the safest big cities in the world, and by most measures
 
 This progress was universal, if not evenly distributed. The map above shows every police precinct in the city and how its violent crime, counted as murder, robbery and felony assault, has changed since 1990. Of the {precincts.n_with_change} precincts with a 1990 line, 64 are down 60 percent or more. Three in the northeast Bronx are down only 19 to 26 percent, and the 123rd on Staten Island's South Shore is exactly where it was. Most New Yorkers are dramatically safer than they were in 1990, and nearly all New Yorkers are at least a little safer.
 
+## Block by block
+
 Aggregated tables tell us the scale of the story, but actual people live on blocks. The NYPD's public complaint data carries a location for every complaint from 2006 on, so that is the earliest we can start telling the story at a truly local level. A complaint, in NYPD's vocabulary, is a crime reported to or recorded by the police, with one incident per record. Dozens of communities have been transformed in the past twenty years.
 
 And precincts do not tell anywhere near the full story. Take mine, the 84th. It covers quite a tapestry of northwestern Brooklyn: the tony streets of Brooklyn Heights, the selfie sticks of DUMBO, sleepy Vinegar Hill, the office towers of MetroTech, the brownstones and bars of Boerum Hill, all the way east to Flatbush Avenue.
@@ -48,6 +50,8 @@ The Downtown Brooklyn cell ranks #{cell.rank_all} of {cell.n_cells} citywide for
 
 </hs-scrolly>
 
+## Who lives and works here
+
 About {density.residents} people live in this cell, but {density.jobs} work here, and during the weekday the population booms at MetroTech, the courts and the stores. Per resident, the cell ranks #{density.rank_residents} of {density.n_cells_residents} in the city, about {density.per_1000_residents:raw} violent complaints a year for every 1,000 people who live there.
 
 Many of those residents live in some of the most expensive new apartments in Brooklyn, a ten-minute walk from the quiet blocks of Brooklyn Heights. In the past year I have spoken with three couples with young children who moved out of this square, each naming crime and disorder as part of the reason. Counted by violent complaints per resident, the cell they left ranks #{density.rank_residents} of {density.n_cells_residents} in the city.
@@ -57,6 +61,8 @@ I focus on count rather than rate because I am as interested in perceptions of s
 Hover a cell for its count and rank, click to pin it, and zoom in until the complaints appear as dots sized by how many landed at each spot.
 
 <hs-city-explore></hs-city-explore>
+
+## A month on Fulton Street
 
 <hs-photo photo="arrive-fulton-east" bleed="true"></hs-photo>
 
@@ -76,6 +82,8 @@ Violent complaints here happen disproportionately on weekday afternoons, when th
 
 <hs-hour-bars></hs-hour-bars>
 
+## A courthouse and a mall
+
 So why did this one cell climb while the rest of Brooklyn held steady? Most of the answer is two places a few hundred feet apart, a courthouse and a mall.
 
 **The courthouse.** Brooklyn's Criminal Court and Central Booking sit at 120 Schermerhorn Street, and every arrest in the borough passes through the building. Four of every five assaults on an officer within 400 meters of the station are recorded at that address, along with a steady run of felony assaults, at hours like six in the morning and eleven at night, with no premise recorded. These almost certainly happen inside, in holding, in processing, in the hallways. They make up {core.courthouse_point_share_2024_25:%0} of the count that puts the cell at #{cell.rank_all}. Set that one address aside and the cell falls to #{cell.rank_no_courthouse}. It is also the one series still rising this year, with {h1.courthouse.2026} complaints in the first half of 2026 against {h1.courthouse.2025} and {h1.courthouse.2024} in the same months of 2025 and 2024.
@@ -91,11 +99,15 @@ So why did this one cell climb while the rest of Brooklyn held steady? Most of t
 The city's Human Resources Administration also listed an EBT card office at 227 Schermerhorn Street, steps from the station, from 2023 into 2025. Violence within 200 meters of it barely changed after it opened. Across the city, I compared the blocks around every HRA and Social Security office with similar shopping blocks and found no sign that the offices push crime onto nearby streets.
 
 
+## What has grown since the 2010s
+
 With the courthouse set aside, violent complaints within 400 meters of the station run at {index.core_ex_courthouse_2024_25_vs_2010s:1dp} times their 2010s level, while Brooklyn as a whole sits at {index.brooklyn_2024_25_vs_2010s:1dp}. Two kinds of crime account for the rise. Robberies in stores went from about {growth.retail_robbery_2010s:raw} a year in the 2010s to {growth.retail_robbery_2024_25:raw} a year in 2024 and 2025, and felony assaults went from about {growth.other_assault_2010s:raw} a year to {growth.other_assault_2024_25:raw}. Street robbery, the mugging most people picture when they think about crime, ran about {growth.street_robbery_2010s:raw} a year in the 2010s and {growth.street_robbery_2024_25:raw} a year in 2024 and 2025.
 
 <hs-lines></hs-lines>
 
 <hs-photo photo="close-stairs"></hs-photo>
+
+## What could help
 
 I suspect two things could help.
 
@@ -104,6 +116,8 @@ I suspect two things could help.
 **The store doors.** Most of the rise is shoplifting that turns into robbery, and fights inside stores. That calls for security at the doors of the busiest stores and closer work between the stores and the 84th Precinct. Street robbery on the surrounding blocks has not risen, so more patrols there would not reach the problem.
 
 So that is the trouble with Hoyt-Schermerhorn. Most of it is one courthouse and one mall, a short walk from some of the most expensive new apartments in Brooklyn.
+
+## Housekeeping
 
 <hs-methods-note></hs-methods-note>
 
