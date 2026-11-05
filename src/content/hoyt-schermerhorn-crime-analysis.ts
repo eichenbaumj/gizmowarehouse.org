@@ -117,8 +117,6 @@ I suspect two things could help.
 
 So that is the trouble with Hoyt-Schermerhorn. Most of it is one courthouse and one mall, a short walk from some of the most expensive new apartments in Brooklyn.
 
-## Housekeeping
-
 <hs-methods-note></hs-methods-note>
 
 <hs-downloads></hs-downloads>
