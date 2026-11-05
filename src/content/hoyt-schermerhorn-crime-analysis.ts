@@ -97,15 +97,13 @@ With the courthouse set aside, violent complaints within 400 meters of the stati
 
 <hs-photo photo="close-stairs"></hs-photo>
 
-I suspect three things could help.
+I suspect two things could help.
 
 **Weekday afternoons.** Violent complaints here peak on weekday afternoons. Only {clock.night_core_pct:raw} percent fall between 10 p.m. and 6 a.m., against {clock.night_city_pct:raw} percent citywide. Police and private security on Fulton Street should be heaviest then, at the City Point plaza and the two big store corners. I don't know how the NYPD schedules officers here now.
 
 **The store doors.** Most of the rise is shoplifting that turns into robbery, and fights inside stores. That calls for security at the doors of the busiest stores and closer work between the stores and the 84th Precinct. Street robbery on the surrounding blocks has not risen, so more patrols there would not reach the problem.
 
-**The crime map.** Complaints recorded at 120 Schermerhorn most likely happen inside Central Booking. The city's public crime maps could mark them separately. Without that, a holding facility makes a shopping street look like the second most violent place in New York.
-
-So that is the trouble with Hoyt-Schermerhorn. Most of it is one courthouse and one mall. For the people who live here it is one of the most violent places in the city, but counted against everyone who lives or works here, it ranks #{density.rank_residents_plus_jobs} of {density.n_cells_residents_plus_jobs}.
+So that is the trouble with Hoyt-Schermerhorn. Most of it is one courthouse and one mall, a short walk from some of the most expensive new apartments in Brooklyn.
 
 <hs-methods-note></hs-methods-note>
 
