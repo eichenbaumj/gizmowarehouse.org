@@ -4,7 +4,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { cartoStyleUrl, cartoTransformRequest, CARTO_ATTRIBUTION } from "@/config/basemap";
+import { cartoStyleUrl, cartoTransformRequest } from "@/config/basemap";
 import { CELL_ID, COBALT, STEEL } from "@/config/hoytSchermerhorn";
 import { loadHoyt, fmtInt } from "./hoytData";
 import { Card, Eyebrow } from "./HoytChrome";
@@ -39,7 +39,7 @@ export function HoytRateMap() {
       const br = [quantile(r, 0.5), quantile(r, 0.75), quantile(r, 0.9), quantile(r, 0.97)];
       const map = new maplibregl.Map({
         container: box.current, style: cartoStyleUrl("positron"), transformRequest: cartoTransformRequest, bounds: CITY_BOUNDS, fitBoundsOptions: { padding: 12 },
-        attributionControl: { compact: true, customAttribution: CARTO_ATTRIBUTION }, dragRotate: false, pitchWithRotate: false, touchPitch: false,
+        attributionControl: { compact: true }, dragRotate: false, pitchWithRotate: false, touchPitch: false,
         cooperativeGestures: true, canvasContextAttributes: { preserveDrawingBuffer: true },
       } as any);
       mapRef.current = map;

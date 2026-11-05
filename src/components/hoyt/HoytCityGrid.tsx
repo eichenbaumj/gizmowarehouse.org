@@ -4,7 +4,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { cartoStyleUrl, cartoTransformRequest, CARTO_ATTRIBUTION } from "@/config/basemap";
+import { cartoStyleUrl, cartoTransformRequest } from "@/config/basemap";
 import { CELL_ID, CLASS_STYLE, TIMES_SQUARE_CELL, type ImproversFile } from "@/config/hoytSchermerhorn";
 import { loadHoyt, useHoytData, fmtInt } from "./hoytData";
 import { useStage } from "./HoytScrolly";
@@ -55,7 +55,7 @@ export function HoytCityGrid({ mode = "stage" }: { mode?: "stage" | "explore" })
       setScale(sc);
       const map = new maplibregl.Map({
         container: box.current, style: cartoStyleUrl("positron"), transformRequest: cartoTransformRequest, center: explore ? DOWNTOWN : CITY, zoom: explore ? 11.2 : 9.8,
-        attributionControl: { compact: true, customAttribution: CARTO_ATTRIBUTION }, interactive: explore, dragRotate: false, pitchWithRotate: false, touchPitch: false,
+        attributionControl: { compact: true }, interactive: explore, dragRotate: false, pitchWithRotate: false, touchPitch: false,
         canvasContextAttributes: { preserveDrawingBuffer: true },
       } as any);
       mapRef.current = map;

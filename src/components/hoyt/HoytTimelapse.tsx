@@ -5,7 +5,7 @@
 import { useEffect, useMemo, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { cartoStyleUrl, cartoTransformRequest, CARTO_ATTRIBUTION } from "@/config/basemap";
+import { cartoStyleUrl, cartoTransformRequest } from "@/config/basemap";
 import { CLASS_STYLE, CORE, MOBILE_STAGE_VH, type TimelapseFile } from "@/config/hoytSchermerhorn";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 import { usePrefersReducedMotion } from "@/hooks/usePrefersReducedMotion";
@@ -66,7 +66,7 @@ function TimelapseStage({ progress }: { progress: number }) {
       if (cancelled || !box.current || mapRef.current) return;
       setData(d);
       const map = new maplibregl.Map({ container: box.current, style: cartoStyleUrl("positron"), transformRequest: cartoTransformRequest, center: [CORE[0] + 0.0008, CORE[1] + 0.0012], zoom: 16.1, interactive: false,
-        attributionControl: { compact: true, customAttribution: CARTO_ATTRIBUTION }, canvasContextAttributes: { preserveDrawingBuffer: true } } as any);
+        attributionControl: { compact: true }, canvasContextAttributes: { preserveDrawingBuffer: true } } as any);
       mapRef.current = map;
       (window as any).__hoytTimelapse = map;
       map.once("style.load", () => {
