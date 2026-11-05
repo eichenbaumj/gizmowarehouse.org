@@ -51753,7 +51753,7 @@ function encodeLocation(to) {
 const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 
 const lastmod = {
-	"/": "2026-10-12",
+	"/": "2026-11-05",
 	"/gizmo/hoyt-schermerhorn-crime-analysis": "2026-11-05",
 	"hoyt-schermerhorn-crime-analysis": "2026-11-05",
 	"/gizmo/self-insurance-cost": "2026-10-14",
@@ -51784,13 +51784,13 @@ const lastmod = {
 	"fakebook-maker": "2026-10-14",
 	"/gizmo/medicaid-work-requirements/methodology": "2026-06-25",
 	"/gizmo/public-private-compensation-comparison/methodology": "2026-06-23",
-	"/category/public-safety": "2026-10-12",
-	"/category/music": "2026-10-12",
-	"/category/using-ai": "2026-10-12",
-	"/category/city-government": "2026-10-12",
-	"/category/state-government": "2026-10-12",
-	"/category/healthcare-policy": "2026-10-12",
-	"/category/nyc": "2026-10-12"
+	"/category/public-safety": "2026-11-05",
+	"/category/music": "2026-11-05",
+	"/category/using-ai": "2026-11-05",
+	"/category/city-government": "2026-11-05",
+	"/category/state-government": "2026-11-05",
+	"/category/healthcare-policy": "2026-11-05",
+	"/category/nyc": "2026-11-05"
 };
 
 const SITE_URL = "https://gizmowarehouse.org";
