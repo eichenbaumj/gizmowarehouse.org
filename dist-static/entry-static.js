@@ -93371,8 +93371,6 @@ With only a handful of utilities, ordinary bounce in prices can produce a gap of
 
 ${fig("fig4_range_like_a_poll.png", 2e3, 980, "Two ranges drawn the same way. On the left, a made-up poll at 48% with a margin of 3 points, so a tie at 50% is inside the range and 55% is outside it. On the right, the study's result: prices rose 1.6% less than at similar utilities, with a range from 7.1% less to 4.2% more. No change is inside the range, a 5% rise is just outside it and a 10% rise is well outside it.", "The poll is made up. The study's result and range are real.")}
 
-So a value outside my range is unlikely, but it is not impossible.
-
 ${aside("“Price” here means what a utility collects from households for each kilowatt-hour it sells them. It comes from a yearly federal survey of every utility (the Energy Information Administration’s Form EIA-861), for 2001 through 2025. It is not the rate printed on a rate sheet and it is not the monthly bill.")}
 
 ## What I found
