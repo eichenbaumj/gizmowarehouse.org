@@ -90,7 +90,7 @@ ${fig("fig3_seven_timeline.png", 2000, 1320, "Seven utilities, each shown as a r
 
 With only a handful of utilities, ordinary bounce in prices can produce a gap of a few percent with no data center involved. So every number here comes with a range. My range is built so that ranges made this way catch the true answer about nine times in ten. I tested that claim before looking at any real result, on made-up prices where I knew the true answer. The range missed at most 9.9% of the time.
 
-${fig("fig4_what_a_range_is.png", 2000, 980, "Ten imagined repetitions of a study, each with a dot and a bar. Nine bars cover the true answer and one misses it.", "An illustration with invented shapes.")}
+${fig("fig4_range_like_a_poll.png", 2000, 980, "Two ranges drawn the same way. On the left, a made-up poll at 48% with a margin of 3 points, so a tie at 50% is inside the range and 55% is outside it. On the right, the study's result: prices rose 1.6% less than at similar utilities, with a range from 7.1% less to 4.2% more. No change is inside the range, a 5% rise is just outside it and a 10% rise is well outside it.", "The poll is made up. The study's result and range are real.")}
 
 So a value outside my range is unlikely, but it is not impossible.
 
