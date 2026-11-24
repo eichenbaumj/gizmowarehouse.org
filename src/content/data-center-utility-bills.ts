@@ -34,7 +34,7 @@ Voters share the concern. In a Pew Research Center survey in March 2026, three i
 
 The worry is reasonable and intuitive. A data center is an enormous customer. When one connects, the utility may have to build power lines, substations and power plants, and regulators can spread part of that cost across everybody. But an enormous customer also pays an enormous bill, and that money helps cover costs the utility would otherwise collect from households.
 
-Either story could be true, and which one is true matters. If data centers raise families' electricity costs by a lot, the rules on who pays for the power lines and plants built to serve them need to get much tighter. If the increase is modest, it can be measured, and that puts a ceiling on what developers would owe the households around them to make up for it.
+Either story could be true, and the answer has real implications. If data centers raise families' electricity costs by a lot, the rules on who pays for the power lines and plants built to serve them need to get much tighter. If the increase is modest, it can be measured, and that puts a ceiling on what developers would owe the households around them to make up for it.
 
 I tried to come up with the most rigorous answer I could.
 
