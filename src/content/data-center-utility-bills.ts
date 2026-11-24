@@ -30,7 +30,7 @@ ${quote("A new Florida law “prevents data center costs from being passed on to
 ${quote("“We have seen […] data center construction inflate electric bills in communities across the country.”", "<strong>Representative Ocasio-Cortez</strong> (D-N.Y.)", link("https://www.sanders.senate.gov/press-releases/news-sanders-ocasio-cortez-announce-ai-data-center-moratorium-act/", "press release, March 25, 2026"))}
 </div>
 
-Voters seem to agree. In a Pew Research Center survey in March 2026, three in four Americans said their home energy costs had gone up. Among those people, 43% called data centers a major reason ([Pew topline](https://www.pewresearch.org/wp-content/uploads/sites/20/2026/05/SR_26.05.01_home-insurance-energy_W189_topline_FINAL.pdf)).
+Voters share the concern. In a Pew Research Center survey in March 2026, three in four Americans said their home energy costs had gone up. Among those people, 43% called data centers a major reason ([Pew topline](https://www.pewresearch.org/wp-content/uploads/sites/20/2026/05/SR_26.05.01_home-insurance-energy_W189_topline_FINAL.pdf)).
 
 The worry is reasonable and intuitive. A data center is an enormous customer. When one connects, the utility may have to build power lines, substations and power plants, and regulators can spread part of that cost across everybody. But an enormous customer also pays an enormous bill, and that money helps cover costs the utility would otherwise collect from households.
 
