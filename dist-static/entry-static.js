@@ -51754,8 +51754,8 @@ const ABSOLUTE_URL_REGEX = /^(?:[a-z][a-z0-9+.-]*:|\/\/)/i;
 
 const lastmod = {
 	"/": "2026-11-23",
-	"/gizmo/data-center-utility-bills": "2026-11-23",
-	"data-center-utility-bills": "2026-11-23",
+	"/gizmo/data-center-utility-bills": "2026-11-24",
+	"data-center-utility-bills": "2026-11-24",
 	"/gizmo/hoyt-schermerhorn-crime-analysis": "2026-11-05",
 	"hoyt-schermerhorn-crime-analysis": "2026-11-05",
 	"/gizmo/self-insurance-cost": "2026-10-14",
