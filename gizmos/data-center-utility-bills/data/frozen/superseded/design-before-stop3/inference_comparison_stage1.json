@@ -1,0 +1,2816 @@
+{
+ "what_this_is": "Step E stage 1 (E1.1 to E2.4): selects and never certifies. Calibration screening followed by width ranking, with independent stage-two certification still required.",
+ "seed": 20261201,
+ "datasets_per_process": 2000,
+ "processes": [
+  "G0_as_in_D38",
+  "G1_unequal_variances",
+  "G2_more_persistence",
+  "G3_less_persistence",
+  "G4_rate_case_steps",
+  "G5_shocks_common_across_states",
+  "G6_all_of_it",
+  "G7_high_variance_where_the_weight_is",
+  "G8_company_and_supplier_shocks",
+  "G9_unequal_regional_exposure",
+  "G10_own_trends",
+  "G11_fuel_shocks_linear_in_the_share",
+  "G12_fuel_shocks_not_linear_in_the_share"
+ ],
+ "candidates": [
+  "A",
+  "B",
+  "C"
+ ],
+ "bootstrap_replications": 999,
+ "design_quantities": {
+  "g7_units": {
+   "comparison_utilities": [
+    {
+     "utility": "5701:TX",
+     "net_weight": 0.170909
+    },
+    {
+     "utility": "5701:NM",
+     "net_weight": 0.109496
+    },
+    {
+     "utility": "56146:CO",
+     "net_weight": 0.101588
+    },
+    {
+     "utility": "9191:ID",
+     "net_weight": 0.098414
+    },
+    {
+     "utility": "6022:OR",
+     "net_weight": 0.091351
+    }
+   ],
+   "hosts": [
+    {
+     "utility": "14354:UT",
+     "weight": 0.149305
+    },
+    {
+     "utility": "19325:OR",
+     "weight": 0.148825
+    }
+   ]
+  },
+  "g8": {
+   "mode": "ownership and suppliers (suppliers.csv, sha256 1a4786d0c20d8064c9d288ea22e65b7352fb6531217d7bf2363508bf045665c8)",
+   "units": 3026,
+   "unit_years_with_a_parent_from_the_table": 2084,
+   "unit_years_their_own_company": 73566,
+   "unit_years_with_a_supplier": 2125,
+   "companies": 49,
+   "units_that_are_their_own_company_in_some_year": 2957,
+   "suppliers": 28
+  },
+  "host_weights_sum_to": 1.0,
+  "states_with_no_gas_share_given_no_fuel_walk": [
+   "AS",
+   "GU",
+   "PR",
+   "VI"
+  ],
+  "units_in_the_panel_codes": 3026,
+  "units_in_the_assembled_design": 59,
+  "design_units_with_an_ownership_class_outside_the_three": 0,
+  "clusters": 19,
+  "rows": 770,
+  "regressors": 28
+ },
+ "fingerprint": {
+  "sha256": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+  "of": {
+   "design_inputs": "0249ff7115272cc217fc52a5142cbc46d9cc7ca85c949b5a48600c58266b6c70",
+   "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+   "code_version": "77760a270c79f4c64fd1dc7ac1bc9863595b93e4fd6f1328aeffa983013f65c2",
+   "assumptions": "12eec6892eb6e84e615559d86604339d2cac185fa655b00f49a8f10efa279ab6",
+   "settings": "0cfea801cec2d7ae014536517ebd5f054faa4297af6f53d1fe10bed4722855df",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ },
+ "budget": {
+  "A": 20000,
+  "B": 20000,
+  "C": 20000
+ },
+ "by_candidate": {
+  "A": {
+   "by_process": {
+    "G0_as_in_D38": {
+     "range_misses_the_true_value": {
+      "count": 233,
+      "datasets": 2000,
+      "rate": 0.1165,
+      "exact_95_interval": [
+       0.10276,
+       0.13138
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 222,
+      "datasets": 2000,
+      "rate": 0.111,
+      "exact_95_interval": [
+       0.09756,
+       0.12559
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 233,
+     "ordinary_rejections": 222,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08310006202078647,
+      "p90": 0.12005402709318222,
+      "p95": 0.13099007938012258,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1208,
+      "datasets": 2000,
+      "rate": 0.604,
+      "exact_95_interval": [
+       0.58218,
+       0.62552
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G1_unequal_variances": {
+     "range_misses_the_true_value": {
+      "count": 198,
+      "datasets": 2000,
+      "rate": 0.099,
+      "exact_95_interval": [
+       0.08626,
+       0.11293
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 247,
+      "datasets": 2000,
+      "rate": 0.1235,
+      "exact_95_interval": [
+       0.10939,
+       0.13872
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 198,
+     "ordinary_rejections": 247,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09865974134258264,
+      "p90": 0.16022521033003875,
+      "p95": 0.18078605034331158,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 990,
+      "datasets": 2000,
+      "rate": 0.495,
+      "exact_95_interval": [
+       0.47286,
+       0.51716
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G2_more_persistence": {
+     "range_misses_the_true_value": {
+      "count": 201,
+      "datasets": 2000,
+      "rate": 0.1005,
+      "exact_95_interval": [
+       0.08767,
+       0.11452
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 253,
+      "datasets": 2000,
+      "rate": 0.1265,
+      "exact_95_interval": [
+       0.11224,
+       0.14187
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 201,
+     "ordinary_rejections": 253,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.10515816322051125,
+      "p90": 0.15136252468189243,
+      "p95": 0.16650598078357692,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 920,
+      "datasets": 2000,
+      "rate": 0.46,
+      "exact_95_interval": [
+       0.43798,
+       0.48214
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G3_less_persistence": {
+     "range_misses_the_true_value": {
+      "count": 206,
+      "datasets": 2000,
+      "rate": 0.103,
+      "exact_95_interval": [
+       0.09002,
+       0.11716
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 260,
+      "datasets": 2000,
+      "rate": 0.13,
+      "exact_95_interval": [
+       0.11556,
+       0.14553
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 206,
+     "ordinary_rejections": 260,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.062246663798074024,
+      "p90": 0.09120920646112919,
+      "p95": 0.09947690720865592,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1590,
+      "datasets": 2000,
+      "rate": 0.795,
+      "exact_95_interval": [
+       0.77663,
+       0.8125
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G4_rate_case_steps": {
+     "range_misses_the_true_value": {
+      "count": 256,
+      "datasets": 2000,
+      "rate": 0.128,
+      "exact_95_interval": [
+       0.11366,
+       0.14344
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 217,
+      "datasets": 2000,
+      "rate": 0.1085,
+      "exact_95_interval": [
+       0.0952,
+       0.12296
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 256,
+     "ordinary_rejections": 217,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08525243385632464,
+      "p90": 0.13184672486928747,
+      "p95": 0.1461441358255534,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1135,
+      "datasets": 2000,
+      "rate": 0.5675,
+      "exact_95_interval": [
+       0.54545,
+       0.58935
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G5_shocks_common_across_states": {
+     "range_misses_the_true_value": {
+      "count": 162,
+      "datasets": 2000,
+      "rate": 0.081,
+      "exact_95_interval": [
+       0.06941,
+       0.09383
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 185,
+      "datasets": 2000,
+      "rate": 0.0925,
+      "exact_95_interval": [
+       0.08016,
+       0.10605
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 162,
+     "ordinary_rejections": 185,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09842899507161584,
+      "p90": 0.1462077035716573,
+      "p95": 0.15990415316575676,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 972,
+      "datasets": 2000,
+      "rate": 0.486,
+      "exact_95_interval": [
+       0.46388,
+       0.50816
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G6_all_of_it": {
+     "range_misses_the_true_value": {
+      "count": 195,
+      "datasets": 2000,
+      "rate": 0.0975,
+      "exact_95_interval": [
+       0.08485,
+       0.11135
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 195,
+      "datasets": 2000,
+      "rate": 0.0975,
+      "exact_95_interval": [
+       0.08485,
+       0.11135
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 195,
+     "ordinary_rejections": 195,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.11793532307289185,
+      "p90": 0.19424996974168535,
+      "p95": 0.2207787476087982,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 651,
+      "datasets": 2000,
+      "rate": 0.3255,
+      "exact_95_interval": [
+       0.30498,
+       0.34653
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G7_high_variance_where_the_weight_is": {
+     "range_misses_the_true_value": {
+      "count": 214,
+      "datasets": 2000,
+      "rate": 0.107,
+      "exact_95_interval": [
+       0.09379,
+       0.12138
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 197,
+      "datasets": 2000,
+      "rate": 0.0985,
+      "exact_95_interval": [
+       0.08579,
+       0.1124
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 214,
+     "ordinary_rejections": 197,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.1382552929732837,
+      "p90": 0.22002394675246287,
+      "p95": 0.24590656563429011,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 674,
+      "datasets": 2000,
+      "rate": 0.337,
+      "exact_95_interval": [
+       0.31629,
+       0.35819
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G8_company_and_supplier_shocks": {
+     "range_misses_the_true_value": {
+      "count": 237,
+      "datasets": 2000,
+      "rate": 0.1185,
+      "exact_95_interval": [
+       0.10465,
+       0.13348
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 239,
+      "datasets": 2000,
+      "rate": 0.1195,
+      "exact_95_interval": [
+       0.1056,
+       0.13453
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 237,
+     "ordinary_rejections": 239,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.10227574915913437,
+      "p90": 0.14988532689563375,
+      "p95": 0.1659374354334454,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 936,
+      "datasets": 2000,
+      "rate": 0.468,
+      "exact_95_interval": [
+       0.44594,
+       0.49015
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G9_unequal_regional_exposure": {
+     "range_misses_the_true_value": {
+      "count": 211,
+      "datasets": 2000,
+      "rate": 0.1055,
+      "exact_95_interval": [
+       0.09237,
+       0.1198
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 245,
+      "datasets": 2000,
+      "rate": 0.1225,
+      "exact_95_interval": [
+       0.10844,
+       0.13767
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 211,
+     "ordinary_rejections": 245,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09669884839273646,
+      "p90": 0.1456572357959254,
+      "p95": 0.16304056027008884,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 964,
+      "datasets": 2000,
+      "rate": 0.482,
+      "exact_95_interval": [
+       0.45989,
+       0.50416
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G10_own_trends": {
+     "range_misses_the_true_value": {
+      "count": 231,
+      "datasets": 2000,
+      "rate": 0.1155,
+      "exact_95_interval": [
+       0.10181,
+       0.13032
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 264,
+      "datasets": 2000,
+      "rate": 0.132,
+      "exact_95_interval": [
+       0.11746,
+       0.14763
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 231,
+     "ordinary_rejections": 264,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09344491247524717,
+      "p90": 0.13590114790717664,
+      "p95": 0.14917610261976477,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1030,
+      "datasets": 2000,
+      "rate": 0.515,
+      "exact_95_interval": [
+       0.49284,
+       0.53712
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G11_fuel_shocks_linear_in_the_share": {
+     "range_misses_the_true_value": {
+      "count": 207,
+      "datasets": 2000,
+      "rate": 0.1035,
+      "exact_95_interval": [
+       0.09049,
+       0.11769
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 234,
+      "datasets": 2000,
+      "rate": 0.117,
+      "exact_95_interval": [
+       0.10323,
+       0.1319
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 207,
+     "ordinary_rejections": 234,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08438638899558681,
+      "p90": 0.12358967617866384,
+      "p95": 0.13942088585628765,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1176,
+      "datasets": 2000,
+      "rate": 0.588,
+      "exact_95_interval": [
+       0.56606,
+       0.60968
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     },
+     "realised_path": {
+      "over": "datasets whose candidate computed an estimate",
+      "datasets_used": 2000,
+      "slope_of_the_estimate_on_the_realised_change": 0.006712523010033367,
+      "root_mean_square_error": 0.023735082193105467,
+      "thirds_by_size_of_the_realised_change": [
+       {
+        "absolute_change_from": 4.203792809965266e-05,
+        "absolute_change_to": 0.03416459484477892,
+        "range_misses": {
+         "count": 63,
+         "datasets": 667,
+         "rate": 0.09445,
+         "exact_95_interval": [
+          0.07334,
+          0.11923
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 70,
+         "datasets": 667,
+         "rate": 0.10495,
+         "exact_95_interval": [
+          0.08273,
+          0.13073
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.03421777236289774,
+        "absolute_change_to": 0.07875089159905117,
+        "range_misses": {
+         "count": 69,
+         "datasets": 667,
+         "rate": 0.10345,
+         "exact_95_interval": [
+          0.08138,
+          0.12909
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 81,
+         "datasets": 667,
+         "rate": 0.12144,
+         "exact_95_interval": [
+          0.09762,
+          0.14867
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.07875624402316769,
+        "absolute_change_to": 0.3104438489745729,
+        "range_misses": {
+         "count": 75,
+         "datasets": 666,
+         "rate": 0.11261,
+         "exact_95_interval": [
+          0.08961,
+          0.13911
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 83,
+         "datasets": 666,
+         "rate": 0.12462,
+         "exact_95_interval": [
+          0.1005,
+          0.15213
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "G12_fuel_shocks_not_linear_in_the_share": {
+     "range_misses_the_true_value": {
+      "count": 203,
+      "datasets": 2000,
+      "rate": 0.1015,
+      "exact_95_interval": [
+       0.08861,
+       0.11557
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 256,
+      "datasets": 2000,
+      "rate": 0.128,
+      "exact_95_interval": [
+       0.11366,
+       0.14344
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 203,
+     "ordinary_rejections": 256,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08629270189450383,
+      "p90": 0.12591301860352352,
+      "p95": 0.1393089284846361,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1140,
+      "datasets": 2000,
+      "rate": 0.57,
+      "exact_95_interval": [
+       0.54796,
+       0.59183
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     },
+     "realised_path": {
+      "over": "datasets whose candidate computed an estimate",
+      "datasets_used": 2000,
+      "slope_of_the_estimate_on_the_realised_change": -0.011754515979262848,
+      "root_mean_square_error": 0.023982445322310943,
+      "thirds_by_size_of_the_realised_change": [
+       {
+        "absolute_change_from": 2.4628549950274836e-05,
+        "absolute_change_to": 0.03492165097240164,
+        "range_misses": {
+         "count": 68,
+         "datasets": 667,
+         "rate": 0.10195,
+         "exact_95_interval": [
+          0.08004,
+          0.12745
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 91,
+         "datasets": 667,
+         "rate": 0.13643,
+         "exact_95_interval": [
+          0.11129,
+          0.16484
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.03493970496480793,
+        "absolute_change_to": 0.07833347132109308,
+        "range_misses": {
+         "count": 70,
+         "datasets": 667,
+         "rate": 0.10495,
+         "exact_95_interval": [
+          0.08273,
+          0.13073
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 89,
+         "datasets": 667,
+         "rate": 0.13343,
+         "exact_95_interval": [
+          0.10855,
+          0.16162
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.07833752699787958,
+        "absolute_change_to": 0.363452633330517,
+        "range_misses": {
+         "count": 65,
+         "datasets": 666,
+         "rate": 0.0976,
+         "exact_95_interval": [
+          0.07613,
+          0.1227
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 76,
+         "datasets": 666,
+         "rate": 0.11411,
+         "exact_95_interval": [
+          0.09097,
+          0.14074
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "cells_under_5pct": [],
+   "pooled_widths": {
+    "median": 0.0937573334270815,
+    "p90": 0.15158975366718996,
+    "p95": 0.17518005917975807,
+    "infinite": 0
+   },
+   "share_of_ranges_with_an_incomplete_or_failed_side": 0.0
+  },
+  "B": {
+   "by_process": {
+    "G0_as_in_D38": {
+     "range_misses_the_true_value": {
+      "count": 202,
+      "datasets": 2000,
+      "rate": 0.101,
+      "exact_95_interval": [
+       0.08814,
+       0.11505
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 175,
+      "datasets": 2000,
+      "rate": 0.0875,
+      "exact_95_interval": [
+       0.07548,
+       0.10075
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 202,
+     "ordinary_rejections": 175,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08509558178963847,
+      "p90": 0.12042033918984413,
+      "p95": 0.13034309577944997,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1197,
+      "datasets": 2000,
+      "rate": 0.5985,
+      "exact_95_interval": [
+       0.57663,
+       0.62008
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G1_unequal_variances": {
+     "range_misses_the_true_value": {
+      "count": 193,
+      "datasets": 2000,
+      "rate": 0.0965,
+      "exact_95_interval": [
+       0.08391,
+       0.11029
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 211,
+      "datasets": 2000,
+      "rate": 0.1055,
+      "exact_95_interval": [
+       0.09237,
+       0.1198
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 193,
+     "ordinary_rejections": 211,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09988887717186112,
+      "p90": 0.15740545370864426,
+      "p95": 0.17759540274109178,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 955,
+      "datasets": 2000,
+      "rate": 0.4775,
+      "exact_95_interval": [
+       0.45541,
+       0.49966
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G2_more_persistence": {
+     "range_misses_the_true_value": {
+      "count": 173,
+      "datasets": 2000,
+      "rate": 0.0865,
+      "exact_95_interval": [
+       0.07454,
+       0.09968
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 204,
+      "datasets": 2000,
+      "rate": 0.102,
+      "exact_95_interval": [
+       0.08908,
+       0.1161
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 173,
+     "ordinary_rejections": 204,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.10677189432700077,
+      "p90": 0.15106388558297593,
+      "p95": 0.16554868877747994,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 915,
+      "datasets": 2000,
+      "rate": 0.4575,
+      "exact_95_interval": [
+       0.43549,
+       0.47963
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G3_less_persistence": {
+     "range_misses_the_true_value": {
+      "count": 183,
+      "datasets": 2000,
+      "rate": 0.0915,
+      "exact_95_interval": [
+       0.07922,
+       0.10499
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 202,
+      "datasets": 2000,
+      "rate": 0.101,
+      "exact_95_interval": [
+       0.08814,
+       0.11505
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 183,
+     "ordinary_rejections": 202,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.0637349919652655,
+      "p90": 0.09083608363258901,
+      "p95": 0.09917667541591917,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1579,
+      "datasets": 2000,
+      "rate": 0.7895,
+      "exact_95_interval": [
+       0.77097,
+       0.80718
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G4_rate_case_steps": {
+     "range_misses_the_true_value": {
+      "count": 236,
+      "datasets": 2000,
+      "rate": 0.118,
+      "exact_95_interval": [
+       0.10418,
+       0.13295
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 191,
+      "datasets": 2000,
+      "rate": 0.0955,
+      "exact_95_interval": [
+       0.08297,
+       0.10923
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 236,
+     "ordinary_rejections": 191,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08714551234049217,
+      "p90": 0.13163008376564556,
+      "p95": 0.14366604895804033,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1126,
+      "datasets": 2000,
+      "rate": 0.563,
+      "exact_95_interval": [
+       0.54093,
+       0.58488
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G5_shocks_common_across_states": {
+     "range_misses_the_true_value": {
+      "count": 148,
+      "datasets": 2000,
+      "rate": 0.074,
+      "exact_95_interval": [
+       0.06291,
+       0.08636
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 140,
+      "datasets": 2000,
+      "rate": 0.07,
+      "exact_95_interval": [
+       0.0592,
+       0.08208
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 148,
+     "ordinary_rejections": 140,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.10014615423242752,
+      "p90": 0.14652885132898585,
+      "p95": 0.16221538639013536,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 959,
+      "datasets": 2000,
+      "rate": 0.4795,
+      "exact_95_interval": [
+       0.4574,
+       0.50166
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G6_all_of_it": {
+     "range_misses_the_true_value": {
+      "count": 182,
+      "datasets": 2000,
+      "rate": 0.091,
+      "exact_95_interval": [
+       0.07875,
+       0.10446
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 152,
+      "datasets": 2000,
+      "rate": 0.076,
+      "exact_95_interval": [
+       0.06476,
+       0.0885
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 182,
+     "ordinary_rejections": 152,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.121717981661082,
+      "p90": 0.19183464889442375,
+      "p95": 0.22211456882450561,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 653,
+      "datasets": 2000,
+      "rate": 0.3265,
+      "exact_95_interval": [
+       0.30597,
+       0.34754
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G7_high_variance_where_the_weight_is": {
+     "range_misses_the_true_value": {
+      "count": 217,
+      "datasets": 2000,
+      "rate": 0.1085,
+      "exact_95_interval": [
+       0.0952,
+       0.12296
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 178,
+      "datasets": 2000,
+      "rate": 0.089,
+      "exact_95_interval": [
+       0.07688,
+       0.10234
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 217,
+     "ordinary_rejections": 178,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.14111622529120882,
+      "p90": 0.21740792169826234,
+      "p95": 0.24149260987554894,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 687,
+      "datasets": 2000,
+      "rate": 0.3435,
+      "exact_95_interval": [
+       0.32268,
+       0.36478
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G8_company_and_supplier_shocks": {
+     "range_misses_the_true_value": {
+      "count": 209,
+      "datasets": 2000,
+      "rate": 0.1045,
+      "exact_95_interval": [
+       0.09143,
+       0.11874
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 187,
+      "datasets": 2000,
+      "rate": 0.0935,
+      "exact_95_interval": [
+       0.08109,
+       0.10711
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 209,
+     "ordinary_rejections": 187,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.10475415650917622,
+      "p90": 0.1493724964142317,
+      "p95": 0.16307864706027014,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 910,
+      "datasets": 2000,
+      "rate": 0.455,
+      "exact_95_interval": [
+       0.43301,
+       0.47713
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G9_unequal_regional_exposure": {
+     "range_misses_the_true_value": {
+      "count": 197,
+      "datasets": 2000,
+      "rate": 0.0985,
+      "exact_95_interval": [
+       0.08579,
+       0.1124
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 190,
+      "datasets": 2000,
+      "rate": 0.095,
+      "exact_95_interval": [
+       0.0825,
+       0.1087
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 197,
+     "ordinary_rejections": 190,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09929827483304232,
+      "p90": 0.14409686037059993,
+      "p95": 0.1611949573248078,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 929,
+      "datasets": 2000,
+      "rate": 0.4645,
+      "exact_95_interval": [
+       0.44246,
+       0.48665
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G10_own_trends": {
+     "range_misses_the_true_value": {
+      "count": 199,
+      "datasets": 2000,
+      "rate": 0.0995,
+      "exact_95_interval": [
+       0.08673,
+       0.11346
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 205,
+      "datasets": 2000,
+      "rate": 0.1025,
+      "exact_95_interval": [
+       0.08955,
+       0.11663
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 199,
+     "ordinary_rejections": 205,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09600068996236161,
+      "p90": 0.13666809634303184,
+      "p95": 0.1474478953763979,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1005,
+      "datasets": 2000,
+      "rate": 0.5025,
+      "exact_95_interval": [
+       0.48035,
+       0.52465
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G11_fuel_shocks_linear_in_the_share": {
+     "range_misses_the_true_value": {
+      "count": 195,
+      "datasets": 2000,
+      "rate": 0.0975,
+      "exact_95_interval": [
+       0.08485,
+       0.11135
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 193,
+      "datasets": 2000,
+      "rate": 0.0965,
+      "exact_95_interval": [
+       0.08391,
+       0.11029
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 195,
+     "ordinary_rejections": 193,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08672491412597214,
+      "p90": 0.12426001819560883,
+      "p95": 0.137417348906845,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1169,
+      "datasets": 2000,
+      "rate": 0.5845,
+      "exact_95_interval": [
+       0.56254,
+       0.60621
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     },
+     "realised_path": {
+      "over": "datasets whose candidate computed an estimate",
+      "datasets_used": 2000,
+      "slope_of_the_estimate_on_the_realised_change": 0.006712523010033371,
+      "root_mean_square_error": 0.023735082193105467,
+      "thirds_by_size_of_the_realised_change": [
+       {
+        "absolute_change_from": 4.203792809965266e-05,
+        "absolute_change_to": 0.03416459484477892,
+        "range_misses": {
+         "count": 60,
+         "datasets": 667,
+         "rate": 0.08996,
+         "exact_95_interval": [
+          0.06935,
+          0.11427
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 62,
+         "datasets": 667,
+         "rate": 0.09295,
+         "exact_95_interval": [
+          0.07201,
+          0.11758
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.03421777236289774,
+        "absolute_change_to": 0.07875089159905117,
+        "range_misses": {
+         "count": 60,
+         "datasets": 667,
+         "rate": 0.08996,
+         "exact_95_interval": [
+          0.06935,
+          0.11427
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 60,
+         "datasets": 667,
+         "rate": 0.08996,
+         "exact_95_interval": [
+          0.06935,
+          0.11427
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.07875624402316769,
+        "absolute_change_to": 0.3104438489745729,
+        "range_misses": {
+         "count": 75,
+         "datasets": 666,
+         "rate": 0.11261,
+         "exact_95_interval": [
+          0.08961,
+          0.13911
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 71,
+         "datasets": 666,
+         "rate": 0.10661,
+         "exact_95_interval": [
+          0.0842,
+          0.13256
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "G12_fuel_shocks_not_linear_in_the_share": {
+     "range_misses_the_true_value": {
+      "count": 177,
+      "datasets": 2000,
+      "rate": 0.0885,
+      "exact_95_interval": [
+       0.07641,
+       0.10181
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 206,
+      "datasets": 2000,
+      "rate": 0.103,
+      "exact_95_interval": [
+       0.09002,
+       0.11716
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 177,
+     "ordinary_rejections": 206,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08834250744772532,
+      "p90": 0.12639232218870652,
+      "p95": 0.13813552185908273,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1106,
+      "datasets": 2000,
+      "rate": 0.553,
+      "exact_95_interval": [
+       0.5309,
+       0.57495
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     },
+     "realised_path": {
+      "over": "datasets whose candidate computed an estimate",
+      "datasets_used": 2000,
+      "slope_of_the_estimate_on_the_realised_change": -0.011754515979262864,
+      "root_mean_square_error": 0.023982445322310943,
+      "thirds_by_size_of_the_realised_change": [
+       {
+        "absolute_change_from": 2.4628549950274836e-05,
+        "absolute_change_to": 0.03492165097240164,
+        "range_misses": {
+         "count": 56,
+         "datasets": 667,
+         "rate": 0.08396,
+         "exact_95_interval": [
+          0.06404,
+          0.10764
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 64,
+         "datasets": 667,
+         "rate": 0.09595,
+         "exact_95_interval": [
+          0.07468,
+          0.12088
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.03493970496480793,
+        "absolute_change_to": 0.07833347132109308,
+        "range_misses": {
+         "count": 65,
+         "datasets": 667,
+         "rate": 0.09745,
+         "exact_95_interval": [
+          0.07602,
+          0.12252
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 73,
+         "datasets": 667,
+         "rate": 0.10945,
+         "exact_95_interval": [
+          0.08677,
+          0.13564
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.07833752699787958,
+        "absolute_change_to": 0.363452633330517,
+        "range_misses": {
+         "count": 56,
+         "datasets": 666,
+         "rate": 0.08408,
+         "exact_95_interval": [
+          0.06414,
+          0.1078
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 69,
+         "datasets": 666,
+         "rate": 0.1036,
+         "exact_95_interval": [
+          0.08151,
+          0.12928
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "cells_under_5pct": [],
+   "pooled_widths": {
+    "median": 0.09581161566379098,
+    "p90": 0.15148953840889434,
+    "p95": 0.17355296252200744,
+    "infinite": 0
+   },
+   "share_of_ranges_with_an_incomplete_or_failed_side": 0.0
+  },
+  "C": {
+   "by_process": {
+    "G0_as_in_D38": {
+     "range_misses_the_true_value": {
+      "count": 205,
+      "datasets": 2000,
+      "rate": 0.1025,
+      "exact_95_interval": [
+       0.08955,
+       0.11663
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 130,
+      "datasets": 2000,
+      "rate": 0.065,
+      "exact_95_interval": [
+       0.05459,
+       0.07671
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 205,
+     "ordinary_rejections": 130,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.0837465768487263,
+      "p90": 0.11410966958375937,
+      "p95": 0.12457698541049389,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1219,
+      "datasets": 2000,
+      "rate": 0.6095,
+      "exact_95_interval": [
+       0.58772,
+       0.63096
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G1_unequal_variances": {
+     "range_misses_the_true_value": {
+      "count": 176,
+      "datasets": 2000,
+      "rate": 0.088,
+      "exact_95_interval": [
+       0.07595,
+       0.10128
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 109,
+      "datasets": 2000,
+      "rate": 0.0545,
+      "exact_95_interval": [
+       0.04496,
+       0.06537
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 176,
+     "ordinary_rejections": 109,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.0989163539392764,
+      "p90": 0.1527698887538854,
+      "p95": 0.17179202544990088,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 964,
+      "datasets": 2000,
+      "rate": 0.482,
+      "exact_95_interval": [
+       0.45989,
+       0.50416
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G2_more_persistence": {
+     "range_misses_the_true_value": {
+      "count": 177,
+      "datasets": 2000,
+      "rate": 0.0885,
+      "exact_95_interval": [
+       0.07641,
+       0.10181
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 144,
+      "datasets": 2000,
+      "rate": 0.072,
+      "exact_95_interval": [
+       0.06106,
+       0.08422
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 177,
+     "ordinary_rejections": 144,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.10561282570317101,
+      "p90": 0.14302749555808147,
+      "p95": 0.15604153795360504,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 917,
+      "datasets": 2000,
+      "rate": 0.4585,
+      "exact_95_interval": [
+       0.43649,
+       0.48063
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G3_less_persistence": {
+     "range_misses_the_true_value": {
+      "count": 175,
+      "datasets": 2000,
+      "rate": 0.0875,
+      "exact_95_interval": [
+       0.07548,
+       0.10075
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 156,
+      "datasets": 2000,
+      "rate": 0.078,
+      "exact_95_interval": [
+       0.06662,
+       0.09063
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 175,
+     "ordinary_rejections": 156,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.06294105888321155,
+      "p90": 0.08718158831205775,
+      "p95": 0.09464159105126718,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1594,
+      "datasets": 2000,
+      "rate": 0.797,
+      "exact_95_interval": [
+       0.77869,
+       0.81443
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G4_rate_case_steps": {
+     "range_misses_the_true_value": {
+      "count": 218,
+      "datasets": 2000,
+      "rate": 0.109,
+      "exact_95_interval": [
+       0.09567,
+       0.12349
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 119,
+      "datasets": 2000,
+      "rate": 0.0595,
+      "exact_95_interval": [
+       0.04953,
+       0.07078
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 218,
+     "ordinary_rejections": 119,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08620177099745777,
+      "p90": 0.125179880571006,
+      "p95": 0.13893206930308877,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1112,
+      "datasets": 2000,
+      "rate": 0.556,
+      "exact_95_interval": [
+       0.53391,
+       0.57793
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G5_shocks_common_across_states": {
+     "range_misses_the_true_value": {
+      "count": 136,
+      "datasets": 2000,
+      "rate": 0.068,
+      "exact_95_interval": [
+       0.05736,
+       0.07993
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 101,
+      "datasets": 2000,
+      "rate": 0.0505,
+      "exact_95_interval": [
+       0.04132,
+       0.06103
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 136,
+     "ordinary_rejections": 101,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09889766204279957,
+      "p90": 0.1392346636776444,
+      "p95": 0.15047021701509777,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 977,
+      "datasets": 2000,
+      "rate": 0.4885,
+      "exact_95_interval": [
+       0.46637,
+       0.51066
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G6_all_of_it": {
+     "range_misses_the_true_value": {
+      "count": 157,
+      "datasets": 2000,
+      "rate": 0.0785,
+      "exact_95_interval": [
+       0.06709,
+       0.09117
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 66,
+      "datasets": 2000,
+      "rate": 0.033,
+      "exact_95_interval": [
+       0.02561,
+       0.04179
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 157,
+     "ordinary_rejections": 66,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.12104316382447877,
+      "p90": 0.18628204184648484,
+      "p95": 0.2142567306773092,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 630,
+      "datasets": 2000,
+      "rate": 0.315,
+      "exact_95_interval": [
+       0.29468,
+       0.33587
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G7_high_variance_where_the_weight_is": {
+     "range_misses_the_true_value": {
+      "count": 170,
+      "datasets": 2000,
+      "rate": 0.085,
+      "exact_95_interval": [
+       0.07314,
+       0.09809
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 93,
+      "datasets": 2000,
+      "rate": 0.0465,
+      "exact_95_interval": [
+       0.03769,
+       0.05667
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 170,
+     "ordinary_rejections": 93,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.1411440416958546,
+      "p90": 0.2159445213019452,
+      "p95": 0.2394360744478612,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 631,
+      "datasets": 2000,
+      "rate": 0.3155,
+      "exact_95_interval": [
+       0.29517,
+       0.33638
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G8_company_and_supplier_shocks": {
+     "range_misses_the_true_value": {
+      "count": 201,
+      "datasets": 2000,
+      "rate": 0.1005,
+      "exact_95_interval": [
+       0.08767,
+       0.11452
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 139,
+      "datasets": 2000,
+      "rate": 0.0695,
+      "exact_95_interval": [
+       0.05874,
+       0.08154
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 201,
+     "ordinary_rejections": 139,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.1028090705893248,
+      "p90": 0.1422067096985086,
+      "p95": 0.15375752087283473,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 921,
+      "datasets": 2000,
+      "rate": 0.4605,
+      "exact_95_interval": [
+       0.43848,
+       0.48264
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G9_unequal_regional_exposure": {
+     "range_misses_the_true_value": {
+      "count": 193,
+      "datasets": 2000,
+      "rate": 0.0965,
+      "exact_95_interval": [
+       0.08391,
+       0.11029
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 128,
+      "datasets": 2000,
+      "rate": 0.064,
+      "exact_95_interval": [
+       0.05367,
+       0.07563
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 193,
+     "ordinary_rejections": 128,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09664306888140917,
+      "p90": 0.1385843631421927,
+      "p95": 0.15213911220524334,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 963,
+      "datasets": 2000,
+      "rate": 0.4815,
+      "exact_95_interval": [
+       0.45939,
+       0.50366
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G10_own_trends": {
+     "range_misses_the_true_value": {
+      "count": 201,
+      "datasets": 2000,
+      "rate": 0.1005,
+      "exact_95_interval": [
+       0.08767,
+       0.11452
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 143,
+      "datasets": 2000,
+      "rate": 0.0715,
+      "exact_95_interval": [
+       0.06059,
+       0.08368
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 201,
+     "ordinary_rejections": 143,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.09495313625851809,
+      "p90": 0.12984620972226432,
+      "p95": 0.14021490011687707,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1028,
+      "datasets": 2000,
+      "rate": 0.514,
+      "exact_95_interval": [
+       0.49184,
+       0.53612
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     }
+    },
+    "G11_fuel_shocks_linear_in_the_share": {
+     "range_misses_the_true_value": {
+      "count": 191,
+      "datasets": 2000,
+      "rate": 0.0955,
+      "exact_95_interval": [
+       0.08297,
+       0.10923
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 133,
+      "datasets": 2000,
+      "rate": 0.0665,
+      "exact_95_interval": [
+       0.05597,
+       0.07832
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 191,
+     "ordinary_rejections": 133,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.08529567803603443,
+      "p90": 0.11798872693431509,
+      "p95": 0.1290894431617107,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1184,
+      "datasets": 2000,
+      "rate": 0.592,
+      "exact_95_interval": [
+       0.57009,
+       0.61364
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     },
+     "realised_path": {
+      "over": "datasets whose candidate computed an estimate",
+      "datasets_used": 2000,
+      "slope_of_the_estimate_on_the_realised_change": 0.006712523010033371,
+      "root_mean_square_error": 0.023735082193105467,
+      "thirds_by_size_of_the_realised_change": [
+       {
+        "absolute_change_from": 4.203792809965266e-05,
+        "absolute_change_to": 0.03416459484477892,
+        "range_misses": {
+         "count": 55,
+         "datasets": 667,
+         "rate": 0.08246,
+         "exact_95_interval": [
+          0.06272,
+          0.10598
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 42,
+         "datasets": 667,
+         "rate": 0.06297,
+         "exact_95_interval": [
+          0.04576,
+          0.08417
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.03421777236289774,
+        "absolute_change_to": 0.07875089159905117,
+        "range_misses": {
+         "count": 60,
+         "datasets": 667,
+         "rate": 0.08996,
+         "exact_95_interval": [
+          0.06935,
+          0.11427
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 44,
+         "datasets": 667,
+         "rate": 0.06597,
+         "exact_95_interval": [
+          0.04834,
+          0.08755
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.07875624402316769,
+        "absolute_change_to": 0.3104438489745729,
+        "range_misses": {
+         "count": 76,
+         "datasets": 666,
+         "rate": 0.11411,
+         "exact_95_interval": [
+          0.09097,
+          0.14074
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 47,
+         "datasets": 666,
+         "rate": 0.07057,
+         "exact_95_interval": [
+          0.05231,
+          0.09274
+         ]
+        }
+       }
+      ]
+     }
+    },
+    "G12_fuel_shocks_not_linear_in_the_share": {
+     "range_misses_the_true_value": {
+      "count": 176,
+      "datasets": 2000,
+      "rate": 0.088,
+      "exact_95_interval": [
+       0.07595,
+       0.10128
+      ]
+     },
+     "early_years_test_rejects_a_flat_history": {
+      "count": 145,
+      "datasets": 2000,
+      "rate": 0.0725,
+      "exact_95_interval": [
+       0.06152,
+       0.08475
+      ]
+     },
+     "rates_include_failure_penalties": true,
+     "numerical_failures": {
+      "count": 0,
+      "causes": {},
+      "where": {}
+     },
+     "ordinary_misses": 176,
+     "ordinary_rejections": 145,
+     "end_states_by_side": {
+      "lo": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      },
+      "hi": {
+       "bounded": 1.0,
+       "search incomplete": 0.0,
+       "numerical failure": 0.0
+      }
+     },
+     "widths": {
+      "median": 0.0867815475183136,
+      "p90": 0.11971410068716315,
+      "p95": 0.13060965312374004,
+      "infinite": 0
+     },
+     "power_at_a_planted_5pct_ramp": {
+      "count": 1129,
+      "datasets": 2000,
+      "rate": 0.5645,
+      "exact_95_interval": [
+       0.54244,
+       0.58637
+      ],
+      "planted_computation_failures_counted_as_no_detection": 0
+     },
+     "realised_path": {
+      "over": "datasets whose candidate computed an estimate",
+      "datasets_used": 2000,
+      "slope_of_the_estimate_on_the_realised_change": -0.011754515979262864,
+      "root_mean_square_error": 0.023982445322310943,
+      "thirds_by_size_of_the_realised_change": [
+       {
+        "absolute_change_from": 2.4628549950274836e-05,
+        "absolute_change_to": 0.03492165097240164,
+        "range_misses": {
+         "count": 59,
+         "datasets": 667,
+         "rate": 0.08846,
+         "exact_95_interval": [
+          0.06802,
+          0.11262
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 50,
+         "datasets": 667,
+         "rate": 0.07496,
+         "exact_95_interval": [
+          0.05615,
+          0.09764
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.03493970496480793,
+        "absolute_change_to": 0.07833347132109308,
+        "range_misses": {
+         "count": 56,
+         "datasets": 667,
+         "rate": 0.08396,
+         "exact_95_interval": [
+          0.06404,
+          0.10764
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 50,
+         "datasets": 667,
+         "rate": 0.07496,
+         "exact_95_interval": [
+          0.05615,
+          0.09764
+         ]
+        }
+       },
+       {
+        "absolute_change_from": 0.07833752699787958,
+        "absolute_change_to": 0.363452633330517,
+        "range_misses": {
+         "count": 61,
+         "datasets": 666,
+         "rate": 0.09159,
+         "exact_95_interval": [
+          0.07078,
+          0.1161
+         ]
+        },
+        "early_years_test_rejects": {
+         "count": 45,
+         "datasets": 666,
+         "rate": 0.06757,
+         "exact_95_interval": [
+          0.04971,
+          0.08937
+         ]
+        }
+       }
+      ]
+     }
+    }
+   },
+   "cells_under_5pct": [
+    "G6_all_of_it: early_years_test_rejects_a_flat_history",
+    "G7_high_variance_where_the_weight_is: early_years_test_rejects_a_flat_history"
+   ],
+   "pooled_widths": {
+    "median": 0.09463761026177922,
+    "p90": 0.1459060631671051,
+    "p95": 0.16704249207683583,
+    "infinite": 0
+   },
+   "share_of_ranges_with_an_incomplete_or_failed_side": 0.0
+  }
+ },
+ "selection": {
+  "screen": {
+   "threshold_count": 241,
+   "datasets_per_cell": 2000,
+   "level": "0.05/26",
+   "cells_at_or_over_the_threshold": {
+    "A": [
+     "G10_own_trends: early_years_test_rejects_a_flat_history",
+     "G12_fuel_shocks_not_linear_in_the_share: early_years_test_rejects_a_flat_history",
+     "G1_unequal_variances: early_years_test_rejects_a_flat_history",
+     "G2_more_persistence: early_years_test_rejects_a_flat_history",
+     "G3_less_persistence: early_years_test_rejects_a_flat_history",
+     "G4_rate_case_steps: range_misses_the_true_value",
+     "G9_unequal_regional_exposure: early_years_test_rejects_a_flat_history"
+    ],
+    "B": [],
+    "C": []
+   },
+   "survivors": [
+    "B",
+    "C"
+   ],
+   "note": "a screening rule, not certification: surviving it does not establish that all true rates are at most 10%"
+  },
+  "width": {
+   "pooled_median_width": {
+    "B": 0.09581161566379098,
+    "C": 0.09463761026177922
+   },
+   "comparisons": {
+    "C_against_B": {
+     "narrower": true,
+     "median_log_ratio_interval_95": [
+      -0.005759010815582005,
+      -0.0036376771568892973
+     ]
+    }
+   },
+   "tied_with_the_narrowest": [
+    "C"
+   ]
+  },
+  "selected": "C",
+  "why": "narrower than every other survivor (E2.2)"
+ }
+}

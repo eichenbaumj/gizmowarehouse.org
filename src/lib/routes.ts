@@ -36,6 +36,11 @@ export const METHODOLOGY_ROUTES: { slug: string; path: string; source: string }[
     path: "/gizmo/public-private-compensation-comparison/methodology",
     source: "gizmos/public-private-compensation-comparison/APPENDIX.md",
   },
+  {
+    slug: "data-center-utility-bills",
+    path: "/gizmo/data-center-utility-bills/methodology",
+    source: "gizmos/data-center-utility-bills/TECHNICAL.md",
+  },
 ];
 
 /** Old URLs that must keep resolving. Prerendered as meta-refresh + canonical to the target. */

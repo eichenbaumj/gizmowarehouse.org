@@ -1,0 +1,823 @@
+{
+ "sequence": 5,
+ "kind": "entry",
+ "stage": "inventory_against_sales",
+ "entry_id": "inventory_against_sales",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:12:22+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "inventory_against_sales",
+  "plan_section": "Reported checks, Does the inventory show up in sales?",
+  "sets": [
+   "headline_set at 2%"
+  ],
+  "builder": "design.build_with_rules under the headline rules; non-residential sales (side.q) and the inventory's load (side.dose)",
+  "estimator": "inventory_against_sales.check on its adopted settings (D-107; quantities only: reads no outcome)",
+  "labels": [
+   "reported check",
+   "not applicable: a quantity-side check that reads no outcome and estimates nothing on price"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": null,
+  "reads_an_outcome": false,
+  "needs_before_research_data": "RunInputs.inventory_inputs_are (research data is refused by the module's guard unless the gate file exists and the run is authorized). side.q needs nonres_mwh including 2009 to 2011; side.dose needs dc_gwh (base_retail_gwh is no longer read). The history of the inventory is settled by Joe's ruling of 2026-11-20 (D-119), in his words: \"Use the inventory as built, the load history underlying the headline design, for the inventory-against-sales check.\" The check is given the inventory as built, which this registry supplies as RunInputs.side.dose, the dose frame the headline design's sets are split on (inventory_against_sales.INVENTORY_HISTORY_D119). The check cannot detect a frame built from another history, since it takes whatever frame it is given, so the registry establishes it before the check is called, in two ways (session 27): equal content by hash, run_outcomes.frame_fingerprint(side.dose) against RunInputs.inventory_as_built.dose_fingerprint, the stamp taken when the sets were split; and the headline set split again from the frame, design.split on side.q and side.dose giving exactly the hosts with their cohorts and the comparison-eligible units of RunInputs.sets. On research data RunInputs.inventory_as_built is required and a substituted split function is refused; a mismatch is refused in words and the check is not run.",
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "what_this_is": "The plan's check 'Does the inventory show up in sales?' on the inputs given. Quantities only. The four elements the plan's bullet left open are settled (Joe, 2026-11-19, D-107 (adopting D-106 section 9, R7)). The inventory's history is the inventory as built, the load history underlying the headline design (Joe, 2026-11-20, D-119); this check cannot detect a frame built from another history and takes the frame it is given.",
+    "inputs_are": "research_data_after_the_freeze",
+    "settings": {
+     "base": "non_residential_2009_2011",
+     "slope": "ols_with_intercept",
+     "host_missing": "exclude_host_and_name",
+     "match_missing": "leave_out_match_and_name"
+    },
+    "settings_source": "Joe, 2026-11-19, D-107 (adopting D-106 section 9, R7)",
+    "hosts_given": 7,
+    "hosts_with_a_figure": 7,
+    "hosts_left_out": [],
+    "comparison_utilities_left_out": [],
+    "by_host": [
+     {
+      "host": "803:AZ",
+      "cohort": 2020,
+      "before_years": [
+       2017,
+       2018,
+       2019
+      ],
+      "after_years": [
+       2021,
+       2022,
+       2023
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "9191:ID",
+        "rate": 0.04655079895457592
+       },
+       {
+        "utility": "16868:WA",
+        "rate": -0.045449352579831515
+       },
+       {
+        "utility": "17470:WA",
+        "rate": -0.030264371123731815
+       },
+       {
+        "utility": "5701:TX",
+        "rate": 0.011399149477281378
+       },
+       {
+        "utility": "3660:WA",
+        "rate": 0.009196384025428328
+       },
+       {
+        "utility": "18429:WA",
+        "rate": -0.03504723129909815
+       },
+       {
+        "utility": "14354:WY",
+        "rate": -0.0961604549755769
+       },
+       {
+        "utility": "14354:WA",
+        "rate": -0.02510789601359198
+       },
+       {
+        "utility": "5701:NM",
+        "rate": -0.0019139499579792218
+       },
+       {
+        "utility": "56146:CO",
+        "rate": -0.05663971208945995
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 14739.708666666666,
+      "nonres_after_gwh": 15730.68,
+      "nonres_change_gwh": 990.9713333333348,
+      "base_gwh": 14851.086000000001,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 0.0,
+      "inventory_after_gwh": 2070.834276533959,
+      "inventory_added_gwh": 2070.834276533959,
+      "comparison_mean_rate": -0.02234366355819839,
+      "expected_gain_gwh": -331.8276690578703,
+      "excess_growth_gwh": 1322.799002391205,
+      "excess_at_least_half_the_inventory": true
+     },
+     {
+      "host": "6958:TX",
+      "cohort": 2017,
+      "before_years": [
+       2014,
+       2015,
+       2016
+      ],
+      "after_years": [
+       2018,
+       2019,
+       2020
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "2442:TX",
+        "rate": 0.0985317240742205
+       },
+       {
+        "utility": "11501:TX",
+        "rate": 0.032767498310394716
+       },
+       {
+        "utility": "2409:TX",
+        "rate": -0.0313936785083796
+       },
+       {
+        "utility": "17561:TX",
+        "rate": -0.019251653636779942
+       },
+       {
+        "utility": "3940:TX",
+        "rate": 0.03724819863818474
+       },
+       {
+        "utility": "3282:TX",
+        "rate": 0.6349842519685038
+       },
+       {
+        "utility": "13830:TX",
+        "rate": 0.7595736507497248
+       },
+       {
+        "utility": "13418:TX",
+        "rate": 0.0916088623430078
+       },
+       {
+        "utility": "12268:TX",
+        "rate": 0.6724791209848882
+       },
+       {
+        "utility": "12452:TX",
+        "rate": 0.5949445444410721
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 1058.7256666666665,
+      "nonres_after_gwh": 1045.7256666666665,
+      "nonres_change_gwh": -13.0,
+      "base_gwh": 1090.859333333333,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 0.0,
+      "inventory_after_gwh": 124.58666666666666,
+      "inventory_added_gwh": 124.58666666666666,
+      "comparison_mean_rate": 0.28714925193648366,
+      "expected_gain_gwh": 313.23944153459786,
+      "excess_growth_gwh": -326.23944153459786,
+      "excess_at_least_half_the_inventory": false
+     },
+     {
+      "host": "14127:NE",
+      "cohort": 2019,
+      "before_years": [
+       2016,
+       2017,
+       2018
+      ],
+      "after_years": [
+       2020,
+       2021,
+       2022
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "22500:KS",
+        "rate": -0.04407848111849144
+       },
+       {
+        "utility": "10005:KS",
+        "rate": -0.03760479899377478
+       },
+       {
+        "utility": "10000:MO",
+        "rate": -0.051844134022296484
+       },
+       {
+        "utility": "17718:TX",
+        "rate": -0.07451639589833126
+       },
+       {
+        "utility": "17698:LA",
+        "rate": -0.059511649990519055
+       },
+       {
+        "utility": "17698:TX",
+        "rate": -0.048360159074157694
+       },
+       {
+        "utility": "5860:MO",
+        "rate": 0.0067571359393383545
+       },
+       {
+        "utility": "17833:MO",
+        "rate": -0.015238656153339636
+       },
+       {
+        "utility": "17718:NM",
+        "rate": 0.504262038292637
+       },
+       {
+        "utility": "11292:TX",
+        "rate": -0.04117761410118259
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 7073.515,
+      "nonres_after_gwh": 7688.622666666667,
+      "nonres_change_gwh": 615.1076666666668,
+      "base_gwh": 7027.0216666666665,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 46.50579733333334,
+      "inventory_after_gwh": 1086.3655573333333,
+      "inventory_added_gwh": 1039.85976,
+      "comparison_mean_rate": 0.013868728487988247,
+      "expected_gain_gwh": 97.45585557421064,
+      "excess_growth_gwh": 517.6518110924561,
+      "excess_at_least_half_the_inventory": false
+     },
+     {
+      "host": "14354:UT",
+      "cohort": 2015,
+      "before_years": [
+       2012,
+       2013,
+       2014
+      ],
+      "after_years": [
+       2016,
+       2017,
+       2018
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "9191:ID",
+        "rate": 0.011089578861989136
+       },
+       {
+        "utility": "16868:WA",
+        "rate": -0.021887349946438706
+       },
+       {
+        "utility": "17470:WA",
+        "rate": -0.02230072368809921
+       },
+       {
+        "utility": "5701:TX",
+        "rate": 0.009701050314055548
+       },
+       {
+        "utility": "3660:WA",
+        "rate": 0.01560427544477938
+       },
+       {
+        "utility": "18429:WA",
+        "rate": -0.02477707373258453
+       },
+       {
+        "utility": "56146:CO",
+        "rate": 0.08403920709682433
+       },
+       {
+        "utility": "5701:NM",
+        "rate": -0.0495715573889739
+       },
+       {
+        "utility": "6022:OR",
+        "rate": 0.007687009081299934
+       },
+       {
+        "utility": "6604:CO",
+        "rate": 0.05190319106759356
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 17370.720666666664,
+      "nonres_after_gwh": 17235.185666666668,
+      "nonres_change_gwh": -135.53499999999622,
+      "base_gwh": 16041.257000000003,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 265.48031464080435,
+      "inventory_after_gwh": 834.6115752699387,
+      "inventory_added_gwh": 569.1312606291344,
+      "comparison_mean_rate": 0.0061487607110445545,
+      "expected_gain_gwh": 98.63385079736845,
+      "excess_growth_gwh": -234.16885079736466,
+      "excess_at_least_half_the_inventory": false
+     },
+     {
+      "host": "15473:NM",
+      "cohort": 2019,
+      "before_years": [
+       2016,
+       2017,
+       2018
+      ],
+      "after_years": [
+       2020,
+       2021,
+       2022
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "9191:ID",
+        "rate": 0.03919580934096478
+       },
+       {
+        "utility": "16868:WA",
+        "rate": -0.0759556258566646
+       },
+       {
+        "utility": "17470:WA",
+        "rate": -0.04574585224457939
+       },
+       {
+        "utility": "5701:TX",
+        "rate": -0.016561861926859378
+       },
+       {
+        "utility": "3660:WA",
+        "rate": -0.004599441266803006
+       },
+       {
+        "utility": "18429:WA",
+        "rate": -0.025842746873319555
+       },
+       {
+        "utility": "14354:WY",
+        "rate": -0.0966308710623155
+       },
+       {
+        "utility": "14354:WA",
+        "rate": 0.020228302139847498
+       },
+       {
+        "utility": "5701:NM",
+        "rate": -0.024038937618637735
+       },
+       {
+        "utility": "56146:CO",
+        "rate": -0.030238402119243002
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 5654.274666666667,
+      "nonres_after_gwh": 5826.683666666667,
+      "nonres_change_gwh": 172.40899999999965,
+      "base_gwh": 5754.134666666668,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 9.015314666666667,
+      "inventory_after_gwh": 739.8219813333334,
+      "inventory_added_gwh": 730.8066666666667,
+      "comparison_mean_rate": -0.026018962748760987,
+      "expected_gain_gwh": -149.71661554335424,
+      "excess_growth_gwh": 322.1256155433539,
+      "excess_at_least_half_the_inventory": false
+     },
+     {
+      "host": "17166:NV",
+      "cohort": 2017,
+      "before_years": [
+       2014,
+       2015,
+       2016
+      ],
+      "after_years": [
+       2018,
+       2019,
+       2020
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "5701:TX",
+        "rate": -0.007495182832309877
+       },
+       {
+        "utility": "17470:WA",
+        "rate": -0.032002398333741855
+       },
+       {
+        "utility": "16868:WA",
+        "rate": -0.0640616541819704
+       },
+       {
+        "utility": "9191:ID",
+        "rate": 0.016098589027427
+       },
+       {
+        "utility": "3660:WA",
+        "rate": 0.003643139009804397
+       },
+       {
+        "utility": "18429:WA",
+        "rate": -0.032881666682567756
+       },
+       {
+        "utility": "5701:NM",
+        "rate": -0.033188447258084786
+       },
+       {
+        "utility": "56146:CO",
+        "rate": 0.026604130465671227
+       },
+       {
+        "utility": "6022:OR",
+        "rate": -0.009687056828558305
+       },
+       {
+        "utility": "6604:CO",
+        "rate": -0.007998151109419482
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 7174.917666666667,
+      "nonres_after_gwh": 8245.58,
+      "nonres_change_gwh": 1070.6623333333328,
+      "base_gwh": 6588.392,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 51.666666666666664,
+      "inventory_after_gwh": 324.0,
+      "inventory_added_gwh": 272.3333333333333,
+      "comparison_mean_rate": -0.014096869872374984,
+      "expected_gain_gwh": -92.87570469219636,
+      "excess_growth_gwh": 1163.5380380255292,
+      "excess_at_least_half_the_inventory": true
+     },
+     {
+      "host": "20065:GA",
+      "cohort": 2021,
+      "before_years": [
+       2018,
+       2019,
+       2020
+      ],
+      "after_years": [
+       2022,
+       2023,
+       2024
+      ],
+      "matches_given": 10,
+      "matches_used": [
+       {
+        "utility": "21632:NC",
+        "rate": 0.04159152006555833
+       },
+       {
+        "utility": "10623:FL",
+        "rate": 0.01850347124011087
+       },
+       {
+        "utility": "3046:SC",
+        "rate": -0.06399344550996089
+       },
+       {
+        "utility": "18445:FL",
+        "rate": 0.012276573981603311
+       },
+       {
+        "utility": "19898:TN",
+        "rate": 0.22592322664870879
+       },
+       {
+        "utility": "17832:GA",
+        "rate": 0.035193049675308785
+       },
+       {
+        "utility": "3408:TN",
+        "rate": -0.0019353320298356458
+       },
+       {
+        "utility": "17543:SC",
+        "rate": 0.2695178439530428
+       },
+       {
+        "utility": "3757:FL",
+        "rate": 0.08712892822108365
+       },
+       {
+        "utility": "6909:FL",
+        "rate": -0.013007937440079886
+       }
+      ],
+      "matches_left_out": [],
+      "computed": true,
+      "why": null,
+      "nonres_before_gwh": 767.169,
+      "nonres_after_gwh": 1754.3326666666665,
+      "nonres_change_gwh": 987.1636666666665,
+      "base_gwh": 714.8400000000001,
+      "base_kind": "non_residential_2009_2011",
+      "inventory_before_gwh": 0.0,
+      "inventory_after_gwh": 929.737,
+      "inventory_added_gwh": 929.737,
+      "comparison_mean_rate": 0.06111978988055401,
+      "expected_gain_gwh": 43.69087059821524,
+      "excess_growth_gwh": 943.4727960684512,
+      "excess_at_least_half_the_inventory": true
+     }
+    ],
+    "slope": {
+     "form": "ols_with_intercept",
+     "slope": 0.6021783688204052,
+     "intercept": 36.32966587124503,
+     "hosts": 7,
+     "failure": null
+    },
+    "reading": "The inventory's load shows up in the utilities' own sales.",
+    "reading_failure": null,
+    "share_with_excess_at_least_half_the_inventory": 0.42857142857142855,
+    "hosts_with_excess_at_least_half_the_inventory": 3,
+    "hosts_where_the_inventory_adds_no_load": [],
+    "estimated": true,
+    "validation": "not applicable: a quantity-side check that reads no outcome and estimates nothing on price",
+    "design": {
+     "hosts": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "6958:TX",
+       "cohort": 2017,
+       "matches": [
+        "2442:TX",
+        "11501:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX"
+       ]
+      },
+      {
+       "utility": "14127:NE",
+       "cohort": 2019,
+       "matches": [
+        "22500:KS",
+        "10005:KS",
+        "10000:MO",
+        "17718:TX",
+        "17698:LA",
+        "17698:TX",
+        "5860:MO",
+        "17833:MO",
+        "17718:NM",
+        "11292:TX"
+       ]
+      },
+      {
+       "utility": "14354:UT",
+       "cohort": 2015,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "56146:CO",
+        "5701:NM",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "17166:NV",
+       "cohort": 2017,
+       "matches": [
+        "5701:TX",
+        "17470:WA",
+        "16868:WA",
+        "9191:ID",
+        "3660:WA",
+        "18429:WA",
+        "5701:NM",
+        "56146:CO",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "20065:GA",
+       "cohort": 2021,
+       "matches": [
+        "21632:NC",
+        "10623:FL",
+        "3046:SC",
+        "18445:FL",
+        "19898:TN",
+        "17832:GA",
+        "3408:TN",
+        "17543:SC",
+        "3757:FL",
+        "6909:FL"
+       ]
+      }
+     ],
+     "hosts_dropped": [],
+     "unresolved_ownership": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+       ],
+       "reason_by_year": {
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+       ],
+       "reason_by_year": {
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+       "in_this_run": "kept"
+      }
+     ],
+     "load_unknown_excluded": []
+    },
+    "inventory_as_built_check": {
+     "checked": true,
+     "dose_fingerprint": "1c5d7d457685e360e5ee17ad543233210b8443b9b4eb1dd7dff63863f651441d",
+     "stamp_source": "the frame design.load() returned, data/interim/utility_year_dose.parquet, the inventory as built (the load history underlying the headline design; Joe, 2026-11-20, D-119)",
+     "split": "design.split",
+     "hosts_with_cohort_reproduced": 7,
+     "comparison_eligible_units_reproduced": 3019
+    }
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

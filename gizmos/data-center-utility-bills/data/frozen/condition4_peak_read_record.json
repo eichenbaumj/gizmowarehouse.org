@@ -1,0 +1,59 @@
+{
+ "what_this_is": "The record of the one authorized read of condition 4's peak-demand rows (Joe, 2026-11-20, D-120, section 7): counts only, no utility's peak. The plan is frozen at commit ea426c4. The read was one call of conditions.read_peaks() with no source, a select of exactly the seven columns below; the retained file is the frame that call returned, in six columns, a quantity-only input reused by later assembly so that no further raw read is needed.",
+ "authorization": "Joe, 2026-11-20 (D-120, section 7)",
+ "authorizing_words": "I accept the freeze record and the reading that the completed final quantity regeneration and reconciliation satisfies the \u201cread again\u201d or \u201ctaken again at freeze\u201d clauses. Do not repeat that work.\n\nOne narrow exception to the prohibition on raw-data reads: I authorize Session 27 to read the existing `data/raw/pudl/core_eia861__yearly_operational_data_misc.parquet` through `conditions.read_peaks`, selecting only these seven columns:\n\n`utility_id_eia`, `state`, `report_date`, `summer_peak_demand_mw`, `winter_peak_demand_mw`, `short_form`, `data_observed`.\n\nUse this solely to supply and check the quantity-side input for condition 4 under the frozen specification. No other columns, revenue companion, other raw file, outcome access or condition-4 outcome analysis is authorized. Inspect and test the path on invented inputs first, record the read, and retain a reusable quantity-only input so subsequent assembly does not require another raw read.\n\nCarry this exception into the handover and implementation record. All other boundaries stand: no GATE1_SIGNED, outcome authorization variable on research data, outcome read or research analysis. Return the implementation-readiness package and stop.",
+ "raw_file": {
+  "path": "data/raw/pudl/core_eia861__yearly_operational_data_misc.parquet",
+  "sha256": "6b1fe661b22678dfbf4c3d419beb681b98e9e3e96cb1b35cd066c87c3c24d15d"
+ },
+ "columns_selected": [
+  "utility_id_eia",
+  "state",
+  "report_date",
+  "summer_peak_demand_mw",
+  "winter_peak_demand_mw",
+  "short_form",
+  "data_observed"
+ ],
+ "reader": "pipeline.analysis.conditions.read_peaks",
+ "columns_retained": [
+  "utility_id_eia",
+  "state",
+  "year",
+  "peak_mw",
+  "short_form",
+  "data_observed"
+ ],
+ "columns_returned_by_the_reader": [
+  "utility_id_eia",
+  "state",
+  "year",
+  "peak_mw",
+  "short_form",
+  "data_observed"
+ ],
+ "counts": {
+  "rows": 66329,
+  "first_year": 2001,
+  "last_year": 2025,
+  "distinct_utility_state_pairs": 4903,
+  "rows_with_a_peak": 59098,
+  "rows_not_observed": 195,
+  "rows_marked_short_form": 1038,
+  "rows_with_the_short_form_mark_missing": 65291,
+  "rows_sharing_a_utility_state_year_key": 36,
+  "repeated_utility_state_year_keys": 18
+ },
+ "read_at_utc": "2026-11-20T22:22:58+00:00",
+ "command": "python3 -I pipeline/analysis/condition4_peaks.py --read-once",
+ "retained_file": {
+  "path": "data/interim/condition4_peak_rows.parquet",
+  "sha256": "71a6048169399943bf287b37f96a17fade7699c6d998093035ba4cdbe1124542",
+  "representation": "parquet, short_form as pandas nullable boolean",
+  "representations_that_failed_before_it": [],
+  "reads_back_equal": true
+ },
+ "usable_by_load_retained": true,
+ "problems_in_words": [],
+ "written_by": "pipeline/analysis/condition4_peaks.py read_once_and_retain"
+}

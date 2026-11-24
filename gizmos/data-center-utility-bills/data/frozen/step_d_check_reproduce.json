@@ -1,0 +1,44 @@
+{
+ "reproduce": {
+  "facilities.parquet": "identical",
+  "facility_year.parquet": "identical",
+  "utility_year_dose.parquet": "identical",
+  "state_anchor.parquet": "identical",
+  "state_load_by_year.parquet": "identical",
+  "epoch_gaps.parquet": "identical"
+ },
+ "fingerprint": {
+  "files": {
+   "pipeline/facilities/verified/pass_c_corrections_s17.json": "b30f25c7b9303eacb40e99e26a19d6205111d1e790961499587e1247aa9bd090",
+   "docs/gate1/expansion-test-2026-11-18-s17.json": "29106878fe4f9bf3ce5cfd1283b2739e76c47ab2c7a89b351c2898c35552e5c9",
+   "pipeline/facilities/corrections.py": "95db5086447d4960ec53881b55f8b4460e529ed0d2864fbb32ed3241e46f4dae",
+   "pipeline/facilities/apply_verified.py": "61fb30117b2df4ad68ba91123e3f70259ab21c62cda151bc972a26dd91885f5c",
+   "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+   "pipeline/facilities/timing.py": "afab9378084eec1eacaf27a6d02eba27a5ce4448a86e76f5cb347dd628fc5a17",
+   "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+   "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+   "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+   "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+   "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+   "pipeline/facilities/pass_c_expand.py": "6ee4565c2610d8307f713856856a9dd9ac2f3acce3808e2dea864f9bfe305844",
+   "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+   "pipeline/facilities/assignment.py": "5b131be2c17db6fa37046af8ef56fa640a37ddf00d232fb2cf47963882a22cdb",
+   "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+   "data/interim/facilities.parquet": "87b1acd0503f35b2fb13b8be167c6be11de2054c874931a55b999c124ccc8aec",
+   "data/interim/facility_year.parquet": "61962c7b9988cbe027fd607036f761f56cfbad20c97a21dfbfd974263bb99268",
+   "data/interim/utility_year_dose.parquet": "107a92b3ead6abaf4394d5949848273d4d6d41de74ca6af1efa8df50ffd2412b",
+   "data/interim/state_anchor.parquet": "82139d9ab34f9eb9434d197672fe38f773341ef174d4bdda2fa09593fb625d99",
+   "data/interim/state_load_by_year.parquet": "6337f89bdb1ca03b6d746f2c26e4bfbb0653e714230331f2d826008016013a10",
+   "data/interim/epoch_gaps.parquet": "f4d79f38bcc8aae6db159962ab12355dcda1cb1d639ec7cdc27498551df8dc7c",
+   "data/interim/snapshot-2026-11-14/facilities.parquet": "87b1acd0503f35b2fb13b8be167c6be11de2054c874931a55b999c124ccc8aec",
+   "data/interim/snapshot-2026-11-14/facility_year.parquet": "61962c7b9988cbe027fd607036f761f56cfbad20c97a21dfbfd974263bb99268",
+   "data/interim/snapshot-2026-11-14/utility_year_dose.parquet": "107a92b3ead6abaf4394d5949848273d4d6d41de74ca6af1efa8df50ffd2412b",
+   "data/interim/snapshot-2026-11-14/state_anchor.parquet": "82139d9ab34f9eb9434d197672fe38f773341ef174d4bdda2fa09593fb625d99",
+   "data/interim/snapshot-2026-11-14/state_load_by_year.parquet": "6337f89bdb1ca03b6d746f2c26e4bfbb0653e714230331f2d826008016013a10",
+   "data/interim/snapshot-2026-11-14/epoch_gaps.parquet": "f4d79f38bcc8aae6db159962ab12355dcda1cb1d639ec7cdc27498551df8dc7c"
+  },
+  "settings": {
+   "check": "reproduce"
+  }
+ }
+}

@@ -1,0 +1,3432 @@
+{
+ "what_this_is": "A PROPOSAL for Joe, not adopted (his instruction of 2026-11-19, D-103). Quantity-only and PROVISIONAL: the design as it stands on 2026-11-18; the plan is a DRAFT and not frozen. The as-built classes (pipeline/analysis/second_number.py, data/frozen/second_number_design.json) are unchanged and remain the record. No price, revenue or bill was read; usability is the quantities file's res_price_usable flag. No estimate is here. The two alternatives of rule 8.3 remain undefined; no scenario is defined here.",
+ "built_by": "pipeline/analysis/second_number_classes.py",
+ "definitions": {
+  "inputs": {
+   "a": "the change in dose capped at 25 points as assigned (inventory as built)",
+   "lo_hi": "smallest and largest change capped at 25 points over rule 8.1's six histories",
+   "reach": "load share above zero, uncapped, in any year of 2008-2010 or 2023-2025 in any of the six histories (as assigned or in any case)",
+   "zero": "exact equality, as second_number.classify tests it"
+  },
+  "classes_in_order_first_match_wins": [
+   "no_single_dose",
+   "no_site_in_reach",
+   "settled_zero_change_with_load_in_reach",
+   "settled",
+   "uncertain_positive_exposure",
+   "apparent_zero",
+   "positive_as_assigned_zero_in_some_case",
+   "other_not_settled"
+  ],
+  "class_definitions": {
+   "no_single_dose": "1. No dose as assigned (a site with no load history reaches it), unless its histories give one common dose, in which case that dose is its dose as assigned and the tests below apply. Out of every run on single doses and named.",
+   "no_site_in_reach": "2. No data center load above zero in any year of 2008 to 2010 or 2023 to 2025 in any feasible history (uncapped). Its change is zero because nothing reaches it. Still subject to missing sites (D-46 ruling 6).",
+   "settled_zero_change_with_load_in_reach": "3. Load in reach (some history carries load in an endpoint period) and the capped change is zero in every history. Zero exposure change, not zero exposure. Which kind is recorded per history: no load at either endpoint in that history, at or above the cap in every endpoint year, or equal capped averages below the cap.",
+   "settled": "4. Not classed above and the capped change differs by less than two points across its histories (hi - lo < 2; exactly 2 is not settled). Sub-labels, attributes and not classes: zero_as_assigned_positive_in_some_case (a == 0 and hi > 0; not a verified zero), positive_in_every_case (lo > 0), other.",
+   "uncertain_positive_exposure": "5. Not settled and above zero in every history (lo > 0).",
+   "apparent_zero": "6. Not settled, zero as assigned and above zero in some history (a == 0, hi > 0). Not a verified zero.",
+   "positive_as_assigned_zero_in_some_case": "7. Not settled, above zero as assigned and zero or below in some history (a > 0, lo <= 0).",
+   "other_not_settled": "8. Anything left (for example zero or below as assigned with a negative change in some history and two points or more apart). Exists so the classification is exhaustive."
+  },
+  "runs": {
+   "as_assigned": "every class with a dose as assigned (2 to 8)",
+   "settled_and_no_site_in_reach_only": "classes 2, 3 and 4, each at its dose as assigned",
+   "ten_highest_leverage_not_settled_left_out": "classes 5 to 8 are not settled; the ten with the highest leverage in the run as assigned at 25 points are left out",
+   "class_1": "out of every run on single doses, and named"
+  },
+  "caps": "classes are computed at the 25-point cap only: second_number.py classes at 25 points only (its classify is called on the capped change), so no 50-point or uncapped classes are given"
+ },
+ "reproduction_of_the_as_built_classes": {
+  "utilities_compared": 1184,
+  "class_as_built_differs_from_second_number_design_json": [],
+  "utilities_in_the_frozen_file_not_reproduced_here": []
+ },
+ "near_zero_changes_not_exactly_zero": {
+  "utilities": [],
+  "what": "utilities with a capped change in some history whose absolute value is above zero and under 1e-9 (a floating-point residue that exact equality would not treat as zero)"
+ },
+ "counts_by_proposed_class_capped_25": {
+  "no_single_dose": 2,
+  "no_site_in_reach": 1013,
+  "settled_zero_change_with_load_in_reach": 7,
+  "settled": 82,
+  "uncertain_positive_exposure": 21,
+  "apparent_zero": 20,
+  "positive_as_assigned_zero_in_some_case": 39,
+  "other_not_settled": 0
+ },
+ "no_site_in_reach_with_load_outside_the_endpoint_years": {
+  "utilities": [],
+  "what": "class 2 utilities (no load in any endpoint year in any history) that carry load in some year 2011-2022 in some history; reach is measured at the endpoints only, as the proposal defines it"
+ },
+ "class_4_sub_label_counts": {
+  "zero_as_assigned_positive_in_some_case": 13,
+  "positive_in_every_case": 54,
+  "other": 15
+ },
+ "cross_tab_proposed_class_by_class_as_built": {
+  "no_single_dose": {
+   "settled": 1,
+   "uncertain_positive_exposure": 1,
+   "apparent_zero": 0,
+   "no_site_in_reach": 0,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  },
+  "no_site_in_reach": {
+   "settled": 0,
+   "uncertain_positive_exposure": 0,
+   "apparent_zero": 0,
+   "no_site_in_reach": 1013,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  },
+  "settled_zero_change_with_load_in_reach": {
+   "settled": 0,
+   "uncertain_positive_exposure": 0,
+   "apparent_zero": 0,
+   "no_site_in_reach": 7,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  },
+  "settled": {
+   "settled": 69,
+   "uncertain_positive_exposure": 0,
+   "apparent_zero": 13,
+   "no_site_in_reach": 0,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  },
+  "uncertain_positive_exposure": {
+   "settled": 0,
+   "uncertain_positive_exposure": 21,
+   "apparent_zero": 0,
+   "no_site_in_reach": 0,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  },
+  "apparent_zero": {
+   "settled": 0,
+   "uncertain_positive_exposure": 0,
+   "apparent_zero": 20,
+   "no_site_in_reach": 0,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  },
+  "positive_as_assigned_zero_in_some_case": {
+   "settled": 0,
+   "uncertain_positive_exposure": 0,
+   "apparent_zero": 0,
+   "no_site_in_reach": 0,
+   "in_none_of_the_four_classes": 39,
+   "no_range_established": 0
+  },
+  "other_not_settled": {
+   "settled": 0,
+   "uncertain_positive_exposure": 0,
+   "apparent_zero": 0,
+   "no_site_in_reach": 0,
+   "in_none_of_the_four_classes": 0,
+   "no_range_established": 0
+  }
+ },
+ "named": {
+  "no_single_dose": [
+   {
+    "utility": "15248:OR",
+    "state": "OR",
+    "name": "Portland General Electric Co",
+    "assigned_change_points_capped_25": null,
+    "range_points_capped_25": null,
+    "range_points_at_the_other_caps_for_information": null,
+    "class_as_built": "uncertain_positive_exposure"
+   },
+   {
+    "utility": "19325:OR",
+    "state": "OR",
+    "name": "Umatilla Electric Coop Assn",
+    "assigned_change_points_capped_25": null,
+    "range_points_capped_25": null,
+    "range_points_at_the_other_caps_for_information": null,
+    "class_as_built": "settled"
+   }
+  ],
+  "settled_zero_change_with_load_in_reach": [
+   {
+    "utility": "10009:TX",
+    "state": "TX",
+    "name": "Karnes Electric Coop Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1014.13603
+     ],
+     "capped_at_50_points": [
+      0.0,
+      5.132537
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "no_load_at_either_endpoint",
+     "kinds_over_histories": [
+      "at_or_above_the_cap_in_every_endpoint_year",
+      "no_load_at_either_endpoint"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "no_load_at_either_endpoint",
+      "as_assigned_no_anchoring": "no_load_at_either_endpoint",
+      "lower_as_built": "no_load_at_either_endpoint",
+      "lower_no_anchoring": "no_load_at_either_endpoint",
+      "upper_as_built": "at_or_above_the_cap_in_every_endpoint_year",
+      "upper_no_anchoring": "at_or_above_the_cap_in_every_endpoint_year"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 1467.802
+    }
+   },
+   {
+    "utility": "12745:CA",
+    "state": "CA",
+    "name": "Modesto Irrigation District",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.0
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.0
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "equal_capped_averages_below_the_cap",
+     "kinds_over_histories": [
+      "equal_capped_averages_below_the_cap",
+      "no_load_at_either_endpoint"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "equal_capped_averages_below_the_cap",
+      "as_assigned_no_anchoring": "equal_capped_averages_below_the_cap",
+      "lower_as_built": "no_load_at_either_endpoint",
+      "lower_no_anchoring": "no_load_at_either_endpoint",
+      "upper_as_built": "equal_capped_averages_below_the_cap",
+      "upper_no_anchoring": "equal_capped_averages_below_the_cap"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      0.221,
+      0.221,
+      0.221,
+      0.221,
+      0.221,
+      0.221
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 0.233
+    }
+   },
+   {
+    "utility": "15257:CO",
+    "state": "CO",
+    "name": "Poudre Valley REA, Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.0
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.0
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "equal_capped_averages_below_the_cap",
+     "kinds_over_histories": [
+      "equal_capped_averages_below_the_cap",
+      "no_load_at_either_endpoint"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "equal_capped_averages_below_the_cap",
+      "as_assigned_no_anchoring": "equal_capped_averages_below_the_cap",
+      "lower_as_built": "no_load_at_either_endpoint",
+      "lower_no_anchoring": "no_load_at_either_endpoint",
+      "upper_as_built": "equal_capped_averages_below_the_cap",
+      "upper_no_anchoring": "equal_capped_averages_below_the_cap"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      18.777,
+      18.777,
+      18.777,
+      18.777,
+      18.777,
+      18.777
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 22.804
+    }
+   },
+   {
+    "utility": "15263:MD",
+    "state": "MD",
+    "name": "The Potomac Edison Company",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.0
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.0
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "equal_capped_averages_below_the_cap",
+     "kinds_over_histories": [
+      "equal_capped_averages_below_the_cap"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "equal_capped_averages_below_the_cap",
+      "as_assigned_no_anchoring": "equal_capped_averages_below_the_cap",
+      "lower_as_built": "equal_capped_averages_below_the_cap",
+      "lower_no_anchoring": "equal_capped_averages_below_the_cap",
+      "upper_as_built": "equal_capped_averages_below_the_cap",
+      "upper_no_anchoring": "equal_capped_averages_below_the_cap"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      0.192,
+      0.192,
+      0.192,
+      0.192,
+      0.192,
+      0.192
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 0.96
+    }
+   },
+   {
+    "utility": "16088:CA",
+    "state": "CA",
+    "name": "City of Riverside - (CA)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.0
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.0
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "equal_capped_averages_below_the_cap",
+     "kinds_over_histories": [
+      "equal_capped_averages_below_the_cap",
+      "no_load_at_either_endpoint"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "equal_capped_averages_below_the_cap",
+      "as_assigned_no_anchoring": "equal_capped_averages_below_the_cap",
+      "lower_as_built": "no_load_at_either_endpoint",
+      "lower_no_anchoring": "no_load_at_either_endpoint",
+      "upper_as_built": "equal_capped_averages_below_the_cap",
+      "upper_no_anchoring": "equal_capped_averages_below_the_cap"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      1.309,
+      1.309,
+      1.309,
+      1.309,
+      1.309,
+      1.309
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 1.381
+    }
+   },
+   {
+    "utility": "1613:SC",
+    "state": "SC",
+    "name": "Berkeley Electric Coop Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      21.324519,
+      21.324519
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.0
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "at_or_above_the_cap_in_every_endpoint_year",
+     "kinds_over_histories": [
+      "at_or_above_the_cap_in_every_endpoint_year"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "at_or_above_the_cap_in_every_endpoint_year",
+      "as_assigned_no_anchoring": "at_or_above_the_cap_in_every_endpoint_year",
+      "lower_as_built": "at_or_above_the_cap_in_every_endpoint_year",
+      "lower_no_anchoring": "at_or_above_the_cap_in_every_endpoint_year",
+      "upper_as_built": "at_or_above_the_cap_in_every_endpoint_year",
+      "upper_no_anchoring": "at_or_above_the_cap_in_every_endpoint_year"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      127.947,
+      191.921,
+      191.921,
+      191.921,
+      191.921,
+      191.921
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 191.921
+    }
+   },
+   {
+    "utility": "19785:OK",
+    "state": "OK",
+    "name": "Verdigris Valley Elec Coop Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      35.07553
+     ],
+     "capped_at_50_points": [
+      0.0,
+      11.691843
+     ]
+    },
+    "class_as_built": "no_site_in_reach",
+    "zero_change_kind": {
+     "as_assigned": "at_or_above_the_cap_in_every_endpoint_year",
+     "kinds_over_histories": [
+      "at_or_above_the_cap_in_every_endpoint_year",
+      "no_load_at_either_endpoint"
+     ],
+     "by_history": {
+      "as_assigned_as_built": "at_or_above_the_cap_in_every_endpoint_year",
+      "as_assigned_no_anchoring": "at_or_above_the_cap_in_every_endpoint_year",
+      "lower_as_built": "no_load_at_either_endpoint",
+      "lower_no_anchoring": "no_load_at_either_endpoint",
+      "upper_as_built": "at_or_above_the_cap_in_every_endpoint_year",
+      "upper_no_anchoring": "at_or_above_the_cap_in_every_endpoint_year"
+     },
+     "endpoint_load_share_points_as_assigned_uncapped": [
+      82.764,
+      82.764,
+      82.764,
+      117.84,
+      117.84,
+      117.84
+     ],
+     "largest_endpoint_load_share_points_any_history_uncapped": 117.84
+    }
+   }
+  ],
+  "apparent_zero": [
+   {
+    "utility": "10370:MO",
+    "state": "MO",
+    "name": "City of Kirkwood - (MO)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     9.699981
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      43.502513
+     ],
+     "capped_at_50_points": [
+      0.0,
+      16.660533
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "10668:OH",
+    "state": "OH",
+    "name": "Licking Rural Electric Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     16.666667
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      701.272712
+     ],
+     "capped_at_50_points": [
+      0.0,
+      33.333333
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "13332:TX",
+    "state": "TX",
+    "name": "Navarro County Elec Coop, Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     8.333333
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      61.787506
+     ],
+     "capped_at_50_points": [
+      0.0,
+      16.666667
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "13647:IN",
+    "state": "IN",
+    "name": "Noble County R E M C",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     7.372956
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      7.372956
+     ],
+     "capped_at_50_points": [
+      0.0,
+      7.372956
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "13781:SD",
+    "state": "SD",
+    "name": "Northern States Power Co - Minnesota",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     2.431021
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      2.431021
+     ],
+     "capped_at_50_points": [
+      0.0,
+      2.431021
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "14626:TX",
+    "state": "TX",
+    "name": "Pedernales Electric Coop, Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     18.259171
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      71.743904
+     ],
+     "capped_at_50_points": [
+      0.0,
+      32.194224
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15138:MO",
+    "state": "MO",
+    "name": "Platte-Clay Electric Coop, Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     2.762003
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      2.762003
+     ],
+     "capped_at_50_points": [
+      0.0,
+      2.762003
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "16655:CA",
+    "state": "CA",
+    "name": "City of Santa Clara - (CA)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     24.320055
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      25.281071,
+      120.732574
+     ],
+     "capped_at_50_points": [
+      18.95965,
+      26.666198
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "17671:AR",
+    "state": "AR",
+    "name": "Southwest Arkansas E C C",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     17.707241
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      17.707241
+     ],
+     "capped_at_50_points": [
+      0.0,
+      17.707241
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "17698:AR",
+    "state": "AR",
+    "name": "Southwestern Electric Power Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     2.764029
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      2.764029
+     ],
+     "capped_at_50_points": [
+      0.0,
+      2.764029
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "1892:TX",
+    "state": "TX",
+    "name": "Bluebonnet Electric Coop, Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     10.106127
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      30.31838
+     ],
+     "capped_at_50_points": [
+      0.0,
+      28.287079
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "19159:TX",
+    "state": "TX",
+    "name": "Tri-County Electric Coop, Inc (TX)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     21.136999
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      82.504442
+     ],
+     "capped_at_50_points": [
+      0.0,
+      46.136999
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "19490:TX",
+    "state": "TX",
+    "name": "United Electric Coop Service Inc - (TX)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      88.456211
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "19545:WY",
+    "state": "WY",
+    "name": "Black Hills Power, Inc.",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      26.317765
+     ],
+     "capped_at_50_points": [
+      0.0,
+      26.317765
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "20948:TX",
+    "state": "TX",
+    "name": "Wise Electric Coop Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     10.591789
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      64.836948
+     ],
+     "capped_at_50_points": [
+      0.0,
+      35.591789
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "27058:WY",
+    "state": "WY",
+    "name": "High West Energy, Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      42.840779
+     ],
+     "capped_at_50_points": [
+      0.0,
+      42.840779
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "3093:AR",
+    "state": "AR",
+    "name": "Carroll Electric Coop Corp - (AR)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     6.909914
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      6.909914
+     ],
+     "capped_at_50_points": [
+      0.0,
+      6.909914
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "3093:MO",
+    "state": "MO",
+    "name": "Carroll Electric Coop Corp - (AR)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      97.186944
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "5860:AR",
+    "state": "AR",
+    "name": "Empire District Electric Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      75.54265
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "9417:IA",
+    "state": "IA",
+    "name": "Interstate Power and Light Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     24.49936
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      32.049535
+     ],
+     "capped_at_50_points": [
+      0.0,
+      32.049535
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   }
+  ],
+  "positive_as_assigned_zero_in_some_case": [
+   {
+    "utility": "11187:CO",
+    "state": "CO",
+    "name": "City of Longmont",
+    "assigned_change_points_capped_25": 2.621643,
+    "range_points_capped_25": [
+     0.0,
+     3.183963
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      3.183963
+     ],
+     "capped_at_50_points": [
+      0.0,
+      3.183963
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "11560:VA",
+    "state": "VA",
+    "name": "City of Manassas - (VA)",
+    "assigned_change_points_capped_25": 12.709282,
+    "range_points_capped_25": [
+     0.0,
+     12.709282
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      13.127846
+     ],
+     "capped_at_50_points": [
+      0.0,
+      13.127846
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "1175:TX",
+    "state": "TX",
+    "name": "Bandera Electric Coop, Inc",
+    "assigned_change_points_capped_25": 16.666667,
+    "range_points_capped_25": [
+     0.0,
+     16.666667
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      538.998887
+     ],
+     "capped_at_50_points": [
+      0.0,
+      33.333333
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "12351:AZ",
+    "state": "AZ",
+    "name": "City of Mesa - (AZ)",
+    "assigned_change_points_capped_25": 22.734685,
+    "range_points_capped_25": [
+     0.0,
+     22.734685
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1305.913615
+     ],
+     "capped_at_50_points": [
+      0.0,
+      45.385693
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "12698:MO",
+    "state": "MO",
+    "name": "Evergy Missouri West",
+    "assigned_change_points_capped_25": 3.706301,
+    "range_points_capped_25": [
+     0.0,
+     3.894507
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      3.894507
+     ],
+     "capped_at_50_points": [
+      0.0,
+      3.894507
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "1273:TX",
+    "state": "TX",
+    "name": "Bartlett Electric Coop, Inc",
+    "assigned_change_points_capped_25": 16.666667,
+    "range_points_capped_25": [
+     0.0,
+     16.666667
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      36.687099
+     ],
+     "capped_at_50_points": [
+      0.0,
+      28.8957
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "13050:CO",
+    "state": "CO",
+    "name": "Mountain Parks Electric, Inc",
+    "assigned_change_points_capped_25": 7.264206,
+    "range_points_capped_25": [
+     0.0,
+     8.822317
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      8.822317
+     ],
+     "capped_at_50_points": [
+      0.0,
+      8.822317
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "13208:IL",
+    "state": "IL",
+    "name": "City of Naperville - (IL)",
+    "assigned_change_points_capped_25": 17.129481,
+    "range_points_capped_25": [
+     0.0,
+     17.129481
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      62.964156
+     ],
+     "capped_at_50_points": [
+      0.0,
+      42.129481
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "13520:MO",
+    "state": "MO",
+    "name": "New-Mac Electric Coop, Inc",
+    "assigned_change_points_capped_25": 25.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      35.637281
+     ],
+     "capped_at_50_points": [
+      0.0,
+      35.637281
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "13640:VA",
+    "state": "VA",
+    "name": "Northern Virginia Elec Coop",
+    "assigned_change_points_capped_25": 21.261286,
+    "range_points_capped_25": [
+     0.0,
+     21.261286
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      448.340549
+     ],
+     "capped_at_50_points": [
+      0.0,
+      46.261286
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "13998:OH",
+    "state": "OH",
+    "name": "Ohio Edison Co",
+    "assigned_change_points_capped_25": 3.324647,
+    "range_points_capped_25": [
+     0.0,
+     3.324647
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      3.324647
+     ],
+     "capped_at_50_points": [
+      0.0,
+      3.324647
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "15444:UT",
+    "state": "UT",
+    "name": "Provo City Corp",
+    "assigned_change_points_capped_25": 2.622214,
+    "range_points_capped_25": [
+     0.0,
+     3.43765
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      3.43765
+     ],
+     "capped_at_50_points": [
+      0.0,
+      3.43765
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "15466:CO",
+    "state": "CO",
+    "name": "Public Service Co of Colorado",
+    "assigned_change_points_capped_25": 3.303837,
+    "range_points_capped_25": [
+     0.0,
+     4.637129
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      4.637129
+     ],
+     "capped_at_50_points": [
+      0.0,
+      4.637129
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "1586:AR",
+    "state": "AR",
+    "name": "City of Bentonville - (AR)",
+    "assigned_change_points_capped_25": 3.910013,
+    "range_points_capped_25": [
+     0.0,
+     19.550065
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      19.550065
+     ],
+     "capped_at_50_points": [
+      0.0,
+      19.550065
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "16534:CA",
+    "state": "CA",
+    "name": "Sacramento Municipal Util Dist",
+    "assigned_change_points_capped_25": 2.94449,
+    "range_points_capped_25": [
+     0.0,
+     3.105816
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      3.105816
+     ],
+     "capped_at_50_points": [
+      0.0,
+      3.105816
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "16638:TX",
+    "state": "TX",
+    "name": "San Bernard Electric Coop, Inc",
+    "assigned_change_points_capped_25": 25.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      296.057253
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "16865:GA",
+    "state": "GA",
+    "name": "Sawnee Electric Membership Corporation",
+    "assigned_change_points_capped_25": 4.78368,
+    "range_points_capped_25": [
+     0.0,
+     4.78368
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      4.78368
+     ],
+     "capped_at_50_points": [
+      0.0,
+      4.78368
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "17267:SD",
+    "state": "SD",
+    "name": "Sioux Valley SW Elec Coop",
+    "assigned_change_points_capped_25": 8.817597,
+    "range_points_capped_25": [
+     0.0,
+     8.817597
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      8.817597
+     ],
+     "capped_at_50_points": [
+      0.0,
+      8.817597
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "18976:TX",
+    "state": "TX",
+    "name": "Trinity Valley Elec Coop Inc",
+    "assigned_change_points_capped_25": 6.881415,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      334.926959
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "19499:CO",
+    "state": "CO",
+    "name": "United Power, Inc",
+    "assigned_change_points_capped_25": 12.869368,
+    "range_points_capped_25": [
+     0.0,
+     15.62974
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      15.62974
+     ],
+     "capped_at_50_points": [
+      0.0,
+      15.62974
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "19604:AZ",
+    "state": "AZ",
+    "name": "USBIA-San Carlos Project",
+    "assigned_change_points_capped_25": 11.82452,
+    "range_points_capped_25": [
+     0.0,
+     24.085817
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1759.820785
+     ],
+     "capped_at_50_points": [
+      0.0,
+      24.085817
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "19856:NJ",
+    "state": "NJ",
+    "name": "City of Vineland - (NJ)",
+    "assigned_change_points_capped_25": 8.333333,
+    "range_points_capped_25": [
+     0.0,
+     8.333333
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      15.119051
+     ],
+     "capped_at_50_points": [
+      0.0,
+      15.119051
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "20413:ND",
+    "state": "ND",
+    "name": "Mountrail-Williams Elec Coop",
+    "assigned_change_points_capped_25": 8.333333,
+    "range_points_capped_25": [
+     0.0,
+     8.333333
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      8.339115
+     ],
+     "capped_at_50_points": [
+      0.0,
+      8.339115
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "24590:NH",
+    "state": "NH",
+    "name": "Unitil Energy Systems",
+    "assigned_change_points_capped_25": 1.154493,
+    "range_points_capped_25": [
+     0.0,
+     5.772463
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      5.772463
+     ],
+     "capped_at_50_points": [
+      0.0,
+      5.772463
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "26510:NH",
+    "state": "NH",
+    "name": "Liberty Utilities (Granite State Electri",
+    "assigned_change_points_capped_25": 0.065416,
+    "range_points_capped_25": [
+     0.0,
+     8.144438
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      8.144438
+     ],
+     "capped_at_50_points": [
+      0.0,
+      8.144438
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "3841:MS",
+    "state": "MS",
+    "name": "Coast Electric Power Assn - (MS)",
+    "assigned_change_points_capped_25": 4.416146,
+    "range_points_capped_25": [
+     0.0,
+     5.609389
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      5.609389
+     ],
+     "capped_at_50_points": [
+      0.0,
+      5.609389
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "4065:OH",
+    "state": "OH",
+    "name": "City of Columbus - (OH)",
+    "assigned_change_points_capped_25": 5.880815,
+    "range_points_capped_25": [
+     0.0,
+     16.21765
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      25.504128
+     ],
+     "capped_at_50_points": [
+      0.0,
+      25.504128
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "4262:TX",
+    "state": "TX",
+    "name": "Cooke County Elec Coop Assn",
+    "assigned_change_points_capped_25": 25.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      94.730999
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "5078:TX",
+    "state": "TX",
+    "name": "Denton County Elec Coop, Inc",
+    "assigned_change_points_capped_25": 18.41846,
+    "range_points_capped_25": [
+     0.0,
+     22.806153
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      122.570432
+     ],
+     "capped_at_50_points": [
+      0.0,
+      47.806153
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "55937:TX",
+    "state": "TX",
+    "name": "Entergy Texas Inc.",
+    "assigned_change_points_capped_25": 4.873454,
+    "range_points_capped_25": [
+     0.0,
+     9.429773
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      9.429773
+     ],
+     "capped_at_50_points": [
+      0.0,
+      9.429773
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "6182:TX",
+    "state": "TX",
+    "name": "Farmers Electric Coop, Inc - (TX)",
+    "assigned_change_points_capped_25": 25.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      757.030682
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "7090:GA",
+    "state": "GA",
+    "name": "GreyStone Power Corporation",
+    "assigned_change_points_capped_25": 23.591109,
+    "range_points_capped_25": [
+     0.0,
+     23.591109
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      47.145712
+     ],
+     "capped_at_50_points": [
+      0.0,
+      38.075634
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "7559:TX",
+    "state": "TX",
+    "name": "Grayson-Collin Elec Coop, Inc",
+    "assigned_change_points_capped_25": 25.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      405.112296
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "7752:TX",
+    "state": "TX",
+    "name": "Guadalupe Valley Elec Coop Inc",
+    "assigned_change_points_capped_25": 25.0,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      158.378722
+     ],
+     "capped_at_50_points": [
+      0.0,
+      49.645851
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "8198:VA",
+    "state": "VA",
+    "name": "City of Harrisonburg - (VA)",
+    "assigned_change_points_capped_25": 5.109386,
+    "range_points_capped_25": [
+     0.0,
+     12.3114
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      12.3114
+     ],
+     "capped_at_50_points": [
+      0.0,
+      12.3114
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "8620:TX",
+    "state": "TX",
+    "name": "HILCO Electric Cooperative, Inc.",
+    "assigned_change_points_capped_25": 8.333333,
+    "range_points_capped_25": [
+     0.0,
+     25.0
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      915.561104
+     ],
+     "capped_at_50_points": [
+      0.0,
+      50.0
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "8699:WA",
+    "state": "WA",
+    "name": "Inland Power & Light Company",
+    "assigned_change_points_capped_25": 7.755967,
+    "range_points_capped_25": [
+     0.0,
+     7.755967
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      7.755967
+     ],
+     "capped_at_50_points": [
+      0.0,
+      7.755967
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "9336:CO",
+    "state": "CO",
+    "name": "CORE Electric Cooperative",
+    "assigned_change_points_capped_25": 3.883294,
+    "range_points_capped_25": [
+     0.0,
+     4.716228
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      4.716228
+     ],
+     "capped_at_50_points": [
+      0.0,
+      4.716228
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   },
+   {
+    "utility": "994:IN",
+    "state": "IN",
+    "name": "City of Auburn - (IN)",
+    "assigned_change_points_capped_25": 3.805061,
+    "range_points_capped_25": [
+     0.0,
+     3.805061
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      3.805061
+     ],
+     "capped_at_50_points": [
+      0.0,
+      3.805061
+     ]
+    },
+    "class_as_built": "in_none_of_the_four_classes"
+   }
+  ],
+  "other_not_settled": [],
+  "settled_sub_label_zero_as_assigned_positive_in_some_case": [
+   {
+    "utility": "12686:MS",
+    "state": "MS",
+    "name": "Mississippi Power Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.996036
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.996036
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.996036
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "13441:NH",
+    "state": "NH",
+    "name": "New Hampshire Elec Coop Inc",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.299235
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.299235
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.299235
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15470:IN",
+    "state": "IN",
+    "name": "Duke Energy Indiana, LLC",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.031778
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.031778
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.031778
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15472:NH",
+    "state": "NH",
+    "name": "Public Service Co of NH",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.929366
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.929366
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.929366
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15474:OK",
+    "state": "OK",
+    "name": "Public Service Co of Oklahoma",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.29306
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.29306
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.29306
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "17718:TX",
+    "state": "TX",
+    "name": "Southwestern Public Service Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.024827
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.024827
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.024827
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "19436:MO",
+    "state": "MO",
+    "name": "Union Electric Co - (MO)",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.289632
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.289632
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.289632
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "20169:WA",
+    "state": "WA",
+    "name": "Avista Corp",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.159345
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.159345
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.159345
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "3755:OH",
+    "state": "OH",
+    "name": "Cleveland Electric Illum Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.118536
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.118536
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.118536
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "6374:MA",
+    "state": "MA",
+    "name": "Fitchburg Gas & Elec Light Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.873343
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      59.960163
+     ],
+     "capped_at_50_points": [
+      0.0,
+      25.391884
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "6455:FL",
+    "state": "FL",
+    "name": "Duke Energy Florida, LLC",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.035411
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.035411
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.035411
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "733:WV",
+    "state": "WV",
+    "name": "Appalachian Power Co",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.00957
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.00957
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.00957
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "8179:IN",
+    "state": "IN",
+    "name": "Harrison County Rural E M C",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.668282
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.668282
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.668282
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   }
+  ],
+  "settled_sub_label_other": [
+   {
+    "utility": "10599:OK",
+    "state": "OK",
+    "name": "Lake Region Electric Coop, Inc - (OK)",
+    "assigned_change_points_capped_25": 0.675794,
+    "range_points_capped_25": [
+     0.0,
+     0.675794
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.675794
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.675794
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "11364:TX",
+    "state": "TX",
+    "name": "Lyntegar Electric Coop, Inc",
+    "assigned_change_points_capped_25": 0.524538,
+    "range_points_capped_25": [
+     0.0,
+     0.524538
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.524538
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.524538
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "12642:IA",
+    "state": "IA",
+    "name": "Maquoketa Valley Rrl Elec Coop",
+    "assigned_change_points_capped_25": 1.149716,
+    "range_points_capped_25": [
+     0.0,
+     1.149716
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.149716
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.149716
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "13058:CO",
+    "state": "CO",
+    "name": "Mountain View Elec Assn, Inc",
+    "assigned_change_points_capped_25": 0.699157,
+    "range_points_capped_25": [
+     0.0,
+     0.84912
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.84912
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.84912
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "13781:MN",
+    "state": "MN",
+    "name": "Northern States Power Co - Minnesota",
+    "assigned_change_points_capped_25": 1.430291,
+    "range_points_capped_25": [
+     0.0,
+     1.430291
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.430291
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.430291
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "16295:CA",
+    "state": "CA",
+    "name": "City of Roseville - (CA)",
+    "assigned_change_points_capped_25": 0.385907,
+    "range_points_capped_25": [
+     0.0,
+     0.407051
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.407051
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.407051
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "18454:FL",
+    "state": "FL",
+    "name": "Tampa Electric Co",
+    "assigned_change_points_capped_25": 1.703219,
+    "range_points_capped_25": [
+     0.0,
+     1.703219
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.703219
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.703219
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "19281:CA",
+    "state": "CA",
+    "name": "Turlock Irrigation District",
+    "assigned_change_points_capped_25": 0.053555,
+    "range_points_capped_25": [
+     0.0,
+     0.056489
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.056489
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.056489
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "19820:KS",
+    "state": "KS",
+    "name": "Victory Electric Coop Assn Inc",
+    "assigned_change_points_capped_25": 0.772185,
+    "range_points_capped_25": [
+     0.0,
+     1.350627
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.350627
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.350627
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "20996:MN",
+    "state": "MN",
+    "name": "Wright-Hennepin Coop Elec Assn",
+    "assigned_change_points_capped_25": 0.323025,
+    "range_points_capped_25": [
+     0.0,
+     0.323025
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.323025
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.323025
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "22822:IN",
+    "state": "IN",
+    "name": "Clark County Rural E M C - (IN)",
+    "assigned_change_points_capped_25": 1.92418,
+    "range_points_capped_25": [
+     0.0,
+     1.92418
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.92418
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.92418
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "24211:AZ",
+    "state": "AZ",
+    "name": "Tucson Electric Power Co",
+    "assigned_change_points_capped_25": 0.214901,
+    "range_points_capped_25": [
+     0.0,
+     0.43774
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.43774
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.43774
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "3478:OK",
+    "state": "OK",
+    "name": "Cimarron Electric Coop",
+    "assigned_change_points_capped_25": 1.209468,
+    "range_points_capped_25": [
+     0.0,
+     1.209468
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.209468
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.209468
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "3762:OH",
+    "state": "OH",
+    "name": "City of Cleveland - (OH)",
+    "assigned_change_points_capped_25": 0.783197,
+    "range_points_capped_25": [
+     0.0,
+     1.363424
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.363424
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.363424
+     ]
+    },
+    "class_as_built": "settled"
+   },
+   {
+    "utility": "590:CA",
+    "state": "CA",
+    "name": "City of Anaheim - (CA)",
+    "assigned_change_points_capped_25": 0.122089,
+    "range_points_capped_25": [
+     0.0,
+     0.128778
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.128778
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.128778
+     ]
+    },
+    "class_as_built": "settled"
+   }
+  ]
+ },
+ "utilities_with_no_dose_as_assigned": {
+  "15248:OR": {
+   "name": "Portland General Electric Co",
+   "range_established": true,
+   "histories_evaluated": 1944,
+   "range_of_change_points": {
+    "uncapped": [
+     18.780226,
+     27.260788
+    ],
+    "capped_at_25_points": [
+     18.780226,
+     22.746254
+    ],
+    "capped_at_50_points": [
+     18.780226,
+     27.260788
+    ]
+   },
+   "common_dose_by_cap": {
+    "uncapped": null,
+    "capped_at_25_points": null,
+    "capped_at_50_points": null
+   },
+   "common_dose_at_every_cap": null,
+   "class_as_built": "uncertain_positive_exposure",
+   "proposed_class": "no_single_dose"
+  },
+  "19325:OR": {
+   "name": "Umatilla Electric Coop Assn",
+   "range_established": true,
+   "histories_evaluated": 1944,
+   "range_of_change_points": {
+    "uncapped": [
+     461.887154,
+     1244.317787
+    ],
+    "capped_at_25_points": [
+     25.0,
+     25.0
+    ],
+    "capped_at_50_points": [
+     50.0,
+     50.0
+    ]
+   },
+   "common_dose_by_cap": {
+    "uncapped": null,
+    "capped_at_25_points": 25.0,
+    "capped_at_50_points": 50.0
+   },
+   "common_dose_at_every_cap": null,
+   "class_as_built": "settled",
+   "proposed_class": "no_single_dose"
+  }
+ },
+ "runs_on_single_doses": {
+  "as_assigned": {
+   "proposal": {
+    "utilities": 1182,
+    "not_settled_utilities_classes_5_to_8": 80,
+    "class_counts": {
+     "no_single_dose": 0,
+     "no_site_in_reach": 1013,
+     "settled_zero_change_with_load_in_reach": 7,
+     "settled": 82,
+     "uncertain_positive_exposure": 21,
+     "apparent_zero": 20,
+     "positive_as_assigned_zero_in_some_case": 39,
+     "other_not_settled": 0
+    },
+    "share_of_leverage_not_settled_classes_5_to_8": {
+     "uncapped": 0.842004,
+     "capped_at_25_points": 0.637568,
+     "capped_at_50_points": 0.649096
+    },
+    "share_of_leverage_not_in_class_4_second_numbers_counting_convention": {
+     "uncapped": 0.908005,
+     "capped_at_25_points": 0.744918,
+     "capped_at_50_points": 0.73798
+    },
+    "share_of_leverage_by_proposed_class_capped_25": {
+     "no_site_in_reach": 0.104875,
+     "settled_zero_change_with_load_in_reach": 0.002475,
+     "settled": 0.255082,
+     "uncertain_positive_exposure": 0.155503,
+     "apparent_zero": 0.016339,
+     "positive_as_assigned_zero_in_some_case": 0.465726,
+     "other_not_settled": 0.0
+    }
+   },
+   "as_built_recomputed": {
+    "utilities": 1182,
+    "not_settled_utilities_anything_not_settled": 1113,
+    "share_of_leverage_not_settled": {
+     "uncapped": 0.916073,
+     "capped_at_25_points": 0.74983,
+     "capped_at_50_points": 0.743285
+    }
+   },
+   "as_built_in_second_number_design_json": {
+    "uncapped": 0.916073,
+    "capped_at_25_points": 0.74983,
+    "capped_at_50_points": 0.743285
+   }
+  },
+  "settled_and_no_site_in_reach_only": {
+   "proposal": {
+    "utilities": 1102,
+    "not_settled_utilities_classes_5_to_8": 0,
+    "class_counts": {
+     "no_single_dose": 0,
+     "no_site_in_reach": 1013,
+     "settled_zero_change_with_load_in_reach": 7,
+     "settled": 82,
+     "uncertain_positive_exposure": 0,
+     "apparent_zero": 0,
+     "positive_as_assigned_zero_in_some_case": 0,
+     "other_not_settled": 0
+    },
+    "share_of_leverage_not_settled_classes_5_to_8": {
+     "uncapped": 0.0,
+     "capped_at_25_points": 0.0,
+     "capped_at_50_points": 0.0
+    },
+    "share_of_leverage_not_in_class_4_second_numbers_counting_convention": {
+     "uncapped": 0.063589,
+     "capped_at_25_points": 0.062168,
+     "capped_at_50_points": 0.0431
+    },
+    "share_of_leverage_by_proposed_class_capped_25": {
+     "no_site_in_reach": 0.061622,
+     "settled_zero_change_with_load_in_reach": 0.000546,
+     "settled": 0.937832,
+     "uncertain_positive_exposure": 0.0,
+     "apparent_zero": 0.0,
+     "positive_as_assigned_zero_in_some_case": 0.0,
+     "other_not_settled": 0.0
+    }
+   },
+   "as_built_recomputed": {
+    "utilities": 1089,
+    "not_settled_utilities_anything_not_settled": 1020,
+    "share_of_leverage_not_settled": {
+     "uncapped": 0.067457,
+     "capped_at_25_points": 0.073163,
+     "capped_at_50_points": 0.05006
+    }
+   },
+   "as_built_in_second_number_design_json": {
+    "uncapped": 0.067457,
+    "capped_at_25_points": 0.073163,
+    "capped_at_50_points": 0.05006
+   }
+  },
+  "ten_highest_leverage_not_settled_left_out": {
+   "proposal": {
+    "utilities": 1172,
+    "not_settled_utilities_classes_5_to_8": 70,
+    "class_counts": {
+     "no_single_dose": 0,
+     "no_site_in_reach": 1013,
+     "settled_zero_change_with_load_in_reach": 7,
+     "settled": 82,
+     "uncertain_positive_exposure": 19,
+     "apparent_zero": 20,
+     "positive_as_assigned_zero_in_some_case": 31,
+     "other_not_settled": 0
+    },
+    "share_of_leverage_not_settled_classes_5_to_8": {
+     "uncapped": 0.654561,
+     "capped_at_25_points": 0.452743,
+     "capped_at_50_points": 0.442795
+    },
+    "share_of_leverage_not_in_class_4_second_numbers_counting_convention": {
+     "uncapped": 0.701557,
+     "capped_at_25_points": 0.549824,
+     "capped_at_50_points": 0.504507
+    },
+    "share_of_leverage_by_proposed_class_capped_25": {
+     "no_site_in_reach": 0.095826,
+     "settled_zero_change_with_load_in_reach": 0.001256,
+     "settled": 0.450176,
+     "uncertain_positive_exposure": 0.148591,
+     "apparent_zero": 0.016047,
+     "positive_as_assigned_zero_in_some_case": 0.288105,
+     "other_not_settled": 0.0
+    },
+    "the_ten": [
+     {
+      "utility": "12260:VA",
+      "state": "VA",
+      "name": "Mecklenburg Electric Cooperative",
+      "proposed_class": "uncertain_positive_exposure",
+      "leverage_25": 0.036118
+     },
+     {
+      "utility": "12351:AZ",
+      "state": "AZ",
+      "name": "City of Mesa - (AZ)",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.039593
+     },
+     {
+      "utility": "13520:MO",
+      "state": "MO",
+      "name": "New-Mac Electric Coop, Inc",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.052859
+     },
+     {
+      "utility": "16638:TX",
+      "state": "TX",
+      "name": "San Bernard Electric Coop, Inc",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.036965
+     },
+     {
+      "utility": "19876:VA",
+      "state": "VA",
+      "name": "Virginia Electric & Power Co",
+      "proposed_class": "uncertain_positive_exposure",
+      "leverage_25": 0.033986
+     },
+     {
+      "utility": "4262:TX",
+      "state": "TX",
+      "name": "Cooke County Elec Coop Assn",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.036965
+     },
+     {
+      "utility": "6182:TX",
+      "state": "TX",
+      "name": "Farmers Electric Coop, Inc - (TX)",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.036965
+     },
+     {
+      "utility": "7090:GA",
+      "state": "GA",
+      "name": "GreyStone Power Corporation",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.038371
+     },
+     {
+      "utility": "7559:TX",
+      "state": "TX",
+      "name": "Grayson-Collin Elec Coop, Inc",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.036965
+     },
+     {
+      "utility": "7752:TX",
+      "state": "TX",
+      "name": "Guadalupe Valley Elec Coop Inc",
+      "proposed_class": "positive_as_assigned_zero_in_some_case",
+      "leverage_25": 0.036965
+     }
+    ]
+   },
+   "as_built_recomputed": {
+    "utilities": 1172,
+    "not_settled_utilities_anything_not_settled": 1103,
+    "share_of_leverage_not_settled": {
+     "uncapped": 0.727514,
+     "capped_at_25_points": 0.556831,
+     "capped_at_50_points": 0.513267
+    },
+    "the_ten": [
+     "13520:MO",
+     "12351:AZ",
+     "7090:GA",
+     "16638:TX",
+     "4262:TX",
+     "6182:TX",
+     "7559:TX",
+     "7752:TX",
+     "12260:VA",
+     "19876:VA"
+    ]
+   },
+   "as_built_in_second_number_design_json": {
+    "uncapped": 0.727514,
+    "capped_at_25_points": 0.556831,
+    "capped_at_50_points": 0.513267
+   }
+  },
+  "class_1_left_out_of_every_run_on_single_doses": [
+   {
+    "utility": "15248:OR",
+    "state": "OR",
+    "name": "Portland General Electric Co"
+   },
+   {
+    "utility": "19325:OR",
+    "state": "OR",
+    "name": "Umatilla Electric Coop Assn"
+   }
+  ]
+ },
+ "alternative_precedence_apparent_zero_before_settled": {
+  "moves": 13,
+  "utilities": [
+   {
+    "utility": "12686:MS",
+    "state": "MS",
+    "name": "Mississippi Power Co",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.996036
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.996036
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.996036
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "13441:NH",
+    "state": "NH",
+    "name": "New Hampshire Elec Coop Inc",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.299235
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.299235
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.299235
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15470:IN",
+    "state": "IN",
+    "name": "Duke Energy Indiana, LLC",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.031778
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.031778
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.031778
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15472:NH",
+    "state": "NH",
+    "name": "Public Service Co of NH",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.929366
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.929366
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.929366
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "15474:OK",
+    "state": "OK",
+    "name": "Public Service Co of Oklahoma",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.29306
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.29306
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.29306
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "17718:TX",
+    "state": "TX",
+    "name": "Southwestern Public Service Co",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.024827
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.024827
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.024827
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "19436:MO",
+    "state": "MO",
+    "name": "Union Electric Co - (MO)",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.289632
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.289632
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.289632
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "20169:WA",
+    "state": "WA",
+    "name": "Avista Corp",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.159345
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.159345
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.159345
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "3755:OH",
+    "state": "OH",
+    "name": "Cleveland Electric Illum Co",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.118536
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.118536
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.118536
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "6374:MA",
+    "state": "MA",
+    "name": "Fitchburg Gas & Elec Light Co",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.873343
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      59.960163
+     ],
+     "capped_at_50_points": [
+      0.0,
+      25.391884
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "6455:FL",
+    "state": "FL",
+    "name": "Duke Energy Florida, LLC",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.035411
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.035411
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.035411
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "733:WV",
+    "state": "WV",
+    "name": "Appalachian Power Co",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     0.00957
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      0.00957
+     ],
+     "capped_at_50_points": [
+      0.0,
+      0.00957
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   },
+   {
+    "utility": "8179:IN",
+    "state": "IN",
+    "name": "Harrison County Rural E M C",
+    "proposal": "settled",
+    "alternative": "apparent_zero",
+    "assigned_change_points_capped_25": 0.0,
+    "range_points_capped_25": [
+     0.0,
+     1.668282
+    ],
+    "range_points_at_the_other_caps_for_information": {
+     "uncapped": [
+      0.0,
+      1.668282
+     ],
+     "capped_at_50_points": [
+      0.0,
+      1.668282
+     ]
+    },
+    "class_as_built": "apparent_zero"
+   }
+  ]
+ },
+ "sample": {
+  "exclusions_as_built": [
+   {
+    "exclusion": "price hold (price_hold.csv)",
+    "count": 1,
+    "utilities": [
+     "9094:AL"
+    ],
+    "plan_sentence": "Comparison utilities, (5): \"not in price_hold.csv (Huntsville)\"; The former hosts: \"Huntsville is on neither side.\"; As built: \"Huntsville is out under the price hold.\"",
+    "note": "the plan's sentences put Huntsville on neither side of the design; none is written in the second number's own section except the as-built paragraph (the agent's reading: 'neither side of any design' covers it)"
+   },
+   {
+    "exclusion": "not usable in every year of 2008-2010 and 2023-2025 (res_price_usable)",
+    "count": 2046,
+    "plan_sentence": "\"Utilities need to be usable in all six years (`res_price_usable`, Missing data).\""
+   },
+   {
+    "exclusion": "no market region in some year of the comparison",
+    "count": 0,
+    "plan_sentence": "\"within the utility's market region before (2009), its region after (2024) and its size band\"",
+    "note": "as built (second_number.build_frame, as the simulation's run_second_number) a region is required in all six years, though only 2009 and 2024 enter the fixed effect; the plan writes no requirement for the other four years. Tested after usability, it removes no unit on the design as it stands"
+   },
+   {
+    "exclusion": "no residential customers in 2010 (size band undefined)",
+    "count": 0,
+    "plan_sentence": "\"... and its size band\"; the bands are Size adjustment's (under 10,000; 10,000 to 99,999; 100,000 or more)",
+    "note": "the year 2010 is the simulation's reading (second_number.SIZE_YEAR); the second number's section names no year"
+   },
+   {
+    "exclusion": "load in some history and no positive 2009-2011 sales (no dose)",
+    "count": 0,
+    "utilities": [],
+    "plan_sentence": "Treatment: load share is \"a share of its 2009-2011 retail sales\"; with no sales there is no share"
+   },
+   {
+    "exclusion": "no dose as assigned: a site with no load history reaches it (rule 8.3's runs on single doses only)",
+    "count": 2,
+    "utilities": [
+     "15248:OR",
+     "19325:OR"
+    ],
+    "plan_sentence": "Rule 8.3: \"a utility with no assigned dose is kept out of the settled-only run, and out of every run on single doses, unless its histories actually give one common dose\"; Sites with no load history: \"In the primary run on doses as assigned it has no assigned dose, so it is left out of that run and named.\""
+   }
+  ],
+  "counts": {
+   "panel_units": 3231,
+   "held": 1,
+   "left_out_by_the_frame": 2046,
+   "units_in_the_frame_before_the_no_base_check": 1184,
+   "units_in_the_frame": 1184,
+   "with_a_dose_as_assigned": 1182,
+   "the_counts_add_up": true
+  },
+  "simulation_long_difference_sample_from_quantities": {
+   "how": "power_simulation.main: design(q, dose, 0.02, history_settled(0.02)) -> restrict_to_access_list -> unknown.gate(0.02) -> run_second_number: unknown.every, prices merged on those units, usable rows, balanced over the six years, a region in each and customers in 2010. Reproduced here from quantities and the access-list files without prices: the units of the second number's frame that pass design, the list and the gate. Whether each has a price row in every usable year is not checked (no price file is opened); the access list's N7 checked that each listed unit's outcome file exists",
+   "units": 1013,
+   "units_of_the_second_number_sample_with_a_dose_as_assigned_not_in_it": 169,
+   "why_counts": {
+    "not comparison-eligible in power_simulation.design at 2%: data center load share of 0.5% or more in some year (a host: represented by stand-ins, not itself in the sample)": 120,
+    "comparison-eligible but off the access list: N2_not_under_0.5pct_in_every_admissible_history": 27,
+    "comparison-eligible but off the access list: N5_former_host_without_an_allow_row": 5,
+    "comparison-eligible but off the access list: N1_not_under_0.5pct_with_no_anchoring": 5,
+    "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)": 10,
+    "not comparison-eligible in power_simulation.design at 2%: data center load share of 0.5% or more in some year (a host: represented by stand-ins, not itself in the sample); crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)": 2
+   },
+   "zero_dose_as_assigned_units_left_out": 39,
+   "of_them_not_comparison_eligible_in_design": 10,
+   "of_them_comparison_eligible_but_off_the_access_list": 29
+  },
+  "the_units_with_no_data_center_dose_not_comparison_eligible_in_design": [
+   {
+    "utility": "9605:KY",
+    "state": "KY",
+    "name": "Jackson Purchase Energy Corporation",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 137.0,
+    "crypto_share_of_base_max": 1.84039,
+    "dose_with_crypto_max": 1.84039,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "9612:TN",
+    "state": "TN",
+    "name": "City of Jackson - (TN)",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 40.0,
+    "crypto_share_of_base_max": 0.209626,
+    "dose_with_crypto_max": 0.209626,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "9777:TN",
+    "state": "TN",
+    "name": "Johnson City - (TN)",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 25.0,
+    "crypto_share_of_base_max": 0.110357,
+    "dose_with_crypto_max": 0.110357,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "10421:TN",
+    "state": "TN",
+    "name": "Knoxville Utilities Board",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 96.0,
+    "crypto_share_of_base_max": 0.149906,
+    "dose_with_crypto_max": 0.149906,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "10906:TN",
+    "state": "TN",
+    "name": "City of Lenoir - (TN)",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 20.0,
+    "crypto_share_of_base_max": 0.108454,
+    "dose_with_crypto_max": 0.108454,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "11118:SC",
+    "state": "SC",
+    "name": "Lockhart Power Co",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 15.0,
+    "crypto_share_of_base_max": 0.757954,
+    "dose_with_crypto_max": 0.757954,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "12301:ND",
+    "state": "ND",
+    "name": "Nodak Electric Coop Inc",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 100.0,
+    "crypto_share_of_base_max": 0.979347,
+    "dose_with_crypto_max": 0.979347,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "13337:NE",
+    "state": "NE",
+    "name": "Nebraska Public Power District",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 89.8,
+    "crypto_share_of_base_max": 0.25108,
+    "dose_with_crypto_max": 0.25108,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "14232:ND",
+    "state": "ND",
+    "name": "Otter Tail Power Co",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 106.0,
+    "crypto_share_of_base_max": 0.530784,
+    "dose_with_crypto_max": 0.530784,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   },
+   {
+    "utility": "20377:KY",
+    "state": "KY",
+    "name": "West Kentucky Rural E C C",
+    "why_the_simulation_left_it_out": "not comparison-eligible in power_simulation.design at 2%: crypto-mining load of 2% or more of 2009-2011 sales in some year (power_simulation.design: CRYPTO_LIMIT)",
+    "on_the_access_list_universe": false,
+    "in_simulation_access_excluded_csv": null,
+    "data_center_dose_max": 0.0,
+    "crypto_mw_max": 25.0,
+    "crypto_share_of_base_max": 0.303537,
+    "dose_with_crypto_max": 0.303537,
+    "proposed_class": "no_site_in_reach",
+    "excluded_by_a_rule_the_plan_writes_for_the_second_number": false
+   }
+  ],
+  "zero_dose_as_assigned_units_off_the_access_list": [
+   {
+    "utility": "10009:TX",
+    "state": "TX",
+    "name": "Karnes Electric Coop Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled_zero_change_with_load_in_reach"
+   },
+   {
+    "utility": "10668:OH",
+    "state": "OH",
+    "name": "Licking Rural Electric Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "11272:MT",
+    "state": "MT",
+    "name": "Lower Yellowstone R E A, Inc",
+    "access_list_reason": "N5_former_host_without_an_allow_row",
+    "proposed_class": "no_site_in_reach"
+   },
+   {
+    "utility": "12199:MT",
+    "state": "MT",
+    "name": "Montana-Dakota Utilities Co",
+    "access_list_reason": "N5_former_host_without_an_allow_row",
+    "proposed_class": "no_site_in_reach"
+   },
+   {
+    "utility": "12686:MS",
+    "state": "MS",
+    "name": "Mississippi Power Co",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled"
+   },
+   {
+    "utility": "13332:TX",
+    "state": "TX",
+    "name": "Navarro County Elec Coop, Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "13647:IN",
+    "state": "IN",
+    "name": "Noble County R E M C",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "13679:MA",
+    "state": "MA",
+    "name": "Town of North Attleborough - (MA)",
+    "access_list_reason": "N5_former_host_without_an_allow_row",
+    "proposed_class": "no_site_in_reach"
+   },
+   {
+    "utility": "13781:SD",
+    "state": "SD",
+    "name": "Northern States Power Co - Minnesota",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "14626:TX",
+    "state": "TX",
+    "name": "Pedernales Electric Coop, Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "15472:NH",
+    "state": "NH",
+    "name": "Public Service Co of NH",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled"
+   },
+   {
+    "utility": "15474:OK",
+    "state": "OK",
+    "name": "Public Service Co of Oklahoma",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled"
+   },
+   {
+    "utility": "17671:AR",
+    "state": "AR",
+    "name": "Southwest Arkansas E C C",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "17698:AR",
+    "state": "AR",
+    "name": "Southwestern Electric Power Co",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "1892:TX",
+    "state": "TX",
+    "name": "Bluebonnet Electric Coop, Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "19159:TX",
+    "state": "TX",
+    "name": "Tri-County Electric Coop, Inc (TX)",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "19490:TX",
+    "state": "TX",
+    "name": "United Electric Coop Service Inc - (TX)",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "19545:WY",
+    "state": "WY",
+    "name": "Black Hills Power, Inc.",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "20169:WA",
+    "state": "WA",
+    "name": "Avista Corp",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled"
+   },
+   {
+    "utility": "20948:TX",
+    "state": "TX",
+    "name": "Wise Electric Coop Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "2144:MA",
+    "state": "MA",
+    "name": "Town of Braintree - (MA)",
+    "access_list_reason": "N5_former_host_without_an_allow_row",
+    "proposed_class": "no_site_in_reach"
+   },
+   {
+    "utility": "27058:WY",
+    "state": "WY",
+    "name": "High West Energy, Inc",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "3093:AR",
+    "state": "AR",
+    "name": "Carroll Electric Coop Corp - (AR)",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "3093:MO",
+    "state": "MO",
+    "name": "Carroll Electric Coop Corp - (AR)",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "5860:AR",
+    "state": "AR",
+    "name": "Empire District Electric Co",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "6455:FL",
+    "state": "FL",
+    "name": "Duke Energy Florida, LLC",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled"
+   },
+   {
+    "utility": "8179:IN",
+    "state": "IN",
+    "name": "Harrison County Rural E M C",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "settled"
+   },
+   {
+    "utility": "9417:IA",
+    "state": "IA",
+    "name": "Interstate Power and Light Co",
+    "access_list_reason": "N2_not_under_0.5pct_in_every_admissible_history",
+    "proposed_class": "apparent_zero"
+   },
+   {
+    "utility": "9996:KS",
+    "state": "KS",
+    "name": "City of Kansas City - (KS)",
+    "access_list_reason": "N5_former_host_without_an_allow_row",
+    "proposed_class": "no_site_in_reach"
+   }
+  ],
+  "crypto_in_the_second_number_sample": {
+   "units_in_the_frame_with_crypto_mining_load_2pct_or_more_of_base_in_any_year": 12,
+   "of_them_with_a_dose_as_assigned": 12,
+   "of_them_among_the_ten": 10,
+   "utilities": [
+    {
+     "utility": "10421:TN",
+     "state": "TN",
+     "name": "Knoxville Utilities Board",
+     "crypto_share_of_base_max": 0.149906,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "10906:TN",
+     "state": "TN",
+     "name": "City of Lenoir - (TN)",
+     "crypto_share_of_base_max": 0.108454,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "11118:SC",
+     "state": "SC",
+     "name": "Lockhart Power Co",
+     "crypto_share_of_base_max": 0.757954,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "12199:ND",
+     "state": "ND",
+     "name": "Montana-Dakota Utilities Co",
+     "crypto_share_of_base_max": 0.967492,
+     "data_center_dose_max": 0.47299587163515766,
+     "proposed_class": "settled"
+    },
+    {
+     "utility": "12301:ND",
+     "state": "ND",
+     "name": "Nodak Electric Coop Inc",
+     "crypto_share_of_base_max": 0.979347,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "13337:NE",
+     "state": "NE",
+     "name": "Nebraska Public Power District",
+     "crypto_share_of_base_max": 0.25108,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "14232:ND",
+     "state": "ND",
+     "name": "Otter Tail Power Co",
+     "crypto_share_of_base_max": 0.530784,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "20377:KY",
+     "state": "KY",
+     "name": "West Kentucky Rural E C C",
+     "crypto_share_of_base_max": 0.303537,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "20413:ND",
+     "state": "ND",
+     "name": "Mountrail-Williams Elec Coop",
+     "crypto_share_of_base_max": 3.220703,
+     "data_center_dose_max": 0.25017344979172057,
+     "proposed_class": "positive_as_assigned_zero_in_some_case"
+    },
+    {
+     "utility": "9605:KY",
+     "state": "KY",
+     "name": "Jackson Purchase Energy Corporation",
+     "crypto_share_of_base_max": 1.84039,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "9612:TN",
+     "state": "TN",
+     "name": "City of Jackson - (TN)",
+     "crypto_share_of_base_max": 0.209626,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    },
+    {
+     "utility": "9777:TN",
+     "state": "TN",
+     "name": "Johnson City - (TN)",
+     "crypto_share_of_base_max": 0.110357,
+     "data_center_dose_max": 0.0,
+     "proposed_class": "no_site_in_reach"
+    }
+   ],
+   "measure": "crypto_mw x 8.76 / base_retail_gwh, power_simulation.design's crypto_share, in utility_year_dose.parquet"
+  }
+ }
+}

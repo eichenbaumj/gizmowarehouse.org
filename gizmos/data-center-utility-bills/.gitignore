@@ -1,0 +1,23 @@
+# Raw downloads are re-fetchable and some are not redistributable
+# (the Business Insider permit dataset has no stated license). Never commit them.
+data/raw/
+data/interim/
+# Residential price columns stay out of analysis code until the blind checkpoint;
+# the unblinded panel is written here and ignored until Gate 1 is signed off.
+data/blind/
+
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Papers a person downloaded by hand; most are copyrighted
+docs/research/papers/
+
+# Results of runs on outcomes (session 28, D-122) stayed local and uncommitted through the pause and the
+# continuation. Since 2026-11-22 (Joe's ruling) the machine-written records of the one outcome run are tracked,
+# so the public copy carries them. Everything else under data/results (memos, drafts, messages) stays local.
+data/results/*
+!data/results/session28_uc/

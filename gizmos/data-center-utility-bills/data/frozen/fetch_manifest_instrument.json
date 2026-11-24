@@ -1,0 +1,391 @@
+{
+  "fetched_at": "2026-11-11T20:03:07.652314+00:00",
+  "fcc477": [
+    {
+      "filing": "2017-06",
+      "dataset": "9r8r-g7ut",
+      "url": "https://opendata.fcc.gov/d/9r8r-g7ut",
+      "query": "distinct blockcode where techcode=50",
+      "path": "data/raw/fcc477/fiber_blocks_2017-06.csv.gz",
+      "fiber_blocks": 2314551,
+      "states_and_territories": 56,
+      "sha256": "b58981463efb38b4c475c8c28e78177be0798affd5285899806082c8666fc214",
+      "title": "Fixed Broadband Deployment Data: June, 2017 Status V1"
+    },
+    {
+      "filing": "2017-12",
+      "dataset": "pq3u-a6vs",
+      "url": "https://opendata.fcc.gov/d/pq3u-a6vs",
+      "query": "distinct blockcode where techcode=50",
+      "path": "data/raw/fcc477/fiber_blocks_2017-12.csv.gz",
+      "fiber_blocks": 2409683,
+      "states_and_territories": 56,
+      "sha256": "aa9b2fd93a8b1e7432b9194b24beb9484275a0394ace3bbbc999dba8562fdc1f",
+      "title": "Fixed Broadband Deployment Data: Dec, 2017 Status V2"
+    },
+    {
+      "filing": "2018-06",
+      "dataset": "ehbi-rr4z",
+      "url": "https://opendata.fcc.gov/d/ehbi-rr4z",
+      "query": "distinct blockcode where techcode=50",
+      "path": "data/raw/fcc477/fiber_blocks_2018-06.csv.gz",
+      "fiber_blocks": 2538294,
+      "states_and_territories": 56,
+      "sha256": "8d3e1b4031f4866320699b18dd4040c0f9d4a7d34a5a8d98e426e187c7bcf5ca",
+      "title": "Fixed Broadband Deployment Data: Jun, 2018 Status V1"
+    },
+    {
+      "filing": "2018-12",
+      "dataset": "kydr-hyy5",
+      "url": "https://opendata.fcc.gov/d/kydr-hyy5",
+      "query": "distinct blockcode where techcode=50",
+      "path": "data/raw/fcc477/fiber_blocks_2018-12.csv.gz",
+      "fiber_blocks": 2902502,
+      "states_and_territories": 56,
+      "sha256": "abf4070bba0d10578e1027ccc9473b283c0877202c750e5174ad70a2dda94bf5",
+      "title": "Fixed Broadband Deployment Data: Dec, 2018 Status V1"
+    },
+    {
+      "filing": "2019-06",
+      "dataset": "c67e-jknh",
+      "url": "https://opendata.fcc.gov/d/c67e-jknh",
+      "query": "distinct blockcode where techcode=50",
+      "path": "data/raw/fcc477/fiber_blocks_2019-06.csv.gz",
+      "fiber_blocks": 3081901,
+      "states_and_territories": 56,
+      "sha256": "17d2aa8ff742e02bc5d10ef2dd8b7716f22c6dcd62f684156674e74b8fd9c9b5",
+      "title": "Fixed Broadband Deployment Data: Jun, 2019 Status V2"
+    },
+    {
+      "filing": "2019-12",
+      "dataset": "whue-6pnt",
+      "url": "https://opendata.fcc.gov/d/whue-6pnt",
+      "query": "distinct blockcode where techcode=50",
+      "path": "data/raw/fcc477/fiber_blocks_2019-12.csv.gz",
+      "fiber_blocks": 3148785,
+      "states_and_territories": 56,
+      "sha256": "4da5d0628f4a20167aca1c69311176d0aa816429229e91062f5f32ea8a812233",
+      "title": "Fixed Broadband Deployment Data: December 2019"
+    }
+  ],
+  "files": [
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/al/al_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/al_xwalk.csv.gz",
+      "bytes": 5855930,
+      "sha256": "01d1b7ceb0130efd2e2cb83ecb8f76c5bb1498cf8b2106638bef89b80ec26022"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ak/ak_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ak_xwalk.csv.gz",
+      "bytes": 1081500,
+      "sha256": "80dbfb72c3cc7716cea3f4b85db4b8b229148cce1f1e30dd16bb51aaaad6c87b"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/az/az_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/az_xwalk.csv.gz",
+      "bytes": 5027120,
+      "sha256": "2171f6f368667f7d5dd03f22ba8f5bcd651a02c3db00a44284d108784b079cca"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ar/ar_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ar_xwalk.csv.gz",
+      "bytes": 4540088,
+      "sha256": "bb7a030fa4712f3ff4d6ec8a70b2a525845618e2c7d8582b3de2443e88996aca"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ca/ca_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ca_xwalk.csv.gz",
+      "bytes": 15339652,
+      "sha256": "fc4cf7cab2cea88bf0ab8340c7bdd1af1868e06b8a9bb9146ab40280c27b2a62"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/co/co_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/co_xwalk.csv.gz",
+      "bytes": 4215359,
+      "sha256": "40061c5004a110d53e41f1506b6aa3b3c1a2b01e6d3ea09a8909b0cad87b8f1d"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ct/ct_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ct_xwalk.csv.gz",
+      "bytes": 1574248,
+      "sha256": "53c4fefd67f6c75397b4d005935c7481640752a02ccd39ebdfe96269de244433"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/de/de_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/de_xwalk.csv.gz",
+      "bytes": 531128,
+      "sha256": "ba631332db039ee4c4f08558385b2f35c0fb3100a62a4dcfff72616d68ffdf1a"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/dc/dc_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/dc_xwalk.csv.gz",
+      "bytes": 132583,
+      "sha256": "3cb933b30b79336406cc6f0fa5cb6555cb47d4d92646081e8c3796a0c7cc556c"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/fl/fl_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/fl_xwalk.csv.gz",
+      "bytes": 10167366,
+      "sha256": "33a5878909e1440ea488bb6231b821e8f5f7f10655a53ad2c5a36da1b3e0c996"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ga/ga_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ga_xwalk.csv.gz",
+      "bytes": 6273511,
+      "sha256": "cbf4440dbc1f152fd0e7fe8cbcbc638acb0e4a2621183768593a4b3dbf7cd906"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/hi/hi_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/hi_xwalk.csv.gz",
+      "bytes": 559037,
+      "sha256": "93ff56f7b8b6368b553c93908b51761ed01aae30bf044af85d1854a667214944"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/id/id_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/id_xwalk.csv.gz",
+      "bytes": 3087275,
+      "sha256": "accae2caf18b9dff08b7cefb89ffd200b4da79647ac70ecf3378b8b7541c0430"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/il/il_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/il_xwalk.csv.gz",
+      "bytes": 10193305,
+      "sha256": "6c2383a352cd230955200b89a4f16d2673e2eaa9b5cef0e3c25ad188fe23b1ae"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/in/in_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/in_xwalk.csv.gz",
+      "bytes": 5754480,
+      "sha256": "737c19122ae61f888a1bb2b0e6076cdb704b6ab469096975cc4a436395667483"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ia/ia_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ia_xwalk.csv.gz",
+      "bytes": 4866384,
+      "sha256": "98cf15c203bd4d30e03cf9a246958c3bcb751172f8eb95707c20cc24c96a0187"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ks/ks_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ks_xwalk.csv.gz",
+      "bytes": 5398426,
+      "sha256": "8f027141a42cfec3d1a343520f66ae996f33f0890867a4dcfd1b903fee18b757"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ky/ky_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ky_xwalk.csv.gz",
+      "bytes": 3650387,
+      "sha256": "4c68ec0da391071ecb0daf0735f124cfb099a6f7f7e855caa593423100247067"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/la/la_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/la_xwalk.csv.gz",
+      "bytes": 4231361,
+      "sha256": "973294a5c7400efd899ee9dfbe52fad85870bcca07bcc50886571a985b66de75"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/me/me_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/me_xwalk.csv.gz",
+      "bytes": 1705091,
+      "sha256": "6ac18630b4a4cfbe41ca37ebc44b96e444f46ccd51e09d38a1f7a3f731829308"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/md/md_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/md_xwalk.csv.gz",
+      "bytes": 3089625,
+      "sha256": "32280d2ccde24a6702ce1de6cbb16bb42a2c822de410e511b2131a7ffa09f13b"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ma/ma_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ma_xwalk.csv.gz",
+      "bytes": 3573089,
+      "sha256": "e9fd8a5503dcc6979f85772dbbd345cd5e6a9c90be7aa5016026197873ce7de1"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/mi/mi_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/mi_xwalk.csv.gz",
+      "bytes": 7080469,
+      "sha256": "efe6cc918c4d20e9678c56c3bba8354719037931ac4954ac959c38c600442693"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/mn/mn_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/mn_xwalk.csv.gz",
+      "bytes": 5745513,
+      "sha256": "a5822f1c421befdcaadd0e9b35ebeb7fffec3c17c570b7e83b06a30129cb82b0"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ms/ms_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ms_xwalk.csv.gz",
+      "bytes": 3838078,
+      "sha256": "c488a8eb414bcf79d72cfd395e9c9de6da2978072e79871ff1edd1ae4f605063"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/mo/mo_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/mo_xwalk.csv.gz",
+      "bytes": 7483063,
+      "sha256": "3def7794ddaca3d4a84f5ac973f750c6d2bbabb65f4a764359d46c16ce811e1d"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/mt/mt_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/mt_xwalk.csv.gz",
+      "bytes": 3162861,
+      "sha256": "16da151f3a4982bea684aca4facfe3eb02a59294c69317f22b44fc055466423f"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ne/ne_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ne_xwalk.csv.gz",
+      "bytes": 4225527,
+      "sha256": "130cbe78d5aaf510797673108aa3be5ac008d799f3fa36242faf4e5246953df4"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/nv/nv_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/nv_xwalk.csv.gz",
+      "bytes": 1776507,
+      "sha256": "f2b2e81904682578f972d0bddcd938c1d81cbd99f59907d267c557ad549bca92"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/nh/nh_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/nh_xwalk.csv.gz",
+      "bytes": 1071705,
+      "sha256": "54aadaeb57a3c0fdbe7134d6978a1434fbedc16f0b46f276c8c51a40d7b21b07"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/nj/nj_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/nj_xwalk.csv.gz",
+      "bytes": 3753142,
+      "sha256": "1bb4ddd5fb8d5ddd2b3c3381202c00cb43d78dc44442e5bd8e61c5ad8398f0f6"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/nm/nm_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/nm_xwalk.csv.gz",
+      "bytes": 3462073,
+      "sha256": "cb6bfec0f42527ac56e45da8e295883866c21c773a018721f463e4d30d81d921"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ny/ny_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ny_xwalk.csv.gz",
+      "bytes": 7705813,
+      "sha256": "f8af009bc461b55ee55f52dfb3aa497b7c9b7324676473a112b03c9e90178499"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/nc/nc_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/nc_xwalk.csv.gz",
+      "bytes": 6383112,
+      "sha256": "e0a1fa2aa5fe00a6cfd610c121a7bd38ce03302bc237163347130ec5e7c77a64"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/nd/nd_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/nd_xwalk.csv.gz",
+      "bytes": 2887509,
+      "sha256": "360f66dcbd9d0bce81cd7f13925f1dea4ac3d510dade14b6c7584c3d91c37176"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/oh/oh_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/oh_xwalk.csv.gz",
+      "bytes": 8044464,
+      "sha256": "ac464a71785d25dd1166bd8e0fa2344f29daa4a0e4133cc82e68fe2756b2d293"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ok/ok_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ok_xwalk.csv.gz",
+      "bytes": 5775509,
+      "sha256": "5b70e67cd274720a328c39200116b9dbb92dedd01ff00d8f6b0dae926ec9ea93"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/or/or_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/or_xwalk.csv.gz",
+      "bytes": 4074554,
+      "sha256": "b231a4cc2ac6c629009dccd06fcf0df4bf08389fd9d42dfd90464ffeef5c746e"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/pa/pa_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/pa_xwalk.csv.gz",
+      "bytes": 8963453,
+      "sha256": "fdb156e8666c320db4f8ca58c7a9c407fbfdbd0c4f6b6367eaff8c0277407818"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ri/ri_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ri_xwalk.csv.gz",
+      "bytes": 613126,
+      "sha256": "0d4b104d819a11cc52d8dd717749846c994ff2bae2907f1134a4409bff682896"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/sc/sc_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/sc_xwalk.csv.gz",
+      "bytes": 3931323,
+      "sha256": "98f2ade1e2c1e8ce8e4bc4e20c1910acae1dc5d3adfa7b8c6a41950244a0a895"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/sd/sd_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/sd_xwalk.csv.gz",
+      "bytes": 1989535,
+      "sha256": "bc9fb47420101e24a6559feae6cf78fba7bb09655a90c8c399056295f39354a6"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/tn/tn_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/tn_xwalk.csv.gz",
+      "bytes": 5043512,
+      "sha256": "0167fde563dd48d623e29a055aca8dd921ce121cb0c159033863410aea9b506a"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/tx/tx_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/tx_xwalk.csv.gz",
+      "bytes": 19131255,
+      "sha256": "578de29ba5101c2e48a69c934638b0c7cc1fddbf29bb4ea4056c16088f4641a4"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/ut/ut_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/ut_xwalk.csv.gz",
+      "bytes": 2411038,
+      "sha256": "9bea7e02f229479cc566f9370fb390605791e78852fe356a6b476eff8605cfbc"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/vt/vt_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/vt_xwalk.csv.gz",
+      "bytes": 739592,
+      "sha256": "4e804a62248faba5bf46202dcd7070e7aa87c028e781c791832b5b3dbb72207e"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/va/va_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/va_xwalk.csv.gz",
+      "bytes": 5984966,
+      "sha256": "9f1430f3e1df4753f0cd6bf71b49d8d1a3057c483cf3e3570fa6d9fcabb421a3"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/wa/wa_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/wa_xwalk.csv.gz",
+      "bytes": 4264504,
+      "sha256": "ebbe4e970aa9850ce6d88cccbe04b88574b4ed05d4df30cc8f17db03427383df"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/wv/wv_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/wv_xwalk.csv.gz",
+      "bytes": 2809716,
+      "sha256": "abfed5dfcba332511ca1fae8fbb622b17af3aa6ef74cbb4fa770775fcb5b8694"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/wi/wi_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/wi_xwalk.csv.gz",
+      "bytes": 5461948,
+      "sha256": "444e80d1b8b6782ab3a0fce3cab957e333403ad64b88bc8f489e1722213caddd"
+    },
+    {
+      "url": "https://lehd.ces.census.gov/data/lodes/LODES7/wy/wy_xwalk.csv.gz",
+      "path": "data/raw/lodes_xwalk/wy_xwalk.csv.gz",
+      "bytes": 1807558,
+      "sha256": "6422c887ae021f156e13a116fb03782ce83da5c3d2d36b4808a535fc897f1f04"
+    },
+    {
+      "url": "https://www.census.gov/construction/c30/xlsx/privtime.xlsx",
+      "path": "data/raw/census_vip/privtime.xlsx",
+      "bytes": 175137,
+      "sha256": "0db814f73b6248312f4423a61361141ff9405ae9852f6708ea83fa9aa5caf402"
+    },
+    {
+      "url": "https://api.bls.gov/publicAPI/v2/timeseries/data/CUUR0000SA0",
+      "path": "data/raw/bls/cpi_u_annual.json",
+      "bytes": 428,
+      "sha256": "f95db6b8badcf675675b5fc1e0a73b2b93d45c0f0786563e6dd74f47f887bebb"
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+[record 0001] read_time_checks
+file: 0001_read_time_checks.json (the numbers are in this JSON record)
+the record made before any estimate (counts and keys only)
+frames built: bill_per_customer, kwh_per_residential_customer, log_residential_price, res_price, res_price_cents_per_kwh_real_2024, res_price_default_service, residential_customers
+read-time checks that did not pass: none
+blocking integrity checks: none failed; estimation may proceed in the recorded order
+assembler inputs deferred: 0
+
+[record 0002] reconciliation_row_U
+file: 0002_reconciliation_row_U.json (the numbers are in this JSON record)
+entry: reconciliation_row_U
+stage: row_U
+plan section: Reconciliation rows (reported first, whatever they show), Row U (Ryu and Hiatt), steps U0 to U3
+sets: the_papers_specification_on_our_panel
+labels:
+  - reconciliation row: the paper's specification on our panel, reported first whatever it shows
+  - reported first
+  - comparisons under our specification, comparison-only by Joe's ruling of 2026-11-19 (D-109), no reproduction verdict; the paper's figure and band are beside the pooled estimate as a comparison band, and the ownership ordering is uncontrolled
+  - not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)
+estimated: yes
+each set's result:
+  - the_papers_specification_on_our_panel: estimated
+failures in words: none
+
+[record 0003] reconciliation_row_C
+file: 0003_reconciliation_row_C.json (the numbers are in this JSON record)
+entry: reconciliation_row_C
+stage: row_C
+plan section: Reconciliation rows (reported first, whatever they show), Row C (Scalera, Bosetti and Pecci), steps C0 to C4 and the test C5
+sets: the_papers_specification_on_our_panel
+labels:
+  - reconciliation row: the paper's specification on our panel, reported first whatever it shows
+  - reported first
+  - comparisons under our specification, comparison-only by Joe's ruling of 2026-11-19 (D-109), no reproduction verdict; every instrumented step and C5's yardstick, and C0 with the paper's figure and band beside it as a comparison band
+  - C5's interval is the row's own (clustered by utility-state)
+  - not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)
+estimated: yes
+each set's result:
+  - the_papers_specification_on_our_panel: estimated
+failures in words: none
+
+[record 0004] read_time_checks
+file: 0004_read_time_checks.json (the numbers are in this JSON record)
+the record made before any estimate (counts and keys only)
+frames built: bill_per_customer, kwh_per_residential_customer, log_residential_price, res_price, res_price_cents_per_kwh_real_2024, res_price_default_service, residential_customers
+read-time checks that did not pass: none
+blocking integrity checks: none failed; estimation may proceed in the recorded order
+assembler inputs deferred: 0
+
+[record 0005] inventory_against_sales
+file: 0005_inventory_against_sales.json (the numbers are in this JSON record)
+entry: inventory_against_sales
+stage: inventory_against_sales
+plan section: Reported checks, Does the inventory show up in sales?
+sets: headline_set at 2%
+labels:
+  - reported check
+  - not applicable: a quantity-side check that reads no outcome and estimates nothing on price
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0006] main_headline_set
+file: 0006_main_headline_set.json (the numbers are in this JSON record)
+entry: main_headline_set
+stage: remaining
+plan section: Electricity: the main estimate; The headline; Reported checks (early-years test, trend illustrations)
+sets: headline_set at 2%
+labels:
+  - headline
+  - the selected procedure (CR2, Satterthwaite) was validated on this design (headline set at 2%)
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0007] main_ten_year_set
+file: 0007_main_ten_year_set.json (the numbers are in this JSON record)
+entry: main_ten_year_set
+stage: remaining
+plan section: Electricity: the main estimate, the sets beside it; Order of unblinding
+sets: headline_set_with_the_ten_year_case at 2%
+labels:
+  - stress test
+  - reported beside the headline
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set_with_the_ten_year_case at 2%: estimated
+failures in words: none
+
+[record 0008] main_plus_unsettled
+file: 0008_main_plus_unsettled.json (the numbers are in this JSON record)
+entry: main_plus_unsettled
+stage: remaining
+plan section: Electricity: the main estimate, the sets beside it; Order of unblinding
+sets: headline_set_plus_hosts_unsettled_on_assignment at 2%
+labels:
+  - reported beside the headline
+  - rests on hosts unsettled on assignment
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set_plus_hosts_unsettled_on_assignment at 2%: estimated
+failures in words: none
+
+[record 0009] main_every_cohort_utility
+file: 0009_main_every_cohort_utility.json (the numbers are in this JSON record)
+entry: main_every_cohort_utility
+stage: remaining
+plan section: Electricity: the main estimate, the sets beside it; Order of unblinding
+sets: every_cohort_utility at 2%
+labels:
+  - reported beside the headline
+  - every cohort utility as built, assignment and dating limitations kept explicit
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0010] timing_run_no_anchoring_years
+file: 0010_timing_run_no_anchoring_years.json (the numbers are in this JSON record)
+entry: timing_run_no_anchoring_years
+stage: remaining
+plan section: Electricity: the main estimate, the sets beside it ('As a timing run': Public Service of Colorado and Ohio Power at their no-anchoring years at 2%; R7, Joe, 2026-11-19, D-107)
+sets: headline_set at 2%
+labels:
+  - timing run
+  - timing run: the headline set with Public Service of Colorado and Ohio Power added at their no-anchoring years; under the procedure validated on the headline set; no validation was made on this design
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0011] customer_weighted
+file: 0011_customer_weighted.json (the numbers are in this JSON record)
+entry: customer_weighted
+stage: remaining
+plan section: Electricity: the main estimate, Weights ('the same estimate weighted by each host's residential customers in its reference year'; Joe, 2026-11-19, D-105)
+sets: headline_set at 2%
+labels:
+  - labelled
+  - descriptive: the customer-weighted point estimate, with no range (the selected inference procedure has no path that takes weights and was not validated with them; Joe, 2026-11-19, D-105)
+  - not applicable: a descriptive point estimate with no range, so no validation is claimed (None is kept for the validated headline alone)
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0012] other_outcome_kwh_per_customer
+file: 0012_other_outcome_kwh_per_customer.json (the numbers are in this JSON record)
+entry: other_outcome_kwh_per_customer
+stage: remaining
+plan section: Other outcomes and robustness: other outcomes; Electricity: the main estimate, Outcome
+sets: headline_set at 2%
+labels:
+  - another outcome, reported next to price and not treated as a placebo
+  - supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))
+  - These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that ("under the procedure validated on the headline set; no validation was made on this design").
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0013] other_outcome_bill_per_customer
+file: 0013_other_outcome_bill_per_customer.json (the numbers are in this JSON record)
+entry: other_outcome_bill_per_customer
+stage: remaining
+plan section: Other outcomes and robustness: other outcomes; The headline ('Any statement about an increase of 5%')
+sets: headline_set at 2%
+labels:
+  - another outcome, reported next to price and not treated as a placebo
+  - supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))
+  - These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that ("under the procedure validated on the headline set; no validation was made on this design").
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0014] other_outcome_residential_customers
+file: 0014_other_outcome_residential_customers.json (the numbers are in this JSON record)
+entry: other_outcome_residential_customers
+stage: remaining
+plan section: Other outcomes and robustness: other outcomes
+sets: headline_set at 2%
+labels:
+  - another outcome, reported next to price and not treated as a placebo
+  - supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))
+  - These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that ("under the procedure validated on the headline set; no validation was made on this design").
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0015] second_number_as_assigned
+file: 0015_second_number_as_assigned.json (the numbers are in this JSON record)
+entry: second_number_as_assigned
+stage: remaining
+plan section: The second number: per point of load; rule 8.3, the run on doses as assigned
+sets: second_number_sample
+labels:
+  - secondary, behind the main estimate
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0016] second_number_settled_only_classes_2_to_4
+file: 0016_second_number_settled_only_classes_2_to_4.json (the numbers are in this JSON record)
+entry: second_number_settled_only_classes_2_to_4
+stage: remaining
+plan section: The second number: per point of load; rule 8.3 (the settled run: classes 2 to 4 at each form, no endpoint exposure in modeled histories, zero exposure change with load in reach, and settled; D-105)
+sets: second_number_sample
+labels:
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0017] second_number_ten_highest_leverage_left_out
+file: 0017_second_number_ten_highest_leverage_left_out.json (the numbers are in this JSON record)
+entry: second_number_ten_highest_leverage_left_out
+stage: remaining
+plan section: The second number: per point of load; rule 8.3 (at each form, the ten highest-leverage utilities among that form's classes 5 to 8, not settled, left out; D-105)
+sets: second_number_sample
+labels:
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0018] second_number_sensitivity_scenario_a_runner_up_placement
+file: 0018_second_number_sensitivity_scenario_a_runner_up_placement.json (the numbers are in this JSON record)
+entry: second_number_sensitivity_scenario_a_runner_up_placement
+stage: remaining
+plan section: The second number: per point of load; rule 8.3 and 'A limitation, stated' (sensitivity scenario A, runner-up placement; Joe, 2026-11-19, D-107, adopting R2 of D-106)
+sets: second_number_sample
+labels:
+  - Sensitivity scenario A, runner-up placement (Joe, D-107; R2 of D-106): every unresolved load-carrying site moved to the first other candidate that can hold its full load under the inventory's own placement rule, every date, capacity and basis as the inventory has it, each state's factor recomputed. Under Joe's rule (D-111) for what a candidate already carries, the 460 unresolved sites are lifted first, all other load kept counted, and placed in descending size, each counting where it lands; matching the earlier count is not the reason for the rule. Umatilla enters at 25.0 and 50.0 points at the caps (462 uncapped) and Portland General at 18.8 points. Besides its own kind of question it differs from the primary run in three ways: the two sites with no load history carry load at the early end of each of their questions (bi:852-0 from 2024; bi:837-0's date and the rest of its capacity at 2011), where the primary run leaves out every utility they reach; Oregon's factor is recomputed with those sites carrying load; and its sample differs (Portland General and Umatilla enter at the dose this history gives them, and any unit with load in this history and no 2009-2011 base leaves). It is a sensitivity scenario, not a bound and not necessarily a one-change comparison with the primary analysis.
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0019] second_number_sensitivity_scenario_b_other_end_of_every_dated_interval
+file: 0019_second_number_sensitivity_scenario_b_other_end_of_every_dated_interval.json (the numbers are in this JSON record)
+entry: second_number_sensitivity_scenario_b_other_end_of_every_dated_interval
+stage: remaining
+plan section: The second number: per point of load; rule 8.3 and 'A limitation, stated' (sensitivity scenario B, the other end of every dated interval; Joe, 2026-11-19, D-107, adopting R2 of D-106)
+sets: second_number_sample
+labels:
+  - Sensitivity scenario B, the other end of every dated interval (Joe, D-107; R2 of D-106): each date entry in force that has a convention at the end of its interval its convention does not sit at, every assignment as the inventory has it, each state's factor recomputed. Umatilla enters at 0.0 points at both caps (316 uncapped) and Portland General at 18.9 points. Besides its own kind of question it differs from the primary run in three ways: the two sites with no load history carry load at the early end of each of their questions (bi:852-0 from 2024; bi:837-0's date and the rest of its capacity at 2011), where the primary run leaves out every utility they reach; Oregon's factor is recomputed with those sites carrying load; and its sample differs (Portland General and Umatilla enter at the dose this history gives them, and any unit with load in this history and no 2009-2011 base leaves). It is a sensitivity scenario, not a bound and not necessarily a one-change comparison with the primary analysis.
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0020] second_number_e3_after_period_2024_2025
+file: 0020_second_number_e3_after_period_2024_2025.json (the numbers are in this JSON record)
+entry: second_number_e3_after_period_2024_2025
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E3 (the second number's after period of 2024 to 2025)
+sets: second_number_sample
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0021] second_number_year_by_year
+file: 0021_second_number_year_by_year.json (the numbers are in this JSON record)
+entry: second_number_year_by_year
+stage: remaining
+plan section: The second number: per point of load (the year-by-year version, a side run)
+sets: second_number_sample
+labels:
+  - side run
+  - not calibrated by the inference comparison
+estimated: yes
+each set's result:
+  - second_number_sample: estimated
+failures in words: none
+
+[record 0022] affiliates_readmitted
+file: 0022_affiliates_readmitted.json (the numbers are in this JSON record)
+entry: affiliates_readmitted
+stage: remaining
+plan section: Other runs, listed in advance: Affiliates readmitted (rule 2.3)
+sets: headline_set at 2%
+labels:
+  - labelled sensitivity
+  - the agent's reading: the plan does not settle this (which sets)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0023] shared_suppliers_removed
+file: 0023_shared_suppliers_removed.json (the numbers are in this JSON record)
+entry: shared_suppliers_removed
+stage: remaining
+plan section: Other runs, listed in advance: Shared suppliers removed (rule 2.4)
+sets: headline_set at 2%
+labels:
+  - labelled sensitivity
+  - the agent's reading: the plan does not settle this (which sets)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0024] leave_one_comparison_out
+file: 0024_leave_one_comparison_out.json (the numbers are in this JSON record)
+entry: leave_one_comparison_out
+stage: remaining
+plan section: Other runs, listed in advance: Leave one comparison out (rule 7); Reported checks, Influence
+sets: headline_set at 2%
+labels:
+  - labelled sensitivity
+  - the agent's reading: the plan does not settle this (which sets)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0025] leave_one_company_out
+file: 0025_leave_one_company_out.json (the numbers are in this JSON record)
+entry: leave_one_company_out
+stage: remaining
+plan section: Other runs, listed in advance: Leave one company out (rule 7); Reported checks, Influence
+sets: headline_set at 2%
+labels:
+  - labelled sensitivity
+  - the agent's reading: the plan does not settle this (which sets)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0026] unresolved_ownership_excluded
+file: 0026_unresolved_ownership_excluded.json (the numbers are in this JSON record)
+entry: unresolved_ownership_excluded
+stage: remaining
+plan section: Electricity: the main estimate, Comparison utilities (the sensitivity that excludes hosts with unresolved ownership)
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - labelled sensitivity
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0027] later_start_plus_1
+file: 0027_later_start_plus_1.json (the numbers are in this JSON record)
+entry: later_start_plus_1
+stage: remaining
+plan section: Other runs, listed in advance: The later-start sensitivity, on outcomes (+1 year)
+sets: headline_set at 2%
+labels:
+  - stress test
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0028] later_start_plus_3
+file: 0028_later_start_plus_3.json (the numbers are in this JSON record)
+entry: later_start_plus_3
+stage: remaining
+plan section: Other runs, listed in advance: The later-start sensitivity, on outcomes (+3 years)
+sets: headline_set at 2%
+labels:
+  - stress test
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0029] later_start_plus_5
+file: 0029_later_start_plus_5.json (the numbers are in this JSON record)
+entry: later_start_plus_5
+stage: remaining
+plan section: Other runs, listed in advance: The later-start sensitivity, on outcomes (+5 years)
+sets: headline_set at 2%
+labels:
+  - stress test
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0030] callaway_santanna
+file: 0030_callaway_santanna.json (the numbers are in this JSON record)
+entry: callaway_santanna
+stage: remaining
+plan section: Other runs, listed in advance: Callaway and Sant'Anna's estimator with two years of anticipation
+sets: headline_set at 2%
+labels:
+  - a second estimator of the same quantity
+  - secondary and uncalibrated: a t-based range, the headline plus or minus the t critical value on the number of states less one times the bootstrap standard error of the headline (the module's construction, accepted by Joe on 2026-11-19, D-105); not calibrated by the inference comparison
+  - This run's comparison sample differs from the headline's. On the headline set at 2%, 680 of the 1,670 never-treated units are in no cohort's host region at that cohort's reference year (g-3), and 605 of them are in none of the four host regions (West, ERCOT, SPP, Southeast) at any of the five reference years (counted 2026-11-19 from this module's sample() on quantity files; docs/gate1/callaway-santanna-regions-without-host-2026-11-19.md). The headline's matched comparison utilities come from each host's own region in its reference year. These units stay in this run's sample by Joe's ruling of 2026-11-19 (D-111) and inform the gas-share slope, region entering as a covariate. A difference between this run's estimate and the headline estimate cannot be attributed solely to the estimator.
+  - not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words:
+  - results.headline_set at 2%.numerical_failure: 2 covariate warning(s) from the package
+  - results.headline_set at 2%.numerical_failure_unit_level: 61 covariate warning(s) from the package
+  - results.headline_set at 2%.numerical_failure_in_words: 2 covariate warning(s) from the package
+
+[record 0031] estimators_agree
+file: 0031_estimators_agree.json (the numbers are in this JSON record)
+entry: estimators_agree
+stage: remaining
+plan section: Reported checks, Do the estimators agree?
+sets: four_stacked_sets_and_callaway_santanna_at_2pct
+labels:
+  - reported check
+  - They estimate somewhat different averages and need not agree.
+  - the Callaway and Sant'Anna row carries estimators_table.CALLAWAY_SANTANNA_SAMPLE_LABEL (Joe, 2026-11-19, D-111): 680 of 1,670 never-treated units in no cohort's host region kept; a difference from the headline estimate cannot be attributed solely to the estimator
+estimated: yes
+each set's result:
+  - four_stacked_sets_and_callaway_santanna_at_2pct: estimated
+failures in words:
+  - results.four_stacked_sets_and_callaway_santanna_at_2pct.table.rows[4].failure_in_words: 2 covariate warning(s) from the package
+  - results.four_stacked_sets_and_callaway_santanna_at_2pct.table.runs_in_no_range_comparison[0].failure_in_words: 2 covariate warning(s) from the package
+
+[record 0032] longer_horizon
+file: 0032_longer_horizon.json (the numbers are in this JSON record)
+entry: longer_horizon
+stage: remaining
+plan section: Other runs, listed in advance: A longer horizon
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - side run
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0033] future_hosts_as_comparisons
+file: 0033_future_hosts_as_comparisons.json (the numbers are in this JSON record)
+entry: future_hosts_as_comparisons
+stage: remaining
+plan section: Other runs, listed in advance: Future hosts as a second comparison group
+sets: headline_set at 2%
+labels:
+  - side run
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0034] own_state_comparisons
+file: 0034_own_state_comparisons.json (the numbers are in this JSON record)
+entry: own_state_comparisons
+stage: remaining
+plan section: Other runs, listed in advance: Comparison utilities from the host's own state only
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - side run
+  - not shown beside the headline
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0035] threshold_1pct
+file: 0035_threshold_1pct.json (the numbers are in this JSON record)
+entry: threshold_1pct
+stage: remaining
+plan section: Other runs, listed in advance: Thresholds of 1% and 5% (the 1% run)
+sets: every_cohort_utility at 1%
+labels:
+  - exploratory
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - every_cohort_utility at 1%: estimated
+failures in words: none
+
+[record 0036] threshold_5pct
+file: 0036_threshold_5pct.json (the numbers are in this JSON record)
+entry: threshold_5pct
+stage: remaining
+plan section: Other runs, listed in advance: Thresholds of 1% and 5% (the 5% run, both readings)
+sets: headline_set at 5%; every_cohort_utility at 5%
+labels:
+  - both sets reported, the headline rules first (adopted by Joe on 2026-11-19, D-111)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 5%: estimated
+  - every_cohort_utility at 5%: estimated
+failures in words: none
+
+[record 0037] fuel_mix_categorical
+file: 0037_fuel_mix_categorical.json (the numbers are in this JSON record)
+entry: fuel_mix_categorical
+stage: remaining
+plan section: Electricity: the main estimate, Fuel-mix control (labelled sensitivity: the categorical group-by-year specification)
+sets: headline_set at 2%
+labels:
+  - labelled sensitivity
+  - the agent's reading: the plan does not settle this (place in the order and which sets)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0038] fuel_mix_none
+file: 0038_fuel_mix_none.json (the numbers are in this JSON record)
+entry: fuel_mix_none
+stage: remaining
+plan section: Electricity: the main estimate, Fuel-mix control (labelled sensitivity: no fuel-mix control)
+sets: headline_set at 2%
+labels:
+  - labelled sensitivity
+  - the agent's reading: the plan does not settle this (place in the order and which sets)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0039] size_band_side_run
+file: 0039_size_band_side_run.json (the numbers are in this JSON record)
+entry: size_band_side_run
+stage: remaining
+plan section: Electricity: the main estimate, Size adjustment (the size-band form as a side run)
+sets: headline_set at 2%
+labels:
+  - side run
+  - side run: the size-band form (cells of reference-year region by size band), in the tested per-host form adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which hosts share a cohort and a cell is outside this freeze; under the procedure validated on the headline set; no validation was made on this design
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0040] E1
+file: 0040_E1.json (the numbers are in this JSON record)
+entry: E1
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E1 events shifted six years early
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0041] E2
+file: 0041_E2.json (the numbers are in this JSON record)
+entry: E2
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E2 fake events for future hosts
+sets: e2_eligible_future_host_sample at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - e2_eligible_future_host_sample at 2%: estimated
+failures in words: none
+
+[record 0042] E3
+file: 0042_E3.json (the numbers are in this JSON record)
+entry: E3
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E3 drop 2021 to 2023 (full windows)
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - earlier-cohort sensitivity
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words:
+  - results.headline_set at 2%.numerical_failure.cause: undefined_or_non_finite_degrees_of_freedom
+  - results.headline_set at 2%.numerical_failure.where: early_years_test
+  - results.headline_set at 2%.numerical_failure.detail: AHT eta = 1.7872237248329008
+  - results.headline_set at 2%.numerical_failure.in_words: the degrees of freedom are undefined or not finite
+  - results.headline_set at 2%.numerical_failure_in_words: the degrees of freedom are undefined or not finite (undefined_or_non_finite_degrees_of_freedom, at early_years_test): AHT eta = 1.7872237248329008
+
+[record 0043] E4a
+file: 0043_E4a.json (the numbers are in this JSON record)
+entry: E4a
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E4(a) the slow path
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0044] E4b
+file: 0044_E4b.json (the numbers are in this JSON record)
+entry: E4b
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E4(b) anchoring off
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0045] E5
+file: 0045_E5.json (the numbers are in this JSON record)
+entry: E5
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E5 high-upward-scaling states dropped
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - removes units with no rematching (G-b)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0046] E6
+file: 0046_E6.json (the numbers are in this JSON record)
+entry: E6
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E6 comparison utilities that change market region dropped
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - removes units with no rematching (G-b)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0047] E7_earlier
+file: 0047_E7_earlier.json (the numbers are in this JSON record)
+entry: E7_earlier
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E7 permit-dated start years redrawn (earlier)
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - point estimates only, no range per draw (E7)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0048] E7_later
+file: 0048_E7_later.json (the numbers are in this JSON record)
+entry: E7_later
+stage: remaining
+plan section: Other outcomes and robustness: falsification and robustness, E7 permit-dated start years redrawn (later, the mirror, an assumption)
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - falsification and robustness run (reported whatever it shows; none is a gate)
+  - timing sensitivity with rematching, not an isolated timing effect (G-a)
+  - point estimates only, no range per draw (E7)
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0049] condition_1_load_share
+file: 0049_condition_1_load_share.json (the numbers are in this JSON record)
+entry: condition_1_load_share
+stage: remaining
+plan section: Conditions tested (four), 1: load share of 10% or more in event year 3
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described
+  - companion set: the agent's reading: the plan does not settle this
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0050] condition_2_investor_owned
+file: 0050_condition_2_investor_owned.json (the numbers are in this JSON record)
+entry: condition_2_investor_owned
+stage: remaining
+plan section: Conditions tested (four), 2: investor-owned against public and cooperative
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described
+  - companion set: the agent's reading: the plan does not settle this
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0051] condition_3_retail_choice_proxy
+file: 0051_condition_3_retail_choice_proxy.json (the numbers are in this JSON record)
+entry: condition_3_retail_choice_proxy
+stage: remaining
+plan section: Conditions tested (four), 3: retail choice by a proxy (the host's own unit; the state reading beside it)
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described
+  - a proxy for retail choice (observed delivery-only residential activity in the cohort reference year), not a regulatory classification
+  - companion set: the agent's reading: the plan does not settle this
+estimated: yes
+each set's result:
+  - headline_set at 2%: not estimated
+  - every_cohort_utility at 2%: estimated
+failures in words:
+  - results.headline_set at 2%.failure_in_words: not estimable: no host in this design is in the group(s) ['delivery-only residential activity observed (retail-choice proxy)']
+  - failures_in_words.headline_set at 2%: not estimable: no host in this design is in the group(s) ['delivery-only residential activity observed (retail-choice proxy)']
+
+[record 0052] condition_4_past_utilization
+file: 0052_condition_4_past_utilization.json (the numbers are in this JSON record)
+entry: condition_4_past_utilization
+stage: remaining
+plan section: Conditions tested (four), 4: past utilization above against at or below the median
+sets: headline_set at 2%; every_cohort_utility at 2%
+labels:
+  - descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described
+  - companion set: the agent's reading: the plan does not settle this
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+  - every_cohort_utility at 2%: estimated
+failures in words: none
+
+[record 0053] influence_each_market_region_left_out
+file: 0053_influence_each_market_region_left_out.json (the numbers are in this JSON record)
+entry: influence_each_market_region_left_out
+stage: remaining
+plan section: Reported checks, Influence (each market region left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and "moves most" adopted by Joe on 2026-11-19, D-111)
+sets: headline_set at 2%
+labels:
+  - reported check
+  - influence deletion: each market region present left out; under the procedure validated on the headline set; no validation was made on this design
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0054] influence_each_state_left_out
+file: 0054_influence_each_state_left_out.json (the numbers are in this JSON record)
+entry: influence_each_state_left_out
+stage: remaining
+plan section: Reported checks, Influence (each state left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and "moves most" adopted by Joe on 2026-11-19, D-111)
+sets: headline_set at 2%
+labels:
+  - reported check
+  - influence deletion: each state present left out (Virginia apart); under the procedure validated on the headline set; no validation was made on this design
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0055] influence_virginia_left_out
+file: 0055_influence_virginia_left_out.json (the numbers are in this JSON record)
+entry: influence_virginia_left_out
+stage: remaining
+plan section: Reported checks, Influence (Virginia left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and "moves most" adopted by Joe on 2026-11-19, D-111)
+sets: headline_set at 2%
+labels:
+  - reported check
+  - influence deletion: state VA left out; under the procedure validated on the headline set; no validation was made on this design
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words: none
+
+[record 0056] influence_five_highest_load_utilities_dropped
+file: 0056_influence_five_highest_load_utilities_dropped.json (the numbers are in this JSON record)
+entry: influence_five_highest_load_utilities_dropped
+stage: remaining
+plan section: Reported checks, Influence (the five highest-load utilities dropped; Joe, 2026-11-19, D-105: absolute data center load in event year 3, not load share)
+sets: headline_set at 2%
+labels:
+  - reported check
+  - under the procedure validated on the headline set; no validation was made on this design
+estimated: yes
+each set's result:
+  - headline_set at 2%: estimated
+failures in words:
+  - results.headline_set at 2%.deletion.numerical_failure.cause: undefined_or_non_finite_degrees_of_freedom
+  - results.headline_set at 2%.deletion.numerical_failure.where: early_years_test
+  - results.headline_set at 2%.deletion.numerical_failure.detail: AHT eta = 1.1925980724853231
+  - results.headline_set at 2%.deletion.numerical_failure.in_words: the degrees of freedom are undefined or not finite
+  - results.headline_set at 2%.numerical_failure_in_words: the degrees of freedom are undefined or not finite (undefined_or_non_finite_degrees_of_freedom, at early_years_test): AHT eta = 1.1925980724853231
+
+[record 0057] tariff_check
+file: 0057_tariff_check.json (the numbers are in this JSON record)
+entry: tariff_check
+stage: remaining
+plan section: Reported checks, The tariff check (docs/tariff-check.md)
+sets: none
+labels:
+  - reported check
+estimated: no
+each set's result: none returned (status not_built)
+failures in words: none
+
+[record 0058] regional_layer
+file: 0058_regional_layer.json (the numbers are in this JSON record)
+entry: regional_layer
+stage: remaining
+plan section: Electricity: regional layer (accounting, not an estimate)
+sets: none
+labels:
+  - exploratory
+estimated: no
+each set's result: none returned (status not_built)
+failures in words: none
+
+[record 0059] exploratory_work
+file: 0059_exploratory_work.json (the numbers are in this JSON record)
+entry: exploratory_work
+stage: remaining
+plan section: Order of unblinding (last: exploratory work)
+sets: none
+labels:
+  - exploratory
+estimated: no
+each set's result: none returned (status not_built)
+failures in words: none
+

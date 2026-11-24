@@ -1,0 +1,103 @@
+{
+ "what_this_is": "The customer-weighted fit's design side on the headline set at 2% under the headline rules (Electricity: the main estimate, Weights; Joe, 2026-11-19, D-105: descriptive, nominal customer weights kept apart from effective regression contributions). For each host: its residential customers in its reference year, its NOMINAL share of the customer weight, and its EFFECTIVE contribution to the weighted fit's headline (the own-row headline weight), computed from the regressors and the weights alone; the unweighted fit's contribution is beside it for reference. What each share measures, and what it does not, is in nominal_definition and effective_definition (Joe, 2026-11-19: clarify exactly what 'effective contribution' measures; no calculation changed and no influence analysis is run). Quantities only: no price, revenue, bill or outcome is read and nothing is fitted. PROVISIONAL: the design stands as of 2026-11-18 and the plan is a DRAFT, not frozen.",
+ "built_by": "pipeline/analysis/weighted_fit.py (main)",
+ "customers_source": "data/interim/panel_quantities.parquet, field res_customers, the host's unit in cohort - 3",
+ "set": "headline_set",
+ "threshold": 0.02,
+ "rules": "headline",
+ "label": "descriptive: the customer-weighted point estimate, with no range (the selected inference procedure has no path that takes weights and was not validated with them; Joe, 2026-11-19, D-105)",
+ "nominal_label": "nominal customer share (each host's reference-year residential customers over all stacked hosts')",
+ "nominal_definition": "Nominal customer share. Each stacked host's residential customers in its reference year (cohort - 3), over the sum of those customers across the stacked hosts; the shares add to 1. It is computed from the customer counts alone, before any regression. Every row of a host's sub-experiment (its own rows and its matched comparison utilities' rows) carries that host's customers as its weight, so the nominal share is the weight the specification gives the host's whole sub-experiment relative to the others. It is not the weight the fitted headline places on the host (that is the effective contribution), it is not a measure of statistical influence on the estimate, it is not leverage, and it is not how far the estimate would move without the host.",
+ "effective_label": "own-row headline weight (the share of the weighted headline's weight on host rows in event years 2 and 3 that falls on this host's own rows)",
+ "effective_definition": "Effective contribution, shown as the own-row headline weight. The weighted headline is a fixed linear combination of the outcome rows, headline = omega'y, with omega = W X~ (X~'W X~)^-1 combo: W holds the customer weights on every stacked row, X~ is the regressors (the event-time columns on host rows, the degree-day columns and the gas-share controls) with the fixed effects removed under those weights, and combo takes the mean of event years 2 and 3. A host's effective contribution is the sum of omega over that host's own rows in event years 2 and 3 (its rows in its own sub-experiment, not its matched comparison utilities' rows). Across the stacked hosts these sums add to exactly 1, because omega'X equals combo' and the event-time columns are the indicators of host rows by event year. It is therefore the share of the weighted headline's total weight on host rows in event years 2 and 3 that falls on that host's own rows. It is a signed share and can be negative or larger than the host's nominal share. In exact terms, if every outcome value on the host's own rows in event years 2 and 3 rose by the same amount c and nothing else changed, the weighted headline would rise by c times the host's effective contribution. It is computed from the design's regressors, its fixed effects and the customer weights alone; no outcome, price, revenue or bill enters, and it is the same whatever the outcome. It is not a measure of statistical influence on the estimate, it is not leverage (the diagonal of the fit's hat matrix), and it is not how far the estimate would move if the host were left out: each of those depends on the outcomes or on a refit without the host, and none of them is computed here. With every weight equal it is the unweighted fit's host weight (outcome_analysis.host_weights). That the host's own rows in event years 2 and 3 are what is summed, read from 'the implied weight on its own treated rows', was accepted by Joe on 2026-11-19 (D-111) with this definition. This definition supersedes the earlier phrase 'effective regression contributions' (Joe, 2026-11-19, D-105) where the two differ: the quantity is a share of the headline's weight on host rows, computed from the design before any outcome, and not a contribution of the host's data to the estimate in any sense that depends on the outcome.",
+ "hosts": [
+  {
+   "host": "803:AZ",
+   "name": "Arizona Public Service Co",
+   "cohort": 2020,
+   "reference_year": 2017,
+   "residential_customers_in_the_reference_year": 1080665.0,
+   "nominal_customer_weight_share": 0.35383343980003684,
+   "effective_contribution_to_the_weighted_headline": 0.3377755095089946,
+   "unweighted_fit_contribution_for_reference": 0.1439804102405159
+  },
+  {
+   "host": "14354:UT",
+   "name": "PacifiCorp",
+   "cohort": 2015,
+   "reference_year": 2012,
+   "residential_customers_in_the_reference_year": 722473.0,
+   "nominal_customer_weight_share": 0.23655351728116672,
+   "effective_contribution_to_the_weighted_headline": 0.2539127674219189,
+   "unweighted_fit_contribution_for_reference": 0.14952807041751554
+  },
+  {
+   "host": "15473:NM",
+   "name": "Public Service Co of NM",
+   "cohort": 2019,
+   "reference_year": 2016,
+   "residential_customers_in_the_reference_year": 461248.0,
+   "nominal_customer_weight_share": 0.1510227188267293,
+   "effective_contribution_to_the_weighted_headline": 0.14087116918532225,
+   "unweighted_fit_contribution_for_reference": 0.13660054086124512
+  },
+  {
+   "host": "14127:NE",
+   "name": "Omaha Public Power District",
+   "cohort": 2019,
+   "reference_year": 2016,
+   "residential_customers_in_the_reference_year": 323784.0,
+   "nominal_customer_weight_share": 0.10601398812047687,
+   "effective_contribution_to_the_weighted_headline": 0.1224334236172748,
+   "unweighted_fit_contribution_for_reference": 0.15350870955845367
+  },
+  {
+   "host": "17166:NV",
+   "name": "Sierra Pacific Power Co",
+   "cohort": 2017,
+   "reference_year": 2014,
+   "residential_customers_in_the_reference_year": 284301.0,
+   "nominal_customer_weight_share": 0.09308638733427128,
+   "effective_contribution_to_the_weighted_headline": 0.07958980411304206,
+   "unweighted_fit_contribution_for_reference": 0.12076377665810432
+  },
+  {
+   "host": "20065:GA",
+   "name": "Walton Electric Member Corp",
+   "cohort": 2021,
+   "reference_year": 2018,
+   "residential_customers_in_the_reference_year": 118824.0,
+   "nominal_customer_weight_share": 0.03890558558924327,
+   "effective_contribution_to_the_weighted_headline": 0.04340444252319823,
+   "unweighted_fit_contribution_for_reference": 0.1479065710224522
+  },
+  {
+   "host": "6958:TX",
+   "name": "City of Garland - (TX)",
+   "cohort": 2017,
+   "reference_year": 2014,
+   "residential_customers_in_the_reference_year": 62868.0,
+   "nominal_customer_weight_share": 0.02058436304807569,
+   "effective_contribution_to_the_weighted_headline": 0.022012883630250436,
+   "unweighted_fit_contribution_for_reference": 0.14771192124171215
+  }
+ ],
+ "sums": {
+  "nominal": 1.0,
+  "effective_weighted": 1.0000000000000013,
+  "unweighted": 0.9999999999999989
+ },
+ "design_inputs_sha256": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+ "fingerprint": {
+  "sha256": "60adac61459de0f6dd1cd00b448c1307f07ca7e6e5a76073a91eb2261438e87e",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+   "assumptions": "7392f83a5c23eadc2c2199acdb1304aa29b1aad14b456e279cf2d8388f45ecaa",
+   "settings": "d6dccd96513e3109f4166cd2eb0111fd56729de54a4a5957bb1a3880b9798c8e",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ }
+}

@@ -1,0 +1,735 @@
+{
+ "what_this_is": "The three influence deletions of Reported checks, Influence (each market region, each state, Virginia; R7, adopted by Joe on 2026-11-19, D-107) on the headline set at 2% under the headline rules, from the design alone: for each deletion the hosts leaving, the matched comparison utilities leaving, the hosts left with fewer than five matches (kept, inadequately supported), the hosts not estimable, and the rank test made before any fit on the regressors alone. Quantities only: load, sales, customers, ownership and the usable flag; no price, revenue, bill or outcome is read and nothing is fitted. Each deleted design is one on which no validation was made. PROVISIONAL: the design stands as of 2026-11-18 under the ownership code in the file when this was run, and the plan is a DRAFT, not frozen.",
+ "built_by": "pipeline/analysis/influence_deletions.py (main)",
+ "set": "headline_set",
+ "threshold": 0.02,
+ "rules": "headline",
+ "readings": [
+  "a region is present when it is the reference-year region of a host; a state is present when a host or a matched comparison utility is in it; Virginia is run in addition (adopted by Joe on 2026-11-19, D-111)",
+  "a unit is a utility in one state, so a state deletion removes units in that state (adopted by Joe on 2026-11-19, D-111)"
+ ],
+ "hosts_in_the_design": [
+  {
+   "host": "803:AZ",
+   "name": "Arizona Public Service Co",
+   "matches": 10
+  },
+  {
+   "host": "6958:TX",
+   "name": "City of Garland - (TX)",
+   "matches": 10
+  },
+  {
+   "host": "14127:NE",
+   "name": "Omaha Public Power District",
+   "matches": 10
+  },
+  {
+   "host": "14354:UT",
+   "name": "PacifiCorp",
+   "matches": 10
+  },
+  {
+   "host": "15473:NM",
+   "name": "Public Service Co of NM",
+   "matches": 10
+  },
+  {
+   "host": "17166:NV",
+   "name": "Sierra Pacific Power Co",
+   "matches": 10
+  },
+  {
+   "host": "20065:GA",
+   "name": "Walton Electric Member Corp",
+   "matches": 10
+  }
+ ],
+ "regions_present": [
+  "ERCOT",
+  "SPP",
+  "Southeast",
+  "West"
+ ],
+ "states_present": [
+  "AZ",
+  "CO",
+  "FL",
+  "GA",
+  "ID",
+  "KS",
+  "LA",
+  "MO",
+  "NC",
+  "NE",
+  "NM",
+  "NV",
+  "OR",
+  "SC",
+  "TN",
+  "TX",
+  "UT",
+  "WA",
+  "WY"
+ ],
+ "deletions": [
+  {
+   "kind": "region",
+   "value": "ERCOT",
+   "label": "influence deletion: region ERCOT left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "6958:TX",
+     "name": "City of Garland - (TX)"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "11501:TX",
+    "12268:TX",
+    "12452:TX",
+    "13418:TX",
+    "13830:TX",
+    "17561:TX",
+    "2409:TX",
+    "2442:TX",
+    "3282:TX",
+    "3940:TX"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.017903229540258168
+   }
+  },
+  {
+   "kind": "region",
+   "value": "SPP",
+   "label": "influence deletion: region SPP left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "14127:NE",
+     "name": "Omaha Public Power District"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "10000:MO",
+    "10005:KS",
+    "11292:TX",
+    "17698:LA",
+    "17698:TX",
+    "17718:NM",
+    "17718:TX",
+    "17833:MO",
+    "22500:KS",
+    "5860:MO"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01896031033270845
+   }
+  },
+  {
+   "kind": "region",
+   "value": "Southeast",
+   "label": "influence deletion: region Southeast left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "20065:GA",
+     "name": "Walton Electric Member Corp"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "10623:FL",
+    "17543:SC",
+    "17832:GA",
+    "18445:FL",
+    "19898:TN",
+    "21632:NC",
+    "3046:SC",
+    "3408:TN",
+    "3757:FL",
+    "6909:FL"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01875893491816801
+   }
+  },
+  {
+   "kind": "region",
+   "value": "West",
+   "label": "influence deletion: region West left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "14354:UT",
+     "name": "PacifiCorp"
+    },
+    {
+     "host": "15473:NM",
+     "name": "Public Service Co of NM"
+    },
+    {
+     "host": "17166:NV",
+     "name": "Sierra Pacific Power Co"
+    },
+    {
+     "host": "803:AZ",
+     "name": "Arizona Public Service Co"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "14354:WA",
+    "14354:WY",
+    "16868:WA",
+    "17470:WA",
+    "18429:WA",
+    "3660:WA",
+    "56146:CO",
+    "5701:NM",
+    "5701:TX",
+    "6022:OR",
+    "6604:CO",
+    "9191:ID"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 3,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.0882797727387419
+   }
+  },
+  {
+   "kind": "state",
+   "value": "AZ",
+   "label": "influence deletion: state AZ left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "803:AZ",
+     "name": "Arizona Public Service Co"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "14354:WA",
+    "14354:WY",
+    "16868:WA",
+    "17470:WA",
+    "18429:WA",
+    "3660:WA",
+    "56146:CO",
+    "5701:NM",
+    "5701:TX",
+    "9191:ID"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.019895652444833035
+   }
+  },
+  {
+   "kind": "state",
+   "value": "CO",
+   "label": "influence deletion: state CO left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "56146:CO",
+    "6604:CO"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.018989231398692918
+   }
+  },
+  {
+   "kind": "state",
+   "value": "FL",
+   "label": "influence deletion: state FL left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "10623:FL",
+    "18445:FL",
+    "3757:FL",
+    "6909:FL"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.017473422402089253
+   }
+  },
+  {
+   "kind": "state",
+   "value": "GA",
+   "label": "influence deletion: state GA left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "20065:GA",
+     "name": "Walton Electric Member Corp"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "10623:FL",
+    "17543:SC",
+    "17832:GA",
+    "18445:FL",
+    "19898:TN",
+    "21632:NC",
+    "3046:SC",
+    "3408:TN",
+    "3757:FL",
+    "6909:FL"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01875893491816801
+   }
+  },
+  {
+   "kind": "state",
+   "value": "ID",
+   "label": "influence deletion: state ID left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "9191:ID"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01815179262704529
+   }
+  },
+  {
+   "kind": "state",
+   "value": "KS",
+   "label": "influence deletion: state KS left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "10005:KS",
+    "22500:KS"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01802984228717376
+   }
+  },
+  {
+   "kind": "state",
+   "value": "LA",
+   "label": "influence deletion: state LA left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "17698:LA"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01801200073755193
+   }
+  },
+  {
+   "kind": "state",
+   "value": "MO",
+   "label": "influence deletion: state MO left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "10000:MO",
+    "17833:MO",
+    "5860:MO"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.018095916537652468
+   }
+  },
+  {
+   "kind": "state",
+   "value": "NC",
+   "label": "influence deletion: state NC left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "21632:NC"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.017918596120284357
+   }
+  },
+  {
+   "kind": "state",
+   "value": "NE",
+   "label": "influence deletion: state NE left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "14127:NE",
+     "name": "Omaha Public Power District"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "10000:MO",
+    "10005:KS",
+    "11292:TX",
+    "17698:LA",
+    "17698:TX",
+    "17718:NM",
+    "17718:TX",
+    "17833:MO",
+    "22500:KS",
+    "5860:MO"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01896031033270845
+   }
+  },
+  {
+   "kind": "state",
+   "value": "NM",
+   "label": "influence deletion: state NM left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "15473:NM",
+     "name": "Public Service Co of NM"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "14354:WA",
+    "14354:WY",
+    "16868:WA",
+    "17470:WA",
+    "18429:WA",
+    "3660:WA",
+    "56146:CO",
+    "5701:NM",
+    "5701:TX",
+    "9191:ID"
+   ],
+   "matched_units_leaving_remaining_hosts": [
+    "17718:NM",
+    "5701:NM"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.02148882923917019
+   }
+  },
+  {
+   "kind": "state",
+   "value": "NV",
+   "label": "influence deletion: state NV left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "17166:NV",
+     "name": "Sierra Pacific Power Co"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "16868:WA",
+    "17470:WA",
+    "18429:WA",
+    "3660:WA",
+    "56146:CO",
+    "5701:NM",
+    "5701:TX",
+    "6022:OR",
+    "6604:CO",
+    "9191:ID"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.020267215625803654
+   }
+  },
+  {
+   "kind": "state",
+   "value": "OR",
+   "label": "influence deletion: state OR left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "6022:OR"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01761170106566127
+   }
+  },
+  {
+   "kind": "state",
+   "value": "SC",
+   "label": "influence deletion: state SC left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "17543:SC",
+    "3046:SC"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.017920910250987878
+   }
+  },
+  {
+   "kind": "state",
+   "value": "TN",
+   "label": "influence deletion: state TN left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "19898:TN",
+    "3408:TN"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01807209832856408
+   }
+  },
+  {
+   "kind": "state",
+   "value": "TX",
+   "label": "influence deletion: state TX left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "6958:TX",
+     "name": "City of Garland - (TX)"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "11501:TX",
+    "12268:TX",
+    "12452:TX",
+    "13418:TX",
+    "13830:TX",
+    "17561:TX",
+    "2409:TX",
+    "2442:TX",
+    "3282:TX",
+    "3940:TX"
+   ],
+   "matched_units_leaving_remaining_hosts": [
+    "11292:TX",
+    "17698:TX",
+    "17718:TX",
+    "5701:TX"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.012609281825599873
+   }
+  },
+  {
+   "kind": "state",
+   "value": "UT",
+   "label": "influence deletion: state UT left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [
+    {
+     "host": "14354:UT",
+     "name": "PacifiCorp"
+    }
+   ],
+   "matched_units_leaving_with_those_hosts": [
+    "16868:WA",
+    "17470:WA",
+    "18429:WA",
+    "3660:WA",
+    "56146:CO",
+    "5701:NM",
+    "5701:TX",
+    "6022:OR",
+    "6604:CO",
+    "9191:ID"
+   ],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": false,
+   "hosts_remaining": 6,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.033562235299202145
+   }
+  },
+  {
+   "kind": "state",
+   "value": "WA",
+   "label": "influence deletion: state WA left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "14354:WA",
+    "16868:WA",
+    "17470:WA",
+    "18429:WA",
+    "3660:WA"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01660445029681362
+   }
+  },
+  {
+   "kind": "state",
+   "value": "WY",
+   "label": "influence deletion: state WY left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [
+    "14354:WY"
+   ],
+   "removes_nothing": false,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.01829197956988946
+   }
+  },
+  {
+   "kind": "state",
+   "value": "VA",
+   "label": "influence deletion: state VA left out; under the procedure validated on the headline set; no validation was made on this design",
+   "hosts_leaving": [],
+   "matched_units_leaving_with_those_hosts": [],
+   "matched_units_leaving_remaining_hosts": [],
+   "removes_nothing": true,
+   "hosts_remaining": 7,
+   "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+   "hosts_with_no_matches_not_estimable": [],
+   "hosts_with_zero_weight_not_estimable": [],
+   "rank_test_before_any_fit": {
+    "estimable": true,
+    "smallest_singular_value_ratio": 0.017906804620975342
+   },
+   "virginia": "Virginia left out removes nothing: no host and no matched comparison utility of this design is in Virginia (checked on the design). Its estimate is the design's own estimate and is not presented as a check passed."
+  }
+ ],
+ "virginia": "Virginia left out removes nothing: no host and no matched comparison utility of this design is in Virginia (checked on the design). Its estimate is the design's own estimate and is not presented as a check passed.",
+ "design_inputs_sha256": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+ "fingerprint": {
+  "sha256": "aab1a3f7ea0763fd515558fd0bfed359f46e8743837886983a14a077bb47aa02",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+   "assumptions": "2290013511850cac02b829d6cd56723e1254477fbad5d5bb2f6d52741dedec47",
+   "settings": "18549a1795a9be46a8bd497d71f2f458be0909cf0b12bafebbe66ccd03c28b40",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ }
+}

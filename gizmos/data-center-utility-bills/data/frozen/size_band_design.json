@@ -1,0 +1,232 @@
+{
+ "what_this_is": "The size-band form as a side run (Size adjustment; R7, adopted by Joe on 2026-11-19, D-107) on the headline set at 2%: each host's cell of reference-year region by size band, its count of comparison utilities in the cell (every unit eligible under the main design's rules, ownership and full-window usability included), the support rule's first limb, the hosts not estimable, and the rank test made before any fit on the regressors alone. Quantities only: load, sales, customers, ownership and the usable flag; no price, revenue, bill or outcome is read and nothing is fitted. The per-host form is the side run's form, adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%, where it was tested to be the same design as the form pooled by cohort and cell with each host's ownership exclusions kept (D-110); applying it to a set in which hosts share a cohort and a cell is outside this freeze, build refuses such a set in words, and no extension is built. A side run on a design on which no validation was made. PROVISIONAL: the design stands as of 2026-11-18 under the ownership code in the file when this was run, and the plan is a DRAFT, not frozen.",
+ "built_by": "pipeline/analysis/size_band_run.py (main)",
+ "set": "headline_set",
+ "threshold": 0.02,
+ "rules": "side_run_size_band_form",
+ "size_bands": [
+  "under 10,000",
+  "10,000 to 99,999",
+  "100,000 or more"
+ ],
+ "readings": [
+  "one sub-experiment per host with its cell's eligible units, not the simulation's pooled cohort-by-cell blocks, because ownership eligibility is decided for each host (adopted by Joe on 2026-11-19, D-111, for the headline set at 2%; a set in which hosts share a cohort and a cell is outside this freeze)",
+  "a host failing the first limb leaves this run's estimate and is named, 'as written' in a side run (adopted by Joe on 2026-11-19, D-111)"
+ ],
+ "hosts_dropped_before_the_cells": [],
+ "label": "side run: the size-band form (cells of reference-year region by size band), in the tested per-host form adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which hosts share a cohort and a cell is outside this freeze; under the procedure validated on the headline set; no validation was made on this design",
+ "hosts": [
+  {
+   "host": "803:AZ",
+   "name": "Arizona Public Service Co",
+   "cohort": 2020,
+   "reference_year": 2017,
+   "region": "West",
+   "size_band": "100,000 or more",
+   "residential_customers_in_the_reference_year": 1080665.0,
+   "eligible_in_its_region_in_the_reference_year": 128,
+   "comparison_utilities_in_its_cell": 8,
+   "comparisons": [
+    "9191:ID",
+    "16868:WA",
+    "17470:WA",
+    "5701:TX",
+    "3660:WA",
+    "18429:WA",
+    "14354:WY",
+    "14354:WA"
+   ]
+  },
+  {
+   "host": "6958:TX",
+   "name": "City of Garland - (TX)",
+   "cohort": 2017,
+   "reference_year": 2014,
+   "region": "ERCOT",
+   "size_band": "10,000 to 99,999",
+   "residential_customers_in_the_reference_year": 62868.0,
+   "eligible_in_its_region_in_the_reference_year": 37,
+   "comparison_utilities_in_its_cell": 26,
+   "comparisons": [
+    "2442:TX",
+    "11501:TX",
+    "2409:TX",
+    "17561:TX",
+    "3940:TX",
+    "3282:TX",
+    "13830:TX",
+    "13418:TX",
+    "12268:TX",
+    "12452:TX",
+    "7129:TX",
+    "28978:TX",
+    "8898:TX",
+    "19806:TX",
+    "28604:TX",
+    "3470:TX",
+    "16146:TX",
+    "7979:TX",
+    "55982:TX",
+    "27369:TX",
+    "9590:TX",
+    "6183:TX",
+    "6427:TX",
+    "20230:TX",
+    "7634:TX",
+    "10649:TX"
+   ]
+  },
+  {
+   "host": "14127:NE",
+   "name": "Omaha Public Power District",
+   "cohort": 2019,
+   "reference_year": 2016,
+   "region": "SPP",
+   "size_band": "100,000 or more",
+   "residential_customers_in_the_reference_year": 323784.0,
+   "eligible_in_its_region_in_the_reference_year": 107,
+   "comparison_utilities_in_its_cell": 7,
+   "comparisons": [
+    "22500:KS",
+    "10005:KS",
+    "10000:MO",
+    "17718:TX",
+    "17698:LA",
+    "17698:TX",
+    "5860:MO"
+   ]
+  },
+  {
+   "host": "14354:UT",
+   "name": "PacifiCorp",
+   "cohort": 2015,
+   "reference_year": 2012,
+   "region": "West",
+   "size_band": "100,000 or more",
+   "residential_customers_in_the_reference_year": 722473.0,
+   "eligible_in_its_region_in_the_reference_year": 184,
+   "comparison_utilities_in_its_cell": 6,
+   "comparisons": [
+    "9191:ID",
+    "16868:WA",
+    "17470:WA",
+    "5701:TX",
+    "3660:WA",
+    "18429:WA"
+   ]
+  },
+  {
+   "host": "15473:NM",
+   "name": "Public Service Co of NM",
+   "cohort": 2019,
+   "reference_year": 2016,
+   "region": "West",
+   "size_band": "100,000 or more",
+   "residential_customers_in_the_reference_year": 461248.0,
+   "eligible_in_its_region_in_the_reference_year": 128,
+   "comparison_utilities_in_its_cell": 8,
+   "comparisons": [
+    "9191:ID",
+    "16868:WA",
+    "17470:WA",
+    "5701:TX",
+    "3660:WA",
+    "18429:WA",
+    "14354:WY",
+    "14354:WA"
+   ]
+  },
+  {
+   "host": "17166:NV",
+   "name": "Sierra Pacific Power Co",
+   "cohort": 2017,
+   "reference_year": 2014,
+   "region": "West",
+   "size_band": "100,000 or more",
+   "residential_customers_in_the_reference_year": 284301.0,
+   "eligible_in_its_region_in_the_reference_year": 118,
+   "comparison_utilities_in_its_cell": 6,
+   "comparisons": [
+    "5701:TX",
+    "17470:WA",
+    "16868:WA",
+    "9191:ID",
+    "3660:WA",
+    "18429:WA"
+   ]
+  },
+  {
+   "host": "20065:GA",
+   "name": "Walton Electric Member Corp",
+   "cohort": 2021,
+   "reference_year": 2018,
+   "region": "Southeast",
+   "size_band": "100,000 or more",
+   "residential_customers_in_the_reference_year": 118824.0,
+   "eligible_in_its_region_in_the_reference_year": 342,
+   "comparison_utilities_in_its_cell": 21,
+   "comparisons": [
+    "21632:NC",
+    "10623:FL",
+    "3046:SC",
+    "18445:FL",
+    "3408:TN",
+    "17543:SC",
+    "3757:FL",
+    "3916:GA",
+    "18304:FL",
+    "20885:FL",
+    "10857:FL",
+    "9601:GA",
+    "14610:FL",
+    "13216:TN",
+    "11249:KY",
+    "9617:FL",
+    "10171:KY",
+    "5416:SC",
+    "17539:SC",
+    "3046:NC",
+    "195:AL"
+   ]
+  }
+ ],
+ "hosts_by_cell": {
+  "West | 100,000 or more": [
+   "803:AZ",
+   "14354:UT",
+   "15473:NM",
+   "17166:NV"
+  ],
+  "ERCOT | 10,000 to 99,999": [
+   "6958:TX"
+  ],
+  "SPP | 100,000 or more": [
+   "14127:NE"
+  ],
+  "Southeast | 100,000 or more": [
+   "20065:GA"
+  ]
+ },
+ "hosts_with_no_comparison_in_its_cell_not_estimable": [],
+ "first_limb_failures": [],
+ "hosts_sharing_a_cohort_and_a_cell": [],
+ "rank_test_before_any_fit": {
+  "estimable": true,
+  "smallest_singular_value_ratio": 0.0198777151522446,
+  "hosts_with_zero_weight": []
+ },
+ "design_inputs_sha256": "4be1fcc0d40724fc37062825a86ffe39f30443ae180613d5f1ae7a3d0e425450",
+ "fingerprint": {
+  "sha256": "92914107d3e2136b74fd239e3b2fb6e86235bb193a29008f51b92b90caa5ad5a",
+  "of": {
+   "design_inputs": "4be1fcc0d40724fc37062825a86ffe39f30443ae180613d5f1ae7a3d0e425450",
+   "rules": "5b7932ecd0bf3719a666619d530648ede04084a05a4723cbfb2d53cdce810d3a",
+   "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+   "assumptions": "6dd58c6932edd927e7c61200fa6b62d1624ea62e062a6b23f9c8ab73f1a42dc6",
+   "settings": "4e97e6e0ba1932615efe4fa71e100004363d056d14330c9ee2d542bb3cc6f0b6",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ },
+ "headline_design_inputs_sha256_same_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366"
+}

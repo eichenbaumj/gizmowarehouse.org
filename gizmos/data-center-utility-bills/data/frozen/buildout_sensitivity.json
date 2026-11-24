@@ -1,0 +1,1165 @@
+{
+  "what_this_is": "First year each utility's data center load reaches the threshold, with sites not on Epoch's timeline on the three-year ramp, on the slow path (full load the year after the latest generator permit), and after hand-verified histories are applied.",
+  "sites_with_electricity_reported_by_the_operator": 19,
+  "sites_not_on_epochs_timeline": 968,
+  "of_which_the_slow_path_differs": 371,
+  "their_mw": 8679.9,
+  "verified": {
+    "single_building_by_government_record": 41,
+    "phased_history_from_opened_sources": 9,
+    "mw_verified": 2363.4,
+    "still_unverified": 321,
+    "mw_still_unverified": 6316.5
+  },
+  "definition_of_material": "the utility changes group (early host before 2011, cohort 2011 to 2022, late host, never), or a cohort utility's first crossing moves by 2 years or more",
+  "thresholds": {
+    "2%": {
+      "three_year_ramp_everywhere": {
+        "early": 32,
+        "cohort": 41,
+        "late": 21
+      },
+      "slow_path_everywhere": {
+        "early": 24,
+        "cohort": 48,
+        "late": 22
+      },
+      "after_verified_histories": {
+        "early": 32,
+        "cohort": 41,
+        "late": 21
+      },
+      "after_verified_histories_rest_on_the_slow_path": {
+        "early": 25,
+        "cohort": 47,
+        "late": 22
+      },
+      "utilities_the_choice_was_material_for": 20,
+      "of_which_settled_by_verified_histories": 5,
+      "utilities_still_unsettled": [
+        {
+          "utility": "3841:MS",
+          "name": "Coast Electric Power Assn - (MS)",
+          "three_year_ramp": 2012,
+          "slow_path": 2016,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2016
+        },
+        {
+          "utility": "4110:IL",
+          "name": "Commonwealth Edison Co",
+          "three_year_ramp": 2014,
+          "slow_path": 2016,
+          "after_verification": 2014,
+          "after_verification_rest_slow": 2016
+        },
+        {
+          "utility": "7140:GA",
+          "name": "Georgia Power Co",
+          "three_year_ramp": 2008,
+          "slow_path": 2014,
+          "after_verification": 2008,
+          "after_verification_rest_slow": 2014
+        },
+        {
+          "utility": "9336:CO",
+          "name": "CORE Electric Cooperative",
+          "three_year_ramp": 2012,
+          "slow_path": 2018,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "11187:CO",
+          "name": "City of Longmont",
+          "three_year_ramp": 2016,
+          "slow_path": 2021,
+          "after_verification": 2016,
+          "after_verification_rest_slow": 2021
+        },
+        {
+          "utility": "11208:CA",
+          "name": "Los Angeles Department of Water & Power",
+          "three_year_ramp": 2020,
+          "slow_path": 2025,
+          "after_verification": 2020,
+          "after_verification_rest_slow": 2025
+        },
+        {
+          "utility": "12341:IA",
+          "name": "MidAmerican Energy Co",
+          "three_year_ramp": 2010,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2013
+        },
+        {
+          "utility": "12351:AZ",
+          "name": "City of Mesa - (AZ)",
+          "three_year_ramp": 2007,
+          "slow_path": 2020,
+          "after_verification": 2007,
+          "after_verification_rest_slow": 2020
+        },
+        {
+          "utility": "12698:MO",
+          "name": "Evergy Missouri West",
+          "three_year_ramp": 2008,
+          "slow_path": 2011,
+          "after_verification": 2008,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "14154:NY",
+          "name": "Orange & Rockland Utils Inc",
+          "three_year_ramp": 2017,
+          "slow_path": 2020,
+          "after_verification": 2017,
+          "after_verification_rest_slow": 2020
+        },
+        {
+          "utility": "14328:CA",
+          "name": "Pacific Gas & Electric Co.",
+          "three_year_ramp": 2013,
+          "slow_path": 2016,
+          "after_verification": 2015,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "15477:NJ",
+          "name": "Public Service Elec & Gas Co",
+          "three_year_ramp": 2010,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2012
+        },
+        {
+          "utility": "19604:AZ",
+          "name": "USBIA-San Carlos Project",
+          "three_year_ramp": 2012,
+          "slow_path": 2015,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2015
+        },
+        {
+          "utility": "19876:VA",
+          "name": "Virginia Electric & Power Co",
+          "three_year_ramp": 2010,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2012
+        },
+        {
+          "utility": "40228:VA",
+          "name": "Rappahannock Electric Coop",
+          "three_year_ramp": 2009,
+          "slow_path": 2012,
+          "after_verification": 2009,
+          "after_verification_rest_slow": 2012
+        }
+      ],
+      "settled_by_utility_level_history": [],
+      "after_verified_and_utility_level_histories": {
+        "early": 32,
+        "cohort": 41,
+        "late": 21,
+        "outside_the_cohorts_on_the_utilitys_own_figures": 0
+      },
+      "utilities_the_choice_was_material_for_list": [
+        {
+          "utility": "3841:MS",
+          "name": "Coast Electric Power Assn - (MS)",
+          "three_year_ramp": 2012,
+          "slow_path": 2016,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2016
+        },
+        {
+          "utility": "4110:IL",
+          "name": "Commonwealth Edison Co",
+          "three_year_ramp": 2014,
+          "slow_path": 2016,
+          "after_verification": 2014,
+          "after_verification_rest_slow": 2016
+        },
+        {
+          "utility": "5416:NC",
+          "name": "Duke Energy Carolinas, LLC",
+          "three_year_ramp": 2009,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2010
+        },
+        {
+          "utility": "6958:TX",
+          "name": "City of Garland - (TX)",
+          "three_year_ramp": 2017,
+          "slow_path": 2019,
+          "after_verification": 2017,
+          "after_verification_rest_slow": 2017
+        },
+        {
+          "utility": "7140:GA",
+          "name": "Georgia Power Co",
+          "three_year_ramp": 2008,
+          "slow_path": 2014,
+          "after_verification": 2008,
+          "after_verification_rest_slow": 2014
+        },
+        {
+          "utility": "9336:CO",
+          "name": "CORE Electric Cooperative",
+          "three_year_ramp": 2012,
+          "slow_path": 2018,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "11187:CO",
+          "name": "City of Longmont",
+          "three_year_ramp": 2016,
+          "slow_path": 2021,
+          "after_verification": 2016,
+          "after_verification_rest_slow": 2021
+        },
+        {
+          "utility": "11208:CA",
+          "name": "Los Angeles Department of Water & Power",
+          "three_year_ramp": 2020,
+          "slow_path": 2025,
+          "after_verification": 2020,
+          "after_verification_rest_slow": 2025
+        },
+        {
+          "utility": "12341:IA",
+          "name": "MidAmerican Energy Co",
+          "three_year_ramp": 2010,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2013
+        },
+        {
+          "utility": "12351:AZ",
+          "name": "City of Mesa - (AZ)",
+          "three_year_ramp": 2007,
+          "slow_path": 2020,
+          "after_verification": 2007,
+          "after_verification_rest_slow": 2020
+        },
+        {
+          "utility": "12698:MO",
+          "name": "Evergy Missouri West",
+          "three_year_ramp": 2008,
+          "slow_path": 2011,
+          "after_verification": 2008,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "14006:OH",
+          "name": "Ohio Power Co",
+          "three_year_ramp": 2018,
+          "slow_path": 2021,
+          "after_verification": 2019,
+          "after_verification_rest_slow": 2020
+        },
+        {
+          "utility": "14154:NY",
+          "name": "Orange & Rockland Utils Inc",
+          "three_year_ramp": 2017,
+          "slow_path": 2020,
+          "after_verification": 2017,
+          "after_verification_rest_slow": 2020
+        },
+        {
+          "utility": "14328:CA",
+          "name": "Pacific Gas & Electric Co.",
+          "three_year_ramp": 2013,
+          "slow_path": 2016,
+          "after_verification": 2015,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "14354:UT",
+          "name": "PacifiCorp",
+          "three_year_ramp": 2014,
+          "slow_path": 2016,
+          "after_verification": 2015,
+          "after_verification_rest_slow": 2015
+        },
+        {
+          "utility": "15477:NJ",
+          "name": "Public Service Elec & Gas Co",
+          "three_year_ramp": 2010,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2012
+        },
+        {
+          "utility": "16572:AZ",
+          "name": "Salt River Project",
+          "three_year_ramp": 2012,
+          "slow_path": 2017,
+          "after_verification": 2016,
+          "after_verification_rest_slow": 2017
+        },
+        {
+          "utility": "19604:AZ",
+          "name": "USBIA-San Carlos Project",
+          "three_year_ramp": 2012,
+          "slow_path": 2015,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2015
+        },
+        {
+          "utility": "19876:VA",
+          "name": "Virginia Electric & Power Co",
+          "three_year_ramp": 2010,
+          "slow_path": 2013,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2012
+        },
+        {
+          "utility": "40228:VA",
+          "name": "Rappahannock Electric Coop",
+          "three_year_ramp": 2009,
+          "slow_path": 2012,
+          "after_verification": 2009,
+          "after_verification_rest_slow": 2012
+        }
+      ]
+    },
+    "5%": {
+      "three_year_ramp_everywhere": {
+        "early": 19,
+        "cohort": 36,
+        "late": 25
+      },
+      "slow_path_everywhere": {
+        "early": 13,
+        "cohort": 40,
+        "late": 27
+      },
+      "after_verified_histories": {
+        "early": 19,
+        "cohort": 36,
+        "late": 25
+      },
+      "after_verified_histories_rest_on_the_slow_path": {
+        "early": 13,
+        "cohort": 40,
+        "late": 27
+      },
+      "utilities_the_choice_was_material_for": 18,
+      "of_which_settled_by_verified_histories": 4,
+      "utilities_still_unsettled": [
+        {
+          "utility": "803:AZ",
+          "name": "Arizona Public Service Co",
+          "three_year_ramp": 2022,
+          "slow_path": 2023,
+          "after_verification": 2022,
+          "after_verification_rest_slow": 2023
+        },
+        {
+          "utility": "1015:TX",
+          "name": "Austin Energy",
+          "three_year_ramp": 2016,
+          "slow_path": 2018,
+          "after_verification": 2016,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "5078:TX",
+          "name": "Denton County Elec Coop, Inc",
+          "three_year_ramp": 2007,
+          "slow_path": 2011,
+          "after_verification": 2007,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "5729:AZ",
+          "name": "Electrical Dist No8 Maricopa",
+          "three_year_ramp": 2007,
+          "slow_path": 2011,
+          "after_verification": 2007,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "8198:VA",
+          "name": "City of Harrisonburg - (VA)",
+          "three_year_ramp": 2010,
+          "slow_path": 2012,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2012
+        },
+        {
+          "utility": "8699:WA",
+          "name": "Inland Power & Light Company",
+          "three_year_ramp": 2009,
+          "slow_path": 2013,
+          "after_verification": 2009,
+          "after_verification_rest_slow": 2013
+        },
+        {
+          "utility": "12260:VA",
+          "name": "Mecklenburg Electric Cooperative",
+          "three_year_ramp": 2010,
+          "slow_path": 2011,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "12341:IA",
+          "name": "MidAmerican Energy Co",
+          "three_year_ramp": 2013,
+          "slow_path": 2016,
+          "after_verification": 2013,
+          "after_verification_rest_slow": 2016
+        },
+        {
+          "utility": "12698:MO",
+          "name": "Evergy Missouri West",
+          "three_year_ramp": 2012,
+          "slow_path": 2017,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2017
+        },
+        {
+          "utility": "15248:OR",
+          "name": "Portland General Electric Co",
+          "three_year_ramp": 2022,
+          "slow_path": 2023,
+          "after_verification": 2022,
+          "after_verification_rest_slow": 2023
+        },
+        {
+          "utility": "15477:NJ",
+          "name": "Public Service Elec & Gas Co",
+          "three_year_ramp": 2012,
+          "slow_path": 2018,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "16604:TX",
+          "name": "City of San Antonio - (TX)",
+          "three_year_ramp": 2009,
+          "slow_path": 2011,
+          "after_verification": 2009,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "19604:AZ",
+          "name": "USBIA-San Carlos Project",
+          "three_year_ramp": 2014,
+          "slow_path": 2017,
+          "after_verification": 2014,
+          "after_verification_rest_slow": 2017
+        },
+        {
+          "utility": "40228:VA",
+          "name": "Rappahannock Electric Coop",
+          "three_year_ramp": 2011,
+          "slow_path": 2019,
+          "after_verification": 2011,
+          "after_verification_rest_slow": 2019
+        }
+      ],
+      "settled_by_utility_level_history": [
+        {
+          "utility": "4110:IL",
+          "name": "Commonwealth Edison Co",
+          "group": "outside_cohorts",
+          "first_crossing": null,
+          "inventory_three_year_ramp": 2018,
+          "inventory_slow_path": 2021,
+          "was_unsettled_on_site_histories": true
+        }
+      ],
+      "after_verified_and_utility_level_histories": {
+        "early": 19,
+        "cohort": 35,
+        "late": 25,
+        "outside_the_cohorts_on_the_utilitys_own_figures": 1
+      },
+      "utilities_the_choice_was_material_for_list": [
+        {
+          "utility": "803:AZ",
+          "name": "Arizona Public Service Co",
+          "three_year_ramp": 2022,
+          "slow_path": 2023,
+          "after_verification": 2022,
+          "after_verification_rest_slow": 2023
+        },
+        {
+          "utility": "1015:TX",
+          "name": "Austin Energy",
+          "three_year_ramp": 2016,
+          "slow_path": 2018,
+          "after_verification": 2016,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "4110:IL",
+          "name": "Commonwealth Edison Co",
+          "three_year_ramp": 2018,
+          "slow_path": 2021,
+          "after_verification": 2018,
+          "after_verification_rest_slow": 2021
+        },
+        {
+          "utility": "5078:TX",
+          "name": "Denton County Elec Coop, Inc",
+          "three_year_ramp": 2007,
+          "slow_path": 2011,
+          "after_verification": 2007,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "5416:NC",
+          "name": "Duke Energy Carolinas, LLC",
+          "three_year_ramp": 2012,
+          "slow_path": 2018,
+          "after_verification": 2015,
+          "after_verification_rest_slow": 2015
+        },
+        {
+          "utility": "5729:AZ",
+          "name": "Electrical Dist No8 Maricopa",
+          "three_year_ramp": 2007,
+          "slow_path": 2011,
+          "after_verification": 2007,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "6958:TX",
+          "name": "City of Garland - (TX)",
+          "three_year_ramp": 2019,
+          "slow_path": 2022,
+          "after_verification": 2019,
+          "after_verification_rest_slow": 2019
+        },
+        {
+          "utility": "8198:VA",
+          "name": "City of Harrisonburg - (VA)",
+          "three_year_ramp": 2010,
+          "slow_path": 2012,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2012
+        },
+        {
+          "utility": "8699:WA",
+          "name": "Inland Power & Light Company",
+          "three_year_ramp": 2009,
+          "slow_path": 2013,
+          "after_verification": 2009,
+          "after_verification_rest_slow": 2013
+        },
+        {
+          "utility": "12260:VA",
+          "name": "Mecklenburg Electric Cooperative",
+          "three_year_ramp": 2010,
+          "slow_path": 2011,
+          "after_verification": 2010,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "12341:IA",
+          "name": "MidAmerican Energy Co",
+          "three_year_ramp": 2013,
+          "slow_path": 2016,
+          "after_verification": 2013,
+          "after_verification_rest_slow": 2016
+        },
+        {
+          "utility": "12698:MO",
+          "name": "Evergy Missouri West",
+          "three_year_ramp": 2012,
+          "slow_path": 2017,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2017
+        },
+        {
+          "utility": "14354:UT",
+          "name": "PacifiCorp",
+          "three_year_ramp": 2018,
+          "slow_path": 2020,
+          "after_verification": 2020,
+          "after_verification_rest_slow": 2020
+        },
+        {
+          "utility": "15248:OR",
+          "name": "Portland General Electric Co",
+          "three_year_ramp": 2022,
+          "slow_path": 2023,
+          "after_verification": 2022,
+          "after_verification_rest_slow": 2023
+        },
+        {
+          "utility": "15477:NJ",
+          "name": "Public Service Elec & Gas Co",
+          "three_year_ramp": 2012,
+          "slow_path": 2018,
+          "after_verification": 2012,
+          "after_verification_rest_slow": 2018
+        },
+        {
+          "utility": "16604:TX",
+          "name": "City of San Antonio - (TX)",
+          "three_year_ramp": 2009,
+          "slow_path": 2011,
+          "after_verification": 2009,
+          "after_verification_rest_slow": 2011
+        },
+        {
+          "utility": "19604:AZ",
+          "name": "USBIA-San Carlos Project",
+          "three_year_ramp": 2014,
+          "slow_path": 2017,
+          "after_verification": 2014,
+          "after_verification_rest_slow": 2017
+        },
+        {
+          "utility": "40228:VA",
+          "name": "Rappahannock Electric Coop",
+          "three_year_ramp": 2011,
+          "slow_path": 2019,
+          "after_verification": 2011,
+          "after_verification_rest_slow": 2019
+        }
+      ]
+    }
+  },
+  "utility_level_histories": {
+    "4110:IL": {
+      "base_retail_gwh": 89115.3,
+      "figures": [
+        {
+          "year": 2015,
+          "value": 190.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 946.1,
+          "gwh_upper": 1752.0,
+          "share_of_base_lower": 0.0106,
+          "share_of_base_upper": 0.0197,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 2768.7,
+          "inventory_gwh_slow_path": 1502.9
+        },
+        {
+          "year": 2016,
+          "value": 211.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1056.5,
+          "gwh_upper": 1936.0,
+          "share_of_base_lower": 0.0119,
+          "share_of_base_upper": 0.0217,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 3532.5,
+          "inventory_gwh_slow_path": 2003.6
+        },
+        {
+          "year": 2017,
+          "value": 242.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1219.4,
+          "gwh_upper": 2207.5,
+          "share_of_base_lower": 0.0137,
+          "share_of_base_upper": 0.0248,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 4132.7,
+          "inventory_gwh_slow_path": 2530.4
+        },
+        {
+          "year": 2018,
+          "value": 244.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1229.9,
+          "gwh_upper": 2225.0,
+          "share_of_base_lower": 0.0138,
+          "share_of_base_upper": 0.025,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 4521.8,
+          "inventory_gwh_slow_path": 3076.6
+        },
+        {
+          "year": 2019,
+          "value": 258.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1303.5,
+          "gwh_upper": 2347.7,
+          "share_of_base_lower": 0.0146,
+          "share_of_base_upper": 0.0263,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 4782.8,
+          "inventory_gwh_slow_path": 3623.5
+        },
+        {
+          "year": 2020,
+          "value": 281.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1424.4,
+          "gwh_upper": 2549.2,
+          "share_of_base_lower": 0.016,
+          "share_of_base_upper": 0.0286,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 4942.0,
+          "inventory_gwh_slow_path": 4160.7
+        },
+        {
+          "year": 2021,
+          "value": 298.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1513.7,
+          "gwh_upper": 2698.1,
+          "share_of_base_lower": 0.017,
+          "share_of_base_upper": 0.0303,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 5226.1,
+          "inventory_gwh_slow_path": 4805.4
+        },
+        {
+          "year": 2022,
+          "value": 335.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 1708.2,
+          "gwh_upper": 3022.2,
+          "share_of_base_lower": 0.0192,
+          "share_of_base_upper": 0.0339,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 5849.4,
+          "inventory_gwh_slow_path": 5648.8
+        },
+        {
+          "year": 2023,
+          "value": 413.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 2118.2,
+          "gwh_upper": 3705.5,
+          "share_of_base_lower": 0.0238,
+          "share_of_base_upper": 0.0416,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 6966.1,
+          "inventory_gwh_slow_path": 6861.6
+        },
+        {
+          "year": 2024,
+          "value": 524.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 2701.6,
+          "gwh_upper": 4677.8,
+          "share_of_base_lower": 0.0303,
+          "share_of_base_upper": 0.0525,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 8151.7,
+          "inventory_gwh_slow_path": 8151.7
+        },
+        {
+          "year": 2025,
+          "value": 678.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 3511.0,
+          "gwh_upper": 6026.9,
+          "share_of_base_lower": 0.0394,
+          "share_of_base_upper": 0.0676,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5i---exelon.pdf",
+          "inventory_gwh_three_year_ramp": 8789.7,
+          "inventory_gwh_slow_path": 8789.7
+        }
+      ],
+      "thresholds": {
+        "2%": {
+          "settled": false,
+          "group": null,
+          "first_crossing": null,
+          "last_below": 2015,
+          "first_at_or_above": 2023,
+          "why": "the crossing is between 2016 and 2023, which spans cohort and late",
+          "threshold_gwh": 1782.3,
+          "verdicts": {
+            "2015": "below",
+            "2016": "undecided",
+            "2017": "undecided",
+            "2018": "undecided",
+            "2019": "undecided",
+            "2020": "undecided",
+            "2021": "undecided",
+            "2022": "undecided",
+            "2023": "at_or_above",
+            "2024": "at_or_above",
+            "2025": "at_or_above"
+          }
+        },
+        "5%": {
+          "settled": true,
+          "group": "outside_cohorts",
+          "first_crossing": null,
+          "last_below": 2023,
+          "first_at_or_above": null,
+          "why": "below the threshold in 2023, and in no earlier year at or above it",
+          "threshold_gwh": 4455.8,
+          "verdicts": {
+            "2015": "below",
+            "2016": "below",
+            "2017": "below",
+            "2018": "below",
+            "2019": "below",
+            "2020": "below",
+            "2021": "below",
+            "2022": "below",
+            "2023": "below",
+            "2024": "undecided",
+            "2025": "undecided"
+          }
+        }
+      }
+    },
+    "14006:OH": {
+      "base_retail_gwh": 47157.4,
+      "figures": [
+        {
+          "year": 2020,
+          "value": 100.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "at_least",
+          "coverage": "part",
+          "gwh_lower": 525.6,
+          "gwh_upper": null,
+          "share_of_base_lower": 0.0111,
+          "share_of_base_upper": null,
+          "source_url": "https://digital-release.nbc4i.com/wp-content/uploads/sites/18/2024/05/AEPKelsoTestimony.pdf",
+          "inventory_gwh_three_year_ramp": 1258.1,
+          "inventory_gwh_slow_path": 964.7
+        },
+        {
+          "year": 2024,
+          "value": 600.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "part",
+          "gwh_lower": 3153.6,
+          "gwh_upper": null,
+          "share_of_base_lower": 0.0669,
+          "share_of_base_upper": null,
+          "source_url": "https://digital-release.nbc4i.com/wp-content/uploads/sites/18/2024/05/AEPKelsoTestimony.pdf",
+          "inventory_gwh_three_year_ramp": 5442.8,
+          "inventory_gwh_slow_path": 5384.1
+        }
+      ],
+      "thresholds": {
+        "2%": {
+          "settled": false,
+          "group": null,
+          "first_crossing": null,
+          "last_below": null,
+          "first_at_or_above": 2024,
+          "why": "at or above in 2024, but no earlier year is shown below, so the crossing could be any year up to then",
+          "threshold_gwh": 943.1,
+          "verdicts": {
+            "2020": "undecided",
+            "2024": "at_or_above"
+          }
+        },
+        "5%": {
+          "settled": false,
+          "group": null,
+          "first_crossing": null,
+          "last_below": null,
+          "first_at_or_above": 2024,
+          "why": "at or above in 2024, but no earlier year is shown below, so the crossing could be any year up to then",
+          "threshold_gwh": 2357.9,
+          "verdicts": {
+            "2020": "undecided",
+            "2024": "at_or_above"
+          }
+        }
+      }
+    },
+    "19876:VA": {
+      "base_retail_gwh": 74981.6,
+      "figures": [
+        {
+          "year": 2013,
+          "value": 462.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 2428.3,
+          "gwh_upper": 4047.1,
+          "share_of_base_lower": 0.0324,
+          "share_of_base_upper": 0.054,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 3360.5,
+          "inventory_gwh_slow_path": 2275.3
+        },
+        {
+          "year": 2014,
+          "value": 532.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 2796.2,
+          "gwh_upper": 4660.3,
+          "share_of_base_lower": 0.0373,
+          "share_of_base_upper": 0.0622,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 5398.0,
+          "inventory_gwh_slow_path": 4050.5
+        },
+        {
+          "year": 2015,
+          "value": 636.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 3342.8,
+          "gwh_upper": 5571.4,
+          "share_of_base_lower": 0.0446,
+          "share_of_base_upper": 0.0743,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 7193.8,
+          "inventory_gwh_slow_path": 5940.8
+        },
+        {
+          "year": 2016,
+          "value": 753.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 3957.8,
+          "gwh_upper": 6596.3,
+          "share_of_base_lower": 0.0528,
+          "share_of_base_upper": 0.088,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 8809.3,
+          "inventory_gwh_slow_path": 7663.8
+        },
+        {
+          "year": 2017,
+          "value": 931.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 4893.3,
+          "gwh_upper": 8155.6,
+          "share_of_base_lower": 0.0653,
+          "share_of_base_upper": 0.1088,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 9802.0,
+          "inventory_gwh_slow_path": 8756.9
+        },
+        {
+          "year": 2018,
+          "value": 1113.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 5849.9,
+          "gwh_upper": 9749.9,
+          "share_of_base_lower": 0.078,
+          "share_of_base_upper": 0.13,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 10762.4,
+          "inventory_gwh_slow_path": 9840.6
+        },
+        {
+          "year": 2019,
+          "value": 1421.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 7468.8,
+          "gwh_upper": 12448.0,
+          "share_of_base_lower": 0.0996,
+          "share_of_base_upper": 0.166,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 12824.4,
+          "inventory_gwh_slow_path": 12025.5
+        },
+        {
+          "year": 2020,
+          "value": 1808.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 9502.8,
+          "gwh_upper": 15838.1,
+          "share_of_base_lower": 0.1267,
+          "share_of_base_upper": 0.2112,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 14590.2,
+          "inventory_gwh_slow_path": 13914.0
+        },
+        {
+          "year": 2021,
+          "value": 2302.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 12099.3,
+          "gwh_upper": 20165.5,
+          "share_of_base_lower": 0.1614,
+          "share_of_base_upper": 0.2689,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 16975.1,
+          "inventory_gwh_slow_path": 16284.2
+        },
+        {
+          "year": 2022,
+          "value": 2767.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 14543.4,
+          "gwh_upper": 24238.9,
+          "share_of_base_lower": 0.194,
+          "share_of_base_upper": 0.3233,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 18405.3,
+          "inventory_gwh_slow_path": 17748.4
+        },
+        {
+          "year": 2023,
+          "value": 3183.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 16729.8,
+          "gwh_upper": 27883.1,
+          "share_of_base_lower": 0.2231,
+          "share_of_base_upper": 0.3719,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 20316.3,
+          "inventory_gwh_slow_path": 19683.7
+        },
+        {
+          "year": 2024,
+          "value": 3584.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 18837.5,
+          "gwh_upper": 31395.8,
+          "share_of_base_lower": 0.2512,
+          "share_of_base_upper": 0.4187,
+          "source_url": "https://www.in.gov/iurc/files/1.-Data-Center-Forecasting.pdf",
+          "inventory_gwh_three_year_ramp": 25649.4,
+          "inventory_gwh_slow_path": 25336.5
+        },
+        {
+          "year": 2025,
+          "value": 4237.0,
+          "unit": "MW",
+          "mw_kind": "demand",
+          "bound": "exact",
+          "coverage": "utility",
+          "gwh_lower": 22269.7,
+          "gwh_upper": 37116.1,
+          "share_of_base_lower": 0.297,
+          "share_of_base_upper": 0.495,
+          "source_url": "https://www.pjm.com/-/media/DotCom/committees-groups/subcommittees/las/2026/20260929/20260929-item-5ai---dominion_energy.pdf",
+          "inventory_gwh_three_year_ramp": 31739.4,
+          "inventory_gwh_slow_path": 31739.4
+        }
+      ],
+      "thresholds": {
+        "2%": {
+          "settled": false,
+          "group": null,
+          "first_crossing": null,
+          "last_below": null,
+          "first_at_or_above": 2013,
+          "why": "at or above in 2013, but no earlier year is shown below, so the crossing could be any year up to then",
+          "threshold_gwh": 1499.6,
+          "verdicts": {
+            "2013": "at_or_above",
+            "2014": "at_or_above",
+            "2015": "at_or_above",
+            "2016": "at_or_above",
+            "2017": "at_or_above",
+            "2018": "at_or_above",
+            "2019": "at_or_above",
+            "2020": "at_or_above",
+            "2021": "at_or_above",
+            "2022": "at_or_above",
+            "2023": "at_or_above",
+            "2024": "at_or_above",
+            "2025": "at_or_above"
+          }
+        },
+        "5%": {
+          "settled": false,
+          "group": null,
+          "first_crossing": null,
+          "last_below": null,
+          "first_at_or_above": 2016,
+          "why": "at or above in 2016, but no earlier year is shown below, so the crossing could be any year up to then",
+          "threshold_gwh": 3749.1,
+          "verdicts": {
+            "2013": "undecided",
+            "2014": "undecided",
+            "2015": "undecided",
+            "2016": "at_or_above",
+            "2017": "at_or_above",
+            "2018": "at_or_above",
+            "2019": "at_or_above",
+            "2020": "at_or_above",
+            "2021": "at_or_above",
+            "2022": "at_or_above",
+            "2023": "at_or_above",
+            "2024": "at_or_above",
+            "2025": "at_or_above"
+          }
+        }
+      }
+    }
+  },
+  "unverified_sites_on_unsettled_utilities": 153
+}

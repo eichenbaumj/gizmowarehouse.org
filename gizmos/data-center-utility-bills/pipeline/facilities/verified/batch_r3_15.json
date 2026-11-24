@@ -1,0 +1,397 @@
+[
+ {
+  "fid": "bi:1280-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Microsoft, Roanoke River Regional Business Park, La Crosse, VA 23950",
+  "operator": "Microsoft",
+  "state": "VA",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "year_basis": null,
+  "year_evidence_quote": null,
+  "year_site_match": null,
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "no claim to verify",
+  "lead": {
+   "year_confidence": "low",
+   "year_basis": "not_found",
+   "operating_status": "unknown",
+   "other_urls": [
+    "https://local.microsoft.com/wp-content/uploads/2025/10/Microsoft-datacenters-in-Virginia.pdf"
+   ],
+   "notes": "I found no non-directory page that dates or confirms operation of a Microsoft building in the Roanoke River Regional Business Park. The only page tying Microsoft to this park was a vagrowth.com land-purchase article, and that URL now redirects to an unrelated UK site, so I could not open it. Directory listings (cleanview, baxtel) disagree, one saying under construction and the other operational, and they are not evidence. Microsoft's October 2025 Virginia fact sheet says only that it 'currently operates and is building datacenters in Mecklenburg' and names no sites.",
+   "unverified": true
+  }
+ },
+ {
+  "fid": "bi:1277-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Microsoft South Hill (Hillcrest), 210 Tunstall Rd, South Hill, VA 23070",
+  "operator": "Microsoft",
+  "state": "VA",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "year_basis": null,
+  "year_evidence_quote": null,
+  "year_site_match": null,
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "no claim to verify",
+  "lead": {
+   "year_confidence": "low",
+   "year_basis": "not_found",
+   "operating_status": "unknown",
+   "other_urls": [
+    "https://www.datacenterdynamics.com/en/news/microsoft-files-for-permit-to-build-data-center-campus-in-mecklenburg-county-virginia/"
+   ],
+   "notes": "A DatacenterDynamics article on Microsoft's permit filing for a three-building campus on 132 acres north of South Hill (Tunstall Rd) came up in search, with build-out expected around 2024, but the site returned 403 and I could not read it. Directory listings show the South Hill/Hillcrest buildings as under construction, but they are not evidence, and I found no dated 2025+ non-directory page on status. The year is left null.",
+   "unverified": true
+  }
+ },
+ {
+  "fid": "bi:961-3",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "NTT Global Data Centers Ashburn VA3, 44245 Gigabit Plaza, Ashburn, VA 20147 (Waxpool Rd and Farmwell Rd)",
+  "operator": "NTT",
+  "state": "VA",
+  "energized_year": 2018,
+  "energized_year_source_url": "https://wtop.com/business-finance/2018/03/ragingwire-opens-major-operation-in-ashburns-data-center-alley/",
+  "year_confidence": "high",
+  "year_basis": "local_news_opening",
+  "year_evidence_quote": "Data center operator RagingWire Data Centers Inc. has opened a 245,000-square-foot data center with 16 megawatts of power",
+  "year_site_match": "WTOP names the facility 'VA3 Data Center' and places it 'at the intersection of Waxpool Road and Farmwell Road, in Ashburn', and calls it 'the first building on its new Ashburn Data Center campus'. Facility name (VA3), intersection, and operator lineage (RagingWire, now NTT) match the record. The EPA ENERGY STAR registry lists 'NTT Global Data Centers, VA3', Virginia, floor space 245000, year constructed 2017, matching the 245,000 sq ft in WTOP. The street address 44245 Gigabit Plaza does not appear on any page I opened; the tie is by facility name and intersection.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "Dated article (March 20, 2018) says RagingWire 'has opened' VA3, the first building on the campus. Corroborated by Data Center Knowledge, March 26, 2018 ('RagingWire has launched the first of seven buildings it plans to build on its second data center campus in Ashburn, Virginia', 245,000 sq ft, 16MW). EPA year constructed 2017 is consistent with a March 2018 opening. NTT press release returned HTTP 403 and was not read; NTT and RagingWire location pages returned 404 or refused connection. Quote is the opening clause of a longer sentence.",
+  "lead": {
+   "energized_year": 2018,
+   "energized_year_source_url": "https://wtop.com/business-finance/2018/03/ragingwire-opens-major-operation-in-ashburns-data-center-alley/",
+   "year_confidence": "high",
+   "year_basis": "local_news_opening",
+   "year_evidence_quote": "The center, called VA3 Data Center, is located at the intersection of Waxpool Road and Farmwell Road, in Ashburn.",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://www.energystar.gov/buildings/certified-data-centers",
+    "https://ntt.com/en/about-us/press-releases/news/article/2018/0320.html"
+   ],
+   "phases": [
+    {
+     "label": "VA3 (first building on the 78-acre Ashburn campus, 16 MW)",
+     "year": 2018,
+     "mw": 16,
+     "source_url": "https://wtop.com/business-finance/2018/03/ragingwire-opens-major-operation-in-ashburns-data-center-alley/"
+    }
+   ],
+   "notes": "WTOP (March 20, 2018) reports that RagingWire 'has opened' the 245,000 sq ft, 16 MW VA3 Data Center at Waxpool and Farmwell Roads, calling it the first building on its new 78-acre Ashburn campus. Directory listings put VA3 at 44245 Gigabit Plaza, which ties the article to this permit address. The EPA ENERGY STAR registry lists 'NTT Global Data Centers, VA3' (245,000 sq ft) with year constructed 2017, consistent with a March 2018 opening. The NTT press release (403) was not readable. I did not date the later campus buildings."
+  }
+ },
+ {
+  "fid": "bi:1003-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "NTT Global Data Centers VA10 (Gainesville campus), 14300 John Marshall Hwy, Gainesville, VA 20155",
+  "operator": "NTT",
+  "state": "VA",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "year_basis": null,
+  "year_evidence_quote": null,
+  "year_site_match": null,
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "no claim to verify",
+  "lead": {
+   "year_confidence": "low",
+   "year_basis": "not_found",
+   "operating_status": "unknown",
+   "other_urls": [
+    "https://services.global.ntt/en-us/newsroom/ntt-to-expand-north-american-data-center-portfolio",
+    "https://datacenterfrontier.com/colocation/news/55361649/ntt-datas-quiet-surge-hyperscale-wins-ai-partnerships-and-private-5g-push-signal-expanding-influence-in-the-ai-infrastructure-era"
+   ],
+   "notes": "Directory listings (baxtel, datacentermap) describe VA10 as operational with a 2024 or 2025 date, but they are not evidence. A search snippet of NTT's June 2022 land-purchase release shows a target of Q2 2024 for the first building, which is a plan, not an opening. The March 2026 DCF article mentions capacity commitments at 'campuses in Gainesville, Virginia' but gives no operating date. The NTT DATA newsroom page (404) and Business Wire (403) were not readable. VA10 is not in the EPA ENERGY STAR registry.",
+   "unverified": true
+  }
+ },
+ {
+  "fid": "bi:958-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "QTS Ashburn-Shellhorn (ASH3) campus, 22271 Shellhorn Road, Ashburn, VA 20147",
+  "operator": "QTS",
+  "state": "VA",
+  "energized_year": 2020,
+  "energized_year_source_url": "https://www.datacenterfrontier.com/cloud/article/11427453/qts-builds-for-a-future-filled-with-faster-larger-hyperscale-projects",
+  "year_confidence": "medium",
+  "year_basis": "trade_press_opening",
+  "year_evidence_quote": "QTS broke ground on the Shellhorn project on June 1, 2020, and completed the space with fully-commissioned power in place on Dec. 31.",
+  "year_site_match": "Article names 'Shellhorn DC-1' / 'Ashburn-Shellhorn' in Ashburn, Virginia, 310,000 sq ft, 42 MW. QTS's own Ashburn 3 (ASH3) page lists 'ASH3 DC1: 22291 Shellhorn Rd Ashburn, VA 20147' and 'ASH3 DC2: 22271 Shellhorn Rd Ashburn, VA 20147', so the record address (22271) is DC2 and the campus's first building is DC1 next door. EPA registry row 'ASH3 - Ashburn- Shellhorn DC1' shows floor space 310388, matching the article's 310,000 sq ft.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "Medium, not high, for two reasons. (1) The article does not print a year next to 'Dec. 31'; 2020 follows from the June 1, 2020 groundbreaking plus the same article's 'from dirt to a fully-commissioned data center in seven months'. The article also says Shellhorn DC-1 was cited as Construction Project of the Year in the Northern Virginia Technology Council's 2021 Data Center Awards, which fits a 2020 completion. (2) Unresolved conflict: the EPA ENERGY STAR registry gives year constructed 2022 for both Shellhorn DC1 and DC2. I could not find a third page to settle it; my inference (not verified) is the EPA DC1 value is a self-reported entry error or reflects a later phase. The article states commissioning, not a customer move-in date, and Dec. 31 sits on the 2020/2021 boundary, so first customer load may have been early 2021. Address 22271 is the second building (DC2); the 2020 date is for DC1 at 22291. The cited DCF article gives no street address. A Data Center Dynamics URL I tried returned 403.",
+  "lead": {
+   "energized_year": 2020,
+   "energized_year_source_url": "https://www.datacenterfrontier.com/cloud/article/11427453/qts-builds-for-a-future-filled-with-faster-larger-hyperscale-projects",
+   "year_confidence": "medium",
+   "year_basis": "trade_press_opening",
+   "year_evidence_quote": "QTS broke ground on the Shellhorn project on June 1, 2020, and completed the space with fully-commissioned power in place on Dec. 31.",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://www.energystar.gov/buildings/certified-data-centers"
+   ],
+   "phases": [
+    {
+     "label": "Shellhorn DC1 (42 MW)",
+     "year": 2020,
+     "mw": 42,
+     "source_url": "https://www.datacenterfrontier.com/cloud/article/11427453/qts-builds-for-a-future-filled-with-faster-larger-hyperscale-projects"
+    }
+   ],
+   "notes": "DCF (April 13, 2022) says QTS broke ground on Shellhorn on June 1, 2020 and completed it with fully commissioned power on Dec. 31, 'dirt to a fully-commissioned data center in seven months'. That puts completion at Dec. 31, 2020, but the year comes from the arithmetic, not a stated date, hence medium. Directories place DC2 at 22271 and DC1 next door at 22291 Shellhorn, so the campus's first building is DC1. Conflict: the EPA ENERGY STAR registry gives year constructed 2022 for both Shellhorn DC1 and DC2, which disagrees with DCF for DC1."
+  }
+ },
+ {
+  "fid": "bi:946-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Yondr Loudoun County campus, 24171 Youngwood Ln, Aldie, VA 20105",
+  "operator": "Yondr",
+  "state": "VA",
+  "energized_year": 2024,
+  "energized_year_source_url": "https://www.yondrgroup.com/newsroom/press-release/yondr-groups-first-northern-virginia-data-center-is-ready-for-service/",
+  "year_confidence": "medium",
+  "year_basis": "operator_statement",
+  "year_evidence_quote": "has completed its first 48MW data center in Loudoun County, Northern Virginia,",
+  "year_site_match": "Yondr's own press release, datelined 'Loudoun County, VA., – November 18, 2024', titled 'Yondr Group's first Northern Virginia data center is ready for service', describes the first 48MW building of its '96MW two-building campus' built 'in partnership with JK Land Holdings, LLC (JKLH)'. It is tied to the record by operator, county, and the fact that it is Yondr's first Northern Virginia data center. No page I opened gives a street address, Aldie, or Youngwood Ln; the address tie is NOT confirmed from a non-directory page.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "I replaced the cited W.Media article with the operator's own dated release, which is stronger: on Nov. 18, 2024 Yondr said it 'has completed its first 48MW data center in Loudoun County' and 'Yondr has delivered the completed data center within two years of breaking ground in 2022', with a quoted 'handover' of the first tranche of capacity. The Dec. 17, 2025 Yondr release and W.Media (Dec. 22, 2025) both confirm completion of building 1 and first 12MW ready-for-service on building 2. The year 2024 for the campus's first building would be high on the statement alone; I marked medium because the street address is unconfirmed and one loose end exists: a June 24, 2026 Yondr release says issuer 'Yondr JK 1, LLC' will fund a 48 MW data center 'to be built on an approximately 14.3-acre property in Loudoun County, Virginia'. I am uncertain whether that is the campus's second building or a separate parcel, and the record's permittee (per the researcher's note, 'Yondr JK 2 LLC', which I did not see on any page) could be either entity. If the Youngwood Ln permit turns out to be a separate later parcel, 2024 would not apply. Yondr's Aug. 2026 72MW site is in Manassas and is a different project. Primary operating evidence is 'completed/ready for service/handover', not a statement that tenant load is live.",
+  "lead": {
+   "energized_year": 2024,
+   "energized_year_source_url": "https://w.media/yondr-groups-second-northern-virginia-data-center-is-ready-for-service/",
+   "year_confidence": "medium",
+   "year_basis": "trade_press_opening",
+   "year_evidence_quote": "Yondr completed the first 48 MW data center at the Loudoun County campus in 2024.",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://cmotech.uk/story/yondr-jk-1-prices-usd-715m-notes-for-virginia-data-centre"
+   ],
+   "phases": [
+    {
+     "label": "Building 1 (48 MW)",
+     "year": 2024,
+     "mw": 48,
+     "source_url": "https://w.media/yondr-groups-second-northern-virginia-data-center-is-ready-for-service/"
+    },
+    {
+     "label": "Building 2, first ready-for-service phase (12 MW of 48 MW)",
+     "year": 2025,
+     "mw": 12,
+     "source_url": "https://w.media/yondr-groups-second-northern-virginia-data-center-is-ready-for-service/"
+    }
+   ],
+   "notes": "W.Media (Dec. 22, 2025) says Yondr completed the first 48 MW data center on its Loudoun County campus in 2024, and that the first 12 MW phase of the second 48 MW building is ready for service, with full operations expected in 2026. The article gives no street address. The Youngwood Ln address comes only from directories, and I know of no other Yondr campus in Loudoun, hence medium. The permittee 'Yondr JK 2 LLC' may be the second building's entity (a June 2026 article names 'Yondr JK 1'), but the campus's first building dates to 2024."
+  }
+ },
+ {
+  "fid": "bi:1105-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "H5 Quincy (former Intuit Quincy Data Center), 1711 M St NE, Quincy, WA 98848",
+  "operator": "H5 Data Centers",
+  "state": "WA",
+  "energized_year": 2009,
+  "energized_year_source_url": "https://www.datacenterknowledge.com/archives/2009/09/08/intuit-opens-its-quincy-data-center",
+  "year_confidence": "high",
+  "year_basis": "trade_press_opening",
+  "year_evidence_quote": "Last month Intuit celebrated the opening of its new 240,000 square foot data center in Quincy, Wash.",
+  "year_site_match": "Three-page chain. H5's Quincy page gives '1711 M St NE, Quincy, WA 98848' for its '240,000 square-foot purpose-built facility'. Data Center Knowledge (July 20, 2018) reports H5's 'acquisition of a large data center from Intuit', 'the 240,000-square foot facility in Quincy, Washington'. The 2009 DCK and Spokesman-Review articles describe Intuit's 240,000 sq ft Quincy data center. None of the 2009 pages prints a street address; the tie is the H5 acquisition plus matching size.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "DCK (Sept. 8, 2009) dates the opening to August 2009. The Spokesman-Review (Aug. 14, 2009) reports Intuit 'on Thursday held a dedication ceremony at its Quincy data center' and calls the new building 'the California software company's primary data site'. EPA ENERGY STAR lists 'Intuit Quincy Data Center', Washington, year constructed 2008, floor space 231280. The 2008 figure is a year-built value; I am uncertain whether any equipment ran before the August 2009 opening ceremony, so a late-2008 or early-2009 first load cannot be ruled out from these pages. Opening year as stated by the press is 2009.",
+  "lead": {
+   "energized_year": 2009,
+   "energized_year_source_url": "https://www.datacenterknowledge.com/archives/2009/09/08/intuit-opens-its-quincy-data-center",
+   "year_confidence": "high",
+   "year_basis": "trade_press_opening",
+   "year_evidence_quote": "Last month Intuit celebrated the opening of its new 240,000 square foot data center in Quincy, Wash.",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://h5datacenters.com/quincy-data-center.html",
+    "https://www.datacenterknowledge.com/hyperscalers/intuit-sells-quincy-data-center-to-h5-at-a-loss-as-it-moves-to-aws",
+    "https://www.spokesman.com/stories/2009/aug/14/intuit-holds-ceremony-at-new-quincy-center/",
+    "https://www.energystar.gov/buildings/certified-data-centers"
+   ],
+   "notes": "H5's own Quincy page gives 1711 M St NE for its '240,000 square-foot purpose-built facility'. DCK (July 2018) reports H5 bought Intuit's 240,000 sq ft Quincy facility, and DCK (Sept. 8, 2009) and the Spokesman-Review (Aug. 14, 2009) report Intuit's opening and dedication ceremony in August 2009. The address tie rests on the matching size and the H5 acquisition. EPA ENERGY STAR lists 'Intuit Quincy Data Center' with year constructed 2008, which fits construction finishing before the 2009 opening."
+  }
+ },
+ {
+  "fid": "bi:1107-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Sabey Intergate.Quincy, 2200 M St NE, Quincy, WA 98848",
+  "operator": "Sabey Data Centers",
+  "state": "WA",
+  "energized_year": 2011,
+  "energized_year_source_url": "https://www.datacenterknowledge.com/business/sabey-completes-its-first-data-center-in-quincy",
+  "year_confidence": "high",
+  "year_basis": "trade_press_opening",
+  "year_evidence_quote": "Sabey Data Centers has completed the first facility on its Intergate.Quincy data center campus in Quincy, Washington",
+  "year_site_match": "Article names Sabey's Intergate.Quincy campus in Quincy, Washington (matching the permittee name 'Intergate Quincy'). Sabey's own SDC Quincy location page lists '2200 M St NE', 'Quincy, WA' under Visit Us, tying the operator's single Quincy campus to the record address. EPA registry lists 'SDC Quincy, Building C', Washington, year constructed 2011, floor space 138170, matching the article's 139,000 sq ft first building. The 2011 article itself gives no street address.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "DCK (Dec. 6, 2011) says the first facility is complete and 'The first tenant has occupied its space in the 139,000 square foot data center'. EPA year constructed 2011 for Building C agrees. Later buildings per EPA year constructed: A 2015, B 2020, D 2023, E 2023 (government-record grade, not opening statements). DCK (March 18, 2015) confirms construction start on a second building with the first pod expected online 'in October' (forward-looking, not used). The current Sabey page uses 'SDC Quincy' and does not use the word 'Intergate'.",
+  "lead": {
+   "energized_year": 2011,
+   "energized_year_source_url": "https://www.datacenterknowledge.com/business/sabey-completes-its-first-data-center-in-quincy",
+   "year_confidence": "high",
+   "year_basis": "trade_press_opening",
+   "year_evidence_quote": "Sabey Data Centers has completed the first facility on its Intergate.Quincy data center campus in Quincy, Washington",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://www.datacenterknowledge.com/data-center-construction/exclusive-sabey-breaks-ground-on-quincy-data-center",
+    "https://www.energystar.gov/buildings/certified-data-centers"
+   ],
+   "phases": [
+    {
+     "label": "First facility (Building C, 139,000 sq ft)",
+     "year": 2011,
+     "mw": null,
+     "source_url": "https://www.datacenterknowledge.com/business/sabey-completes-its-first-data-center-in-quincy"
+    },
+    {
+     "label": "Building A (approx. 134,000 sq ft; EPA year constructed)",
+     "year": 2015,
+     "mw": null,
+     "source_url": "https://www.energystar.gov/buildings/certified-data-centers"
+    }
+   ],
+   "notes": "DCK (Dec. 6, 2011) says Sabey completed the first facility on its Intergate.Quincy campus, which already had its first tenant in the 139,000 sq ft building. The permittee 'Intergate Quincy' matches the campus name. DCK (March 2015) calls Building C the existing building and Building A under construction, and EPA ENERGY STAR lists 'SDC Quincy, Building A' with year constructed 2015. I did not date the later buildings (B, D, E) from non-directory sources."
+  }
+ },
+ {
+  "fid": "bi:1102-0",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Yahoo Quincy data center (GQ1), 1010 Yahoo Way, Quincy, WA 98848",
+  "operator": "Yahoo",
+  "state": "WA",
+  "energized_year": 2007,
+  "energized_year_source_url": "https://columbiabasinherald.com/news/2007/nov/30/yahoo-celebrates-grand-opening-in-quincy-2/",
+  "year_confidence": "high",
+  "year_basis": "local_news_opening",
+  "year_evidence_quote": "Quincy residents get to toast the opening of the latest data center to become operational in their midst.",
+  "year_site_match": "The article states the event is 'to mark the opening of its Quincy data center, located at 1010 Yahoo Way', an exact match to the record address. EPA registry lists 'GQ1- Quincy' (Yahoo! Inc.), Washington, year constructed 2007.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "Columbia Basin Herald (Nov. 30, 2007) describes the data center as operational and gives the exact address. Data Center Knowledge (Dec. 26, 2007) corroborates: 'Yahoo says it took 330,000 man-hours to complete its new data center in Quincy, Washington' and refers to 'the recent grand opening'. EPA year constructed 2007 agrees. EPA also lists a second Yahoo building, 'GQ2 - Quincy', year constructed 2016; not otherwise dated here.",
+  "lead": {
+   "energized_year": 2007,
+   "energized_year_source_url": "https://columbiabasinherald.com/news/2007/nov/30/yahoo-celebrates-grand-opening-in-quincy-2/",
+   "year_confidence": "high",
+   "year_basis": "local_news_opening",
+   "year_evidence_quote": "Quincy residents get to toast the opening of the latest data center to become operational in their midst.",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://datacenterknowledge.com/cloud/yahoo-330-000-man-hours-to-open-quincy",
+    "https://www.energystar.gov/buildings/certified-data-centers"
+   ],
+   "phases": [
+    {
+     "label": "First building (140,000 sq ft)",
+     "year": 2007,
+     "mw": null,
+     "source_url": "https://datacenterknowledge.com/cloud/yahoo-330-000-man-hours-to-open-quincy"
+    }
+   ],
+   "notes": "The Columbia Basin Herald (Nov. 30, 2007) announces the grand opening of Yahoo's data center at 1010 Yahoo Way, describing it as newly operational, which matches the permit address exactly. DCK (Dec. 26, 2007) reports the 140,000 sq ft facility's completion and grand opening. EPA ENERGY STAR lists 'GQ1- Quincy' (Yahoo! Inc.) with year constructed 2007. I did not date the later Computing Coop buildings from non-directory sources."
+  }
+ }
+]

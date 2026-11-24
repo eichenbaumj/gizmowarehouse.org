@@ -1,0 +1,195 @@
+utility_id_eia,state,utility_name,ownership,zone,basis,share_of_territory_inside
+1708,KY,Big Sandy Rural Elec Coop Corp,cooperative,AEP,nearest investor-owned territory,0.01
+14103,KY,City of Olive Hill - (KY),public,AEP,nearest investor-owned territory,0.001
+19716,KY,City of Vanceburg,public,AEP,nearest investor-owned territory,0.245
+3687,KY,Clark Energy Coop Inc - (KY),cooperative,AEP,nearest investor-owned territory,0.0
+4622,KY,"Cumberland Valley Electric, Inc.",cooperative,AEP,nearest investor-owned territory,0.0
+6194,KY,Farmers Rural Electric Coop Corp - (KY),cooperative,AEP,nearest investor-owned territory,0.0
+6442,KY,Fleming-Mason Energy Coop Inc,cooperative,AEP,nearest investor-owned territory,0.057
+7558,KY,Grayson Rural Electric Coop Corp,cooperative,AEP,nearest investor-owned territory,0.0
+9575,KY,Jackson Energy Coop Corp - (KY),cooperative,AEP,nearest investor-owned territory,0.0
+22053,KY,Kentucky Power Co,investor_owned,AEP,the zone's own investor-owned utility,1.0
+11011,KY,Licking Valley Rural E C C,cooperative,AEP,nearest investor-owned territory,0.0
+17564,KY,South Kentucky Rural E C C,cooperative,AEP,nearest investor-owned territory,0.0
+18498,KY,Taylor County Rural E C C,cooperative,AEP,nearest investor-owned territory,0.0
+1886,KY,Blue Grass Energy Coop Corp,cooperative,DEOK,nearest investor-owned territory,0.0
+19446,KY,Duke Energy Kentucky,investor_owned,DEOK,the zone's own investor-owned utility,1.0
+9292,KY,Inter County Energy Coop Corp - (KY),cooperative,DEOK,nearest investor-owned territory,0.0
+13651,KY,Nolin Rural Electric Coop Corp,cooperative,DEOK,nearest investor-owned territory,0.0
+14251,KY,Owen Electric Coop Inc,cooperative,DEOK,nearest investor-owned territory,0.0
+16587,KY,Salt River Electric Coop Corp,cooperative,DEOK,nearest investor-owned territory,0.0
+17044,KY,"Shelby Energy Coop, Inc - (KY)",cooperative,DEOK,nearest investor-owned territory,0.0
+20731,KY,Williamstown Utility Comm,public,DEOK,nearest investor-owned territory,0.0
+118,OH,"Adams Rural Electric Coop, Inc",cooperative,AEP,more than half of its territory is inside,0.963
+2502,OH,"Buckeye Rural Elec Coop, Inc",cooperative,AEP,more than half of its territory is inside,1.0
+3076,OH,"Carroll Electric Coop, Inc - (OH)",cooperative,AEP,more than half of its territory is inside,0.921
+4065,OH,City of Columbus - (OH),public,AEP,more than half of its territory is inside,0.931
+4725,OH,City of Custar,public,AEP,nearest investor-owned territory,0.0
+5336,OH,City of Dover - (OH),public,AEP,more than half of its territory is inside,0.98
+6914,OH,City of Galion,public,AEP,more than half of its territory is inside,0.854
+9598,OH,City of Jackson - (OH),public,AEP,more than half of its territory is inside,1.0
+17043,OH,City of Shelby - (OH),public,AEP,more than half of its territory is inside,1.0
+17865,OH,City of St Clairsville - (OH),public,AEP,more than half of its territory is inside,1.0
+20077,OH,City of Wapakoneta - (OH),public,AEP,more than half of its territory is inside,1.0
+20477,OH,City of Westerville - (OH),public,AEP,more than half of its territory is inside,1.0
+20977,OH,City of Woodsfield - (OH),public,AEP,more than half of its territory is inside,1.0
+6804,OH,Frontier Power Company,cooperative,AEP,more than half of its territory is inside,1.0
+7891,OH,Guernsey-Muskingum El Coop Inc,cooperative,AEP,more than half of its territory is inside,1.0
+8034,OH,Hancock-Wood Electric Coop Inc,cooperative,AEP,more than half of its territory is inside,0.808
+8761,OH,Holmes-Wayne Electric Coop Inc,cooperative,AEP,more than half of its territory is inside,0.836
+10668,OH,Licking Rural Electric Inc,cooperative,AEP,more than half of its territory is inside,0.93
+36189,OH,"Mid-Ohio Energy Coop, Inc",cooperative,AEP,more than half of its territory is inside,0.635
+13693,OH,"North Central Elec Coop, Inc - (OH)",cooperative,AEP,more than half of its territory is inside,0.799
+14006,OH,Ohio Power Co,investor_owned,AEP,the zone's own investor-owned utility,1.0
+14015,OH,Ohio Valley Electric Corp,investor_owned,AEP,more than half of its territory is inside,1.0
+14599,OH,"Paulding-Putman Elec Coop, Inc",cooperative,AEP,more than half of its territory is inside,0.546
+18085,OH,South Central Power Company,cooperative,AEP,more than half of its territory is inside,0.774
+282,OH,Village of Arcadia - (OH),public,AEP,more than half of its territory is inside,1.0
+1677,OH,Village of Bloomdale - (OH),public,AEP,more than half of its territory is inside,0.804
+3008,OH,Village of Carey - (OH),public,AEP,more than half of its territory is inside,1.0
+4685,OH,Village of Cygnet - (OH),public,AEP,more than half of its territory is inside,1.0
+5096,OH,Village of Deshler - (OH),public,AEP,more than half of its territory is inside,1.0
+7311,OH,Village of Glouster - (OH),public,AEP,more than half of its territory is inside,1.0
+13950,OH,Village of Obetz - (OH),public,AEP,more than half of its territory is inside,1.0
+13997,OH,Village of Ohio City - (OH),public,AEP,more than half of its territory is inside,1.0
+15203,OH,Village of Plymouth - (OH),public,AEP,more than half of its territory is inside,0.665
+15865,OH,Village of Republic - (OH),public,AEP,more than half of its territory is inside,0.721
+17098,OH,Village of Shiloh - (OH),public,AEP,more than half of its territory is inside,0.92
+18393,OH,Village of Sycamore - (OH),public,AEP,more than half of its territory is inside,1.0
+20471,OH,Village of Wharton - (OH),public,AEP,more than half of its territory is inside,1.0
+20150,OH,Washington Electric Coop - (OH),cooperative,AEP,more than half of its territory is inside,1.0
+560,OH,City of Amherst- (OH),public,ATSI,more than half of its territory is inside,1.0
+2054,OH,City of Bowling Green - (OH),public,ATSI,more than half of its territory is inside,0.755
+2439,OH,City of Bryan - (OH),public,ATSI,more than half of its territory is inside,1.0
+3762,OH,City of Cleveland - (OH),public,ATSI,more than half of its territory is inside,0.952
+4061,OH,City of Columbiana - (OH),public,ATSI,more than half of its territory is inside,1.0
+4683,OH,City of Cuyahoga Falls - (OH),public,ATSI,more than half of its territory is inside,1.0
+8949,OH,City of Hubbard,public,ATSI,more than half of its territory is inside,1.0
+8972,OH,City of Hudson - (OH),public,ATSI,more than half of its territory is inside,1.0
+13209,OH,City of Napoleon - (OH),public,ATSI,more than half of its territory is inside,0.944
+13563,OH,City of Newton Falls - (OH),public,ATSI,more than half of its territory is inside,1.0
+13602,OH,City of Niles - (OH),public,ATSI,more than half of its territory is inside,1.0
+13949,OH,City of Oberlin - (OH),public,ATSI,more than half of its territory is inside,1.0
+14194,OH,City of Orrville - (OH),public,ATSI,more than half of its territory is inside,0.994
+14381,OH,City of Painesville - (OH),public,ATSI,more than half of its territory is inside,1.0
+19951,OH,City of Wadsworth - (OH),public,ATSI,more than half of its territory is inside,1.0
+3755,OH,Cleveland Electric Illum Co,investor_owned,ATSI,the zone's own investor-owned utility,1.0
+3824,OH,Clyde Light & Power,public,ATSI,more than half of its territory is inside,1.0
+12990,OH,Consolidated Cooperative,cooperative,ATSI,more than half of its territory is inside,0.86
+6335,OH,"Firelands Electric Coop, Inc",cooperative,ATSI,more than half of its territory is inside,0.916
+11200,OH,"Lorain-Medina R E C, Inc",cooperative,ATSI,more than half of its territory is inside,1.0
+12377,OH,Midwest Energy Cooperative - (MI),cooperative,ATSI,nearest investor-owned territory,0.107
+13704,OH,"North Western Elec Coop, Inc",cooperative,ATSI,more than half of its territory is inside,0.683
+13998,OH,Ohio Edison Co,investor_owned,ATSI,the zone's own investor-owned utility,1.0
+15432,OH,Prospect Corporation,public,ATSI,more than half of its territory is inside,1.0
+16951,OH,Seville Board of Public Affairs,public,ATSI,more than half of its territory is inside,1.0
+17588,OH,South Vienna Corporation,public,ATSI,more than half of its territory is inside,1.0
+18997,OH,The Toledo Edison Co,investor_owned,ATSI,the zone's own investor-owned utility,1.0
+19176,OH,"Tricounty Rural Elec Coop, Inc",cooperative,ATSI,nearest investor-owned territory,0.031
+1386,OH,Village of Beach City - (OH),public,ATSI,more than half of its territory is inside,1.0
+2128,OH,Village of Bradner - (OH),public,ATSI,nearest investor-owned territory,0.0
+2205,OH,Village of Brewster - (OH),public,ATSI,more than half of its territory is inside,1.0
+5653,OH,Village of Edgerton - (OH),public,ATSI,more than half of its territory is inside,0.995
+5833,OH,Village of Elmore - (OH),public,ATSI,more than half of its territory is inside,1.0
+7100,OH,Village of Genoa - (OH),public,ATSI,more than half of its territory is inside,1.0
+7445,OH,Village of Grafton - (OH),public,ATSI,more than half of its territory is inside,1.0
+7643,OH,Village of Greenwich - (OH),public,ATSI,more than half of its territory is inside,0.539
+8240,OH,Village of Haskins - (OH),public,ATSI,more than half of its territory is inside,1.0
+11126,OH,Village of Lodi - (OH),public,ATSI,more than half of its territory is inside,1.0
+11296,OH,Village of Lucas - (OH),public,ATSI,more than half of its territory is inside,1.0
+11739,OH,Village of Marshallville - (OH),public,ATSI,more than half of its territory is inside,1.0
+12533,OH,Village of Milan - (OH),public,ATSI,more than half of its territory is inside,1.0
+12811,OH,Village of Monroeville - (OH),public,ATSI,more than half of its territory is inside,1.0
+12861,OH,Village of Montpelier - (OH),public,ATSI,more than half of its territory is inside,1.0
+13932,OH,Village of Oak Harbor - (OH),public,ATSI,more than half of its territory is inside,1.0
+14650,OH,Village of Pemberville - (OH),public,ATSI,more than half of its territory is inside,1.0
+15072,OH,Village of Pioneer - (OH),public,ATSI,more than half of its territory is inside,0.919
+18944,OH,Village of Tontogany - (OH),public,ATSI,more than half of its territory is inside,1.0
+20313,OH,Village of Wellington - (OH),public,ATSI,more than half of its territory is inside,1.0
+20979,OH,Village of Woodville - (OH),public,ATSI,more than half of its territory is inside,1.0
+768,OH,City of Arcanum - (OH),public,DAYTON,more than half of its territory is inside,1.0
+3216,OH,City of Celina - (OH),public,DAYTON,more than half of its territory is inside,1.0
+10830,OH,City of Lebanon - (OH),public,DAYTON,more than half of its territory is inside,1.0
+12302,OH,City of Mendon - (OH),public,DAYTON,nearest investor-owned territory,0.135
+15095,OH,City of Piqua - (OH),public,DAYTON,more than half of its territory is inside,1.0
+17891,OH,City of St Marys - (OH),public,DAYTON,more than half of its territory is inside,0.981
+18941,OH,City of Tipp City - (OH),public,DAYTON,more than half of its territory is inside,1.0
+4796,OH,"Darke Rural Electric Coop, Inc",cooperative,DAYTON,more than half of its territory is inside,0.727
+4922,OH,Dayton Power & Light Co,investor_owned,DAYTON,the zone's own investor-owned utility,1.0
+11203,OH,Logan County Coop Power & Light,cooperative,DAYTON,more than half of its territory is inside,0.859
+12515,OH,"Midwest Electric, Inc - (OH)",cooperative,DAYTON,nearest investor-owned territory,0.456
+15054,OH,"Pioneer Rural Elec Coop, Inc - (OH)",cooperative,DAYTON,more than half of its territory is inside,0.946
+19501,OH,"Union Rural Electric Coop, Inc",cooperative,DAYTON,more than half of its territory is inside,0.536
+1832,OH,Village of Blanchester,public,DAYTON,more than half of its territory is inside,0.939
+5752,OH,Village of Eldorado - (OH),public,DAYTON,more than half of its territory is inside,1.0
+9572,OH,Village of Jackson Center - (OH),public,DAYTON,more than half of its territory is inside,1.0
+10616,OH,Village of Lakeview - (OH),public,DAYTON,more than half of its territory is inside,1.0
+12660,OH,Village of Minster - (OH),public,DAYTON,more than half of its territory is inside,1.0
+13420,OH,Village of New Bremen - (OH),public,DAYTON,more than half of its territory is inside,1.0
+13464,OH,Village of New Knoxville - (OH),public,DAYTON,nearest investor-owned territory,0.0
+19805,OH,Village of Versailles - (OH),public,DAYTON,more than half of its territory is inside,1.0
+20223,OH,Village of Waynesfield - (OH),public,DAYTON,more than half of its territory is inside,0.986
+21101,OH,Village of Yellow Springs - (OH),public,DAYTON,more than half of its territory is inside,1.0
+2651,OH,Butler Rural Electric Coop Inc - (OH),cooperative,DEOK,more than half of its territory is inside,0.513
+7977,OH,City of Hamilton - (OH),public,DEOK,more than half of its territory is inside,1.0
+3542,OH,Duke Energy Ohio Inc,investor_owned,DEOK,the zone's own investor-owned utility,1.0
+1650,OH,Village of Bethel - (OH),public,DEOK,more than half of its territory is inside,1.0
+7131,OH,Village of Georgetown - (OH),public,DEOK,more than half of its territory is inside,1.0
+7973,OH,Village of Hamersville,public,DEOK,more than half of its territory is inside,1.0
+16062,OH,Village of Ripley - (OH),public,DEOK,more than half of its territory is inside,0.974
+66101,PA,FirstEnergy Pennsylvania Electric Co,investor_owned,,no territory polygon; not placed,
+61353,PA,Philadelphia Authority for Industrial Development,public,,no territory polygon; not placed,
+3329,PA,Borough of Chambersburg - (PA),public,ALLEGHENY,more than half of its territory is inside,1.0
+18456,PA,Borough of Tarentum - (PA),public,ALLEGHENY,more than half of its territory is inside,1.0
+40224,PA,"Central Electric Coop, Inc - (PA)",cooperative,ALLEGHENY,more than half of its territory is inside,0.528
+12817,PA,Mont Alto Borough,public,ALLEGHENY,more than half of its territory is inside,1.0
+5828,PA,Borough of Ellwood City - (PA),public,ATSI,more than half of its territory is inside,1.0
+7719,PA,Borough of Grove City - (PA),public,ATSI,more than half of its territory is inside,1.0
+13489,PA,Borough of New Wilmington - (PA),public,ATSI,more than half of its territory is inside,1.0
+15104,PA,Borough of Pitcairn - (PA),public,ATSI,more than half of its territory is inside,1.0
+20070,PA,Borough of Wampum,public,ATSI,more than half of its territory is inside,1.0
+21160,PA,Borough of Zelienople - (PA),public,ATSI,more than half of its territory is inside,1.0
+5487,PA,Duquesne Light Co,investor_owned,DUQUESNE,the zone's own investor-owned utility,1.0
+40220,PA,Adams Electric Cooperative Inc,cooperative,METED,more than half of its territory is inside,0.674
+7359,PA,Borough of Goldsboro - (PA),public,METED,more than half of its territory is inside,1.0
+10494,PA,Borough of Kutztown - (PA),public,METED,more than half of its territory is inside,1.0
+8254,PA,Borough of Hatfield- (PA),public,PECO,more than half of its territory is inside,0.708
+10702,PA,Borough of Lansdale,public,PECO,more than half of its territory is inside,1.0
+14940,PA,PECO Energy Co,investor_owned,PECO,the zone's own investor-owned utility,1.0
+40221,PA,"Bedford Rural Elec Coop, Inc",cooperative,PENELEC,more than half of its territory is inside,0.869
+1618,PA,Borough of Berlin - (PA),public,PENELEC,more than half of its territory is inside,1.0
+5586,PA,Borough of East Conemaugh,public,PENELEC,more than half of its territory is inside,1.0
+7256,PA,Borough of Girard - (PA),public,PENELEC,more than half of its territory is inside,1.0
+17337,PA,Borough of Smethport - (PA),public,PENELEC,more than half of its territory is inside,1.0
+18284,PA,Borough of Summerhill - (PA),public,PENELEC,more than half of its territory is inside,1.0
+40289,PA,Claverack Rural Elec Coop Inc,cooperative,PENELEC,more than half of its territory is inside,0.944
+8826,PA,Hooversville Boro Elec Lgt Co,public,PENELEC,more than half of its territory is inside,1.0
+13205,PA,"New Enterprise R E C, Inc",cooperative,PENELEC,more than half of its territory is inside,0.886
+40293,PA,"Northwestern Rural E C A, Inc - (PA)",cooperative,PENELEC,more than half of its territory is inside,0.963
+40292,PA,REA Energy Coop Inc,cooperative,PENELEC,more than half of its territory is inside,0.912
+40167,PA,"Somerset Rural Elec Coop, Inc",cooperative,PENELEC,more than half of its territory is inside,0.809
+40291,PA,"Sullivan County R E C, Inc - (PA)",cooperative,PENELEC,more than half of its territory is inside,0.867
+40290,PA,Tri-County Rural Elec Coop Inc (PA),cooperative,PENELEC,more than half of its territory is inside,0.626
+19390,PA,"UGI Utilities, Inc",investor_owned,PENELEC,nearest investor-owned territory,0.002
+40219,PA,"United Electric Coop, Inc - (PA)",cooperative,PENELEC,more than half of its territory is inside,0.921
+40222,PA,Valley Rural Electric Coop Inc,cooperative,PENELEC,more than half of its territory is inside,0.855
+40223,PA,Warren Electric Coop Inc,cooperative,PENELEC,more than half of its territory is inside,0.998
+20334,PA,Wellsborough Electric Co,investor_owned,PENELEC,more than half of its territory is inside,0.999
+1823,PA,Borough of Blakely - (PA),public,PPL,more than half of its territory is inside,1.0
+3170,PA,Borough of Catawissa,public,PPL,more than half of its territory is inside,1.0
+5442,PA,Borough of Duncannon - (PA),public,PPL,more than half of its territory is inside,1.0
+5935,PA,Borough of Ephrata - (PA),public,PPL,more than half of its territory is inside,1.0
+10882,PA,Borough of Lehighton - (PA),public,PPL,more than half of its territory is inside,1.0
+10959,PA,Borough of Lewisberry - (PA),public,PPL,more than half of its territory is inside,1.0
+12474,PA,Borough of Middletown - (PA),public,PPL,more than half of its territory is inside,0.757
+12523,PA,Borough of Mifflinburg - (PA),public,PPL,more than half of its territory is inside,1.0
+14124,PA,Borough of Olyphant - (PA),public,PPL,more than half of its territory is inside,1.0
+14792,PA,Borough of Perkasie - (PA),public,PPL,nearest investor-owned territory,0.0
+15541,PA,Borough of Quakertown - (PA),public,PPL,more than half of its territory is inside,1.0
+16375,PA,Borough of Royalton - (PA),public,PPL,more than half of its territory is inside,0.592
+16780,PA,Borough of Schuylkill Haven - (PA),public,PPL,more than half of its territory is inside,1.0
+16853,PA,Borough of St Clair - (PA),public,PPL,more than half of its territory is inside,1.0
+20206,PA,Borough of Watsontown - (PA),public,PPL,more than half of its territory is inside,1.0
+20232,PA,Borough of Weatherly - (PA),public,PPL,more than half of its territory is inside,1.0
+3597,PA,Citizens Electric Co - (PA),investor_owned,PPL,more than half of its territory is inside,1.0
+14715,PA,PPL Electric Utilities Corp,investor_owned,PPL,the zone's own investor-owned utility,1.0

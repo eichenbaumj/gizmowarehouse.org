@@ -1,0 +1,65 @@
+{
+  "what_this_is": "Rows whose start (or capacity) is unresolved carry NO single load history (Joe, R2, 2026-11-18). Their load is UNKNOWN, not zero. Every utility listed here has its load share, dose, place and comparison eligibility decided by the enumeration of admissible histories (timing.py) or carried as unsettled; never by the inventory frame alone. Code that reads a share, a dose or eligibility from the frame must refuse these utilities as settled.",
+  "sites": [
+    {
+      "fid": "bi:837-0",
+      "state": "OR",
+      "why": "no convention for its date and capacity question: no single load history is assigned; the load is unknown, not zero and not 'never operating' (Joe, R2)",
+      "utilities_directly": [
+        "15248:OR"
+      ],
+      "state_factor_moves_across_its_histories": true,
+      "its_2024_twh_across_admissible_histories": [
+        0.13797
+      ]
+    },
+    {
+      "fid": "bi:852-0",
+      "state": "OR",
+      "why": "no convention for its date question: no single load history is assigned; the load is unknown, not zero and not 'never operating' (Joe, R2)",
+      "utilities_directly": [
+        "15248:OR"
+      ],
+      "state_factor_moves_across_its_histories": true,
+      "its_2024_twh_across_admissible_histories": [
+        0.0,
+        0.032662
+      ]
+    }
+  ],
+  "utilities_directly": [
+    "15248:OR"
+  ],
+  "utilities_through_the_state_factor": [
+    "15248:OR",
+    "19325:OR"
+  ],
+  "every_affected_utility": [
+    "15248:OR",
+    "19325:OR"
+  ],
+  "fingerprint": {
+    "files": {
+      "pipeline/facilities/verified/pass_c_corrections_s17.json": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22",
+      "pipeline/facilities/verified/step_d_locations.json": "5fcd58786472de02b6ea84d5e9b43ac22d2e71e6b53d6c894413d1d86c718de9",
+      "pipeline/facilities/verified/government_record_years.csv": "56a36ddfa1e47aa17b380be0876de565613641eb1e3f429e8bda08053bd1825f",
+      "pipeline/facilities/verified/pass_c_withdrawn.json": "cf3077166492a95cfbba9e570b6f1e36819773d9346d50bcd94425f83f59ed0b",
+      "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+      "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+      "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+      "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+      "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+      "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+      "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+      "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+      "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+      "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+      "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+      "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+      "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1"
+    },
+    "settings": {
+      "step": "build_inventory"
+    }
+  }
+}

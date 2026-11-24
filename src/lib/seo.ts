@@ -95,6 +95,25 @@ export function breadcrumbJsonLd(items: { name: string; url: string }[]): object
   };
 }
 
+/** The generic methodology page under a gizmo (same tags in the prerender and the live page). */
+export function methodologySeo(g: Gizmo, path: string): PageSeo {
+  const url = `${SITE_URL}${path}`;
+  return {
+    title: `Methodology: ${gizmoSearchTitle(g)} | ${SITE_NAME}`,
+    socialTitle: `Methodology: ${g.title}`,
+    description: `Sources, model choices, and caveats behind "${g.title}" by Joe Eichenbaum at 17A.`,
+    canonical: url,
+    ogImage: gizmoOgImage(g),
+    ogType: "article",
+    datePublished: isoDate(g.date),
+    jsonLd: breadcrumbJsonLd([
+      { name: SITE_NAME, url: `${SITE_URL}/` },
+      { name: g.title, url: gizmoUrl(g) },
+      { name: "Methodology", url },
+    ]),
+  };
+}
+
 export function gizmoSeo(g: Gizmo): PageSeo {
   const url = gizmoUrl(g);
   const description = gizmoDescription(g);

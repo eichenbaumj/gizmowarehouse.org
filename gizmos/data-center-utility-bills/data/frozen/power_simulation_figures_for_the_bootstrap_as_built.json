@@ -1,0 +1,2281 @@
+{
+  "what_this_is": "Stand-ins drawn from never-host utilities take the real hosts' places, states and first-crossing years; the specification in PREANALYSIS.md is run on each draw, read with the inference procedure named in `procedure`. Only never-host utilities' prices are read, one file per utility, through the access list.",
+  "procedure": {
+    "procedure": "A",
+    "label": "figures for the bootstrap as built",
+    "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+    "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+    "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+    "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+  },
+  "standard": "docs/DECISIONS.md, D-38, committed before this was run.",
+  "not_in_the_simulation": [
+    "future hosts as a second comparison group",
+    "each sub-experiment uses utilities observed in all ten of its years",
+    "Callaway and Sant'Anna's estimator",
+    "utilities in Alaska and Hawaii, which have no degree-day series"
+  ],
+  "rules": {
+    "label": "headline",
+    "ownership": "table",
+    "usable": "flag",
+    "support": "applied",
+    "fuel_control": "gas_share_by_calendar_year",
+    "unresolved_ownership": "kept"
+  },
+  "access_list": "The simulation's never-host access list (step E rules section 9, D-95): a unit is listed only if no load-unknown site reaches it (D-96), it passes every never-host restriction (comparison-eligible with no anchoring and in every admissible history; not set aside or on a bounds list; never a former host without an allow row), is not under a price hold, has a per-unit outcome file, and is usable in all ten years of a cohort window or all six years of the long form. Full-window usability is a requirement in addition to the never-host and price-hold restrictions and replaces none of them; the previously authorized availability handling is unchanged. Wording adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available.",
+  "readings_adopted": "The power wording, the treatment of numerical failures in power readings, and the access list's full-window requirement as an addition to the never-host and price-hold restrictions were adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available. No additional run was made for them.",
+  "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+  "ownership_assumption": "municipal systems, public power districts and distribution cooperatives with no row in the ownership table are each taken as their own owner, from EIA's ownership class (D-58 rule 2.2)",
+  "seed": 20261113,
+  "draws": 2000,
+  "bootstrap_replications": 999,
+  "planted_effects_pct": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "new_host_estimate": {
+    "2%": {
+      "headline_set": {
+        "hosts_in_the_panel_for_their_whole_window": 7,
+        "draws": 2000,
+        "clusters_median": 23,
+        "procedure": {
+          "name": "A",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+        },
+        "numerical_failures": {
+          "bootstrap": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          },
+          "analytic": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "power": {
+          "name": "smallest increase detected in the correct direction four times in five",
+          "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+          "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+          "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+        },
+        "nothing_planted": {
+          "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+          "mean_estimate": -0.149,
+          "sd_of_estimates": 3.065,
+          "mean_standard_error": 3.17,
+          "range_half_width_mean": 6.636,
+          "range_width_median": 13.226,
+          "range_covers_zero": 0.932,
+          "analytic_range_covers_zero": 0.892
+        },
+        "early_years_test": {
+          "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.067,
+          "share_failing_at_p_below_0.05": 0.017,
+          "share_failing_at_the_chi_square_10pct_value": 0.375
+        },
+        "start_years_exact": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 10.03,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.021,
+            "1": 0.041,
+            "2": 0.076,
+            "3": 0.119,
+            "4": 0.189,
+            "5": 0.265,
+            "6": 0.359,
+            "7": 0.481,
+            "8": 0.601,
+            "9": 0.698,
+            "10": 0.797,
+            "11": 0.874,
+            "12": 0.935
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.73,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 6.636,
+            "range_covers_the_planted_effect": 0.932,
+            "early_years_test_fails_at_p_below_0.10": 0.067,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 10.14,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.021,
+            "1": 0.04,
+            "2": 0.076,
+            "3": 0.119,
+            "4": 0.187,
+            "5": 0.263,
+            "6": 0.351,
+            "7": 0.472,
+            "8": 0.587,
+            "9": 0.685,
+            "10": 0.79,
+            "11": 0.863,
+            "12": 0.928
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.626,
+            "share_of_the_planted_effect_recovered": 0.979,
+            "range_half_width_mean": 6.577,
+            "range_covers_the_planted_effect": 0.928,
+            "early_years_test_fails_at_p_below_0.10": 0.068,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "A",
+          "label": "figures for the bootstrap as built",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+          "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+        },
+        "hosts_as_built": 7,
+        "their_states": 7,
+        "their_ownership": {
+          "investor_owned": 4,
+          "public": 2,
+          "cooperative": 1
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 4,
+          "ERCOT": 1,
+          "SPP": 1,
+          "Southeast": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": 999,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [],
+        "hosts_with_unresolved_ownership": [
+          {
+            "utility": "803:AZ",
+            "cohort": 2020,
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023
+            ],
+            "reason_by_year": {
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "15473:NM",
+            "cohort": 2019,
+            "years": [
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ],
+            "reason_by_year": {
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+            "in_this_run": "kept"
+          }
+        ],
+        "load_unknown_excluded": [],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.714,
+          "own_state": 0.286,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 4.5,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.944,
+          "within_1_year": 0.966,
+          "true_crossing_2_or_more_years_earlier": 0.034
+        },
+        "fingerprint": {
+          "sha256": "1be59616460e7dc813434fb9966079cc3c193252954149e62d76f916dd775bdf",
+          "of": {
+            "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+            "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+            "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+            "assumptions": "b82a17034679958c6d4c1e61422a06da2f943f3c5f6456336e90fda394affd0d",
+            "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+            "seeds": "8c8199910ebd1145d4b7130581b5a64e5888e25863035ee33fd9b8fd79bf43b0"
+          },
+          "version": 1
+        }
+      },
+      "every_cohort_utility": {
+        "hosts_in_the_panel_for_their_whole_window": 36,
+        "draws": 2000,
+        "clusters_median": 44,
+        "procedure": {
+          "name": "A",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+        },
+        "numerical_failures": {
+          "bootstrap": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          },
+          "analytic": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "power": {
+          "name": "smallest increase detected in the correct direction four times in five",
+          "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+          "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+          "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+        },
+        "nothing_planted": {
+          "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+          "mean_estimate": -0.409,
+          "sd_of_estimates": 1.244,
+          "mean_standard_error": 1.62,
+          "range_half_width_mean": 3.017,
+          "range_width_median": 5.898,
+          "range_covers_zero": 0.967,
+          "analytic_range_covers_zero": 0.952
+        },
+        "early_years_test": {
+          "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.129,
+          "share_failing_at_p_below_0.05": 0.071,
+          "share_failing_at_the_chi_square_10pct_value": 0.297
+        },
+        "start_years_exact": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 4.76,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.007,
+            "1": 0.056,
+            "2": 0.148,
+            "3": 0.365,
+            "4": 0.631,
+            "5": 0.854,
+            "6": 0.957,
+            "7": 0.994,
+            "8": 0.998,
+            "9": 1.0,
+            "10": 1.0,
+            "11": 1.0,
+            "12": 1.0
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.47,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 3.017,
+            "range_covers_the_planted_effect": 0.967,
+            "early_years_test_fails_at_p_below_0.10": 0.129,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 6.17,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.007,
+            "1": 0.041,
+            "2": 0.102,
+            "3": 0.216,
+            "4": 0.397,
+            "5": 0.588,
+            "6": 0.782,
+            "7": 0.89,
+            "8": 0.954,
+            "9": 0.984,
+            "10": 0.995,
+            "11": 0.999,
+            "12": 0.999
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.401,
+            "share_of_the_planted_effect_recovered": 0.781,
+            "range_half_width_mean": 3.021,
+            "range_covers_the_planted_effect": 0.872,
+            "early_years_test_fails_at_p_below_0.10": 0.149,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "A",
+          "label": "figures for the bootstrap as built",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+          "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+        },
+        "hosts_as_built": 36,
+        "their_states": 20,
+        "their_ownership": {
+          "cooperative": 13,
+          "public": 12,
+          "investor_owned": 11
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 15,
+          "ERCOT": 6,
+          "Southeast": 4,
+          "PJM": 3,
+          "SPP": 3,
+          "California": 3,
+          "MISO": 1,
+          "ISO-NE": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": 999,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [
+          {
+            "utility": "15248:OR",
+            "cohort": null,
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "19325:OR",
+            "cohort": null,
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "7490:OK",
+            "cohort": 2011,
+            "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+          },
+          {
+            "utility": "7977:OH",
+            "cohort": 2012,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 1 of its 10 matched in its region in event year 2, fewer than 8; 1 of its 10 matched in its region in event year 3, fewer than 8"
+          },
+          {
+            "utility": "14154:NY",
+            "cohort": 2017,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+          }
+        ],
+        "hosts_with_unresolved_ownership": [
+          {
+            "utility": "803:AZ",
+            "cohort": 2020,
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023
+            ],
+            "reason_by_year": {
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "14328:CA",
+            "cohort": 2015,
+            "years": [
+              2009,
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018
+            ],
+            "reason_by_year": {
+              "2009": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2010": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2011": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2012": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "15466:CO",
+            "cohort": 2019,
+            "years": [
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ],
+            "reason_by_year": {
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "15473:NM",
+            "cohort": 2019,
+            "years": [
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ],
+            "reason_by_year": {
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "54913:MA",
+            "cohort": 2017,
+            "years": [
+              2011
+            ],
+            "reason_by_year": {
+              "2011": "no row of the ownership table covers this year"
+            },
+            "reason": "no row of the ownership table covers this year: 2011",
+            "in_this_run": "kept"
+          }
+        ],
+        "load_unknown_excluded": [
+          {
+            "utility": "15248:OR",
+            "role": "host",
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "19325:OR",
+            "role": "host",
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          }
+        ],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.944,
+          "own_state": 0.056,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 24.1,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.567,
+          "within_1_year": 0.686,
+          "true_crossing_2_or_more_years_earlier": 0.249
+        },
+        "fingerprint": {
+          "sha256": "f0f6167217794236a32cf079573c9f802f73af964bfd6c4750113aa941b8d02f",
+          "of": {
+            "design_inputs": "72cc8c87359d10a6b856202a430dfb93ffd0ae1b643e73bb3a67d5b2140bf78e",
+            "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+            "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+            "assumptions": "b82a17034679958c6d4c1e61422a06da2f943f3c5f6456336e90fda394affd0d",
+            "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+            "seeds": "ce9d43e59922f0b141b788ecba2b704bbdfc3db7a765e63e505d5cae1dc92912"
+          },
+          "version": 1
+        }
+      },
+      "headline_set_with_the_ten_year_case": {
+        "hosts_in_the_panel_for_their_whole_window": 6,
+        "draws": 2000,
+        "clusters_median": 22,
+        "procedure": {
+          "name": "A",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+        },
+        "numerical_failures": {
+          "bootstrap": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          },
+          "analytic": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "power": {
+          "name": "smallest increase detected in the correct direction four times in five",
+          "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+          "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+          "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+        },
+        "nothing_planted": {
+          "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+          "mean_estimate": -1.188,
+          "sd_of_estimates": 2.991,
+          "mean_standard_error": 3.113,
+          "range_half_width_mean": 6.512,
+          "range_width_median": 12.378,
+          "range_covers_zero": 0.919,
+          "analytic_range_covers_zero": 0.847
+        },
+        "early_years_test": {
+          "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.044,
+          "share_failing_at_p_below_0.05": 0.019,
+          "share_failing_at_the_chi_square_10pct_value": 0.33
+        },
+        "start_years_exact": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 11.14,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.01,
+            "1": 0.024,
+            "2": 0.043,
+            "3": 0.072,
+            "4": 0.119,
+            "5": 0.185,
+            "6": 0.269,
+            "7": 0.382,
+            "8": 0.51,
+            "9": 0.603,
+            "10": 0.697,
+            "11": 0.789,
+            "12": 0.867
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.691,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 6.512,
+            "range_covers_the_planted_effect": 0.919,
+            "early_years_test_fails_at_p_below_0.10": 0.044,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 11.15,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.01,
+            "1": 0.024,
+            "2": 0.043,
+            "3": 0.072,
+            "4": 0.119,
+            "5": 0.185,
+            "6": 0.269,
+            "7": 0.382,
+            "8": 0.509,
+            "9": 0.603,
+            "10": 0.696,
+            "11": 0.788,
+            "12": 0.867
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.691,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 6.513,
+            "range_covers_the_planted_effect": 0.919,
+            "early_years_test_fails_at_p_below_0.10": 0.044,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "A",
+          "label": "figures for the bootstrap as built",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+          "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+        },
+        "hosts_as_built": 6,
+        "their_states": 6,
+        "their_ownership": {
+          "investor_owned": 3,
+          "public": 2,
+          "cooperative": 1
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 3,
+          "ERCOT": 1,
+          "SPP": 1,
+          "Southeast": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": 999,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [],
+        "hosts_with_unresolved_ownership": [
+          {
+            "utility": "15473:NM",
+            "cohort": 2019,
+            "years": [
+              2013,
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022
+            ],
+            "reason_by_year": {
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+            "in_this_run": "kept"
+          }
+        ],
+        "load_unknown_excluded": [],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.667,
+          "own_state": 0.333,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 4.1,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.981,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0
+        },
+        "fingerprint": {
+          "sha256": "f421046ad3bc17fa888a59f4b8a073964c1167aa4416e64daafa02b8d7eb1d4a",
+          "of": {
+            "design_inputs": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+            "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+            "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+            "assumptions": "b82a17034679958c6d4c1e61422a06da2f943f3c5f6456336e90fda394affd0d",
+            "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+            "seeds": "730cc18b41903e3d13b357b6fce1aa1d631c61cf86c8108e5e1d244139ede0b6"
+          },
+          "version": 1
+        }
+      }
+    },
+    "5%": {
+      "headline_set": {
+        "hosts_in_the_panel_for_their_whole_window": 5,
+        "draws": 2000,
+        "clusters_median": 20,
+        "procedure": {
+          "name": "A",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+        },
+        "numerical_failures": {
+          "bootstrap": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          },
+          "analytic": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "power": {
+          "name": "smallest increase detected in the correct direction four times in five",
+          "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+          "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+          "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+        },
+        "nothing_planted": {
+          "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+          "mean_estimate": -1.471,
+          "sd_of_estimates": 4.892,
+          "mean_standard_error": 4.538,
+          "range_half_width_mean": 10.692,
+          "range_width_median": 19.195,
+          "range_covers_zero": 0.89,
+          "analytic_range_covers_zero": 0.805
+        },
+        "early_years_test": {
+          "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.043,
+          "share_failing_at_p_below_0.05": 0.021,
+          "share_failing_at_the_chi_square_10pct_value": 0.365
+        },
+        "start_years_exact": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": null,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.012,
+            "1": 0.025,
+            "2": 0.041,
+            "3": 0.053,
+            "4": 0.086,
+            "5": 0.111,
+            "6": 0.147,
+            "7": 0.188,
+            "8": 0.227,
+            "9": 0.265,
+            "10": 0.308,
+            "11": 0.35,
+            "12": 0.389
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.408,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 10.692,
+            "range_covers_the_planted_effect": 0.89,
+            "early_years_test_fails_at_p_below_0.10": 0.043,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": null,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.012,
+            "1": 0.025,
+            "2": 0.041,
+            "3": 0.053,
+            "4": 0.084,
+            "5": 0.111,
+            "6": 0.147,
+            "7": 0.188,
+            "8": 0.227,
+            "9": 0.264,
+            "10": 0.307,
+            "11": 0.348,
+            "12": 0.388
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.398,
+            "share_of_the_planted_effect_recovered": 0.998,
+            "range_half_width_mean": 10.689,
+            "range_covers_the_planted_effect": 0.89,
+            "early_years_test_fails_at_p_below_0.10": 0.044,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "A",
+          "label": "figures for the bootstrap as built",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+          "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+        },
+        "hosts_as_built": 5,
+        "their_states": 5,
+        "their_ownership": {
+          "public": 2,
+          "investor_owned": 2,
+          "cooperative": 1
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 2,
+          "ERCOT": 1,
+          "SPP": 1,
+          "Southeast": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": 999,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [],
+        "hosts_with_unresolved_ownership": [
+          {
+            "utility": "15473:NM",
+            "cohort": 2020,
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023
+            ],
+            "reason_by_year": {
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+            "in_this_run": "kept"
+          }
+        ],
+        "load_unknown_excluded": [],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.8,
+          "own_state": 0.2,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 4.2,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.933,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0
+        },
+        "fingerprint": {
+          "sha256": "c0306e38904ba01838f9bececb02d6f1500e65949f4aadf28d2061a04a868f39",
+          "of": {
+            "design_inputs": "7ea3fdcbf138718a4c67cfdbe570a395d393251360c54ebe1842bd96d1a26ad3",
+            "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+            "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+            "assumptions": "94cdbd4d78b707e8fc21fe71f0ed75a590aef936ef652047b1b27ab923e4f85a",
+            "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+            "seeds": "da052146c93bee365715f66cb61e19e579272c441a9bcf765e34433053e64d6e"
+          },
+          "version": 1
+        }
+      },
+      "every_cohort_utility": {
+        "hosts_in_the_panel_for_their_whole_window": 30,
+        "draws": 2000,
+        "clusters_median": 41,
+        "procedure": {
+          "name": "A",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+        },
+        "numerical_failures": {
+          "bootstrap": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          },
+          "analytic": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "power": {
+          "name": "smallest increase detected in the correct direction four times in five",
+          "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+          "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+          "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+        },
+        "nothing_planted": {
+          "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+          "mean_estimate": -0.679,
+          "sd_of_estimates": 1.803,
+          "mean_standard_error": 1.937,
+          "range_half_width_mean": 3.699,
+          "range_width_median": 7.169,
+          "range_covers_zero": 0.917,
+          "analytic_range_covers_zero": 0.889
+        },
+        "early_years_test": {
+          "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.108,
+          "share_failing_at_p_below_0.05": 0.058,
+          "share_failing_at_the_chi_square_10pct_value": 0.29
+        },
+        "start_years_exact": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 6.27,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.011,
+            "1": 0.046,
+            "2": 0.111,
+            "3": 0.243,
+            "4": 0.403,
+            "5": 0.605,
+            "6": 0.765,
+            "7": 0.891,
+            "8": 0.958,
+            "9": 0.984,
+            "10": 0.997,
+            "11": 0.999,
+            "12": 1.0
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.2,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 3.699,
+            "range_covers_the_planted_effect": 0.917,
+            "early_years_test_fails_at_p_below_0.10": 0.108,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 8.07,
+          "range_entirely_above_zero_by_planted_pct": {
+            "0": 0.011,
+            "1": 0.04,
+            "2": 0.086,
+            "3": 0.17,
+            "4": 0.285,
+            "5": 0.426,
+            "6": 0.58,
+            "7": 0.712,
+            "8": 0.794,
+            "9": 0.876,
+            "10": 0.936,
+            "11": 0.965,
+            "12": 0.982
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.453,
+            "share_of_the_planted_effect_recovered": 0.847,
+            "range_half_width_mean": 3.836,
+            "range_covers_the_planted_effect": 0.873,
+            "early_years_test_fails_at_p_below_0.10": 0.12,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "A",
+          "label": "figures for the bootstrap as built",
+          "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+          "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+          "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+          "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+        },
+        "hosts_as_built": 30,
+        "their_states": 17,
+        "their_ownership": {
+          "cooperative": 12,
+          "investor_owned": 10,
+          "public": 8
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 10,
+          "ERCOT": 7,
+          "PJM": 4,
+          "Southeast": 3,
+          "SPP": 3,
+          "MISO": 2,
+          "California": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": 999,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [
+          {
+            "utility": "15248:OR",
+            "cohort": null,
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "19325:OR",
+            "cohort": null,
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "7490:OK",
+            "cohort": 2011,
+            "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+          },
+          {
+            "utility": "5416:NC",
+            "cohort": 2015,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 7 of its 10 matched in its region in event year 2, fewer than 8; 7 of its 10 matched in its region in event year 3, fewer than 8"
+          },
+          {
+            "utility": "14154:NY",
+            "cohort": 2020,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+          }
+        ],
+        "hosts_with_unresolved_ownership": [
+          {
+            "utility": "803:AZ",
+            "cohort": 2022,
+            "years": [
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023,
+              2024,
+              2025
+            ],
+            "reason_by_year": {
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2024": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2025": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "12698:MO",
+            "cohort": 2012,
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ],
+            "reason_by_year": {
+              "2006": "no row of the ownership table covers this year",
+              "2007": "no row of the ownership table covers this year",
+              "2008": "no row of the ownership table covers this year",
+              "2009": "no row of the ownership table covers this year",
+              "2010": "no row of the ownership table covers this year",
+              "2011": "no row of the ownership table covers this year",
+              "2012": "no row of the ownership table covers this year",
+              "2013": "no row of the ownership table covers this year",
+              "2014": "no row of the ownership table covers this year",
+              "2015": "no row of the ownership table covers this year"
+            },
+            "reason": "no row of the ownership table covers this year: 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "15473:NM",
+            "cohort": 2020,
+            "years": [
+              2014,
+              2015,
+              2016,
+              2017,
+              2018,
+              2019,
+              2020,
+              2021,
+              2022,
+              2023
+            ],
+            "reason_by_year": {
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "15477:NJ",
+            "cohort": 2012,
+            "years": [
+              2006,
+              2007,
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015
+            ],
+            "reason_by_year": {
+              "2006": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2007": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2008": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2009": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2010": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2011": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2012": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015",
+            "in_this_run": "kept"
+          },
+          {
+            "utility": "19876:VA",
+            "cohort": 2014,
+            "years": [
+              2008,
+              2009,
+              2010,
+              2011,
+              2012,
+              2013,
+              2014,
+              2015,
+              2016,
+              2017
+            ],
+            "reason_by_year": {
+              "2008": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2009": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2010": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2011": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2012": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+              "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+            },
+            "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017",
+            "in_this_run": "kept"
+          }
+        ],
+        "load_unknown_excluded": [
+          {
+            "utility": "15248:OR",
+            "role": "host",
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "19325:OR",
+            "role": "host",
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          }
+        ],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.9,
+          "own_state": 0.1,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 13.4,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.667,
+          "within_1_year": 0.784,
+          "true_crossing_2_or_more_years_earlier": 0.197
+        },
+        "fingerprint": {
+          "sha256": "02affde36f5e3dc2720c06870c672955d6e9f4b9ecd7cc6f9db76f050d6b56d1",
+          "of": {
+            "design_inputs": "d3caaa5555be660c5a89801bfbb05a2432f7121f78b0ad52da58ba78bca803b3",
+            "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+            "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+            "assumptions": "94cdbd4d78b707e8fc21fe71f0ed75a590aef936ef652047b1b27ab923e4f85a",
+            "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+            "seeds": "712a58bfe5edc736a31064ec6f95332a70029be452970da4e0680240e2bb258b"
+          },
+          "version": 1
+        }
+      }
+    }
+  },
+  "early_years_test_size_on_made_up_prices": {
+    "headline_set": {
+      "datasets": 1000,
+      "hosts": 7,
+      "made_up_prices": {
+        "region_step_sd": 0.03,
+        "state_sd": 0.015,
+        "state_rho": 0.6,
+        "own_sd": 0.03,
+        "own_rho": 0.7
+      },
+      "rules": "headline",
+      "procedure": {
+        "name": "A",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+      },
+      "procedure_provenance": {
+        "procedure": "A",
+        "label": "figures for the bootstrap as built",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+        "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+      },
+      "load_unknown_excluded": [],
+      "numerical_failures": {
+        "bootstrap": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "analytic": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "early_years_test_fails_at_p_below_0.10": 0.113,
+      "early_years_test_fails_at_p_below_0.05": 0.065,
+      "fails_at_the_chi_square_10pct_value": 0.347,
+      "range_misses_zero": 0.147,
+      "mean_estimate_pct": -0.146,
+      "sd_of_estimates_pct": 2.352,
+      "range_half_width_mean_pct": 4.087,
+      "inside_the_band_written_in_advance": true,
+      "band": [
+        0.07,
+        0.13
+      ],
+      "fingerprint": {
+        "sha256": "64aa246a10a990a6dcddb233a28229dc7cb7ef26735c2ec7065d9543818eea7e",
+        "of": {
+          "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+          "assumptions": "9d2f2eba415afda0d89612bda6672308dd43e9bd24915ddff1835e941a81531a",
+          "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+          "seeds": "60f2c6d4615ad9660bfab9987cb78861a4410968f056fdb3e8d8ef0f241067d5"
+        },
+        "version": 1
+      }
+    },
+    "every_cohort_utility": {
+      "datasets": 1000,
+      "hosts": 36,
+      "made_up_prices": {
+        "region_step_sd": 0.03,
+        "state_sd": 0.015,
+        "state_rho": 0.6,
+        "own_sd": 0.03,
+        "own_rho": 0.7
+      },
+      "rules": "headline",
+      "procedure": {
+        "name": "A",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+      },
+      "procedure_provenance": {
+        "procedure": "A",
+        "label": "figures for the bootstrap as built",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+        "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+      },
+      "load_unknown_excluded": [
+        {
+          "utility": "15248:OR",
+          "role": "host",
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        },
+        {
+          "utility": "19325:OR",
+          "role": "host",
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        }
+      ],
+      "numerical_failures": {
+        "bootstrap": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "analytic": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "early_years_test_fails_at_p_below_0.10": 0.109,
+      "early_years_test_fails_at_p_below_0.05": 0.061,
+      "fails_at_the_chi_square_10pct_value": 0.247,
+      "range_misses_zero": 0.11,
+      "mean_estimate_pct": 0.054,
+      "sd_of_estimates_pct": 1.015,
+      "range_half_width_mean_pct": 1.732,
+      "inside_the_band_written_in_advance": true,
+      "band": [
+        0.07,
+        0.13
+      ],
+      "fingerprint": {
+        "sha256": "3bdaac1943217570d033a6d52f8f98bb67cc17f516b6dbdc795cc2c087b9a0b9",
+        "of": {
+          "design_inputs": "72cc8c87359d10a6b856202a430dfb93ffd0ae1b643e73bb3a67d5b2140bf78e",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+          "assumptions": "9d2f2eba415afda0d89612bda6672308dd43e9bd24915ddff1835e941a81531a",
+          "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+          "seeds": "9d645221c8e4416967292f4d328ba9848785cba1864cc6fdc7027a054d595ed2"
+        },
+        "version": 1
+      }
+    },
+    "headline_set_with_the_ten_year_case": {
+      "datasets": 1000,
+      "hosts": 6,
+      "made_up_prices": {
+        "region_step_sd": 0.03,
+        "state_sd": 0.015,
+        "state_rho": 0.6,
+        "own_sd": 0.03,
+        "own_rho": 0.7
+      },
+      "rules": "headline",
+      "procedure": {
+        "name": "A",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+      },
+      "procedure_provenance": {
+        "procedure": "A",
+        "label": "figures for the bootstrap as built",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+        "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+      },
+      "load_unknown_excluded": [],
+      "numerical_failures": {
+        "bootstrap": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "analytic": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "early_years_test_fails_at_p_below_0.10": 0.132,
+      "early_years_test_fails_at_p_below_0.05": 0.07,
+      "fails_at_the_chi_square_10pct_value": 0.415,
+      "range_misses_zero": 0.125,
+      "mean_estimate_pct": -0.013,
+      "sd_of_estimates_pct": 2.506,
+      "range_half_width_mean_pct": 4.61,
+      "inside_the_band_written_in_advance": false,
+      "band": [
+        0.07,
+        0.13
+      ],
+      "fingerprint": {
+        "sha256": "107f6e07ce6f7b9ec3d7ec2e5b16ebee0d13eabbd6e480fc79e0189241f3250a",
+        "of": {
+          "design_inputs": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+          "assumptions": "9d2f2eba415afda0d89612bda6672308dd43e9bd24915ddff1835e941a81531a",
+          "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+          "seeds": "9dbf0fba2048e12fb186b0ea0159f76129f523babfd9723339123cc9d17c2d4a"
+        },
+        "version": 1
+      }
+    }
+  },
+  "side_runs": {
+    "comparison_utilities_from_the_hosts_own_state_headline_set": {
+      "hosts_in_the_panel_for_their_whole_window": 7,
+      "draws": 2000,
+      "clusters_median": 7,
+      "procedure": {
+        "name": "A",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+      },
+      "numerical_failures": {
+        "bootstrap": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "analytic": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "power": {
+        "name": "smallest increase detected in the correct direction four times in five",
+        "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+        "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+        "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+      },
+      "nothing_planted": {
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+        "mean_estimate": 0.685,
+        "sd_of_estimates": 3.043,
+        "mean_standard_error": 3.404,
+        "range_half_width_mean": 6.721,
+        "range_width_median": 13.489,
+        "range_covers_zero": 0.926,
+        "analytic_range_covers_zero": 0.926
+      },
+      "early_years_test": {
+        "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "share_of_flat_histories_failing_at_p_below_0.10": 0.054,
+        "share_failing_at_p_below_0.05": 0.031,
+        "share_failing_at_the_chi_square_10pct_value": 0.342
+      },
+      "start_years_exact": {
+        "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 8.64,
+        "range_entirely_above_zero_by_planted_pct": {
+          "0": 0.026,
+          "1": 0.048,
+          "2": 0.074,
+          "3": 0.121,
+          "4": 0.189,
+          "5": 0.294,
+          "6": 0.423,
+          "7": 0.57,
+          "8": 0.721,
+          "9": 0.845,
+          "10": 0.927,
+          "11": 0.976,
+          "12": 0.997
+        },
+        "planted_5pct": {
+          "mean_estimate": 5.564,
+          "share_of_the_planted_effect_recovered": 1.0,
+          "range_half_width_mean": 6.721,
+          "range_covers_the_planted_effect": 0.926,
+          "early_years_test_fails_at_p_below_0.10": 0.054,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "start_years_misdated": {
+        "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 8.8,
+        "range_entirely_above_zero_by_planted_pct": {
+          "0": 0.026,
+          "1": 0.047,
+          "2": 0.074,
+          "3": 0.118,
+          "4": 0.183,
+          "5": 0.29,
+          "6": 0.419,
+          "7": 0.562,
+          "8": 0.703,
+          "9": 0.825,
+          "10": 0.912,
+          "11": 0.965,
+          "12": 0.99
+        },
+        "planted_5pct": {
+          "mean_estimate": 5.468,
+          "share_of_the_planted_effect_recovered": 0.98,
+          "range_half_width_mean": 6.675,
+          "range_covers_the_planted_effect": 0.925,
+          "early_years_test_fails_at_p_below_0.10": 0.057,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "procedure_provenance": {
+        "procedure": "A",
+        "label": "figures for the bootstrap as built",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+        "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+      },
+      "hosts_as_built": 7,
+      "their_states": 7,
+      "their_ownership": {
+        "investor_owned": 4,
+        "public": 2,
+        "cooperative": 1
+      },
+      "their_regions_in_the_reference_year": {
+        "West": 4,
+        "ERCOT": 1,
+        "SPP": 1,
+        "Southeast": 1
+      },
+      "comparison_form": "same_state",
+      "bootstrap_replications": 999,
+      "rules": "headline",
+      "fuel_control": "no_controls",
+      "gas_share_assumption": null,
+      "hosts_not_given_a_stand_in": [],
+      "hosts_with_unresolved_ownership": [
+        {
+          "utility": "803:AZ",
+          "cohort": 2020,
+          "years": [
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "reason_by_year": {
+            "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+          },
+          "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+          "in_this_run": "kept"
+        },
+        {
+          "utility": "15473:NM",
+          "cohort": 2019,
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "reason_by_year": {
+            "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+          },
+          "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+          "in_this_run": "kept"
+        }
+      ],
+      "load_unknown_excluded": [],
+      "stand_in_match": {
+        "own_state_and_ownership": 0.714,
+        "own_state": 0.286,
+        "substitute_state_and_ownership": 0.0,
+        "substitute_state": 0.0,
+        "region_and_ownership": 0.0,
+        "region_only": 0.0,
+        "ownership_only": 0.0
+      },
+      "hosts_left_without_a_comparison_utility_per_draw": 0.2,
+      "utilities_that_change_region_inside_their_window_per_draw": 0.8,
+      "date_errors_drawn_for_these_hosts": {
+        "exact": 0.944,
+        "within_1_year": 0.966,
+        "true_crossing_2_or_more_years_earlier": 0.034
+      },
+      "fingerprint": {
+        "sha256": "cf6a913e0396e12d229218e32cfe487eac176787c30365464fe0dd7e00b510a2",
+        "of": {
+          "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+          "assumptions": "35e8ab2c9edb5e09b63ba719aaf1c8f3f9158fbfcc03b2dad42b59d0554c1084",
+          "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+          "seeds": "7d3288fab45c1d2197108d1c432e1fbf57afb70f4597a2a6e47d4a6fe519c4fe"
+        },
+        "version": 1
+      }
+    },
+    "comparison_utilities_from_the_hosts_own_state_every_cohort_utility": {
+      "hosts_in_the_panel_for_their_whole_window": 36,
+      "draws": 2000,
+      "clusters_median": 19,
+      "procedure": {
+        "name": "A",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero"
+      },
+      "numerical_failures": {
+        "bootstrap": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "analytic": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "power": {
+        "name": "smallest increase detected in the correct direction four times in five",
+        "definition": "power at a planted effect is the probability that the 90% range lies entirely above zero under a planted positive effect; the smallest increase is the smallest planted effect on the grid (percent of residential price, interpolated) at which that probability reaches 80%. The 90% range is the two-sided range as constructed; the power figure is not a separate test",
+        "numerical_failures": "a draw with a numerical failure stays in the denominator and counts as no detection for power. This is separate from the calibration readings (the range with nothing planted and the early-years test), where a failure counts as a miss and as a rejection. The failure count is reported, including zero",
+        "adopted": "readings adopted by the owner on 2026-11-18 (Stop 3), after the simulation's results were available"
+      },
+      "nothing_planted": {
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed has none and is left out. A draw that failed after its estimate was computed keeps its estimate and its standard error in these moments, each unless it is NaN; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure, as a range that misses zero, as an early-years test that rejects and as no detection",
+        "mean_estimate": 0.52,
+        "sd_of_estimates": 1.401,
+        "mean_standard_error": 1.812,
+        "range_half_width_mean": 3.282,
+        "range_width_median": 6.431,
+        "range_covers_zero": 0.954,
+        "analytic_range_covers_zero": 0.952
+      },
+      "early_years_test": {
+        "statistic": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "share_of_flat_histories_failing_at_p_below_0.10": 0.102,
+        "share_failing_at_p_below_0.05": 0.048,
+        "share_failing_at_the_chi_square_10pct_value": 0.246
+      },
+      "start_years_exact": {
+        "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 4.13,
+        "range_entirely_above_zero_by_planted_pct": {
+          "0": 0.037,
+          "1": 0.121,
+          "2": 0.301,
+          "3": 0.535,
+          "4": 0.78,
+          "5": 0.927,
+          "6": 0.986,
+          "7": 0.999,
+          "8": 1.0,
+          "9": 1.0,
+          "10": 1.0,
+          "11": 1.0,
+          "12": 1.0
+        },
+        "planted_5pct": {
+          "mean_estimate": 5.399,
+          "share_of_the_planted_effect_recovered": 1.0,
+          "range_half_width_mean": 3.282,
+          "range_covers_the_planted_effect": 0.954,
+          "early_years_test_fails_at_p_below_0.10": 0.102,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "start_years_misdated": {
+        "smallest_increase_detected_in_the_correct_direction_four_times_in_five": 5.54,
+        "range_entirely_above_zero_by_planted_pct": {
+          "0": 0.037,
+          "1": 0.1,
+          "2": 0.208,
+          "3": 0.371,
+          "4": 0.552,
+          "5": 0.734,
+          "6": 0.857,
+          "7": 0.939,
+          "8": 0.975,
+          "9": 0.991,
+          "10": 0.997,
+          "11": 1.0,
+          "12": 1.0
+        },
+        "planted_5pct": {
+          "mean_estimate": 4.308,
+          "share_of_the_planted_effect_recovered": 0.776,
+          "range_half_width_mean": 3.319,
+          "range_covers_the_planted_effect": 0.953,
+          "early_years_test_fails_at_p_below_0.10": 0.154,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "procedure_provenance": {
+        "procedure": "A",
+        "label": "figures for the bootstrap as built",
+        "range": "90% wild cluster bootstrap-t range by state (unrestricted residuals, Rademacher, 999 replications)",
+        "early_years_test": "Wald statistic on event years -6, -5 and -4 with a wild cluster bootstrap p-value, failing at p below 0.10",
+        "told_from_zero": "the 90% bootstrap-t range lies entirely above zero",
+        "note": "labelled run (D-59 rule 4.7): not the selected procedure; written to its own file"
+      },
+      "hosts_as_built": 36,
+      "their_states": 20,
+      "their_ownership": {
+        "cooperative": 13,
+        "public": 12,
+        "investor_owned": 11
+      },
+      "their_regions_in_the_reference_year": {
+        "West": 15,
+        "ERCOT": 6,
+        "Southeast": 4,
+        "PJM": 3,
+        "SPP": 3,
+        "California": 3,
+        "MISO": 1,
+        "ISO-NE": 1
+      },
+      "comparison_form": "same_state",
+      "bootstrap_replications": 999,
+      "rules": "headline",
+      "fuel_control": "no_controls",
+      "gas_share_assumption": null,
+      "hosts_not_given_a_stand_in": [
+        {
+          "utility": "15248:OR",
+          "cohort": null,
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        },
+        {
+          "utility": "19325:OR",
+          "cohort": null,
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        },
+        {
+          "utility": "7490:OK",
+          "cohort": 2011,
+          "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+        },
+        {
+          "utility": "7977:OH",
+          "cohort": 2012,
+          "why": "does not keep its place under the support rule (D-54, ruling 2): 1 of its 10 matched in its region in event year 2, fewer than 8; 1 of its 10 matched in its region in event year 3, fewer than 8"
+        },
+        {
+          "utility": "14154:NY",
+          "cohort": 2017,
+          "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+        }
+      ],
+      "hosts_with_unresolved_ownership": [
+        {
+          "utility": "803:AZ",
+          "cohort": 2020,
+          "years": [
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022,
+            2023
+          ],
+          "reason_by_year": {
+            "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+          },
+          "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+          "in_this_run": "kept"
+        },
+        {
+          "utility": "14328:CA",
+          "cohort": 2015,
+          "years": [
+            2009,
+            2010,
+            2011,
+            2012,
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018
+          ],
+          "reason_by_year": {
+            "2009": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2010": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2011": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2012": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+          },
+          "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018",
+          "in_this_run": "kept"
+        },
+        {
+          "utility": "15466:CO",
+          "cohort": 2019,
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "reason_by_year": {
+            "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+          },
+          "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+          "in_this_run": "kept"
+        },
+        {
+          "utility": "15473:NM",
+          "cohort": 2019,
+          "years": [
+            2013,
+            2014,
+            2015,
+            2016,
+            2017,
+            2018,
+            2019,
+            2020,
+            2021,
+            2022
+          ],
+          "reason_by_year": {
+            "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+            "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+          },
+          "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+          "in_this_run": "kept"
+        },
+        {
+          "utility": "54913:MA",
+          "cohort": 2017,
+          "years": [
+            2011
+          ],
+          "reason_by_year": {
+            "2011": "no row of the ownership table covers this year"
+          },
+          "reason": "no row of the ownership table covers this year: 2011",
+          "in_this_run": "kept"
+        }
+      ],
+      "load_unknown_excluded": [
+        {
+          "utility": "15248:OR",
+          "role": "host",
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        },
+        {
+          "utility": "19325:OR",
+          "role": "host",
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        }
+      ],
+      "stand_in_match": {
+        "own_state_and_ownership": 0.944,
+        "own_state": 0.056,
+        "substitute_state_and_ownership": 0.0,
+        "substitute_state": 0.0,
+        "region_and_ownership": 0.0,
+        "region_only": 0.0,
+        "ownership_only": 0.0
+      },
+      "hosts_left_without_a_comparison_utility_per_draw": 0.7,
+      "utilities_that_change_region_inside_their_window_per_draw": 39.4,
+      "date_errors_drawn_for_these_hosts": {
+        "exact": 0.567,
+        "within_1_year": 0.686,
+        "true_crossing_2_or_more_years_earlier": 0.249
+      },
+      "fingerprint": {
+        "sha256": "bb55a341dfe22cfad910f022b14e64bb9fe44e5d446b78b3e43d8ddb212ade07",
+        "of": {
+          "design_inputs": "72cc8c87359d10a6b856202a430dfb93ffd0ae1b643e73bb3a67d5b2140bf78e",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+          "assumptions": "35e8ab2c9edb5e09b63ba719aaf1c8f3f9158fbfcc03b2dad42b59d0554c1084",
+          "settings": "f01886783190802f6c7fedd6f926f19a83016dec9b6015c6ce1ef8cb710d4d64",
+          "seeds": "54cbcb13c2fdb5bc544343a2e2b636d2b2914e540f2226cd97427a9e1db1c0bf"
+        },
+        "version": 1
+      }
+    }
+  },
+  "per_point_of_load": {
+    "long_difference": {
+      "uncapped": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed (a rank-deficient fit) has none and is left out. A draw that failed after its estimate was computed keeps its estimate, unless NaN, in the mean estimate; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure and as a range that does not cover zero",
+        "mean_estimate_nothing_planted": -0.0086,
+        "range_half_width_mean": 0.0431,
+        "range_covers_zero": 0.849,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.624,
+        "load_share_points_of_the_median_host": 5.33,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.23
+      },
+      "capped_at_25_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed (a rank-deficient fit) has none and is left out. A draw that failed after its estimate was computed keeps its estimate, unless NaN, in the mean estimate; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure and as a range that does not cover zero",
+        "mean_estimate_nothing_planted": -0.0364,
+        "range_half_width_mean": 0.278,
+        "range_covers_zero": 0.966,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.114,
+        "load_share_points_of_the_median_host": 4.41,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 1.227
+      },
+      "capped_at_50_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed (a rank-deficient fit) has none and is left out. A draw that failed after its estimate was computed keeps its estimate, unless NaN, in the mean estimate; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure and as a range that does not cover zero",
+        "mean_estimate_nothing_planted": -0.0138,
+        "range_half_width_mean": 0.1522,
+        "range_covers_zero": 0.949,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.156,
+        "load_share_points_of_the_median_host": 5.05,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.768
+      },
+      "unit": "percent of residential price per point of load share",
+      "utilities_with_material_load_given_a_stand_in": 122,
+      "utilities_in_the_sample": 1013,
+      "their_states": 39,
+      "utilities_that_change_region_in_the_sample": 128,
+      "inference": "not under the selected procedure: the comparison did not cover this estimator. Its range is the wild cluster bootstrap by state as built (estimator.Fit.summary: bootstrap-t, unrestricted residuals, Rademacher), on the per-point slope",
+      "carried_to_step_f": [
+        "15248:OR",
+        "19325:OR"
+      ],
+      "carried_to_step_f_why": "load unknown (D-96): dose not settled, carried to step F"
+    },
+    "panel": {
+      "uncapped": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed (a rank-deficient fit) has none and is left out. A draw that failed after its estimate was computed keeps its estimate, unless NaN, in the mean estimate; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure and as a range that does not cover zero",
+        "mean_estimate_nothing_planted": 0.0002,
+        "range_half_width_mean": 0.0229,
+        "range_covers_zero": 0.932,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.491,
+        "load_share_points_of_the_median_host": 9.54,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.219
+      },
+      "capped_at_25_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed (a rank-deficient fit) has none and is left out. A draw that failed after its estimate was computed keeps its estimate, unless NaN, in the mean estimate; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure and as a range that does not cover zero",
+        "mean_estimate_nothing_planted": 0.0068,
+        "range_half_width_mean": 0.1501,
+        "range_covers_zero": 0.956,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.037,
+        "load_share_points_of_the_median_host": 9.54,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 1.431
+      },
+      "capped_at_50_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "every draw whose value for the moment is not NaN (pandas skips NaN and nothing else). A draw that failed before an estimate existed (a rank-deficient fit) has none and is left out. A draw that failed after its estimate was computed keeps its estimate, unless NaN, in the mean estimate; its range is NaN, so it is left out of the range widths. Every failed draw is counted as a failure and as a range that does not cover zero",
+        "mean_estimate_nothing_planted": 0.0037,
+        "range_half_width_mean": 0.0826,
+        "range_covers_zero": 0.948,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.059,
+        "load_share_points_of_the_median_host": 9.54,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.788
+      },
+      "unit": "percent of residential price per point of load share",
+      "utilities_with_material_load_given_a_stand_in": 122,
+      "utilities_in_the_sample": 1000,
+      "their_states": 39,
+      "utilities_that_change_region_in_the_sample": 131,
+      "inference": "not under the selected procedure: the comparison did not cover this estimator. Its range is the wild cluster bootstrap by state as built (estimator.Fit.summary: bootstrap-t, unrestricted residuals, Rademacher), on the per-point slope",
+      "carried_to_step_f": [
+        "15248:OR",
+        "19325:OR"
+      ],
+      "carried_to_step_f_why": "load unknown (D-96): dose not settled, carried to step F"
+    }
+  },
+  "comparison_units_left_out_by_the_access_list": {
+    "2%": 1626,
+    "5%": 1626
+  }
+}

@@ -1,0 +1,413 @@
+{
+ "sequence": 31,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "estimators_agree",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:14:17+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "estimators_agree",
+  "plan_section": "Reported checks, Do the estimators agree?",
+  "sets": [
+   "four_stacked_sets_and_callaway_santanna_at_2pct"
+  ],
+  "builder": "the four main entries' runners and callaway_santanna's, on the same price outcome",
+  "estimator": "estimators_table.table (from_stacked_result, from_callaway_santanna_result)",
+  "labels": [
+   "reported check",
+   "They estimate somewhat different averages and need not agree.",
+   "the Callaway and Sant'Anna row carries estimators_table.CALLAWAY_SANTANNA_SAMPLE_LABEL (Joe, 2026-11-19, D-111): 680 of 1,670 never-treated units in no cohort's host region kept; a difference from the headline estimate cannot be attributed solely to the estimator"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": "Whatever the four main entries and callaway_santanna need (the latter runs only under the .venv).",
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "four_stacked_sets_and_callaway_santanna_at_2pct": {
+    "estimated": true,
+    "validation": "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)",
+    "label": "side by side: They estimate somewhat different averages and need not agree.",
+    "table": {
+     "units": "log_points",
+     "rows": [
+      {
+       "name": "stacked: headline_set at 2%",
+       "estimator": "stacked",
+       "set": "headline_set",
+       "threshold": 0.02,
+       "status": "estimated",
+       "estimate": -0.016118590920387275,
+       "range_low": -0.0738190727874288,
+       "range_high": 0.04158189094665425,
+       "units": "log_points",
+       "label": "estimate with its 90% range under the selected procedure",
+       "failure_in_words": null,
+       "validated": true,
+       "plan_labels": [],
+       "sample_label": null,
+       "takes_part_in_range_comparisons": true,
+       "range_low_search_incomplete": false,
+       "range_high_search_incomplete": false
+      },
+      {
+       "name": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "estimator": "stacked",
+       "set": "headline_set_with_the_ten_year_case",
+       "threshold": 0.02,
+       "status": "estimated",
+       "estimate": -0.019624301384380004,
+       "range_low": -0.08101371771947499,
+       "range_high": 0.04176511495071499,
+       "units": "log_points",
+       "label": "estimate with its 90% range under the selected procedure",
+       "failure_in_words": null,
+       "validated": false,
+       "plan_labels": [
+        "under the procedure validated on the headline set; no validation was made on this design"
+       ],
+       "sample_label": null,
+       "takes_part_in_range_comparisons": true,
+       "range_low_search_incomplete": false,
+       "range_high_search_incomplete": false
+      },
+      {
+       "name": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "estimator": "stacked",
+       "set": "headline_set_plus_hosts_unsettled_on_assignment",
+       "threshold": 0.02,
+       "status": "estimated",
+       "estimate": 0.002223036045427092,
+       "range_low": -0.03682644025480593,
+       "range_high": 0.04127251234566011,
+       "units": "log_points",
+       "label": "estimate with its 90% range under the selected procedure",
+       "failure_in_words": null,
+       "validated": false,
+       "plan_labels": [
+        "under the procedure validated on the headline set; no validation was made on this design"
+       ],
+       "sample_label": null,
+       "takes_part_in_range_comparisons": true,
+       "range_low_search_incomplete": false,
+       "range_high_search_incomplete": false
+      },
+      {
+       "name": "stacked: every_cohort_utility at 2%",
+       "estimator": "stacked",
+       "set": "every_cohort_utility",
+       "threshold": 0.02,
+       "status": "estimated",
+       "estimate": 0.030293862383614357,
+       "range_low": -0.007239565395903664,
+       "range_high": 0.06782729016313238,
+       "units": "log_points",
+       "label": "estimate with its 90% range under the selected procedure",
+       "failure_in_words": null,
+       "validated": false,
+       "plan_labels": [
+        "under the procedure validated on the headline set; no validation was made on this design"
+       ],
+       "sample_label": null,
+       "takes_part_in_range_comparisons": true,
+       "range_low_search_incomplete": false,
+       "range_high_search_incomplete": false
+      },
+      {
+       "name": "Callaway and Sant'Anna: headline_set at 2%",
+       "estimator": "callaway_santanna",
+       "set": "headline_set",
+       "threshold": 0.02,
+       "status": "failed",
+       "estimate": -0.03595698190109425,
+       "range_low": null,
+       "range_high": null,
+       "units": "log_points",
+       "label": "not the specified estimator: the package did not use every covariate in every cell",
+       "failure_in_words": "2 covariate warning(s) from the package",
+       "validated": false,
+       "plan_labels": [],
+       "sample_label": "This run's comparison sample differs from the headline's. On the headline set at 2%, 680 of the 1,670 never-treated units are in no cohort's host region at that cohort's reference year (g-3), and 605 of them are in none of the four host regions (West, ERCOT, SPP, Southeast) at any of the five reference years (counted 2026-11-19 from this module's sample() on quantity files; docs/gate1/callaway-santanna-regions-without-host-2026-11-19.md). The headline's matched comparison utilities come from each host's own region in its reference year. These units stay in this run's sample by Joe's ruling of 2026-11-19 (D-111) and inform the gas-share slope, region entering as a covariate. A difference between this run's estimate and the headline estimate cannot be attributed solely to the estimator.",
+       "takes_part_in_range_comparisons": false,
+       "range_low_search_incomplete": false,
+       "range_high_search_incomplete": false
+      }
+     ],
+     "gaps": [
+      {
+       "a": "stacked: headline_set at 2%",
+       "b": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "a_minus_b": 0.0035057104639927283,
+       "size": 0.0035057104639927283,
+       "involves_an_estimate_with_no_range": false
+      },
+      {
+       "a": "stacked: headline_set at 2%",
+       "b": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "a_minus_b": -0.018341626965814366,
+       "size": 0.018341626965814366,
+       "involves_an_estimate_with_no_range": false
+      },
+      {
+       "a": "stacked: headline_set at 2%",
+       "b": "stacked: every_cohort_utility at 2%",
+       "a_minus_b": -0.046412453304001636,
+       "size": 0.046412453304001636,
+       "involves_an_estimate_with_no_range": false
+      },
+      {
+       "a": "stacked: headline_set at 2%",
+       "b": "Callaway and Sant'Anna: headline_set at 2%",
+       "a_minus_b": 0.01983839098070697,
+       "size": 0.01983839098070697,
+       "involves_an_estimate_with_no_range": true
+      },
+      {
+       "a": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "b": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "a_minus_b": -0.021847337429807094,
+       "size": 0.021847337429807094,
+       "involves_an_estimate_with_no_range": false
+      },
+      {
+       "a": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "b": "stacked: every_cohort_utility at 2%",
+       "a_minus_b": -0.049918163767994364,
+       "size": 0.049918163767994364,
+       "involves_an_estimate_with_no_range": false
+      },
+      {
+       "a": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "b": "Callaway and Sant'Anna: headline_set at 2%",
+       "a_minus_b": 0.016332680516714243,
+       "size": 0.016332680516714243,
+       "involves_an_estimate_with_no_range": true
+      },
+      {
+       "a": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "b": "stacked: every_cohort_utility at 2%",
+       "a_minus_b": -0.028070826338187263,
+       "size": 0.028070826338187263,
+       "involves_an_estimate_with_no_range": false
+      },
+      {
+       "a": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "b": "Callaway and Sant'Anna: headline_set at 2%",
+       "a_minus_b": 0.03818001794652134,
+       "size": 0.03818001794652134,
+       "involves_an_estimate_with_no_range": true
+      },
+      {
+       "a": "stacked: every_cohort_utility at 2%",
+       "b": "Callaway and Sant'Anna: headline_set at 2%",
+       "a_minus_b": 0.06625084428470861,
+       "size": 0.06625084428470861,
+       "involves_an_estimate_with_no_range": true
+      }
+     ],
+     "largest_gap": {
+      "a": "stacked: every_cohort_utility at 2%",
+      "b": "Callaway and Sant'Anna: headline_set at 2%",
+      "a_minus_b": 0.06625084428470861,
+      "size": 0.06625084428470861,
+      "involves_an_estimate_with_no_range": true
+     },
+     "exclusions": [
+      {
+       "range_of": "stacked: headline_set at 2%",
+       "estimate_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set at 2%",
+       "estimate_of": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set at 2%",
+       "estimate_of": "stacked: every_cohort_utility at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "estimate_of": "stacked: headline_set at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "estimate_of": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "estimate_of": "stacked: every_cohort_utility at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "estimate_of": "stacked: headline_set at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "estimate_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "estimate_of": "stacked: every_cohort_utility at 2%",
+       "excludes": false,
+       "side": null
+      },
+      {
+       "range_of": "stacked: every_cohort_utility at 2%",
+       "estimate_of": "stacked: headline_set at 2%",
+       "excludes": true,
+       "side": "below the range"
+      },
+      {
+       "range_of": "stacked: every_cohort_utility at 2%",
+       "estimate_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "excludes": true,
+       "side": "below the range"
+      },
+      {
+       "range_of": "stacked: every_cohort_utility at 2%",
+       "estimate_of": "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%",
+       "excludes": false,
+       "side": null
+      }
+     ],
+     "ranges_that_exclude": [
+      {
+       "range_of": "stacked: every_cohort_utility at 2%",
+       "estimate_of": "stacked: headline_set at 2%",
+       "excludes": true,
+       "side": "below the range"
+      },
+      {
+       "range_of": "stacked: every_cohort_utility at 2%",
+       "estimate_of": "stacked: headline_set_with_the_ten_year_case at 2%",
+       "excludes": true,
+       "side": "below the range"
+      }
+     ],
+     "any_range_excludes_another_estimate": true,
+     "runs_in_no_range_comparison": [
+      {
+       "name": "Callaway and Sant'Anna: headline_set at 2%",
+       "status": "failed",
+       "failure_in_words": "2 covariate warning(s) from the package"
+      }
+     ],
+     "expected_rows_not_supplied": [],
+     "need_not_agree": "They estimate somewhat different averages and need not agree.",
+     "reading": "Reading: the size of the gaps, and whether any range excludes another's estimate."
+    },
+    "stacked_validation_checks": {
+     "stacked: headline_set at 2%": {
+      "claimed": true,
+      "passed": true,
+      "reference": "the fingerprint recorded in inference_comparison_benchmark.json, inference_comparison_stage1.json, inference_validation_budget.json, inference_validation_stage2.json, design_support.json",
+      "why": "checked: the design's inputs and rules are those the procedure was validated on"
+     },
+     "stacked: headline_set_with_the_ten_year_case at 2%": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     },
+     "stacked: headline_set_plus_hosts_unsettled_on_assignment at 2%": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     },
+     "stacked: every_cohort_utility at 2%": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     }
+    }
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

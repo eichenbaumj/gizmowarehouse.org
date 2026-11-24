@@ -1,0 +1,1181 @@
+{
+ "sequence": 2,
+ "kind": "entry",
+ "stage": "row_U",
+ "entry_id": "reconciliation_row_U",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T00:41:16+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "474756359174633a2ae9ec3222983ab43288bb6c",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T00:41:09+00:00"
+ },
+ "body": {
+  "id": "reconciliation_row_U",
+  "plan_section": "Reconciliation rows (reported first, whatever they show), Row U (Ryu and Hiatt), steps U0 to U3",
+  "sets": [
+   "the_papers_specification_on_our_panel"
+  ],
+  "builder": "reconciliation_treatment cumulative-MW treatments supplied per step (RowUInputs)",
+  "estimator": "reconciliation_mu.run_u_step (ln price on ln(MW + 1), utility and year effects, by state) per step, the ownership estimates and U0's pooled estimate returned as comparisons under our specification with no verdict; u1_sentence (the adopted U1 sentences, D-109)",
+  "labels": [
+   "reconciliation row: the paper's specification on our panel, reported first whatever it shows",
+   "reported first",
+   "comparisons under our specification, comparison-only by Joe's ruling of 2026-11-19 (D-109), no reproduction verdict; the paper's figure and band are beside the pooled estimate as a comparison band, and the ownership ordering is uncontrolled",
+   "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": [
+   "res_price_default_service",
+   "res_price"
+  ],
+  "reads_an_outcome": true,
+  "needs_before_research_data": "RunInputs.reconciliation_u (RowUInputs) and RunInputs.reconciliation_u_inputs_are (INVENTED_INPUTS or RESEARCH_DATA_AFTER_THE_FREEZE; with no value the row stops in words and none is chosen for the caller). On research data the row is refused in words, before any step, without the gate file and the run's authorization, with a Short Form code other than the adopted one (D-115), or with a specification not equal to reconciliation_mu.ryu_spec(reconciliation_mu.U_SHORT_FORM_ADOPTED_CODE) (session 27; refusing a departure in any other field is the session's reading of the fixed specification). The specification is fixed: reconciliation_mu.ryu_spec(reconciliation_mu.U_SHORT_FORM_ADOPTED_CODE), that is 'unit_years_filed', the Short Form rule adopted by Joe on 2026-11-20 (D-115); every other field is this study's approximation adopted by Joe on 2026-11-19 (D-107; U0's assignment D-109) or the paper's own value, refused in words if departed from. sample_flags come from short_form_filers.adopted_row_u_flags (its choices are short_form_filers.ADOPTED_ROW_U_CHOICES, the one named place) on a frame that covers every outcome unit-year reaching the Short Form filter, built from the filer table data/interim/reconciliation_short_form_filers.parquet (18,172 rows, one for each utility, state and year with a row in the Short Form table, written by the one authorized read of 2026-11-20, D-113) and the 2019 flags in data/interim/reconciliation_short_form_flags.parquet, both already on disk, and never from a new read under data/raw. Step U3's window is 2015 to 2025, so the flags are built with step_window=(2015, 2025), the adopted rule applied year by year over the step's own window; one frame of 2015 to 2025 built that way serves every step, since a filing counts for its own year alone (the session's reading, which Joe may strike). On the records no 2025 unit-year of the quantity panel has a filer-table row (1,362 unit-years, 0 with a record of a filing; data/frozen/reconciliation_mu_design.json). An outcome unit-year the frame does not cover stops the step in words and it is recorded as not computed; whether the frame covers every outcome unit-year cannot be shown before outcomes are read. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109). On the quantity side (data/frozen/reconciliation_mu_design.json, short_form_flags_for_row_u), the frame with no exclusion has 16,648 unit-years and 1,808 utilities; one flagged unit-year of 2019 leaves directly, and the same utility's 2023 and 2024 leave through the three-year requirement, leaving 16,645 unit-years and 1,807 utilities. Of the frame's 1,974 unit-years of 2019, 1 has a flag of true, 1,780 have a missing flag and 193 have no flags row, the last two kept with no record either way. The filer table has rows in each year from 2012 to 2018 and from 2020 to 2025 and none in 2019; of its 13,090 unit-years in row U's window of 2015 to 2024, none has a row in the quantity panel (data/interim/panel_quantities.parquet). No price is read for these counts, so the paper's missing-price drop is not applied and this is not the paper's sample. The paper's 1,798 utilities retained and its Short Form group of approximately 560 are printed beside ours for comparison only and are no part of any reason. U0's treatment is cumulative_mw on reconciliation_treatment.assign_polygon_smallest(sites, data/interim/reconciliation_polygon_incidence.parquet, data/interim/panel_reported_ids.parquet, **ROW_U_POLYGON), the smallest containing polygon over every polygon with the type not read, our labelled approximation (D-109), built on the real quantity files 2026-11-19 (2,157 of 2,203 data center sites mapped to a panel unit; one exact area tie listed, not broken; that site has no assigned polygon, is listed apart in the entity-type list and counts in \"lying in any\" (adopted by Joe on 2026-11-19, D-111)). It is the same rule and the same assignment as C0 to C2, which is not independent validation. U1 to U3 need a cumulative-MW treatment on the inventory's site-year load (reconciliation_treatment.cumulative_mw, mw_source 'site_year_load'). The ownership classes are reconciliation_mu.adopted_row_u_ownership_classes(q), on quantities that cover 2001 to 2025 (a subset of years is refused in words). Each utility-state's class comes from the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state; the years searched are the quantity panel's 2001 to 2025, and the class is time-invariant, mapped by reconciliation_mu.U_MAP unchanged, settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119) (reconciliation_mu.OWNERSHIP_SPECIFICATION_D117). A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class. The panel's entity_type is one type per utility id, the type its own filings report most often, so on this panel the reading over the years searched changes no class. Joe ruled on 2026-11-20 (D-119) that rows U and C keep this type, described as the utility-level modal reported type carried across the panel and not the latest year-by-year EIA classification, with no further raw-data investigation (his words are reconciliation_mu.OWNERSHIP_RULING_D119_WORDS); no claim is made that it equals EIA's year-by-year record (reconciliation_mu.PANEL_ENTITY_TYPE_STATEMENT). Outcome frames res_price_default_service and res_price. No assigned site is not proof of no facility. No step returns a reproduction verdict (D-107, D-109); u1_sentence returns the adopted U1 sentence chosen by whether our co-op and municipal coefficients are each above our investor-owned one, by a strict comparison of our point estimates, exactly equal coefficients giving \"not each above\" and no test entering the choice (adopted by Joe on 2026-11-19, D-111), and u1_indistinguishable decides nothing.",
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "outcomes_missing": [],
+  "results": {
+   "the_papers_specification_on_our_panel": {
+    "estimated": true,
+    "validation": "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)",
+    "label": "reconciliation row: the paper's specification on our panel, reported first whatever it shows",
+    "steps": [
+     {
+      "row": "U",
+      "step": "U0",
+      "change": "our smallest-polygon approximation of their assignment rule: the smallest territory polygon that strictly contains the site, over every polygon of the layer, the type not read (ours, D-109); the paper's priority for retail providers is not applied, the layer's TYPE field not establishing which polygons are retail",
+      "outcome_name": "res_price_default_service",
+      "years": [
+       2015,
+       2024
+      ],
+      "treatment_rule": "polygon_smallest_any_type|site_year_load",
+      "spec": {
+       "ownership_spec": "separate_subsamples",
+       "ss_correction": "clusters_and_parameters",
+       "min_years": [
+        3,
+        "utility",
+        "every_other_restriction"
+       ],
+       "jurisdictions": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+       ],
+       "short_form_exclusion": "unit_years_filed",
+       "weighting": "unweighted"
+      },
+      "notes": [
+       "375 unit-years with no price are left out",
+       "1024 unit-years left out as Short Form filers (unit_years_filed)",
+       "32 unit-years of utilitys with fewer than 3 years are left out (Ryu and Hiatt p. 6, Sec. 2.2; counted after every other restriction, ours, D-107)"
+      ],
+      "numerical_failures": [],
+      "specification": {
+       "settled_from_the_paper": "constants RYU_* (docs/gate1/bounded-read-row-u-2026-11-19.md)",
+       "ours_adopted_2026_11_19_d107": {
+        "ownership_estimates": {
+         "value": "separate_subsamples",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"separate β coefficients for the three largest ownership categories\" (p. 8); the form of the regressions is not stated"
+        },
+        "three_year_rule_counted": {
+         "value": "every_other_restriction",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"dropping utilities that appear in fewer than 3 years of the panel\" (p. 6); when the count is taken is not stated"
+        },
+        "jurisdictions": {
+         "value": "the 50 states and the District of Columbia",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"51 jurisdictions\" (p. 6), \"51 clusters\" (p. 23); not listed"
+        },
+        "capacity_dating": {
+         "value": "site_year_load (the inventory's estimated load by site and year)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "cumulative operating capacity of matched facilities in a year (p. 5; p. 23); which year a facility starts to count is not stated"
+        },
+        "assignment": {
+         "value": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+         "label": "ours, not the paper's: this study's labelled approximation, adopted by Joe on 2026-11-19 (D-109, in place of the retail-first form of D-107); the paper's retail priority is not applied",
+         "paper": "the polygon that \"strictly contains the facility's location, prioritizing retail providers over wholesale-only territories\" (p. 5)"
+        },
+        "outcome_columns": {
+         "value": "res_price_default_service (bundled revenue over bundled sales)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "revenue divided by sales at bundled-service utilities (p. 6); the columns are not named"
+        },
+        "weights": {
+         "value": "unweighted",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "none stated; the equation (p. 8) has none"
+        },
+        "standard_errors": {
+         "value": "clusters_and_parameters",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "clustered by state (p. 8; p. 23); the small-sample factor and software are not stated"
+        }
+       },
+       "short_form_exclusion": {
+        "as_supplied": "unit_years_filed",
+        "adopted_code": "unit_years_filed",
+        "adopted": "by Joe on 2026-11-20 (D-115)"
+       },
+       "exact_reproduction_unavailable": [
+        "the paper's small-sample factor and software are not stated, so exact reproduction of its standard errors is unavailable",
+        "the paper's capacity is a vendor's utility power capacity on a purchased list (S&P Global 451 Research, p. 5); ours is estimated load from permits and public sources",
+        "the vintage of the paper's territory layer is not given; ours is a later copy from a different endpoint",
+        "the paper gives retail providers priority over wholesale-only territories; this layer's TYPE field does not establish which polygons are retail, so that priority is not applied and exact reproduction of the paper's assignment is unavailable (Joe, 2026-11-19, D-109)",
+        "the paper's ownership split is printed with six controls (Table A3, p. 23) that are not built here",
+        "the paper tests no difference between ownership coefficients, only each against zero"
+       ]
+      },
+      "sites_depending_on_ambiguous_polygon_classes": [],
+      "pooled": {
+       "estimate": 0.008555508696056483,
+       "se": 0.003964651297624493,
+       "n": 16290,
+       "n_utilities": 1788,
+       "n_clusters": 51,
+       "n_unit_years_with_mw": 1258,
+       "failures": []
+      },
+      "by_ownership": {
+       "cooperative": {
+        "estimate": 0.008439997298173154,
+        "se": 0.0030010449971183514,
+        "n": 7368,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "municipal": {
+        "estimate": 0.008647917025479186,
+        "se": 0.013026157599759872,
+        "n": 6360,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "investor_owned": {
+        "estimate": -0.014108740079469766,
+        "se": 0.009024012931652788,
+        "n": 1847,
+        "n_clusters": 50,
+        "failures": []
+       }
+      },
+      "paper_printed": {
+       "pooled_no_controls": [
+        0.0095,
+        0.0026
+       ],
+       "pooled_with_controls": [
+        0.0094,
+        0.0026
+       ],
+       "cooperative_with_controls": [
+        0.0067,
+        0.0024
+       ],
+       "municipal_with_controls": [
+        0.008,
+        0.0044
+       ],
+       "investor_owned_with_controls": [
+        0.0006,
+        0.0043
+       ]
+      },
+      "paper_printed_sample_sizes": {
+       "pooled_observations": 16163,
+       "pooled_utilities": 1798,
+       "clusters": 51,
+       "cooperative_observations": 7203,
+       "municipal_observations": 6384,
+       "investor_owned_observations": 1858
+      },
+      "jurisdictions_in_sample": 51,
+      "paper_jurisdictions": 51,
+      "ownership_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our ownership estimates come from separate regressions with no controls; the paper's printed ownership split (Table A3a Panel B, p. 24; Table A4b, p. 25) carries six controls that are not built here (Table A3, p. 23). The ordering here therefore counts neither as reproducing the paper's controlled result nor as failing to (Joe, 2026-11-19, D-107). The three coefficients and their errors are shown beside the paper's.",
+       "verdict": null,
+       "ours_without_controls": {
+        "cooperative": {
+         "estimate": 0.008439997298173154,
+         "se": 0.0030010449971183514,
+         "n": 7368
+        },
+        "municipal": {
+         "estimate": 0.008647917025479186,
+         "se": 0.013026157599759872,
+         "n": 6360
+        },
+        "investor_owned": {
+         "estimate": -0.014108740079469766,
+         "se": 0.009024012931652788,
+         "n": 1847
+        }
+       },
+       "paper_with_six_controls": {
+        "cooperative": [
+         0.0067,
+         0.0024
+        ],
+        "municipal": [
+         0.008,
+         0.0044
+        ],
+        "investor_owned": [
+         0.0006,
+         0.0043
+        ]
+       },
+       "paper_sample_sizes": {
+        "cooperative": 7203,
+        "municipal": 6384,
+        "investor_owned": 1858
+       },
+       "co_op_and_municipal_each_above_investor_owned_in_our_estimates": true
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "short_form_status": "Short Form unit-years excluded by the flags supplied (unit_years_filed); the label below holds when the flags come from short_form_filers.adopted_row_u_flags. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109).",
+      "assignment_rule": {
+       "label": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+       "coincidence_with_row_c": "U0's assignment and C0 to C2's assignment are the same rule, the smallest containing polygon over every polygon of the layer with the type not read, applied to the same table. Their agreement site by site is one rule applied twice and is not independent validation of either."
+      },
+      "pooled_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). Our pooled estimate under our specification is shown with the paper's no-controls figure, 0.0095 (0.0026; Table A4a, p. 25), and the band 0.0043 to 0.0147 beside it as a comparison band. No verdict is given, whether the estimate falls inside the band or outside it. Our regressor is the inventory's estimated load, not the paper's vendor capacity, and U0's assignment is our smallest-polygon approximation, not the paper's retail-first assignment.",
+       "verdict": null,
+       "ours": {
+        "estimate": 0.008555508696056483,
+        "se": 0.003964651297624493
+       },
+       "paper_no_controls": [
+        0.0095,
+        0.0026
+       ],
+       "paper_band_beside": [
+        0.0043,
+        0.0147
+       ],
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment."
+      },
+      "computed": true
+     },
+     {
+      "row": "U",
+      "step": "U1",
+      "change": "the inventory's own assignment in place of the polygon",
+      "outcome_name": "res_price_default_service",
+      "years": [
+       2015,
+       2024
+      ],
+      "treatment_rule": "verified|site_year_load",
+      "spec": {
+       "ownership_spec": "separate_subsamples",
+       "ss_correction": "clusters_and_parameters",
+       "min_years": [
+        3,
+        "utility",
+        "every_other_restriction"
+       ],
+       "jurisdictions": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+       ],
+       "short_form_exclusion": "unit_years_filed",
+       "weighting": "unweighted"
+      },
+      "notes": [
+       "375 unit-years with no price are left out",
+       "1024 unit-years left out as Short Form filers (unit_years_filed)",
+       "32 unit-years of utilitys with fewer than 3 years are left out (Ryu and Hiatt p. 6, Sec. 2.2; counted after every other restriction, ours, D-107)"
+      ],
+      "numerical_failures": [],
+      "specification": {
+       "settled_from_the_paper": "constants RYU_* (docs/gate1/bounded-read-row-u-2026-11-19.md)",
+       "ours_adopted_2026_11_19_d107": {
+        "ownership_estimates": {
+         "value": "separate_subsamples",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"separate β coefficients for the three largest ownership categories\" (p. 8); the form of the regressions is not stated"
+        },
+        "three_year_rule_counted": {
+         "value": "every_other_restriction",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"dropping utilities that appear in fewer than 3 years of the panel\" (p. 6); when the count is taken is not stated"
+        },
+        "jurisdictions": {
+         "value": "the 50 states and the District of Columbia",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"51 jurisdictions\" (p. 6), \"51 clusters\" (p. 23); not listed"
+        },
+        "capacity_dating": {
+         "value": "site_year_load (the inventory's estimated load by site and year)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "cumulative operating capacity of matched facilities in a year (p. 5; p. 23); which year a facility starts to count is not stated"
+        },
+        "assignment": {
+         "value": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+         "label": "ours, not the paper's: this study's labelled approximation, adopted by Joe on 2026-11-19 (D-109, in place of the retail-first form of D-107); the paper's retail priority is not applied",
+         "paper": "the polygon that \"strictly contains the facility's location, prioritizing retail providers over wholesale-only territories\" (p. 5)"
+        },
+        "outcome_columns": {
+         "value": "res_price_default_service (bundled revenue over bundled sales)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "revenue divided by sales at bundled-service utilities (p. 6); the columns are not named"
+        },
+        "weights": {
+         "value": "unweighted",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "none stated; the equation (p. 8) has none"
+        },
+        "standard_errors": {
+         "value": "clusters_and_parameters",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "clustered by state (p. 8; p. 23); the small-sample factor and software are not stated"
+        }
+       },
+       "short_form_exclusion": {
+        "as_supplied": "unit_years_filed",
+        "adopted_code": "unit_years_filed",
+        "adopted": "by Joe on 2026-11-20 (D-115)"
+       },
+       "exact_reproduction_unavailable": [
+        "the paper's small-sample factor and software are not stated, so exact reproduction of its standard errors is unavailable",
+        "the paper's capacity is a vendor's utility power capacity on a purchased list (S&P Global 451 Research, p. 5); ours is estimated load from permits and public sources",
+        "the vintage of the paper's territory layer is not given; ours is a later copy from a different endpoint",
+        "the paper gives retail providers priority over wholesale-only territories; this layer's TYPE field does not establish which polygons are retail, so that priority is not applied and exact reproduction of the paper's assignment is unavailable (Joe, 2026-11-19, D-109)",
+        "the paper's ownership split is printed with six controls (Table A3, p. 23) that are not built here",
+        "the paper tests no difference between ownership coefficients, only each against zero"
+       ]
+      },
+      "sites_depending_on_ambiguous_polygon_classes": [],
+      "pooled": {
+       "estimate": 0.010824083140037966,
+       "se": 0.003484234678338727,
+       "n": 16290,
+       "n_utilities": 1788,
+       "n_clusters": 51,
+       "n_unit_years_with_mw": 1282,
+       "failures": []
+      },
+      "by_ownership": {
+       "cooperative": {
+        "estimate": 0.005254416968746706,
+        "se": 0.004046677204187212,
+        "n": 7368,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "municipal": {
+        "estimate": 0.0262371049008746,
+        "se": 0.018210380070211,
+        "n": 6360,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "investor_owned": {
+        "estimate": -0.011438232247446257,
+        "se": 0.006726746680479235,
+        "n": 1847,
+        "n_clusters": 50,
+        "failures": []
+       }
+      },
+      "paper_printed": {
+       "pooled_no_controls": [
+        0.0095,
+        0.0026
+       ],
+       "pooled_with_controls": [
+        0.0094,
+        0.0026
+       ],
+       "cooperative_with_controls": [
+        0.0067,
+        0.0024
+       ],
+       "municipal_with_controls": [
+        0.008,
+        0.0044
+       ],
+       "investor_owned_with_controls": [
+        0.0006,
+        0.0043
+       ]
+      },
+      "paper_printed_sample_sizes": {
+       "pooled_observations": 16163,
+       "pooled_utilities": 1798,
+       "clusters": 51,
+       "cooperative_observations": 7203,
+       "municipal_observations": 6384,
+       "investor_owned_observations": 1858
+      },
+      "jurisdictions_in_sample": 51,
+      "paper_jurisdictions": 51,
+      "ownership_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our ownership estimates come from separate regressions with no controls; the paper's printed ownership split (Table A3a Panel B, p. 24; Table A4b, p. 25) carries six controls that are not built here (Table A3, p. 23). The ordering here therefore counts neither as reproducing the paper's controlled result nor as failing to (Joe, 2026-11-19, D-107). The three coefficients and their errors are shown beside the paper's.",
+       "verdict": null,
+       "ours_without_controls": {
+        "cooperative": {
+         "estimate": 0.005254416968746706,
+         "se": 0.004046677204187212,
+         "n": 7368
+        },
+        "municipal": {
+         "estimate": 0.0262371049008746,
+         "se": 0.018210380070211,
+         "n": 6360
+        },
+        "investor_owned": {
+         "estimate": -0.011438232247446257,
+         "se": 0.006726746680479235,
+         "n": 1847
+        }
+       },
+       "paper_with_six_controls": {
+        "cooperative": [
+         0.0067,
+         0.0024
+        ],
+        "municipal": [
+         0.008,
+         0.0044
+        ],
+        "investor_owned": [
+         0.0006,
+         0.0043
+        ]
+       },
+       "paper_sample_sizes": {
+        "cooperative": 7203,
+        "municipal": 6384,
+        "investor_owned": 1858
+       },
+       "co_op_and_municipal_each_above_investor_owned_in_our_estimates": true
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "short_form_status": "Short Form unit-years excluded by the flags supplied (unit_years_filed); the label below holds when the flags come from short_form_filers.adopted_row_u_flags. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109).",
+      "u1_sentence": {
+       "sentence": "In our estimates without controls, the co-op and municipal coefficients are each above the investor-owned one when the inventory's own assignment replaces the polygon. The paper estimates its ownership split with six controls that we do not build, so this neither confirms nor contradicts its result.",
+       "why": "chosen by whether our co-op and municipal coefficients are each above our investor-owned one, in our estimates without controls: they are",
+       "wording_status": "Adopted by Joe on 2026-11-19 (D-109) as drafted (docs/gate1/rows-u-c-reproduction-assessment-2026-11-19.md, section 3). The plan's earlier clause \"or the three are indistinguishable\" went with the sentence it was in and is not used; no test of a difference between ownership coefficients enters the choice.",
+       "comparison": {
+        "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our ownership estimates come from separate regressions with no controls; the paper's printed ownership split (Table A3a Panel B, p. 24; Table A4b, p. 25) carries six controls that are not built here (Table A3, p. 23). The ordering here therefore counts neither as reproducing the paper's controlled result nor as failing to (Joe, 2026-11-19, D-107). The three coefficients and their errors are shown beside the paper's.",
+        "verdict": null,
+        "ours_without_controls": {
+         "cooperative": {
+          "estimate": 0.005254416968746706,
+          "se": 0.004046677204187212,
+          "n": 7368
+         },
+         "municipal": {
+          "estimate": 0.0262371049008746,
+          "se": 0.018210380070211,
+          "n": 6360
+         },
+         "investor_owned": {
+          "estimate": -0.011438232247446257,
+          "se": 0.006726746680479235,
+          "n": 1847
+         }
+        },
+        "paper_with_six_controls": {
+         "cooperative": [
+          0.0067,
+          0.0024
+         ],
+         "municipal": [
+          0.008,
+          0.0044
+         ],
+         "investor_owned": [
+          0.0006,
+          0.0043
+         ]
+        },
+        "paper_sample_sizes": {
+         "cooperative": 7203,
+         "municipal": 6384,
+         "investor_owned": 1858
+        },
+        "co_op_and_municipal_each_above_investor_owned_in_our_estimates": true
+       },
+       "indistinguishable_as_passed": null,
+       "indistinguishable_decides": "nothing: the adopted sentences do not use it"
+      },
+      "computed": true
+     },
+     {
+      "row": "U",
+      "step": "U2",
+      "change": "our delivery-inclusive price in place of bundled-only",
+      "outcome_name": "res_price",
+      "years": [
+       2015,
+       2024
+      ],
+      "treatment_rule": "verified|site_year_load",
+      "spec": {
+       "ownership_spec": "separate_subsamples",
+       "ss_correction": "clusters_and_parameters",
+       "min_years": [
+        3,
+        "utility",
+        "every_other_restriction"
+       ],
+       "jurisdictions": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+       ],
+       "short_form_exclusion": "unit_years_filed",
+       "weighting": "unweighted"
+      },
+      "notes": [
+       "375 unit-years with no price are left out",
+       "1024 unit-years left out as Short Form filers (unit_years_filed)",
+       "32 unit-years of utilitys with fewer than 3 years are left out (Ryu and Hiatt p. 6, Sec. 2.2; counted after every other restriction, ours, D-107)"
+      ],
+      "numerical_failures": [],
+      "specification": {
+       "settled_from_the_paper": "constants RYU_* (docs/gate1/bounded-read-row-u-2026-11-19.md)",
+       "ours_adopted_2026_11_19_d107": {
+        "ownership_estimates": {
+         "value": "separate_subsamples",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"separate β coefficients for the three largest ownership categories\" (p. 8); the form of the regressions is not stated"
+        },
+        "three_year_rule_counted": {
+         "value": "every_other_restriction",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"dropping utilities that appear in fewer than 3 years of the panel\" (p. 6); when the count is taken is not stated"
+        },
+        "jurisdictions": {
+         "value": "the 50 states and the District of Columbia",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"51 jurisdictions\" (p. 6), \"51 clusters\" (p. 23); not listed"
+        },
+        "capacity_dating": {
+         "value": "site_year_load (the inventory's estimated load by site and year)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "cumulative operating capacity of matched facilities in a year (p. 5; p. 23); which year a facility starts to count is not stated"
+        },
+        "assignment": {
+         "value": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+         "label": "ours, not the paper's: this study's labelled approximation, adopted by Joe on 2026-11-19 (D-109, in place of the retail-first form of D-107); the paper's retail priority is not applied",
+         "paper": "the polygon that \"strictly contains the facility's location, prioritizing retail providers over wholesale-only territories\" (p. 5)"
+        },
+        "outcome_columns": {
+         "value": "res_price_default_service (bundled revenue over bundled sales)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "revenue divided by sales at bundled-service utilities (p. 6); the columns are not named"
+        },
+        "weights": {
+         "value": "unweighted",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "none stated; the equation (p. 8) has none"
+        },
+        "standard_errors": {
+         "value": "clusters_and_parameters",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "clustered by state (p. 8; p. 23); the small-sample factor and software are not stated"
+        }
+       },
+       "short_form_exclusion": {
+        "as_supplied": "unit_years_filed",
+        "adopted_code": "unit_years_filed",
+        "adopted": "by Joe on 2026-11-20 (D-115)"
+       },
+       "exact_reproduction_unavailable": [
+        "the paper's small-sample factor and software are not stated, so exact reproduction of its standard errors is unavailable",
+        "the paper's capacity is a vendor's utility power capacity on a purchased list (S&P Global 451 Research, p. 5); ours is estimated load from permits and public sources",
+        "the vintage of the paper's territory layer is not given; ours is a later copy from a different endpoint",
+        "the paper gives retail providers priority over wholesale-only territories; this layer's TYPE field does not establish which polygons are retail, so that priority is not applied and exact reproduction of the paper's assignment is unavailable (Joe, 2026-11-19, D-109)",
+        "the paper's ownership split is printed with six controls (Table A3, p. 23) that are not built here",
+        "the paper tests no difference between ownership coefficients, only each against zero"
+       ]
+      },
+      "sites_depending_on_ambiguous_polygon_classes": [],
+      "pooled": {
+       "estimate": 0.009880857190385634,
+       "se": 0.003286110599084973,
+       "n": 16290,
+       "n_utilities": 1788,
+       "n_clusters": 51,
+       "n_unit_years_with_mw": 1282,
+       "failures": []
+      },
+      "by_ownership": {
+       "cooperative": {
+        "estimate": 0.005254785682628067,
+        "se": 0.0040465984538886135,
+        "n": 7368,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "municipal": {
+        "estimate": 0.026237163142947502,
+        "se": 0.018210385309638533,
+        "n": 6360,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "investor_owned": {
+        "estimate": -0.012501567075199095,
+        "se": 0.006147518466677063,
+        "n": 1847,
+        "n_clusters": 50,
+        "failures": []
+       }
+      },
+      "paper_printed": {
+       "pooled_no_controls": [
+        0.0095,
+        0.0026
+       ],
+       "pooled_with_controls": [
+        0.0094,
+        0.0026
+       ],
+       "cooperative_with_controls": [
+        0.0067,
+        0.0024
+       ],
+       "municipal_with_controls": [
+        0.008,
+        0.0044
+       ],
+       "investor_owned_with_controls": [
+        0.0006,
+        0.0043
+       ]
+      },
+      "paper_printed_sample_sizes": {
+       "pooled_observations": 16163,
+       "pooled_utilities": 1798,
+       "clusters": 51,
+       "cooperative_observations": 7203,
+       "municipal_observations": 6384,
+       "investor_owned_observations": 1858
+      },
+      "jurisdictions_in_sample": 51,
+      "paper_jurisdictions": 51,
+      "ownership_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our ownership estimates come from separate regressions with no controls; the paper's printed ownership split (Table A3a Panel B, p. 24; Table A4b, p. 25) carries six controls that are not built here (Table A3, p. 23). The ordering here therefore counts neither as reproducing the paper's controlled result nor as failing to (Joe, 2026-11-19, D-107). The three coefficients and their errors are shown beside the paper's.",
+       "verdict": null,
+       "ours_without_controls": {
+        "cooperative": {
+         "estimate": 0.005254785682628067,
+         "se": 0.0040465984538886135,
+         "n": 7368
+        },
+        "municipal": {
+         "estimate": 0.026237163142947502,
+         "se": 0.018210385309638533,
+         "n": 6360
+        },
+        "investor_owned": {
+         "estimate": -0.012501567075199095,
+         "se": 0.006147518466677063,
+         "n": 1847
+        }
+       },
+       "paper_with_six_controls": {
+        "cooperative": [
+         0.0067,
+         0.0024
+        ],
+        "municipal": [
+         0.008,
+         0.0044
+        ],
+        "investor_owned": [
+         0.0006,
+         0.0043
+        ]
+       },
+       "paper_sample_sizes": {
+        "cooperative": 7203,
+        "municipal": 6384,
+        "investor_owned": 1858
+       },
+       "co_op_and_municipal_each_above_investor_owned_in_our_estimates": true
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "short_form_status": "Short Form unit-years excluded by the flags supplied (unit_years_filed); the label below holds when the flags come from short_form_filers.adopted_row_u_flags. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109).",
+      "computed": true
+     },
+     {
+      "row": "U",
+      "step": "U3",
+      "change": "add the full annual survey for 2025",
+      "outcome_name": "res_price",
+      "years": [
+       2015,
+       2025
+      ],
+      "treatment_rule": "verified|site_year_load",
+      "spec": {
+       "ownership_spec": "separate_subsamples",
+       "ss_correction": "clusters_and_parameters",
+       "min_years": [
+        3,
+        "utility",
+        "every_other_restriction"
+       ],
+       "jurisdictions": [
+        "AK",
+        "AL",
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "CT",
+        "DC",
+        "DE",
+        "FL",
+        "GA",
+        "HI",
+        "IA",
+        "ID",
+        "IL",
+        "IN",
+        "KS",
+        "KY",
+        "LA",
+        "MA",
+        "MD",
+        "ME",
+        "MI",
+        "MN",
+        "MO",
+        "MS",
+        "MT",
+        "NC",
+        "ND",
+        "NE",
+        "NH",
+        "NJ",
+        "NM",
+        "NV",
+        "NY",
+        "OH",
+        "OK",
+        "OR",
+        "PA",
+        "RI",
+        "SC",
+        "SD",
+        "TN",
+        "TX",
+        "UT",
+        "VA",
+        "VT",
+        "WA",
+        "WI",
+        "WV",
+        "WY"
+       ],
+       "short_form_exclusion": "unit_years_filed",
+       "weighting": "unweighted"
+      },
+      "notes": [
+       "409 unit-years with no price are left out",
+       "1024 unit-years left out as Short Form filers (unit_years_filed)",
+       "31 unit-years of utilitys with fewer than 3 years are left out (Ryu and Hiatt p. 6, Sec. 2.2; counted after every other restriction, ours, D-107)"
+      ],
+      "numerical_failures": [],
+      "specification": {
+       "settled_from_the_paper": "constants RYU_* (docs/gate1/bounded-read-row-u-2026-11-19.md)",
+       "ours_adopted_2026_11_19_d107": {
+        "ownership_estimates": {
+         "value": "separate_subsamples",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"separate β coefficients for the three largest ownership categories\" (p. 8); the form of the regressions is not stated"
+        },
+        "three_year_rule_counted": {
+         "value": "every_other_restriction",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"dropping utilities that appear in fewer than 3 years of the panel\" (p. 6); when the count is taken is not stated"
+        },
+        "jurisdictions": {
+         "value": "the 50 states and the District of Columbia",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "\"51 jurisdictions\" (p. 6), \"51 clusters\" (p. 23); not listed"
+        },
+        "capacity_dating": {
+         "value": "site_year_load (the inventory's estimated load by site and year)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "cumulative operating capacity of matched facilities in a year (p. 5; p. 23); which year a facility starts to count is not stated"
+        },
+        "assignment": {
+         "value": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+         "label": "ours, not the paper's: this study's labelled approximation, adopted by Joe on 2026-11-19 (D-109, in place of the retail-first form of D-107); the paper's retail priority is not applied",
+         "paper": "the polygon that \"strictly contains the facility's location, prioritizing retail providers over wholesale-only territories\" (p. 5)"
+        },
+        "outcome_columns": {
+         "value": "res_price_default_service (bundled revenue over bundled sales)",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "revenue divided by sales at bundled-service utilities (p. 6); the columns are not named"
+        },
+        "weights": {
+         "value": "unweighted",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "none stated; the equation (p. 8) has none"
+        },
+        "standard_errors": {
+         "value": "clusters_and_parameters",
+         "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+         "paper": "clustered by state (p. 8; p. 23); the small-sample factor and software are not stated"
+        }
+       },
+       "short_form_exclusion": {
+        "as_supplied": "unit_years_filed",
+        "adopted_code": "unit_years_filed",
+        "adopted": "by Joe on 2026-11-20 (D-115)"
+       },
+       "exact_reproduction_unavailable": [
+        "the paper's small-sample factor and software are not stated, so exact reproduction of its standard errors is unavailable",
+        "the paper's capacity is a vendor's utility power capacity on a purchased list (S&P Global 451 Research, p. 5); ours is estimated load from permits and public sources",
+        "the vintage of the paper's territory layer is not given; ours is a later copy from a different endpoint",
+        "the paper gives retail providers priority over wholesale-only territories; this layer's TYPE field does not establish which polygons are retail, so that priority is not applied and exact reproduction of the paper's assignment is unavailable (Joe, 2026-11-19, D-109)",
+        "the paper's ownership split is printed with six controls (Table A3, p. 23) that are not built here",
+        "the paper tests no difference between ownership coefficients, only each against zero"
+       ]
+      },
+      "sites_depending_on_ambiguous_polygon_classes": [],
+      "pooled": {
+       "estimate": 0.011468986938072759,
+       "se": 0.003072092205678134,
+       "n": 17619,
+       "n_utilities": 1789,
+       "n_clusters": 51,
+       "n_unit_years_with_mw": 1452,
+       "failures": []
+      },
+      "by_ownership": {
+       "cooperative": {
+        "estimate": 0.0026392924914406674,
+        "se": 0.004413327384198637,
+        "n": 7993,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "municipal": {
+        "estimate": 0.023107039604007763,
+        "se": 0.012713291635403768,
+        "n": 6818,
+        "n_clusters": 47,
+        "failures": []
+       },
+       "investor_owned": {
+        "estimate": -0.0071656414764798,
+        "se": 0.005635313167913159,
+        "n": 2031,
+        "n_clusters": 50,
+        "failures": []
+       }
+      },
+      "paper_printed": {
+       "pooled_no_controls": [
+        0.0095,
+        0.0026
+       ],
+       "pooled_with_controls": [
+        0.0094,
+        0.0026
+       ],
+       "cooperative_with_controls": [
+        0.0067,
+        0.0024
+       ],
+       "municipal_with_controls": [
+        0.008,
+        0.0044
+       ],
+       "investor_owned_with_controls": [
+        0.0006,
+        0.0043
+       ]
+      },
+      "paper_printed_sample_sizes": {
+       "pooled_observations": 16163,
+       "pooled_utilities": 1798,
+       "clusters": 51,
+       "cooperative_observations": 7203,
+       "municipal_observations": 6384,
+       "investor_owned_observations": 1858
+      },
+      "jurisdictions_in_sample": 51,
+      "paper_jurisdictions": 51,
+      "ownership_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our ownership estimates come from separate regressions with no controls; the paper's printed ownership split (Table A3a Panel B, p. 24; Table A4b, p. 25) carries six controls that are not built here (Table A3, p. 23). The ordering here therefore counts neither as reproducing the paper's controlled result nor as failing to (Joe, 2026-11-19, D-107). The three coefficients and their errors are shown beside the paper's.",
+       "verdict": null,
+       "ours_without_controls": {
+        "cooperative": {
+         "estimate": 0.0026392924914406674,
+         "se": 0.004413327384198637,
+         "n": 7993
+        },
+        "municipal": {
+         "estimate": 0.023107039604007763,
+         "se": 0.012713291635403768,
+         "n": 6818
+        },
+        "investor_owned": {
+         "estimate": -0.0071656414764798,
+         "se": 0.005635313167913159,
+         "n": 2031
+        }
+       },
+       "paper_with_six_controls": {
+        "cooperative": [
+         0.0067,
+         0.0024
+        ],
+        "municipal": [
+         0.008,
+         0.0044
+        ],
+        "investor_owned": [
+         0.0006,
+         0.0043
+        ]
+       },
+       "paper_sample_sizes": {
+        "cooperative": 7203,
+        "municipal": 6384,
+        "investor_owned": 1858
+       },
+       "co_op_and_municipal_each_above_investor_owned_in_our_estimates": true
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "short_form_status": "Short Form unit-years excluded by the flags supplied (unit_years_filed); the label below holds when the flags come from short_form_filers.adopted_row_u_flags. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109).",
+      "computed": true
+     }
+    ],
+    "steps_not_computed": [],
+    "inputs_checked": {
+     "inputs_are": "research_data_after_the_freeze",
+     "short_form_rule_checked": true,
+     "short_form_exclusion": "unit_years_filed",
+     "specification": "reconciliation_mu.ryu_spec(reconciliation_mu.U_SHORT_FORM_ADOPTED_CODE)"
+    }
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

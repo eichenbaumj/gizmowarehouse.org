@@ -1,0 +1,373 @@
+{
+ "sequence": 30,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "callaway_santanna",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:13:54+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "callaway_santanna",
+  "plan_section": "Other runs, listed in advance: Callaway and Sant'Anna's estimator with two years of anticipation",
+  "sets": [
+   "headline_set at 2%"
+  ],
+  "builder": "callaway_santanna.sample and frame (CSSampleInputs and RunInputs.side)",
+  "estimator": "callaway_santanna.run (diff-diff 4.0.0, pinned; installed in the gizmo folder's .venv only)",
+  "labels": [
+   "a second estimator of the same quantity",
+   "secondary and uncalibrated: a t-based range, the headline plus or minus the t critical value on the number of states less one times the bootstrap standard error of the headline (the module's construction, accepted by Joe on 2026-11-19, D-105); not calibrated by the inference comparison",
+   "This run's comparison sample differs from the headline's. On the headline set at 2%, 680 of the 1,670 never-treated units are in no cohort's host region at that cohort's reference year (g-3), and 605 of them are in none of the four host regions (West, ERCOT, SPP, Southeast) at any of the five reference years (counted 2026-11-19 from this module's sample() on quantity files; docs/gate1/callaway-santanna-regions-without-host-2026-11-19.md). The headline's matched comparison utilities come from each host's own region in its reference year. These units stay in this run's sample by Joe's ruling of 2026-11-19 (D-111) and inform the gas-share slope, region entering as a covariate. A difference between this run's estimate and the headline estimate cannot be attributed solely to the estimator.",
+   "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": "RunInputs.cs_sample (CSSampleInputs: host and comparison set-asides, the price hold, the D-34 history). The run needs diff-diff 4.0.0, installed only in the gizmo folder's .venv; under another interpreter it is a failure in words.",
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "package": "diff-diff==4.0.0",
+    "call": {
+     "control_group": "never_treated",
+     "anticipation": 2,
+     "base_period": "universal",
+     "estimation_method": "reg",
+     "cluster": "state",
+     "n_bootstrap": 999,
+     "bootstrap_weights": "rademacher",
+     "seed": 20261204,
+     "cband": false,
+     "allow_unbalanced_panel": false
+    },
+    "covariates": [
+     "region_ERCOT",
+     "region_ISO_NE",
+     "region_MISO",
+     "region_NYISO",
+     "region_PJM",
+     "region_SPP",
+     "region_Southeast",
+     "region_Upper_Midwest__no_market",
+     "region_West",
+     "gas_share"
+    ],
+    "headline": -0.03595698190109425,
+    "se_state_clustered": 0.027892196248493404,
+    "event_years": {
+     "-6": -0.003239301942306356,
+     "-5": -0.00450386342968132,
+     "-4": 0.0016934619669997548,
+     "-3": 0.0,
+     "-2": 0.009227275293167027,
+     "-1": -0.02310053901518176,
+     "0": -0.02891619099900405,
+     "1": -0.02135766344895342,
+     "2": -0.022237672493903172,
+     "3": -0.04967629130828532
+    },
+    "se_unit_level": 0.029023343404713815,
+    "headline_unit_level_call": -0.035956981901094046,
+    "headlines_agree": true,
+    "numerical_failure": "2 covariate warning(s) from the package",
+    "numerical_failure_unit_level": "61 covariate warning(s) from the package",
+    "clusters": 48,
+    "package_clusters_state_call": 48,
+    "bootstrap_state_call": {
+     "n_bootstrap": 999,
+     "weight_type": "rademacher"
+    },
+    "bootstrap_weight_backend": "rust",
+    "covariate_warnings": [
+     "Rank-deficient design matrix: dropping 1 of 11 columns (column 8). Coefficients for these columns are set to NA. This may indicate multicollinearity in your model specification.",
+     "Rank-deficient matrix encountered 27 time(s) in analytical SE paths (propensity-score Hessian or outcome-regression bread); dropped redundant direction(s) via a rank-guarded inverse. Max condition number of affected matrix: 1.45e+21. Standard errors use the identified covariate subset; consider dropping collinear covariates or using n_bootstrap > 0."
+    ],
+    "covariate_warnings_unit_level": [
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2005))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2006))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2007))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2008))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2009))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2010))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2011))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2012))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2013))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2014))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2015))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2017))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2018))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2019))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2020))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2021))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2022))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2023))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2024))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2025))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2005))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2006))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2007))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2008))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2009))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2010))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2011))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2012))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2013))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2014))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2015))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2016))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2018))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2019))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2020))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2021))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2022))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2023))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2024))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2025))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2005))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2006))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2007))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2008))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2009))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2010))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2011))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2012))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2013))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2014))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2015))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2016))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2017))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2019))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2020))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2021))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2022))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2023))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2024))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2025))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient matrix encountered 27 time(s) in analytical SE paths (propensity-score Hessian or outcome-regression bread); dropped redundant direction(s) via a rank-guarded inverse. Max condition number of affected matrix: 1.45e+21. Standard errors use the identified covariate subset; consider dropping collinear covariates or using n_bootstrap > 0."
+    ],
+    "package_warnings": [
+     "1 effect(s) had non-finite or zero bootstrap SE. Returning NaN for SE/CI/p-value.",
+     "5 effect(s) had non-finite or zero bootstrap SE. Returning NaN for SE/CI/p-value.",
+     "55 (group, time) cell(s) could not be estimated: 55 due to insufficient data or non-estimable cells.",
+     "Rank-deficient design matrix: dropping 1 of 11 columns (column 8). Coefficients for these columns are set to NA. This may indicate multicollinearity in your model specification.",
+     "Rank-deficient matrix encountered 27 time(s) in analytical SE paths (propensity-score Hessian or outcome-regression bread); dropped redundant direction(s) via a rank-guarded inverse. Max condition number of affected matrix: 1.45e+21. Standard errors use the identified covariate subset; consider dropping collinear covariates or using n_bootstrap > 0.",
+     "Unbalanced panel detected (some units are unobserved in some periods). Each ATT(g,t) is estimated by within-cell panel differencing on the units observed at BOTH the base period and t — a valid but different estimand than R's repeated-cross-section handling. Pass allow_unbalanced_panel=True to match R `did::att_gt(allow_unbalanced_panel=TRUE)` (the DRDID reg_did_rc levels estimator on the pooled observations)."
+    ],
+    "package_warnings_unit_level": [
+     "1 effect(s) had non-finite or zero bootstrap SE. Returning NaN for SE/CI/p-value.",
+     "5 effect(s) had non-finite or zero bootstrap SE. Returning NaN for SE/CI/p-value.",
+     "55 (group, time) cell(s) could not be estimated: 55 due to zero treated or control observations.",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2005))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2006))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2007))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2008))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2009))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2010))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2011))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2012))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2013))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2014))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2015))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2017))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2018))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2019))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2020))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2021))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2022))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2023))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2024))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2019), 2016, np.int64(2025))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2005))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2006))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2007))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2008))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2009))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2010))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2011))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2012))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2013))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2014))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2015))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2016))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2018))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2019))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2020))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2021))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2022))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2023))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2024))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2020), 2017, np.int64(2025))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2005))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2006))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2007))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2008))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2009))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2010))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2011))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2012))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2013))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2014))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2015))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2016))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2017))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2019))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2020))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2021))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2022))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2023))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2024))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient covariate design (control_key=(np.int64(2021), 2018, np.int64(2025))): dropped columns column 8. Rank 10 < 11. Using a rank-reduced least-squares solution (dropped columns excluded from the prediction).",
+     "Rank-deficient matrix encountered 27 time(s) in analytical SE paths (propensity-score Hessian or outcome-regression bread); dropped redundant direction(s) via a rank-guarded inverse. Max condition number of affected matrix: 1.45e+21. Standard errors use the identified covariate subset; consider dropping collinear covariates or using n_bootstrap > 0.",
+     "Unbalanced panel detected (some units are unobserved in some periods). Each ATT(g,t) is estimated by within-cell panel differencing on the units observed at BOTH the base period and t — a valid but different estimand than R's repeated-cross-section handling. Pass allow_unbalanced_panel=True to match R `did::att_gt(allow_unbalanced_panel=TRUE)` (the DRDID reg_did_rc levels estimator on the pooled observations)."
+    ],
+    "headline_label": "not the specified estimator: the package did not use every covariate in every cell",
+    "range_90": null,
+    "range_label": "no range: 2 covariate warning(s) from the package",
+    "estimated": true,
+    "validation": "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)",
+    "label": "secondary and uncalibrated: a t-based range, the headline plus or minus the t critical value on the number of states less one times the bootstrap standard error of the headline (the module's construction, accepted by Joe on 2026-11-19, D-105); not calibrated by the inference comparison",
+    "sample": {
+     "hosts": 7,
+     "never_treated": 1670,
+     "steps": [
+      {
+       "step": "load",
+       "removed": 143,
+       "remaining": 3088
+      },
+      {
+       "step": "set_aside",
+       "removed": 68,
+       "remaining": 3020
+      },
+      {
+       "step": "uncertainty_load_unknown",
+       "removed": 0,
+       "remaining": 3020
+      },
+      {
+       "step": "customer_floor",
+       "removed": 1277,
+       "remaining": 1743
+      },
+      {
+       "step": "price_hold",
+       "removed": 1,
+       "remaining": 1742
+      },
+      {
+       "step": "main_design_window_inputs",
+       "removed": 20,
+       "remaining": 1722
+      },
+      {
+       "step": "own_utility",
+       "removed": 4,
+       "remaining": 1718
+      },
+      {
+       "step": "ownership_any_included_host",
+       "removed": 48,
+       "remaining": 1670
+      }
+     ],
+     "hosts_dropped": []
+    },
+    "frame_report": {
+     "rows": 28598,
+     "units": 1661,
+     "hosts": 7,
+     "unit_years_not_usable_and_without_a_row": 6542,
+     "outcome_values_supplied_for_unit_years_without_a_row": 7323,
+     "region_left_out": "California",
+     "covariates": [
+      "region_ERCOT",
+      "region_ISO_NE",
+      "region_MISO",
+      "region_NYISO",
+      "region_PJM",
+      "region_SPP",
+      "region_Southeast",
+      "region_Upper_Midwest__no_market",
+      "region_West",
+      "gas_share"
+     ],
+     "units_whose_region_changes_inside_the_frame": 223,
+     "observation_rule": "a row exists only for a usable unit-year (res_price_usable); the package's allow_unbalanced_panel=False then uses units with rows at g-3 and t"
+    },
+    "numerical_failure_in_words": "2 covariate warning(s) from the package"
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

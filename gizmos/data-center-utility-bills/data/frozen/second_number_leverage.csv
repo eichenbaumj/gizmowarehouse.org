@@ -1,0 +1,1186 @@
+utility_id_eia,state,name,cell,change_in_load_share_capped_at_25_points,leverage_capped_at_25_points,change_in_load_share_capped_at_50_points,leverage_capped_at_50_points,change_in_load_share_uncapped,leverage_uncapped
+55,MS,City of Aberdeen - (MS),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+84,VA,A & N Electric Coop,PJM|PJM|1,1.1026,2e-06,1.1026,4e-05,1.1026,4.6e-05
+108,WI,Adams-Columbia Electric Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+155,MN,Agralite Electric Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+162,SC,Aiken Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+195,AL,Alabama Power Co,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+207,CA,Alameda Municipal Power,California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+213,AK,Alaska Electric Light & Power Co.,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+219,AK,Alaska Power and Telephone Co,Alaska and Hawaii|Alaska and Hawaii|0,0.0,0.0,0.0,0.0,0.0,0.0
+221,AK,"Alaska Village Elec Coop, Inc",Alaska and Hawaii|Alaska and Hawaii|0,0.0,0.0,0.0,0.0,0.0,0.0
+230,GA,Albany Utility Board,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+232,NC,City of Albemarle - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+240,NC,Albemarle Electric Member Corp,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+241,AL,Albertville Municipal Utilities Board (AL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+276,MS,Alcorn County Elec Power Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+295,MN,City of Alexandria - (MN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+296,OK,"Alfalfa Electric Coop, Inc",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+298,LA,City of Alexandria - (LA),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+305,MI,Alger-Delta Coop Electric Assn,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+392,MI,Alpena Power Co,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+407,GA,Altamaha Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+416,OK,City of Altus - (OK),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+554,IA,City of Ames - (IA),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+562,GA,Amicalola Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+571,MS,City of Amory,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+577,TN,City of Alcoa Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+590,CA,City of Anaheim - (CA),California|California|1,0.1221,2e-06,0.1221,4.8e-05,0.1221,7.2e-05
+604,AL,City of Andalusia,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+636,IN,City of Anderson - (IN),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+689,MN,Connexus Energy,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+691,MN,City of Anoka,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+719,NC,Town of Apex- (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+727,TN,Appalachian Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+733,VA,Appalachian Power Co,PJM|PJM|2,0.034,0.000767,0.034,0.000533,0.034,0.000149
+733,WV,Appalachian Power Co,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+750,AL,Arab Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+803,AZ,Arizona Public Service Co,West|West|2,14.849,0.007773,14.849,0.002481,14.849,0.000146
+814,AR,Entergy Arkansas LLC,Southeast|MISO|2,0.0,0.000342,0.0,0.000109,0.0,6e-06
+817,AR,Arkansas Valley Elec Coop Corp,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+817,OK,Arkansas Valley Elec Coop Corp,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+944,AL,City of Athens - (AL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+947,TN,Athens Utility Board,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+963,NJ,Atlantic City Electric Co,PJM|PJM|2,0.0933,0.000738,0.0933,0.00052,0.0933,0.000147
+994,IN,City of Auburn - (IN),PJM|PJM|0,3.8051,0.000747,3.8051,0.000239,3.8051,1.4e-05
+1009,MN,City of Austin - (MN),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1015,TX,Austin Energy,ERCOT|ERCOT|2,5.3761,0.000418,5.3761,0.002573,5.3761,0.000646
+1050,CA,City of Azusa,California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+1149,AL,Baldwin County El Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1167,MD,Baltimore Gas & Electric Co,PJM|PJM|2,0.7232,0.000462,0.7232,0.000384,0.7232,0.000129
+1175,TX,"Bandera Electric Coop, Inc",ERCOT|ERCOT|1,16.6667,0.012557,33.3333,0.016525,90.377,0.006098
+1179,ME,Versant Power,ISO-NE|ISO-NE|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+1251,WI,Barron Electric Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1273,TX,"Bartlett Electric Coop, Inc",ERCOT|ERCOT|0,16.6667,0.018852,28.8957,0.018138,36.6871,0.001724
+1283,IN,Bartholomew County Rural E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1300,FL,City of Bartow - (FL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+1325,IL,City of Batavia - (IL),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+1366,MI,City of Bay City - (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1458,LA,"Beauregard Electric Coop, Inc",Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1529,MN,"Beltrami Electric Coop, Inc",MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1578,TN,Benton County,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+1579,WA,PUD No 1 of Benton County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+1581,AR,City of Benton - (AR),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1586,AR,City of Bentonville - (AR),SPP|SPP|1,3.91,0.001115,3.91,0.000357,3.91,2.1e-05
+1591,TX,"Big Country Electric Coop, Inc",ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+1613,SC,Berkeley Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,21.3245,0.000677
+1625,WA,Benton Rural Electric Assn,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+1640,AL,City of Bessemer Utilities,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+1708,KY,Big Sandy Rural Elec Coop Corp,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+1723,WA,"Big Bend Electric Coop, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+1763,SC,"Black River Electric Coop, Inc - (SC)",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1769,SD,"Black Hills Electric Coop, Inc","Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+1775,MO,Black River Electric Coop - (MO),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1776,WI,City of Black River Falls,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+1780,AL,Black Warrior Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1884,MN,BENCO Electric Cooperative,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+1886,KY,Blue Grass Energy Coop Corp,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+1889,NC,Blue Ridge Elec Member Corp - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1890,SC,Blue Ridge Electric Coop Inc - (SC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1891,GA,Blue Ridge Mountain EMC - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1891,NC,Blue Ridge Mountain EMC - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+1892,TX,"Bluebonnet Electric Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+1896,IN,City of Bluffton - (IN),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+1936,TN,Bolivar Energy Authority,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+2001,MO,Boone Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2008,NV,City of Boulder City - (NV),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+2010,UT,City of Bountiful - (UT),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+2049,TX,"Bowie-Cass Electric Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+2054,OH,City of Bowling Green - (OH),MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+2056,KY,City of Bowling Green - (KY),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2089,CT,Bozrah Light & Power Company,ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+2144,MA,Town of Braintree - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+2194,TX,City of Brenham - (TX),ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+2212,SC,"Broad River Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2247,TN,City of Bristol - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2248,VA,Bristol Virginia Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2285,SD,City of Brookings - (SD),"Upper Midwest, no market|West|0",0.0,0.0,0.0,0.0,0.0,0.0
+2409,TX,Brownsville Public Utilities Board,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+2411,TN,City of Brownsville,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+2442,TX,City of Bryan - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+2487,GA,City of Buford,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+2502,OH,"Buckeye Rural Elec Coop, Inc",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+2507,CA,City of Burbank Water and Power - (CA),California|California|1,0.2999,0.0,0.2999,3.6e-05,0.2999,6.9e-05
+2548,VT,City of Burlington Electric - (VT),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+2643,NE,Butler Public Power District - (NE),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+2651,OH,Butler Rural Electric Coop Inc - (OH),MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+2652,IA,Butler County Rural Elec Coop - (IA),"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+2678,AR,C & L Electric Coop Corp,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+2812,GA,City of Calhoun - (GA),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+2849,MS,Central Electric Power Assn - (MS),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2903,GA,Canoochee Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2911,OK,"Canadian Valley Elec Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+2960,TN,"Caney Fork Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+2985,ND,"Capital Electric Coop, Inc","Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+3046,NC,Duke Energy Progress - (NC),Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+3046,SC,Duke Energy Progress - (NC),Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+3075,TN,Carroll County - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3081,GA,Carroll Electric Member Corp - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3093,AR,Carroll Electric Coop Corp - (AR),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+3093,MO,Carroll Electric Coop Corp - (AR),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+3107,NC,Carteret-Craven El Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3108,GA,City of Cartersville - (GA),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+3113,MO,City of Carthage - (MO),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3203,IA,Cedar Falls Utilities,"Upper Midwest, no market|MISO|1",0.0,0.000916,0.0,0.000883,0.0,5.2e-05
+3205,NE,Cedar-Knox Public Power Dist,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3208,WI,Cedarburg Light & Water Comm,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+3216,OH,City of Celina - (OH),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+3222,AL,Central Alabama Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3226,OK,"Central Rural Electric Cooperative, Inc",SPP|Southeast|1,0.0,1e-06,0.0,0.0,0.0,7.8e-05
+3236,SD,"Central Electric Coop, Inc - (SD)","Upper Midwest, no market|West|0",0.0,0.0,0.0,0.0,0.0,0.0
+3240,OR,Central Electric Coop Inc - (OR),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+3245,FL,"Central Florida Elec Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3248,GA,Central Georgia El Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3249,NY,Central Hudson Gas & Elec Corp,NYISO|NYISO|2,0.0,0.000988,0.0,0.000316,0.0,1.9e-05
+3250,NC,Central Electric Membership Corp. - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3264,OR,Central Lincoln People's Ut Dt,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+3265,LA,Cleco Power LLC,Southeast|MISO|2,0.0,0.000342,0.0,0.000109,0.0,6e-06
+3266,ME,Central Maine Power Co,ISO-NE|ISO-NE|2,0.1947,1e-06,0.1947,0.0,0.1947,0.0
+3268,MO,Central Missouri Elec Coop Inc,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+3273,NM,"Central New Mexico El Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+3282,TX,"Central Texas Elec Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+3287,NM,"Central Valley Elec Coop, Inc",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3291,VA,Central Virginia Electric Coop,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+3295,WA,City of Centralia - (WA),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+3329,PA,Borough of Chambersburg - (PA),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+3355,KS,City of Chanute (KS),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3400,MN,City of Chaska - (MN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+3408,GA,City of Chattanooga - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+3408,TN,City of Chattanooga - (TN),Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+3413,WA,PUD No 1 of Chelan County - (WA),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+3426,AL,Cherokee Electric Coop - (AL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3436,MI,Cherryland Electric Coop Inc,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+3461,WY,Cheyenne Light Fuel & Power,West|West|1,25.0,0.044737,50.0,0.058154,139.5044,0.025421
+3470,TX,Cherokee County Elec Coop Assn - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+3477,MA,City of Chicopee - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+3478,OK,Cimarron Electric Coop,SPP|SPP|1,1.2095,8.3e-05,1.2095,2.7e-05,1.2095,2e-06
+3502,FL,"Choctawhatche Elec Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3503,MD,"Choptank Electric Cooperative, Inc",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+3522,AK,Chugach Electric Assn Inc,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+3527,OK,Choctaw Electric Coop Inc,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+3542,OH,Duke Energy Ohio Inc,MISO|PJM|2,0.2497,3.8e-05,0.2497,1.2e-05,0.2497,1e-06
+3597,PA,Citizens Electric Co - (PA),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+3600,MO,Citizens Electric Corporation - (MO),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+3641,LA,"Claiborne Electric Coop, Inc",Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+3644,WA,PUD No 1 of Clallam County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+3647,OK,City of Claremore,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3660,WA,PUD No 1 of Clark County - (WA),West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+3687,KY,Clark Energy Coop Inc - (KY),Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+3704,TN,City of Clarksville - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3705,AR,Clarksville Connected Utilities,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3712,AR,Clay County Electric Coop Corp - (AR),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+3755,OH,Cleveland Electric Illum Co,MISO|PJM|2,0.0,7e-05,0.0,2.3e-05,0.0,1e-06
+3757,FL,"Clay Electric Cooperative, Inc - (FL)",Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+3758,TN,City of Cleveland - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3762,OH,City of Cleveland - (OH),MISO|PJM|1,0.7832,6e-06,0.7832,2e-06,0.7832,0.0
+3812,TN,City of Clinton - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3824,OH,Clyde Light & Power,MISO|PJM|0,0.0,0.0,0.0,0.0,0.0,0.0
+3828,MI,Cloverland Electric Co-op,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+3841,MS,Coast Electric Power Assn - (MS),Southeast|Southeast|1,4.4161,0.001489,4.4161,0.00047,4.4161,2.6e-05
+3843,GA,Coastal Electric Member Corp - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3855,TN,Columbia Power System - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+3892,KS,City of Coffeyville - (KS),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+3915,MI,Coldwater Board of Public Util,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+3916,GA,Cobb Electric Membership Corp,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+3931,IL,Coles-Moultrie Electric Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+3939,GA,City of College Park - (GA),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+3940,TX,City of College Station - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+3989,CO,City of Colorado Springs - (CO),West|West|2,5.9997,7.5e-05,5.9997,2.3e-05,5.9997,1e-06
+4003,CA,City of Colton - (CA),California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+4041,WA,"Columbia Rural Elec Assn, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+4045,MO,City of Columbia - (MO),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4063,MO,Co-Mo Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4065,OH,City of Columbus - (OH),PJM|PJM|0,5.8808,0.002115,5.8808,0.000677,5.8808,4e-05
+4068,MS,City of Columbus - (MS),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4073,WI,City of Columbus - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+4110,IL,Commonwealth Edison Co,PJM|PJM|2,7.9623,0.001897,7.9623,0.000296,7.9623,6e-06
+4146,TX,Concho Valley Elec Coop Inc,ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+4150,NC,City of Concord - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4153,LA,"Concordia Electric Coop, Inc",Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4160,MO,Callaway Electric Cooperative,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4176,CT,Connecticut Light & Power Co,ISO-NE|ISO-NE|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+4226,NY,Consolidated Edison Co-NY Inc,NYISO|NYISO|2,1.2904,0.000394,1.2904,0.000126,1.2904,7e-06
+4237,MO,Consolidated Electric Coop,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4254,MI,Consumers Energy Co - (MI),MISO|MISO|2,0.7609,1.8e-05,0.7609,6e-06,0.7609,0.0
+4262,TX,Cooke County Elec Coop Assn,ERCOT|ERCOT|1,25.0,0.03495,50.0,0.045493,94.731,0.006967
+4265,NM,Continental Divide El Coop Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+4280,AR,Conway Corporation,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4294,TN,City of Cookeville - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4295,TX,Comanche County Elec Coop Assn,ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+4296,OK,"Cookson Hills Elec Coop, Inc",SPP|Southeast|1,0.0,1e-06,0.0,0.0,0.0,7.8e-05
+4317,OR,"Coos-Curry Electric Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+4327,AL,Coosa Valley Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4362,IL,Corn Belt Energy Corporation,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4373,NE,Cornhusker Public Power Dist,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+4401,OK,"Cotton Electric Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+4430,AL,"Covington Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4432,GA,Coweta-Fayette El Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4433,GA,City of Covington - (GA),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4437,TN,City of Covington - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4442,WA,PUD No 1 of Cowlitz County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+4508,IN,"Crawfordsville Elec, Lgt & Pwr",MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+4509,AR,Craighead Electric Coop Corp,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4524,MO,"Crawford Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4538,GA,Crisp County Power Comm,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4577,MN,Crow Wing Cooperative Power & Light Comp,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4617,AL,Cullman Power Board,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4618,AL,"Cullman Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4622,KY,"Cumberland Valley Electric, Inc.",Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+4624,TN,Cumberland Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4671,NE,Custer Public Power District,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+4675,MO,Cuivre River Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4683,OH,City of Cuyahoga Falls - (OH),MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+4715,WI,Dahlberg Light & Power Co,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+4717,ND,Dakota Valley Elec Coop Inc,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+4720,SD,Dakota Energy Coop Inc,"Upper Midwest, no market|West|0",0.0,0.0,0.0,0.0,0.0,0.0
+4743,OR,"Consumers Power, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+4744,GA,Dalton Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4794,VA,City of Danville - (VA),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+4848,IN,Daviess Martin County R E M C,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+4911,NE,Dawson Power District,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+4920,TN,City of Dayton - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+4922,OH,Dayton Power & Light Co,PJM|PJM|2,0.0956,0.000737,0.0956,0.000519,0.0956,0.000147
+4939,TX,"Deaf Smith Electric Coop, Inc",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+4958,AL,Decatur Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+4960,IN,Decatur County Rural E M C,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+4975,TX,Deep East Texas Elec Coop Inc,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5027,DE,Delmarva Power,PJM|PJM|2,0.222,0.000676,0.222,0.00049,0.222,0.000143
+5027,MD,Delmarva Power,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+5063,TX,City of Denton - (TX),ERCOT|ERCOT|1,8.3333,0.001381,16.6667,0.001919,20.3462,7e-05
+5070,DE,Delaware Electric Cooperative,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+5078,TX,"Denton County Elec Coop, Inc",ERCOT|ERCOT|2,9.1038,0.000171,34.1038,0.00909,76.5775,0.003903
+5086,CO,Delta Montrose Electric Assn,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+5109,MI,DTE Electric Company,MISO|MISO|2,0.1077,3e-06,0.1077,1e-06,0.1077,0.0
+5148,TN,City of Dickson,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5175,MS,Dixie Electric Power Assn - (MS),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5202,LA,Dixie Electric Membership Corp - (LA),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5204,AL,Dixie Electric Coop - (AL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5309,AL,City of Dothan - (AL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5325,GA,City of Douglas,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+5326,WA,PUD No 1 of Douglas County - (WA),West|West|1,8.3333,0.00381,23.2652,0.011071,75.2761,0.006423
+5335,DE,City of Dover - (DE),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+5336,OH,City of Dover - (OH),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+5394,IN,Dubois Rural Electric Coop Inc,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5399,TN,Duck River Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5416,NC,"Duke Energy Carolinas, LLC",Southeast|Southeast|2,5.2817,0.000706,5.2817,0.000101,5.2817,5e-06
+5416,SC,"Duke Energy Carolinas, LLC",Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+5417,WI,Dunn County Electric Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+5480,MA,Town of Danvers,ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+5487,PA,Duquesne Light Co,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+5509,TN,City of Dyersburg,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+5535,IL,Egyptian Electric Coop Assn,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5574,MN,East Central Energy,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5574,WI,East Central Energy,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+5578,MS,East Mississippi Elec Pwr Assn,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+5582,GA,City of East Point - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5585,IL,Eastern Illinois Elec Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5588,IA,East-Central Iowa Rural Elec Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+5598,OK,East Central Oklahoma Elec Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5605,IA,Eastern Iowa Light & Power Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5609,ME,Eastern Maine Electric Coop,ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+5625,MD,Easton Utilities Comm,PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+5644,SC,"Edisto Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5656,NC,Edgecombe-Martin County E M C,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+5661,OK,City of Edmond - (OK),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+5701,NM,El Paso Electric Co,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+5701,TX,El Paso Electric Co,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+5760,NC,City of Elizabeth City - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5763,TN,City of Elizabethton - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5773,MN,City of Elk River,MISO|MISO|0,25.0,0.049184,50.0,0.062693,58.8813,0.005057
+5780,NE,Elkhorn Rural Public Pwr Dist,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+5832,WA,Elmhurst Mutual Power & Light Co,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+5860,AR,Empire District Electric Co,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+5860,KS,Empire District Electric Co,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+5860,MO,Empire District Electric Co,SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+5860,OK,Empire District Electric Co,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+5862,CO,"Empire Electric Assn, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+5905,GA,Excelsior Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5929,SC,"Fairfield Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+5930,NY,Village of Fairport - (NY),NYISO|NYISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+5961,TN,Town of Erwin - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+6008,TN,City of Etowah,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+6022,OR,City of Eugene - (OR),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6043,WI,City of Evansville,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+6149,WA,City of Ellensburg - (WA),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+6169,ID,Fall River Rural Elec Coop Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6181,MO,"Farmers Electric Coop, Inc - (MO)",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6182,TX,"Farmers Electric Coop, Inc - (TX)",ERCOT|ERCOT|1,25.0,0.03495,50.0,0.045493,417.2421,0.231964
+6183,TX,"Fayette Electric Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+6194,KY,Farmers Rural Electric Coop Corp - (KY),Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+6198,NM,"Farmers Electric Coop, Inc - (NM)",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+6204,NM,City of Farmington - (NM),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6205,MO,City of Farmington - (MO),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+6234,TN,City of Fayetteville,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6235,NC,Fayetteville Public Works Commission,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6258,MN,Federated Rural Electric Assn,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+6342,AR,First Electric Coop Corp,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+6374,MA,Fitchburg Gas & Elec Light Co,ISO-NE|ISO-NE|1,0.0,0.0,10.3294,0.002507,57.9009,0.004684
+6395,MT,Flathead Electric Coop Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6411,GA,Flint Electric Membership Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6422,AL,City of Florence - (AL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6427,TX,City of Floresville,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+6442,KY,Fleming-Mason Energy Coop Inc,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+6443,FL,"Florida Keys El Coop Assn, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6452,FL,Florida Power & Light Co,Southeast|Southeast|2,0.1705,0.000375,0.1705,0.000254,0.1705,1.7e-05
+6455,FL,"Duke Energy Florida, LLC",Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+6457,FL,Florida Public Utilities Co,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6491,AL,Foley Board of Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6582,OR,City of Forest Grove,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+6604,CO,City of Fort Collins - (CO),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6608,TN,Fort Loudoun Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6610,CO,City of Fort Morgan,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+6612,AL,Fort Payne Improvement Authority,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+6616,FL,Fort Pierce Utilities Authority,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6638,CO,City of Fountain,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6640,NC,Four County Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6641,MS,4-County Electric Power Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6707,IN,City of Frankfort - (IN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+6708,KY,City of Frankfort - (KY),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6709,SC,Easley Combined Utility System,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6716,WA,PUD No 1 of Franklin County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+6717,AL,Franklin Electric Coop - (AL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+6718,KY,City of Franklin - (KY),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+6775,NY,Village of Freeport - (NY),NYISO|NYISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+6779,NE,City of Fremont - (NE),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+6782,MN,Freeborn Mower Electric Cooperative,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+6784,NC,French Broad Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6894,SC,City of Gaffney - (SC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+6909,FL,Gainesville Regional Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6923,TN,City of Gallatin - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+6941,KS,City of Garden City,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+6957,UT,"Garkane Energy Coop, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+6958,TX,City of Garland - (TX),ERCOT|ERCOT|1,6.8971,0.000588,6.8971,3.4e-05,6.8971,0.000623
+7024,MO,Gascosage Electric Coop,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+7027,NC,City of Gastonia - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7090,GA,GreyStone Power Corporation,Southeast|Southeast|2,23.5911,0.036528,35.6818,0.027097,42.3581,0.0023
+7096,IL,City of Geneva - (IL),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+7129,TX,City of Georgetown - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+7140,GA,Georgia Power Co,Southeast|Southeast|2,4.0351,0.000236,4.0351,1.4e-05,4.0351,0.0
+7174,TN,Gibson Electric Members Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7222,WY,City of Gillette - (WY),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+7264,FL,"Glades Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7265,MI,City of Gladstone,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+7270,KY,City of Glasgow - (KY),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+7294,CA,City of Glendale - (CA),California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+7353,AK,Golden Valley Elec Assn Inc,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+7450,GA,Grady Electric Membership Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7483,MI,City of Grand Haven - (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+7548,WA,PUD No 1 of Grays Harbor County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+7558,KY,Grayson Rural Electric Coop Corp,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+7559,TX,"Grayson-Collin Elec Coop, Inc",ERCOT|ERCOT|1,25.0,0.03495,50.0,0.045493,218.1814,0.055636
+7561,TX,"Greenbelt Electric Coop, Inc",ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+7563,CO,Grand Valley Power,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+7601,VT,Green Mountain Power Corp,ISO-NE|ISO-NE|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+7625,TN,City of Greeneville - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7627,IN,City of Greenfield - (IN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+7634,TX,City of Greenville - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+7639,NC,Greenville Utilities Comm,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7646,SC,Greenwood CPW,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7651,MS,Greenwood Utilities Comm,Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+7654,SC,Greer Commission of Public Wks,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7679,GA,City of Griffin - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7716,CT,Groton Dept of Utilities - (CT),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+7752,TX,Guadalupe Valley Elec Coop Inc,ERCOT|ERCOT|1,25.0,0.03495,49.6459,0.044728,54.5802,0.001149
+7785,FL,"Gulf Coast Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7827,AL,Guntersville Electric Board,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+7887,GA,Habersham Electric Membership Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+7891,OH,Guernsey-Muskingum El Coop Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+7908,MD,Hagerstown Light Department,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+7977,OH,City of Hamilton - (OH),MISO|PJM|1,4.4122,0.001224,4.4122,0.000392,4.4122,2.3e-05
+7979,TX,Hamilton County Elec Coop Assn,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+8000,IN,NineStar Connect,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+8034,OH,Hancock-Wood Electric Coop Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+8055,MO,City of Hannibal - (MO),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+8147,TN,City of Harriman - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+8179,IN,Harrison County Rural E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+8198,VA,City of Harrisonburg - (VA),PJM|PJM|1,5.1094,0.001198,5.1094,0.000196,5.1094,4e-06
+8210,GA,Hart Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8212,WI,Hartford Electric,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+8226,AL,City of Hartselle,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+8245,NE,City of Hastings - (NE),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+8287,HI,Hawaii Electric Light Co Inc,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+8319,IA,Heartland Power Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+8333,NC,Haywood Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8447,IN,Hendricks County Rural E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+8449,KY,Henderson City Utility Comm,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+8566,WY,High Plains Power Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+8570,CO,Highline Electric Assn,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+8571,NC,Town of High Point,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8620,TX,"HILCO Electric Cooperative, Inc.",ERCOT|ERCOT|1,8.3333,0.001381,16.6667,0.001919,59.7367,0.001621
+8699,WA,Inland Power & Light Company,West|West|1,7.756,0.003197,7.756,0.000695,7.756,1e-05
+8723,MI,City of Holland - (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+8748,MS,City of Holly Springs,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+8761,OH,Holmes-Wayne Electric Coop Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+8764,TN,"Holston Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8773,CO,"Holy Cross Electric Assn, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+8774,MA,City of Holyoke - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+8786,SC,Horry Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8795,FL,City of Homestead - (FL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8840,AR,City of Hope - (AR),Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+8846,KY,City of Hopkinsville,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8883,ME,Houlton Water Company,ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+8884,LA,Terrebonne Parish Consol Gov't,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+8898,TX,Houston County Elec Coop Inc,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+8934,MO,"Howell-Oregon Elec Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+8973,MA,Town of Hudson - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+9023,TN,City of Humboldt,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+9087,NC,Town of Huntersville - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+9094,AL,City of Huntsville - (AL),Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+9096,LA,City of Lafayette - (LA),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9130,MN,Hutchinson Utilities Comm,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+9187,ID,City of Idaho Falls - (ID),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+9191,ID,Idaho Power Co,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+9191,OR,Idaho Power Co,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+9216,CA,Imperial Irrigation District,California|California|2,0.0,0.000111,0.0,3.5e-05,0.0,2e-06
+9230,IA,City of Independence - (IA),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+9231,MO,City of Independence - (MO),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+9246,OK,"Indian Electric Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+9273,IN,AES Indiana,MISO|MISO|2,1.0927,5.2e-05,1.0927,1.7e-05,1.0927,1e-06
+9292,KY,Inter County Energy Coop Corp - (KY),Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+9324,IN,Indiana Michigan Power Co,PJM|PJM|2,8.3333,0.002199,16.1436,0.003459,16.1436,5.9e-05
+9324,MI,Indiana Michigan Power Co,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+9331,MO,Intercounty Electric Coop Assn - (MO),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9336,CO,CORE Electric Cooperative,West|West|2,3.8833,0.000108,3.8833,3.5e-05,3.8833,2e-06
+9417,IA,Interstate Power and Light Co,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+9425,IA,Iowa Lakes Electric Coop,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+9475,MN,Itasca-Mantrap Co-op Electrical Assn,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9575,KY,Jackson Energy Coop Corp - (KY),Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+9576,IN,Jackson County Rural E M C - (IN),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9590,TX,"Jackson Electric Coop, Inc - (TX)",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+9601,GA,Jackson Electric Member Corp - (GA),Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+9605,KY,Jackson Purchase Energy Corporation,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9612,TN,City of Jackson - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9613,IN,City of Lebanon - (IN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+9616,FL,Beaches Energy Services,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9617,FL,JEA,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+9645,NY,Jamestown Board of Public Util,NYISO|NYISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9665,IN,Jasper County Rural E M C,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+9667,IN,City of Jasper - (IN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+9668,TX,"Jasper-Newton Elec Coop, Inc",Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9682,LA,"Jefferson Davis Elec Coop, Inc",Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+9689,GA,Jefferson Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9690,WI,Jefferson Utilities,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+9699,NM,"Jemez Mountains Elec Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+9726,NJ,Jersey Central Power & Lt Co,PJM|PJM|2,0.6315,0.000498,0.6315,0.000402,0.6315,0.000132
+9739,AL,Joe Wheeler Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9750,IL,"Jo-Carroll Energy, Inc",MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9777,TN,Johnson City - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9778,IN,Johnson County Rural E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9837,NC,Jones-Onslow Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+9879,AR,City Water and Light Plant - (AR),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9964,KY,Kenergy Corp,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+9996,KS,City of Kansas City - (KS),SPP|SPP|1,2.84,0.000565,2.84,0.000181,2.84,1.1e-05
+9999,IN,Kankakee Valley Rural E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+10000,KS,Evergy Metro,SPP|SPP|2,0.2538,0.000491,0.2538,0.000363,0.2538,2.2e-05
+10000,MO,Evergy Metro,SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+10005,KS,"Evergy Kansas South, Inc",SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+10009,TX,Karnes Electric Coop Inc,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+10012,OK,Kay Electric Coop,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+10019,KS,FreeState Electric Coop,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+10056,WI,City of Kaukauna (WI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+10066,CO,K C Electric Association,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+10071,HI,Kauai Island Utility Cooperative,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+10170,OK,"Kiamichi Electric Coop, Inc",SPP|Southeast|1,0.0,1e-06,0.0,0.0,0.0,7.8e-05
+10171,KY,Kentucky Utilities Co,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+10171,VA,Kentucky Utilities Co,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10210,AK,Ketchikan Public Utilities,Alaska and Hawaii|Alaska and Hawaii|0,0.0,0.0,0.0,0.0,0.0,0.0
+10226,FL,"Utility Board of the City of Key West, F",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10331,TN,Kingsport Power Co,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+10345,NC,City of Kinston - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+10370,MO,City of Kirkwood - (MO),MISO|MISO|0,0.0,8e-06,10.0499,0.002233,43.5025,0.002717
+10376,FL,Kissimmee Utility Authority,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10378,NM,"Kit Carson Electric Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+10393,WA,PUD No 1 of Klickitat County,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+10421,TN,Knoxville Utilities Board,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+10433,AK,Kodiak Electric Assn Inc,Alaska and Hawaii|Alaska and Hawaii|0,0.0,0.0,0.0,0.0,0.0,0.0
+10448,IN,Kosciusko County Rural E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+10454,ID,Kootenai Electric Cooperative,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+10539,CO,"La Plata Electric Assn, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+10579,TN,City of LaFollette,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10585,GA,City of La Grange - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10599,OK,"Lake Region Electric Coop, Inc - (OK)",SPP|Southeast|1,0.6758,2.4e-05,0.6758,8e-06,0.6758,6.4e-05
+10603,MO,"Laclede Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10605,WI,Lake Mills Light & Water,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+10618,MN,Lake Region Electric Cooperative - (MN),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+10620,FL,City of Lake Worth Beach - (FL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10623,FL,City of Lakeland - (FL),Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+10624,GA,Southern Rivers Energy,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10625,TX,"Lamb County Electric Coop, Inc",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+10627,WA,Lakeview Light & Power,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+10649,TX,Lamar County Elec Coop Assn,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+10668,OH,Licking Rural Electric Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+10681,OR,Lane Electric Coop Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+10697,MN,Lake Country Power,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+10704,MI,City of Lansing - (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+10768,SC,"Laurens Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10799,TN,City of Lawrenceburg,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10800,GA,City of Lawrenceville - (GA),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+10817,NM,"Lea County Electric Coop, Inc - (NM)",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+10830,OH,City of Lebanon - (OH),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+10832,MO,City of Lebanon - (MO),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+10857,FL,"Lee County Electric Coop, Inc - (FL)",Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+10868,FL,City of Leesburg - (FL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10879,UT,Lehi City Corporation,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+10906,TN,City of Lenoir - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10944,WA,PUD No 1 of Lewis County - (WA),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+10960,TN,City of Lewisburg - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+10966,NC,City of Lexington - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+10967,NE,City of Lexington - (NE),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+10968,TN,City of Lexington - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11011,KY,Licking Valley Rural E C C,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+11014,TX,"Lighthouse Electric Coop, Inc",ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+11018,NE,Lincoln Electric System,SPP|SPP|2,7.9061,0.002173,7.9061,0.000394,7.9061,2.2e-05
+11053,IA,Corridor Energy Cooperative,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+11085,MA,Town of Littleton - (MA),ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+11118,SC,Lockhart Power Co,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+11124,CA,City of Lodi - (CA),California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+11135,UT,City of Logan - (UT),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+11142,IN,City of Logansport - (IN),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+11171,NY,Long Island Power Authority,NYISO|NYISO|2,0.0,0.000988,0.0,0.000316,0.0,1.9e-05
+11187,CO,City of Longmont,West|West|1,2.6216,0.000108,2.6216,0.0,2.6216,9.1e-05
+11200,OH,"Lorain-Medina R E C, Inc",MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+11204,NM,Los Alamos County - (NM),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+11208,CA,Los Angeles Department of Water & Power,California|California|2,1.6268,1.7e-05,1.6268,5e-06,1.6268,0.0
+11222,TN,Loudon Utilities Board,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+11241,LA,Entergy Louisiana LLC,Southeast|MISO|2,0.0,0.000342,0.0,0.000109,0.0,6e-06
+11247,MS,Louisville Electric System,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+11249,KY,Louisville Gas & Electric Co,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+11251,NE,Loup River Public Power Dist,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+11256,CO,City of Loveland - (CO),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+11272,MT,"Lower Yellowstone R E A, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+11273,WY,Lower Valley Energy Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+11291,NC,Lumbee River Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11318,NC,City of Lumberton - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+11355,SC,"Lynches River Elec Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11364,TX,"Lyntegar Electric Coop, Inc",SPP|SPP|0,0.5245,2.1e-05,0.5245,7e-06,0.5245,0.0
+11463,MO,Macon Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11475,SD,City of Madison - (SD),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+11477,ME,Town of Madison - (ME),ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+11479,WI,Madison Gas & Electric Co,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+11488,KY,Madisonville Municipal Utils,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+11501,TX,Magic Valley Electric Coop Inc,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+11519,MS,Magnolia Electric Power Assn,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+11560,VA,City of Manassas - (VA),PJM|PJM|1,12.7093,0.010591,13.1278,0.003001,13.1278,6.4e-05
+11571,WI,Manitowoc Public Utilities,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+11586,MA,Town of Mansfield - (MA),ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+11611,IA,City of Maquoketa - (IA),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+11646,GA,City of Marietta - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11701,MI,City of Marquette - (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+11714,AL,Marshall-De Kalb Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11731,MN,City of Marshall - (MN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+11740,WI,City of Marshfield - (WI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+11788,IA,Consumers Energy Coop - (IA),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+11789,TN,Maryville Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+11804,MA,Massachusetts Electric Co,ISO-NE|ISO-NE|2,0.1305,2e-06,0.1305,1e-06,0.1305,0.0
+11811,NY,Town of Massena - (NY),NYISO|NYISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+11824,AK,Matanuska Electric Assn Inc,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+11843,HI,Maui Electric Co Ltd,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+11871,KY,City of Mayfield Plant Board,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+12087,ND,McKenzie Electric Coop Inc,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+12090,ND,"McLean Electric Coop, Inc",MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+12186,TN,McMinnville Electric System,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+12187,OR,City of McMinnville - (OR),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+12199,MT,Montana-Dakota Utilities Co,"Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+12199,ND,Montana-Dakota Utilities Co,"Upper Midwest, no market|MISO|1",8.3333,0.001992,15.7665,0.002545,15.7665,0.00015
+12199,SD,Montana-Dakota Utilities Co,"Upper Midwest, no market|MISO|0",0.0,0.0,0.0,0.0,0.0,0.0
+12199,WY,Montana-Dakota Utilities Co,"Upper Midwest, no market|West|1",0.0,0.0,0.0,0.0,0.0,0.0
+12208,KS,City of McPherson - (KS),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+12227,MN,Meeker Coop Light & Power Assn,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+12243,KY,Meade County Rural E C C,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+12260,VA,Mecklenburg Electric Cooperative,PJM|PJM|1,21.8204,0.034149,46.8204,0.051117,222.4584,0.071001
+12268,TX,"Medina Electric Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+12293,TN,City of Memphis - (TN),Southeast|Southeast|2,12.0426,0.007628,12.7673,0.002314,12.7673,0.000131
+12298,WI,City of Menasha - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+12301,ND,Nodak Electric Coop Inc,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+12312,CA,Merced Irrigation District,California|California|0,0.0,0.0,0.0,0.0,0.0,0.0
+12330,TN,Meriwether Lewis Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+12341,IA,MidAmerican Energy Co,"Upper Midwest, no market|MISO|2",23.8909,0.0,39.1021,0.0,40.0723,0.0
+12341,IL,MidAmerican Energy Co,"Upper Midwest, no market|MISO|1",1.7695,0.000206,1.7695,0.000429,1.7695,2.5e-05
+12341,SD,MidAmerican Energy Co,"Upper Midwest, no market|MISO|0",0.0,0.0,0.0,0.0,0.0,0.0
+12351,AZ,City of Mesa - (AZ),West|West|1,22.7347,0.03654,42.8176,0.041875,65.9668,0.004713
+12377,MI,Midwest Energy Cooperative - (MI),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+12395,IL,Menard Electric Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+12439,OR,"Midstate Electric Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+12450,IA,Midland Power Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+12452,TX,Mid-South Electric Coop Assn,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+12462,SC,Mid-Carolina Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+12470,TN,Middle Tennessee E M C,Southeast|Southeast|2,0.099,0.0004,0.099,0.000266,0.099,1.8e-05
+12473,MA,Town of Middleborough - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+12478,DE,Town of Middletown - (DE),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+12515,OH,"Midwest Electric, Inc - (OH)",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+12524,KS,Midwest Energy Inc - (KS),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+12532,TN,City of Milan - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+12539,NE,Midwest Electric Member Corp - (NE),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+12540,DE,City of Milford - (DE),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+12546,MN,Mille Lacs Energy Cooperative,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+12642,IA,Maquoketa Valley Rrl Elec Coop,MISO|MISO|0,1.1497,5.5e-05,1.1497,4e-06,1.1497,0.0
+12647,MN,"ALLETE, Inc.",MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+12651,MN,Minnesota Valley Electric Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+12674,IN,City of Mishawaka,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+12681,AR,Mississippi County Electric Co,Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+12685,MS,Entergy Mississippi LLC,Southeast|MISO|2,7.4651,0.002363,7.4651,0.000756,7.4651,4.5e-05
+12686,MS,Mississippi Power Co,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+12692,MT,"Missoula Electric Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+12698,MO,Evergy Missouri West,SPP|SPP|2,3.7063,7.9e-05,3.7063,2e-06,3.7063,0.0
+12700,MO,Missouri Rural Electric Coop,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+12706,GA,Mitchell Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+12744,WA,Modern Electric Water Company,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+12745,CA,Modesto Irrigation District,California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+12782,MO,City of Monett - (MO),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+12796,WV,Monongahela Power Co,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+12801,NC,City of Monroe - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+12825,MT,NorthWestern Energy LLC - (MT),West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+12860,CO,Morgan County Rural Elec Assn,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+12866,UT,Moon Lake Electric Assn Inc,West|West|1,6.3668,0.001941,6.3668,0.000372,6.3668,2.4e-05
+12894,MN,City of Moorhead - (MN),"Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+12919,AZ,Morenci Water and Electric,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+12929,IN,South Central Indiana REMC,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+12944,NC,City of Morganton - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+12988,TN,City of Morristown - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+12990,OH,Consolidated Cooperative,MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+13027,NC,"Mountain Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13032,IL,Mt Carmel Public Utility Co,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13036,WI,Village of Mt. Horeb - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13039,TN,City of Mt Pleasant - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+13050,CO,"Mountain Parks Electric, Inc",West|West|1,7.2642,0.002717,7.2642,0.000569,7.2642,1.5e-05
+13058,CO,"Mountain View Elec Assn, Inc",West|West|1,0.6992,4.7e-05,0.6992,9.1e-05,0.6992,0.000142
+13073,NV,"Mt Wheeler Power, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+13137,UT,City of Murray - (UT),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+13138,KY,City of Murray - (KY),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+13143,IA,Board of Water Electric & Communications,"Upper Midwest, no market|MISO|0",0.0,0.0,0.0,0.0,0.0,0.0
+13144,AL,City of Muscle Shoals,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+13196,ND,Northern Plains Electric Coop,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13206,MA,Nantucket Electric Co,ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+13208,IL,City of Naperville - (IL),PJM|PJM|1,17.1295,0.020345,42.1295,0.040901,62.9642,0.004838
+13214,RI,The Narragansett Electric Co,ISO-NE|ISO-NE|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+13216,TN,Nashville Electric Service,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+13227,MS,Natchez Trace Elec Power Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13228,LA,City of Natchitoches,Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+13292,IL,Norris Electric Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13314,AZ,Navajo Tribal Utility Authority,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+13314,NM,Navajo Tribal Utility Authority,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+13318,AZ,"Navopache Electric Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+13332,TX,"Navarro County Elec Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+13337,NE,Nebraska Public Power District,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+13407,NV,Nevada Power Co,West|West|2,0.7306,0.001499,0.7306,0.000483,0.7306,2.8e-05
+13412,MS,City of New Albany - (MS),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+13416,NC,City of New Bern - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13418,TX,City of New Braunfels - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+13441,NH,New Hampshire Elec Coop Inc,ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+13448,WI,City of New Holstein - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13467,WI,New London Electric&Water Util,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13478,LA,"Entergy New Orleans, LLC",Southeast|MISO|2,0.0,0.000342,0.0,0.000109,0.0,6e-06
+13481,WI,City of New Richmond,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13482,NC,New River Light & Power Co,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+13485,FL,New Smyrna Beach City of,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13511,NY,New York State Elec & Gas Corp,NYISO|NYISO|2,0.0,0.000988,0.0,0.000316,0.0,1.9e-05
+13519,DE,City of Newark - (DE),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+13520,MO,"New-Mac Electric Coop, Inc",Southeast|Southeast|1,24.5861,0.048334,31.6776,0.025692,31.6776,0.001505
+13524,SC,"Newberry Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13547,GA,"Newnan Wtr, Sewer & Light Comm",Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+13550,TN,City of Newport - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13573,NY,Niagara Mohawk Power Corp.,NYISO|NYISO|2,0.0,0.000988,0.0,0.000316,0.0,1.9e-05
+13602,OH,City of Niles - (OH),MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+13640,VA,Northern Virginia Elec Coop,PJM|PJM|2,21.2613,0.026593,46.2613,0.044922,201.2893,0.055816
+13647,IN,Noble County R E M C,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+13651,KY,Nolin Rural Electric Coop Corp,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+13664,NE,Norris Public Power District,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+13669,AL,North Alabama Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13676,AR,"North Arkansas Elec Coop, Inc",Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13679,MA,Town of North Attleborough - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+13693,OH,"North Central Elec Coop, Inc - (OH)",PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+13694,ND,"North Central Elec Coop, Inc - (ND)",MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13697,WI,North Central Power Co Inc,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13716,GA,North Georgia Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13718,AR,City of North Little Rock - (AR),Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13725,NE,City of North Platte,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+13734,OK,Northeast Oklahoma Electric Co,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+13735,MS,Northcentral Mississippi E P A,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13739,NE,Northeast Power,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+13750,SD,"Northern Electric Coop, Inc","Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+13756,IN,Northern Indiana Pub Serv Co,MISO|MISO|2,1.1913,6.5e-05,1.1913,2.1e-05,1.1913,1e-06
+13757,TX,North Plains Electric Coop Inc,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+13758,ID,"Northern Lights, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+13758,MT,"Northern Lights, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+13762,VA,"Northern Neck Elec Coop, Inc",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+13780,MI,Northern States Power Co,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13780,WI,Northern States Power Co,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+13781,MN,Northern States Power Co - Minnesota,MISO|MISO|2,1.4303,0.000105,1.4303,3.4e-05,1.4303,2e-06
+13781,ND,Northern States Power Co - Minnesota,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13781,SD,Northern States Power Co - Minnesota,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13783,LA,Northeast Louisiana Power Coop Inc.,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13788,OR,Northern Wasco County PUD - (OR),West|West|0,8.3333,0.005345,16.6667,0.006843,46.9114,0.003196
+13799,KS,Prairie Land Electric Coop Inc,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+13807,OK,Northwestern Electric Coop Inc - (OK),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+13809,SD,NorthWestern Energy - (SD),"Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+13815,WI,Northwestern Wisconsin Elec Co,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13830,TX,Nueces Electric Cooperative,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+13831,CT,City of Norwich - (CT),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+13839,MA,City of Norwood - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+13933,TN,City of Oak Ridge,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13936,WI,Oakdale Electric Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+13955,FL,City of Ocala,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13962,GA,Oconee Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+13963,WI,Oconomowoc Utilities,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+13998,OH,Ohio Edison Co,MISO|PJM|2,3.3246,0.000461,3.3246,0.000148,3.3246,9e-06
+14006,OH,Ohio Power Co,PJM|PJM|2,12.8618,0.007672,12.8618,0.001775,12.8618,1.3e-05
+14055,WA,PUD No 1 of Okanogan County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14062,OK,Oklahoma Electric Coop Inc,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+14063,AR,Oklahoma Gas & Electric Co,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+14063,OK,Oklahoma Gas & Electric Co,SPP|SPP|2,0.6223,0.000355,0.6223,0.000295,0.6223,1.8e-05
+14078,MS,City of Okolona,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+14109,OR,"Oregon Trail El Cons Coop, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14127,NE,Omaha Public Power District,SPP|SPP|2,22.8664,0.032783,39.5331,0.032638,40.6658,0.002039
+14146,AL,City of Opelika - (AL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+14154,NY,Orange & Rockland Utils Inc,NYISO|NYISO|2,22.0723,0.027864,22.0723,0.008919,22.0723,0.000526
+14164,SC,City of Orangeburg - (SC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14170,WA,Orcas Power & Light Coop,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14175,SC,"Tri-County Electric Coop, Inc (SC)",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14192,MO,Osage Valley Elec Coop Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14194,OH,City of Orrville - (OH),MISO|PJM|0,0.0,0.0,0.0,0.0,0.0,0.0
+14224,NM,Otero County Electric Coop Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14232,MN,Otter Tail Power Co,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+14232,ND,Otter Tail Power Co,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+14232,SD,Otter Tail Power Co,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+14238,AR,Ouachita Electric Coop Corp,Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+14245,NV,Overton Power District No 5,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14246,MN,City of Owatonna - (MN),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+14251,KY,Owen Electric Coop Inc,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+14268,KY,City of Owensboro - (KY),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14275,MS,City of Oxford - (MS),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+14285,MO,Ozark Border Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14288,MO,Ozark Electric Coop Inc - (MO),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14289,AR,Ozarks Electric Coop Corp - (AR),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+14289,OK,Ozarks Electric Coop Corp - (AR),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+14324,WA,PUD No 2 of Pacific County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14328,CA,Pacific Gas & Electric Co.,California|California|2,1.3745,3e-06,1.3745,1e-06,1.3745,0.0
+14354,CA,PacifiCorp,West|West|1,0.03,0.000166,0.03,0.000167,0.03,0.000163
+14354,ID,PacifiCorp,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14354,OR,PacifiCorp,West|West|2,14.2585,0.006866,14.2585,0.00219,14.2585,0.000129
+14354,UT,PacifiCorp,West|West|2,14.0307,0.006531,14.0307,0.002083,14.0307,0.000123
+14354,WA,PacifiCorp,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+14354,WY,PacifiCorp,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+14371,KY,City of Paducah - (KY),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14381,OH,City of Painesville - (OH),MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+14398,SC,Palmetto Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14401,CA,City of Palo Alto - (CA),California|California|1,3.2761,0.000728,3.2761,8.3e-05,3.2761,2.1e-05
+14424,LA,"Panola-Harrison Elec Coop, Inc",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+14424,TX,"Panola-Harrison Elec Coop, Inc",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+14446,AR,Paragould Municipal Utilities (AR),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+14455,TN,City of Paris - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14468,MN,People's Cooperative Services,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+14534,CA,City of Pasadena - (CA),California|California|1,0.533,5e-06,0.533,2.3e-05,0.533,6.4e-05
+14537,RI,Clear River Electric and Water District,ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+14563,MS,Pearl River Valley El Pwr Assn,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+14599,IN,"Paulding-Putman Elec Coop, Inc",PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+14599,OH,"Paulding-Putman Elec Coop, Inc",PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+14602,AL,Pea River Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14605,MA,City of Peabody - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+14606,FL,"Peace River Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14610,FL,Orlando Utilities Comm,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+14624,WA,PUD No 2 of Grant County - (WA),West|West|1,0.8751,2.8e-05,17.6862,0.005906,110.0972,0.015162
+14626,TX,"Pedernales Electric Coop, Inc",ERCOT|ERCOT|2,0.0,0.004727,0.0,0.006093,0.0,0.001028
+14649,GA,Planters Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14653,WA,PUD No 1 of Pend Oreille County - (WA),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+14668,WA,Peninsula Light Company,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+14715,PA,PPL Electric Utilities Corp,PJM|PJM|2,0.6938,0.000474,0.6938,0.00039,0.6938,0.00013
+14717,NC,Pee Dee Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14724,KY,Pennyrile Rural Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+14775,OK,People's Electric Cooperative,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+14839,IN,City of Peru - (IN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+14840,IL,City of Peru - (IL),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+14864,AR,Petit Jean Electric Coop Corp,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+14940,PA,PECO Energy Co,PJM|PJM|2,1.2383,0.000285,1.2383,0.000288,1.2383,0.000115
+14947,MS,City of Philadelphia - (MS),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+15016,TN,Pickwick Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15023,NC,Piedmont Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15040,SD,City of Pierre - (SD),"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+15045,PA,Pike County Light & Power Co,NYISO|NYISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+15048,AZ,Electrical Dist No2 Pinal County,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+15054,OH,"Pioneer Rural Elec Coop, Inc - (OH)",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+15073,KS,"Pioneer Electric Coop, Inc - (KS)",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+15095,OH,City of Piqua - (OH),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+15138,MO,"Platte-Clay Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,2.762,1e-05
+15141,TN,Plateau Electric Cooperative,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15145,NY,City of Plattsburgh - (NY),NYISO|NYISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+15159,WI,City of Plymouth - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+15175,LA,Pointe Coupee Elec Member Corp,Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+15202,OK,City of Ponca City - (OK),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+15211,MS,Pontotoc Electric Power Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15229,MO,City of Poplar Bluff - (MO),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+15231,WA,City of Port Angeles - (WA),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+15248,OR,Portland General Electric Co,West|West|2,19.2584,0.016331,19.2584,0.005216,19.2584,0.000308
+15257,CO,"Poudre Valley REA, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+15263,MD,The Potomac Edison Company,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+15263,WV,The Potomac Edison Company,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+15270,DC,Potomac Electric Power Co,PJM|PJM|2,0.0356,0.000766,0.0356,0.000533,0.0356,0.000149
+15270,MD,Potomac Electric Power Co,PJM|PJM|2,0.0682,0.00075,0.0682,0.000525,0.0682,0.000148
+15291,IA,Prairie Energy Coop,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+15293,TN,Powell Valley Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15293,VA,Powell Valley Electric Coop,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+15334,MS,Prentiss County Elec Pwr Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15340,MI,Presque Isle Elec & Gas Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+15344,WI,Polk-Burnett Electric Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+15410,VA,Prince George Electric Coop,PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+15419,WA,PUD No 3 of Mason County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+15444,UT,Provo City Corp,West|West|1,2.6222,0.000108,2.6222,0.0,2.6222,9.1e-05
+15466,CO,Public Service Co of Colorado,West|West|2,3.3038,0.000243,3.3038,7.9e-05,3.3038,5e-06
+15470,IN,"Duke Energy Indiana, LLC",MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+15472,NH,Public Service Co of NH,ISO-NE|ISO-NE|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+15473,NM,Public Service Co of NM,West|West|2,12.4642,0.004453,12.4642,0.00142,12.4642,8.4e-05
+15474,OK,Public Service Co of Oklahoma,SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+15477,NJ,Public Service Elec & Gas Co,PJM|PJM|2,7.8734,0.001828,7.8734,0.000281,7.8734,6e-06
+15500,WA,Puget Sound Energy Inc,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+15507,TN,City of Pulaski - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15671,NC,Randolph Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15700,GA,Rayle Electric Membership Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+15746,OK,Red River Valley Rrl Elec Assn,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+15748,MA,Town of Reading - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+15783,CA,City of Redding - (CA),California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+15804,WI,Reedsburg Utility Comm,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+15978,WI,City of Richland Center - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+15979,WA,City of Richland - (WA),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+15989,IN,City of Richmond - (IN),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+16057,TX,"Rio Grande Electric Coop, Inc",ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+16060,WI,Riverland Energy Cooperative,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+16082,WI,City of River Falls,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+16088,CA,City of Riverside - (CA),California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+16101,NC,Roanoke Electric Member Corp,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+16146,TX,"Navasota Valley Elec Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+16179,IL,Rochelle Municipal Utilities - (IL),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+16181,MN,Rochester Public Utilities,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+16183,NY,Rochester Gas & Electric Corp,NYISO|NYISO|2,1.1238,0.000455,1.1238,0.000146,1.1238,9e-06
+16195,SC,City of Rock Hill - (SC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16196,IL,Rock Energy Cooperative,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+16196,WI,Rock Energy Cooperative,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+16213,NJ,Rockland Electric Co,NYISO|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+16223,TN,City of Rockwood - (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16226,NC,City of Rocky Mount - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16259,MO,City of Rolla - (MO),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+16286,SD,Rosebud Electric Coop Inc,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+16295,CA,City of Roseville - (CA),California|California|1,0.3859,1e-06,0.3859,3.1e-05,0.3859,6.7e-05
+16368,MN,Runestone Electric Assn,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+16382,OK,"Rural Electric Coop, Inc - (OK)",SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+16458,AL,City of Russellville - (AL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+16459,KY,City of Russellville - (KY),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+16461,TX,"Rusk County Electric Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+16463,LA,City of Ruston - (LA),Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+16496,NC,Rutherford Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16534,CA,Sacramento Municipal Util Dist,California|California|2,2.9445,0.000254,2.9445,8.1e-05,2.9445,5e-06
+16555,OR,Salem Electric - (OR),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+16558,VA,City of Salem - (VA),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+16565,ID,Salmon River Electric Coop Inc,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+16572,AZ,Salt River Project,West|West|2,13.1208,0.005276,13.1208,0.001682,13.1208,9.9e-05
+16587,KY,Salt River Electric Coop Corp,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+16603,CO,"San Luis Valley R E C, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+16604,TX,City of San Antonio - (TX),ERCOT|ERCOT|2,16.1225,0.005797,21.9287,0.001118,21.9287,2.5e-05
+16606,SC,"Santee Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16609,CA,San Diego Gas & Electric Co,California|California|2,0.565,3e-05,0.565,1e-05,0.565,1e-06
+16611,IA,Access Energy Coop,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+16613,TX,Sam Houston Electric Coop Inc,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+16616,CO,"San Isabel Electric Assn, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+16622,CO,"San Miguel Power Assn, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+16627,TX,San Patricio Electric Coop Inc,ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+16629,AL,Sand Mountain Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16637,GA,City of Sandersville - (GA),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+16638,TX,"San Bernard Electric Coop, Inc",ERCOT|ERCOT|1,25.0,0.03495,50.0,0.045493,143.0503,0.020483
+16655,CA,City of Santa Clara - (CA),California|California|1,0.0,6e-06,20.572,0.009419,114.4613,0.017598
+16674,GA,Satilla Rural Elec Member Corporation,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16740,WI,Scenic Rivers Energy Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+16751,MO,Three Rivers Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16805,MO,SEMO Electric Cooperative,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16829,AL,City of Scottsboro - (AL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+16865,GA,Sawnee Electric Membership Corporation,Southeast|Southeast|2,4.7837,0.000488,4.7837,5.6e-05,4.7837,2e-06
+16868,WA,City of Seattle - (WA),West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+16900,TX,City of Seguin - (TX),ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+16930,TN,Sequachee Valley Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16949,TN,Sevier County Electric System,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+16971,MN,Shakopee Public Utilities Comm,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17011,WI,Shawano Municipal Utilities,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+17033,AL,Sheffield Utilities,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+17038,IN,RushShelby Energy,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17040,IL,"Shelby Electric Coop, Inc - (IL)",MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+17044,KY,"Shelby Energy Coop, Inc - (KY)",Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+17047,TN,City of Shelbyville - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+17066,VA,Shenandoah Valley Elec Coop,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+17127,MA,Town of Shrewsbury - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+17166,NV,Sierra Pacific Power Co,West|West|2,18.8127,0.015323,19.1722,0.005153,19.1722,0.000304
+17177,MO,City of Sikeston - (MO),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+17184,AR,City of Siloam Springs - (AR),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+17252,MS,Singing River Elec Cooperative,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17260,IA,North West Rural Electric Coop,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+17261,ND,Slope Electric Coop Inc,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+17267,MN,Sioux Valley SW Elec Coop,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+17267,SD,Sioux Valley SW Elec Coop,"Upper Midwest, no market|SPP|1",8.8176,0.004808,8.8176,0.001539,8.8176,9.1e-05
+17452,TN,City of Smithville - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+17470,WA,PUD No 1 of Snohomish County - (WA),West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+17512,NY,Village of Solvay - (NY),NYISO|NYISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+17534,AL,"South Alabama Elec Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+17539,SC,"Dominion Energy South Carolina, Inc",Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+17540,AR,"South Central Ark El Coop, Inc",Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+17543,SC,South Carolina Public Service Authority,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+17550,MN,South Central Electric Assn,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+17561,TX,South Plains Electric Coop Inc,ERCOT|SPP|1,0.0,0.0,0.0,0.0,0.0,0.0
+17564,KY,South Kentucky Rural E C C,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+17565,LA,South Louisiana Elec Coop Assn,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17572,NC,South River Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+17577,NE,City of South Sioux City,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+17585,IL,"Southeastern IL Elec Coop, Inc",MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17592,CO,Southeast Colorado Power Assn,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+17599,IN,Southeastern Indiana R E M C,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17603,OK,Southeastern Electric Coop Inc - (OK),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+17609,CA,Southern California Edison Co,California|California|2,0.5181,3.4e-05,0.5181,1.1e-05,0.5181,1e-06
+17612,CA,Bear Valley Electric Service,California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+17633,IN,Southern Indiana Gas & Elec Co,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+17637,MD,Southern Maryland Elec Coop Inc,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+17642,NE,Southern Public Power District,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+17646,AL,"Southern Pine Elec Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+17647,MS,Southern Pine Electric Cooperative,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17671,AR,Southwest Arkansas E C C,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17683,MS,Southwest Mississippi E P A,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17684,LA,Southwest Louisiana E M C,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17692,NE,Southwest Public Power Dist,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+17693,TX,"Southwest Texas Elec Coop, Inc",ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+17694,TN,Southwest Tennessee E M C,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+17697,IL,Southwestern Electric Coop Inc - (IL),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17698,AR,Southwestern Electric Power Co,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+17698,LA,Southwestern Electric Power Co,SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+17698,TX,Southwestern Electric Power Co,SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+17718,NM,Southwestern Public Service Co,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+17718,TX,Southwestern Public Service Co,SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+17732,UT,Spanish Fork City Corporation,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+17740,TN,City of Sparta,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+17826,NM,"Springer Electric Coop, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+17828,IL,City of Springfield - (IL),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+17829,TN,City of Springfield - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+17832,GA,Snapping Shoals El Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+17833,MO,City Utilities of Springfield - (MO),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+17839,OR,City of Springfield - (OR),West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+17845,UT,City of Springville - (UT),West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+17860,IL,City of St Charles - (IL),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+17874,UT,City of St George - (UT),West|West|1,0.7498,4.1e-05,0.7498,8.6e-05,0.7498,0.000141
+17896,CA,City of Shasta Lake - (CA),California|California|0,0.0,0.0,0.0,0.0,0.0,0.0
+18006,MS,City of Starkville,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18019,MN,Stearns Cooperative Elec Assn,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+18022,NC,City of Statesville - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18047,MN,Steele-Waseca Cooperative Electric,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+18085,OH,South Central Power Company,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+18125,OK,Stillwater Utilities Authority,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+18181,WI,City of Stoughton - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+18203,AL,Tallapoosa River Elec Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18206,UT,Strawberry Electric Serv Dist,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+18249,WI,City of Sturgeon Bay - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+18252,MI,City of Sturgis - (MI),PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+18260,CA,Surprise Valley Electrification,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+18280,AZ,Sulphur Springs Valley E C Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+18304,FL,"Sumter Electric Coop, Inc",Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+18305,GA,Sumter Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18312,WI,Sun Prairie Utilities,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+18336,WI,Superior Water and Light Co,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+18339,NC,Surry-Yadkin Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18360,FL,Suwannee Valley Elec Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18384,TN,City of Sweetwater,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+18429,WA,City of Tacoma - (WA),West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+18445,FL,City of Tallahassee - (FL),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18447,MS,Tallahatchie Valley E P A,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18449,FL,"Talquin Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18454,FL,Tampa Electric Co,Southeast|Southeast|2,1.7032,3.1e-05,1.7032,6.6e-05,1.7032,5e-06
+18466,NC,Town of Tarboro - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+18472,AL,City of Tarrant,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+18488,MA,City of Taunton - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+18498,KY,Taylor County Rural E C C,Southeast|PJM|1,0.0,0.0,0.0,0.0,0.0,0.0
+18499,GA,Three Notch Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18643,TN,Tennessee Valley Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18848,GA,City of Thomasville - (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18917,OR,Tillamook Peoples Utility Dist,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+18940,IN,Tipmont Rural Elec Member Corp,PJM|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+18943,MS,Tippah Electric Power Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18951,MS,Tishomingo County E P A,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18955,IL,"Tri-County Electric Coop, Inc (IL)",MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+18956,GA,Tri-County Elec Member Corp (GA),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18957,NC,Tri-County Elec Member Corp (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+18976,TX,Trinity Valley Elec Coop Inc,ERCOT|ERCOT|1,6.8814,0.000582,6.8814,3.5e-05,6.8814,0.000624
+18997,OH,The Toledo Edison Co,MISO|PJM|2,0.0,7e-05,0.0,2.3e-05,0.0,1e-06
+19007,MS,Tombigbee Electric Power Assn,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19108,NC,Tideland Electric Member Corp,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+19125,MI,City of Traverse City - (MI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+19154,GA,Tri-State Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19154,TN,Tri-State Electric Member Corp,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+19156,WY,Powder River Energy Corp,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+19157,MN,MiEnergy Cooperative,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+19159,TX,"Tri-County Electric Coop, Inc (TX)",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+19160,OK,"Tri-County Electric Coop, Inc (OK)",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+19161,FL,"Tri-County Electric Coop, Inc (FL)",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19162,KY,Tri-County Elec Member Corp (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19162,TN,Tri-County Elec Member Corp (TN),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19189,AZ,Trico Electric Cooperative Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+19219,GA,Diverse Power Incorporated,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19225,AL,City of Troy - (AL),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+19266,TN,Tullahoma Board-Public Utils,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+19273,MS,City of Tupelo - (MS),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19281,CA,Turlock Irrigation District,California|California|1,0.0536,4e-06,0.0536,5.3e-05,0.0536,7.4e-05
+19293,SD,Southeastern Electric Coop Inc - (SD),"Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+19307,AL,City of Tuscumbia,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+19324,WI,Two Rivers Water & Light,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+19325,OR,Umatilla Electric Coop Assn,West|West|1,25.0,0.044737,50.0,0.058154,509.2768,0.379389
+19390,PA,"UGI Utilities, Inc",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+19396,MI,Tri-County Electric Coop (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+19430,TN,City of Union City,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+19435,NC,Union Electric Membership Corp - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19436,MO,Union Electric Co - (MO),MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+19445,IN,"Southern Indiana R E C, Inc",MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+19446,KY,Duke Energy Kentucky,MISO|PJM|2,1.097,2e-06,1.097,1e-06,1.097,0.0
+19490,TX,United Electric Coop Service Inc - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+19497,CT,United Illuminating Co,ISO-NE|ISO-NE|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+19499,CO,"United Power, Inc",West|West|1,12.8694,0.010505,12.8694,0.002742,12.8694,1e-05
+19501,OH,"Union Rural Electric Coop, Inc",PJM|PJM|0,9.416,0.006046,9.416,0.001935,9.416,0.000114
+19502,ID,"United Electric Co-op, Inc - (ID)",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+19545,SD,"Black Hills Power, Inc.",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+19545,WY,"Black Hills Power, Inc.",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+19547,HI,Hawaiian Electric Co Inc,Alaska and Hawaii|Alaska and Hawaii|2,0.0,0.0,0.0,0.0,0.0,0.0
+19558,AK,Homer Electric Assn Inc,Alaska and Hawaii|Alaska and Hawaii|1,0.0,0.0,0.0,0.0,0.0,0.0
+19574,TN,Upper Cumberland E M C,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19578,MI,Upper Peninsula Power Company,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+19579,TX,Upshur Rural Elec Coop Corp,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+19603,MT,USBIA-Mission Valley Power,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+19604,AZ,USBIA-San Carlos Project,West|West|1,11.8245,0.008668,11.8245,0.002213,11.8245,3e-06
+19667,IN,Utilities Dist-Western IN REMC,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+19728,AZ,"UNS Electric, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+19784,WA,Vera Irrigation District #15,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+19785,OK,Verdigris Valley Elec Coop Inc,SPP|Southeast|1,0.0,1e-06,0.0,0.0,35.0755,0.001189
+19790,ND,Verendrye Electric Coop Inc,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+19791,VT,"Vermont Electric Cooperative, Inc",ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+19806,TX,"Victoria Electric Coop, Inc",ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+19820,KS,Victory Electric Coop Assn Inc,SPP|SPP|1,0.7722,2.7e-05,0.7722,9e-06,0.7722,1e-06
+19840,NV,"Valley Electric Assn, Inc",West|California|1,0.0,0.0,0.0,0.0,0.0,0.0
+19856,NJ,City of Vineland - (NJ),ISO-NE|PJM|1,8.3333,0.0,15.1191,0.0,15.1191,0.0
+19876,NC,Virginia Electric & Power Co,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+19876,VA,Virginia Electric & Power Co,PJM|PJM|2,23.0619,0.032133,32.606,0.020312,32.606,0.000784
+19882,VA,Virginia Tech Electric Service,PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+19898,TN,Volunteer Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+19951,OH,City of Wadsworth - (OH),MISO|PJM|1,0.0,2.2e-05,0.0,7e-06,0.0,0.0
+19981,NC,Wake Electric Membership Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20038,CT,Town of Wallingford - (CT),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+20065,GA,Walton Electric Member Corp,Southeast|Southeast|2,25.0,0.041528,44.5952,0.044072,44.5952,0.002573
+20130,KY,Warren Rural Elec Coop Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20142,NC,City of Washington - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20146,GA,Washington Elec Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20169,ID,Avista Corp,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+20169,WA,Avista Corp,West|West|2,0.0,0.00205,0.0,0.00066,0.0,3.9e-05
+20187,SD,Watertown Municipal Utilities,"Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+20211,WI,Village of Waunakee - (WI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+20213,WI,Waupun Utilities,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+20216,IN,Whitewater Valley Rural EMC,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+20222,IL,Wayne-White Counties Elec Coop,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+20228,TN,Weakley County Mun Elec Sys,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20230,TX,Weatherford Mun Utility System,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+20310,MA,Town of Wellesley - (MA),ISO-NE|ISO-NE|0,0.0,0.0,0.0,0.0,0.0,0.0
+20318,MO,Webster Electric Coop,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20332,NV,Wells Rural Electric Co,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+20334,PA,Wellsborough Electric Co,PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+20363,MO,West Central Electric Coop Inc - (MO),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20371,FL,"West Florida El Coop Assn, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20377,KY,West Kentucky Rural E C C,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20382,AR,City of West Memphis - (AR),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20394,MS,City of West Point - (MS),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+20401,SD,West River Electric Assn Inc,"Upper Midwest, no market|SPP|1",0.0,9.8e-05,0.0,3.1e-05,0.0,2e-06
+20413,ND,Mountrail-Williams Elec Coop,"Upper Midwest, no market|SPP|0",8.3333,0.004779,8.3391,0.001532,8.3391,9e-05
+20472,TX,"Wharton County Elec Coop, Inc",ERCOT|ERCOT|0,0.0,0.000156,0.0,0.00015,0.0,1.4e-05
+20476,KS,Western Coop Electric Assn Inc,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+20477,OH,City of Westerville - (OH),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+20481,MA,City of Westfield - (MA),ISO-NE|ISO-NE|1,0.0,0.0,0.0,6e-06,0.0,9e-06
+20510,KS,"Wheatland Electric Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+20521,WV,Wheeling Power Co,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+20574,MO,White River Valley El Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20576,CO,"White River Electric Assn, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+20603,IN,Northeastern Rural E M C,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+20639,MN,"Wild Rice Electric Coop, Inc",MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+20737,MN,Willmar Municipal Utilities (MN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+20785,NC,City of Wilson - (NC),Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20793,TN,City of Winchester - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+20813,KS,City of Winfield - (KS),SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+20841,AL,"Wiregrass Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+20847,WI,Wisconsin Electric Power Co,MISO|MISO|2,0.6635,1.1e-05,0.6635,4e-06,0.6635,0.0
+20856,WI,Wisconsin Power & Light Co,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+20860,WI,Wisconsin Public Service Corp,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+20862,WI,Wisconsin Rapids W W & L Comm,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+20885,FL,Withlacoochee River Elec Coop,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+20927,TX,"Wood County Electric Coop, Inc",SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+20948,TX,Wise Electric Coop Inc,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+20963,AR,Woodruff Electric Coop Corp,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+20996,MN,Wright-Hennepin Coop Elec Assn,MISO|MISO|1,0.323,7e-06,0.323,2e-06,0.323,0.0
+20997,MT,Yellowstone Valley Elec Co-op,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+21002,SC,York Electric Coop Inc,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+21013,MN,City of Worthington - (MN),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+21048,MI,Wyandotte Municipal Serv Comm - (MI),MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+21075,CO,Y-W Electric Assn Inc,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+21081,CO,Yampa Valley Electric Assn Inc,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+21111,NE,Perennial Public Power Dist,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+21114,MS,Yazoo Valley Elec Power Assn,Southeast|MISO|0,0.0,0.0,0.0,0.0,0.0,0.0
+21158,MI,City of Zeeland - (MI),MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+21244,VA,"Southside Electric Coop, Inc",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+21513,MT,"Fergus Electric Coop, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+21538,AZ,"Mohave Electric Cooperative, Inc.",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+21567,LA,"Washington-St Tammany E C, Inc",Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+21632,NC,EnergyUnited Elec Member Corp,Southeast|Southeast|2,0.0,0.000436,0.0,0.000283,0.0,1.9e-05
+22053,KY,Kentucky Power Co,PJM|PJM|2,0.0,0.000784,0.0,0.000541,0.0,0.00015
+22500,KS,"Evergy Kansas Central, Inc",SPP|SPP|2,0.0,0.000597,0.0,0.000414,0.0,2.5e-05
+22690,NM,Roosevelt County Elec Coop Inc,SPP|SPP|0,0.0,0.0,0.0,0.0,0.0,0.0
+22815,MS,Delta Electric Power Assn,Southeast|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+22822,IN,Clark County Rural E M C - (IN),MISO|MISO|1,1.9242,0.000291,1.9242,9.3e-05,1.9242,5e-06
+24211,AZ,Tucson Electric Power Co,West|West|2,0.2149,0.001879,0.2149,0.000605,0.2149,3.6e-05
+24590,NH,Unitil Energy Systems,ISO-NE|ISO-NE|1,1.1545,9.8e-05,1.1545,1.2e-05,1.1545,3e-06
+24753,IN,Boone County Rural EMC,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+24889,NC,Brunswick Electric Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+24949,ND,Cass County Elec Coop Inc,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+25177,MN,Dakota Electric Association,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+25295,IN,Western Indiana Energy REMC,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+26510,NH,Liberty Utilities (Granite State Electri,ISO-NE|ISO-NE|1,0.0654,0.0,0.0654,4e-06,0.0654,9e-06
+27058,WY,"High West Energy, Inc",West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+27222,TN,City of Ripley - (TN),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+27238,MO,"Southwest Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+27369,TX,Taylor Electric Coop Inc - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+27599,IN,Carroll-White REMC,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+28541,OR,Clatskanie Peoples Util Dist,West|West|0,0.0,3e-06,0.0,4e-06,0.0,2e-06
+28604,TX,Kerrville Public Utility Board,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+28978,TX,City of San Marcos - (TX),ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+30518,AZ,Electrical Dist No3 Pinal County,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+31833,FL,Okefenoke Rural El Member Corp,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+31833,GA,Okefenoke Rural El Member Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+38084,MI,Great Lakes Energy Coop,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+40127,AL,Clarke-Washington E M C,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+40165,UT,"Dixie Escalante R E A, Inc",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+40166,TN,"Chickasaw Electric Coop, Inc",Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+40167,PA,"Somerset Rural Elec Coop, Inc",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40212,GA,Colquitt Electric Membership Corp,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+40220,PA,Adams Electric Cooperative Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40221,PA,"Bedford Rural Elec Coop, Inc",PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+40222,PA,Valley Rural Electric Coop Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40224,PA,"Central Electric Coop, Inc - (PA)",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40228,VA,Rappahannock Electric Coop,PJM|PJM|2,4.9886,0.000283,4.9886,4e-06,4.9886,3.7e-05
+40236,TN,"Forked Deer Electric Coop, Inc",Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+40289,PA,Claverack Rural Elec Coop Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40290,PA,Tri-County Rural Elec Coop Inc (PA),PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40292,PA,REA Energy Coop Inc,PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40293,PA,"Northwestern Rural E C A, Inc - (PA)",PJM|PJM|1,0.0,0.000128,0.0,0.000143,0.0,6.7e-05
+40302,MS,North East Mississippi EPA,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+40303,MS,Monroe County Elec Power Assn,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+40304,MN,Minnesota Valley Coop L&P Assn,MISO|MISO|0,0.0,8e-06,0.0,1.5e-05,0.0,2e-06
+40437,OR,Emerald People's Utility Dist,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+40438,OR,Columbia River Peoples Ut Dist,West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+40441,NC,Town of Murphy - (NC),Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+40606,NE,City of Grand Island - (NE),SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+49998,KY,City of Berea Municipal Utility,Southeast|Southeast|0,0.0,0.0,0.0,0.0,0.0,0.0
+54913,MA,NSTAR Electric Company,ISO-NE|ISO-NE|2,2.3398,0.000337,2.3398,0.000108,2.3398,6e-06
+55787,CA,City of Moreno Valley - (CA),California|California|0,0.0,0.0,0.0,0.0,0.0,0.0
+55937,TX,Entergy Texas Inc.,Southeast|MISO|2,4.8735,0.000641,4.8735,0.000205,4.8735,1.2e-05
+55959,ND,Roughrider Electric Cooperativ,"Upper Midwest, no market|SPP|0",0.0,3.3e-05,0.0,1.1e-05,0.0,1e-06
+55982,TX,Heart of Texas Electric Coop,ERCOT|ERCOT|1,0.0,0.001423,0.0,0.001676,0.0,0.001121
+56146,CO,"Black Hills Colorado Electric, LLC",West|West|1,0.0,0.000173,0.0,0.000171,0.0,0.000164
+56697,IL,Ameren Illinois Company,MISO|MISO|2,0.0,7e-06,0.0,2e-06,0.0,0.0
+57483,CA,Liberty Utilities,California|California|1,0.0,6e-06,0.0,5.7e-05,0.0,7.5e-05
+60482,OK,CKenergy Electric Cooperative,SPP|SPP|1,0.0,3e-06,0.0,1e-06,0.0,0.0
+60631,MI,Upper Michigan Energy Resources Corp.,MISO|MISO|1,0.0,0.0,0.0,0.0,0.0,0.0
+66073,SC,MPD Electric Cooperative,Southeast|Southeast|1,0.0,1e-06,0.0,1e-06,0.0,0.0
+66101,NY,FirstEnergy Pennsylvania Electric Co,PJM|PJM|0,0.0,4.7e-05,0.0,1.5e-05,0.0,1e-06
+66101,PA,FirstEnergy Pennsylvania Electric Co,PJM|PJM|2,0.1769,0.000698,0.1769,0.0005,0.1769,0.000145

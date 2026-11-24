@@ -1,0 +1,20 @@
+[
+ {
+  "fid": "bi:841-0",
+  "group": "big",
+  "state": "OR",
+  "is_data_center": true,
+  "site_name": "Apple data center, Prineville, Crook County",
+  "serving_utility": "PacifiCorp",
+  "service_arrangement": "retail",
+  "utility_source_url": "https://www.apple.com/environment/pdf/Apple_Environmental_Responsibility_Report_2019.pdf",
+  "utility_confidence": "medium",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "notes": "Session 6. The territory polygons put this point in no retail utility and the build fell back to Bonneville Power Administration, which is a wholesale supplier. Apple's 2019 Environmental Responsibility Report, in its section on the Prineville data center, says 'we use Oregon's Direct Access program to supply the renewable energy from these projects' and gives the site's 'Pacific Power Default Grid Mix'. Direct Access is the program under which a customer of Pacific Power or Portland General buys supply from another seller while the utility delivers it, so the site is in Pacific Power's (PacifiCorp's) territory and its load is delivered by that utility. Medium and not high because the report names the utility's grid mix and not the utility as the site's server in so many words. Opened by the session model on 2026-11-12."
+ }
+]

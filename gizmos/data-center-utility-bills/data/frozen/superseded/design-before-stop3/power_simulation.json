@@ -1,0 +1,1639 @@
+{
+  "what_this_is": "Stand-ins drawn from never-host utilities take the real hosts' places, states and first-crossing years; the specification in PREANALYSIS.md is run on each draw, read with the inference procedure named in `procedure`. Only never-host utilities' prices are read, one file per utility, through the access list.",
+  "procedure": {
+    "procedure": "C",
+    "label": "the selected and validated procedure (step E)",
+    "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+    "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+    "told_from_zero": "the 90% CR2 t range lies above zero",
+    "stage1_file": "inference_comparison_stage1.json",
+    "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+    "stage2_file": "inference_validation_stage2.json",
+    "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+    "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+    "stage2_verdicts": {
+      "range": "passed",
+      "early_years_test": "passed"
+    },
+    "validated_datasets_per_process": 20000
+  },
+  "standard": "docs/DECISIONS.md, D-38, committed before this was run.",
+  "not_in_the_simulation": [
+    "future hosts as a second comparison group",
+    "each sub-experiment uses utilities observed in all ten of its years",
+    "Callaway and Sant'Anna's estimator",
+    "utilities in Alaska and Hawaii, which have no degree-day series"
+  ],
+  "rules": {
+    "label": "headline",
+    "ownership": "table",
+    "usable": "flag",
+    "support": "applied",
+    "fuel_control": "gas_share_by_calendar_year"
+  },
+  "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+  "ownership_assumption": "municipal systems, public power districts and distribution cooperatives with no row in the ownership table are each taken as their own owner, from EIA's ownership class (D-58 rule 2.2)",
+  "seed": 20261113,
+  "draws": 2000,
+  "bootstrap_replications": null,
+  "planted_effects_pct": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12
+  ],
+  "new_host_estimate": {
+    "2%": {
+      "headline_set": {
+        "hosts_in_the_panel_for_their_whole_window": 7,
+        "draws": 2000,
+        "clusters_median": 22,
+        "procedure": {
+          "name": "C",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero"
+        },
+        "numerical_failures": {
+          "selected_procedure": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "nothing_planted": {
+          "moments_are_over": "draws without a numerical failure",
+          "mean_estimate": -0.433,
+          "sd_of_estimates": 2.882,
+          "mean_standard_error": 3.202,
+          "range_half_width_mean": 6.08,
+          "range_width_median": 11.932,
+          "range_covers_zero": 0.931,
+          "analytic_range_covers_zero": null
+        },
+        "early_years_test": {
+          "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.019,
+          "share_failing_at_p_below_0.05": 0.009,
+          "share_failing_at_the_chi_square_10pct_value": null
+        },
+        "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+        "start_years_exact": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 9.58,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.013,
+            "1": 0.029,
+            "2": 0.063,
+            "3": 0.116,
+            "4": 0.181,
+            "5": 0.281,
+            "6": 0.405,
+            "7": 0.537,
+            "8": 0.647,
+            "9": 0.749,
+            "10": 0.838,
+            "11": 0.914,
+            "12": 0.964
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.446,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 6.08,
+            "range_covers_the_planted_effect": 0.931,
+            "early_years_test_fails_at_p_below_0.10": 0.019,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 10.08,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.013,
+            "1": 0.028,
+            "2": 0.06,
+            "3": 0.112,
+            "4": 0.173,
+            "5": 0.265,
+            "6": 0.381,
+            "7": 0.502,
+            "8": 0.606,
+            "9": 0.704,
+            "10": 0.794,
+            "11": 0.867,
+            "12": 0.925
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.272,
+            "share_of_the_planted_effect_recovered": 0.964,
+            "range_half_width_mean": 6.092,
+            "range_covers_the_planted_effect": 0.926,
+            "early_years_test_fails_at_p_below_0.10": 0.018,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "C",
+          "label": "the selected and validated procedure (step E)",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero",
+          "stage1_file": "inference_comparison_stage1.json",
+          "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+          "stage2_file": "inference_validation_stage2.json",
+          "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+          "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+          "stage2_verdicts": {
+            "range": "passed",
+            "early_years_test": "passed"
+          },
+          "validated_datasets_per_process": 20000
+        },
+        "hosts_as_built": 7,
+        "their_states": 7,
+        "their_ownership": {
+          "investor_owned": 3,
+          "public": 2,
+          "cooperative": 2
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 4,
+          "ERCOT": 1,
+          "SPP": 1,
+          "Southeast": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": null,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [],
+        "load_unknown_excluded": [],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.714,
+          "own_state": 0.286,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 4.0,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.906,
+          "within_1_year": 0.933,
+          "true_crossing_2_or_more_years_earlier": 0.067
+        },
+        "fingerprint": {
+          "sha256": "42e8f0a1688e99110b97cdd06e39906a61a2dc0df576cc1f4eeea41c5ce71d40",
+          "of": {
+            "design_inputs": "0249ff7115272cc217fc52a5142cbc46d9cc7ca85c949b5a48600c58266b6c70",
+            "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+            "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+            "assumptions": "3c03f4d3f1371b3b440ddd3c32bee15d7e34e96610059478a9711847720b0a4a",
+            "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+            "seeds": "8c8199910ebd1145d4b7130581b5a64e5888e25863035ee33fd9b8fd79bf43b0"
+          },
+          "version": 1
+        }
+      },
+      "every_cohort_utility": {
+        "hosts_in_the_panel_for_their_whole_window": 37,
+        "draws": 2000,
+        "clusters_median": 44,
+        "procedure": {
+          "name": "C",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero"
+        },
+        "numerical_failures": {
+          "selected_procedure": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "nothing_planted": {
+          "moments_are_over": "draws without a numerical failure",
+          "mean_estimate": -0.247,
+          "sd_of_estimates": 1.238,
+          "mean_standard_error": 1.698,
+          "range_half_width_mean": 3.03,
+          "range_width_median": 5.957,
+          "range_covers_zero": 0.98,
+          "analytic_range_covers_zero": null
+        },
+        "early_years_test": {
+          "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.102,
+          "share_failing_at_p_below_0.05": 0.034,
+          "share_failing_at_the_chi_square_10pct_value": null
+        },
+        "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+        "start_years_exact": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 4.62,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.01,
+            "1": 0.053,
+            "2": 0.169,
+            "3": 0.397,
+            "4": 0.666,
+            "5": 0.882,
+            "6": 0.977,
+            "7": 0.998,
+            "8": 1.0,
+            "9": 1.0,
+            "10": 1.0,
+            "11": 1.0,
+            "12": 1.0
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.632,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 3.03,
+            "range_covers_the_planted_effect": 0.98,
+            "early_years_test_fails_at_p_below_0.10": 0.102,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 5.97,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.01,
+            "1": 0.041,
+            "2": 0.112,
+            "3": 0.233,
+            "4": 0.426,
+            "5": 0.635,
+            "6": 0.805,
+            "7": 0.912,
+            "8": 0.969,
+            "9": 0.992,
+            "10": 0.998,
+            "11": 1.0,
+            "12": 1.0
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.557,
+            "share_of_the_planted_effect_recovered": 0.78,
+            "range_half_width_mean": 3.04,
+            "range_covers_the_planted_effect": 0.903,
+            "early_years_test_fails_at_p_below_0.10": 0.128,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "C",
+          "label": "the selected and validated procedure (step E)",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero",
+          "stage1_file": "inference_comparison_stage1.json",
+          "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+          "stage2_file": "inference_validation_stage2.json",
+          "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+          "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+          "stage2_verdicts": {
+            "range": "passed",
+            "early_years_test": "passed"
+          },
+          "validated_datasets_per_process": 20000
+        },
+        "hosts_as_built": 37,
+        "their_states": 20,
+        "their_ownership": {
+          "cooperative": 14,
+          "public": 12,
+          "investor_owned": 11
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 16,
+          "ERCOT": 6,
+          "Southeast": 4,
+          "PJM": 3,
+          "SPP": 3,
+          "California": 3,
+          "MISO": 1,
+          "ISO-NE": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": null,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [
+          {
+            "utility": "15248:OR",
+            "cohort": null,
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "7490:OK",
+            "cohort": 2011,
+            "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+          },
+          {
+            "utility": "7977:OH",
+            "cohort": 2012,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 1 of its 10 matched in its region in event year 2, fewer than 8; 1 of its 10 matched in its region in event year 3, fewer than 8"
+          },
+          {
+            "utility": "14154:NY",
+            "cohort": 2017,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+          }
+        ],
+        "load_unknown_excluded": [
+          {
+            "utility": "15248:OR",
+            "role": "host",
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          }
+        ],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.946,
+          "own_state": 0.054,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 23.6,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.562,
+          "within_1_year": 0.679,
+          "true_crossing_2_or_more_years_earlier": 0.258
+        },
+        "fingerprint": {
+          "sha256": "b60f7ca3ddf93f40bd6d8de2dde04c6c857e788e37292ede41abc7330ca36b2d",
+          "of": {
+            "design_inputs": "ad4079d5bb425ee92ed0d65a85b726c53d3132fa84f3bca34ba2718f2f90f098",
+            "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+            "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+            "assumptions": "3c03f4d3f1371b3b440ddd3c32bee15d7e34e96610059478a9711847720b0a4a",
+            "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+            "seeds": "ce9d43e59922f0b141b788ecba2b704bbdfc3db7a765e63e505d5cae1dc92912"
+          },
+          "version": 1
+        }
+      },
+      "headline_set_with_the_ten_year_case": {
+        "hosts_in_the_panel_for_their_whole_window": 6,
+        "draws": 2000,
+        "clusters_median": 22,
+        "procedure": {
+          "name": "C",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero"
+        },
+        "numerical_failures": {
+          "selected_procedure": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "nothing_planted": {
+          "moments_are_over": "draws without a numerical failure",
+          "mean_estimate": -1.188,
+          "sd_of_estimates": 2.991,
+          "mean_standard_error": 3.46,
+          "range_half_width_mean": 6.749,
+          "range_width_median": 13.076,
+          "range_covers_zero": 0.94,
+          "analytic_range_covers_zero": null
+        },
+        "early_years_test": {
+          "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.016,
+          "share_failing_at_p_below_0.05": 0.004,
+          "share_failing_at_the_chi_square_10pct_value": null
+        },
+        "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+        "start_years_exact": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 11.37,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.009,
+            "1": 0.018,
+            "2": 0.035,
+            "3": 0.06,
+            "4": 0.105,
+            "5": 0.161,
+            "6": 0.241,
+            "7": 0.335,
+            "8": 0.459,
+            "9": 0.582,
+            "10": 0.669,
+            "11": 0.764,
+            "12": 0.862
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.691,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 6.749,
+            "range_covers_the_planted_effect": 0.94,
+            "early_years_test_fails_at_p_below_0.10": 0.016,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 11.37,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.009,
+            "1": 0.018,
+            "2": 0.035,
+            "3": 0.06,
+            "4": 0.105,
+            "5": 0.161,
+            "6": 0.24,
+            "7": 0.335,
+            "8": 0.459,
+            "9": 0.581,
+            "10": 0.668,
+            "11": 0.764,
+            "12": 0.862
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.691,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 6.75,
+            "range_covers_the_planted_effect": 0.94,
+            "early_years_test_fails_at_p_below_0.10": 0.016,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "C",
+          "label": "the selected and validated procedure (step E)",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero",
+          "stage1_file": "inference_comparison_stage1.json",
+          "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+          "stage2_file": "inference_validation_stage2.json",
+          "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+          "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+          "stage2_verdicts": {
+            "range": "passed",
+            "early_years_test": "passed"
+          },
+          "validated_datasets_per_process": 20000
+        },
+        "hosts_as_built": 6,
+        "their_states": 6,
+        "their_ownership": {
+          "investor_owned": 3,
+          "public": 2,
+          "cooperative": 1
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 3,
+          "ERCOT": 1,
+          "SPP": 1,
+          "Southeast": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": null,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [],
+        "load_unknown_excluded": [],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.667,
+          "own_state": 0.333,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 4.1,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.981,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0
+        },
+        "fingerprint": {
+          "sha256": "6614b8077cba22922533de44695fc31fc5078062e97884d1f6e8a1961d7a1b9c",
+          "of": {
+            "design_inputs": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+            "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+            "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+            "assumptions": "3c03f4d3f1371b3b440ddd3c32bee15d7e34e96610059478a9711847720b0a4a",
+            "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+            "seeds": "730cc18b41903e3d13b357b6fce1aa1d631c61cf86c8108e5e1d244139ede0b6"
+          },
+          "version": 1
+        }
+      }
+    },
+    "5%": {
+      "headline_set": {
+        "hosts_in_the_panel_for_their_whole_window": 6,
+        "draws": 2000,
+        "clusters_median": 20,
+        "procedure": {
+          "name": "C",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero"
+        },
+        "numerical_failures": {
+          "selected_procedure": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "nothing_planted": {
+          "moments_are_over": "draws without a numerical failure",
+          "mean_estimate": 0.001,
+          "sd_of_estimates": 4.105,
+          "mean_standard_error": 4.469,
+          "range_half_width_mean": 8.757,
+          "range_width_median": 16.149,
+          "range_covers_zero": 0.947,
+          "analytic_range_covers_zero": null
+        },
+        "early_years_test": {
+          "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.012,
+          "share_failing_at_p_below_0.05": 0.001,
+          "share_failing_at_the_chi_square_10pct_value": null
+        },
+        "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+        "start_years_exact": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": null,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.02,
+            "1": 0.04,
+            "2": 0.066,
+            "3": 0.098,
+            "4": 0.145,
+            "5": 0.185,
+            "6": 0.248,
+            "7": 0.315,
+            "8": 0.381,
+            "9": 0.445,
+            "10": 0.519,
+            "11": 0.616,
+            "12": 0.714
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.88,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 8.757,
+            "range_covers_the_planted_effect": 0.947,
+            "early_years_test_fails_at_p_below_0.10": 0.012,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": null,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.02,
+            "1": 0.039,
+            "2": 0.064,
+            "3": 0.095,
+            "4": 0.138,
+            "5": 0.177,
+            "6": 0.231,
+            "7": 0.291,
+            "8": 0.351,
+            "9": 0.413,
+            "10": 0.483,
+            "11": 0.575,
+            "12": 0.667
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.64,
+            "share_of_the_planted_effect_recovered": 0.951,
+            "range_half_width_mean": 8.691,
+            "range_covers_the_planted_effect": 0.94,
+            "early_years_test_fails_at_p_below_0.10": 0.013,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "C",
+          "label": "the selected and validated procedure (step E)",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero",
+          "stage1_file": "inference_comparison_stage1.json",
+          "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+          "stage2_file": "inference_validation_stage2.json",
+          "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+          "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+          "stage2_verdicts": {
+            "range": "passed",
+            "early_years_test": "passed"
+          },
+          "validated_datasets_per_process": 20000
+        },
+        "hosts_as_built": 6,
+        "their_states": 6,
+        "their_ownership": {
+          "public": 2,
+          "investor_owned": 2,
+          "cooperative": 2
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 3,
+          "ERCOT": 1,
+          "SPP": 1,
+          "Southeast": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": null,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [],
+        "load_unknown_excluded": [],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.833,
+          "own_state": 0.167,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 4.2,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.846,
+          "within_1_year": 0.915,
+          "true_crossing_2_or_more_years_earlier": 0.085
+        },
+        "fingerprint": {
+          "sha256": "729087dc0f81301c370df947d63e0e930b4b9a6b7602c4a83703e6da4e383947",
+          "of": {
+            "design_inputs": "c9a9a1c57954398d82a000e6133d8d6bddd006c44a03481ca83a79d5c1661c56",
+            "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+            "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+            "assumptions": "087b2c2d67b9bab41925591b14b1c23eb64d0537fc0bcf7f3448d5442ae4c72c",
+            "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+            "seeds": "da052146c93bee365715f66cb61e19e579272c441a9bcf765e34433053e64d6e"
+          },
+          "version": 1
+        }
+      },
+      "every_cohort_utility": {
+        "hosts_in_the_panel_for_their_whole_window": 31,
+        "draws": 2000,
+        "clusters_median": 42,
+        "procedure": {
+          "name": "C",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero"
+        },
+        "numerical_failures": {
+          "selected_procedure": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        },
+        "rates_include_numerical_failures": true,
+        "nothing_planted": {
+          "moments_are_over": "draws without a numerical failure",
+          "mean_estimate": -0.545,
+          "sd_of_estimates": 1.756,
+          "mean_standard_error": 2.001,
+          "range_half_width_mean": 3.608,
+          "range_width_median": 7.138,
+          "range_covers_zero": 0.927,
+          "analytic_range_covers_zero": null
+        },
+        "early_years_test": {
+          "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "share_of_flat_histories_failing_at_p_below_0.10": 0.051,
+          "share_failing_at_p_below_0.05": 0.017,
+          "share_failing_at_the_chi_square_10pct_value": null
+        },
+        "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+        "start_years_exact": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 5.85,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.009,
+            "1": 0.043,
+            "2": 0.111,
+            "3": 0.249,
+            "4": 0.452,
+            "5": 0.648,
+            "6": 0.827,
+            "7": 0.931,
+            "8": 0.982,
+            "9": 0.996,
+            "10": 1.0,
+            "11": 1.0,
+            "12": 1.0
+          },
+          "planted_5pct": {
+            "mean_estimate": 4.334,
+            "share_of_the_planted_effect_recovered": 1.0,
+            "range_half_width_mean": 3.608,
+            "range_covers_the_planted_effect": 0.927,
+            "early_years_test_fails_at_p_below_0.10": 0.051,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "start_years_misdated": {
+          "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 7.31,
+          "range_excludes_zero_by_planted_pct": {
+            "0": 0.009,
+            "1": 0.036,
+            "2": 0.086,
+            "3": 0.169,
+            "4": 0.304,
+            "5": 0.476,
+            "6": 0.62,
+            "7": 0.771,
+            "8": 0.865,
+            "9": 0.931,
+            "10": 0.968,
+            "11": 0.989,
+            "12": 0.997
+          },
+          "planted_5pct": {
+            "mean_estimate": 3.573,
+            "share_of_the_planted_effect_recovered": 0.844,
+            "range_half_width_mean": 3.705,
+            "range_covers_the_planted_effect": 0.882,
+            "early_years_test_fails_at_p_below_0.10": 0.063,
+            "numerical_failures": {
+              "count": 0,
+              "of": 2000,
+              "by_cause": {},
+              "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+            }
+          }
+        },
+        "procedure_provenance": {
+          "procedure": "C",
+          "label": "the selected and validated procedure (step E)",
+          "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+          "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+          "told_from_zero": "the 90% CR2 t range lies above zero",
+          "stage1_file": "inference_comparison_stage1.json",
+          "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+          "stage2_file": "inference_validation_stage2.json",
+          "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+          "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+          "stage2_verdicts": {
+            "range": "passed",
+            "early_years_test": "passed"
+          },
+          "validated_datasets_per_process": 20000
+        },
+        "hosts_as_built": 31,
+        "their_states": 17,
+        "their_ownership": {
+          "cooperative": 13,
+          "investor_owned": 10,
+          "public": 8
+        },
+        "their_regions_in_the_reference_year": {
+          "West": 11,
+          "ERCOT": 7,
+          "PJM": 4,
+          "Southeast": 3,
+          "SPP": 3,
+          "MISO": 2,
+          "California": 1
+        },
+        "comparison_form": "nearest_in_size",
+        "bootstrap_replications": null,
+        "rules": "headline",
+        "fuel_control": "gas_share_by_calendar_year",
+        "gas_share_assumption": "After the other controls, differences in outcomes are modeled as linear in the state's 2008 to 2010 gas share, with a slope free to differ by calendar year. A state's generation mix is a proxy for what a utility is exposed to; the adjustment does not establish that it measures any utility's own power supply (D-59 item 7).",
+        "hosts_not_given_a_stand_in": [
+          {
+            "utility": "15248:OR",
+            "cohort": null,
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          },
+          {
+            "utility": "7490:OK",
+            "cohort": 2011,
+            "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+          },
+          {
+            "utility": "5416:NC",
+            "cohort": 2015,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 7 of its 10 matched in its region in event year 2, fewer than 8; 7 of its 10 matched in its region in event year 3, fewer than 8"
+          },
+          {
+            "utility": "14154:NY",
+            "cohort": 2020,
+            "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+          }
+        ],
+        "load_unknown_excluded": [
+          {
+            "utility": "15248:OR",
+            "role": "host",
+            "why": "load unknown (D-96): dose not settled, carried to step F"
+          }
+        ],
+        "stand_in_match": {
+          "own_state_and_ownership": 0.903,
+          "own_state": 0.097,
+          "substitute_state_and_ownership": 0.0,
+          "substitute_state": 0.0,
+          "region_and_ownership": 0.0,
+          "region_only": 0.0,
+          "ownership_only": 0.0
+        },
+        "hosts_left_without_a_comparison_utility_per_draw": 0.0,
+        "utilities_that_change_region_inside_their_window_per_draw": 13.3,
+        "date_errors_drawn_for_these_hosts": {
+          "exact": 0.657,
+          "within_1_year": 0.774,
+          "true_crossing_2_or_more_years_earlier": 0.207
+        },
+        "fingerprint": {
+          "sha256": "a034d7a8a5606a0c26adb99ab1f8ceb7ad08b5b84c40ab8caeb9953b9a72d079",
+          "of": {
+            "design_inputs": "612fa90c402f55d278aa67b6d29cf0938445e8ff3b415c758accadab8117a886",
+            "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+            "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+            "assumptions": "087b2c2d67b9bab41925591b14b1c23eb64d0537fc0bcf7f3448d5442ae4c72c",
+            "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+            "seeds": "712a58bfe5edc736a31064ec6f95332a70029be452970da4e0680240e2bb258b"
+          },
+          "version": 1
+        }
+      }
+    }
+  },
+  "early_years_test_size_on_made_up_prices": {
+    "headline_set": {
+      "datasets": 1000,
+      "hosts": 7,
+      "made_up_prices": {
+        "region_step_sd": 0.03,
+        "state_sd": 0.015,
+        "state_rho": 0.6,
+        "own_sd": 0.03,
+        "own_rho": 0.7
+      },
+      "rules": "headline",
+      "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero"
+      },
+      "procedure_provenance": {
+        "procedure": "C",
+        "label": "the selected and validated procedure (step E)",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero",
+        "stage1_file": "inference_comparison_stage1.json",
+        "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+        "stage2_file": "inference_validation_stage2.json",
+        "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+        "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+        "stage2_verdicts": {
+          "range": "passed",
+          "early_years_test": "passed"
+        },
+        "validated_datasets_per_process": 20000
+      },
+      "load_unknown_excluded": [],
+      "numerical_failures": {
+        "selected_procedure": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "early_years_test_fails_at_p_below_0.10": 0.051,
+      "early_years_test_fails_at_p_below_0.05": 0.023,
+      "fails_at_the_chi_square_10pct_value": null,
+      "range_misses_zero": 0.101,
+      "mean_estimate_pct": 0.174,
+      "sd_of_estimates_pct": 2.259,
+      "range_half_width_mean_pct": 4.158,
+      "inside_the_band_written_in_advance": false,
+      "band": [
+        0.07,
+        0.13
+      ],
+      "fingerprint": {
+        "sha256": "aa357a145e973e33900eef6ccd3cd20888295699e3b58f016df3662994c96607",
+        "of": {
+          "design_inputs": "0249ff7115272cc217fc52a5142cbc46d9cc7ca85c949b5a48600c58266b6c70",
+          "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+          "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+          "assumptions": "9d2f2eba415afda0d89612bda6672308dd43e9bd24915ddff1835e941a81531a",
+          "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+          "seeds": "60f2c6d4615ad9660bfab9987cb78861a4410968f056fdb3e8d8ef0f241067d5"
+        },
+        "version": 1
+      }
+    },
+    "every_cohort_utility": {
+      "datasets": 1000,
+      "hosts": 37,
+      "made_up_prices": {
+        "region_step_sd": 0.03,
+        "state_sd": 0.015,
+        "state_rho": 0.6,
+        "own_sd": 0.03,
+        "own_rho": 0.7
+      },
+      "rules": "headline",
+      "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero"
+      },
+      "procedure_provenance": {
+        "procedure": "C",
+        "label": "the selected and validated procedure (step E)",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero",
+        "stage1_file": "inference_comparison_stage1.json",
+        "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+        "stage2_file": "inference_validation_stage2.json",
+        "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+        "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+        "stage2_verdicts": {
+          "range": "passed",
+          "early_years_test": "passed"
+        },
+        "validated_datasets_per_process": 20000
+      },
+      "load_unknown_excluded": [
+        {
+          "utility": "15248:OR",
+          "role": "host",
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        }
+      ],
+      "numerical_failures": {
+        "selected_procedure": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "early_years_test_fails_at_p_below_0.10": 0.078,
+      "early_years_test_fails_at_p_below_0.05": 0.024,
+      "fails_at_the_chi_square_10pct_value": null,
+      "range_misses_zero": 0.104,
+      "mean_estimate_pct": -0.023,
+      "sd_of_estimates_pct": 1.042,
+      "range_half_width_mean_pct": 1.748,
+      "inside_the_band_written_in_advance": true,
+      "band": [
+        0.07,
+        0.13
+      ],
+      "fingerprint": {
+        "sha256": "53aedf068158682335934b17a2bd6d15e8987214eb37a0ffac9f4866354e832d",
+        "of": {
+          "design_inputs": "ad4079d5bb425ee92ed0d65a85b726c53d3132fa84f3bca34ba2718f2f90f098",
+          "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+          "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+          "assumptions": "9d2f2eba415afda0d89612bda6672308dd43e9bd24915ddff1835e941a81531a",
+          "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+          "seeds": "9d645221c8e4416967292f4d328ba9848785cba1864cc6fdc7027a054d595ed2"
+        },
+        "version": 1
+      }
+    },
+    "headline_set_with_the_ten_year_case": {
+      "datasets": 1000,
+      "hosts": 6,
+      "made_up_prices": {
+        "region_step_sd": 0.03,
+        "state_sd": 0.015,
+        "state_rho": 0.6,
+        "own_sd": 0.03,
+        "own_rho": 0.7
+      },
+      "rules": "headline",
+      "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero"
+      },
+      "procedure_provenance": {
+        "procedure": "C",
+        "label": "the selected and validated procedure (step E)",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero",
+        "stage1_file": "inference_comparison_stage1.json",
+        "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+        "stage2_file": "inference_validation_stage2.json",
+        "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+        "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+        "stage2_verdicts": {
+          "range": "passed",
+          "early_years_test": "passed"
+        },
+        "validated_datasets_per_process": 20000
+      },
+      "load_unknown_excluded": [],
+      "numerical_failures": {
+        "selected_procedure": {
+          "count": 0,
+          "of": 1000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "early_years_test_fails_at_p_below_0.10": 0.042,
+      "early_years_test_fails_at_p_below_0.05": 0.015,
+      "fails_at_the_chi_square_10pct_value": null,
+      "range_misses_zero": 0.094,
+      "mean_estimate_pct": -0.013,
+      "sd_of_estimates_pct": 2.506,
+      "range_half_width_mean_pct": 4.658,
+      "inside_the_band_written_in_advance": false,
+      "band": [
+        0.07,
+        0.13
+      ],
+      "fingerprint": {
+        "sha256": "e06135a655c04030a245dbe8e845be890b9de1c403d77ed2af1c994c62485a33",
+        "of": {
+          "design_inputs": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+          "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+          "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+          "assumptions": "9d2f2eba415afda0d89612bda6672308dd43e9bd24915ddff1835e941a81531a",
+          "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+          "seeds": "9dbf0fba2048e12fb186b0ea0159f76129f523babfd9723339123cc9d17c2d4a"
+        },
+        "version": 1
+      }
+    }
+  },
+  "side_runs": {
+    "comparison_utilities_from_the_hosts_own_state_headline_set": {
+      "hosts_in_the_panel_for_their_whole_window": 7,
+      "draws": 2000,
+      "clusters_median": 7,
+      "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero"
+      },
+      "numerical_failures": {
+        "selected_procedure": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "nothing_planted": {
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate": -0.106,
+        "sd_of_estimates": 2.937,
+        "mean_standard_error": 3.171,
+        "range_half_width_mean": 6.214,
+        "range_width_median": 12.438,
+        "range_covers_zero": 0.926,
+        "analytic_range_covers_zero": null
+      },
+      "early_years_test": {
+        "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "share_of_flat_histories_failing_at_p_below_0.10": 0.053,
+        "share_failing_at_p_below_0.05": 0.02,
+        "share_failing_at_the_chi_square_10pct_value": null
+      },
+      "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+      "start_years_exact": {
+        "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 8.87,
+        "range_excludes_zero_by_planted_pct": {
+          "0": 0.018,
+          "1": 0.034,
+          "2": 0.067,
+          "3": 0.108,
+          "4": 0.167,
+          "5": 0.259,
+          "6": 0.379,
+          "7": 0.534,
+          "8": 0.68,
+          "9": 0.818,
+          "10": 0.906,
+          "11": 0.962,
+          "12": 0.993
+        },
+        "planted_5pct": {
+          "mean_estimate": 4.773,
+          "share_of_the_planted_effect_recovered": 1.0,
+          "range_half_width_mean": 6.214,
+          "range_covers_the_planted_effect": 0.926,
+          "early_years_test_fails_at_p_below_0.10": 0.053,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "start_years_misdated": {
+        "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 9.52,
+        "range_excludes_zero_by_planted_pct": {
+          "0": 0.018,
+          "1": 0.033,
+          "2": 0.065,
+          "3": 0.104,
+          "4": 0.16,
+          "5": 0.238,
+          "6": 0.347,
+          "7": 0.485,
+          "8": 0.622,
+          "9": 0.75,
+          "10": 0.846,
+          "11": 0.911,
+          "12": 0.947
+        },
+        "planted_5pct": {
+          "mean_estimate": 4.58,
+          "share_of_the_planted_effect_recovered": 0.96,
+          "range_half_width_mean": 6.239,
+          "range_covers_the_planted_effect": 0.92,
+          "early_years_test_fails_at_p_below_0.10": 0.058,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "procedure_provenance": {
+        "procedure": "C",
+        "label": "the selected and validated procedure (step E)",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero",
+        "stage1_file": "inference_comparison_stage1.json",
+        "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+        "stage2_file": "inference_validation_stage2.json",
+        "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+        "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+        "stage2_verdicts": {
+          "range": "passed",
+          "early_years_test": "passed"
+        },
+        "validated_datasets_per_process": 20000
+      },
+      "hosts_as_built": 7,
+      "their_states": 7,
+      "their_ownership": {
+        "investor_owned": 3,
+        "public": 2,
+        "cooperative": 2
+      },
+      "their_regions_in_the_reference_year": {
+        "West": 4,
+        "ERCOT": 1,
+        "SPP": 1,
+        "Southeast": 1
+      },
+      "comparison_form": "same_state",
+      "bootstrap_replications": null,
+      "rules": "headline",
+      "fuel_control": "no_controls",
+      "gas_share_assumption": null,
+      "hosts_not_given_a_stand_in": [],
+      "load_unknown_excluded": [],
+      "stand_in_match": {
+        "own_state_and_ownership": 0.714,
+        "own_state": 0.286,
+        "substitute_state_and_ownership": 0.0,
+        "substitute_state": 0.0,
+        "region_and_ownership": 0.0,
+        "region_only": 0.0,
+        "ownership_only": 0.0
+      },
+      "hosts_left_without_a_comparison_utility_per_draw": 0.19,
+      "utilities_that_change_region_inside_their_window_per_draw": 0.8,
+      "date_errors_drawn_for_these_hosts": {
+        "exact": 0.906,
+        "within_1_year": 0.933,
+        "true_crossing_2_or_more_years_earlier": 0.067
+      },
+      "fingerprint": {
+        "sha256": "6e54100c7f8a919a37001b585e4726ab57b1f988468131fa95f1b6865ae2b6b2",
+        "of": {
+          "design_inputs": "0249ff7115272cc217fc52a5142cbc46d9cc7ca85c949b5a48600c58266b6c70",
+          "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+          "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+          "assumptions": "a56179f2a3af388bd2daed6b655445e8e82343241296df3e7439a68447720f74",
+          "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+          "seeds": "7d3288fab45c1d2197108d1c432e1fbf57afb70f4597a2a6e47d4a6fe519c4fe"
+        },
+        "version": 1
+      }
+    },
+    "comparison_utilities_from_the_hosts_own_state_every_cohort_utility": {
+      "hosts_in_the_panel_for_their_whole_window": 37,
+      "draws": 2000,
+      "clusters_median": 19,
+      "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero"
+      },
+      "numerical_failures": {
+        "selected_procedure": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        }
+      },
+      "rates_include_numerical_failures": true,
+      "nothing_planted": {
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate": 0.541,
+        "sd_of_estimates": 1.348,
+        "mean_standard_error": 1.833,
+        "range_half_width_mean": 3.3,
+        "range_width_median": 6.531,
+        "range_covers_zero": 0.967,
+        "analytic_range_covers_zero": null
+      },
+      "early_years_test": {
+        "statistic": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "share_of_flat_histories_failing_at_p_below_0.10": 0.064,
+        "share_failing_at_p_below_0.05": 0.021,
+        "share_failing_at_the_chi_square_10pct_value": null
+      },
+      "not_reported_under_the_selected_procedure": "the analytic CR1 t range and the chi-square reading of the Wald statistic, which belong to the bootstrap as built's readings",
+      "start_years_exact": {
+        "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 4.03,
+        "range_excludes_zero_by_planted_pct": {
+          "0": 0.028,
+          "1": 0.102,
+          "2": 0.286,
+          "3": 0.557,
+          "4": 0.796,
+          "5": 0.942,
+          "6": 0.987,
+          "7": 0.999,
+          "8": 1.0,
+          "9": 1.0,
+          "10": 1.0,
+          "11": 1.0,
+          "12": 1.0
+        },
+        "planted_5pct": {
+          "mean_estimate": 5.42,
+          "share_of_the_planted_effect_recovered": 1.0,
+          "range_half_width_mean": 3.3,
+          "range_covers_the_planted_effect": 0.967,
+          "early_years_test_fails_at_p_below_0.10": 0.064,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "start_years_misdated": {
+        "smallest_effect_whose_range_excludes_zero_in_80pct_of_draws": 5.46,
+        "range_excludes_zero_by_planted_pct": {
+          "0": 0.028,
+          "1": 0.08,
+          "2": 0.19,
+          "3": 0.365,
+          "4": 0.57,
+          "5": 0.737,
+          "6": 0.876,
+          "7": 0.949,
+          "8": 0.983,
+          "9": 0.995,
+          "10": 0.999,
+          "11": 1.0,
+          "12": 1.0
+        },
+        "planted_5pct": {
+          "mean_estimate": 4.316,
+          "share_of_the_planted_effect_recovered": 0.774,
+          "range_half_width_mean": 3.331,
+          "range_covers_the_planted_effect": 0.962,
+          "early_years_test_fails_at_p_below_0.10": 0.109,
+          "numerical_failures": {
+            "count": 0,
+            "of": 2000,
+            "by_cause": {},
+            "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+          }
+        }
+      },
+      "procedure_provenance": {
+        "procedure": "C",
+        "label": "the selected and validated procedure (step E)",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies above zero",
+        "stage1_file": "inference_comparison_stage1.json",
+        "stage1_sha256": "1199fba01797867d19df7af56f44da22c40a0efc3beca36400cd3fb7e2271936",
+        "stage2_file": "inference_validation_stage2.json",
+        "stage2_sha256": "05585c0f8e530e6108664191ad9a68323bb47d40d5e26171ecb552b57763fa2d",
+        "comparison_fingerprint": "3bbcd57166f4a99eb6f9a7504db5a2c2288cd032bf7ce6a81e1a02f49d2364ec",
+        "stage2_verdicts": {
+          "range": "passed",
+          "early_years_test": "passed"
+        },
+        "validated_datasets_per_process": 20000
+      },
+      "hosts_as_built": 37,
+      "their_states": 20,
+      "their_ownership": {
+        "cooperative": 14,
+        "public": 12,
+        "investor_owned": 11
+      },
+      "their_regions_in_the_reference_year": {
+        "West": 16,
+        "ERCOT": 6,
+        "Southeast": 4,
+        "PJM": 3,
+        "SPP": 3,
+        "California": 3,
+        "MISO": 1,
+        "ISO-NE": 1
+      },
+      "comparison_form": "same_state",
+      "bootstrap_replications": null,
+      "rules": "headline",
+      "fuel_control": "no_controls",
+      "gas_share_assumption": null,
+      "hosts_not_given_a_stand_in": [
+        {
+          "utility": "15248:OR",
+          "cohort": null,
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        },
+        {
+          "utility": "7490:OK",
+          "cohort": 2011,
+          "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+        },
+        {
+          "utility": "7977:OH",
+          "cohort": 2012,
+          "why": "does not keep its place under the support rule (D-54, ruling 2): 1 of its 10 matched in its region in event year 2, fewer than 8; 1 of its 10 matched in its region in event year 3, fewer than 8"
+        },
+        {
+          "utility": "14154:NY",
+          "cohort": 2017,
+          "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+        }
+      ],
+      "load_unknown_excluded": [
+        {
+          "utility": "15248:OR",
+          "role": "host",
+          "why": "load unknown (D-96): dose not settled, carried to step F"
+        }
+      ],
+      "stand_in_match": {
+        "own_state_and_ownership": 0.946,
+        "own_state": 0.054,
+        "substitute_state_and_ownership": 0.0,
+        "substitute_state": 0.0,
+        "region_and_ownership": 0.0,
+        "region_only": 0.0,
+        "ownership_only": 0.0
+      },
+      "hosts_left_without_a_comparison_utility_per_draw": 0.7,
+      "utilities_that_change_region_inside_their_window_per_draw": 39.6,
+      "date_errors_drawn_for_these_hosts": {
+        "exact": 0.562,
+        "within_1_year": 0.679,
+        "true_crossing_2_or_more_years_earlier": 0.258
+      },
+      "fingerprint": {
+        "sha256": "593e1e50dc7c85aaf65672bcdcf88457e5cfb2b398477b73daf2e64063e74d4e",
+        "of": {
+          "design_inputs": "ad4079d5bb425ee92ed0d65a85b726c53d3132fa84f3bca34ba2718f2f90f098",
+          "rules": "b9e683850b94bb65a958785e7c7b987198e2ae4664ab4b70168f200c0db8caf5",
+          "code_version": "9473a216888b9239a45addecfba772a09f15f9dd699768d1c35d3c94951f4c03",
+          "assumptions": "a56179f2a3af388bd2daed6b655445e8e82343241296df3e7439a68447720f74",
+          "settings": "5baa53f2104a9432230e96e20b59d0aef949de089683960acde32479eff58171",
+          "seeds": "54cbcb13c2fdb5bc544343a2e2b636d2b2914e540f2226cd97427a9e1db1c0bf"
+        },
+        "version": 1
+      }
+    }
+  },
+  "per_point_of_load": {
+    "long_difference": {
+      "uncapped": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate_nothing_planted": -0.0086,
+        "range_half_width_mean": 0.0431,
+        "range_covers_zero": 0.849,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.624,
+        "load_share_points_of_the_median_host": 5.33,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.23
+      },
+      "capped_at_25_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate_nothing_planted": -0.0364,
+        "range_half_width_mean": 0.278,
+        "range_covers_zero": 0.966,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.114,
+        "load_share_points_of_the_median_host": 4.41,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 1.227
+      },
+      "capped_at_50_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate_nothing_planted": -0.0138,
+        "range_half_width_mean": 0.1522,
+        "range_covers_zero": 0.949,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.156,
+        "load_share_points_of_the_median_host": 5.05,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.768
+      },
+      "unit": "percent of residential price per point of load share",
+      "utilities_with_material_load_given_a_stand_in": 122,
+      "utilities_in_the_sample": 1013,
+      "their_states": 39,
+      "utilities_that_change_region_in_the_sample": 128,
+      "inference": "not under the selected procedure: the comparison did not cover this estimator. Its range is the wild cluster bootstrap by state as built (estimator.Fit.summary: bootstrap-t, unrestricted residuals, Rademacher), on the per-point slope",
+      "carried_to_step_f": [
+        "15248:OR",
+        "19325:OR"
+      ],
+      "carried_to_step_f_why": "load unknown (D-96): dose not settled, carried to step F"
+    },
+    "panel": {
+      "uncapped": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate_nothing_planted": 0.0002,
+        "range_half_width_mean": 0.0229,
+        "range_covers_zero": 0.932,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.491,
+        "load_share_points_of_the_median_host": 9.54,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.219
+      },
+      "capped_at_25_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate_nothing_planted": 0.0068,
+        "range_half_width_mean": 0.1501,
+        "range_covers_zero": 0.956,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.037,
+        "load_share_points_of_the_median_host": 9.54,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 1.431
+      },
+      "capped_at_50_points": {
+        "numerical_failures": {
+          "count": 0,
+          "of": 2000,
+          "by_cause": {},
+          "how_counted": "kept in the denominator; counted as a miss and as a rejection in calibration rates, and as no detection in power rates; nothing dropped or replaced (D-95 section 3 item 7; E4.1)"
+        },
+        "moments_are_over": "draws without a numerical failure",
+        "mean_estimate_nothing_planted": 0.0037,
+        "range_half_width_mean": 0.0826,
+        "range_covers_zero": 0.948,
+        "share_of_load_share_variation_from_the_three_largest_hosts": 0.059,
+        "load_share_points_of_the_median_host": 9.54,
+        "range_half_width_at_the_median_hosts_load_pct_of_price": 0.788
+      },
+      "unit": "percent of residential price per point of load share",
+      "utilities_with_material_load_given_a_stand_in": 122,
+      "utilities_in_the_sample": 1000,
+      "their_states": 39,
+      "utilities_that_change_region_in_the_sample": 131,
+      "inference": "not under the selected procedure: the comparison did not cover this estimator. Its range is the wild cluster bootstrap by state as built (estimator.Fit.summary: bootstrap-t, unrestricted residuals, Rademacher), on the per-point slope",
+      "carried_to_step_f": [
+        "15248:OR",
+        "19325:OR"
+      ],
+      "carried_to_step_f_why": "load unknown (D-96): dose not settled, carried to step F"
+    }
+  },
+  "comparison_units_left_out_by_the_access_list": {
+    "2%": 1626,
+    "5%": 1626
+  }
+}

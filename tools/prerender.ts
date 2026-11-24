@@ -16,7 +16,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
-import { dataPageSeo, gizmoSeo, homeSeo, notFoundSeo, OG_IMAGE_SIZE, SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE, breadcrumbJsonLd, type PageSeo } from "../src/lib/seo";
+import { dataPageSeo, gizmoSeo, methodologySeo, homeSeo, notFoundSeo, OG_IMAGE_SIZE, SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE, breadcrumbJsonLd, type PageSeo } from "../src/lib/seo";
 import { ALIAS_ROUTES, publicRoutes, type PublicRoute } from "../src/lib/routes";
 import { categoryFromSlug } from "../src/data/gizmos";
 import { loadDataFiles } from "./lib/loadDataFiles";
@@ -103,23 +103,7 @@ function seoForRoute(r: PublicRoute): PageSeo {
   if (r.path === "/") return homeSeo();
   if (r.dataPage) return dataPageSeo(r.dataPage, r.gizmo);
   if (r.gizmo && r.path === `/gizmo/${r.gizmo.slug}`) return gizmoSeo(r.gizmo);
-  if (r.gizmo && r.path.endsWith("/methodology")) {
-    const url = `${SITE_URL}${r.path}`;
-    return {
-      title: `Methodology: ${r.gizmo.seoTitle || r.gizmo.title} | ${SITE_NAME}`,
-      socialTitle: `Methodology: ${r.gizmo.title}`,
-      description: `Sources, model choices, and caveats behind "${r.gizmo.title}" by Joe Eichenbaum at 17A.`,
-      canonical: url,
-      ogImage: `${SITE_URL}/og/${r.gizmo.slug}.png`,
-      ogType: "article",
-      datePublished: r.gizmo.date.length === 7 ? `${r.gizmo.date}-01` : r.gizmo.date,
-      jsonLd: breadcrumbJsonLd([
-        { name: SITE_NAME, url: `${SITE_URL}/` },
-        { name: r.gizmo.title, url: `${SITE_URL}/gizmo/${r.gizmo.slug}` },
-        { name: "Methodology", url },
-      ]),
-    };
-  }
+  if (r.gizmo && r.path.endsWith("/methodology")) return methodologySeo(r.gizmo, r.path);
   if (r.path.startsWith("/category/")) {
     const cat = categoryFromSlug(r.path.replace("/category/", ""));
     const url = `${SITE_URL}${r.path}`;

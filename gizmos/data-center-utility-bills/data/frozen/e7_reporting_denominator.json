@@ -1,0 +1,214 @@
+{
+  "what_this_is": "Presentation only, derived from the stored block E7_every_cohort_utility with no redraw, no new seed and no rerun. PROVISIONAL: the design stands as of 2026-11-18, the plan is a draft and not frozen. No price, revenue or bill is read.",
+  "ruling": {
+    "words": "Settle E7's reporting denominator. For the comparison with the 'every cohort utility as built' analysis, use the 36 hosts in its reference design as the primary denominator, with the 41-host roster figures reported beside them and the distinction explained. Retain both sets of existing results. This changes presentation only: no redraws, new seed, simulation rerun or research-rule change.",
+    "attribution": "Joe, 2026-11-20 (D-117)"
+  },
+  "primary_denominator": "the hosts in the set's reference design (status 'retained' in the block's reference.hosts)",
+  "reported_beside": "the set's roster (every host in reference.hosts, as design.split gives them)",
+  "distinction": "The roster is the set's hosts as design.split gives them. The hosts marked 'out' are on the roster but are not in the reference design, so they are not in the 'every cohort utility as built' analysis that the figure is set beside. The primary figure therefore covers the reference-design hosts only; the roster figure, which is the one E7 stored, is reported beside it.",
+  "source_file": "data/frozen/inventory_run_designs.json",
+  "source_key": "E7_every_cohort_utility",
+  "source_file_sha256": "94459106c5335f39ad32ff96623d7ed104f88dbdaf56b9f2dc85a156b54464de",
+  "result": {
+    "hosts_in_reference_design": 36,
+    "hosts_in_roster": 41,
+    "directions": {
+      "earlier": {
+        "draws_computed": 200,
+        "shares": {
+          "exact": {
+            "over_reference_design_hosts_primary": 0.5383333333333333,
+            "over_roster_beside": 0.5576829268292682,
+            "stored_set_pooled_over_host_draws": 0.558,
+            "roster_recomputed_minus_stored": -0.0003170731707318186
+          },
+          "within_1_year": {
+            "over_reference_design_hosts_primary": 0.6833333333333333,
+            "over_roster_beside": 0.6973170731707317,
+            "stored_set_pooled_over_host_draws": 0.697,
+            "roster_recomputed_minus_stored": 0.0003170731707317076
+          },
+          "true_crossing_2_or_more_years_earlier": {
+            "over_reference_design_hosts_primary": 0.23833333333333334,
+            "over_roster_beside": 0.23170731707317074,
+            "stored_set_pooled_over_host_draws": 0.232,
+            "roster_recomputed_minus_stored": -0.00029268292682926855
+          },
+          "true_crossing_5_or_more_years_earlier": {
+            "over_reference_design_hosts_primary": 0.12194444444444444,
+            "over_roster_beside": 0.11878048780487806,
+            "stored_set_pooled_over_host_draws": 0.119,
+            "roster_recomputed_minus_stored": -0.00021951219512193754
+          },
+          "true_crossing_2_or_more_years_later": {
+            "over_reference_design_hosts_primary": 0.050138888888888886,
+            "over_roster_beside": 0.04621951219512195,
+            "stored_set_pooled_over_host_draws": 0.046,
+            "roster_recomputed_minus_stored": 0.00021951219512195141
+          },
+          "never_reaches_the_threshold": {
+            "over_reference_design_hosts_primary": 0.028194444444444442,
+            "over_roster_beside": 0.024756097560975607,
+            "stored_set_pooled_over_host_draws": 0.025,
+            "roster_recomputed_minus_stored": -0.00024390243902439393
+          }
+        },
+        "check": {
+          "roster_recomputed_from_by_host_equals_stored_pooled": true,
+          "tolerance": 0.001000001
+        }
+      },
+      "later": {
+        "draws_computed": 200,
+        "shares": {
+          "exact": {
+            "over_reference_design_hosts_primary": 0.5636111111111111,
+            "over_roster_beside": 0.5936585365853658,
+            "stored_set_pooled_over_host_draws": 0.594,
+            "roster_recomputed_minus_stored": -0.00034146341463414664
+          },
+          "within_1_year": {
+            "over_reference_design_hosts_primary": 0.7140277777777777,
+            "over_roster_beside": 0.7331707317073171,
+            "stored_set_pooled_over_host_draws": 0.733,
+            "roster_recomputed_minus_stored": 0.00017073170731707332
+          },
+          "true_crossing_2_or_more_years_earlier": {
+            "over_reference_design_hosts_primary": 0.09472222222222222,
+            "over_roster_beside": 0.08829268292682928,
+            "stored_set_pooled_over_host_draws": 0.088,
+            "roster_recomputed_minus_stored": 0.00029268292682928243
+          },
+          "true_crossing_5_or_more_years_earlier": {
+            "over_reference_design_hosts_primary": 0.01,
+            "over_roster_beside": 0.00951219512195122,
+            "stored_set_pooled_over_host_draws": 0.01,
+            "roster_recomputed_minus_stored": -0.0004878048780487809
+          },
+          "true_crossing_2_or_more_years_later": {
+            "over_reference_design_hosts_primary": 0.14277777777777778,
+            "over_roster_beside": 0.13548780487804876,
+            "stored_set_pooled_over_host_draws": 0.135,
+            "roster_recomputed_minus_stored": 0.00048780487804875317
+          },
+          "never_reaches_the_threshold": {
+            "over_reference_design_hosts_primary": 0.04847222222222222,
+            "over_roster_beside": 0.043048780487804875,
+            "stored_set_pooled_over_host_draws": 0.043,
+            "roster_recomputed_minus_stored": 4.878048780487809e-05
+          }
+        },
+        "check": {
+          "roster_recomputed_from_by_host_equals_stored_pooled": true,
+          "tolerance": 0.001000001
+        }
+      }
+    },
+    "roster_hosts_not_in_reference_design": [
+      {
+        "host_record": {
+          "utility": "7490:OK",
+          "name": "Grand River Dam Authority",
+          "crossing": 2011,
+          "status": "out",
+          "matches": null
+        },
+        "share_of_draws_in_the_design": {
+          "earlier": 0.0,
+          "later": 0.0
+        }
+      },
+      {
+        "host_record": {
+          "utility": "7977:OH",
+          "name": "City of Hamilton - (OH)",
+          "crossing": 2012,
+          "status": "out",
+          "matches": null
+        },
+        "share_of_draws_in_the_design": {
+          "earlier": 0.0,
+          "later": 0.0
+        }
+      },
+      {
+        "host_record": {
+          "utility": "14154:NY",
+          "name": "Orange & Rockland Utils Inc",
+          "crossing": 2017,
+          "status": "out",
+          "matches": null
+        },
+        "share_of_draws_in_the_design": {
+          "earlier": 0.49,
+          "later": 0.26
+        }
+      },
+      {
+        "host_record": {
+          "utility": "15248:OR",
+          "name": "Portland General Electric Co",
+          "crossing": 2021,
+          "status": "out",
+          "matches": null
+        },
+        "share_of_draws_in_the_design": {
+          "earlier": 0.0,
+          "later": 0.0
+        }
+      },
+      {
+        "host_record": {
+          "utility": "19325:OR",
+          "name": "Umatilla Electric Coop Assn",
+          "crossing": 2013,
+          "status": "out",
+          "matches": null
+        },
+        "share_of_draws_in_the_design": {
+          "earlier": 0.0,
+          "later": 0.0
+        }
+      }
+    ]
+  },
+  "existing_results_retained": {
+    "roster_pooled_figures_as_stored": {
+      "earlier": {
+        "exact": 0.558,
+        "within_1_year": 0.697,
+        "true_crossing_2_or_more_years_earlier": 0.232,
+        "true_crossing_5_or_more_years_earlier": 0.119,
+        "true_crossing_2_or_more_years_later": 0.046,
+        "never_reaches_the_threshold": 0.025
+      },
+      "later": {
+        "exact": 0.594,
+        "within_1_year": 0.733,
+        "true_crossing_2_or_more_years_earlier": 0.088,
+        "true_crossing_5_or_more_years_earlier": 0.01,
+        "true_crossing_2_or_more_years_later": 0.135,
+        "never_reaches_the_threshold": 0.043
+      }
+    },
+    "reference_design_figures_as_derived": {
+      "earlier": {
+        "exact": 0.5383333333333333,
+        "within_1_year": 0.6833333333333333,
+        "true_crossing_2_or_more_years_earlier": 0.23833333333333334,
+        "true_crossing_5_or_more_years_earlier": 0.12194444444444444,
+        "true_crossing_2_or_more_years_later": 0.050138888888888886,
+        "never_reaches_the_threshold": 0.028194444444444442
+      },
+      "later": {
+        "exact": 0.5636111111111111,
+        "within_1_year": 0.7140277777777777,
+        "true_crossing_2_or_more_years_earlier": 0.09472222222222222,
+        "true_crossing_5_or_more_years_earlier": 0.01,
+        "true_crossing_2_or_more_years_later": 0.14277777777777778,
+        "never_reaches_the_threshold": 0.04847222222222222
+      }
+    }
+  }
+}

@@ -1,0 +1,1650 @@
+{
+ "sequence": 4,
+ "kind": "read_time_checks",
+ "stage": "before_any_estimate",
+ "entry_id": null,
+ "estimated": false,
+ "written_at_utc": "2026-11-21T04:12:19+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "what_this_is": "The record made before any estimate: the door's record of the one read, the assembler's record, the checks that can only be made when the outcome file is read, the decision on whether they stop the run before any estimator (blocking_decision) and the reshaper's report. Counts and keys only, no value. the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered. A failed check fills, drops and repairs nothing: a blocking one stops the run here with no entry run, and one that is recorded only leaves the affected runs to stop in their own words.",
+  "door_record": {
+   "purpose_passed": "outcome_analysis_after_the_freeze",
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_existed": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_was_1": true,
+   "freeze_commit_required": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+   "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+   "plan_state": {
+    "plan_file": "PREANALYSIS.md",
+    "freeze_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+    "head": "4d453432e6b280b1607600f788aa6de75acf34bc",
+    "plan_blob": "a249a2ef425418943fb86d66ff056dc4968f9fef",
+    "freeze_commit_is_an_ancestor_of_head": true,
+    "plan_has_no_uncommitted_change": true,
+    "plan_equals_the_freeze_commits": true,
+    "established": true,
+    "why": null
+   },
+   "reader": {
+    "module": "pipeline.electricity.panel",
+    "qualified_name": "load_outcomes"
+   },
+   "frame_shape": [
+    59254,
+    10
+   ],
+   "frame_columns": [
+    "utility_id_eia",
+    "state",
+    "year",
+    "res_revenue_full",
+    "res_price",
+    "res_price_delivery_only",
+    "res_price_default_service",
+    "res_bill_per_customer_month",
+    "res_kwh_per_customer_month",
+    "energy_price_state"
+   ],
+   "frame_dtypes": [
+    [
+     "utility_id_eia",
+     "int64"
+    ],
+    [
+     "state",
+     "object"
+    ],
+    [
+     "year",
+     "int32"
+    ],
+    [
+     "res_revenue_full",
+     "float64"
+    ],
+    [
+     "res_price",
+     "float64"
+    ],
+    [
+     "res_price_delivery_only",
+     "float64"
+    ],
+    [
+     "res_price_default_service",
+     "float64"
+    ],
+    [
+     "res_bill_per_customer_month",
+     "float64"
+    ],
+    [
+     "res_kwh_per_customer_month",
+     "float64"
+    ],
+    [
+     "energy_price_state",
+     "float64"
+    ]
+   ],
+   "frame_fingerprint": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+   "frame_fingerprint_means": "sha256 of the outcome frame as the reader returned it, by run_outcomes.frame_fingerprint: its column names and types, its number of rows and every row's values, whatever their order; no value is shown",
+   "read_at_utc": "2026-11-21T04:12:18+00:00"
+  },
+  "assembler_record": {
+   "side": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_design_load",
+     "pipeline.analysis.assemble_inputs._real_usable",
+     "pipeline.analysis.assemble_inputs._real_rule_inputs",
+     "pipeline.analysis.assemble_inputs._real_unknown_load"
+    ],
+    "files": [
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/frozen/fuel_mix_groups.csv",
+      "sha256": "6628a9c8b825886ec98c330e7aaa5493c22825741477c26e670ccbf86da96a29"
+     },
+     {
+      "path": "data/frozen/degree_days.csv",
+      "sha256": "6627fe4a61fa0ce1b2ec8983efd41932916c7c5c1a5465f13850e767df50c458"
+     },
+     {
+      "path": "pipeline/analysis/ownership.csv",
+      "sha256": "1d489e819505786d06a21560538fc1569414423fc66328ca2eb14a4af4e2e03a"
+     },
+     {
+      "path": "data/frozen/unknown_load_sites_and_affected_utilities.json",
+      "sha256": "18bed170d8166fa08929b31cfa40f9e53f69a17aa4c1af6995a3ac5d92644dc5"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     }
+    ],
+    "seconds": 1.18,
+    "counts": {
+     "quantity_rows": 59254,
+     "panel_units": 3231,
+     "dose_rows": 2190,
+     "usable_unit_years": 40514,
+     "ownership_rows": 104,
+     "unknown_load_units": 2,
+     "rules": "headline"
+    }
+   },
+   "sets": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_split",
+     "pipeline.analysis.assemble_inputs._real_d34_table",
+     "pipeline.analysis.assemble_inputs._real_price_hold",
+     "pipeline.analysis.assemble_inputs._real_every_cohort_at"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     },
+     {
+      "path": "pipeline/facilities/verified/utility_history.csv",
+      "sha256": "23eb5979f8c4c31dcd21f503f31ee1e7e135c26b8c82630aaa23bb56ee3cedfb"
+     }
+    ],
+    "seconds": 0.09,
+    "counts": {
+     "every_cohort_utility at 1%": {
+      "hosts": 48,
+      "comparison_eligible_units": 3087
+     },
+     "headline_set at 2%": {
+      "hosts": 7,
+      "comparison_eligible_units": 3019
+     },
+     "headline_set_with_the_ten_year_case at 2%": {
+      "hosts": 6,
+      "comparison_eligible_units": 3019
+     },
+     "every_cohort_utility at 2%": {
+      "hosts": 41,
+      "comparison_eligible_units": 3087
+     },
+     "headline_set_plus_hosts_unsettled_on_assignment at 2%": {
+      "hosts": 17,
+      "comparison_eligible_units": 3019
+     },
+     "headline_set at 5%": {
+      "hosts": 5,
+      "comparison_eligible_units": 3019
+     },
+     "every_cohort_utility at 5%": {
+      "hosts": 35,
+      "comparison_eligible_units": 3087
+     }
+    }
+   },
+   "suppliers": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_suppliers"
+    ],
+    "files": [
+     {
+      "path": "pipeline/analysis/suppliers.csv",
+      "sha256": "1a4786d0c20d8064c9d288ea22e65b7352fb6531217d7bf2363508bf045665c8"
+     }
+    ],
+    "seconds": 0.01,
+    "counts": {
+     "rows": 256
+    }
+   },
+   "omissions": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_omissions"
+    ],
+    "files": [
+     {
+      "path": "pipeline/analysis/supplier_known_omissions.csv",
+      "sha256": "61dbd36364182c960af6cd009f10e070d556fe68f51841742317698f2acaaa7c"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "rows": 2
+    }
+   },
+   "e5_anchor": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_e5_anchor"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/inventory_report.json",
+      "sha256": "328dac70ede4b90d860afba60805de7a7a55bd47afbef7fedef44e963222e548"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "block_rows": 35,
+     "state_anchor_rows": 51
+    }
+   },
+   "e6_changers": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_e6_changers"
+    ],
+    "files": [],
+    "seconds": 12.34,
+    "counts": {
+     "units": 23
+    }
+   },
+   "future_admitted": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_future_hosts"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "data/frozen/timing_place_test.json",
+      "sha256": "451907076aa10cbf81a78cd95ca81e57252008267e239e1c645e4d22956fcfae"
+     },
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     }
+    ],
+    "seconds": 1.43,
+    "counts": {
+     "cohorts": 8,
+     "admitted_unit_cohorts": 53
+    }
+   },
+   "e2_histories": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_future_hosts"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "data/frozen/timing_place_test.json",
+      "sha256": "451907076aa10cbf81a78cd95ca81e57252008267e239e1c645e4d22956fcfae"
+     },
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     }
+    ],
+    "seconds": 1.43,
+    "counts": {
+     "late_hosts": 21
+    }
+   },
+   "e2_aside": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_future_hosts"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "data/frozen/timing_place_test.json",
+      "sha256": "451907076aa10cbf81a78cd95ca81e57252008267e239e1c645e4d22956fcfae"
+     },
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     }
+    ],
+    "seconds": 1.43,
+    "counts": {
+     "units": 161
+    }
+   },
+   "e2_hold": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_future_hosts"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "data/frozen/timing_place_test.json",
+      "sha256": "451907076aa10cbf81a78cd95ca81e57252008267e239e1c645e4d22956fcfae"
+     },
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     }
+    ],
+    "seconds": 1.43,
+    "counts": {
+     "units": 1
+    }
+   },
+   "e2_late": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_future_hosts"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "data/frozen/timing_place_test.json",
+      "sha256": "451907076aa10cbf81a78cd95ca81e57252008267e239e1c645e4d22956fcfae"
+     },
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     }
+    ],
+    "seconds": 1.43,
+    "counts": {
+     "units": 21
+    }
+   },
+   "inventory": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_inventory"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "pipeline/facilities/verified/date_evidence.csv",
+      "sha256": "1cfba115f3548d54e2d592b0aa19e06029c05dacde76e432f4f09bc7e08057cb"
+     }
+    ],
+    "seconds": 0.16,
+    "counts": {
+     "length": null
+    }
+   },
+   "inventory_contexts": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_inventory_context"
+    ],
+    "files": [
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/frozen/fuel_mix_groups.csv",
+      "sha256": "6628a9c8b825886ec98c330e7aaa5493c22825741477c26e670ccbf86da96a29"
+     },
+     {
+      "path": "data/frozen/degree_days.csv",
+      "sha256": "6627fe4a61fa0ce1b2ec8983efd41932916c7c5c1a5465f13850e767df50c458"
+     },
+     {
+      "path": "pipeline/analysis/ownership.csv",
+      "sha256": "1d489e819505786d06a21560538fc1569414423fc66328ca2eb14a4af4e2e03a"
+     },
+     {
+      "path": "data/frozen/unknown_load_sites_and_affected_utilities.json",
+      "sha256": "18bed170d8166fa08929b31cfa40f9e53f69a17aa4c1af6995a3ac5d92644dc5"
+     },
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     }
+    ],
+    "seconds": 2.0,
+    "counts": {
+     "headline_set": {
+      "aside": 161,
+      "history": 0
+     },
+     "every_cohort_utility": {
+      "aside": 0,
+      "history": 0
+     }
+    }
+   },
+   "e7_errors": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_e7_errors"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/dating_report.json",
+      "sha256": "f33603811b1a0b8c22c7723f646431486efb24084423959e26a2f036ab339522"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "under_20": 136,
+     "20_to_50": 58,
+     "50_plus": 102
+    }
+   },
+   "e7_draws": {
+    "supplied": true,
+    "built_by": [],
+    "files": [],
+    "seconds": 0,
+    "counts": {
+     "value": 200
+    },
+    "note": "200 draws a direction, the plan's number (inventory_runs.E7_DRAWS)"
+   },
+   "peaks": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_peaks"
+    ],
+    "files": [
+     {
+      "path": "data/interim/condition4_peak_rows.parquet",
+      "sha256": "71a6048169399943bf287b37f96a17fade7699c6d998093035ba4cdbe1124542"
+     },
+     {
+      "path": "data/frozen/condition4_peak_read_record.json",
+      "sha256": "961fa6049f05daf20184893d8e46521889f0860fad0594b5c902ba882a4b8923"
+     }
+    ],
+    "seconds": 0.01,
+    "counts": {
+     "rows": 66329
+    }
+   },
+   "has_predecessors": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_has_predecessors"
+    ],
+    "files": [],
+    "seconds": 0.0,
+    "counts": {
+     "units": 30
+    }
+   },
+   "succession": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_succession"
+    ],
+    "files": [
+     {
+      "path": "pipeline/electricity/succession.csv",
+      "sha256": "805873091f348b7c08a81760dc17f5f90fd28b00e485fba4092db40a95ba8cab"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "rows": 61
+    }
+   },
+   "second_number": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_second_number"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/interim/state_anchor.parquet",
+      "sha256": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout.csv",
+      "sha256": "9e2dc34023aa7a4e7f8105cd0b4fc06e48439bbb24cca62a5f50403e11c43707"
+     },
+     {
+      "path": "pipeline/facilities/verified/buildout_county.csv",
+      "sha256": "038666b3e9c591ec0ead703b5ef897efe7b6f1f4f883072590318dbb19147e1d"
+     },
+     {
+      "path": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+      "sha256": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     },
+     {
+      "path": "data/frozen/unknown_load_sites_and_affected_utilities.json",
+      "sha256": "18bed170d8166fa08929b31cfa40f9e53f69a17aa4c1af6995a3ac5d92644dc5"
+     }
+    ],
+    "seconds": 5.42,
+    "counts": {
+     "units": 3219,
+     "scenario_units": 3230,
+     "assigned_forms": [
+      "capped_at_25_points",
+      "capped_at_50_points",
+      "uncapped"
+     ],
+     "established_utilities": 2,
+     "no_assigned": 0,
+     "scenario_no_dose": {
+      "sensitivity_scenario_a_runner_up_placement": 2,
+      "sensitivity_scenario_b_other_end_of_every_dated_interval": 3
+     },
+     "units_with_load_and_no_positive_base_left_out": 9,
+     "load_unknown_units_left_out_of_units": 2,
+     "primary_frame_units": 1182,
+     "reconstruction_check_states": 55,
+     "reconstruction_check_states_failing": []
+    }
+   },
+   "catches_drift": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_catches_drift"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/early_years_drift_selected_procedure.json",
+      "sha256": "92a0d0e0c3b184656d8889be2dabac2b4dc83be28c685f7df1ab078587d81261"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "sets_with_a_value": [
+      "headline_set"
+     ]
+    }
+   },
+   "names": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_design_load"
+    ],
+    "files": [
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/frozen/fuel_mix_groups.csv",
+      "sha256": "6628a9c8b825886ec98c330e7aaa5493c22825741477c26e670ccbf86da96a29"
+     },
+     {
+      "path": "data/frozen/degree_days.csv",
+      "sha256": "6627fe4a61fa0ce1b2ec8983efd41932916c7c5c1a5465f13850e767df50c458"
+     }
+    ],
+    "seconds": 1.13,
+    "counts": {
+     "units": 3231
+    }
+   },
+   "validation_reference": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_validation_reference"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/inference_comparison_benchmark.json",
+      "sha256": "59b93c2a57ac6c52c3c6fb94af223f328df801c8d5a60b4c85fc1428b2f09460"
+     },
+     {
+      "path": "data/frozen/inference_comparison_stage1.json",
+      "sha256": "6f6ba5d995687c992ee23ebad7b7d2db5fc7f8e35e743ac7a480d725495f4a53"
+     },
+     {
+      "path": "data/frozen/inference_validation_budget.json",
+      "sha256": "d2e836595e2d9bdebbf81c72407d1e43977679970a6cfc46d35c086c6fb86080"
+     },
+     {
+      "path": "data/frozen/inference_validation_stage2.json",
+      "sha256": "6f003527ae92632f5a9c7999eaa0737e01f6c7a89cec7615c9a4548cf8dc474a"
+     },
+     {
+      "path": "data/frozen/design_support.json",
+      "sha256": "714854ce2eab2a277f9922485f19a67fc08a1b8ad9e4ab2fe217fa2d7c3473e2"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "design_inputs_prefix": "b8515c35cba1",
+     "rules_prefix": "626514815103"
+    }
+   },
+   "reconciliation_m": {
+    "supplied": false,
+    "built_by": [],
+    "files": [],
+    "seconds": 0,
+    "counts": null,
+    "note": "not built: row M is out of scope for this freeze (Joe, 2026-11-19, D-109) and no registry entry reads it"
+   },
+   "reconciliation_u": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_row_u"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/interim/facility_year.parquet",
+      "sha256": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50"
+     },
+     {
+      "path": "data/interim/reconciliation_polygon_incidence.parquet",
+      "sha256": null,
+      "why_not_hashed": "read, not hashed: not on the assembler's hash list"
+     },
+     {
+      "path": "data/interim/panel_reported_ids.parquet",
+      "sha256": "28ee7056ffbd1aa7017360677a836046604e683d4f2ca07c208181fc6d5a5eff"
+     },
+     {
+      "path": "data/interim/reconciliation_short_form_filers.parquet",
+      "sha256": "e7d44961e484246bc2f272e967402f4ae86e2c0cc070a2d639d094aac7b994d3"
+     },
+     {
+      "path": "data/interim/reconciliation_short_form_flags.parquet",
+      "sha256": "ee0f1584828e2e1e5ab5bbf55d46f5b9372b1d73ee69f87a239146b550568972"
+     }
+    ],
+    "seconds": 0.78,
+    "counts": {
+     "treatments": [
+      "U0",
+      "U1",
+      "U2",
+      "U3"
+     ],
+     "ownership_units": 3231,
+     "flag_unit_years": 19083,
+     "flag_unit_years_with_a_record_of_a_filing": 1037,
+     "short_form_exclusion": "unit_years_filed",
+     "u1_indistinguishable": null
+    }
+   },
+   "reconciliation_c": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_row_c"
+    ],
+    "files": [
+     {
+      "path": "data/interim/facilities.parquet",
+      "sha256": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394"
+     },
+     {
+      "path": "data/frozen/fiber_share_by_unit.csv",
+      "sha256": "b6a449e37d1346a7a05703c9dc64df567163357d6e19254ce07728fb179e1c66"
+     },
+     {
+      "path": "data/frozen/dc_construction_spending.csv",
+      "sha256": "7947454a95c7e1b97dbc4532e7c170afe588d1fc3bf1147bb28509a103629d60"
+     },
+     {
+      "path": "data/interim/reconciliation_polygon_incidence.parquet",
+      "sha256": null,
+      "why_not_hashed": "read, not hashed: not on the assembler's hash list"
+     },
+     {
+      "path": "data/interim/panel_reported_ids.parquet",
+      "sha256": "28ee7056ffbd1aa7017360677a836046604e683d4f2ca07c208181fc6d5a5eff"
+     }
+    ],
+    "seconds": 0.39,
+    "counts": {
+     "counts_polygon_rows": 1271,
+     "counts_verified_rows": 1192,
+     "dose_rows": 2190,
+     "fiber_share_units": 3551,
+     "spending_series": [
+      "current",
+      "paper"
+     ],
+     "ownership_units": 3231,
+     "hosts_for_c5": 148,
+     "c4_cap": 99.5
+    }
+   },
+   "inventory_readings": {
+    "supplied": false,
+    "built_by": [],
+    "files": [],
+    "seconds": 0,
+    "counts": null,
+    "note": "obsolete: None passes inventory_against_sales.ADOPTED (the check's four elements, D-107)"
+   },
+   "inventory_inputs_are": {
+    "supplied": true,
+    "built_by": [],
+    "files": [],
+    "seconds": 0,
+    "counts": {
+     "value": "research_data_after_the_freeze"
+    }
+   },
+   "reconciliation_u_inputs_are": {
+    "supplied": true,
+    "built_by": [],
+    "files": [],
+    "seconds": 0,
+    "counts": {
+     "value": "research_data_after_the_freeze"
+    }
+   },
+   "inventory_as_built": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_design_load"
+    ],
+    "files": [
+     {
+      "path": "data/interim/panel_quantities.parquet",
+      "sha256": "844946ef0fb155cdfce375438b6f28a73edd38c208a4b610e53e8a92fffcca98"
+     },
+     {
+      "path": "data/interim/utility_year_dose.parquet",
+      "sha256": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34"
+     },
+     {
+      "path": "pipeline/electricity/market_moves.csv",
+      "sha256": "c810fdfe96a8fc092a2358d33b0be7c3b1832b876db3c3b7e3609bdb466ad1e0"
+     },
+     {
+      "path": "pipeline/electricity/pjm_late_zones.csv",
+      "sha256": "57c4f6f0b30fdf3ebb419e2cd4897a5c80efc69d5545a5935427bb66f87455b8"
+     },
+     {
+      "path": "data/frozen/fuel_mix_groups.csv",
+      "sha256": "6628a9c8b825886ec98c330e7aaa5493c22825741477c26e670ccbf86da96a29"
+     },
+     {
+      "path": "data/frozen/degree_days.csv",
+      "sha256": "6627fe4a61fa0ce1b2ec8983efd41932916c7c5c1a5465f13850e767df50c458"
+     }
+    ],
+    "seconds": 1.13,
+    "counts": {
+     "dose_fingerprint_prefix": "1c5d7d457685",
+     "split": "design.split"
+    }
+   },
+   "timing_added": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_timing_added"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "data/frozen/headline_set.csv",
+      "sha256": "1694b56d583530b8a5496f3a9e252191d99e43cf1645d6ee555a10ce979ff6fd"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "hosts": 2
+    }
+   },
+   "cs_sample": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_cs_lists",
+     "pipeline.analysis.assemble_inputs._real_price_hold"
+    ],
+    "files": [
+     {
+      "path": "data/frozen/buildout_sensitivity.json",
+      "sha256": "85c03fc4f73ed94ca8deb3982d8d04089d045eaf8eeaecf9cf5b77cd52f99a27"
+     },
+     {
+      "path": "data/frozen/dating_sensitivity.json",
+      "sha256": "2cfe292756f3ca406a11af73e49031b0bb47404bf9eecceac281867cfcdd80a1"
+     },
+     {
+      "path": "data/frozen/treatment_bounds.json",
+      "sha256": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351"
+     },
+     {
+      "path": "pipeline/analysis/price_hold.csv",
+      "sha256": "005c3c68d1a13693f7a853cde0b0722f0f5f32c193b0b03b310dc31ce8deb7fd"
+     }
+    ],
+    "seconds": 0.0,
+    "counts": {
+     "host_aside": 161,
+     "comparison_aside": 161,
+     "hold": 1,
+     "history": 0
+    }
+   },
+   "_cpi_factors": {
+    "supplied": true,
+    "built_by": [
+     "pipeline.analysis.assemble_inputs._real_row_c"
+    ],
+    "counts": {
+     "years": 12,
+     "first": 2014,
+     "last": 2025
+    }
+   },
+   "_seconds_by_source": {
+    "design_load": 1.13,
+    "usable": 0.04,
+    "rule_inputs": 0.01,
+    "unknown_load": 0.0,
+    "d34_table": 0.0,
+    "price_hold": 0.0,
+    "every_cohort_at": 0.03,
+    "split": 0.06,
+    "validation_reference": 0.0,
+    "catches_drift": 0.0,
+    "suppliers": 0.01,
+    "omissions": 0.0,
+    "e5_anchor": 0.0,
+    "e6_changers": 12.34,
+    "future_hosts": 1.43,
+    "inventory": 0.16,
+    "inventory_context": 2.0,
+    "e7_errors": 0.0,
+    "peaks": 0.01,
+    "has_predecessors": 0.0,
+    "succession": 0.0,
+    "second_number": 5.42,
+    "row_u": 0.78,
+    "row_c": 0.39,
+    "timing_added": 0.0,
+    "cs_lists": 0.0
+   }
+  },
+  "assembler_deferred": [],
+  "assembler_inputs_are": "research_data_after_the_freeze",
+  "inventory_check_inputs": {
+   "inventory_inputs_are": "research_data_after_the_freeze",
+   "reconciliation_u_inputs_are": "research_data_after_the_freeze",
+   "inventory_as_built": {
+    "dose_fingerprint": "1c5d7d457685e360e5ee17ad543233210b8443b9b4eb1dd7dff63863f651441d",
+    "source": "the frame design.load() returned, data/interim/utility_year_dose.parquet, the inventory as built (the load history underlying the headline design; Joe, 2026-11-20, D-119)"
+   },
+   "taken_from": "the assembled inputs (RunInputs), as the assembler built them"
+  },
+  "read_time_checks": {
+   "what_this_is": "checks for an authorized read of the outcome file, on frames passed in. The plan is frozen at commit ea426c4. When these checks are run on the research outcome file, that file has been read through the guarded coordinator, and the time of the read is in the door's record beside this one (read_at_utc). No host utility's price in the outcome data was read before the first authorized read, with one lapse in source access disclosed in the plan.",
+   "left_to_the_rows": [
+    "Row C's price-balanced sample (units with a non-missing price in every year 2015-2024, contiguous states, a fiber share) is the row's own computation in reconciliation_c.build_panel and balanced_units. It is not rebuilt or checked here."
+   ],
+   "key_types": {
+    "outcomes": {
+     "dtypes": {
+      "utility_id_eia": "int64",
+      "state": "object",
+      "year": "int32"
+     },
+     "usable_as_keys": true,
+     "reason": null
+    },
+    "quantities": {
+     "dtypes": {
+      "utility_id_eia": "int64",
+      "state": "object",
+      "year": "int32"
+     },
+     "usable_as_keys": true,
+     "reason": null
+    },
+    "same_dtype_by_column": {
+     "utility_id_eia": true,
+     "state": true,
+     "year": true
+    },
+    "passed": true,
+    "passes": "yes: both frames' keys are whole-number ids and years and text states with no repeated unit-year (dtypes may differ; both are cast to int64, str and int64)"
+   },
+   "duplicate_unit_years_in_outcomes": {
+    "rows_repeating": 0,
+    "repeated_keys": 0,
+    "examples": [],
+    "passed": true,
+    "passes": "yes: no unit-year is repeated"
+   },
+   "coverage": {
+    "quantity_unit_years_with_no_outcome_row": 0,
+    "outcome_unit_years_with_no_quantity_row": 0,
+    "examples_quantity_only": [],
+    "examples_outcome_only": [],
+    "passed": true,
+    "passes": "yes: the two frames hold the same unit-years (panel.build returns both from one frame)"
+   },
+   "usable_without_positive_price": {
+    "usable_unit_years": 40514,
+    "with_no_outcome_row": 0,
+    "price_missing": 0,
+    "price_not_finite": 0,
+    "price_not_positive": 0,
+    "examples": [],
+    "passed": true,
+    "passes": "yes: every usable unit-year has a positive finite res_price row (the usable flag requires res_price above zero)"
+   },
+   "kwh_and_bill_not_loggable": {
+    "res_kwh_per_customer_month": {
+     "rows": 59254,
+     "missing": 1161,
+     "not_finite": 0,
+     "not_positive": 0
+    },
+    "res_bill_per_customer_month": {
+     "rows": 59254,
+     "missing": 1162,
+     "not_finite": 0,
+     "not_positive": 0
+    },
+    "passed": null,
+    "passes": "not a gate: these are counts over every row of the outcome file. The non-computable rule (D-117) is applied by supplementary_outcomes on the rows a design requires, and only there"
+   },
+   "row_u_short_form_flags": {
+    "window": [
+     2015,
+     2025
+    ],
+    "outcome_unit_years_in_window": 19083,
+    "with_no_flags_row": 0,
+    "with_a_missing_flag": 0,
+    "flags_unit_years_whose_rows_disagree": 0,
+    "by_row_u_price_column": {
+     "res_price_default_service": {
+      "unit_years_in_window_with_a_price": 18674,
+      "of_which_no_flags_row": 0,
+      "of_which_missing_flag": 0
+     },
+     "res_price": {
+      "unit_years_in_window_with_a_price": 18674,
+      "of_which_no_flags_row": 0,
+      "of_which_missing_flag": 0
+     }
+    },
+    "examples": [],
+    "note": "reconciliation_mu._u_drop_short_form stops a step when an outcome unit-year reaching it has no flags row or a missing flag, or when flag rows of one unit-year disagree; it reaches only rows left after the window, jurisdiction and missing-price rules, so the counts by price column are closer to what a step sees. These counts are no claim about whether any unit filed.",
+    "passed": true,
+    "passes": "yes: every outcome unit-year in the window has a True or False flag and no flag rows disagree"
+   }
+  },
+  "read_time_checks_raised": null,
+  "read_time_checks_failed": [],
+  "blocking_decision": {
+   "what_this_is": "the decision made before any estimator is called (Joe, 2026-11-20, D-122): whether the read-time checks stop the run, which stop it and why. Counts and keys only, no value.",
+   "blocks": false,
+   "blocking": [],
+   "blocking_checks": {
+    "key_types": "a key column missing or untypable in either file (a repeated unit-year in either file also fails this check, because the keys are then not usable as keys)",
+    "duplicate_unit_years_in_outcomes": "a repeated unit-year in the outcome file",
+    "coverage": "the outcome file and the quantity panel do not hold the same unit-years (two-way coverage)",
+    "usable_without_positive_price": "a unit-year the usable flag marks usable that has no outcome row, or whose res_price is missing, not finite or not positive"
+   },
+   "recorded_and_not_blocking": [],
+   "recorded_and_not_blocking_checks": {
+    "kwh_and_bill_not_loggable": "supplementary loggability counts over every row of the outcome file; the non-computable rule (D-117) is applied by supplementary_outcomes on the rows a design requires, and only there",
+    "row_u_short_form_flags": "row U's flag coverage, which the row refuses step by step under its own rule (reconciliation_mu._u_drop_short_form)"
+   },
+   "also_not_blocking": "a price that is missing on a unit-year that is not usable, where the row exists (no check counts it as a failure); key types that differ in width and cast cleanly (key_types records same_dtype_by_column and passes); row C's price-balanced sample and row U's missing-price rule, which are the rows' own computations; a frame the reshaper could not build for want of a column, which stops the runs that need it in their own words",
+   "coverage_rule": "Two-way coverage, resolved from the construction code before any read (session 28, by reading and not by running): pipeline/electricity/panel.py build() returns p[quantity_cols].copy() and p[outcome_cols].copy(), two column subsets of one frame, so the two files hold the same rows and the same keys one for one; pipeline/electricity/build_panel.py writes them as returned (q, o = panel.build(...); panel.write(q, o)); and pipeline/electricity/write_usable_flag.py, which rewrote the quantity file with the usable flag, required at that write that the outcome file on disk was identical to the outcomes it built and that the outer merge of the two frames on the keys matched on every row in both directions with equal row counts. Identical keys are therefore required by construction, and a unit-year in one file and not in the other blocks, whatever its usable flag: a flag that is not usable does not make an absent row harmless, since rows U and C have sample rules of their own.",
+   "a_check_not_made_blocks": "The session's reading (session 28), his to strike: a blocking check whose result is not `passed: True` stops the run, including one that could not be made (passed None) or is absent from the checks, because a run whose structural checks cannot be made is not shown to be consistent with the frozen inputs. The same holds when the checks themselves raised, or the reshaper raised: nothing can be handed to an estimator, and the report is written and not lost.",
+   "in_words": "no blocking integrity check failed; estimation may proceed in the recorded order"
+  },
+  "blocked_before_any_estimator": false,
+  "reshape_report": {
+   "log_residential_price": {
+    "name": "log_residential_price",
+    "source": "the panel's outcome file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_price",
+    "source_unit": "cents per kWh, nominal: res_revenue_full / res_mwh / 10.0 (panel.py build)",
+    "transformation": "natural log",
+    "unit": "natural log of cents per kWh",
+    "read_from": "PREANALYSIS.md, Electricity: the main estimate, the Outcome bullet ('log residential price'); power_simulation.py, np.log(res_price) on the rows it keeps",
+    "handled_by": "outcome_analysis.outcome_vector, which reads the design's rows only and refuses NaN",
+    "value_rule": "a missing, not finite, or zero or negative res_price has no logarithm, so the row is kept with NaN and counted by reason, never an infinite value; the kernel refuses NaN on any row a design needs, so it never enters an estimate (the agent's reading)",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 1162,
+    "values_not_finite": 0,
+    "values_not_positive": 0,
+    "set_to_nan_by_the_transformation": 1162,
+    "set_to_nan_because_missing": 1162,
+    "set_to_nan_because_not_finite": 0,
+    "set_to_nan_because_not_positive": 0,
+    "rows_in": 59254,
+    "rows_out": 59254,
+    "values_missing_out": 1162,
+    "values_not_finite_out": 0
+   },
+   "kwh_per_residential_customer": {
+    "name": "kwh_per_residential_customer",
+    "source": "the panel's outcome file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_kwh_per_customer_month",
+    "source_unit": "kWh per residential customer per month: res_mwh * 1000 / res_customers / 12, missing where res_customers is not positive (pipeline/electricity/panel.py)",
+    "transformation": "level, untouched",
+    "unit": "kWh per residential customer per month",
+    "read_from": "PREANALYSIS.md, Other outcomes and robustness (D-117); supplementary_outcomes.SPECS",
+    "handled_by": "supplementary_outcomes, which logs it and applies the non-computable rule",
+    "value_rule": "every value carried untouched, infinity included, because supplementary_outcomes classifies missing, not finite and not positive on the rows a design requires and applies the D-117 rule there",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 1161,
+    "values_not_finite": 0,
+    "values_not_positive": 0,
+    "rows_in": 59254,
+    "rows_out": 59254,
+    "values_missing_out": 1161,
+    "values_not_finite_out": 0
+   },
+   "bill_per_customer": {
+    "name": "bill_per_customer",
+    "source": "the panel's outcome file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_bill_per_customer_month",
+    "source_unit": "nominal dollars per residential customer per month: res_revenue_full / res_customers / 12, missing where res_customers is not positive (pipeline/electricity/panel.py); no price index is applied",
+    "transformation": "level, untouched",
+    "unit": "nominal dollars per residential customer per month",
+    "read_from": "PREANALYSIS.md, Other outcomes and robustness (D-117); supplementary_outcomes.SPECS",
+    "handled_by": "supplementary_outcomes, which logs it and applies the non-computable rule",
+    "value_rule": "every value carried untouched, infinity included, because supplementary_outcomes classifies missing, not finite and not positive on the rows a design requires and applies the D-117 rule there",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 1162,
+    "values_not_finite": 0,
+    "values_not_positive": 0,
+    "rows_in": 59254,
+    "rows_out": 59254,
+    "values_missing_out": 1162,
+    "values_not_finite_out": 0
+   },
+   "residential_customers": {
+    "name": "residential_customers",
+    "source": "the panel's quantity file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_customers",
+    "source_unit": "residential customers, a count: res_customers as the quantity file carries it",
+    "transformation": "level, untouched",
+    "unit": "residential customers, a count",
+    "read_from": "PREANALYSIS.md, Other outcomes and robustness (D-117: 'a column of the quantity file'); supplementary_outcomes.SPECS",
+    "handled_by": "supplementary_outcomes, which logs it and applies the non-computable rule",
+    "value_rule": "every value carried untouched, infinity included, because supplementary_outcomes classifies missing, not finite and not positive on the rows a design requires and applies the D-117 rule there",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 0,
+    "values_not_finite": 0,
+    "values_not_positive": 1161,
+    "rows_in": 59254,
+    "rows_out": 59254,
+    "values_missing_out": 0,
+    "values_not_finite_out": 0
+   },
+   "res_price_default_service": {
+    "name": "res_price_default_service",
+    "source": "the panel's outcome file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_price_default_service",
+    "source_unit": "cents per kWh, nominal: res_revenue_bundled / res_mwh_bundled / 10.0 where bundled sales are positive (panel.py build)",
+    "transformation": "level, untouched",
+    "unit": "cents per kWh, nominal",
+    "read_from": "PREANALYSIS.md, The reconciliation rows, row U's specification; reconciliation_mu.DEFAULT_SERVICE, logged in reconciliation_mu._outcome_rows inside run_u_step",
+    "handled_by": "reconciliation_mu.run_u_step, which logs it",
+    "value_rule": "NaN is carried (the panel's marker of no price, which the row's code treats under its missing-price rule); zero or negative is carried; plus or minus infinity stops the frame, because the row's code does not refuse it and turning it into NaN would silently move the row's sample (the agent's reading)",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 1201,
+    "values_not_finite": 0,
+    "values_not_positive": 0,
+    "rows_in": 59254,
+    "rows_out": 59254,
+    "values_missing_out": 1201,
+    "values_not_finite_out": 0
+   },
+   "res_price": {
+    "name": "res_price",
+    "source": "the panel's outcome file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_price",
+    "source_unit": "cents per kWh, nominal: res_revenue_full / res_mwh / 10.0 (panel.py build)",
+    "transformation": "level, untouched",
+    "unit": "cents per kWh, nominal",
+    "read_from": "reconciliation_mu.DELIVERY_INCLUSIVE, logged in reconciliation_mu._outcome_rows inside run_u_step",
+    "handled_by": "reconciliation_mu.run_u_step, which logs it",
+    "value_rule": "NaN is carried (the panel's marker of no price, which the row's code treats under its missing-price rule); zero or negative is carried; plus or minus infinity stops the frame, because the row's code does not refuse it and turning it into NaN would silently move the row's sample (the agent's reading)",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 1162,
+    "values_not_finite": 0,
+    "values_not_positive": 0,
+    "rows_in": 59254,
+    "rows_out": 59254,
+    "values_missing_out": 1162,
+    "values_not_finite_out": 0
+   },
+   "res_price_cents_per_kwh_real_2024": {
+    "name": "res_price_cents_per_kwh_real_2024",
+    "source": "the panel's outcome file (a frame the caller passes; this module opens no file)",
+    "source_column": "res_price",
+    "source_unit": "cents per kWh, nominal (before row C's deflator)",
+    "transformation": "times row C's CPI-U factor for the year",
+    "unit": "cents per kWh, real 2024 dollars (after cpi_factors_to_2024)",
+    "read_from": "PREANALYSIS.md, The reconciliation rows, row C's specification (D-117 and D-111); reconciliation_c.OURS_PRICE_SERIES, PRICE_SERIES_LABEL, cpi_factors_to_2024 and build_panel. Our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction. Row C's nominal price is this study's delivery-inclusive res_price (res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing), in cents per kWh, put in real 2024 cents per kWh with row C's deflator (the CPI-U annual convention, D-111). The paper divides total residential revenue by total residential sales from the EIA-861 Sales to Ultimate Customers files (section S1.3, p. 29) and does not say whether delivery-only or energy-only rows enter. No other price series is built or compared, and nothing is fetched or read for it.",
+    "handled_by": "reconciliation_c (row C), in levels",
+    "value_rule": "inside row C's window, NaN is carried (the panel's marker of no price, which the row's code treats under its missing-price rule); zero or negative is carried; plus or minus infinity stops the frame, because the row's code does not refuse it and turning it into NaN would silently move the row's sample (the agent's reading); outside the window a row is not in the frame and is counted, an infinite value there included (the session's reading)",
+    "label": "Our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction. Row C's nominal price is this study's delivery-inclusive res_price (res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing), in cents per kWh, put in real 2024 cents per kWh with row C's deflator (the CPI-U annual convention, D-111). The paper divides total residential revenue by total residential sales from the EIA-861 Sales to Ultimate Customers files (section S1.3, p. 29) and does not say whether delivery-only or energy-only rows enter. No other price series is built or compared, and nothing is fetched or read for it.",
+    "left_to_the_row": "Row C's price-balanced sample (units with a non-missing price in every year 2015-2024, contiguous states, a fiber share) is the row's own computation in reconciliation_c.build_panel and balanced_units. It is not rebuilt or checked here.",
+    "built": true,
+    "reason_not_built": null,
+    "values_missing": 375,
+    "values_not_finite": 0,
+    "values_not_positive": 0,
+    "row_c_window": "row C's window, the years 2015 to 2024 (reconciliation_c.YEARS)",
+    "row_c_window_rule": "The session's reading (session 27): this frame is built on the unit-years whose year is in reconciliation_c.YEARS and no other, so it is row C's window and not the whole outcome file. That is the row's own first step (reconciliation_c.build_panel keeps year in YEARS before anything else), and cpi_factors_to_2024 is specified for that window (it refuses only a missing window year). Rows outside the window are not in the frame and are counted (rows_outside_row_c_window). A window year with no factor stops the frame and nothing is filled; a year outside the window needs no factor. An infinite value inside the window stops the frame; one outside the window is outside the frame and is counted (rows_outside_row_c_window_not_finite), not a stop, since the row never reads it. No other frame is restricted.",
+    "rows_outside_row_c_window": 41533,
+    "rows_outside_row_c_window_not_finite": 0,
+    "counts_are_over": "the rows inside row C's window",
+    "rows_in": 59254,
+    "rows_out": 17721,
+    "values_missing_out": 375,
+    "values_not_finite_out": 0
+   }
+  },
+  "reshaper_raised": null,
+  "reshape_sources": {
+   "outcomes": {
+    "rows": 59254,
+    "key_dtypes_in": {
+     "utility_id_eia": "int64",
+     "state": "object",
+     "year": "int32"
+    },
+    "keys_usable": true
+   },
+   "quantities": {
+    "rows": 59254,
+    "key_dtypes_in": {
+     "utility_id_eia": "int64",
+     "state": "object",
+     "year": "int32"
+    },
+    "keys_usable": true
+   }
+  },
+  "frames_built": [
+   "bill_per_customer",
+   "kwh_per_residential_customer",
+   "log_residential_price",
+   "res_price",
+   "res_price_cents_per_kwh_real_2024",
+   "res_price_default_service",
+   "residential_customers"
+  ],
+  "frames_not_built": {},
+  "row_u_window": [
+   2015,
+   2025
+  ]
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

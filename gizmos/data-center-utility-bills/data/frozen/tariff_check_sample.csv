@@ -1,0 +1,42 @@
+collection_order,pair_id,host_id,state,host_name,first_crossing,window_start,window_end,ownership,market_region,in_headline_set,in_set_with_the_ten_year_case,host_reports_every_window_year,host_res_customers_reference_year,usage_kwh_per_month,size_gap_log_points,comparison_id,comparison_state,comparison_name,comparison_ownership,match,comparison_res_customers_reference_year
+1,P01,17267,SD,Sioux Valley SW Elec Coop,2020,2014,2023,cooperative,SPP,False,False,True,18605.0,1300.0,0.213,20401.0,SD,West River Electric Assn Inc,cooperative,same_state_and_ownership,15030.0
+2,P02,1586,AR,City of Bentonville - (AR),2014,2008,2017,public,SPP,False,False,True,15499.0,1050.0,0.335,14446.0,AR,Paragould Municipal Utilities (AR),public,same_state_and_ownership,11083.0
+3,P03,4110,IL,Commonwealth Edison Co,2014,2008,2017,investor_owned,PJM,False,False,True,3446993.0,700.0,1.185,56697.0,IL,Ameren Illinois Company,investor_owned,same_state_and_ownership,1053644.0
+4,P04,14354,OR,PacifiCorp,2014,2008,2017,investor_owned,West,False,False,True,470374.0,1000.0,3.562,9191.0,OR,Idaho Power Co,investor_owned,same_state_and_ownership,13350.0
+5,P05,14401,CA,City of Palo Alto - (CA),2017,2011,2020,public,California,False,False,True,25321.0,500.0,0.13,11124.0,CA,City of Lodi - (CA),public,same_state_and_ownership,22245.0
+6,P06,15444,UT,Provo City Corp,2013,2007,2016,public,West,False,False,True,30575.0,650.0,0.626,11135.0,UT,City of Logan - (UT),public,same_state_and_ownership,16344.0
+7,P07,15248,OR,Portland General Electric Co,2021,2015,2024,investor_owned,West,False,False,True,776747.0,800.0,2.23,6022.0,OR,City of Eugene - (OR),public,same_state,83560.0
+8,P08,4262,TX,Cooke County Elec Coop Assn,2012,2006,2015,cooperative,ERCOT,False,False,True,12806.0,1100.0,0.017,9590.0,TX,"Jackson Electric Coop, Inc - (TX)",cooperative,same_state_and_ownership,12596.0
+9,P09,6958,TX,City of Garland - (TX),2017,2011,2020,public,ERCOT,True,True,True,62868.0,1250.0,0.332,11292.0,TX,City of Lubbock - (TX),public,same_state_and_ownership,87652.0
+10,P10,17166,NV,Sierra Pacific Power Co,2017,2011,2020,investor_owned,West,True,True,True,284301.0,650.0,2.733,19840.0,NV,"Valley Electric Assn, Inc",cooperative,same_state,18480.0
+11,P11,7977,OH,City of Hamilton - (OH),2012,2006,2015,public,PJM,False,False,True,26345.0,800.0,0.151,4683.0,OH,City of Cuyahoga Falls - (OH),public,same_state_and_ownership,22660.0
+12,P12,803,AZ,Arizona Public Service Co,2020,2014,2023,investor_owned,West,True,False,True,1080665.0,1000.0,2.548,19728.0,AZ,"UNS Electric, Inc",investor_owned,same_state_and_ownership,84590.0
+13,P13,7752,TX,Guadalupe Valley Elec Coop Inc,2021,2015,2024,cooperative,ERCOT,False,False,True,76017.0,1300.0,0.089,16613.0,TX,Sam Houston Electric Coop Inc,cooperative,same_state_and_ownership,69511.0
+14,P14,3461,WY,Cheyenne Light Fuel & Power,2015,2009,2018,investor_owned,West,False,False,True,35379.0,600.0,1.014,12199.0,WY,Montana-Dakota Utilities Co,investor_owned,same_state_and_ownership,12837.0
+15,P15,14154,NY,Orange & Rockland Utils Inc,2017,2011,2020,investor_owned,NYISO,False,False,True,195850.0,700.0,0.261,3249.0,NY,Central Hudson Gas & Elec Corp,investor_owned,same_state_and_ownership,254349.0
+16,P16,19325,OR,Umatilla Electric Coop Assn,2013,2007,2016,cooperative,West,False,False,True,10854.0,1250.0,0.099,10681.0,OR,Lane Electric Coop Inc,cooperative,same_state_and_ownership,11981.0
+17,P17,14127,NE,Omaha Public Power District,2019,2013,2022,public,SPP,True,True,True,323784.0,950.0,2.713,40606.0,NE,City of Grand Island - (NE),public,same_state_and_ownership,21486.0
+18,P18,7559,TX,"Grayson-Collin Elec Coop, Inc",2012,2006,2015,cooperative,ERCOT,False,False,True,33538.0,1400.0,0.009,3282.0,TX,"Central Texas Elec Coop, Inc",cooperative,same_state_and_ownership,33233.0
+19,P19,7090,GA,GreyStone Power Corporation,2022,2016,2025,cooperative,Southeast,False,False,True,123383.0,1250.0,0.244,17832.0,GA,Snapping Shoals El Member Corp,cooperative,same_state_and_ownership,96641.0
+20,P20,7490,OK,Grand River Dam Authority,2011,2005,2014,public,SPP,False,False,False,,,,,,,,,
+21,P21,11187,CO,City of Longmont,2016,2010,2019,public,West,False,False,True,34697.0,750.0,0.156,11256.0,CO,City of Loveland - (CO),public,same_state_and_ownership,29676.0
+22,P22,19604,AZ,USBIA-San Carlos Project,2012,2006,2015,public,West,False,False,True,11284.0,900.0,0.366,30518.0,AZ,Electrical Dist No3 Pinal County,public,same_state_and_ownership,16278.0
+23,P23,13050,CO,"Mountain Parks Electric, Inc",2022,2016,2025,cooperative,West,False,False,True,17581.0,750.0,0.111,7563.0,CO,Grand Valley Power,cooperative,same_state_and_ownership,15737.0
+24,P24,9336,CO,CORE Electric Cooperative,2012,2006,2015,cooperative,West,False,False,True,127091.0,900.0,1.034,8773.0,CO,"Holy Cross Electric Assn, Inc",cooperative,same_state_and_ownership,45172.0
+25,P25,11208,CA,Los Angeles Department of Water & Power,2020,2014,2023,public,California,False,False,True,1329968.0,500.0,2.305,9216.0,CA,Imperial Irrigation District,public,same_state_and_ownership,132632.0
+26,P26,3989,CO,City of Colorado Springs - (CO),2012,2006,2015,public,West,False,False,True,184902.0,650.0,1.174,6604.0,CO,City of Fort Collins - (CO),public,same_state_and_ownership,57148.0
+27,P27,15473,NM,Public Service Co of NM,2019,2013,2022,investor_owned,West,True,True,True,461248.0,600.0,1.581,17718.0,NM,Southwestern Public Service Co,investor_owned,same_state_and_ownership,94958.0
+28,P28,20065,GA,Walton Electric Member Corp,2021,2015,2024,cooperative,Southeast,True,True,True,118824.0,1300.0,0.33,13716.0,GA,North Georgia Elec Member Corp,cooperative,same_state_and_ownership,85399.0
+29,P29,3841,MS,Coast Electric Power Assn - (MS),2012,2006,2015,cooperative,Southeast,False,False,True,70019.0,1300.0,0.141,17252.0,MS,Singing River Elec Cooperative,cooperative,same_state_and_ownership,60823.0
+30,P30,14006,OH,Ohio Power Co,2019,2013,2022,investor_owned,PJM,False,False,True,1278484.0,950.0,0.656,3755.0,OH,Cleveland Electric Illum Co,investor_owned,same_state_and_ownership,663556.0
+31,P31,5773,MN,City of Elk River,2020,2014,2023,public,MISO,False,False,True,9900.0,750.0,0.056,1009.0,MN,City of Austin - (MN),public,same_state_and_ownership,10468.0
+32,P32,14354,UT,PacifiCorp,2015,2009,2018,investor_owned,West,True,True,True,722473.0,800.0,3.855,2010.0,UT,City of Bountiful - (UT),public,same_state,15295.0
+33,P33,16638,TX,"San Bernard Electric Coop, Inc",2016,2010,2019,cooperative,ERCOT,False,False,True,24338.0,1250.0,0.047,12268.0,TX,"Medina Electric Coop, Inc",cooperative,same_state_and_ownership,25510.0
+34,P34,15466,CO,Public Service Co of Colorado,2019,2013,2022,investor_owned,West,False,False,True,1228305.0,650.0,2.684,56146.0,CO,"Black Hills Colorado Electric, LLC",investor_owned,same_state_and_ownership,83873.0
+35,P35,6182,TX,"Farmers Electric Coop, Inc - (TX)",2014,2008,2017,cooperative,ERCOT,False,False,True,42545.0,1500.0,0.08,19579.0,TX,Upshur Rural Elec Coop Corp,cooperative,same_state_and_ownership,39272.0
+36,P36,994,IN,City of Auburn - (IN),2017,2011,2020,public,PJM,False,False,True,6241.0,900.0,0.039,1896.0,IN,City of Bluffton - (IN),public,same_state_and_ownership,6005.0
+37,P37,16572,AZ,Salt River Project,2016,2010,2019,public,West,False,False,True,891668.0,1200.0,3.446,13314.0,AZ,Navajo Tribal Utility Authority,public,same_state_and_ownership,28422.0
+38,P38,14328,CA,Pacific Gas & Electric Co.,2015,2009,2018,investor_owned,California,False,False,True,4643106.0,550.0,4.728,57483.0,CA,Liberty Utilities,investor_owned,same_state_and_ownership,41063.0
+39,P39,13520,MO,"New-Mac Electric Coop, Inc",2011,2005,2014,cooperative,Southeast,False,False,True,16720.0,1350.0,0.019,20318.0,MO,Webster Electric Coop,cooperative,same_state_and_ownership,17041.0
+40,P40,19499,CO,"United Power, Inc",2019,2013,2022,cooperative,West,False,False,True,69895.0,900.0,0.674,10539.0,CO,"La Plata Electric Assn, Inc",cooperative,same_state_and_ownership,35626.0
+41,P41,54913,MA,NSTAR Electric Company,2017,2011,2020,investor_owned,ISO-NE,False,False,True,1196635.0,550.0,4.65,13206.0,MA,Nantucket Electric Co,investor_owned,same_state_and_ownership,11443.0

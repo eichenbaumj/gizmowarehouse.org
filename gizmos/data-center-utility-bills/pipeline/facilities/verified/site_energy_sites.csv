@@ -1,0 +1,22 @@
+campus,fid,site_as_the_operator_names_it,match_basis
+meta_prineville,bi:842-0,Prineville (OR),operator and place: the one Meta permit row in Crook County
+meta_forest_city,bi:676-0,Forest City (NC),operator and place: the one Meta permit row in Rutherford County
+meta_altoona,bi:542-0,Altoona (IA),operator and place: the one Meta permit row in Polk County
+meta_fort_worth,bi:881-0,Fort Worth (TX),operator and place: two Meta permit rows on one campus in Tarrant County; the campus figure is split by generator capacity
+meta_fort_worth,bi:882-0,Fort Worth (TX),operator and place: two Meta permit rows on one campus in Tarrant County; the campus figure is split by generator capacity
+meta_new_albany,epoch:Meta Prometheus,New Albany (OH),"operator and place: Epoch's row for Meta's New Albany campus, which earlier verification dated to 2020"
+meta_sarpy,osm:way/844394340,"Papillion (NE), later printed as Sarpy (NE)",operator and place: the row earlier verification gave a public load figure and a 2019 start
+meta_henrico,bi:1055-0,Henrico (VA),operator and place: the one Meta permit row in Henrico County
+meta_los_lunas,epoch:Meta Los Lunas,Los Lunas (NM),operator and place: Epoch's row
+meta_dekalb,bi:565-0,DeKalb (IL),operator and place: the one Meta permit row in DeKalb County
+meta_eagle_mountain,epoch:Meta Eagle Mountain,Eagle Mountain (UT),operator and place: Epoch's row
+meta_gallatin,epoch:Meta Gallatin,Gallatin (TN),"operator and place: Epoch's row for the campus. Until session 7 this pointed at one of four OpenStreetMap buildings tagged Meta at Gallatin, which the map put on Cumberland Electric Membership Corporation while the campus's Epoch row was already verified as served directly by TVA; Cumberland's non-residential sales are flat through the years Meta reports 360 GWh here (D-45)"
+meta_huntsville,epoch:Meta Huntsville,Huntsville (AL),operator and place: Epoch's row
+meta_kansas_city,bi:662-0,Kansas City (MO),operator and place: the one Meta permit row in the Kansas City area; it carried no load estimate before
+meta_mesa,bi:24-0,Mesa (AZ),operator and place: the one Meta permit row in Mesa
+meta_stanton_springs,bi:539-0,Stanton Springs (GA),operator and place: the one Meta permit row in Newton County
+apple_maiden,bi:678-0,"Maiden, NC",operator and place: the one Apple permit row in Catawba County
+apple_prineville,bi:841-0,"Prineville, OR",operator and place: the one Apple permit row in Crook County
+apple_reno,osm:way/464097467,"Reno, NV",place: the OpenStreetMap building at Reno Technology Park that the Nevada sweep matched to Apple (state_NV.json)
+apple_mesa,bi:37-0,"Mesa, AZ",operator and place: the one Apple permit row in Mesa
+apple_waukee,bi:547-0,"Waukee, Iowa","operator and place: the one Apple permit row in Dallas County, Iowa; it carried no load estimate before"

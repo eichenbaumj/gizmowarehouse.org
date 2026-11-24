@@ -1,0 +1,438 @@
+{
+ "what_this_is": "Stage 2 of the Short Form request (docs/gate1/short-form-access-request-2026-11-19.md, items 1 to 3 of S2.7), authorized by Joe on 2026-11-20 (D-113). Three columns only (utility_id_eia, report_date, state) of data/raw/pudl/core_eia861__yearly_short_form.parquet were read, after the hash check; sales_revenue and every other column were never loaded. Counts only. The plan is a DRAFT pre-analysis plan and is not frozen; these counts are provisional. A row of the filer table means 'has a row in the Short Form table that year', which is a fact of the record. Reading no row as 'not a filer' is a convention, and this summary does not adopt it. Some rows in a year do not establish that the year is complete, and a missing 2019 flag does not establish that a utility did not file. No exclusion rule is adopted or applied here; Joe rules on it.",
+ "written_by": "pipeline/analysis/short_form_filers.py main(), 2026-11-20, session 24, job 2",
+ "table": {
+  "path": "data/interim/reconciliation_short_form_filers.parquet",
+  "columns": {
+   "utility_id_eia": "int64",
+   "state": "string",
+   "year": "int64"
+  },
+  "rows": 18172,
+  "meaning_of_a_row": "has a row in the Short Form table that year (a fact of the record)"
+ },
+ "read": {
+  "columns_read": [
+   "utility_id_eia",
+   "report_date",
+   "state"
+  ],
+  "never_loaded": [
+   "sales_revenue",
+   "every other column of the table"
+  ],
+  "rows_read": 18172,
+  "rows_after_collapsing": 18172,
+  "rows_collapsed": 0,
+  "collapsing": "rows repeated within a utility, state and year (for example one per balancing authority, which was not read) are collapsed to one"
+ },
+ "by_year": {
+  "2012": {
+   "rows_read": 1124,
+   "rows_after_collapsing": 1124,
+   "rows_collapsed": 0,
+   "utilities": 1114,
+   "utility_states": 1124
+  },
+  "2013": {
+   "rows_read": 1122,
+   "rows_after_collapsing": 1122,
+   "rows_collapsed": 0,
+   "utilities": 1112,
+   "utility_states": 1122
+  },
+  "2014": {
+   "rows_read": 1121,
+   "rows_after_collapsing": 1121,
+   "rows_collapsed": 0,
+   "utilities": 1111,
+   "utility_states": 1121
+  },
+  "2015": {
+   "rows_read": 1119,
+   "rows_after_collapsing": 1119,
+   "rows_collapsed": 0,
+   "utilities": 1109,
+   "utility_states": 1119
+  },
+  "2016": {
+   "rows_read": 1118,
+   "rows_after_collapsing": 1118,
+   "rows_collapsed": 0,
+   "utilities": 1108,
+   "utility_states": 1118
+  },
+  "2017": {
+   "rows_read": 1115,
+   "rows_after_collapsing": 1115,
+   "rows_collapsed": 0,
+   "utilities": 1105,
+   "utility_states": 1115
+  },
+  "2018": {
+   "rows_read": 1114,
+   "rows_after_collapsing": 1114,
+   "rows_collapsed": 0,
+   "utilities": 1104,
+   "utility_states": 1114
+  },
+  "2019": {
+   "rows_read": 0,
+   "rows_after_collapsing": 0,
+   "rows_collapsed": 0,
+   "utilities": 0,
+   "utility_states": 0
+  },
+  "2020": {
+   "rows_read": 1732,
+   "rows_after_collapsing": 1732,
+   "rows_collapsed": 0,
+   "utilities": 1694,
+   "utility_states": 1732
+  },
+  "2021": {
+   "rows_read": 1723,
+   "rows_after_collapsing": 1723,
+   "rows_collapsed": 0,
+   "utilities": 1685,
+   "utility_states": 1723
+  },
+  "2022": {
+   "rows_read": 1727,
+   "rows_after_collapsing": 1727,
+   "rows_collapsed": 0,
+   "utilities": 1689,
+   "utility_states": 1727
+  },
+  "2023": {
+   "rows_read": 1718,
+   "rows_after_collapsing": 1718,
+   "rows_collapsed": 0,
+   "utilities": 1680,
+   "utility_states": 1718
+  },
+  "2024": {
+   "rows_read": 1724,
+   "rows_after_collapsing": 1724,
+   "rows_collapsed": 0,
+   "utilities": 1687,
+   "utility_states": 1724
+  },
+  "2025": {
+   "rows_read": 1715,
+   "rows_after_collapsing": 1715,
+   "rows_collapsed": 0,
+   "utilities": 1678,
+   "utility_states": 1715
+  }
+ },
+ "years_with_no_row": {
+  "range_examined": [
+   2012,
+   2025
+  ],
+  "years": [
+   2019
+  ]
+ },
+ "years_with_rows": [
+  2012,
+  2013,
+  2014,
+  2015,
+  2016,
+  2017,
+  2018,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "continuity_of_utility_states_between_consecutive_years_with_rows": [
+  {
+   "earlier": 2012,
+   "later": 2013,
+   "years_apart": 1,
+   "utility_states_in_both": 1122,
+   "in_earlier_only": 2,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2013,
+   "later": 2014,
+   "years_apart": 1,
+   "utility_states_in_both": 1121,
+   "in_earlier_only": 1,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2014,
+   "later": 2015,
+   "years_apart": 1,
+   "utility_states_in_both": 1119,
+   "in_earlier_only": 2,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2015,
+   "later": 2016,
+   "years_apart": 1,
+   "utility_states_in_both": 1118,
+   "in_earlier_only": 1,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2016,
+   "later": 2017,
+   "years_apart": 1,
+   "utility_states_in_both": 1115,
+   "in_earlier_only": 3,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2017,
+   "later": 2018,
+   "years_apart": 1,
+   "utility_states_in_both": 1114,
+   "in_earlier_only": 1,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2018,
+   "later": 2020,
+   "years_apart": 2,
+   "utility_states_in_both": 1109,
+   "in_earlier_only": 5,
+   "in_later_only": 623
+  },
+  {
+   "earlier": 2020,
+   "later": 2021,
+   "years_apart": 1,
+   "utility_states_in_both": 1723,
+   "in_earlier_only": 9,
+   "in_later_only": 0
+  },
+  {
+   "earlier": 2021,
+   "later": 2022,
+   "years_apart": 1,
+   "utility_states_in_both": 1719,
+   "in_earlier_only": 4,
+   "in_later_only": 8
+  },
+  {
+   "earlier": 2022,
+   "later": 2023,
+   "years_apart": 1,
+   "utility_states_in_both": 1716,
+   "in_earlier_only": 11,
+   "in_later_only": 2
+  },
+  {
+   "earlier": 2023,
+   "later": 2024,
+   "years_apart": 1,
+   "utility_states_in_both": 1708,
+   "in_earlier_only": 10,
+   "in_later_only": 16
+  },
+  {
+   "earlier": 2024,
+   "later": 2025,
+   "years_apart": 1,
+   "utility_states_in_both": 1714,
+   "in_earlier_only": 10,
+   "in_later_only": 1
+  }
+ ],
+ "no_completeness_threshold": "no threshold for a 'complete' year is set; a year that looks thin is named in the report, and nothing is repaired",
+ "window": {
+  "years": [
+   2015,
+   2024
+  ],
+  "source": "reconciliation_mu.RYU_WINDOW",
+  "utilities_with_a_row_in_some_window_year": 1721,
+  "utility_states_with_a_row_in_some_window_year": 1759,
+  "unit_years_in_the_window": 13090
+ },
+ "against_the_quantities": {
+  "source": "data/interim/panel_quantities.parquet through pipeline.electricity.panel.load_quantities; the file has no price column",
+  "coverage_and_switching": {
+   "utility_state": {
+    "over_every_window_year": {
+     "with_a_table_row_in_some_window_year": 1759,
+     "appearing_in_the_quantities_in_some_window_year": 1684,
+     "not_appearing_in_the_quantities_in_any_window_year": 75,
+     "with_a_table_row_in_every_window_year_in_which_they_appear_in_the_quantities": 0,
+     "switching": 1684,
+     "switching_by_order_of_years": {
+      "interleaved": 1058,
+      "quantities_years_all_before_table_years": 625,
+      "table_years_all_before_quantities_years": 1
+     }
+    },
+    "over_window_years_in_which_the_table_has_rows": {
+     "with_a_table_row_in_some_window_year": 1759,
+     "appearing_in_the_quantities_in_some_window_year": 636,
+     "not_appearing_in_the_quantities_in_any_window_year": 1123,
+     "with_a_table_row_in_every_window_year_in_which_they_appear_in_the_quantities": 0,
+     "switching": 636,
+     "switching_by_order_of_years": {
+      "interleaved": 11,
+      "quantities_years_all_before_table_years": 624,
+      "table_years_all_before_quantities_years": 1
+     }
+    }
+   },
+   "utility": {
+    "over_every_window_year": {
+     "with_a_table_row_in_some_window_year": 1721,
+     "appearing_in_the_quantities_in_some_window_year": 1647,
+     "not_appearing_in_the_quantities_in_any_window_year": 74,
+     "with_a_table_row_in_every_window_year_in_which_they_appear_in_the_quantities": 0,
+     "switching": 1647
+    },
+    "over_window_years_in_which_the_table_has_rows": {
+     "with_a_table_row_in_some_window_year": 1721,
+     "appearing_in_the_quantities_in_some_window_year": 608,
+     "not_appearing_in_the_quantities_in_any_window_year": 1113,
+     "with_a_table_row_in_every_window_year_in_which_they_appear_in_the_quantities": 0,
+     "switching": 608
+    }
+   },
+   "window_years_in_which_the_table_has_rows": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+   ],
+   "definitions": "Appearing in the quantities: any row of panel_quantities.parquet for the utility-state (or utility) that year. Switching: at least one year with a table row and at least one year in the quantities with no table row, among the years counted. Order of years: whether every quantities-only year comes before every table year, after it, or neither. The agent's definitions."
+  },
+  "window_unit_years_of_the_table_also_with_residential_sales_in_the_quantities": 0,
+  "window_unit_years_of_the_table_also_with_any_row_in_the_quantities": 0,
+  "residential_sales_definition": "res_mwh present and above zero (the agent's reading)"
+ },
+ "the_2019_flags": {
+  "source": "data/interim/reconciliation_short_form_flags.parquet (reconciliation_inputs.OUT_SHORT_FORM), read by name, not regenerated",
+  "what_the_flags_file_holds": "utility_id_eia, state, year, short_form, data_observed: one row per row of the operational table, so it can say which unit-years have a 2019 row and which carry a missing flag; it holds nothing on units absent from that table",
+  "rows_2019": 3357,
+  "rows_2019_flag_true": 1038,
+  "rows_2019_flag_missing": 2319,
+  "rows_2019_flag_false": 0,
+  "utility_states_2019_flag_true": 1038,
+  "utility_states_2019_flag_missing": 2318,
+  "utility_states_2019_whose_rows_disagree_on_the_flag": 0,
+  "continuity_of_the_flagged_utility_states_in_the_table": {
+   "with_a_table_row_in_both_2018_and_2020": 1036,
+   "in_2018_only": 1,
+   "in_2020_only": 0,
+   "in_neither": 1
+  },
+  "continuity_of_the_flagged_utilities_in_the_table_by_utility": {
+   "utilities_flagged_true_in_2019": 1038,
+   "with_a_table_row_in_both_2018_and_2020": 1037,
+   "in_2018_only": 1,
+   "in_2020_only": 0,
+   "in_neither": 0
+  },
+  "row_u_frame": {
+   "what_it_is": "row U's quantity-side frame with no Short Form exclusion, as reconciliation_mu builds it for reconciliation_mu_design.json (short_form_rule_consequences.py gives the detail)",
+   "unit_years": 16648,
+   "utility_states": 1988,
+   "utility_states_with_no_2019_row_in_the_flags_file": 206,
+   "frame_unit_years_in_2019": 1974,
+   "frame_2019_unit_years_with_no_2019_row_in_the_flags_file": 193,
+   "frame_2019_unit_years_with_a_missing_flag": 1780,
+   "frame_2019_unit_years_flagged_true": 1
+  },
+  "facts_and_conventions": "a missing 2019 flag does not establish that the unit did not file; that the table has no 2019 row is what its own description says and what the counts show, and is not a reading of who filed in 2019"
+ },
+ "paper_figure_printed_for_comparison_only_never_a_target_a_tiebreak_or_a_reason": {
+  "short_form_group": "approximately 560",
+  "where": "Ryu and Hiatt, endnote 10 (p. 17), as quoted in the access request",
+  "note": "printed beside the counts for comparison only; it is never a target, a tiebreak or a reason for any choice"
+ },
+ "hash_check": {
+  "expected_from_manifest": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+  "expected_as_quoted_in_request_and_D-111": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+  "manifest_and_request_agree": true,
+  "found": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+  "equal": true
+ },
+ "read_by_year": {
+  "2012": {
+   "rows_read": 1124,
+   "rows_after_collapsing": 1124,
+   "rows_collapsed": 0
+  },
+  "2013": {
+   "rows_read": 1122,
+   "rows_after_collapsing": 1122,
+   "rows_collapsed": 0
+  },
+  "2014": {
+   "rows_read": 1121,
+   "rows_after_collapsing": 1121,
+   "rows_collapsed": 0
+  },
+  "2015": {
+   "rows_read": 1119,
+   "rows_after_collapsing": 1119,
+   "rows_collapsed": 0
+  },
+  "2016": {
+   "rows_read": 1118,
+   "rows_after_collapsing": 1118,
+   "rows_collapsed": 0
+  },
+  "2017": {
+   "rows_read": 1115,
+   "rows_after_collapsing": 1115,
+   "rows_collapsed": 0
+  },
+  "2018": {
+   "rows_read": 1114,
+   "rows_after_collapsing": 1114,
+   "rows_collapsed": 0
+  },
+  "2020": {
+   "rows_read": 1732,
+   "rows_after_collapsing": 1732,
+   "rows_collapsed": 0
+  },
+  "2021": {
+   "rows_read": 1723,
+   "rows_after_collapsing": 1723,
+   "rows_collapsed": 0
+  },
+  "2022": {
+   "rows_read": 1727,
+   "rows_after_collapsing": 1727,
+   "rows_collapsed": 0
+  },
+  "2023": {
+   "rows_read": 1718,
+   "rows_after_collapsing": 1718,
+   "rows_collapsed": 0
+  },
+  "2024": {
+   "rows_read": 1724,
+   "rows_after_collapsing": 1724,
+   "rows_collapsed": 0
+  },
+  "2025": {
+   "rows_read": 1715,
+   "rows_after_collapsing": 1715,
+   "rows_collapsed": 0
+  }
+ }
+}

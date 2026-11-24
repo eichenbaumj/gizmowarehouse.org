@@ -1,0 +1,20 @@
+{
+  "rows": 59254,
+  "priced_rows": 58092,
+  "units_ever": 3149,
+  "years": [
+    2001,
+    2025
+  ],
+  "unpriced_reasons": {
+    "no_residential_sales": 1161,
+    "sales_but_unpriceable": 1
+  },
+  "implausible_price_rows": 58,
+  "ownership_units_2025": {
+    "cooperative": 625,
+    "public": 519,
+    "investor_owned": 184
+  },
+  "delivery_share_gt_10pct_units_2025": 30
+}

@@ -1,0 +1,54 @@
+[
+ {
+  "fid": "bi:444-0",
+  "group": "assign",
+  "state": "CO",
+  "is_data_center": true,
+  "site_name": "Verizon, 4323 Arrowswest Drive, Colorado Springs",
+  "serving_utility": "Colorado Springs Utilities (City of Colorado Springs)",
+  "service_arrangement": "retail",
+  "utility_source_url": "https://www.csu.org/hubfs/Document%20Library/ElectricServiceBoundaryMap.pdf",
+  "utility_confidence": "medium",
+  "utility_evidence_kind": "utility's own map under D-63 rule 6, with a utility page",
+  "utility_evidence_period": "the utility's map of January 2024",
+  "opened_by_session_model": "2026-11-16",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "notes": "Re-entered under D-63 rule 6 on 2026-11-16, after the earlier record was withdrawn (pass_c_withdrawn.json). The standard was written and committed (8ede568) before the map was fetched again; the session had seen the map in session 9 and knew it had read the site as well inside. (a) Parcel 7327101001, 4323 Arrowswest Dr, owner Verizon Wireless (V A W) LLC: tied by address and owner. (b) The map's title is 'Colorado Springs Utilities - Electric Service Boundary- January 2024', its legend's one entry is 'Electric Service' (red hatching), and its narrative says it 'depicts the utility service boundaries for Colorado Springs Utilities', that the water and wastewater boundaries follow the city boundary, and that the utility may provide some services outside these boundaries by contract, in areas not shown. Joe, 2026-11-16 (D-65 item 6): the literal word 'retail' is not required; the title, legend and narrative are read as customer electric-delivery territory. (c) Dated 1/24/2024; scale 1:68,892 with a mile bar and a coordinate grid. The parcel is placed by its coordinates on the map's own grid and by the named roads; see map_placement. The map carries a notice that it may not be reproduced without the utility's written consent, so no image is kept. Joe approved a reproducibility record in its place (D-65 item 6): see map_record. (d) The parcel is inside the hatched area, about 4.7 miles from the nearest drawn boundary and about 6.6 miles from the nearest unhatched enclave; the map draws enclaves elsewhere, so it does show exceptions. That is a distance from a drawn line. It is not a statement that no one else serves inside the line. (e) Other records on file: the statewide layer (no description; fails condition (c)) returns the city alone at the parcel and four probes; the national compilation returns the city and a federal power marketer; the utility's page says it delivers electricity to the region. D-48 names Colorado Springs as a city served in part by a neighbour, which is why a list of towns was not accepted. Nothing on file puts another retail utility at this parcel. (f) Read for earlier years on the standing assumption that the boundary here did not move and the site was not served at wholesale or behind the meter. The same map does not settle the two other Colorado Springs sites, which lie near drawn lines. Adopted by Joe at medium confidence on 2026-11-16 (D-65 item 6) as map-based evidence, not site-specific proof of exclusive delivery; the historical and service-arrangement assumptions are those of clause (f).",
+  "map_placement": {
+   "grid": "the map's own grid, read as Colorado State Plane Central, US feet (EPSG:2232); the reading is the session's and is checked by the Garden of the Gods Road label falling at the same place",
+   "parcel_point_lat_lon": [
+    38.89443,
+    -104.86953
+   ],
+   "parcel_point_on_grid": [
+    3179438,
+    1387069
+   ],
+   "page_pixel_at_100_dpi": [
+    1678,
+    1348
+   ],
+   "features_used": [
+    "Garden of the Gods Rd",
+    "Interstate 25",
+    "30th St"
+   ],
+   "nearest_drawn_boundary": "about 4.7 miles to the north-west (the boundary's corner west of W Woodmen Rd); the nearest unhatched enclave is about 6.6 miles to the north-east. Both measured on the page at 100 dpi, about 57 feet to the pixel; approximate"
+  },
+  "map_record": {
+   "source_url": "https://www.csu.org/hubfs/Document%20Library/ElectricServiceBoundaryMap.pdf",
+   "accessed": "2026-11-16",
+   "file_sha256": "ec79d9fd80724854ea70595c96a23e7191d6ea992efebbbed52ea64f303d37a2",
+   "file_bytes": 3372609,
+   "page": "1 of 1 (3168 x 2448 points)",
+   "grid_interpretation": "the map's border ticks read as Colorado State Plane Central, NAD83, US survey feet (EPSG:2232): eastings 3,100,000 to 3,300,000 left to right, northings 1,440,000 to 1,280,000 top to bottom. The session's reading, checked by the Garden of the Gods Road label falling where the parcel's converted coordinates put it",
+   "resolution": "rendered with pdftoppm at 100 dpi (4400 x 3400 pixels)",
+   "placement_instructions": "convert the parcel point (latitude 38.89443, longitude -104.86953) from WGS84 to EPSG:2232, giving about E 3,179,438 N 1,387,069; on the 100 dpi rendering the easting ticks 3,100,000 and 3,300,000 fall near x = 293 and x = 3778 and the northing ticks 1,440,000 and 1,280,000 near y = 428 and y = 3208; interpolate, giving about x = 1678, y = 1348; confirm against Garden of the Gods Rd, Interstate 25 and 30th St"
+  }
+ }
+]

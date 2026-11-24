@@ -1,0 +1,45 @@
+{
+ "what_this_is": "The validation budget (E5.4), fixed for each candidate from the benchmark's timings alone, before stage 1.",
+ "datasets_per_process_by_candidate": {
+  "A": 20000,
+  "B": 20000,
+  "C": 20000
+ },
+ "ceiling_hours": 72.0,
+ "ladder": [
+  20000,
+  10000,
+  5000
+ ],
+ "projected_validation_hours": {
+  "A": {
+   "20000": 0.2775,
+   "10000": 0.1388,
+   "5000": 0.0694
+  },
+  "B": {
+   "20000": 0.124,
+   "10000": 0.062,
+   "5000": 0.031
+  },
+  "C": {
+   "20000": 0.0295,
+   "10000": 0.0148,
+   "5000": 0.0074
+  }
+ },
+ "benchmark": "inference_comparison_benchmark.json",
+ "fingerprint": {
+  "sha256": "fd914a7b15f261a7df000cceb1989a4249d41426a6ed6600cc2458d51970d0ca",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "131077f03b182f045f0ecce2cce9a16257cf24c9626ab0b8a0cf049c2ba55265",
+   "assumptions": "8e1bb6126942cfd7616241100f22bf6331583366a85f67da775200a8b7f5037f",
+   "settings": "0cfea801cec2d7ae014536517ebd5f054faa4297af6f53d1fe10bed4722855df",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ },
+ "benchmark_commit": "307c3cad01636129051dffb2e85754cec709f5e9"
+}

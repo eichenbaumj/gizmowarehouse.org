@@ -1,0 +1,31 @@
+;; P2, the availability audit (pipeline/electricity/audit_availability.py). macOS sandbox profile.
+;; Started only by run_availability.sh, which passes ROOT (the gizmo folder), REPO (the warehouse) and
+;; ACCESS_RECORDS, and records this file's hash.
+;; Reads: nothing under data/ except the quantities file and P1's record; nothing under data/blind/ or
+;; data/raw/ at all. Writes: only the mask and its sidecar, each through a .tmp file renamed into place.
+(version 1)
+(allow default)
+(define (gizmo p) (string-append (param "ROOT") p))
+
+;; Never readable (D-72 item 2): every gizmo's data/ folder in the warehouse (this one's own files are allowed by
+;; name below), and the access-records folder, where D-65 preserved a transcript and preserved copies go.
+;; Everything else outside data/ stays readable: the interpreter, its packages, code, the ledger, the home folder.
+(deny file-read* (regex (string-append "^" (regex-quote (param "REPO")) "/gizmos/[^/]+/data(/|$)")))
+(deny file-read* (subpath (param "ACCESS_RECORDS")))
+(deny file-read* (subpath (gizmo "/data")))
+(allow file-read* (literal (gizmo "/data/interim/panel_quantities.parquet")))
+(allow file-read* (literal (gizmo "/data/interim/availability/p1_record.json")))
+(allow file-read* (literal (gizmo "/data/interim/availability/outcome_availability.csv.tmp")))
+(allow file-read* (literal (gizmo "/data/interim/availability/outcome_availability.json.tmp")))
+(allow file-read* (literal (gizmo "/data/interim/availability/outcome_availability.csv")))
+(allow file-read* (literal (gizmo "/data/interim/availability/outcome_availability.json")))
+(deny file-read* (subpath (gizmo "/data/blind")))
+(deny file-read* (subpath (gizmo "/data/raw")))
+(deny file-read* (literal (gizmo "/pipeline/electricity/sandbox/denied_probe.txt")))
+
+(deny file-write* (subpath "/"))
+(allow file-write* (literal "/dev/null") (literal "/dev/dtracehelper") (literal "/dev/tty"))
+(allow file-write* (literal (gizmo "/data/interim/availability/outcome_availability.csv")))
+(allow file-write* (literal (gizmo "/data/interim/availability/outcome_availability.csv.tmp")))
+(allow file-write* (literal (gizmo "/data/interim/availability/outcome_availability.json")))
+(allow file-write* (literal (gizmo "/data/interim/availability/outcome_availability.json.tmp")))

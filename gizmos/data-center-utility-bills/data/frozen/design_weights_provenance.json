@@ -1,0 +1,141 @@
+{
+  "what_this_is": "The headline number's implied weight on every stacked utility-year, from the regressors alone, for each set at 2% under the headline rules (inference_check.implied_weights). First regenerated on 2026-11-19 under Joe's ruling of that day through this driver, and again at the final quantity regeneration on the day `date` gives; the driver writes only these two files: inference_check.json and second_number_leverage.csv are not touched, and no made-up dataset is run. Quantities only; no price is read. Provisional: the design stands as it is after the ownership repair of 2026-11-19, and the plan is a DRAFT, not frozen. The every-cohort set's design-inputs hash is not the one the step E record carries; against_the_design_records says so set by set and why.",
+  "date": "2026-11-20",
+  "command": "python3 -I pipeline/analysis/design_weights.py",
+  "rules": {
+    "label": "headline",
+    "ownership": "table",
+    "usable": "flag",
+    "support": "applied",
+    "fuel_control": "gas_share_by_calendar_year",
+    "unresolved_ownership": "kept"
+  },
+  "columns": [
+    "block_host",
+    "cohort",
+    "utility",
+    "is_host",
+    "event_year",
+    "weight",
+    "set"
+  ],
+  "design_inputs_note": "design_inputs_sha256 is the design_inputs component of design.run_fingerprint, the same component design.main writes into design_support.json for the set",
+  "sets": {
+    "headline_set": {
+      "hosts_in_the_estimate": 7,
+      "weights_computed": true,
+      "weight_rows": 770,
+      "fingerprint": {
+        "sha256": "2422415963fe5c6081c6651ed70dd8421bb8bf35d835c8c48f20708c82a0904e",
+        "of": {
+          "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "0959ccd77d15c1d0d6b3fb1836d63b9269c3ff303d00e65740629872f18be6de",
+          "assumptions": "4f7f1b864729940358f38debf2e5d4ffc5de8b0130a678b57c1cfe7b22cdf437",
+          "settings": "e4ca52c1d1460c3a6ceee5acbc1b51e01a28373195d776bbd0142dc31311e489",
+          "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        "version": 1
+      },
+      "design_inputs_sha256": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366"
+    },
+    "headline_set_with_the_ten_year_case": {
+      "hosts_in_the_estimate": 6,
+      "weights_computed": true,
+      "weight_rows": 660,
+      "fingerprint": {
+        "sha256": "8dd3451a6a4fc7e30ac4f8cd8869cbb1fd84da39e64d19a4906a8e98c8d60cbb",
+        "of": {
+          "design_inputs": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "0959ccd77d15c1d0d6b3fb1836d63b9269c3ff303d00e65740629872f18be6de",
+          "assumptions": "7f5c543296fae8e09813a9ea177004ea9f478342fb24571dbc019e3641eb4c51",
+          "settings": "e4ca52c1d1460c3a6ceee5acbc1b51e01a28373195d776bbd0142dc31311e489",
+          "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        "version": 1
+      },
+      "design_inputs_sha256": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e"
+    },
+    "every_cohort_utility": {
+      "hosts_in_the_estimate": 36,
+      "weights_computed": true,
+      "weight_rows": 3960,
+      "fingerprint": {
+        "sha256": "55083018474bd58cfaa8095547ec275ddebc6feaf8268606ca601b8a62a7d3ec",
+        "of": {
+          "design_inputs": "073871ef1eb86c03774a94a7412587939c8eb079ebdaa1f3e926267837bdcd36",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "0959ccd77d15c1d0d6b3fb1836d63b9269c3ff303d00e65740629872f18be6de",
+          "assumptions": "2da10e05b8cb44ce0841dabe06532eca2bfa6c2d9b8c65e6fd8bf1d272f72a4f",
+          "settings": "e4ca52c1d1460c3a6ceee5acbc1b51e01a28373195d776bbd0142dc31311e489",
+          "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        "version": 1
+      },
+      "design_inputs_sha256": "073871ef1eb86c03774a94a7412587939c8eb079ebdaa1f3e926267837bdcd36"
+    },
+    "headline_set_plus_hosts_unsettled_on_assignment": {
+      "hosts_in_the_estimate": 17,
+      "weights_computed": true,
+      "weight_rows": 1870,
+      "fingerprint": {
+        "sha256": "913659d551a5c809b429c130427aa84a8cd5a0741c97b4de42146e4b50579a22",
+        "of": {
+          "design_inputs": "e98127e4fd75fc924f56a515d2fd06003a224505629b0ca04fddc2e50a9e9283",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "0959ccd77d15c1d0d6b3fb1836d63b9269c3ff303d00e65740629872f18be6de",
+          "assumptions": "a27384d118e4b014730983a5d00be6a47a9f8e2af28220ce606f4d94ce1faa20",
+          "settings": "e4ca52c1d1460c3a6ceee5acbc1b51e01a28373195d776bbd0142dc31311e489",
+          "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        "version": 1
+      },
+      "design_inputs_sha256": "e98127e4fd75fc924f56a515d2fd06003a224505629b0ca04fddc2e50a9e9283"
+    }
+  },
+  "against_the_design_records": {
+    "sets": {
+      "headline_set": {
+        "design_inputs_of_these_weights": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+        "design_inputs_in_design_support.json": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+        "equal_to_the_step_e_record": true,
+        "design_inputs_in_design_support_current.json": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+        "equal_to_the_current_design_summary": true
+      },
+      "headline_set_with_the_ten_year_case": {
+        "design_inputs_of_these_weights": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+        "design_inputs_in_design_support.json": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+        "equal_to_the_step_e_record": true,
+        "design_inputs_in_design_support_current.json": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+        "equal_to_the_current_design_summary": true
+      },
+      "every_cohort_utility": {
+        "design_inputs_of_these_weights": "073871ef1eb86c03774a94a7412587939c8eb079ebdaa1f3e926267837bdcd36",
+        "design_inputs_in_design_support.json": "2e3d2f599bd4415b6aae22e75cde8c8bf233d6cb71edc6ecf2b641e43f3982b8",
+        "equal_to_the_step_e_record": false,
+        "design_inputs_in_design_support_current.json": "073871ef1eb86c03774a94a7412587939c8eb079ebdaa1f3e926267837bdcd36",
+        "equal_to_the_current_design_summary": true
+      },
+      "headline_set_plus_hosts_unsettled_on_assignment": {
+        "design_inputs_of_these_weights": "e98127e4fd75fc924f56a515d2fd06003a224505629b0ca04fddc2e50a9e9283",
+        "design_inputs_in_design_support.json": "e98127e4fd75fc924f56a515d2fd06003a224505629b0ca04fddc2e50a9e9283",
+        "equal_to_the_step_e_record": true,
+        "design_inputs_in_design_support_current.json": "e98127e4fd75fc924f56a515d2fd06003a224505629b0ca04fddc2e50a9e9283",
+        "equal_to_the_current_design_summary": true
+      }
+    },
+    "sets_differing_from_the_step_e_record": [
+      "every_cohort_utility"
+    ],
+    "why_a_set_differs_from_the_step_e_record": "The step E record, data/frozen/design_support.json, was written before the ownership repair of 2026-11-19 (D-58 rule 2.2 read year by year: an investor-owned candidate is barred for an investor-owned host when some year of the host's window has no ownership row covering the candidate). The repair left the headline set, the set with the ten-year case and the set with unsettled hosts put back unchanged, so their hashes here equal the step E record's. In every cohort utility as built it replaced eight matches of three hosts (Commonwealth Edison, Ohio Power and NSTAR), so that set's weights are computed on a different design from the one the step E record describes, and its hash here does not equal the step E record's. It equals the current design summary's. The step E record is kept as it is; it is not rewritten to agree.",
+    "files": {
+      "step_e_record": "data/frozen/design_support.json (historical, untouched)",
+      "current_design_summary": "data/frozen/design_support_current.json"
+    }
+  },
+  "csv": {
+    "file": "data/frozen/design_weights.csv",
+    "sha256": "f643888dcd8b88a25459328aa72fb8ed443735eec948878babae34a5721a0681"
+  }
+}

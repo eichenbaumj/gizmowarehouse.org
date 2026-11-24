@@ -1,0 +1,68 @@
+host,host_name,status,host_first_crossing,site,site_label,why_on_the_list,now_on,how_placed,resolved,start_year,year_rests_on,seeks_date_evidence,mw_in_the_crossing_year,share_of_threshold_in_the_crossing_year
+14127:NE,Omaha Public Power District,current host,2019,osm:way/844394340,"Meta, Meta Sarpy Data center, NE",determining,this host,verified_by_hand,True,2019,verified_public_source,False,20.32,0.843
+14127:NE,Omaha Public Power District,current host,2019,bi:685-0,"Fiserv, Douglas County, NE",determining,this host,unique,True,1999,first_generator_permit_plus_lag,True,2.72,0.113
+14127:NE,Omaha Public Power District,current host,2019,bi:687-0,"Fidelity, Sarpy County, NE",determining,this host,unique,True,2014,first_generator_permit_plus_lag,True,1.1,0.046
+14127:NE,Omaha Public Power District,current host,2019,bi:684-0,"Travelers Indemnity Company, Douglas County, NE",one_territory,this host,unique,True,2015,first_generator_permit_plus_lag,True,1.07,0.044
+14127:NE,Omaha Public Power District,current host,2019,bi:690-0,"Cabela's Wholesale, Sarpy County, NE",one_territory,this host,unique,True,2015,first_generator_permit_plus_lag,True,0.33,0.014
+14127:NE,Omaha Public Power District,current host,2019,bi:680-0,"TierPoint, Sarpy County, NE",one_territory,this host,unique,True,2019,first_generator_permit_plus_lag,True,0.19,0.008
+14127:NE,Omaha Public Power District,current host,2019,bi:688-0,"TierPoint, Sarpy County, NE",one_territory,this host,unique,True,2019,first_generator_permit_plus_lag,True,0.16,0.007
+14127:NE,Omaha Public Power District,current host,2019,bi:682-0,"Doxim, Sarpy County, NE",one_territory,this host,unique,True,2015,first_generator_permit_plus_lag,True,0.03,0.001
+14127:NE,Omaha Public Power District,current host,2019,bi:1303-0,"Verizon, Douglas County, NE",one_territory,this host,unique,True,2002,first_generator_permit_plus_lag,True,0.03,0.001
+14354:OR,PacifiCorp,current host,2014,bi:842-0,"Meta, Crook County, OR",determining,this host,verified_by_hand,True,2011,verified_public_source,False,29.91,0.997
+14354:OR,PacifiCorp,current host,2014,bi:841-0,"Apple, Crook County, OR",determining,this host,verified_by_hand,True,2012,verified_public_source,False,3.08,0.103
+14354:UT,PacifiCorp,current host,2015,bi:937-0,"US National Security Agency, Utah County, UT",determining,this host,verified_by_hand,True,2014,verified_public_source,False,43.33,0.84
+14354:UT,PacifiCorp,current host,2015,bi:941-0,"eBay, Salt Lake County, UT",determining,this host,smallest_polygon,False,2010,verified_public_source,False,20.3,0.393
+14401:CA,City of Palo Alto - (CA),current host,2017,bi:1257-0,"Equinix, Santa Clara County, CA",determining,this host,verified_by_hand,True,2015,first_generator_permit_plus_lag,True,3.1,1.416
+15248:OR,Portland General Electric Co,current host,2021,bi:850-0,"Digital Realty, Washington County, OR",determining,this host,unique,True,2020,verified_public_source,False,32.93,0.754
+15248:OR,Portland General Electric Co,current host,2021,bi:829-0,"NTT, Washington County, OR",determining,this host,verified_by_hand,True,2021,verified_public_source,False,12.0,0.275
+15248:OR,Portland General Electric Co,current host,2021,bi:837-0,"Stack Infrastructure, Washington County, OR",one_territory,this host,unique,True,2019,first_generator_permit_plus_lag,True,6.82,0.156
+15248:OR,Portland General Electric Co,current host,2021,bi:840-0,"Adobe, Washington County, OR",one_territory,this host,unique,True,2013,verified_public_source,False,3.83,0.088
+15248:OR,Portland General Electric Co,current host,2021,bi:827-0,"Digital Realty, Washington County, OR",one_territory,this host,unique,True,2012,first_generator_permit_plus_lag,True,3.47,0.079
+15248:OR,Portland General Electric Co,current host,2021,bi:833-0,"Flexential, Washington County, OR",one_territory,this host,unique,True,2021,first_generator_permit_plus_lag,True,2.35,0.054
+15248:OR,Portland General Electric Co,current host,2021,bi:828-0,"Flexential, Washington County, OR",one_territory,this host,unique,True,2006,first_generator_permit_plus_lag,True,2.27,0.052
+15248:OR,Portland General Electric Co,current host,2021,bi:825-0,"OVHcloud, Washington County, OR",one_territory,this host,unique,True,2018,first_generator_permit_plus_lag,True,1.73,0.04
+15248:OR,Portland General Electric Co,current host,2021,bi:830-0,"Stack Infrastructure, Washington County, OR",one_territory,this host,unique,True,2022,verified_public_source,False,0.0,0.0
+15248:OR,Portland General Electric Co,current host,2021,bi:832-0,"Flexential, Washington County, OR",one_territory,this host,unique,True,2022,first_generator_permit_plus_lag,True,0.0,0.0
+15248:OR,Portland General Electric Co,current host,2021,bi:852-0,"Showers Development, LLC, Washington County, OR",one_territory,this host,unique,True,2022,first_generator_permit_plus_lag,True,0.0,0.0
+15473:NM,Public Service Co of NM,current host,2019,epoch:Meta Los Lunas,"Meta, Meta Los Lunas, NM",determining,this host,verified_by_hand,True,2018,verified_public_source,False,32.99,1.591
+15473:NM,Public Service Co of NM,current host,2019,bi:1347-0,"Verizon, Bernalillo County, NM",one_territory,this host,unique,True,1999,first_generator_permit_plus_lag,True,0.04,0.002
+17166:NV,Sierra Pacific Power Co,current host,2017,osm:way/464097467,NV,determining,this host,verified_by_hand,True,2012,verified_public_source,False,21.23,1.056
+19325:OR,Umatilla Electric Coop Assn,current host,2013,bi:821-0,"Amazon, Morrow County, OR",determining,this host,verified_by_hand,True,2013,verified_public_source,False,16.23,7.804
+20065:GA,Walton Electric Member Corp,current host,2021,bi:539-0,"Meta, Newton County, GA",determining,this host,verified_by_hand,True,2021,operator_reported_energy,False,24.58,4.315
+6958:TX,City of Garland - (TX),current host,2017,bi:1188-0,"NTT, Dallas County, TX",determining,this host,verified_by_hand,True,2017,verified_public_source,False,5.33,1.15
+803:AZ,Arizona Public Service Co,current host,2020,bi:18-0,"Stream Data Centers, Maricopa County, AZ",determining,this host,verified_by_hand,True,2020,verified_public_source,False,58.43,0.913
+803:AZ,Arizona Public Service Co,current host,2020,bi:19-0,"Microsoft, Maricopa County, AZ",determining,this host,next_larger_load_feasible,False,2020,verified_public_source,False,12.4,0.194
+13050:CO,"Mountain Parks Electric, Inc",unsettled on assignment,2022,bi:1260-0,"Crusoe Energy, Jackson County, CO",determining,this host,smallest_polygon,False,2022,first_generator_permit_plus_lag,True,0.88,1.362
+13520:MO,"New-Mac Electric Coop, Inc",unsettled on assignment,2022,bi:667-0,"Walmart, McDonald County, MO",determining,this host,smallest_polygon,False,2022,first_generator_permit_plus_lag,True,5.05,5.94
+15444:UT,Provo City Corp,unsettled on assignment,2013,bi:938-0,"Newfold Digital, Utah County, UT",determining,this host,smallest_polygon,False,2011,first_generator_permit_plus_lag,True,2.29,1.311
+1586:AR,City of Bentonville - (AR),unsettled on assignment,2014,bi:1157-0,"Walmart, Benton County, AR",determining,this host,smallest_polygon,False,2013,first_generator_permit_plus_lag,True,1.72,1.303
+16638:TX,"San Bernard Electric Coop, Inc",unsettled on assignment,2016,bi:887-0,"CyrusOne, Harris County, TX",determining,this host,smallest_polygon,False,2016,verified_public_source,False,28.0,23.842
+16638:TX,"San Bernard Electric Coop, Inc",unsettled on assignment,2016,bi:1200-0,"Serverfarm, Harris County, TX",unresolved,Entergy Texas Inc. (55937),next_larger_load_feasible,False,2006,verified_public_source,False,108.6,92.47
+16638:TX,"San Bernard Electric Coop, Inc",unsettled on assignment,2016,bi:886-0,"Serverfarm, Travis County, TX",unresolved,Entergy Texas Inc. (55937),next_larger_load_feasible,False,2010,first_generator_permit_plus_lag,True,21.0,17.881
+19499:CO,"United Power, Inc",unsettled on assignment,2019,bi:438-0,"JPMorgan Chase, Broomfield County, CO",determining,this host,smallest_polygon,False,2019,first_generator_permit_plus_lag,True,5.49,1.896
+19499:CO,"United Power, Inc",unsettled on assignment,2019,bi:453-1,"Oracle, Denver County, CO",unresolved,this host,smallest_polygon,False,2013,first_generator_permit_plus_lag,True,2.16,0.747
+3461:WY,Cheyenne Light Fuel & Power,unsettled on assignment,2016,bi:1123-0,"Lunavi, Laramie County, WY",determining,this host,smallest_polygon,False,2015,first_generator_permit_plus_lag,True,3.37,1.436
+3989:CO,City of Colorado Springs - (CO),unsettled on assignment,2013,bi:446-0,"FedEx, El Paso County, CO",determining,this host,smallest_polygon,False,2009,first_generator_permit_plus_lag,True,7.41,0.725
+3989:CO,City of Colorado Springs - (CO),unsettled on assignment,2013,bi:445-0,"Walmart, El Paso County, CO",determining,this host,smallest_polygon,False,2013,first_generator_permit_plus_lag,True,4.46,0.436
+3989:CO,City of Colorado Springs - (CO),unsettled on assignment,2013,bi:444-0,"Verizon, El Paso County, CO",unresolved,this host,smallest_polygon,False,2013,first_generator_permit_plus_lag,True,4.12,0.403
+4262:TX,Cooke County Elec Coop Assn,unsettled on assignment,2012,bi:1181-0,"CyrusOne, Denton County, TX",determining,this host,smallest_polygon,False,2012,verified_public_source,False,15.0,15.788
+4262:TX,Cooke County Elec Coop Assn,unsettled on assignment,2012,bi:892-0,"CyrusOne, Denton County, TX",unresolved,"Denton County Elec Coop, Inc (5078)",next_larger_load_feasible,False,2008,verified_public_source,False,63.69,67.035
+4262:TX,Cooke County Elec Coop Assn,unsettled on assignment,2012,bi:1392-0,"Citigroup, Denton County, TX",unresolved,"Denton County Elec Coop, Inc (5078)",next_larger_load_feasible,False,2005,verified_public_source,False,30.0,31.577
+5773:MN,City of Elk River,unsettled on assignment,2020,bi:646-0,"Target, Sherburne County, MN",determining,this host,smallest_polygon,False,2020,first_generator_permit_plus_lag,True,5.56,9.814
+6182:TX,"Farmers Electric Coop, Inc - (TX)",unsettled on assignment,2014,bi:930-0,"QTS, Dallas County, TX",determining,this host,fallback_largest_flagged,False,2014,verified_public_source,False,145.0,69.54
+6182:TX,"Farmers Electric Coop, Inc - (TX)",unsettled on assignment,2014,bi:931-0,"Stack Infrastructure, Collin County, TX",unresolved,"Grayson-Collin Elec Coop, Inc (7559)",smallest_polygon,False,2012,verified_public_source,False,68.78,32.984
+6182:TX,"Farmers Electric Coop, Inc - (TX)",unsettled on assignment,2014,bi:1198-0,"CoreWeave, Collin County, TX",unresolved,"Denton County Elec Coop, Inc (5078)",next_larger_load_feasible,False,2013,first_generator_permit_plus_lag,True,27.5,13.189
+6182:TX,"Farmers Electric Coop, Inc - (TX)",unsettled on assignment,2014,bi:1199-0,"DXC Technology, Collin County, TX",unresolved,"Denton County Elec Coop, Inc (5078)",next_larger_load_feasible,False,2011,first_generator_permit_plus_lag,True,25.94,12.44
+6182:TX,"Farmers Electric Coop, Inc - (TX)",unsettled on assignment,2014,bi:1190-0,"Aligned Data Centers, Collin County, TX",unresolved,"Grayson-Collin Elec Coop, Inc (7559)",smallest_polygon,False,2015,verified_public_source,False,0.0,0.0
+7559:TX,"Grayson-Collin Elec Coop, Inc",unsettled on assignment,2012,bi:931-0,"Stack Infrastructure, Collin County, TX",determining,this host,smallest_polygon,False,2012,verified_public_source,False,22.93,13.455
+7559:TX,"Grayson-Collin Elec Coop, Inc",unsettled on assignment,2012,bi:1199-0,"DXC Technology, Collin County, TX",unresolved,"Denton County Elec Coop, Inc (5078)",next_larger_load_feasible,False,2011,first_generator_permit_plus_lag,True,17.29,10.149
+7559:TX,"Grayson-Collin Elec Coop, Inc",unsettled on assignment,2012,bi:1198-0,"CoreWeave, Collin County, TX",unresolved,"Denton County Elec Coop, Inc (5078)",next_larger_load_feasible,False,2013,first_generator_permit_plus_lag,True,0.0,0.0
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:907-0,"Amazon, Bexar County, TX",determining,this host,next_larger_load_feasible,False,2021,verified_public_source,False,17.8,4.122
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:929-0,"Microsoft, Bexar County, TX",unresolved,City of San Antonio - (TX) (16604),smallest_polygon,False,2008,first_generator_permit_plus_lag,True,75.0,17.37
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:1212-0,"Microsoft, Bexar County, TX",unresolved,City of San Antonio - (TX) (16604),smallest_polygon,False,2019,verified_public_source,False,59.25,13.722
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:928-0,"Microsoft, Bexar County, TX",unresolved,City of San Antonio - (TX) (16604),smallest_polygon,False,2008,verified_public_source,False,30.0,6.948
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:917-0,"CyrusOne, Bexar County, TX",unresolved,City of San Antonio - (TX) (16604),smallest_polygon,False,2012,verified_public_source,False,27.45,6.357
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:918-0,"Amazon, Bexar County, TX",unresolved,this host,next_larger_load_feasible,False,2021,verified_public_source,False,17.8,4.122
+7752:TX,Guadalupe Valley Elec Coop Inc,unsettled on assignment,2021,bi:914-0,"Amazon, Bexar County, TX",unresolved,City of San Antonio - (TX) (16604),smallest_polygon,False,2021,verified_public_source,False,17.8,4.122
+7977:OH,City of Hamilton - (OH),unsettled on assignment,2012,bi:1250-0,"CyrusOne, Butler County, OH",determining,this host,smallest_polygon,False,2011,first_generator_permit_plus_lag,True,2.07,1.471
+9996:KS,City of Kansas City - (KS),unsettled on assignment,2020,bi:616-0,"State Farm, Johnson County, KS",determining,this host,smallest_polygon,False,2018,first_generator_permit_plus_lag,True,6.67,1.305

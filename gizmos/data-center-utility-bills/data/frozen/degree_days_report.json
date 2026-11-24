@@ -1,0 +1,476 @@
+{
+  "product": "NOAA Climate Prediction Center daily degree days, population-weighted, States (CONUS)",
+  "source_urls": {
+    "data_pattern": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/<YEAR>/StatesCONUS.{Heating,Cooling}.txt",
+    "state_list": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/regions/StatesCONUS.txt",
+    "documentation_page": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/",
+    "explanation_page": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/ddayexp.shtml",
+    "nclimdiv_state_readme_checked_and_not_used": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/state-readme.txt"
+  },
+  "file_names": [
+    "data/raw/cpc_degree_days/2001/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2001/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2002/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2002/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2003/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2003/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2004/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2004/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2005/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2005/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2006/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2006/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2007/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2007/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2008/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2008/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2009/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2009/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2010/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2010/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2011/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2011/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2012/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2012/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2013/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2013/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2014/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2014/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2015/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2015/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2016/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2016/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2017/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2017/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2018/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2018/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2019/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2019/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2020/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2020/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2021/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2021/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2022/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2022/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2023/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2023/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2024/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2024/StatesCONUS.Cooling.txt",
+    "data/raw/cpc_degree_days/2025/StatesCONUS.Heating.txt",
+    "data/raw/cpc_degree_days/2025/StatesCONUS.Cooling.txt"
+  ],
+  "files_with_hashes": [
+    {
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/",
+      "path": "data/raw/cpc_degree_days/docs/degree_days_landing.html",
+      "bytes": 18362,
+      "sha256": "28be7309a22b0870237b96a066ed16954f22bfbe8ab471e8a7a61b09792b49e0"
+    },
+    {
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/ddayexp.shtml",
+      "path": "data/raw/cpc_degree_days/docs/ddayexp.shtml",
+      "bytes": 17882,
+      "sha256": "7a891c4fec0fa3e246e2256632ccf06d6204d5dc5d3d6c3e6b35063edb9c5be6"
+    },
+    {
+      "url": "https://www.ncei.noaa.gov/pub/data/cirs/climdiv/state-readme.txt",
+      "path": "data/raw/cpc_degree_days/docs/nclimdiv_state_readme.txt",
+      "bytes": 18069,
+      "sha256": "b77187cdddfa6ef87c5a5c8eeee2321cbda85e03c0aa6318e547c05236428416"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/regions/StatesCONUS.txt",
+      "path": "data/raw/cpc_degree_days/docs/StatesCONUS_regions.txt",
+      "bytes": 611,
+      "sha256": "c66c3241260c2017d94c2e93cbbc3fbd9e72f1435320a4d973919d3051d52205"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2001/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2001/StatesCONUS.Heating.txt",
+      "bytes": 47078,
+      "sha256": "0eaa6523dd4a28d607c0bcde9133325793a44918894950f4613291d125e8ebe6"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2001/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2001/StatesCONUS.Cooling.txt",
+      "bytes": 41111,
+      "sha256": "c9236f756280a823ec52ad1def9f0c5d17416e3d9d4011dd5602e5b86106071f"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2002/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2002/StatesCONUS.Heating.txt",
+      "bytes": 47564,
+      "sha256": "d76dc2e66b4ec06554b9235f7cf60ebd7bee5a1da2b61dcdbef3d2998d09d23f"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2002/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2002/StatesCONUS.Cooling.txt",
+      "bytes": 41632,
+      "sha256": "81823920c78333a1c75dcf763c44a1d1b9423290880658d87723668308311191"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2003/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2003/StatesCONUS.Heating.txt",
+      "bytes": 47254,
+      "sha256": "e015cae58750dadeb8b97612c0e50b925002c0646df9f1f97a7611b1fda76df2"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2003/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2003/StatesCONUS.Cooling.txt",
+      "bytes": 41031,
+      "sha256": "560438065d9191f1eff32ab487cb634d7a435ea0e0a3ddd600642f8d35b185d1"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2004/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2004/StatesCONUS.Heating.txt",
+      "bytes": 47362,
+      "sha256": "0689035f0e18262df000362df2fbab1087dbc12cfa60a6acd5a00a2d5ab2ef7b"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2004/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2004/StatesCONUS.Cooling.txt",
+      "bytes": 40838,
+      "sha256": "09646ba367c83803f85b2ee746d1a261711198183b8aa04b6a8a761765c029f8"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2005/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2005/StatesCONUS.Heating.txt",
+      "bytes": 47398,
+      "sha256": "e41851c52fe8333ba0a05d489b2576355a224c46a4757c8b031a9dec39f891fd"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2005/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2005/StatesCONUS.Cooling.txt",
+      "bytes": 41506,
+      "sha256": "7e9649187ee42cfc3bf94c9d35f6d2abae9854ab58c04339413d24fbd4256e2f"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2006/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2006/StatesCONUS.Heating.txt",
+      "bytes": 47300,
+      "sha256": "68b4209550eab82fb797f7717d624a171c3888cba0e7d0fcf9de9e43406bc8c4"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2006/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2006/StatesCONUS.Cooling.txt",
+      "bytes": 41136,
+      "sha256": "8283d1c0acdbf399a7811c86ab78eb2f887f84436d0c797a582450382211eefe"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2007/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2007/StatesCONUS.Heating.txt",
+      "bytes": 46904,
+      "sha256": "26e8ba1b086e38f66f85c9fcf99c0d4d9e1ef757621b6e577d289d48fef74bfd"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2007/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2007/StatesCONUS.Cooling.txt",
+      "bytes": 41315,
+      "sha256": "37cc907291495d82e01f1940b6b8d69fad6e2263e146d8986eead8f9df3f58ba"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2008/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2008/StatesCONUS.Heating.txt",
+      "bytes": 47667,
+      "sha256": "b4471e9811120499f3afa3786ae8adf87d8d17df28ccca4ea3956b53a45eb7f3"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2008/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2008/StatesCONUS.Cooling.txt",
+      "bytes": 40892,
+      "sha256": "3b24d6e176c8efa84605b22358023f77c780262e12836cca8955fc310265536b"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2009/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2009/StatesCONUS.Heating.txt",
+      "bytes": 47594,
+      "sha256": "c4fbc135e90938367c9914e692b713a3d3843f222cd56ba2ceea0dda07652193"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2009/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2009/StatesCONUS.Cooling.txt",
+      "bytes": 40571,
+      "sha256": "7dbe604877fb4af1d7f39d7b0ded47f8fae978aad03985630caf763e34ba32e8"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2010/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2010/StatesCONUS.Heating.txt",
+      "bytes": 47384,
+      "sha256": "0bfc03d44b2d49ad3cd48041539346d1b9afd926a3b11b969ae6a5cb44f8292b"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2010/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2010/StatesCONUS.Cooling.txt",
+      "bytes": 41523,
+      "sha256": "0db8c1ca5b6541a3f3ddfc73d148336ac40f88f9ad3fd0791ec37c0936ecc347"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2011/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2011/StatesCONUS.Heating.txt",
+      "bytes": 47398,
+      "sha256": "4d06a1110d1e9ed990c91253eec1b83113d383f1ee63c1730ccbefed2424c0a3"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2011/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2011/StatesCONUS.Cooling.txt",
+      "bytes": 41280,
+      "sha256": "cd99a02e2c503eea9c9e094c2df7cbed5632b59c7fb95631c594238676313c22"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2012/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2012/StatesCONUS.Heating.txt",
+      "bytes": 46867,
+      "sha256": "00c38918c109bb036d47b33e3bcde6158fdbc69bdebe7f7b4e7e6bdd43730fa8"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2012/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2012/StatesCONUS.Cooling.txt",
+      "bytes": 41554,
+      "sha256": "b2ad88bbdcfc43ca2ab26fd16c4b66799d02d4a4aba60895671319d513fc4376"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2013/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2013/StatesCONUS.Heating.txt",
+      "bytes": 47435,
+      "sha256": "43fed7ec38fc09d79d4e936e1cdd3538e3009a2905c28532bea6fd682986f824"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2013/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2013/StatesCONUS.Cooling.txt",
+      "bytes": 41102,
+      "sha256": "45157454b252e93f68f818ac82f946969b99f6ffdfa8b85884950b4a6368a4f9"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2014/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2014/StatesCONUS.Heating.txt",
+      "bytes": 47388,
+      "sha256": "abb91d06cbccfb94e4ed1a9d27ee7f365ce082b38adc1c8eb38ebfa279d4f55e"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2014/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2014/StatesCONUS.Cooling.txt",
+      "bytes": 40779,
+      "sha256": "0990263e65997e3402faecadd4e59f49abd0cb47b97b1c489a96a1a06ecff6b4"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2015/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2015/StatesCONUS.Heating.txt",
+      "bytes": 46756,
+      "sha256": "be5ecc3a3946b893f1f0767e522505ff3a27166a647e5cd854a56903d2ce59d2"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2015/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2015/StatesCONUS.Cooling.txt",
+      "bytes": 41178,
+      "sha256": "1423d60fcac985fbb3275798ecb870d88066939d55f684d8154fd0b84d1f8b9c"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2016/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2016/StatesCONUS.Heating.txt",
+      "bytes": 46756,
+      "sha256": "3fabc21f44deca6664c9fd3a01e329e5341416d6980aff0ad9cd5efb95d22189"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2016/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2016/StatesCONUS.Cooling.txt",
+      "bytes": 41708,
+      "sha256": "488462be60d7c909e89a5efef724cb2ef302c750b17b34e9c6366eed8e8e849b"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2017/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2017/StatesCONUS.Heating.txt",
+      "bytes": 46700,
+      "sha256": "5ab0f8e3ae7eb767854fc99d768b9b26cf7d1ef584156928b87a6f5f16f0f9ae"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2017/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2017/StatesCONUS.Cooling.txt",
+      "bytes": 41021,
+      "sha256": "7aedd862c7cb0ed9530257771db73ad2ba94380267517b652cd0255d3ce0162c"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2018/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2018/StatesCONUS.Heating.txt",
+      "bytes": 47428,
+      "sha256": "7ed1a1d0a61b604035ce91750179972eee95ca443f3a941b978fa1ad9013ed5b"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2018/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2018/StatesCONUS.Cooling.txt",
+      "bytes": 41785,
+      "sha256": "dcdd430362d95183ef209e64b1a2589870dfa2863ea8a79dcb0b4ff12bb8f894"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2019/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2019/StatesCONUS.Heating.txt",
+      "bytes": 47329,
+      "sha256": "6fb7a851db7068daf0a244ef805edbe5efe546e1e268c0ffd05af0b41e8c8990"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2019/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2019/StatesCONUS.Cooling.txt",
+      "bytes": 41413,
+      "sha256": "6427950e4c7de7c469c64cf44c7b685819028a962486b8b1cb0741156cddd528"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2020/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2020/StatesCONUS.Heating.txt",
+      "bytes": 47430,
+      "sha256": "d80dc39b4c23b00b912c64b0a5bed6bb600cba51a40efc72fd49f42af44c28e8"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2020/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2020/StatesCONUS.Cooling.txt",
+      "bytes": 41468,
+      "sha256": "e1fbeabd909d551dec87014185e19a0c8fd5432ea41b2f884ea1410a33636e38"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2021/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2021/StatesCONUS.Heating.txt",
+      "bytes": 46998,
+      "sha256": "a9643fecca5d2cf9aa26c00726879e0547a662d6e48b324a2db2d8c489576d17"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2021/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2021/StatesCONUS.Cooling.txt",
+      "bytes": 41355,
+      "sha256": "e48520256dfbba6406aa9300852613ee1eeb02ccf9035141baf8d0143a66c16d"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2022/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2022/StatesCONUS.Heating.txt",
+      "bytes": 47311,
+      "sha256": "545a414a8f644b47e62e9bc4a95b3e6ce9a3f13fe5039fc52de22298c3c3bd17"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2022/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2022/StatesCONUS.Cooling.txt",
+      "bytes": 41220,
+      "sha256": "3e96e5b0acec9f588ba44310a3ec0e945abef28b6cf962305cfdeff14ad40b2a"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2023/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2023/StatesCONUS.Heating.txt",
+      "bytes": 47098,
+      "sha256": "f5fd776926fe3e4fbc05cf69930a6841bc1216a6394911dfc2811ab8a2f797c4"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2023/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2023/StatesCONUS.Cooling.txt",
+      "bytes": 40809,
+      "sha256": "d511227bfc9974df275502ff63be1a7688eeb15436640ca959692ce435d8da17"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2024/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2024/StatesCONUS.Heating.txt",
+      "bytes": 46972,
+      "sha256": "d90efd08b4b625f86a17a73123ff9b8922bdafe1279b79e1531adc9348921389"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2024/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2024/StatesCONUS.Cooling.txt",
+      "bytes": 41272,
+      "sha256": "e4966ea9f797cf293bac8ba2ac2532a059d884afc10b8c8525417a88b852bb65"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2025/StatesCONUS.Heating.txt",
+      "path": "data/raw/cpc_degree_days/2025/StatesCONUS.Heating.txt",
+      "bytes": 46969,
+      "sha256": "e141c3a9942aa5e4977b4234873c421eda7cd316265d3957227d627ea145f4a5"
+    },
+    {
+      "url": "https://ftp.cpc.ncep.noaa.gov/htdocs/degree_days/weighted/daily_data/2025/StatesCONUS.Cooling.txt",
+      "path": "data/raw/cpc_degree_days/2025/StatesCONUS.Cooling.txt",
+      "bytes": 41070,
+      "sha256": "354fb2fd212fe802826a33535a1ec9b7696584d09cc41c925ad6ae3d27d6fe9f"
+    }
+  ],
+  "date_fetched": "2026-11-12T14:53:59.165183+00:00",
+  "date_stamps_note": "CPC files carry no date stamp in their names (the year is the directory); nClimDiv (not used) files are dated 20261105 in their names",
+  "population_weighting": {
+    "noaa_sentence_verbatim": "These data include population weighted State, Census Divisional and National data using 2010 Census data (excluding Alaska and Hawaii), and heating fuel weighted Census Divisional and National data using the 2010 Annual Community Survey data.",
+    "where": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/ , section \"New Degree Days Products\" (first paragraph)",
+    "file_header_lines_seen": [
+      "Weights: Population"
+    ],
+    "explanation_page_sentence": "State, Regional, and National Data Degree days are estimated for State climate divisions and then population weighted to more accurately reflect temperature-related energy consumption at the State, regional, and national levels. (https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/ddayexp.shtml; this page is older and cites 2000 Census weights)",
+    "nclimdiv_readme_methodology_sentence_verbatim": "Statewide, regional and national values in nClimDiv were derived from area-weighted averages of 5km X 5km grid-point estimates interpolated from station data. (https://www.ncei.noaa.gov/pub/data/cirs/climdiv/state-readme.txt)",
+    "nclimdiv_readme_degree_day_sentence_verbatim": "Population weights utilize the 2010 Census data."
+  },
+  "base_temperature": {
+    "sentence_verbatim": "A mean daily temperature (average of the daily maximum and minimum temperatures) of 65°F is the base for both heating and cooling degree day computations.",
+    "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/cdus/degree_days/ddayexp.shtml"
+  },
+  "aggregation": "annual = sum of daily values, Jan 1 to Dec 31; daily values are integer degree days as published",
+  "years_requested": [
+    2001,
+    2025
+  ],
+  "years_in_output": [
+    2001,
+    2025
+  ],
+  "year_level_notes": {},
+  "jurisdictions_in_noaa_product": [
+    "AL",
+    "AR",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DE",
+    "FL",
+    "GA",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+  ],
+  "jurisdictions_absent_from_product": [
+    "AK",
+    "DC",
+    "HI"
+  ],
+  "absent_handling": {
+    "DC": "rows copied from Maryland, basis = 'Maryland, used for DC'",
+    "AK": "absent, not filled",
+    "HI": "absent, not filled"
+  },
+  "state_list_matches_product_files": true,
+  "state_years_dropped_for_missing_days": []
+}

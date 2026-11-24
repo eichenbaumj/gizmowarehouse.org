@@ -1,0 +1,31 @@
+;; P1, the availability flag build (pipeline/electricity/write_usable_flag.py). macOS sandbox profile.
+;; Started only by run_availability.sh, which passes ROOT (the gizmo folder), REPO (the warehouse) and
+;; ACCESS_RECORDS, and records this file's hash.
+;; Reads: nothing under data/ except the raw sales snapshot, the quantities file, the outcome file and the
+;; by-unit outcome folder (whose names P1 lists once, to find missing or extra files). Writes: only the
+;; quantities file and P1's record, each through a .tmp file renamed into place.
+(version 1)
+(allow default)
+(define (gizmo p) (string-append (param "ROOT") p))
+
+;; Never readable (D-72 item 2): every gizmo's data/ folder in the warehouse (this one's own files are allowed by
+;; name below), and the access-records folder, where D-65 preserved a transcript and preserved copies go.
+;; Everything else outside data/ stays readable: the interpreter, its packages, code, the ledger, the home folder.
+(deny file-read* (regex (string-append "^" (regex-quote (param "REPO")) "/gizmos/[^/]+/data(/|$)")))
+(deny file-read* (subpath (param "ACCESS_RECORDS")))
+(deny file-read* (subpath (gizmo "/data")))
+(allow file-read* (literal (gizmo "/data/raw/pudl/core_eia861__yearly_sales.parquet")))
+(allow file-read* (literal (gizmo "/data/interim/panel_quantities.parquet")))
+(allow file-read* (literal (gizmo "/data/blind/panel_outcomes.parquet")))
+(allow file-read* (subpath (gizmo "/data/blind/outcomes_by_unit")))
+(allow file-read* (literal (gizmo "/data/interim/panel_quantities.parquet.tmp")))
+(allow file-read* (literal (gizmo "/data/interim/availability/p1_record.json.tmp")))
+(allow file-read* (literal (gizmo "/data/interim/availability/p1_record.json")))
+(deny file-read* (literal (gizmo "/pipeline/electricity/sandbox/denied_probe.txt")))
+
+(deny file-write* (subpath "/"))
+(allow file-write* (literal "/dev/null") (literal "/dev/dtracehelper") (literal "/dev/tty"))
+(allow file-write* (literal (gizmo "/data/interim/panel_quantities.parquet")))
+(allow file-write* (literal (gizmo "/data/interim/panel_quantities.parquet.tmp")))
+(allow file-write* (literal (gizmo "/data/interim/availability/p1_record.json")))
+(allow file-write* (literal (gizmo "/data/interim/availability/p1_record.json.tmp")))

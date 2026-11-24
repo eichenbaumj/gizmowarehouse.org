@@ -1,0 +1,445 @@
+{
+ "sequence": 41,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "E2",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:16:12+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "E2",
+  "plan_section": "Other outcomes and robustness: falsification and robustness, E2 fake events for future hosts",
+  "sets": [
+   "e2_eligible_future_host_sample at 2%"
+  ],
+  "builder": "future_hosts.e2_design (each unit at its fake date f, the main pool, G-a)",
+  "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+  "labels": [
+   "falsification and robustness run (reported whatever it shows; none is a gate)",
+   "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+   "under the procedure validated on the headline set; no validation was made on this design"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "e2_eligible_future_host_sample at 2%": {
+    "procedure": {
+     "name": "C",
+     "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+     "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+     "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+    },
+    "hosts_in_the_design": [
+     "5063:TX",
+     "9324:IN",
+     "12293:TN",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH"
+    ],
+    "hosts_with_no_matches": [],
+    "numerical_failure": null,
+    "fuel_control": "gas_share_by_calendar_year",
+    "control_columns_left_out": [
+     {
+      "year": 2011,
+      "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+     }
+    ],
+    "hosts_fully_absorbed": [],
+    "absorbed_controls_option": null,
+    "controls_left_out_as_exactly_absorbed": [],
+    "columns": [
+     "event_year_-6",
+     "event_year_-5",
+     "event_year_-4",
+     "event_year_-2",
+     "event_year_-1",
+     "event_year_0",
+     "event_year_1",
+     "event_year_2",
+     "event_year_3",
+     "heating_degree_days",
+     "cooling_degree_days",
+     "gas_share_x_2012",
+     "gas_share_x_2013",
+     "gas_share_x_2014",
+     "gas_share_x_2015",
+     "gas_share_x_2016",
+     "gas_share_x_2017",
+     "gas_share_x_2018",
+     "gas_share_x_2019",
+     "gas_share_x_2020",
+     "gas_share_x_2021"
+    ],
+    "rows": 660,
+    "regressors": 21,
+    "clusters": 23,
+    "host_headline_weights": {
+     "5063:TX": 0.1674289990342649,
+     "9324:IN": 0.1698168830543987,
+     "12293:TN": 0.16249556891166878,
+     "12866:UT": 0.16538173068747486,
+     "13788:OR": 0.16693029032965231,
+     "19501:OH": 0.1679465279825506
+    },
+    "hosts_with_zero_weight": [],
+    "count_N": 6,
+    "event_year_coefficients": {
+     "-6": -0.018943503679760436,
+     "-5": -0.004239787573501946,
+     "-4": -0.01467194009371054,
+     "-3": 0.0,
+     "-2": 0.002231909286808262,
+     "-1": 0.0154941358687809,
+     "0": 0.04425541236230045,
+     "1": 0.04438822306728998,
+     "2": 0.0785774117980633,
+     "3": 0.05129280389047878
+    },
+    "headline": {
+     "log_points": 0.06493510784427103,
+     "percent": 6.7089776381445105,
+     "standard_error_log_points": 0.04351417927054304,
+     "degrees_of_freedom": 5.674765907415871,
+     "range_90_log_points": [
+      -0.02049664584217846,
+      0.15036686153072054
+     ],
+     "range_90_percent": [
+      -2.0288017422384006,
+      16.22605532106907
+     ],
+     "status": "estimate with its 90% range under the selected procedure",
+     "event_years": [
+      2,
+      3
+     ]
+    },
+    "early_years_test": {
+     "Q": 2.7021724554875757,
+     "F": 0.586239614445768,
+     "numerator_degrees_of_freedom": 3,
+     "denominator_degrees_of_freedom": 3.7282571621702134,
+     "p_value": 0.6573569635697666,
+     "fails_at_p_below_0.10": false,
+     "event_years": [
+      -6,
+      -5,
+      -4
+     ]
+    },
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "validation_check": {
+     "claimed": false,
+     "passed": null,
+     "why": "not claimed: the caller passed validated_design=False"
+    },
+    "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks",
+    "numerical_failure_in_words": null,
+    "design": {
+     "hosts": [
+      {
+       "utility": "5063:TX",
+       "cohort": 2018,
+       "matches": [
+        "2442:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX",
+        "7129:TX"
+       ]
+      },
+      {
+       "utility": "9324:IN",
+       "cohort": 2018,
+       "matches": [
+        "12796:WV",
+        "18997:OH",
+        "3755:OH",
+        "17637:MD",
+        "15263:WV",
+        "18085:OH",
+        "19876:NC",
+        "5070:DE",
+        "17066:VA",
+        "17564:KY"
+       ]
+      },
+      {
+       "utility": "12293:TN",
+       "cohort": 2017,
+       "matches": [
+        "11249:KY",
+        "9617:FL",
+        "13216:TN",
+        "10171:KY",
+        "5416:SC",
+        "17539:SC",
+        "9601:GA",
+        "14610:FL",
+        "10857:FL",
+        "20885:FL"
+       ]
+      },
+      {
+       "utility": "12866:UT",
+       "cohort": 2017,
+       "matches": [
+        "12692:MT",
+        "1625:WA",
+        "14170:WA",
+        "5862:CO",
+        "10681:OR",
+        "40165:UT",
+        "8566:WY",
+        "14245:NV",
+        "12187:OR",
+        "7222:WY"
+       ]
+      },
+      {
+       "utility": "13788:OR",
+       "cohort": 2018,
+       "matches": [
+        "13314:NM",
+        "6957:UT",
+        "15231:WA",
+        "19784:WA",
+        "6582:OR",
+        "17845:UT",
+        "3295:WA",
+        "16603:CO",
+        "12744:WA",
+        "17732:UT"
+       ]
+      },
+      {
+       "utility": "19501:OH",
+       "cohort": 2017,
+       "matches": [
+        "40221:PA",
+        "13693:OH",
+        "7096:IL",
+        "5625:MD",
+        "14599:OH",
+        "10830:OH",
+        "3329:PA",
+        "1325:IL",
+        "15095:OH",
+        "15410:VA"
+       ]
+      }
+     ],
+     "hosts_dropped": [],
+     "unresolved_ownership": [],
+     "load_unknown_excluded": []
+    },
+    "estimated": true,
+    "e2_units_left_out": [
+     {
+      "utility": "1175:TX",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "1273:TX",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "8620:TX",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "11018:NE",
+      "why": [
+       "set aside"
+      ]
+     },
+     {
+      "utility": "11560:VA",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "12199:ND",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "12685:MS",
+      "why": [
+       "left out of E2 (Joe, 2026-11-19): an investor-owned pseudo-host with no ownership row covering every year (2012 to 2021) of its fake window, so no shared parent with its investor-owned matches can be shown or ruled out (rule 2.3); the ownership table was sourced for cohort hosts and eligible comparisons, not for late hosts standing as hosts. The general rule (any investor-owned pseudo-host with a year of its fake window that no ownership row covers) is the session's reading of the ruling"
+      ],
+      "ownership_rule_of_2026_11_19": true,
+      "fake_date_f": 2018,
+      "fake_window": [
+       2012,
+       2021
+      ],
+      "years_with_no_ownership_row": [
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018,
+       2019,
+       2020,
+       2021
+      ]
+     },
+     {
+      "utility": "13756:IN",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "13998:OH",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "15776:FL",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "18976:TX",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "19856:NJ",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "20413:ND",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "22822:IN",
+      "why": [
+       "not a late host in every admissible history",
+       "set aside"
+      ]
+     },
+     {
+      "utility": "44372:TX",
+      "why": [
+       "not shown admissible in every admissible history: no positive 2009-2011 sales base, so no share can be computed; screen case 0: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated; screen case 3: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated; screen case 5: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated",
+       "set aside"
+      ]
+     }
+    ],
+    "e2_ownership_rule": "applied: an investor-owned pseudo-host with a year of its fake window that no ownership row covers is left out and named (Joe's ruling of 2026-11-19; future_hosts.e2_units with the ownership table)"
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

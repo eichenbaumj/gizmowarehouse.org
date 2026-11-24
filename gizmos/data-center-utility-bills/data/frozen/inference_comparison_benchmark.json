@@ -1,0 +1,134 @@
+{
+ "what_this_is": "Step E's benchmark (E5.2, E5.3, E5.6): seconds a dataset by candidate and process, measured inside the workers while all of them were busy, and the projected hours. The candidates' outputs were computed to be timed and discarded unread.",
+ "seed": 20261130,
+ "datasets_per_process": 20,
+ "processes": [
+  "G0_as_in_D38",
+  "G1_unequal_variances",
+  "G2_more_persistence",
+  "G3_less_persistence",
+  "G4_rate_case_steps",
+  "G5_shocks_common_across_states",
+  "G6_all_of_it",
+  "G7_high_variance_where_the_weight_is",
+  "G8_company_and_supplier_shocks",
+  "G9_unequal_regional_exposure",
+  "G10_own_trends",
+  "G11_fuel_shocks_linear_in_the_share",
+  "G12_fuel_shocks_not_linear_in_the_share"
+ ],
+ "candidates": [
+  "A",
+  "B",
+  "C"
+ ],
+ "bootstrap_replications": 999,
+ "workers": 10,
+ "machine": {
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "processor": "arm",
+  "logical_cpus": 18,
+  "python": "3.13.5",
+  "numpy": "2.4.6"
+ },
+ "commit": "307c3cad01636129051dffb2e85754cec709f5e9",
+ "fingerprint": {
+  "sha256": "fd914a7b15f261a7df000cceb1989a4249d41426a6ed6600cc2458d51970d0ca",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "131077f03b182f045f0ecce2cce9a16257cf24c9626ab0b8a0cf049c2ba55265",
+   "assumptions": "8e1bb6126942cfd7616241100f22bf6331583366a85f67da775200a8b7f5037f",
+   "settings": "0cfea801cec2d7ae014536517ebd5f054faa4297af6f53d1fe10bed4722855df",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ },
+ "seconds_a_dataset": {
+  "generation_shared_by_the_candidates": {
+   "G0_as_in_D38": 0.002765,
+   "G1_unequal_variances": 0.001991,
+   "G2_more_persistence": 0.002076,
+   "G3_less_persistence": 0.001819,
+   "G4_rate_case_steps": 0.002474,
+   "G5_shocks_common_across_states": 0.002265,
+   "G6_all_of_it": 0.002958,
+   "G7_high_variance_where_the_weight_is": 0.002061,
+   "G8_company_and_supplier_shocks": 0.004382,
+   "G9_unequal_regional_exposure": 0.002606,
+   "G10_own_trends": 0.002211,
+   "G11_fuel_shocks_linear_in_the_share": 0.002045,
+   "G12_fuel_shocks_not_linear_in_the_share": 0.002664
+  },
+  "by_candidate_and_process": {
+   "A": {
+    "G0_as_in_D38": 0.027722,
+    "G1_unequal_variances": 0.028189,
+    "G2_more_persistence": 0.027483,
+    "G3_less_persistence": 0.028911,
+    "G4_rate_case_steps": 0.028907,
+    "G5_shocks_common_across_states": 0.028803,
+    "G6_all_of_it": 0.028516,
+    "G7_high_variance_where_the_weight_is": 0.028716,
+    "G8_company_and_supplier_shocks": 0.02803,
+    "G9_unequal_regional_exposure": 0.027858,
+    "G10_own_trends": 0.026903,
+    "G11_fuel_shocks_linear_in_the_share": 0.028762,
+    "G12_fuel_shocks_not_linear_in_the_share": 0.028536
+   },
+   "B": {
+    "G0_as_in_D38": 0.011577,
+    "G1_unequal_variances": 0.010536,
+    "G2_more_persistence": 0.011223,
+    "G3_less_persistence": 0.010995,
+    "G4_rate_case_steps": 0.011257,
+    "G5_shocks_common_across_states": 0.011078,
+    "G6_all_of_it": 0.011668,
+    "G7_high_variance_where_the_weight_is": 0.011697,
+    "G8_company_and_supplier_shocks": 0.010642,
+    "G9_unequal_regional_exposure": 0.01221,
+    "G10_own_trends": 0.011038,
+    "G11_fuel_shocks_linear_in_the_share": 0.010928,
+    "G12_fuel_shocks_not_linear_in_the_share": 0.011452
+   },
+   "C": {
+    "G0_as_in_D38": 0.00068,
+    "G1_unequal_variances": 0.000831,
+    "G2_more_persistence": 0.001409,
+    "G3_less_persistence": 0.000741,
+    "G4_rate_case_steps": 0.000693,
+    "G5_shocks_common_across_states": 0.00069,
+    "G6_all_of_it": 0.000785,
+    "G7_high_variance_where_the_weight_is": 0.000613,
+    "G8_company_and_supplier_shocks": 0.00064,
+    "G9_unequal_regional_exposure": 0.000719,
+    "G10_own_trends": 0.001069,
+    "G11_fuel_shocks_linear_in_the_share": 0.000621,
+    "G12_fuel_shocks_not_linear_in_the_share": 0.000724
+   }
+  },
+  "timed_datasets_per_candidate_and_process": 20
+ },
+ "projected_hours": {
+  "stage1_all_three_candidates_2000_a_process": 0.0386,
+  "validation_by_candidate": {
+   "A": {
+    "20000": 0.2775,
+    "10000": 0.1388,
+    "5000": 0.0694
+   },
+   "B": {
+    "20000": 0.124,
+    "10000": 0.062,
+    "5000": 0.031
+   },
+   "C": {
+    "20000": 0.0295,
+    "10000": 0.0148,
+    "5000": 0.0074
+   }
+  },
+  "formula": "1.25 x N x (sum over the 13 processes of mean seconds a dataset) / (10 x 3,600) (E5.3)"
+ },
+ "twelve_hour_limit_for_stage_1": 12.0
+}

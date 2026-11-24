@@ -1,0 +1,803 @@
+{
+  "what_this_is": "D-46, ruling 4 as amended: every utility's history recomputed with its unresolved sites taken off (lower case) and with every unresolved site that lists it as a candidate territory counted on it (upper case), as built and with no anchoring. Load and sales only.",
+  "resolved_means": "verified by hand, or in one territory only and outside ERCOT (the second is an assumption: that the territory map is right there and the site is not served at wholesale or behind the meter)",
+  "envelopes": "Each utility's two cases are its own extremes. A site that is a candidate for two utilities is counted on each in its own upper case, which cannot both be true, and the upper case is not checked against what the utility's sales could carry.",
+  "sites": {
+    "all": 2244,
+    "resolved": 1089,
+    "unresolved": 1155,
+    "by_how_placed": {
+      "behind_the_meter": {
+        "sites": 14,
+        "resolved": 14
+      },
+      "candidates_widened": {
+        "sites": 3,
+        "resolved": 0
+      },
+      "ercot_wires_outside_panel": {
+        "sites": 11,
+        "resolved": 11
+      },
+      "fallback_largest_flagged": {
+        "sites": 68,
+        "resolved": 0
+      },
+      "next_larger_load_feasible": {
+        "sites": 168,
+        "resolved": 0
+      },
+      "none": {
+        "sites": 12,
+        "resolved": 0
+      },
+      "reopened": {
+        "sites": 2,
+        "resolved": 0
+      },
+      "smallest_polygon": {
+        "sites": 902,
+        "resolved": 0
+      },
+      "unique": {
+        "sites": 872,
+        "resolved": 872
+      },
+      "verified_by_hand": {
+        "sites": 181,
+        "resolved": 181
+      },
+      "wholesale_direct": {
+        "sites": 11,
+        "resolved": 11
+      }
+    },
+    "carrying_load": 1068,
+    "carrying_load_and_unresolved": 461
+  },
+  "thresholds": {
+    "2%": {
+      "cohort_utilities_tested": 22,
+      "keep_their_place": 9,
+      "hosts": [
+        {
+          "utility": "1586:AR",
+          "name": "City of Bentonville - (AR)",
+          "region": "SPP",
+          "first_crossing_as_built": 2014,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2014,
+          "upper_no_anchoring": 2013,
+          "verdict": "lower as built: first crossing never against 2014",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1157-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:1157-0"
+          ]
+        },
+        {
+          "utility": "803:AZ",
+          "name": "Arizona Public Service Co",
+          "region": "West",
+          "first_crossing_as_built": 2020,
+          "lower_as_built": 2020,
+          "lower_no_anchoring": 2020,
+          "upper_as_built": 2020,
+          "upper_no_anchoring": 2020,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 6,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 14,
+          "determining_sites": [
+            "bi:18-0",
+            "bi:19-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "11208:CA",
+          "name": "Los Angeles Department of Water & Power",
+          "region": "California",
+          "first_crossing_as_built": 2020,
+          "lower_as_built": 2020,
+          "lower_no_anchoring": 2019,
+          "upper_as_built": 2020,
+          "upper_no_anchoring": 2019,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": false,
+          "sites_on_it": 23,
+          "unresolved_on_it": 2,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1333-0",
+            "bi:96-0",
+            "bi:97-0",
+            "bi:74-0",
+            "bi:1184-0",
+            "bi:98-0",
+            "bi:90-0",
+            "bi:198-0",
+            "bi:79-0",
+            "bi:204-0",
+            "bi:72-0",
+            "bi:94-0",
+            "bi:85-0",
+            "bi:87-0",
+            "bi:73-0",
+            "bi:71-0",
+            "bi:95-0",
+            "bi:81-0",
+            "bi:104-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "14401:CA",
+          "name": "City of Palo Alto - (CA)",
+          "region": "California",
+          "first_crossing_as_built": 2017,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2017,
+          "upper_no_anchoring": 2017,
+          "verdict": "lower as built: first crossing never against 2017",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 3,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1257-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:1257-0"
+          ]
+        },
+        {
+          "utility": "9336:CO",
+          "name": "CORE Electric Cooperative",
+          "region": "West",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2012,
+          "upper_no_anchoring": 2011,
+          "verdict": "lower as built: first crossing never against 2012",
+          "in_the_headline_set_before_this_test": false,
+          "sites_on_it": 4,
+          "unresolved_on_it": 4,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1261-0",
+            "bi:440-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:1261-0",
+            "bi:440-0"
+          ]
+        },
+        {
+          "utility": "11187:CO",
+          "name": "City of Longmont",
+          "region": "West",
+          "first_crossing_as_built": 2016,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2016,
+          "upper_no_anchoring": 2016,
+          "verdict": "lower as built: first crossing never against 2016",
+          "in_the_headline_set_before_this_test": false,
+          "sites_on_it": 2,
+          "unresolved_on_it": 2,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:468-0",
+            "bi:469-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:468-0",
+            "bi:469-0"
+          ]
+        },
+        {
+          "utility": "13050:CO",
+          "name": "Mountain Parks Electric, Inc",
+          "region": "West",
+          "first_crossing_as_built": 2022,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2022,
+          "upper_no_anchoring": 2022,
+          "verdict": "lower as built: first crossing never against 2022",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1260-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:1260-0"
+          ]
+        },
+        {
+          "utility": "19499:CO",
+          "name": "United Power, Inc",
+          "region": "West",
+          "first_crossing_as_built": 2019,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2019,
+          "upper_no_anchoring": 2019,
+          "verdict": "lower as built: first crossing never against 2019",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 2,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:438-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:438-0"
+          ]
+        },
+        {
+          "utility": "20065:GA",
+          "name": "Walton Electric Member Corp",
+          "region": "Southeast",
+          "first_crossing_as_built": 2021,
+          "lower_as_built": 2021,
+          "lower_no_anchoring": 2021,
+          "upper_as_built": 2021,
+          "upper_no_anchoring": 2021,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:539-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "4110:IL",
+          "name": "Commonwealth Edison Co",
+          "region": "PJM",
+          "first_crossing_as_built": 2014,
+          "lower_as_built": 2014,
+          "lower_no_anchoring": 2014,
+          "upper_as_built": 2011,
+          "upper_no_anchoring": 2011,
+          "verdict": "upper as built: first crossing 2011 against 2014",
+          "in_the_headline_set_before_this_test": false,
+          "sites_on_it": 49,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:595-0",
+            "bi:578-0",
+            "bi:557-0",
+            "bi:582-0",
+            "bi:571-0",
+            "bi:564-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "3841:MS",
+          "name": "Coast Electric Power Assn - (MS)",
+          "region": "Southeast",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2012,
+          "upper_no_anchoring": 2012,
+          "verdict": "lower as built: first crossing never against 2012",
+          "in_the_headline_set_before_this_test": false,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:668-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:668-0"
+          ]
+        },
+        {
+          "utility": "14127:NE",
+          "name": "Omaha Public Power District",
+          "region": "SPP",
+          "first_crossing_as_built": 2019,
+          "lower_as_built": 2019,
+          "lower_no_anchoring": 2019,
+          "upper_as_built": 2019,
+          "upper_no_anchoring": 2019,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 12,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "osm:way/844394340",
+            "bi:685-0",
+            "bi:687-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "15473:NM",
+          "name": "Public Service Co of NM",
+          "region": "West",
+          "first_crossing_as_built": 2019,
+          "lower_as_built": 2019,
+          "lower_no_anchoring": 2019,
+          "upper_as_built": 2019,
+          "upper_no_anchoring": 2019,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "epoch:Meta Los Lunas"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "17166:NV",
+          "name": "Sierra Pacific Power Co",
+          "region": "West",
+          "first_crossing_as_built": 2017,
+          "lower_as_built": 2017,
+          "lower_no_anchoring": 2017,
+          "upper_as_built": 2017,
+          "upper_no_anchoring": 2017,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "osm:way/464097467"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "14354:OR",
+          "name": "PacifiCorp",
+          "region": "West",
+          "first_crossing_as_built": 2014,
+          "lower_as_built": 2014,
+          "lower_no_anchoring": 2014,
+          "upper_as_built": 2014,
+          "upper_no_anchoring": 2014,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:842-0",
+            "bi:841-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "4262:TX",
+          "name": "Cooke County Elec Coop Assn",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2005,
+          "upper_no_anchoring": 2005,
+          "verdict": "lower as built: first crossing never against 2012",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:1181-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:1181-0"
+          ]
+        },
+        {
+          "utility": "6182:TX",
+          "name": "Farmers Electric Coop, Inc - (TX)",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2014,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2011,
+          "upper_no_anchoring": 2011,
+          "verdict": "lower as built: first crossing never against 2014",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 8,
+          "determining_sites": [
+            "bi:930-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:930-0"
+          ]
+        },
+        {
+          "utility": "6958:TX",
+          "name": "City of Garland - (TX)",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2017,
+          "lower_as_built": 2017,
+          "lower_no_anchoring": 2017,
+          "upper_as_built": 2017,
+          "upper_no_anchoring": 2017,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1188-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "7559:TX",
+          "name": "Grayson-Collin Elec Coop, Inc",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2011,
+          "upper_no_anchoring": 2011,
+          "verdict": "lower as built: first crossing never against 2012",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 2,
+          "unresolved_sites_elsewhere_that_list_it": 5,
+          "determining_sites": [
+            "bi:931-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:931-0"
+          ]
+        },
+        {
+          "utility": "16638:TX",
+          "name": "San Bernard Electric Coop, Inc",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2016,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2006,
+          "upper_no_anchoring": 2006,
+          "verdict": "lower as built: first crossing never against 2016",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 5,
+          "determining_sites": [
+            "bi:887-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:887-0"
+          ]
+        },
+        {
+          "utility": "14354:UT",
+          "name": "PacifiCorp",
+          "region": "West",
+          "first_crossing_as_built": 2015,
+          "lower_as_built": 2016,
+          "lower_no_anchoring": 2016,
+          "upper_as_built": 2015,
+          "upper_no_anchoring": 2014,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 10,
+          "unresolved_on_it": 6,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:937-0",
+            "bi:941-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:941-0"
+          ]
+        },
+        {
+          "utility": "15444:UT",
+          "name": "Provo City Corp",
+          "region": "West",
+          "first_crossing_as_built": 2013,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2013,
+          "upper_no_anchoring": 2012,
+          "verdict": "lower as built: first crossing never against 2013",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:938-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:938-0"
+          ]
+        }
+      ]
+    },
+    "5%": {
+      "cohort_utilities_tested": 12,
+      "keep_their_place": 7,
+      "hosts": [
+        {
+          "utility": "19499:CO",
+          "name": "United Power, Inc",
+          "region": "West",
+          "first_crossing_as_built": 2019,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2019,
+          "upper_no_anchoring": 2019,
+          "verdict": "lower as built: first crossing never against 2019",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 2,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:438-0",
+            "bi:453-1"
+          ],
+          "determining_sites_unresolved": [
+            "bi:438-0",
+            "bi:453-1"
+          ]
+        },
+        {
+          "utility": "20065:GA",
+          "name": "Walton Electric Member Corp",
+          "region": "Southeast",
+          "first_crossing_as_built": 2021,
+          "lower_as_built": 2021,
+          "lower_no_anchoring": 2021,
+          "upper_as_built": 2021,
+          "upper_no_anchoring": 2021,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:539-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "14127:NE",
+          "name": "Omaha Public Power District",
+          "region": "SPP",
+          "first_crossing_as_built": 2020,
+          "lower_as_built": 2020,
+          "lower_no_anchoring": 2020,
+          "upper_as_built": 2020,
+          "upper_no_anchoring": 2020,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 12,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "osm:way/844394340",
+            "bi:685-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "15477:NJ",
+          "name": "Public Service Elec & Gas Co",
+          "region": "PJM",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": 2012,
+          "lower_no_anchoring": 2013,
+          "upper_as_built": 2012,
+          "upper_no_anchoring": 2013,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": false,
+          "sites_on_it": 48,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1196-0",
+            "bi:737-0",
+            "bi:1207-1",
+            "bi:1217-0",
+            "bi:1208-0",
+            "bi:1349-0",
+            "bi:713-0",
+            "bi:706-0",
+            "bi:707-0",
+            "bi:730-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "15473:NM",
+          "name": "Public Service Co of NM",
+          "region": "West",
+          "first_crossing_as_built": 2020,
+          "lower_as_built": 2020,
+          "lower_no_anchoring": 2020,
+          "upper_as_built": 2020,
+          "upper_no_anchoring": 2020,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "epoch:Meta Los Lunas"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "14354:OR",
+          "name": "PacifiCorp",
+          "region": "West",
+          "first_crossing_as_built": 2018,
+          "lower_as_built": 2018,
+          "lower_no_anchoring": 2018,
+          "upper_as_built": 2018,
+          "upper_no_anchoring": 2018,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:842-0",
+            "bi:841-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "4262:TX",
+          "name": "Cooke County Elec Coop Assn",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2005,
+          "upper_no_anchoring": 2005,
+          "verdict": "lower as built: first crossing never against 2012",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:1181-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:1181-0"
+          ]
+        },
+        {
+          "utility": "6182:TX",
+          "name": "Farmers Electric Coop, Inc - (TX)",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2014,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2011,
+          "upper_no_anchoring": 2012,
+          "verdict": "lower as built: first crossing never against 2014",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 8,
+          "determining_sites": [
+            "bi:930-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:930-0"
+          ]
+        },
+        {
+          "utility": "6958:TX",
+          "name": "City of Garland - (TX)",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2019,
+          "lower_as_built": 2019,
+          "lower_no_anchoring": 2019,
+          "upper_as_built": 2019,
+          "upper_no_anchoring": 2019,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 0,
+          "unresolved_sites_elsewhere_that_list_it": 0,
+          "determining_sites": [
+            "bi:1188-0"
+          ],
+          "determining_sites_unresolved": []
+        },
+        {
+          "utility": "7559:TX",
+          "name": "Grayson-Collin Elec Coop, Inc",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2012,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2011,
+          "upper_no_anchoring": 2012,
+          "verdict": "lower as built: first crossing never against 2012",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 2,
+          "unresolved_on_it": 2,
+          "unresolved_sites_elsewhere_that_list_it": 5,
+          "determining_sites": [
+            "bi:931-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:931-0"
+          ]
+        },
+        {
+          "utility": "16638:TX",
+          "name": "San Bernard Electric Coop, Inc",
+          "region": "ERCOT",
+          "first_crossing_as_built": 2016,
+          "lower_as_built": "never",
+          "lower_no_anchoring": "never",
+          "upper_as_built": 2006,
+          "upper_no_anchoring": 2006,
+          "verdict": "lower as built: first crossing never against 2016",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 1,
+          "unresolved_on_it": 1,
+          "unresolved_sites_elsewhere_that_list_it": 5,
+          "determining_sites": [
+            "bi:887-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:887-0"
+          ]
+        },
+        {
+          "utility": "14354:UT",
+          "name": "PacifiCorp",
+          "region": "West",
+          "first_crossing_as_built": 2020,
+          "lower_as_built": 2021,
+          "lower_no_anchoring": 2021,
+          "upper_as_built": 2020,
+          "upper_no_anchoring": 2019,
+          "verdict": "keeps its place",
+          "in_the_headline_set_before_this_test": true,
+          "sites_on_it": 10,
+          "unresolved_on_it": 6,
+          "unresolved_sites_elsewhere_that_list_it": 1,
+          "determining_sites": [
+            "bi:937-0",
+            "bi:943-0",
+            "bi:941-0"
+          ],
+          "determining_sites_unresolved": [
+            "bi:941-0"
+          ]
+        }
+      ]
+    }
+  }
+}

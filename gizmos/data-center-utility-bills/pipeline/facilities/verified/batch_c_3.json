@@ -1,0 +1,23 @@
+[
+ {
+  "fid": "bi:18-0",
+  "group": "assign",
+  "state": "AZ",
+  "is_data_center": true,
+  "site_name": "Stream Data Centers, Goodyear",
+  "serving_utility": "Arizona Public Service (APS)",
+  "service_arrangement": "retail",
+  "utility_source_url": "https://www.streamdatacenters.com/locations/phoenix/",
+  "utility_confidence": "high",
+  "utility_evidence_kind": "site statement",
+  "utility_evidence_period": "the operator's page as shown 2026-11-15",
+  "opened_by_session_model": "2026-11-15",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "notes": "Verification pass, session 9, the browser sitting (D-58 rule 3, D-59 item 2). Reopened under D-48 in Joe's browser (a plain client's connection is closed): the operator's page lists 'Dedicated on-site APS substation with ultimate power capacity of 480 MW.'"
+ }
+]

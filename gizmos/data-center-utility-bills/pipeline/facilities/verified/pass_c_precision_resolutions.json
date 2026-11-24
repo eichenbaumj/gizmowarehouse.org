@@ -1,0 +1,209 @@
+{
+ "what_this_is": "Session 17 (D-94, D-95): how the precision rule's readings, as Joe adopted them on 2026-11-18, are applied to the records the rule's table leaves needing a reading. At Stop 2 (D-95) Joe accepted the Elk River resolution 'on the described feature identification', retained the site-tied Olathe certificate assignments, and ruled that the WAPA customer-list omissions do not resolve South Jordan or Palo Alto: 'completeness, relevant dates and site-level coverage are not established'. Every page a record rests on was opened by the session with a plain client on the date given, unless it says otherwise.",
+ "sites": {
+  "bi:646-0": {
+   "site": "Target, Elk River, Minnesota",
+   "conflicting_name": "CITY OF ST PAUL - (NE)",
+   "resolution": "resolved",
+   "resolved_by": "the layer's own description (its attributes for the feature), with the named entity's own statement",
+   "the_sessions_reading": false,
+   "why": "The compilation's own attributes for the feature drawn at the point say it is a Nebraska utility of 1,255 customers whose outline was taken from a census urban-area file; the outline itself lies wholly in Minnesota. The named utility's own page says whom it serves at retail. No record says in words that it does not serve Elk River.",
+   "records": [
+    {
+     "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0/query?where=OBJECTID+IN+(1245,1831)&outFields=*&returnGeometry=false&f=json",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "what_it_returned": "OBJECTID 1245: ID '17899', NAME 'CITY OF ST PAUL - (NE)', STATE 'NE', TYPE 'NOT AVAILABLE', TELEPHONE '(308) 754-4661', SOURCE 'EIA 861, Urban Areas - Cartographic Boundary Shapefiles - U.S. Census', CUSTOMERS 1255",
+     "establishes": "The publisher's own attributes describe a Nebraska entity whose geometry came from a census urban-area file.",
+     "does_not_establish": "That it delivers nothing at the point."
+    },
+    {
+     "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0/query?where=OBJECTID=1245&returnExtentOnly=true&outSR=4326&f=json",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "what_it_returned": "extent xmin -93.767, ymin 44.623, xmax -92.769, ymax 45.363",
+     "establishes": "The feature's outline lies wholly in Minnesota, which contradicts its own STATE attribute.",
+     "does_not_establish": "Why."
+    },
+    {
+     "url": "https://stpaulnebraska.com/city-departments/electric/",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "quote": "The City of St. Paul provides retail electric service to the St. Paul community.",
+     "establishes": "The named entity's own statement of whom it serves at retail.",
+     "does_not_establish": "An exclusion of any other place in words."
+    },
+    {
+     "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612024.zip",
+     "opened": "2026-11-18",
+     "opened_by_the_session": false,
+     "what_it_returned": "As the lookup read it (Service_Territory_2024.xlsx only): utility 17899, 'City of St Paul - (NE)', one row, state NE, county Howard; utility 5773, 'City of Elk River', MN Hennepin, Sherburne and Wright.",
+     "establishes": "County level only.",
+     "does_not_establish": "Anything the session checked: this file was read by the lookup alone, and the archive also holds sales sheets, which it reports it did not open."
+    }
+   ],
+   "if_struck": "Reliance on the Minnesota layer is defeated under reading 3 and the pass's assignment of this row is withdrawn; the row goes back to the inventory's two candidates. Named avenue left: the Minnesota commission's official service-area record for the parcel.",
+   "ruled_by": "Joe, D-95: 'Accept the Elk River conflict resolution on the described feature identification'."
+  },
+  "bi:941-0": {
+   "site": "eBay, South Jordan, Utah",
+   "conflicting_name": "WAPA-- WESTERN AREA POWER ADMINISTRATION",
+   "resolution": "unresolved",
+   "resolved_by": "",
+   "the_sessions_reading": false,
+   "why": "Joe, D-95: 'The WAPA customer-list omissions do not resolve South Jordan or Palo Alto: completeness, relevant dates and site-level coverage are not established. Carry those conflicts as unresolved and report the resulting design consequences, regardless of whether an assignment changes eligibility.'",
+   "records": [
+    {
+     "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0/query?where=OBJECTID+IN+(1245,1831)&outFields=*&returnGeometry=false&f=json",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "what_it_returned": "OBJECTID 1831: ID '27000', NAME 'WAPA-- WESTERN AREA POWER ADMINISTRATION', STATE 'CO', TYPE 'FEDERAL', SOURCE 'FERC 714, EIA 861, TIGER/Line Shapefiles - U.S. Census', CUSTOMERS 221, RETAIL_MWH 3965879, WSALE_MWH 21944241, YEAR '2022'. The lookup's extent query for the feature: longitude -123.72 to -94.01, latitude 31.33 to 49.00 (not re-run by the session).",
+     "establishes": "The compilation's own attributes describe one federal feature drawn across the West, not a local territory.",
+     "does_not_establish": "Anything at a site. Its own fields report some retail sales, and the layer's description says it holds 'electric power retail service territories'."
+    },
+    {
+     "url": "https://www.wapa.gov/about-wapa/customers",
+     "how": "the page's own table request (POST https://www.wapa.gov/wp-admin/admin-ajax.php?action=get_wdtable&table_id=123, every row at once, with the token the page gives every visitor), sent with a plain client",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "what_it_returned": "711 rows, the server's stated total, with columns Customer, Customer Type, State, Region, Projects. No row names Palo Alto, South Jordan, eBay, Equinix or Stanford in any column. Rows of note: '1883 | Pacificorp | Investor-Owned Utilities | UT | CRSP | Salt Lake Area/Integrated Projects'; '1871 | Northern California Power Agency | Joint Power Authorities | CA | SNR | Central Valley Project'.",
+     "establishes": "WAPA's own list of its customers names no customer that is either site's operator or that carries either site's town in its name.",
+     "does_not_establish": "The page gives no as-of date and does not call the list complete; it says WAPA 'sells power to more than 685 firm and non-firm wholesale power customers'. The table has no address column, so it places no customer at an address. Some customers appear once per project."
+    },
+    {
+     "url": "https://www.wapa.gov/about-wapa/customers",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "quote": "WAPA also has a number of end-use customers, including federal and state agencies, tribes and irrigation districts, that do not resell power from WAPA to residential or commercial consumers, but use it for their own facilities.",
+     "establishes": "WAPA is not only a wholesaler: it delivers to some end users, of the kinds it names.",
+     "does_not_establish": "Which customers those are, or where."
+    }
+   ],
+   "the_sessions_reading_before_the_ruling": {
+    "resolution": "resolved",
+    "resolved_by": "the named entity's own customer list, with the layer's own attributes for the feature",
+    "why": "The name drawn at the point is one federal feature covering the West. WAPA's own list of its customers, read whole, names no customer that is this site's operator or in its town; it lists PacifiCorp as a wholesale customer in Utah. WAPA says it has some end-use customers, of kinds this operator is not. No record says in words that WAPA delivers nothing at this address, and the list is undated and not called complete."
+   },
+   "ruled_by": "Joe, D-95 (Stop 2)",
+   "carried_as": "The town listing no longer suffices and the pass's assignment of this row is withdrawn; the row goes back to the inventory's two candidates. Named avenue left: the Utah commission's certificate records for the address.",
+   "what_the_records_still_show": "Corroboration only: the records below are kept as found and resolve nothing."
+  },
+  "bi:1257-0": {
+   "site": "Equinix, 529 Bryant Street, Palo Alto, California",
+   "conflicting_name": "WAPA-- WESTERN AREA POWER ADMINISTRATION; Power and Water Resource Pooling Authority",
+   "resolution": "unresolved",
+   "resolved_by": "",
+   "the_sessions_reading": false,
+   "why": "Joe, D-95: 'The WAPA customer-list omissions do not resolve South Jordan or Palo Alto: completeness, relevant dates and site-level coverage are not established. Carry those conflicts as unresolved and report the resulting design consequences, regardless of whether an assignment changes eligibility.'",
+   "records": [
+    {
+     "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0/query?where=OBJECTID+IN+(1245,1831)&outFields=*&returnGeometry=false&f=json",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "what_it_returned": "OBJECTID 1831: ID '27000', NAME 'WAPA-- WESTERN AREA POWER ADMINISTRATION', STATE 'CO', TYPE 'FEDERAL', SOURCE 'FERC 714, EIA 861, TIGER/Line Shapefiles - U.S. Census', CUSTOMERS 221, RETAIL_MWH 3965879, WSALE_MWH 21944241, YEAR '2022'. The lookup's extent query for the feature: longitude -123.72 to -94.01, latitude 31.33 to 49.00 (not re-run by the session).",
+     "establishes": "The compilation's own attributes describe one federal feature drawn across the West, not a local territory.",
+     "does_not_establish": "Anything at a site. Its own fields report some retail sales, and the layer's description says it holds 'electric power retail service territories'."
+    },
+    {
+     "url": "https://www.wapa.gov/about-wapa/customers",
+     "how": "the page's own table request (POST https://www.wapa.gov/wp-admin/admin-ajax.php?action=get_wdtable&table_id=123, every row at once, with the token the page gives every visitor), sent with a plain client",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "what_it_returned": "711 rows, the server's stated total, with columns Customer, Customer Type, State, Region, Projects. No row names Palo Alto, South Jordan, eBay, Equinix or Stanford in any column. Rows of note: '1883 | Pacificorp | Investor-Owned Utilities | UT | CRSP | Salt Lake Area/Integrated Projects'; '1871 | Northern California Power Agency | Joint Power Authorities | CA | SNR | Central Valley Project'.",
+     "establishes": "WAPA's own list of its customers names no customer that is either site's operator or that carries either site's town in its name.",
+     "does_not_establish": "The page gives no as-of date and does not call the list complete; it says WAPA 'sells power to more than 685 firm and non-firm wholesale power customers'. The table has no address column, so it places no customer at an address. Some customers appear once per project."
+    },
+    {
+     "url": "https://www.wapa.gov/about-wapa/customers",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "quote": "WAPA also has a number of end-use customers, including federal and state agencies, tribes and irrigation districts, that do not resell power from WAPA to residential or commercial consumers, but use it for their own facilities.",
+     "establishes": "WAPA is not only a wholesaler: it delivers to some end users, of the kinds it names.",
+     "does_not_establish": "Which customers those are, or where."
+    },
+    {
+     "url": "https://www.pwrpa.org/whoweare",
+     "opened": "2026-11-18",
+     "opened_by_the_session": true,
+     "quote": "The Authority serves 15 water purveyors",
+     "establishes": "The authority's own statement of whom it serves; the same page describes their load as used 'to convey, treat, and recycle water for their growers and consumers'.",
+     "does_not_establish": "A list of the purveyors or of places."
+    }
+   ],
+   "the_sessions_reading_before_the_ruling": {
+    "resolution": "resolved",
+    "resolved_by": "each named entity's own statement of whom it serves, with the layer's own attributes for the WAPA feature",
+    "why": "WAPA: as for South Jordan; its own list names neither Palo Alto nor this operator. The pooling authority's own page says it serves fifteen water purveyors and what their load is. The site's location is not tied to a parcel, which stays a stated limitation on the listing: the census boundary puts the address inside the city."
+   },
+   "ruled_by": "Joe, D-95 (Stop 2)",
+   "carried_as": "The town listing no longer suffices and the inventory's verification of this row is reopened between the city's utility and WAPA. Named avenue left: a correction or statement from the state energy commission or the compilation's publisher; a parcel tie for the address.",
+   "what_the_records_still_show": "Corroboration only: the records below are kept as found and resolve nothing."
+  },
+  "bi:444-0": {
+   "site": "Verizon, Colorado Springs",
+   "conflicting_name": "WAPA-- WESTERN AREA POWER ADMINISTRATION",
+   "resolution": "stands",
+   "resolved_by": "Joe's ruling, D-65 item 6, preserved in D-94",
+   "the_sessions_reading": false,
+   "why": "D-94: 'Preserve D-65's Verizon ruling'. Map-based evidence at medium, not site-specific proof of exclusive delivery.",
+   "records": []
+  },
+  "bi:616-0": {
+   "site": "State Farm (now DigiCo), 24400 W Valley Pkwy, Olathe",
+   "conflicting_name": "City of Kansas City - (KS); Evergy Kansas Central",
+   "resolution": "stands",
+   "resolved_by": "the regulator's certificate, on file (batch_c_1)",
+   "the_sessions_reading": false,
+   "why": "D-94 preserves the certificate-based assignments 'provided the certificates are tied to those sites'. The tie on file: the Kansas commission's certificate for Johnson County (docket 117,213-U, 14 December 1978) lists T-13-S, R-23-E, 'Secs. 9 thru 12' under Kansas City Power & Light; the federal land survey puts the parcel, tied by address and owner, in section 9. So the tie is by survey section. That a tie by section meets his proviso is the session's reading. Stated limitation, from the record: later amendments to the certificate were not seen.",
+   "records": [],
+   "ruled_by": "Joe, D-95: 'retain the site-tied Olathe certificate assignments'."
+  },
+  "bi:615-0": {
+   "site": "'CLOP Olathe KS LLC', 23800 W Valley Pkwy, Olathe",
+   "conflicting_name": "City of Kansas City - (KS); Evergy Kansas Central",
+   "resolution": "stands",
+   "resolved_by": "the regulator's certificate, on file (batch_c_1)",
+   "the_sessions_reading": false,
+   "why": "As for bi:616-0: the same certificate, the same section 9, read at this site's coordinates.",
+   "records": [],
+   "ruled_by": "Joe, D-95: 'retain the site-tied Olathe certificate assignments'."
+  }
+ },
+ "omaha": {
+  "sites": [
+   "bi:685-0",
+   "bi:687-0",
+   "bi:684-0",
+   "bi:690-0",
+   "bi:680-0",
+   "bi:688-0",
+   "bi:682-0",
+   "bi:1303-0"
+  ],
+  "resolution": "stands",
+  "the_sessions_reading": false,
+  "why": "D-94: the eight records rely on the two measured layers (the Power Review Board's 'Service Area Boundaries' and the state's 'Power Districts 2020'), each of which returns OPPD alone at the parcel and at the four probes and holds the line test on the distance on file; the class on file for each is 'meets all six conditions: medium'. OPPD's own PDF map is corroboration, the supporting page of condition (e), and not a depiction relied on; no distance is on file for it and none is needed. No conflict in it is on file. Stated limitation: the Board's layer is a convenience copy of its certified maps, the hard copies governing, and the publisher states no accuracy."
+ },
+ "umatilla_county_parcel_layer": {
+  "site": "bi:848-0",
+  "finding": "confirmed for the county's ArcGIS organization; not confirmed for the service itself",
+  "records": [
+   {
+    "url": "https://www.umatillacounty.gov/departments/at/gis",
+    "opened": "2026-11-18",
+    "opened_by_the_session": true,
+    "what_it_returned": "The county's GIS page links 'Umatilla County Interactive Map' at https://experience.arcgis.com/experience/2cabcc1b565f4c1cb2e808e91451ca7d",
+    "establishes": "The county's own site points to that app."
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/2cabcc1b565f4c1cb2e808e91451ca7d/data?f=json",
+    "opened": "2026-11-18",
+    "opened_by_the_session": true,
+    "what_it_returned": "The app's configuration draws its layers from services3.arcgis.com/tNPgIZWOB0Efvm0g, its tax lots from the service 'Tax_Lots_COPY'. The record on file (batch_c_6) queried 'Tax_Lots' in the same organization.",
+    "establishes": "The layer on file is hosted in the organization the county's own app draws from.",
+    "does_not_establish": "That the 'Tax_Lots' service itself is the county's: the county's app draws a copy under another name."
+   }
+  ],
+  "carried_as": "D-94: 'mark that provenance unconfirmed and carry the uncertainty into any finding relying on the parcel tie'. The tie of bi:848-0 to tax lot 5N28140002400 rests on a layer whose publisher is confirmed only as far as the hosting organization."
+ }
+}

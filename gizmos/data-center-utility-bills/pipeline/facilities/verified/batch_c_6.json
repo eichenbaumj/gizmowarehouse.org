@@ -1,0 +1,414 @@
+[
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "bi:821-0",
+  "group": "assign",
+  "state": "OR",
+  "site_name": "Amazon PDX 4, 79539 Rippee Road, Boardman (Morrow County)",
+  "serving_utility": "Umatilla Electric Cooperative",
+  "service_arrangement": "retail",
+  "utility_source_url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/EnergyBaseMap/FeatureServer/0",
+  "utility_confidence": "medium",
+  "utility_evidence_kind": "territory layers under the six conditions, with statements (kind M under the precision rule)",
+  "utility_evidence_period": "the layers as queried on 2026-11-18; BPA's queue rows of 2011 and 2012, energized; the operator's page of 4 April 2023",
+  "parcel_tie": {
+   "layer": "https://services6.arcgis.com/MQGnkVpUbcAxMorv/arcgis/rest/services/2026_10_16_Assessment_Taxlot_Merge_shp/FeatureServer/0",
+   "publisher": "ArcGIS Online item owned by the account 'morrow_planning' (read as Morrow County's planning department; the layer carries no description)",
+   "where": "MAPTAXLOT='04N25E110000800'",
+   "owner": "AMAZON DATA SERVICES, INC",
+   "situs": [
+    "79536 RIPPEE RD",
+    "79539 RIPPEE RD"
+   ],
+   "tied_by": "address and owner: the situs 79539 Rippee Rd is the address in Oregon DEQ's review report for permit 25-0008-ST-01 and on its Cleaner Air Oregon page",
+   "point_queried": [
+    45.840978027097655,
+    -119.65371532117352
+   ],
+   "what_the_point_is": "the parcel's centroid as the layer returns it",
+   "inventory_point_inside_the_parcel": true,
+   "parcel_extent_m": 483.8
+  },
+  "precision_rule": {
+   "kind": "M",
+   "P1": "yes: tied by address and owner",
+   "P2": {
+    "EnergyBaseMap (Oregon PUC)": "1500 m x 0.985 - 5 = 1472.5 m against an extent of 483.8 m: holds",
+    "Oregon Electric Utility Service Areas (Oregon Department of Energy)": "2000 m x 0.985 - 5 = 1965 m against 483.8 m: holds"
+   },
+   "P3": "no conflict: both layers return the cooperative at the point ('Umatilla Electric Coop'; 'Umatilla') and no other name within 5 km",
+   "result": "reliance stands, with unknown accuracy as a stated limitation"
+  },
+  "supporting_evidence": [
+   {
+    "kind": "government record, tied by campus name",
+    "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+    "what": "BPA's interconnection request queue, rows L0342 ('PDX1&4 Data Centers', requested 2011-12-13) and L0351 ('PDX-1 and PDX-4 Data Centers - Phase 2', requested 2012-08-03): requestor Umatilla Electric Cooperative, type LL, county Morrow, status ENERGIZED. It names no operator and no address; 'PDX 4' is the site name on the operator's DEQ filings for 79539 Rippee Road."
+   },
+   {
+    "kind": "operator's statement about a class of sites",
+    "url": "https://www.aboutamazon.com/news/aws/data-center-oregon-renewable-energy",
+    "what": "Amazon, 4 April 2023: the cooperative is described as serving AWS in Umatilla and Morrow Counties. County level; it names no campus."
+   },
+   {
+    "kind": "utility's own page",
+    "url": "https://www.umatillaelectric.com/about-us/who-we-are/",
+    "what": "Service Territory section; the service districts listed begin with Boardman. Undated."
+   }
+  ],
+  "notes": "Session 13, lane C2 (D-85; readings in D-88). Re-entered after the withdrawal of 2026-11-15 (pass_c_withdrawn.json), on a location now tied to a parcel. Conditions (a) to (f) of D-61 section 2: (a) the parcel above; (b) both Oregon layers; (c) as recorded for the Oregon layers already on file; (d) one utility at the point and out to 1,500 m on both layers; (e) the utility's own page and the two statements above; (f) the layers are read for earlier years on the standing assumption that the boundary did not move; BPA's rows date the cooperative's request for this campus to 2011. Oregon DEQ's Cleaner Air Oregon page says the data center 'has been operating since 2013', which agrees with the inventory's year. Unknown accuracy of the layers is a stated limitation. A distance is a reading of the server's answers to the line as drawn (D-69, dated note of 2026-11-18)."
+ },
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "bi:817-0",
+  "group": "assign",
+  "state": "OR",
+  "site_name": "Amazon PDX 1, 73575 Lewis and Clark Drive, Boardman (Morrow County)",
+  "serving_utility": "Umatilla Electric Cooperative",
+  "service_arrangement": "retail",
+  "utility_source_url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/EnergyBaseMap/FeatureServer/0",
+  "utility_confidence": "medium",
+  "utility_evidence_kind": "territory layers under the six conditions, with statements (kind M under the precision rule)",
+  "utility_evidence_period": "the layers as queried on 2026-11-18; BPA's queue rows of 2011 and 2012, energized; the operator's DEQ report for late 2013",
+  "parcel_tie": {
+   "layer": "https://services6.arcgis.com/MQGnkVpUbcAxMorv/arcgis/rest/services/2026_10_16_Assessment_Taxlot_Merge_shp/FeatureServer/0",
+   "publisher": "ArcGIS Online item owned by the account 'morrow_planning' (read as Morrow County's planning department; the layer carries no description)",
+   "where": "MAPTAXLOT='04N25E010000102'",
+   "owner": "AMAZON DATA SERVICES, INC",
+   "situs": [
+    "73579 LEWIS & CLARK DR",
+    "73575 LEWIS & CLARK DR"
+   ],
+   "tied_by": "address and owner: both situs addresses are on the operator's DEQ annual reports for permit 25-0007-ST-01",
+   "point_queried": [
+    45.85249415514362,
+    -119.63058218998562
+   ],
+   "what_the_point_is": "the parcel's centroid as the layer returns it",
+   "inventory_point_inside_the_parcel": true,
+   "parcel_extent_m": 360.6
+  },
+  "precision_rule": {
+   "kind": "M",
+   "P1": "yes: tied by address and owner",
+   "P2": {
+    "EnergyBaseMap (Oregon PUC)": "2187.5 m x 0.985 - 5 = 2149.7 m against an extent of 360.6 m: holds",
+    "Oregon Electric Utility Service Areas (Oregon Department of Energy)": "2750 m x 0.985 - 5 = 2703.8 m against 360.6 m: holds"
+   },
+   "P3": "no conflict: both layers return the cooperative at the point and no other name within 5 km",
+   "result": "reliance stands, with unknown accuracy as a stated limitation"
+  },
+  "supporting_evidence": [
+   {
+    "kind": "government record, tied by campus name",
+    "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+    "what": "BPA's queue, rows L0342 and L0351 as for PDX 4: 'PDX1&4 Data Centers', requestor Umatilla Electric Cooperative, ENERGIZED."
+   },
+   {
+    "kind": "operator's filing about the site",
+    "url": "https://deqonline.deq.state.or.us/AQPermitsonline/25-0007-ST-01_AR_2013.PDF",
+    "what": "2013 annual report for permit 25-0007-ST-01, prepared for Vadata, page 3, Table 6.2.b: on 4 December 2013 critical load was moved to generators PDX 1-1 to 1-13 during utility work by Umatilla Electric Cooperative in the area. It names the cooperative as the utility whose work interrupted the site; it does not say in words that the cooperative delivers to it."
+   },
+   {
+    "kind": "operator's statement about a class of sites",
+    "url": "https://www.aboutamazon.com/news/aws/data-center-oregon-renewable-energy",
+    "what": "As for PDX 4: county level."
+   }
+  ],
+  "notes": "Session 13, lane C2 (D-85; readings in D-88). The inventory carries this row on the cooperative by the map, unresolved, with Bonneville as its second candidate. Conditions (a) to (f) as for bi:821-0; (d) one utility at the point and out to 2,187 m on both layers. The parcel is outside Boardman's city limits on the county's layer, as the lookup reports; the session did not query that layer. Date question unchanged: no page states an operating start; the operator's DEQ reports show generators run from November 2013 and further buildings on the reports of 2014, 2015, 2017 and 2018, which is construction and generator evidence (D-61 5.1). Unknown accuracy of the layers is a stated limitation. A distance is a reading of the server's answers to the line as drawn (D-69, dated note of 2026-11-18)."
+ },
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "bi:848-0",
+  "group": "assign",
+  "state": "OR",
+  "site_name": "Amazon PDX 2, 2400 Beach Access Road (formerly 82792), Umatilla (Umatilla County)",
+  "serving_utility": "Umatilla Electric Cooperative",
+  "service_arrangement": "retail",
+  "utility_source_url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+  "utility_confidence": "medium",
+  "utility_evidence_kind": "government record tied by campus name, with the operator's county-level statement (kind S under the precision rule); see D-88 reading 1",
+  "utility_evidence_period": "BPA's queue rows of 2011 and 2012, energized; the operator's page of 4 April 2023",
+  "parcel_tie": {
+   "layer": "https://services3.arcgis.com/tNPgIZWOB0Efvm0g/ArcGIS/rest/services/Tax_Lots/FeatureServer/0",
+   "publisher": "Umatilla County's ArcGIS Online organization, as the lookup reports; the session did not confirm the publisher from the service",
+   "where": "map_tax='5N28140002400'",
+   "owner": "AMAZON DATA SERVICES INC",
+   "situs": [
+    "2400 BEACH ACCESS, UMATILLA"
+   ],
+   "tied_by": "address and owner: 2400 Beach Access Road is the address on the operator's DEQ reports for permit 30-0028-ST-01",
+   "point_queried": [
+    45.91549378956598,
+    -119.26823063043528
+   ],
+   "what_the_point_is": "the parcel's centroid as the layer returns it",
+   "inventory_point_inside_the_parcel": true,
+   "parcel_extent_m": 355.0
+  },
+  "precision_rule": {
+   "kind": "S for the assignment as recorded here; the depiction was tested and FAILS",
+   "P1": "yes: tied by address and owner",
+   "P2": {
+    "EnergyBaseMap (Oregon PUC)": "165.6 m x 0.985 - 5 = 158.1 m against an extent of 355 m: fails. PacifiCorp's feature touches a disc of 175 m around the point",
+    "Oregon Electric Utility Service Areas (Oregon Department of Energy)": "184.4 m x 0.985 - 5 = 176.6 m against 355 m: fails. Pacific Power's feature touches a disc of 194 m"
+   },
+   "P3": "both layers return the cooperative at the point; both draw PacifiCorp within the parcel's extent",
+   "result": "reliance on the depiction is defeated: a drawn line between the cooperative and PacifiCorp may lie within the parcel. The layers add PacifiCorp (14354) as a candidate and verify nothing here."
+  },
+  "supporting_evidence": [
+   {
+    "kind": "government record, tied by campus name",
+    "url": "https://www.bpa.gov/-/media/Aep/transmission-media-documents/InterconnectionQueueOutput.xlsx",
+    "what": "BPA's queue, rows L0343 ('PDX2', requested 2011-12-13, point of interconnection McNary) and L0352 ('PDX-2 Data Center - Phase 2', requested 2012-08-03, BPA McNary): requestor Umatilla Electric Cooperative, type LL, status ENERGIZED. The file gives the county as Morrow for both; DEQ and the county's parcel record put PDX 2 in Umatilla County. 'PDX 2' is the site name on the operator's DEQ filings for this address."
+   },
+   {
+    "kind": "operator's statement about a class of sites",
+    "url": "https://www.aboutamazon.com/news/aws/data-center-oregon-renewable-energy",
+    "what": "Amazon, 4 April 2023, county level. This is the page the inventory's verification of this row has rested on since before the pass."
+   },
+   {
+    "kind": "page that limits the statement above",
+    "url": "https://elkhornmediagroup.com/?p=205344",
+    "what": "A news report of 7 November 2025 on Amazon Data Services' complaint to the Oregon commission: it describes Amazon campuses inside PacifiCorp's exclusive territory and says all of Amazon's Oregon campuses are in Morrow and Umatilla Counties. So a statement about the two counties does not say which utility serves a given campus. The complaint itself was not opened."
+   },
+   {
+    "kind": "lead",
+    "url": "https://services3.arcgis.com/tNPgIZWOB0Efvm0g/ArcGIS/rest/services/Tax_Lots/FeatureServer/0",
+    "what": "The cooperative owns the neighbouring tax lot 5N28140002300, situs 2000 Beach Access. Its use is not stated."
+   }
+  ],
+  "notes": "Session 13, lane C2 (D-85; readings in D-88). The inventory has carried this row as verified by hand on the operator's county-level page alone. Checked against that source it does not describe this campus. What does name this campus is BPA's queue, by the campus name; whether that is a site statement under D-48 is reading 1 of D-88, for Joe. If it is not, the row is unresolved with the cooperative and PacifiCorp as candidates. Date question unchanged: the 2013 annual report bound into the 2014 file (its pages 6 and 7) covers 21 November to 31 December 2013 with a generator-runtime table for PDX 2, so generators were present and run by November 2013, not only by January 2014; no page states an operating start. Unknown accuracy of the layers is a stated limitation. A distance is a reading of the server's answers to the line as drawn (D-69, dated note of 2026-11-18)."
+ },
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "bi:910-0",
+  "group": "assign",
+  "state": "TX",
+  "site_name": "Vantage Data Centers TX1 campus (building TX11), Omicron Drive, San Antonio",
+  "serving_utility": null,
+  "service_arrangement": "unresolved",
+  "utility_source_url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8896613&Rendition=Web",
+  "utility_confidence": null,
+  "utility_evidence_kind": "operator's statement in a government record: names the utility the site was planned around, and says supply turned to a third party. Establishes no delivering utility. Adds CPS Energy as a candidate.",
+  "utility_evidence_period": "2023 to 8 May 2025",
+  "parcel_tie": {
+   "layer": "https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0",
+   "publisher": "Bexar County's map server; the layer credits the Bexar County Appraisal District",
+   "where": "PropID IN (1433662,1433663,1433664)",
+   "owner": "VANTAGE DATA CENTERS TX1 LLC",
+   "situs": [
+    "OMICRON DR, SAN ANTONIO, TX 78245 (no street number)"
+   ],
+   "tied_by": "owner, and the legal description 'CB 4349A (TX11), BLOCK 130'. The situs has no number, so no address match.",
+   "inventory_point_inside_the_parcel": false,
+   "inventory_point": "falls in a house lot, PropID 1257171 (14306 Omicron Dr): the coordinates on file are wrong and need correcting at step D"
+  },
+  "precision_rule": {
+   "kind": "N",
+   "result": "Texas layers are leads: they add candidates and do nothing else. Not queried again."
+  },
+  "supporting_evidence": [
+   {
+    "kind": "operator's statement in a government record",
+    "url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8896613&Rendition=Web",
+    "what": "An email of 8 May 2025 from the operator's consultant, forwarded within TCEQ, on air permit 175523 at the 'Vantage Data Center Tx1 site'. Page 1, 'Vantage TX1 Development History': CPS is called the utility provider, which indicated bridging power by February 2025 and permanent power about five years on; in June 2024 it told Vantage of a long delay; Vantage then partnered with a third-party power supplier. Page 5 says a similar situation occurred at the second Bexar County site, TX2, without naming a utility there."
+   },
+   {
+    "kind": "lead (an allegation)",
+    "url": "https://environmentalintegrity.org/wp-content/uploads/2026/07/2026-07-22-Vantage-Voltagrid-NOI_final.pdf",
+    "what": "On file since session 8: a notice of intent to sue alleging on-site gas generation at both campuses. An allegation; a lead under D-48."
+   },
+   {
+    "kind": "government permit text",
+    "url": "https://www.tceq.texas.gov/assets/public/permitting/air/publicnotice/38602sob.pdf",
+    "what": "Statement of basis for permit O4791, site 'Vantage TX 11', physical location '14720 Omicron Dr'. The street number disagrees with the 14270 on file and in the notice. Backup generators are for loss of power from 'the utility provider', not named."
+   }
+  ],
+  "notes": "Session 13, lane C2. Unresolved, as before. The inventory puts this row on Guadalupe Valley by its load-feasibility rule, with Bandera, Guadalupe Valley, Karnes and Pedernales as candidates and CPS Energy not among them. The operator's own account names CPS Energy as the utility the site was planned around, so CPS Energy (16604) is added as a candidate by a `candidates` correction. The same account says power was then arranged with a third party, so delivery by no panel utility is live for this row; the check always carries it as a setting. Nothing here says who delivered in any year. No page states an operating start."
+ },
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "bi:911-0",
+  "group": "assign",
+  "state": "TX",
+  "site_name": "Vantage Data Centers TX2 campus (building TX21), 5207 Rogers Road, San Antonio",
+  "serving_utility": null,
+  "service_arrangement": "unresolved",
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "utility_evidence_kind": "none found: no page names a utility for this campus",
+  "utility_evidence_period": null,
+  "parcel_tie": {
+   "layer": "https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0",
+   "publisher": "Bexar County's map server; the layer credits the Bexar County Appraisal District",
+   "where": "PropID=1433747",
+   "owner": "VANTAGE DATA CENTERS TX2 LLC",
+   "situs": [
+    "ROGERS RD, SAN ANTONIO, TX 78251 (no street number)"
+   ],
+   "tied_by": "owner, the record's DBA 'VANTAGE SAN ANTONIO TX21' and the legal description '(TX 21)'. The operator's filed address, 5207 Rogers Road (TDLR TABS2024005974), is not on the parcel record; the lookup reports that the county's address point for it lies in this parcel, and the session's own query at that point returns this parcel.",
+   "inventory_point_inside_the_parcel": false,
+   "inventory_point": "returns no parcel; about 190 m north of the address point by the lookup's measure"
+  },
+  "precision_rule": {
+   "kind": "O",
+   "result": "nothing on file names a supplier; the inventory's placement by the map stands as unresolved"
+  },
+  "supporting_evidence": [
+   {
+    "kind": "lead",
+    "url": "https://records.tceq.texas.gov/cs/idcplg?IdcService=TCEQ_EXTERNAL_SEARCH_GET_FILE&dID=8896613&Rendition=Web",
+    "what": "Page 5 of the email recorded under bi:910-0: 'a similar situation' at TX2. No utility named."
+   },
+   {
+    "kind": "government permit text",
+    "url": "https://www.tceq.texas.gov/assets/public/permitting/air/publicnotice/38600sob.pdf",
+    "what": "Statement of basis for permit O4790: 'Vantage Data Center TX2', 5207 Rogers Road. Utility not named."
+   },
+   {
+    "kind": "state licensing record",
+    "url": "https://www.tdlr.texas.gov/TABS/Search/Print/TABS2024005974",
+    "what": "'VDC TX21', 5207 Rogers Road, owner Vantage Data Centers TX2 LLC; start 12/11/2023, completion 6/1/2025 as filed. Confirms which building is at which address. Not an operating date."
+   }
+  ],
+  "notes": "Session 13, lane C2. Unresolved, as before; CPS Energy is already among the row's candidates and is where the map puts it. No correction."
+ },
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "epoch:Microsoft SAT14",
+  "group": "assign",
+  "state": "TX",
+  "site_name": "Microsoft SAT14, 3545 Wiseman Boulevard, San Antonio",
+  "serving_utility": null,
+  "service_arrangement": "unresolved",
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "utility_evidence_kind": "none found: no page names a utility for this site",
+  "utility_evidence_period": null,
+  "parcel_tie": {
+   "layer": "https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0",
+   "publisher": "Bexar County's map server; the layer credits the Bexar County Appraisal District",
+   "where": "PropID=1370366",
+   "owner": "MICROSOFT CORPORATION",
+   "situs": [
+    "3545 WISEMAN BLVD, SAN ANTONIO, TX 78251"
+   ],
+   "tied_by": "address and owner: the situs is the address the operator filed for 'SAT14 - Phase 1' (TDLR TABS2021019142)",
+   "inventory_point_inside_the_parcel": false,
+   "inventory_point": "returns no parcel; the lookup reports it is the county geocoder's interpolated point for the address, on the road's edge"
+  },
+  "precision_rule": {
+   "kind": "O",
+   "result": "nothing on file names a supplier; the inventory's placement by the map stands as unresolved"
+  },
+  "supporting_evidence": [
+   {
+    "kind": "state licensing record",
+    "url": "https://www.tdlr.texas.gov/TABS/Search/Print/TABS2021019142",
+    "what": "'SAT14 Data Center', 3545 Wiseman Boulevard, owner Microsoft; start 10/1/2021, completion 12/1/2022 as filed. Gives the street address the inventory lacked. Not an operating date."
+   },
+   {
+    "kind": "lead",
+    "url": "https://sanantonioreport.org/with-ut-sale-cluster-of-data-centers-on-west-side-continues-to-grow/",
+    "what": "On file since session 8: an article about the area as a group. Not accepted under D-48."
+   }
+  ],
+  "notes": "Session 13, lane C2. Unresolved, as before; CPS Energy is already among the row's candidates and is where the map puts it. No correction. The operator's construction page names no utility (the lookup's report; not opened by the session)."
+ },
+ {
+  "is_data_center": true,
+  "opened_by_session_model": "2026-11-18",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "fid": "epoch:Microsoft SAT40",
+  "group": "assign",
+  "state": "TX",
+  "site_name": "Microsoft SAT40, Lambda Drive campus (SAT09 to SAT13, SAT40, SAT46), San Antonio",
+  "serving_utility": null,
+  "service_arrangement": "unresolved",
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "utility_evidence_kind": "none found: no page names a utility for this site. Leads add CPS Energy as a candidate.",
+  "utility_evidence_period": null,
+  "parcel_tie": {
+   "layer": "https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0",
+   "publisher": "Bexar County's map server; the layer credits the Bexar County Appraisal District",
+   "where": "PropID=1449195",
+   "owner": "MICROSOFT CORPORATION",
+   "situs": [
+    "LAMBDA DR, SAN ANTONIO, TX 78245 (no street number)"
+   ],
+   "tied_by": "owner only. The inventory's point is inside this parcel. TCEQ's statement of basis for permit O4782 gives the campus, SAT40 among its seven buildings, as 15434 Lambda Dr; the operator's TDLR filing for SAT40 gives 15000 Lambda Drive. The two disagree, neither is on the parcel record, and no page on file says which lot of the campus the SAT40 building stands on.",
+   "inventory_point_inside_the_parcel": true
+  },
+  "precision_rule": {
+   "kind": "O",
+   "result": "nothing on file names a supplier; the inventory's placement by the map stands as unresolved"
+  },
+  "supporting_evidence": [
+   {
+    "kind": "government permit text",
+    "url": "https://www.tceq.texas.gov/assets/public/permitting/air/publicnotice/38511sob.pdf",
+    "what": "Statement of basis for permit O4782: 'Microsoft SAT Campus - SAT09-13 40 46', 15434 Lambda Dr; seven buildings named, SAT40 one of them. No utility named."
+   },
+   {
+    "kind": "state licensing record",
+    "url": "https://www.tdlr.texas.gov/TABS/Search/Print/TABS2023013247",
+    "what": "'SAT40 Data Center', 15000 Lambda Drive, owner Microsoft; start 6/15/2023, completion 9/15/2023 as filed. Not an operating date."
+   },
+   {
+    "kind": "lead (planning documents that name a substation and no customer)",
+    "url": "https://www.cpsenergy.com/content/dam/corporate/en/Documents/omicron-transmission-loop/Omicron_Transmission_Loop_Project_Brochure_ADA_9425.pdf",
+    "what": "The lookup reports CPS Energy's brochure and a grid operator's planning update naming CPS Energy's Rafter and Omicron substations in this area. Not opened by the session; not accepted under D-48; under D-72 item 5 a lead may add a candidate."
+   }
+  ],
+  "notes": "Session 13, lane C2. Unresolved, as before. The inventory puts this row on Bandera by the map, with Bandera, Guadalupe Valley, Karnes and Pedernales as candidates and CPS Energy not among them. The parcel's legal description is 'RAFTER 2' and CPS Energy's planning documents name a Rafter substation; that is a lead, and CPS Energy (16604) is added as a candidate on it by a `candidates` correction. It verifies nothing and excludes no one."
+ }
+]

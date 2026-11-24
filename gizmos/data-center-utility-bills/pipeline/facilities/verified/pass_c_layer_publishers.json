@@ -1,0 +1,732 @@
+{
+ "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/EnergyBaseMap/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/EnergyBaseMap/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/EnergyBaseMap/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This Map is useful for understanding the boundary relationships of Oregon regulated enery companies. Care should be taken in using these files for legal purposes because they are not the official duplicates of Commission allocation orders. This is Public Information. The PUC wants this information to be available to all who find it useful free of charge or restriction.",
+     "serviceDescription": "Depictions of Energy Company Territory Allocations based upon Metes and Bounds descriptions and particulars of PUC Orders.",
+     "copyrightText": "Oregon Public Utility Commission"
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/44718763719840aea6be79883ce99590?f=json",
+    "kind": "item 44718763719840aea6be79883ce99590",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This Map is useful for understanding the boundary relationships of Oregon regulated enery companies. Care should be taken in using these files for legal purposes because they are not the official duplicates of Commission allocation orders. This is Public Information. The PUC wants this information to be available to all who find it useful free of charge or restriction.",
+     "snippet": "Depictions of Energy Company Territory Allocations based upon Metes and Bounds descriptions and particulars of PUC Orders.",
+     "accessInformation": "Oregon Public Utility Commission"
+    }
+   }
+  ]
+ },
+ "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/OregonElectric_Utilities_WGS_1984_6_26_2023/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/OregonElectric_Utilities_WGS_1984_6_26_2023/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services.arcgis.com/uUvqNMGPm7axC2dD/ArcGIS/rest/services/OregonElectric_Utilities_WGS_1984_6_26_2023/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This layer depicts the service area boundaries of electric utilities in Oregon. We have used data from the utilities and online maps to compile this data layer. We are aware that service territories can overlap and we have noted that in certain areas when we find GIS data that confirms the overlap. Despite our best efforts to keep this data up to date, this layer should not be used to make critical decisions unless the data has been ground verified. At this time we update this layer 2-3 times per year as we get new information. If you are aware of an issue with this data, please contact Jim Gores at jim.gores@energy.oregon.gov.",
+     "serviceDescription": "Oregon Electric Utility Service Areas",
+     "copyrightText": "Layer created and maintained by Jim Gores at the Oregon Department of Energy, jim.gores@energy.oregon.gov."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/ad388a7d1456473da7d6a3b2baec7039?f=json",
+    "kind": "item ad388a7d1456473da7d6a3b2baec7039",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This layer depicts the service area boundaries of electric utilities in Oregon. We have used data from the utilities and online maps to compile this data layer. We are aware that service territories can overlap and we have noted that in certain areas when we find GIS data that confirms the overlap. Despite our best efforts to keep this data up to date, this layer should not be used to make critical decisions unless the data has been ground verified. At this time we update this layer 2-3 times per year as we get new information. If you are aware of an issue with this data, please contact Jim Gores at jim.gores@energy.oregon.gov.",
+     "snippet": "Oregon Electric Utility Service Areas",
+     "licenseInfo": "The Oregon Department of Energy cannot guarantee the accuracy of this data layer. Ground verification should be done before the data is used to make any critical decisions.",
+     "accessInformation": "Layer created and maintained by Jim Gores at the Oregon Department of Energy, jim.gores@energy.oregon.gov."
+    }
+   }
+  ]
+ },
+ "https://MapServer01.gworks.com/arcgis/rest/services/Nebraska_Power_Review_Board_NE_MGMT/MapServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://MapServer01.gworks.com/arcgis/rest/services/Nebraska_Power_Review_Board_NE_MGMT/MapServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://MapServer01.gworks.com/arcgis/rest/services/Nebraska_Power_Review_Board_NE_MGMT/MapServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   }
+  ]
+ },
+ "https://giscat.ne.gov/Enterprise/rest/services/Power_Districts/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://giscat.ne.gov/Enterprise/rest/services/Power_Districts/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://giscat.ne.gov/Enterprise/rest/services/Power_Districts/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://giscat.ne.gov/Enterprise/sharing/rest/content/items/547c6fc915bb4c389694bbec99266aa5?f=json",
+    "kind": "item 547c6fc915bb4c389694bbec99266aa5",
+    "status": 500,
+    "error": "HTTP 500",
+    "texts": {}
+   }
+  ]
+ },
+ "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/ElectricalService/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/ElectricalService/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Last update: September 20, 2021This dataset reflects the Electric Service Areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power. Boundaries were derived from a combination of the Counties, various county parcels, Municipalities, and PLSSSections data layers available in the State Geographic Information Database (SGID). Data originally compiled in March 2014.",
+     "copyrightText": "UGRC, UDPU, Rocky Mountain Power, Murray City, City of Hurricane, Heber Light and Power"
+    }
+   },
+   {
+    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/arcgis/rest/services/ElectricalService/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Last update: September 20, 2021\nThis dataset reflects the Electric Service Areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power. Boundaries were derived from a combination of the Counties, various county parcels, Municipalities, and PLSSSections data layers available in the State Geographic Information Database (SGID). Data originally compiled in March 2014.",
+     "serviceDescription": "Service boundaries for electricity providers in Utah.",
+     "copyrightText": "UGRC, UDPU, Rocky Mountain Power, Murray City, City of Hurricane, Heber Light and Power"
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/92916071272248d48dcd546dd2ec72ec?f=json",
+    "kind": "item 92916071272248d48dcd546dd2ec72ec",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Last update: January 31, 2024\nThis dataset reflects the Electric Service Areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power. Boundaries were derived from a combination of the Counties, various county parcels, Municipalities, and PLSSSections data layers available in the State Geographic Information Database (SGID). Data originally compiled in March 2014.",
+     "snippet": "Service boundaries for electricity providers in Utah.",
+     "licenseInfo": "The data, including but not limited to geographic data, tabular data, and analytical data, are provided \"as is\" and \"as available\", with no guarantees relating to the availability, completeness, or accuracy of data, and without any express or implied warranties. These data are provided as a public service for informational purposes only. You are solely responsible for obtaining the proper evaluation of a location and associated data by a qualified professional. UGRC reserves the right to change, revise, suspend or discontinue published data and services without notice at any time. Neither UGRC nor the State of Utah are responsible for any misuse or misrepresentation of the data. UGRC and the State of Utah are not obligated to provide you with any maintenance or support. The user assumes the entire risk as to the quality and performance of the data. You agree to hold the State of Utah harmless for any claims, liability, costs, and damages relating to your use of the data. You agree that your sole remedy for any dissatisfaction or claims is to discontinue use of the data.\nThis work is licensed under a Creative Commons Attribution 4.0 International License .",
+     "accessInformation": "UGRC, UDPU, Rocky Mountain Power, Murray City, City of Hurricane, Heber Light and Power"
+    }
+   }
+  ]
+ },
+ "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This feature class/shapefile represents electric power retail service territories. These are areas serviced by electric power utilities responsible for the retail sale of electric power to local customers, whether residential, industrial, or commercial.",
+     "copyrightText": "Oak Ridge National Laboratory (ORNL), DOE - Office of Cybersecurity, Energy Security, and Emergency Response (CESER)"
+    }
+   },
+   {
+    "url": "https://services3.arcgis.com/OYP7N6mAJJCyH6hd/arcgis/rest/services/Electric_Retail_Service_Territories_HIFLD/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This feature class/shapefile represents electric power retail service territories. These are areas serviced by electric power utilities responsible for the retail sale of electric power to local customers, whether residential, industrial, or commercial.",
+     "serviceDescription": "This feature class/shapefile is for the Homeland Infrastructure Foundation Level Database (HIFLD) (https://hifld-geoplatform.hub.arcgis.com/) as well as the Energy modelling and simulation community.",
+     "copyrightText": "Oak Ridge National Laboratory (ORNL), DOE - Office of Cybersecurity, Energy Security, and Emergency Response (CESER)"
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/597555ce8e4a4892a030784a7c657fdd?f=json",
+    "kind": "item 597555ce8e4a4892a030784a7c657fdd",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This layer represents electric power retail service territories. These are areas serviced by electric power utilities responsible for the retail sale of electric power to local customers, whether residential, industrial, or commercial. This layer was downloaded from Homeland Infrastructure Foundation-Level Data (HIFLD) on 8/21/2025 and will not be updated.",
+     "snippet": "This layer represents electric power retail service territories.",
+     "licenseInfo": "None (Public Use). Users are advised to read the data set's metadata thoroughly to understand appropriate use and data limitations.",
+     "accessInformation": "Oak Ridge National Laboratory (ORNL), DOE - Office of Cybersecurity, Energy Security, and Emergency Response (CESER)"
+    }
+   }
+  ]
+ },
+ "https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/UtahElectricServiceAreas/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/UtahElectricServiceAreas/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Polygon featureclass of Murray City Power Service Boundaries, created 2012, conforming with Murray City land base and representing the areas served by Murray City Power and other Power service providersUpdated Jan 2014",
+     "copyrightText": "Murray City GIS"
+    }
+   },
+   {
+    "url": "https://services1.arcgis.com/99lidPhWCzftIe9K/ArcGIS/rest/services/UtahElectricServiceAreas/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This dataset reflects the Electric Service Areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power. Boundaries were derived from a combination of the Counties, various county parcels, Municipalities, and PLSSSections data layers available in the State Geographic Information Database (SGID).",
+     "serviceDescription": "Electric Service Areas throughout Utah.",
+     "copyrightText": "AGRC, UDPU, Rocky Mountain Power"
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/cd33a0ed363648dd8accd803b19e618e?f=json",
+    "kind": "item cd33a0ed363648dd8accd803b19e618e",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This dataset reflects the Electric Service Areas throughout Utah. Data sources include the Utah Division of Public Utilites (UDPU) and Rocky Mountain Power. Boundaries were derived from a combination of the Counties, various county parcels, Municipalities, and PLSSSections data layers available in the State Geographic Information Database (SGID).",
+     "snippet": "Electric Service Areas throughout Utah.",
+     "accessInformation": "AGRC, UDPU, Rocky Mountain Power"
+    }
+   }
+  ]
+ },
+ "https://services3.arcgis.com/bWPjFyq029ChCGur/ArcGIS/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/ArcGIS/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/ArcGIS/rest/services/ElectricLoadServingEntities_IOU_POU/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Data compiled from California Energy Commission staff from georeferenced electric territory maps and the United States Department of Homeland Security, Homeland Infrastructure Foundation-Level Data (HIFILD), https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::electric-retail-service-territories-2/about\nBoundaries are approximate, for absolute territory information, contact the appropriate load serving entity.\nFor more information on California Load Serving Entities visit this website: https://www.energy.ca.gov/data-reports/energy-almanac/california-electricity-data/electric-load-serving-entities-lses",
+     "serviceDescription": "This layer represents Investor-Owned Utilities (IOUs) and Publicly Owned Utilities (POUs) electric service territories in the state of California. Other electric load serving entities are available here: https://cecgis-caenergy.opendata.arcgis.com/datasets/CAEnergy::electric-load-serving-entities-other/about",
+     "copyrightText": "California Energy Commission"
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/30410214d637434ba1003cbdcc32cf55?f=json",
+    "kind": "item 30410214d637434ba1003cbdcc32cf55",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Data compiled from California Energy Commission staff from georeferenced electric territory maps and the United States Department of Homeland Security, Homeland Infrastructure Foundation-Level Data (HIFILD), https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::electric-retail-service-territories-2/about\nBoundaries are approximate, for absolute territory information, contact the appropriate load serving entity.\nFor more information on California Load Serving Entities visit this website: https://www.energy.ca.gov/data-reports/energy-almanac/california-electricity-data/electric-load-serving-entities-lses",
+     "snippet": "This layer represents Investor-Owned Utilities (IOUs) and Publicly Owned Utilities (POUs) electric service territories in the state of California. Other electric load serving entities are available here: https://cecgis-caenergy.opendata.arcgis.com/datasets/CAEnergy::electric-load-serving-entities-other/about",
+     "licenseInfo": "https://www.energy.ca.gov/conditions-of-use",
+     "accessInformation": "California Energy Commission"
+    }
+   }
+  ]
+ },
+ "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services3.arcgis.com/bWPjFyq029ChCGur/arcgis/rest/services/ElectricLoadServingEntities_Other/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Data compiled from California Energy Commission staff from georeferenced electric territory maps and the United States Department of Homeland Security, Homeland Infrastructure Foundation-Level Data (HIFILD), https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::electric-retail-service-territories-2/about\nCommunity Choice Aggregation information provided by Cal-CCA.\nBoundaries are approximate, for absolute territory information, contact the appropriate load serving entity. Not all electric load serving entities are represented, if you have information on missing territory locations, please contact GIS@energy.ca.gov .\nFor more information on California Load Serving Entities visit this website: https://www.energy.ca.gov/data-reports/energy-almanac/california-electricity-data/electric-load-serving-entities-lses",
+     "serviceDescription": "This layer represents non-Investor-Owned Utilities (IOUs) and Publicly Owned Utilities (POUs) electric service territories such as tribal and community choice aggregators in the state of California. IOU and POU electric load serving entities are available here: https://cecgis-caenergy.opendata.arcgis.com/datasets/CAEnergy::electric-load-serving-entities-iou-pou/about",
+     "copyrightText": "California Energy Commission"
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/07224640a2fe42f89399be796e7b8810?f=json",
+    "kind": "item 07224640a2fe42f89399be796e7b8810",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Data compiled from California Energy Commission staff from georeferenced electric territory maps and the United States Department of Homeland Security, Homeland Infrastructure Foundation-Level Data (HIFILD), https://hifld-geoplatform.opendata.arcgis.com/datasets/geoplatform::electric-retail-service-territories-2/about\nCommunity Choice Aggregation information provided by Cal-CCA.\nBoundaries are approximate, for absolute territory information, contact the appropriate load serving entity. Not all electric load serving entities are represented, if you have information on missing territory locations, please contact GIS@energy.ca.gov .\nFor more information on California Load Serving Entities visit this website: https://www.energy.ca.gov/data-reports/energy-almanac/california-electricity-data/electric-load-serving-entities-lses",
+     "snippet": "This layer represents non-Investor-Owned Utilities (IOUs) and Publicly Owned Utilities (POUs) electric service territories such as tribal and community choice aggregators in the state of California. IOU and POU electric load serving entities are available here: https://cecgis-caenergy.opendata.arcgis.com/datasets/CAEnergy::electric-load-serving-entities-iou-pou/about",
+     "licenseInfo": "https://www.energy.ca.gov/conditions-of-use",
+     "accessInformation": "California Energy Commission"
+    }
+   }
+  ]
+ },
+ "https://gis.doit.nm.gov/nmgis/rest/services/AdministrativeBoundaries/Electric_Coop_Boundaries/MapServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://gis.doit.nm.gov/nmgis/rest/services/AdministrativeBoundaries/Electric_Coop_Boundaries/MapServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://gis.doit.nm.gov/nmgis/rest/services/AdministrativeBoundaries/Electric_Coop_Boundaries/MapServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "serviceDescription": "Co-op boundaries were digitized by Brian Keller (EDAC) based on this map .\nVia email from Natalie on 2/7/2024:\nBased on Taxali's research of websites (such as https://www.doit.nm.gov/programs/broadband/participating-internet-service-providers/), and then confirmation in text with Alex Trujillo on 2/7/2024, each co-op falls into one of the following service categories:\nElectric cooperatives that are ISPs:\n•     Continental Divide Electric Cooperative (Red Bolt)\n•     Kit Carson\n•     Sierra Electric (in partnership with Ethos)\nElectric cooperatives funded by OBAE to initiate broadband\n•     Socorro Electric Cooperative (funded)\n•     Central New Mexico Electric Cooperative (funded)\n•     Jemez Mountain Electric Cooperative (funded)\nNot Offering Broadband\n•     Central Valley Electric\n•     Columbus Electric\n•     Farmers' Electric\n•     Lea County Electric\n•     Mora-San Miguel Electric\n•     Northern Río Arriba Electric\n•     Otero County Electric\n•     Roosevelt County Electric\n•     Southwestern Electric\n•     Springer Electric"
+    }
+   }
+  ]
+ },
+ "https://services.arcgis.com/ykpntM6e3tHvzKRJ/arcgis/rest/services/SRP_Service_Area_/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services.arcgis.com/ykpntM6e3tHvzKRJ/arcgis/rest/services/SRP_Service_Area_/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "SRP electric service area as defined in the August 31, 1955 territorial agreement between SRPAIPD and APS, and in the September 15, 1954 agreement between SRPAIPD and City of Mesa.Includes non-SRP islands within SRP territory. Does not include power contract areas: Eastern Area (Eastern Mining Area), Marinette, or Camelback areas."
+    }
+   },
+   {
+    "url": "https://services.arcgis.com/ykpntM6e3tHvzKRJ/arcgis/rest/services/SRP_Service_Area_/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "SRP electric service area as defined in the August 31, 1955 territorial agreement between SRPAIPD and APS, and in the September 15, 1954 agreement between SRPAIPD and City of Mesa.\nIncludes non-SRP islands within SRP territory. Does not include power contract areas: Eastern Area (Eastern Mining Area), Marinette, or Camelback areas.",
+     "serviceDescription": "This is the official corporate GIS (spatial) representation of the boundary for use in mapping and analysis projects."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/35eebd120f1849ff8d3de6fecc29413d?f=json",
+    "kind": "item 35eebd120f1849ff8d3de6fecc29413d",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "SRP electric service area as defined in the August 31, 1955 territorial agreement between SRPAIPD and APS, and in the September 15, 1954 agreement between SRPAIPD and City of Mesa.\nIncludes non-SRP islands within SRP territory. Does not include power contract areas: Eastern Area (Eastern Mining Area), Marinette, or Camelback areas.",
+     "snippet": "This is the official corporate GIS (spatial) representation of the boundary for use in mapping and analysis projects.",
+     "licenseInfo": "SRP makes no representation as to the accuracy of this data nor as to its fitness for a particular purpose. The user is responsible for understanding the accuracy limitations of digital data layers and is responsible for the results of any application of the data for other than their intended purpose. Data may not be distributed outside SRP without permission of Data Custodian."
+    }
+   }
+  ]
+ },
+ "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/APS_service_area/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/APS_service_area/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services3.arcgis.com/0OPQIK59PJJqLK0A/arcgis/rest/services/APS_service_area/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/bd181349bd174fe0ae58c0e264c98ce5?f=json",
+    "kind": "item bd181349bd174fe0ae58c0e264c98ce5",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Boundaries depicting service areas for APS and SRP.",
+     "snippet": "Boundaries depicting service areas for APS and SRP.",
+     "accessInformation": "Maricopa County Office of Enterprise Technology"
+    }
+   }
+  ]
+ },
+ "https://services.arcgis.com/yzB9WM8W0BO3Ql7d/arcgis/rest/services/Colorado_Electric_Utility_Territories/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services.arcgis.com/yzB9WM8W0BO3Ql7d/arcgis/rest/services/Colorado_Electric_Utility_Territories/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services.arcgis.com/yzB9WM8W0BO3Ql7d/arcgis/rest/services/Colorado_Electric_Utility_Territories/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "serviceDescription": "Electric service provider territories for the state of Colorado. Providers are categorized by ownership type."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/09c89a792e43429481f128f4dd2db863?f=json",
+    "kind": "item 09c89a792e43429481f128f4dd2db863",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "snippet": "Electric service provider territories for the state of Colorado. Providers are categorized by ownership type."
+    }
+   }
+  ]
+ },
+ "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/12": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer/12?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "This data is a graphic representation of electric utility service territories. The file has not been certified by a Professional Surveyor. This data is not suitable for legal purposes. The purpose of this data is to provide a generalized statewide view of electric service territories. The data does not include individual or commercial releases. A release is an agreement between adjoining utilities that release customers from one utility to be served by the adjoining utility. A customer release does not change the territory boundary. The file has been compiled from numerous sources and as such contains errors. The data only contains the electric utility service territories and the name of the utility.",
+     "copyrightText": "AR Geographic Information Office"
+    }
+   },
+   {
+    "url": "https://gis.arkansas.gov/arcgis/rest/services/FEATURESERVICES/Utilities/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   }
+  ]
+ },
+ "https://services2.arcgis.com/PmIxg1MfAgPZEa0r/arcgis/rest/services/UnitedPowerServiceTerritory/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services2.arcgis.com/PmIxg1MfAgPZEa0r/arcgis/rest/services/UnitedPowerServiceTerritory/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services2.arcgis.com/PmIxg1MfAgPZEa0r/arcgis/rest/services/UnitedPowerServiceTerritory/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Feature layer containing United Power's service territory boundary.",
+     "serviceDescription": "United Power Service Territory",
+     "copyrightText": "United Power, Inc."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/180ed78ad39a48e9b32080535a0b37fd?f=json",
+    "kind": "item 180ed78ad39a48e9b32080535a0b37fd",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Feature layer containing United Power's service territory boundary.",
+     "snippet": "United Power Service Territory",
+     "accessInformation": "United Power, Inc."
+    }
+   }
+  ]
+ },
+ "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_eusa/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_eusa/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://enterprise.gisdata.mn.gov/aghost/rest/services/us_mn_state_mngeo/util_eusa/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   }
+  ]
+ },
+ "https://tims.dot.state.oh.us/ags/rest/services/Boundaries/PUCO_Electric_Service_Areas/MapServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://tims.dot.state.oh.us/ags/rest/services/Boundaries/PUCO_Electric_Service_Areas/MapServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Electric service provider boundaries from the Public Utilities Commission of Ohio (PUCO). Update frequency: Annual.",
+     "copyrightText": "Public Utilities Commission of Ohio"
+    }
+   },
+   {
+    "url": "https://tims.dot.state.oh.us/ags/rest/services/Boundaries/PUCO_Electric_Service_Areas/MapServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Electric service provider boundaries from the Public Utilities Commission of Ohio (PUCO). Update frequency: Annual.",
+     "serviceDescription": "Electric service provider boundaries from the Public Utilities Commission of Ohio (PUCO). Update frequency: Annual.",
+     "copyrightText": "Public Utilities Commission of Ohio"
+    }
+   }
+  ]
+ },
+ "https://arcgis.olatheks.org/arcgis/rest/services/EnerGov/EnerGov_display_map/FeatureServer/39": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://arcgis.olatheks.org/arcgis/rest/services/EnerGov/EnerGov_display_map/FeatureServer/39?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Electric Company Service Area Boundaries"
+    }
+   },
+   {
+    "url": "https://arcgis.olatheks.org/arcgis/rest/services/EnerGov/EnerGov_display_map/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "EnerGov display map for desktop permitting application",
+     "serviceDescription": "EnerGov display map for desktop permitting application",
+     "copyrightText": "City of Olathe"
+    }
+   }
+  ]
+ },
+ "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Investor-Owned Utility (IOU) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.Unless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts."
+    }
+   },
+   {
+    "url": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Investor-Owned Utility (IOU) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.\nUnless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts.",
+     "serviceDescription": "The UNOFFICIAL Investor-Owned Utility (IOU) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/f7edde48d50140fe93a6fd4797693a9c?f=json",
+    "kind": "item f7edde48d50140fe93a6fd4797693a9c",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Investor-Owned Utility (IOU) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.\nUnless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts.",
+     "snippet": "The UNOFFICIAL Investor-Owned Utility (IOU) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.",
+     "licenseInfo": "Use is limited to the individuals identified in a Master Service Agreement with Platts. Usage and Sourcing guidelines are detailed in the \"GeospatialProductUsageSourcing\" document, delivered with a subscription to Platts geospatial products and data. Please email powermap_support@platts.com for a copy."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/366445b63acd4dbda6d60f9244e89c23?f=json",
+    "kind": "item 366445b63acd4dbda6d60f9244e89c23",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "",
+     "snippet": "Electric Service Territory/Outage Map Locator Viewer"
+    }
+   }
+  ]
+ },
+ "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Cooperative (COOP_DIST) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.Unless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts."
+    }
+   },
+   {
+    "url": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Cooperative (COOP_DIST) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.\nUnless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts.",
+     "serviceDescription": "The UNOFFICIAL Cooperative (COOP_DIST) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/8bd7d46e88354017a8cbb6af96c65d0c?f=json",
+    "kind": "item 8bd7d46e88354017a8cbb6af96c65d0c",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Cooperative (COOP_DIST) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.\nUnless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts.",
+     "snippet": "The UNOFFICIAL Cooperative (COOP_DIST) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.",
+     "licenseInfo": "Use is limited to the individuals identified in a Master Service Agreement with Platts. Usage and Sourcing guidelines are detailed in the \"GeospatialProductUsageSourcing\" document, delivered with a subscription to Platts geospatial products and data. Please email powermap_support@platts.com for a copy."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/366445b63acd4dbda6d60f9244e89c23?f=json",
+    "kind": "item 366445b63acd4dbda6d60f9244e89c23",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "",
+     "snippet": "Electric Service Territory/Outage Map Locator Viewer"
+    }
+   }
+  ]
+ },
+ "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Municipally-Owned Utility (MUNI) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.Unless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts."
+    }
+   },
+   {
+    "url": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Municipally-Owned Utility (MUNI) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.\nUnless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts.",
+     "serviceDescription": "The UNOFFICIAL Municipally-Owned Utility (MUNI) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at PUCT Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/60fe2d79f2fc45caa6b2701c182c71fc?f=json",
+    "kind": "item 60fe2d79f2fc45caa6b2701c182c71fc",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "The UNOFFICIAL Municipally-Owned Utility (MUNI) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at Public Utility Commission of Texas (PUCT) Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.\nUnless otherwise noted, data was submitted by the electric utilities; Data edited by Public Utility Commission of Texas (PUCT) Infrastructure Staff Gary Horton (GIS Specialist) and Reginald Tuvilla (Electric Infrastructure Analyst) on July 22, 2020; Data delivered to the PUCT by Miguel Pavon, who had been working with ongoing edits to service area boundaries at TxGIO (formerly TNRIS); Original data source Platts.",
+     "snippet": "The UNOFFICIAL Municipally-Owned Utility (MUNI) certified electric service area boundaries geospatial data layer has been created to display the geographic extent that utilities deliver electricity. The official certified electric service area boundaries are on file as county mylar maps and are available upon request at PUCT Central Records. Any amendments to those boundaries since the mylar maps were retired in the 1970's are recorded in PUCT Dockets.",
+     "licenseInfo": "Use is limited to the individiuals identified in a Master Service Agreement with Platts. Usage and Sourcing guidelines are detailed in the \"GeospatialProductUsageSourcing\" document, delivered with a subscription to Platts geospatial products and data. Please email powermap_support@platts.com for a copy."
+    }
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/366445b63acd4dbda6d60f9244e89c23?f=json",
+    "kind": "item 366445b63acd4dbda6d60f9244e89c23",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "",
+     "snippet": "Electric Service Territory/Outage Map Locator Viewer"
+    }
+   }
+  ]
+ },
+ "https://services1.arcgis.com/fdWXd5OobWR1E3er/arcgis/rest/services/ElectricCo/FeatureServer/0": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://services1.arcgis.com/fdWXd5OobWR1E3er/arcgis/rest/services/ElectricCo/FeatureServer/0?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://services1.arcgis.com/fdWXd5OobWR1E3er/arcgis/rest/services/ElectricCo/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {}
+   },
+   {
+    "url": "https://www.arcgis.com/sharing/rest/content/items/23784adf94c34ad39320555a3fd1d509?f=json",
+    "kind": "item 23784adf94c34ad39320555a3fd1d509",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Collin County GIS Data",
+     "snippet": "Collin County GIS Data",
+     "licenseInfo": "Collin County Copyright -This data is a graphic representation of Collin County and should only be used for illustrative purposes. In no way should this data be used to settle any boundary dispute or locational conflict.",
+     "accessInformation": "Collin County GIS"
+    }
+   }
+  ]
+ },
+ "https://maps.planogis.org/arcgiswad/rest/services/Franchise/FranchiseUtilities/FeatureServer/3": {
+  "fetched_on": "2026-11-16",
+  "sources": [
+   {
+    "url": "https://maps.planogis.org/arcgiswad/rest/services/Franchise/FranchiseUtilities/FeatureServer/3?f=json",
+    "kind": "layer",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "For Government Relations interactive map. Updated in 2015. Boundaries are approximate.",
+     "copyrightText": "Created and maintained by GIS Analyst."
+    }
+   },
+   {
+    "url": "https://maps.planogis.org/arcgiswad/rest/services/Franchise/FranchiseUtilities/FeatureServer?f=json",
+    "kind": "service",
+    "status": 200,
+    "error": null,
+    "texts": {
+     "description": "Franchise Utilitity Provider Map with Provider information",
+     "serviceDescription": "Franchise Utilitity Provider Map with Provider information"
+    }
+   }
+  ]
+ }
+}

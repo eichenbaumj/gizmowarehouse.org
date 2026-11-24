@@ -1,0 +1,542 @@
+[
+ {
+  "fid": "bi:917-0",
+  "kind": "assign",
+  "to": [
+   16604,
+   "TX"
+  ],
+  "why": "verified onto the city's utility (batch_c_4)"
+ },
+ {
+  "fid": "bi:928-0",
+  "kind": "assign",
+  "to": [
+   16604,
+   "TX"
+  ],
+  "why": "verified onto the city's utility (batch_c_4)"
+ },
+ {
+  "fid": "bi:914-0",
+  "kind": "assign",
+  "to": [
+   16604,
+   "TX"
+  ],
+  "why": "verified onto the city's utility (batch_c_4)"
+ },
+ {
+  "fid": "bi:1250-0",
+  "kind": "assign",
+  "to": [
+   7977,
+   "OH"
+  ],
+  "why": "verified onto the city's system (batch_c_4)"
+ },
+ {
+  "fid": "bi:616-0",
+  "kind": "assign",
+  "to": [
+   10000,
+   "KS"
+  ],
+  "why": "moved to Evergy Metro (batch_c_1)"
+ },
+ {
+  "fid": "bi:615-0",
+  "kind": "assign",
+  "to": [
+   10000,
+   "KS"
+  ],
+  "why": "moved to Evergy Metro (batch_c_1)"
+ },
+ {
+  "fid": "bi:892-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "a wires company (batch_c_4)"
+ },
+ {
+  "fid": "bi:887-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "NARROWED, not verified: the commission's layers return a wires company alone. In ruling 4's arithmetic a site whose only candidate is off the panel is on no panel utility in either case, which is what this entry does"
+ },
+ {
+  "fid": "bi:1200-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "NARROWED, not verified: the commission's layers return a wires company alone. In ruling 4's arithmetic a site whose only candidate is off the panel is on no panel utility in either case, which is what this entry does"
+ },
+ {
+  "fid": "bi:886-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "NARROWED, not verified: the commission's layers return a wires company alone. In ruling 4's arithmetic a site whose only candidate is off the panel is on no panel utility in either case, which is what this entry does"
+ },
+ {
+  "fid": "bi:930-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "NARROWED, not verified: the commission's layers return a wires company alone. In ruling 4's arithmetic a site whose only candidate is off the panel is on no panel utility in either case, which is what this entry does"
+ },
+ {
+  "fid": "bi:1198-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "NARROWED, not verified: the commission's layers return a wires company alone. In ruling 4's arithmetic a site whose only candidate is off the panel is on no panel utility in either case, which is what this entry does"
+ },
+ {
+  "fid": "bi:1181-0",
+  "kind": "assign",
+  "to": [
+   5078,
+   "TX"
+  ],
+  "why": "variant: on CoServ"
+ },
+ {
+  "fid": "bi:1190-0",
+  "kind": "assign",
+  "to": [
+   6182,
+   "TX"
+  ],
+  "why": "variant: on Farmers"
+ },
+ {
+  "fid": "bi:1199-0",
+  "kind": "narrow",
+  "candidates": [
+   5078,
+   44372
+  ],
+  "why": "NARROWED to the wires company or CoServ, which the map already had it on"
+ },
+ {
+  "fid": "bi:444-0",
+  "kind": "assign",
+  "to": [
+   3989,
+   "CO"
+  ],
+  "why": "verified in place (batch_c_1)"
+ },
+ {
+  "fid": "bi:646-0",
+  "kind": "assign",
+  "to": [
+   5773,
+   "MN"
+  ],
+  "why": "verified in place (batch_c_1)"
+ },
+ {
+  "fid": "bi:941-0",
+  "kind": "assign",
+  "to": [
+   14354,
+   "UT"
+  ],
+  "why": "verified in place for what is delivered at the address (batch_c_1)"
+ },
+ {
+  "fid": "bi:19-0",
+  "kind": "assign",
+  "to": [
+   803,
+   "AZ"
+  ],
+  "why": "verified in place (batch_c_0)"
+ },
+ {
+  "fid": "bi:817-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2018,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "construction began 2012; the regulator describes an operating data center in 2018; the inventory's 2019 is ruled out"
+ },
+ {
+  "fid": "bi:848-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2018,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "construction began 2012; the regulator describes an operating data center in 2018; the inventory's 2024 is ruled out"
+ },
+ {
+  "fid": "bi:684-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "opened May 2015"
+ },
+ {
+  "fid": "bi:687-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2014,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "construction began late 2012; the inventory's 2014 is not ruled out"
+ },
+ {
+  "fid": "bi:690-0",
+  "kind": "date",
+  "earliest": 2010,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": null,
+  "why": "a year built of 2010 and a permit-based 2015: which is the convention is with Joe, so no convention is set"
+ },
+ {
+  "fid": "bi:1123-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2014,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "the first building was operating by 2010 with no earliest year; the expansion opened in 2014; the row's capacity is probably the expansion"
+ },
+ {
+  "fid": "bi:446-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2011,
+  "never_is_possible": false,
+  "convention": 2009,
+  "why": "one building operating by 2008, another opened 2011; which the row carries is not settled; the inventory's 2009 is not ruled out"
+ },
+ {
+  "fid": "bi:445-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2012,
+  "never_is_possible": false,
+  "convention": 2012,
+  "why": "opened October 2012"
+ },
+ {
+  "fid": "bi:444-0",
+  "kind": "date",
+  "earliest": 2009,
+  "latest": 2013,
+  "never_is_possible": false,
+  "convention": 2013,
+  "why": "renovation began 2009; the inventory's 2013 is not ruled out"
+ },
+ {
+  "fid": "bi:667-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2011,
+  "never_is_possible": false,
+  "convention": 2011,
+  "why": "a regulator's permit describes an operating data center in 2011; no earliest year; the inventory's 2022 is ruled out"
+ },
+ {
+  "fid": "bi:646-0",
+  "kind": "date",
+  "earliest": 2006,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": null,
+  "why": "a year built of 2006 and a permit-based 2020: no convention is set"
+ },
+ {
+  "fid": "bi:616-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2018,
+  "never_is_possible": false,
+  "convention": null,
+  "why": "a year built of 2015 and a permit-based 2018: no convention is set"
+ },
+ {
+  "fid": "bi:615-0",
+  "kind": "date",
+  "earliest": 2023,
+  "latest": 2025,
+  "never_is_possible": false,
+  "convention": null,
+  "why": "a year built of 2023 and a permit-based 2025: no convention is set"
+ },
+ {
+  "fid": "bi:1250-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2012,
+  "never_is_possible": false,
+  "convention": 2011,
+  "why": "leased and earning rent at the end of 2012; no earliest year; the inventory's 2011 is not ruled out"
+ },
+ {
+  "fid": "bi:837-0",
+  "kind": "date",
+  "earliest": 2011,
+  "latest": 2019,
+  "never_is_possible": false,
+  "convention": null,
+  "why": "built in 2011 with half its generator capacity, the rest added in 2016; no record of operation; the inventory's 2019 rests on a later permit: no convention is set"
+ },
+ {
+  "fid": "bi:833-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2019,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "operated since 2015 by the regulator's record; generators installed through 2019"
+ },
+ {
+  "fid": "bi:832-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2022,
+  "why": "planned in 2021; the inventory's 2022 is not ruled out"
+ },
+ {
+  "fid": "bi:852-0",
+  "kind": "date",
+  "earliest": 2024,
+  "latest": null,
+  "never_is_possible": true,
+  "convention": null,
+  "why": "not built and not operating through 2023 by the permit holder's statements; the start is unresolved and may fall outside the period"
+ },
+ {
+  "fid": "bi:1062-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2017,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1074-0",
+  "kind": "date",
+  "earliest": 2006,
+  "latest": 2011,
+  "never_is_possible": false,
+  "convention": 2006,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1082-0",
+  "kind": "date",
+  "earliest": 2018,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1087-5",
+  "kind": "date",
+  "earliest": 2020,
+  "latest": 2021,
+  "never_is_possible": false,
+  "convention": 2020,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1090-5",
+  "kind": "date",
+  "earliest": 2014,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:950-5",
+  "kind": "date",
+  "earliest": 2014,
+  "latest": 2025,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:962-5",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:969-5",
+  "kind": "date",
+  "earliest": 2011,
+  "latest": 2012,
+  "never_is_possible": false,
+  "convention": 2011,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:970-1",
+  "kind": "date",
+  "earliest": 2020,
+  "latest": 2021,
+  "never_is_possible": false,
+  "convention": 2020,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:988-2",
+  "kind": "date",
+  "earliest": 2019,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": 2019,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:434-0",
+  "kind": "date",
+  "earliest": 2023,
+  "latest": 2024,
+  "never_is_possible": false,
+  "convention": 2023,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:15-0",
+  "kind": "date",
+  "earliest": 2023,
+  "latest": 2025,
+  "never_is_possible": false,
+  "convention": 2023,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:914-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:907-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:918-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2024,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1200-0",
+  "kind": "date",
+  "earliest": 2006,
+  "latest": 2009,
+  "never_is_possible": false,
+  "convention": 2006,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1280-0",
+  "kind": "date",
+  "earliest": 2022,
+  "latest": 2023,
+  "never_is_possible": false,
+  "convention": 2022,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1089-2",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:794-0",
+  "kind": "date",
+  "earliest": 2022,
+  "latest": 2023,
+  "never_is_possible": false,
+  "convention": 2022,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year"
+ },
+ {
+  "fid": "bi:1185-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "ADDED by the expansion test. NARROWED: the commission's layers return the Houston wires company alone at the parcel (owner Digital Greenspoint LP) and at all probes"
+ },
+ {
+  "fid": "bi:1258-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "ADDED by the expansion test. NARROWED: the commission's layers return the Dallas wires company alone at the parcel (owner Amazon Data Services Inc) and at all probes"
+ },
+ {
+  "fid": "bi:876-0",
+  "kind": "narrow",
+  "candidates": [
+   5078,
+   44372
+  ],
+  "why": "ADDED by the expansion test. NARROWED to the wires company or CoServ, which the map already had it on (owner C1 Dallas - Allen LLC, dba CyrusOne)"
+ },
+ {
+  "fid": "bi:925-0",
+  "kind": "assign",
+  "to": [
+   6182,
+   "TX"
+  ],
+  "why": "variant: on Farmers"
+ },
+ {
+  "fid": "bi:889-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "ADDED by the expansion test. NARROWED: the commission's layers return the Houston wires company alone at 4201 Southwest Fwy, which the operator's own page gives as its HOU5 data center"
+ },
+ {
+  "fid": "bi:931-0",
+  "kind": "assign",
+  "to": [
+   5078,
+   "TX"
+  ],
+  "why": "variant: on CoServ"
+ },
+ {
+  "fid": "bi:932-0",
+  "kind": "narrow",
+  "candidates": [
+   5078,
+   44372
+  ],
+  "why": "ADDED by the expansion test. NARROWED to the wires company or CoServ, which the map already had it on (owner SI DFW01B LLC)"
+ }
+]

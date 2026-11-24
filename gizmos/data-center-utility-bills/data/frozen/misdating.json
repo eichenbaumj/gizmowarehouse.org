@@ -1,0 +1,829 @@
+{
+  "what_this_is": "For each cohort utility, the first-crossing year recomputed with its permit-dated sites' start years redrawn from the measured permit-dating errors, minus the recorded first crossing. Negative: the utility really crossed earlier than recorded.",
+  "draws_per_utility": 1000,
+  "seed": 20261113,
+  "thresholds": {
+    "2%": {
+      "headline_set": {
+        "hosts": 7,
+        "exact": 0.944,
+        "within_1_year": 0.966,
+        "true_crossing_2_or_more_years_earlier": 0.034,
+        "true_crossing_5_or_more_years_earlier": 0.014,
+        "true_crossing_2_or_more_years_later": 0.0,
+        "never_reaches_the_threshold": 0.0
+      },
+      "set_aside_cohort_utilities": {
+        "hosts": 34,
+        "exact": 0.508,
+        "within_1_year": 0.645,
+        "true_crossing_2_or_more_years_earlier": 0.283,
+        "true_crossing_5_or_more_years_earlier": 0.141,
+        "true_crossing_2_or_more_years_later": 0.067,
+        "never_reaches_the_threshold": 0.006
+      },
+      "every_cohort_utility": {
+        "hosts": 41,
+        "exact": 0.583,
+        "within_1_year": 0.7,
+        "true_crossing_2_or_more_years_earlier": 0.24,
+        "true_crossing_5_or_more_years_earlier": 0.119,
+        "true_crossing_2_or_more_years_later": 0.055,
+        "never_reaches_the_threshold": 0.005
+      },
+      "by_utility": {
+        "803:AZ": {
+          "name": "Arizona Public Service Co",
+          "in_headline_set": true,
+          "exact": 0.72,
+          "within_1_year": 0.762,
+          "true_crossing_2_or_more_years_earlier": 0.238,
+          "true_crossing_5_or_more_years_earlier": 0.099,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "994:IN": {
+          "name": "City of Auburn - (IN)",
+          "in_headline_set": false,
+          "exact": 0.127,
+          "within_1_year": 0.344,
+          "true_crossing_2_or_more_years_earlier": 0.478,
+          "true_crossing_5_or_more_years_earlier": 0.269,
+          "true_crossing_2_or_more_years_later": 0.172,
+          "never_reaches_the_threshold": 0.006
+        },
+        "1586:AR": {
+          "name": "City of Bentonville - (AR)",
+          "in_headline_set": false,
+          "exact": 0.127,
+          "within_1_year": 0.367,
+          "true_crossing_2_or_more_years_earlier": 0.469,
+          "true_crossing_5_or_more_years_earlier": 0.243,
+          "true_crossing_2_or_more_years_later": 0.164,
+          "never_reaches_the_threshold": 0.0
+        },
+        "3461:WY": {
+          "name": "Cheyenne Light Fuel & Power",
+          "in_headline_set": false,
+          "exact": 0.888,
+          "within_1_year": 0.924,
+          "true_crossing_2_or_more_years_earlier": 0.076,
+          "true_crossing_5_or_more_years_earlier": 0.035,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "3841:MS": {
+          "name": "Coast Electric Power Assn - (MS)",
+          "in_headline_set": false,
+          "exact": 0.113,
+          "within_1_year": 0.374,
+          "true_crossing_2_or_more_years_earlier": 0.438,
+          "true_crossing_5_or_more_years_earlier": 0.232,
+          "true_crossing_2_or_more_years_later": 0.188,
+          "never_reaches_the_threshold": 0.0
+        },
+        "3989:CO": {
+          "name": "City of Colorado Springs - (CO)",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "4110:IL": {
+          "name": "Commonwealth Edison Co",
+          "in_headline_set": false,
+          "exact": 0.005,
+          "within_1_year": 0.034,
+          "true_crossing_2_or_more_years_earlier": 0.966,
+          "true_crossing_5_or_more_years_earlier": 0.155,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "4262:TX": {
+          "name": "Cooke County Elec Coop Assn",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "5773:MN": {
+          "name": "City of Elk River",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "6182:TX": {
+          "name": "Farmers Electric Coop, Inc - (TX)",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "6958:TX": {
+          "name": "City of Garland - (TX)",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7090:GA": {
+          "name": "GreyStone Power Corporation",
+          "in_headline_set": false,
+          "exact": 0.086,
+          "within_1_year": 0.245,
+          "true_crossing_2_or_more_years_earlier": 0.723,
+          "true_crossing_5_or_more_years_earlier": 0.52,
+          "true_crossing_2_or_more_years_later": 0.032,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7490:OK": {
+          "name": "Grand River Dam Authority",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7559:TX": {
+          "name": "Grayson-Collin Elec Coop, Inc",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7752:TX": {
+          "name": "Guadalupe Valley Elec Coop Inc",
+          "in_headline_set": false,
+          "exact": 0.684,
+          "within_1_year": 0.684,
+          "true_crossing_2_or_more_years_earlier": 0.316,
+          "true_crossing_5_or_more_years_earlier": 0.225,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7977:OH": {
+          "name": "City of Hamilton - (OH)",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "9336:CO": {
+          "name": "CORE Electric Cooperative",
+          "in_headline_set": false,
+          "exact": 0.125,
+          "within_1_year": 0.403,
+          "true_crossing_2_or_more_years_earlier": 0.448,
+          "true_crossing_5_or_more_years_earlier": 0.186,
+          "true_crossing_2_or_more_years_later": 0.149,
+          "never_reaches_the_threshold": 0.0
+        },
+        "11187:CO": {
+          "name": "City of Longmont",
+          "in_headline_set": false,
+          "exact": 0.143,
+          "within_1_year": 0.426,
+          "true_crossing_2_or_more_years_earlier": 0.347,
+          "true_crossing_5_or_more_years_earlier": 0.111,
+          "true_crossing_2_or_more_years_later": 0.216,
+          "never_reaches_the_threshold": 0.011
+        },
+        "11208:CA": {
+          "name": "Los Angeles Department of Water & Power",
+          "in_headline_set": false,
+          "exact": 0.183,
+          "within_1_year": 0.488,
+          "true_crossing_2_or_more_years_earlier": 0.068,
+          "true_crossing_5_or_more_years_earlier": 0.001,
+          "true_crossing_2_or_more_years_later": 0.375,
+          "never_reaches_the_threshold": 0.069
+        },
+        "13050:CO": {
+          "name": "Mountain Parks Electric, Inc",
+          "in_headline_set": false,
+          "exact": 0.127,
+          "within_1_year": 0.355,
+          "true_crossing_2_or_more_years_earlier": 0.505,
+          "true_crossing_5_or_more_years_earlier": 0.268,
+          "true_crossing_2_or_more_years_later": 0.11,
+          "never_reaches_the_threshold": 0.03
+        },
+        "13520:MO": {
+          "name": "New-Mac Electric Coop, Inc",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14006:OH": {
+          "name": "Ohio Power Co",
+          "in_headline_set": false,
+          "exact": 0.732,
+          "within_1_year": 0.948,
+          "true_crossing_2_or_more_years_earlier": 0.052,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14127:NE": {
+          "name": "Omaha Public Power District",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14154:NY": {
+          "name": "Orange & Rockland Utils Inc",
+          "in_headline_set": false,
+          "exact": 0.088,
+          "within_1_year": 0.27,
+          "true_crossing_2_or_more_years_earlier": 0.638,
+          "true_crossing_5_or_more_years_earlier": 0.44,
+          "true_crossing_2_or_more_years_later": 0.092,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14328:CA": {
+          "name": "Pacific Gas & Electric Co.",
+          "in_headline_set": false,
+          "exact": 0.203,
+          "within_1_year": 0.542,
+          "true_crossing_2_or_more_years_earlier": 0.413,
+          "true_crossing_5_or_more_years_earlier": 0.02,
+          "true_crossing_2_or_more_years_later": 0.045,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14354:OR": {
+          "name": "PacifiCorp",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14354:UT": {
+          "name": "PacifiCorp",
+          "in_headline_set": true,
+          "exact": 0.886,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14401:CA": {
+          "name": "City of Palo Alto - (CA)",
+          "in_headline_set": false,
+          "exact": 0.109,
+          "within_1_year": 0.334,
+          "true_crossing_2_or_more_years_earlier": 0.499,
+          "true_crossing_5_or_more_years_earlier": 0.261,
+          "true_crossing_2_or_more_years_later": 0.157,
+          "never_reaches_the_threshold": 0.01
+        },
+        "15248:OR": {
+          "name": "Portland General Electric Co",
+          "in_headline_set": false,
+          "exact": 0.644,
+          "within_1_year": 0.9,
+          "true_crossing_2_or_more_years_earlier": 0.1,
+          "true_crossing_5_or_more_years_earlier": 0.02,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "15444:UT": {
+          "name": "Provo City Corp",
+          "in_headline_set": false,
+          "exact": 0.117,
+          "within_1_year": 0.324,
+          "true_crossing_2_or_more_years_earlier": 0.489,
+          "true_crossing_5_or_more_years_earlier": 0.263,
+          "true_crossing_2_or_more_years_later": 0.187,
+          "never_reaches_the_threshold": 0.0
+        },
+        "15466:CO": {
+          "name": "Public Service Co of Colorado",
+          "in_headline_set": false,
+          "exact": 0.528,
+          "within_1_year": 0.62,
+          "true_crossing_2_or_more_years_earlier": 0.38,
+          "true_crossing_5_or_more_years_earlier": 0.297,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "15473:NM": {
+          "name": "Public Service Co of NM",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "16572:AZ": {
+          "name": "Salt River Project",
+          "in_headline_set": false,
+          "exact": 0.799,
+          "within_1_year": 0.869,
+          "true_crossing_2_or_more_years_earlier": 0.13,
+          "true_crossing_5_or_more_years_earlier": 0.053,
+          "true_crossing_2_or_more_years_later": 0.001,
+          "never_reaches_the_threshold": 0.0
+        },
+        "16638:TX": {
+          "name": "San Bernard Electric Coop, Inc",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "17166:NV": {
+          "name": "Sierra Pacific Power Co",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "17267:SD": {
+          "name": "Sioux Valley SW Elec Coop",
+          "in_headline_set": false,
+          "exact": 0.141,
+          "within_1_year": 0.358,
+          "true_crossing_2_or_more_years_earlier": 0.472,
+          "true_crossing_5_or_more_years_earlier": 0.243,
+          "true_crossing_2_or_more_years_later": 0.157,
+          "never_reaches_the_threshold": 0.013
+        },
+        "19325:OR": {
+          "name": "Umatilla Electric Coop Assn",
+          "in_headline_set": false,
+          "exact": 0.768,
+          "within_1_year": 0.842,
+          "true_crossing_2_or_more_years_earlier": 0.158,
+          "true_crossing_5_or_more_years_earlier": 0.044,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "19499:CO": {
+          "name": "United Power, Inc",
+          "in_headline_set": false,
+          "exact": 0.221,
+          "within_1_year": 0.475,
+          "true_crossing_2_or_more_years_earlier": 0.425,
+          "true_crossing_5_or_more_years_earlier": 0.279,
+          "true_crossing_2_or_more_years_later": 0.059,
+          "never_reaches_the_threshold": 0.041
+        },
+        "19604:AZ": {
+          "name": "USBIA-San Carlos Project",
+          "in_headline_set": false,
+          "exact": 0.122,
+          "within_1_year": 0.349,
+          "true_crossing_2_or_more_years_earlier": 0.557,
+          "true_crossing_5_or_more_years_earlier": 0.339,
+          "true_crossing_2_or_more_years_later": 0.094,
+          "never_reaches_the_threshold": 0.0
+        },
+        "20065:GA": {
+          "name": "Walton Electric Member Corp",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "54913:MA": {
+          "name": "NSTAR Electric Company",
+          "in_headline_set": false,
+          "exact": 0.209,
+          "within_1_year": 0.455,
+          "true_crossing_2_or_more_years_earlier": 0.467,
+          "true_crossing_5_or_more_years_earlier": 0.296,
+          "true_crossing_2_or_more_years_later": 0.065,
+          "never_reaches_the_threshold": 0.013
+        }
+      }
+    },
+    "5%": {
+      "headline_set": {
+        "hosts": 5,
+        "exact": 0.933,
+        "within_1_year": 1.0,
+        "true_crossing_2_or_more_years_earlier": 0.0,
+        "true_crossing_5_or_more_years_earlier": 0.0,
+        "true_crossing_2_or_more_years_later": 0.0,
+        "never_reaches_the_threshold": 0.0
+      },
+      "set_aside_cohort_utilities": {
+        "hosts": 30,
+        "exact": 0.643,
+        "within_1_year": 0.759,
+        "true_crossing_2_or_more_years_earlier": 0.219,
+        "true_crossing_5_or_more_years_earlier": 0.119,
+        "true_crossing_2_or_more_years_later": 0.018,
+        "never_reaches_the_threshold": 0.004
+      },
+      "every_cohort_utility": {
+        "hosts": 35,
+        "exact": 0.685,
+        "within_1_year": 0.793,
+        "true_crossing_2_or_more_years_earlier": 0.187,
+        "true_crossing_5_or_more_years_earlier": 0.102,
+        "true_crossing_2_or_more_years_later": 0.016,
+        "never_reaches_the_threshold": 0.004
+      },
+      "by_utility": {
+        "803:AZ": {
+          "name": "Arizona Public Service Co",
+          "in_headline_set": false,
+          "exact": 0.563,
+          "within_1_year": 0.66,
+          "true_crossing_2_or_more_years_earlier": 0.34,
+          "true_crossing_5_or_more_years_earlier": 0.082,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "1015:TX": {
+          "name": "Austin Energy",
+          "in_headline_set": false,
+          "exact": 0.679,
+          "within_1_year": 0.996,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.004,
+          "never_reaches_the_threshold": 0.0
+        },
+        "3461:WY": {
+          "name": "Cheyenne Light Fuel & Power",
+          "in_headline_set": false,
+          "exact": 0.311,
+          "within_1_year": 0.589,
+          "true_crossing_2_or_more_years_earlier": 0.298,
+          "true_crossing_5_or_more_years_earlier": 0.195,
+          "true_crossing_2_or_more_years_later": 0.088,
+          "never_reaches_the_threshold": 0.025
+        },
+        "3989:CO": {
+          "name": "City of Colorado Springs - (CO)",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "4262:TX": {
+          "name": "Cooke County Elec Coop Assn",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "5416:NC": {
+          "name": "Duke Energy Carolinas, LLC",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "5773:MN": {
+          "name": "City of Elk River",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "6182:TX": {
+          "name": "Farmers Electric Coop, Inc - (TX)",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "6958:TX": {
+          "name": "City of Garland - (TX)",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7090:GA": {
+          "name": "GreyStone Power Corporation",
+          "in_headline_set": false,
+          "exact": 0.076,
+          "within_1_year": 0.245,
+          "true_crossing_2_or_more_years_earlier": 0.739,
+          "true_crossing_5_or_more_years_earlier": 0.539,
+          "true_crossing_2_or_more_years_later": 0.016,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7490:OK": {
+          "name": "Grand River Dam Authority",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7559:TX": {
+          "name": "Grayson-Collin Elec Coop, Inc",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "7752:TX": {
+          "name": "Guadalupe Valley Elec Coop Inc",
+          "in_headline_set": false,
+          "exact": 0.686,
+          "within_1_year": 0.686,
+          "true_crossing_2_or_more_years_earlier": 0.314,
+          "true_crossing_5_or_more_years_earlier": 0.24,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "12341:IA": {
+          "name": "MidAmerican Energy Co",
+          "in_headline_set": false,
+          "exact": 0.901,
+          "within_1_year": 0.932,
+          "true_crossing_2_or_more_years_earlier": 0.068,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "12698:MO": {
+          "name": "Evergy Missouri West",
+          "in_headline_set": false,
+          "exact": 0.842,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "13520:MO": {
+          "name": "New-Mac Electric Coop, Inc",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "13640:VA": {
+          "name": "Northern Virginia Elec Coop",
+          "in_headline_set": false,
+          "exact": 0.109,
+          "within_1_year": 0.372,
+          "true_crossing_2_or_more_years_earlier": 0.628,
+          "true_crossing_5_or_more_years_earlier": 0.341,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14127:NE": {
+          "name": "Omaha Public Power District",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14154:NY": {
+          "name": "Orange & Rockland Utils Inc",
+          "in_headline_set": false,
+          "exact": 0.214,
+          "within_1_year": 0.441,
+          "true_crossing_2_or_more_years_earlier": 0.463,
+          "true_crossing_5_or_more_years_earlier": 0.317,
+          "true_crossing_2_or_more_years_later": 0.045,
+          "never_reaches_the_threshold": 0.051
+        },
+        "14354:OR": {
+          "name": "PacifiCorp",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "14354:UT": {
+          "name": "PacifiCorp",
+          "in_headline_set": true,
+          "exact": 0.664,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "15248:OR": {
+          "name": "Portland General Electric Co",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "15473:NM": {
+          "name": "Public Service Co of NM",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "15477:NJ": {
+          "name": "Public Service Elec & Gas Co",
+          "in_headline_set": false,
+          "exact": 0.697,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "16534:CA": {
+          "name": "Sacramento Municipal Util Dist",
+          "in_headline_set": false,
+          "exact": 0.037,
+          "within_1_year": 0.101,
+          "true_crossing_2_or_more_years_earlier": 0.893,
+          "true_crossing_5_or_more_years_earlier": 0.542,
+          "true_crossing_2_or_more_years_later": 0.006,
+          "never_reaches_the_threshold": 0.0
+        },
+        "16572:AZ": {
+          "name": "Salt River Project",
+          "in_headline_set": false,
+          "exact": 0.533,
+          "within_1_year": 0.576,
+          "true_crossing_2_or_more_years_earlier": 0.424,
+          "true_crossing_5_or_more_years_earlier": 0.128,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "16638:TX": {
+          "name": "San Bernard Electric Coop, Inc",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "17166:NV": {
+          "name": "Sierra Pacific Power Co",
+          "in_headline_set": false,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "17267:SD": {
+          "name": "Sioux Valley SW Elec Coop",
+          "in_headline_set": false,
+          "exact": 0.132,
+          "within_1_year": 0.344,
+          "true_crossing_2_or_more_years_earlier": 0.468,
+          "true_crossing_5_or_more_years_earlier": 0.264,
+          "true_crossing_2_or_more_years_later": 0.164,
+          "never_reaches_the_threshold": 0.024
+        },
+        "19325:OR": {
+          "name": "Umatilla Electric Coop Assn",
+          "in_headline_set": false,
+          "exact": 0.738,
+          "within_1_year": 0.808,
+          "true_crossing_2_or_more_years_earlier": 0.192,
+          "true_crossing_5_or_more_years_earlier": 0.052,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "19499:CO": {
+          "name": "United Power, Inc",
+          "in_headline_set": false,
+          "exact": 0.225,
+          "within_1_year": 0.462,
+          "true_crossing_2_or_more_years_earlier": 0.455,
+          "true_crossing_5_or_more_years_earlier": 0.308,
+          "true_crossing_2_or_more_years_later": 0.053,
+          "never_reaches_the_threshold": 0.03
+        },
+        "19604:AZ": {
+          "name": "USBIA-San Carlos Project",
+          "in_headline_set": false,
+          "exact": 0.096,
+          "within_1_year": 0.299,
+          "true_crossing_2_or_more_years_earlier": 0.65,
+          "true_crossing_5_or_more_years_earlier": 0.298,
+          "true_crossing_2_or_more_years_later": 0.051,
+          "never_reaches_the_threshold": 0.0
+        },
+        "19876:VA": {
+          "name": "Virginia Electric & Power Co",
+          "in_headline_set": false,
+          "exact": 0.218,
+          "within_1_year": 0.705,
+          "true_crossing_2_or_more_years_earlier": 0.295,
+          "true_crossing_5_or_more_years_earlier": 0.139,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "20065:GA": {
+          "name": "Walton Electric Member Corp",
+          "in_headline_set": true,
+          "exact": 1.0,
+          "within_1_year": 1.0,
+          "true_crossing_2_or_more_years_earlier": 0.0,
+          "true_crossing_5_or_more_years_earlier": 0.0,
+          "true_crossing_2_or_more_years_later": 0.0,
+          "never_reaches_the_threshold": 0.0
+        },
+        "40228:VA": {
+          "name": "Rappahannock Electric Coop",
+          "in_headline_set": false,
+          "exact": 0.241,
+          "within_1_year": 0.548,
+          "true_crossing_2_or_more_years_earlier": 0.335,
+          "true_crossing_5_or_more_years_earlier": 0.135,
+          "true_crossing_2_or_more_years_later": 0.117,
+          "never_reaches_the_threshold": 0.0
+        }
+      }
+    }
+  }
+}

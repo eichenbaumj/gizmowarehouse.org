@@ -1,0 +1,730 @@
+{
+  "what_this_is": "Stage 1 of docs/gate1/short-form-access-request-2026-11-19.md, authorized by Joe on 2026-11-19 (D-111): the hash check and the schema and description read of data/raw/pudl/core_eia861__yearly_short_form.parquet, with no rows, column statistics or distinct values. Schema and description only. Provisional: the plan is a DRAFT and is not frozen. Not a ruling on any exclusion rule; stage 2 and the exclusion rule are not authorized. Written by pipeline/analysis/short_form_schema.py main(), session 23, job 2.",
+  "file": "data/raw/pudl/core_eia861__yearly_short_form.parquet",
+  "tools": {
+    "file_read_by": "duckdb 1.5.5: parquet_schema() and parquet_kv_metadata() only, by the fixed queries SCHEMA_QUERY and KV_QUERY in pipeline/analysis/short_form_schema.py",
+    "decode_of_ARROW_schema_bytes_by": "pyarrow 19.0.0: pyarrow.ipc.read_schema on the key's bytes in memory; no file opened by pyarrow",
+    "hash_by": "hashlib.sha256 over the file's bytes",
+    "why_duckdb": "pyarrow 19 refused the operational table from the same fetch while parsing its footer ('Repetition level histogram size mismatch'); the request names DuckDB's two schema functions; each returns only what it is named for, so neither query can return a statistic (the agent's choice)"
+  },
+  "redaction_rule": "The agent's reading of 'no rows, column statistics or distinct values'. Description text is returned as found except: R1, in any JSON object with kind 'range' (pandas' RangeIndex descriptor) the keys start, stop and step are removed; R2, any key whose name says it is a row count or a column statistic is removed with its value; R3, the raw ARROW:schema blob is withheld and only its presence recorded, its decoded metadata going through the other rules; R4, anything that looks like data values (a key named for values, examples, samples, categories, levels or an enumeration; a list of scalars not all column names; an object whose keys are all column names) is withheld; R5, a number under a key not known to be schema (only precision and scale are) is withheld, and a value that is not UTF-8 text is withheld as binary. For a dictionary-encoded column the Arrow index width is withheld. Every removal is named by key and path and kind, never by value.",
+  "row_count": "not read; Joe's words do not name it and stage 2's column list does not need it (the session's reading, his to strike, HANDOVER_session23_2026-11-19.md job 2)",
+  "hash_check": {
+    "expected_from_manifest": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+    "expected_as_quoted_in_request_and_D-111": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+    "manifest_and_request_agree": true,
+    "found": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+    "equal": true
+  },
+  "parquet_schema": {
+    "root": {
+      "name": "schema",
+      "num_children": 14
+    },
+    "columns_in_file_order": [
+      {
+        "position": 1,
+        "name": "report_date",
+        "physical_type": "INT32",
+        "logical_type": "DateType()",
+        "converted_type": "DATE",
+        "repetition_type": "REQUIRED",
+        "duckdb_type": "DATE",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 2,
+        "name": "utility_id_eia",
+        "physical_type": "INT64",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "REQUIRED",
+        "duckdb_type": "BIGINT",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 3,
+        "name": "utility_name_eia",
+        "physical_type": "BYTE_ARRAY",
+        "logical_type": "StringType()",
+        "converted_type": "UTF8",
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "VARCHAR",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 4,
+        "name": "entity_type",
+        "physical_type": "BYTE_ARRAY",
+        "logical_type": "StringType()",
+        "converted_type": "UTF8",
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "VARCHAR",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 5,
+        "name": "state",
+        "physical_type": "BYTE_ARRAY",
+        "logical_type": "StringType()",
+        "converted_type": "UTF8",
+        "repetition_type": "REQUIRED",
+        "duckdb_type": "VARCHAR",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 6,
+        "name": "balancing_authority_code_eia",
+        "physical_type": "BYTE_ARRAY",
+        "logical_type": "StringType()",
+        "converted_type": "UTF8",
+        "repetition_type": "REQUIRED",
+        "duckdb_type": "VARCHAR",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 7,
+        "name": "sales_revenue",
+        "physical_type": "DOUBLE",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "DOUBLE",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 8,
+        "name": "sales_mwh",
+        "physical_type": "DOUBLE",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "DOUBLE",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 9,
+        "name": "customers",
+        "physical_type": "INT64",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "BIGINT",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 10,
+        "name": "has_net_metering",
+        "physical_type": "BOOLEAN",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "BOOLEAN",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 11,
+        "name": "has_demand_side_management",
+        "physical_type": "BOOLEAN",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "BOOLEAN",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 12,
+        "name": "has_time_responsive_programs",
+        "physical_type": "BOOLEAN",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "BOOLEAN",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 13,
+        "name": "has_green_pricing",
+        "physical_type": "BOOLEAN",
+        "logical_type": null,
+        "converted_type": null,
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "BOOLEAN",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      },
+      {
+        "position": 14,
+        "name": "data_maturity",
+        "physical_type": "BYTE_ARRAY",
+        "logical_type": "StringType()",
+        "converted_type": "UTF8",
+        "repetition_type": "OPTIONAL",
+        "duckdb_type": "VARCHAR",
+        "type_length": null,
+        "scale": null,
+        "precision": null,
+        "field_id": null,
+        "num_children": null
+      }
+    ],
+    "nested_elements": []
+  },
+  "key_value_metadata": {
+    "keys_found_in_file_order": [
+      "description",
+      "primary_key",
+      "pandas",
+      "ARROW:schema"
+    ],
+    "per_key": [
+      {
+        "key": "description",
+        "treatment": "returned whole",
+        "redactions": [],
+        "value_format": "text",
+        "value": "Annual time series of data from the short form (EIA-861S).\n\n\nMost-recent data:\n  2025\n\n\nProcessing:\n  Data has been cleaned and organized into well-modeled tables that serve as building blocks for downstream wide tables and analyses.\n\nSource:\n  EIA Form 861 -- Annual Electric Power Industry Report\n\nPrimary key:\n  utility_id_eia, state, report_date, balancing_authority_code_eia\n\n\nUsage Warnings\n^^^^^^^^^^^^^^\n\n\n* Some years are missing from the data record.\n\n\n\n\n\nAdditional Details\n^^^^^^^^^^^^^^^^^^\n\nThe data started being reported in 2012. However, the 2019 data is not available.\nThey are expected to submit the completed Form EIA-861S to EIA by April 30th, following the end of the prior calendar year.\nUtilities report on Form EIA-861S if they:\n\n- Report less than 200,000 megawatthours on the last previous Form EIA-861.\n\n- Provide only bundled service (generation and distribution).\n\n- Are not needed to ensure acceptable quality of statistical estimates.\n\n- Are not part of the aggregate TVA or WPPI.\n\n- Do not report on Form EIA-861M."
+      },
+      {
+        "key": "primary_key",
+        "treatment": "returned whole",
+        "redactions": [],
+        "value_format": "text",
+        "value": "utility_id_eia,state,report_date,balancing_authority_code_eia"
+      },
+      {
+        "key": "pandas",
+        "treatment": "returned whole",
+        "redactions": [],
+        "value_format": "JSON, parsed (whitespace not kept)",
+        "value": {
+          "index_columns": [],
+          "column_indexes": [],
+          "columns": [
+            {
+              "name": "report_date",
+              "field_name": "report_date",
+              "pandas_type": "date",
+              "numpy_type": "datetime64[us]",
+              "metadata": null
+            },
+            {
+              "name": "utility_id_eia",
+              "field_name": "utility_id_eia",
+              "pandas_type": "int64",
+              "numpy_type": "Int64",
+              "metadata": null
+            },
+            {
+              "name": "utility_name_eia",
+              "field_name": "utility_name_eia",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "entity_type",
+              "field_name": "entity_type",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "state",
+              "field_name": "state",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "balancing_authority_code_eia",
+              "field_name": "balancing_authority_code_eia",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "sales_revenue",
+              "field_name": "sales_revenue",
+              "pandas_type": "float64",
+              "numpy_type": "float64",
+              "metadata": null
+            },
+            {
+              "name": "sales_mwh",
+              "field_name": "sales_mwh",
+              "pandas_type": "float64",
+              "numpy_type": "float64",
+              "metadata": null
+            },
+            {
+              "name": "customers",
+              "field_name": "customers",
+              "pandas_type": "int64",
+              "numpy_type": "Int64",
+              "metadata": null
+            },
+            {
+              "name": "has_net_metering",
+              "field_name": "has_net_metering",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "has_demand_side_management",
+              "field_name": "has_demand_side_management",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "has_time_responsive_programs",
+              "field_name": "has_time_responsive_programs",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "has_green_pricing",
+              "field_name": "has_green_pricing",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "data_maturity",
+              "field_name": "data_maturity",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            }
+          ],
+          "attributes": {},
+          "creator": {
+            "library": "pyarrow",
+            "version": "24.0.0"
+          },
+          "pandas_version": "3.1.1"
+        }
+      },
+      {
+        "key": "ARROW:schema",
+        "treatment": "withheld",
+        "redactions": [
+          {
+            "path": "key-value metadata['ARROW:schema']",
+            "rule": "R3",
+            "kind": "the raw Arrow schema blob (binary, base64); present, withheld; its decoded metadata is reported separately under the same rule"
+          }
+        ]
+      }
+    ]
+  },
+  "arrow_schema_decoded_from_ARROW_schema_key": {
+    "decoded": true,
+    "fields": [
+      {
+        "position": 1,
+        "name": "report_date",
+        "nullable": false,
+        "arrow_type": "date32[day]",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Date reported."
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "name": "utility_id_eia",
+        "nullable": false,
+        "arrow_type": "int64",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "The EIA Utility Identification number."
+          }
+        ]
+      },
+      {
+        "position": 3,
+        "name": "utility_name_eia",
+        "nullable": true,
+        "arrow_type": "string",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "The name of the utility."
+          }
+        ]
+      },
+      {
+        "position": 4,
+        "name": "entity_type",
+        "nullable": true,
+        "arrow_type": "string",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Entity type of principal owner."
+          }
+        ]
+      },
+      {
+        "position": 5,
+        "name": "state",
+        "nullable": false,
+        "arrow_type": "string",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Two letter US state abbreviation."
+          }
+        ]
+      },
+      {
+        "position": 6,
+        "name": "balancing_authority_code_eia",
+        "nullable": false,
+        "arrow_type": "string",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "EIA short code identifying a balancing authority. May include Canadian and Mexican BAs."
+          }
+        ]
+      },
+      {
+        "position": 7,
+        "name": "sales_revenue",
+        "nullable": true,
+        "arrow_type": "double",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Revenue from electricity sold."
+          }
+        ]
+      },
+      {
+        "position": 8,
+        "name": "sales_mwh",
+        "nullable": true,
+        "arrow_type": "double",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Quantity of electricity sold in MWh."
+          }
+        ]
+      },
+      {
+        "position": 9,
+        "name": "customers",
+        "nullable": true,
+        "arrow_type": "int64",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Number of customers."
+          }
+        ]
+      },
+      {
+        "position": 10,
+        "name": "has_net_metering",
+        "nullable": true,
+        "arrow_type": "bool",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Whether the plant has a net metering agreement in effect during the reporting year.  (Only displayed for facilities that report the sun or wind as an energy source). This field was only reported up until 2015"
+          }
+        ]
+      },
+      {
+        "position": 11,
+        "name": "has_demand_side_management",
+        "nullable": true,
+        "arrow_type": "bool",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Whether there were strategies or measures used to control electricity demand by customers"
+          }
+        ]
+      },
+      {
+        "position": 12,
+        "name": "has_time_responsive_programs",
+        "nullable": true,
+        "arrow_type": "bool",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Whether the respondent operates any time-based rate programs (e.g., real-time pricing, critical peak pricing, variable peak pricing and time-of-use rates administered through a tariff)."
+          }
+        ]
+      },
+      {
+        "position": 13,
+        "name": "has_green_pricing",
+        "nullable": true,
+        "arrow_type": "bool",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Whether a green pricing program was associated with this utility during the reporting year."
+          }
+        ]
+      },
+      {
+        "position": 14,
+        "name": "data_maturity",
+        "nullable": true,
+        "arrow_type": "string",
+        "field_metadata": [
+          {
+            "key": "description",
+            "treatment": "returned whole",
+            "redactions": [],
+            "value_format": "text",
+            "value": "Maturity of the source data published by EIA that is reflected in this record. EIA releases data incrementally over time, including monthly updates, annual year-to-date updates, provisional early releases of annual data, and final annual release data that is not expected to change further. Records sourced from multiple upstream EIA datasets may have no well defined data maturity. Records whose values have been inferred within PUDL will also have no data maturity."
+          }
+        ]
+      }
+    ],
+    "schema_level_metadata": [
+      {
+        "key": "description",
+        "treatment": "returned whole",
+        "redactions": [],
+        "value_format": "text",
+        "value": "Annual time series of data from the short form (EIA-861S).\n\n\nMost-recent data:\n  2025\n\n\nProcessing:\n  Data has been cleaned and organized into well-modeled tables that serve as building blocks for downstream wide tables and analyses.\n\nSource:\n  EIA Form 861 -- Annual Electric Power Industry Report\n\nPrimary key:\n  utility_id_eia, state, report_date, balancing_authority_code_eia\n\n\nUsage Warnings\n^^^^^^^^^^^^^^\n\n\n* Some years are missing from the data record.\n\n\n\n\n\nAdditional Details\n^^^^^^^^^^^^^^^^^^\n\nThe data started being reported in 2012. However, the 2019 data is not available.\nThey are expected to submit the completed Form EIA-861S to EIA by April 30th, following the end of the prior calendar year.\nUtilities report on Form EIA-861S if they:\n\n- Report less than 200,000 megawatthours on the last previous Form EIA-861.\n\n- Provide only bundled service (generation and distribution).\n\n- Are not needed to ensure acceptable quality of statistical estimates.\n\n- Are not part of the aggregate TVA or WPPI.\n\n- Do not report on Form EIA-861M."
+      },
+      {
+        "key": "primary_key",
+        "treatment": "returned whole",
+        "redactions": [],
+        "value_format": "text",
+        "value": "utility_id_eia,state,report_date,balancing_authority_code_eia"
+      },
+      {
+        "key": "pandas",
+        "treatment": "returned whole",
+        "redactions": [],
+        "value_format": "JSON, parsed (whitespace not kept)",
+        "value": {
+          "index_columns": [],
+          "column_indexes": [],
+          "columns": [
+            {
+              "name": "report_date",
+              "field_name": "report_date",
+              "pandas_type": "date",
+              "numpy_type": "datetime64[us]",
+              "metadata": null
+            },
+            {
+              "name": "utility_id_eia",
+              "field_name": "utility_id_eia",
+              "pandas_type": "int64",
+              "numpy_type": "Int64",
+              "metadata": null
+            },
+            {
+              "name": "utility_name_eia",
+              "field_name": "utility_name_eia",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "entity_type",
+              "field_name": "entity_type",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "state",
+              "field_name": "state",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "balancing_authority_code_eia",
+              "field_name": "balancing_authority_code_eia",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            },
+            {
+              "name": "sales_revenue",
+              "field_name": "sales_revenue",
+              "pandas_type": "float64",
+              "numpy_type": "float64",
+              "metadata": null
+            },
+            {
+              "name": "sales_mwh",
+              "field_name": "sales_mwh",
+              "pandas_type": "float64",
+              "numpy_type": "float64",
+              "metadata": null
+            },
+            {
+              "name": "customers",
+              "field_name": "customers",
+              "pandas_type": "int64",
+              "numpy_type": "Int64",
+              "metadata": null
+            },
+            {
+              "name": "has_net_metering",
+              "field_name": "has_net_metering",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "has_demand_side_management",
+              "field_name": "has_demand_side_management",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "has_time_responsive_programs",
+              "field_name": "has_time_responsive_programs",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "has_green_pricing",
+              "field_name": "has_green_pricing",
+              "pandas_type": "bool",
+              "numpy_type": "boolean",
+              "metadata": null
+            },
+            {
+              "name": "data_maturity",
+              "field_name": "data_maturity",
+              "pandas_type": "unicode",
+              "numpy_type": "string",
+              "metadata": null
+            }
+          ],
+          "attributes": {},
+          "creator": {
+            "library": "pyarrow",
+            "version": "24.0.0"
+          },
+          "pandas_version": "3.1.1"
+        }
+      }
+    ]
+  },
+  "what_this_does_not_hold": [
+    "no row of the table",
+    "no row count; the footer's row count was not read into anything printed or stored",
+    "no row-group or column statistic (minimum, maximum, null count, distinct count)",
+    "no distinct value of any column",
+    "no other file under data/raw (nothing there was listed, globbed, stat'ed or opened but this one file)",
+    "no price, revenue or bill value"
+  ]
+}

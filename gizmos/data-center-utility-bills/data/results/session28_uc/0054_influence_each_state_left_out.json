@@ -1,0 +1,4256 @@
+{
+ "sequence": 54,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "influence_each_state_left_out",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T05:36:58+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "influence_each_state_left_out",
+  "plan_section": "Reported checks, Influence (each state left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and \"moves most\" adopted by Joe on 2026-11-19, D-111)",
+  "sets": [
+   "headline_set at 2%"
+  ],
+  "builder": "design.build_with_rules under the headline rules, then influence_deletions.delete_state for each state in states_present except Virginia (its hosts leave, its comparison utilities leave every remaining host's matches; nothing rematched)",
+  "estimator": "influence_deletions.estimate_deletion per state (rule 7's treatment and the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector); influence_deletions.summarise",
+  "labels": [
+   "reported check",
+   "influence deletion: each state present left out (Virginia apart); under the procedure validated on the headline set; no validation was made on this design",
+   "under the procedure validated on the headline set; no validation was made on this design"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "label": "influence deletion: each state present left out (Virginia apart); under the procedure validated on the headline set; no validation was made on this design",
+    "full_design": {
+     "procedure": {
+      "name": "C",
+      "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+      "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+      "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+     },
+     "hosts_in_the_design": [
+      "803:AZ",
+      "6958:TX",
+      "14127:NE",
+      "14354:UT",
+      "15473:NM",
+      "17166:NV",
+      "20065:GA"
+     ],
+     "hosts_with_no_matches": [],
+     "numerical_failure": null,
+     "fuel_control": "gas_share_by_calendar_year",
+     "control_columns_left_out": [
+      {
+       "year": 2009,
+       "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+      }
+     ],
+     "hosts_fully_absorbed": [],
+     "absorbed_controls_option": null,
+     "controls_left_out_as_exactly_absorbed": [],
+     "columns": [
+      "event_year_-6",
+      "event_year_-5",
+      "event_year_-4",
+      "event_year_-2",
+      "event_year_-1",
+      "event_year_0",
+      "event_year_1",
+      "event_year_2",
+      "event_year_3",
+      "heating_degree_days",
+      "cooling_degree_days",
+      "gas_share_x_2010",
+      "gas_share_x_2011",
+      "gas_share_x_2012",
+      "gas_share_x_2013",
+      "gas_share_x_2014",
+      "gas_share_x_2015",
+      "gas_share_x_2016",
+      "gas_share_x_2017",
+      "gas_share_x_2018",
+      "gas_share_x_2019",
+      "gas_share_x_2020",
+      "gas_share_x_2021",
+      "gas_share_x_2022",
+      "gas_share_x_2023",
+      "gas_share_x_2024"
+     ],
+     "rows": 770,
+     "regressors": 26,
+     "clusters": 19,
+     "host_headline_weights": {
+      "803:AZ": 0.14398041024051586,
+      "6958:TX": 0.14771192124171217,
+      "14127:NE": 0.15350870955845367,
+      "14354:UT": 0.14952807041751578,
+      "15473:NM": 0.13660054086124543,
+      "17166:NV": 0.1207637766581045,
+      "20065:GA": 0.14790657102245208
+     },
+     "hosts_with_zero_weight": [],
+     "count_N": 7,
+     "event_year_coefficients": {
+      "-6": 0.015005674613785321,
+      "-5": 0.015272382464421256,
+      "-4": 0.02228055535633362,
+      "-3": 0.0,
+      "-2": 0.012246061391044984,
+      "-1": -0.010003898549598326,
+      "0": -0.0009093095287858715,
+      "1": -0.0004228463870641942,
+      "2": -0.01180127541668232,
+      "3": -0.02043590642409223
+     },
+     "headline": {
+      "log_points": -0.016118590920387275,
+      "percent": -1.5989381589364007,
+      "standard_error_log_points": 0.030347750541277523,
+      "degrees_of_freedom": 6.83900806235111,
+      "range_90_log_points": [
+       -0.0738190727874288,
+       0.04158189094665425
+      ],
+      "range_90_percent": [
+       -7.116026897696128,
+       4.245852627170334
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "event_years": [
+       2,
+       3
+      ]
+     },
+     "early_years_test": {
+      "Q": 2.7852545976581027,
+      "F": 0.6453796762415994,
+      "numerator_degrees_of_freedom": 3,
+      "denominator_degrees_of_freedom": 4.560366337781463,
+      "p_value": 0.6212552484504491,
+      "fails_at_p_below_0.10": false,
+      "event_years": [
+       -6,
+       -5,
+       -4
+      ]
+     },
+     "validation": "under the procedure validated on the headline set; no validation was made on this design",
+     "validation_check": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     },
+     "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+    },
+    "deletions": [
+     {
+      "kind": "state",
+      "value": "AZ",
+      "label": "influence deletion: state AZ left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "AZ",
+       "hosts_leaving": [
+        "803:AZ"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "14354:WA",
+        "14354:WY",
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA",
+        "56146:CO",
+        "5701:NM",
+        "5701:TX",
+        "9191:ID"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "matched_units_in_the_state": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.019895652444833035
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 660,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "6958:TX": 0.17317444521062292,
+        "14127:NE": 0.17697578426915828,
+        "14354:UT": 0.17573433500021668,
+        "15473:NM": 0.16144527775202722,
+        "17166:NV": 0.14183289607884178,
+        "20065:GA": 0.17083726168914173
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.01287219650348383,
+        "-5": 0.013267424329465975,
+        "-4": 0.023037338722774546,
+        "-3": 0.0,
+        "-2": 0.0019346149685793151,
+        "-1": -0.018132864444972852,
+        "0": -0.0035275910832211488,
+        "1": 0.005998406434566107,
+        "2": 6.695552921893652e-05,
+        "3": -0.03931555829797895
+       },
+       "headline": {
+        "log_points": -0.019624301384380004,
+        "percent": -1.9432998222735007,
+        "standard_error_log_points": 0.03127369293694239,
+        "degrees_of_freedom": 5.679849666773527,
+        "range_90_log_points": [
+         -0.08101371771947499,
+         0.04176511495071499
+        ],
+        "range_90_percent": [
+         -7.781895886298589,
+         4.264954719622902
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.8523270891941546,
+        "F": 0.5996731816090463,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.4159435284558946,
+        "p_value": 0.6532440882468626,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "CO",
+      "label": "influence deletion: state CO left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "CO",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "56146:CO",
+        "6604:CO"
+       ],
+       "matched_units_in_the_state": [
+        "56146:CO",
+        "6604:CO"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 8,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 8,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.018989231398692918
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 710,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14315589301177112,
+        "6958:TX": 0.14928077023198075,
+        "14127:NE": 0.15629578511090625,
+        "14354:UT": 0.1490430386387763,
+        "15473:NM": 0.13631476598640369,
+        "17166:NV": 0.11665249401816627,
+        "20065:GA": 0.14925725300199424
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.004447145246241537,
+        "-5": 0.01205020282410765,
+        "-4": 0.02365826135525165,
+        "-3": 0.0,
+        "-2": 0.015223751150936115,
+        "-1": -0.010492073165301288,
+        "0": 0.0007885760452339408,
+        "1": 0.0033303871815410536,
+        "2": -0.00842697026905381,
+        "3": -0.019357896569093418
+       },
+       "headline": {
+        "log_points": -0.013892433419073614,
+        "percent": -1.3796378890782275,
+        "standard_error_log_points": 0.03141789628831986,
+        "degrees_of_freedom": 6.782185988126199,
+        "range_90_log_points": [
+         -0.07370497306663654,
+         0.045920106228489306
+        ],
+        "range_90_percent": [
+         -7.105428257659642,
+         4.69907595748502
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.337853365370213,
+        "F": 0.5383103360638141,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.467785488039864,
+        "p_value": 0.6785638226598175,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "FL",
+      "label": "influence deletion: state FL left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "FL",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "10623:FL",
+        "18445:FL",
+        "3757:FL",
+        "6909:FL"
+       ],
+       "matched_units_in_the_state": [
+        "10623:FL",
+        "18445:FL",
+        "3757:FL",
+        "6909:FL"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 6,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.017473422402089253
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 730,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.13861887680304155,
+        "6958:TX": 0.15797949006688533,
+        "14127:NE": 0.16408408086001813,
+        "14354:UT": 0.15913082097822479,
+        "15473:NM": 0.1416162519354492,
+        "17166:NV": 0.11671048977103074,
+        "20065:GA": 0.12185998958535726
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.02098114772669238,
+        "-5": 0.020976633005005824,
+        "-4": 0.023364338098222758,
+        "-3": 0.0,
+        "-2": 0.01675492929121598,
+        "-1": -0.006843057601429014,
+        "0": -0.007918538328063288,
+        "1": -0.007112395731885129,
+        "2": -0.008460285899153102,
+        "3": -0.02550375672623663
+       },
+       "headline": {
+        "log_points": -0.016982021312694866,
+        "percent": -1.6838639573315006,
+        "standard_error_log_points": 0.0303156856949035,
+        "degrees_of_freedom": 6.8640115698603115,
+        "range_90_log_points": [
+         -0.07458912932193738,
+         0.04062508669654766
+        ],
+        "range_90_percent": [
+         -7.187525275704945,
+         4.1461574543089235
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.083856766818414,
+        "F": 0.4853994661120571,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.640098727138596,
+        "p_value": 0.708137682487498,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "GA",
+      "label": "influence deletion: state GA left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "GA",
+       "hosts_leaving": [
+        "20065:GA"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "10623:FL",
+        "17543:SC",
+        "17832:GA",
+        "18445:FL",
+        "19898:TN",
+        "21632:NC",
+        "3046:SC",
+        "3408:TN",
+        "3757:FL",
+        "6909:FL"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "matched_units_in_the_state": [
+        "17832:GA"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01875893491816801
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023"
+       ],
+       "rows": 660,
+       "regressors": 25,
+       "clusters": 14,
+       "host_headline_weights": {
+        "803:AZ": 0.1599854746233496,
+        "6958:TX": 0.1793997984068623,
+        "14127:NE": 0.18591986211439454,
+        "14354:UT": 0.18093117208203804,
+        "15473:NM": 0.1600408406610391,
+        "17166:NV": 0.1337228521123113
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.03362160088333745,
+        "-5": 0.030063766965811558,
+        "-4": 0.030342018690262665,
+        "-3": 0.0,
+        "-2": 0.023103768759418816,
+        "-1": -0.009802590284001208,
+        "0": -0.007685120305924851,
+        "1": -0.0055452925913362615,
+        "2": -0.015151737403349939,
+        "3": -0.017173966833767207
+       },
+       "headline": {
+        "log_points": -0.01616285211855857,
+        "percent": -1.6032934114497557,
+        "standard_error_log_points": 0.03356107634589042,
+        "degrees_of_freedom": 5.645212171598273,
+        "range_90_log_points": [
+         -0.0821194929170161,
+         0.04979378867989896
+        ],
+        "range_90_percent": [
+         -7.8838120200405895,
+         5.105433472557743
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.3132123351216825,
+        "F": 0.6957493850463394,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.4050720065386137,
+        "p_value": 0.6079065791168278,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "ID",
+      "label": "influence deletion: state ID left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "ID",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "9191:ID"
+       ],
+       "matched_units_in_the_state": [
+        "9191:ID"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01815179262704529
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 730,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14280464597597675,
+        "6958:TX": 0.14858332320184808,
+        "14127:NE": 0.15470043367879321,
+        "14354:UT": 0.14879211429613126,
+        "15473:NM": 0.1359139457875212,
+        "17166:NV": 0.12064035185577185,
+        "20065:GA": 0.14856518520396164
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.017685482034294174,
+        "-5": 0.01723599308008009,
+        "-4": 0.02110440163580845,
+        "-3": 0.0,
+        "-2": 0.01342308618428802,
+        "-1": -0.008872576997020654,
+        "0": -0.0002798690507258353,
+        "1": -0.00032138292670092286,
+        "2": -0.012603803285758277,
+        "3": -0.020124546920795572
+       },
+       "headline": {
+        "log_points": -0.016364175103276923,
+        "percent": -1.623100936184717,
+        "standard_error_log_points": 0.031706102792901966,
+        "degrees_of_freedom": 6.843577244989699,
+        "range_90_log_points": [
+         -0.07664109059234187,
+         0.04391274038578801
+        ],
+        "range_90_percent": [
+         -7.377777617275839,
+         4.489117410955553
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 1.6644002711588877,
+        "F": 0.38535083019906874,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.5482739762131565,
+        "p_value": 0.769376053879731,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "KS",
+      "label": "influence deletion: state KS left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "KS",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "10005:KS",
+        "22500:KS"
+       ],
+       "matched_units_in_the_state": [
+        "10005:KS",
+        "22500:KS"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 8,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01802984228717376
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 750,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14487872240745797,
+        "6958:TX": 0.14839561433484538,
+        "14127:NE": 0.1498391419631139,
+        "14354:UT": 0.15023014690435674,
+        "15473:NM": 0.13753764825175757,
+        "17166:NV": 0.12064407081658181,
+        "20065:GA": 0.14847465532189827
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.01458451665946346,
+        "-5": 0.01637865991405399,
+        "-4": 0.021358420810781552,
+        "-3": 0.0,
+        "-2": 0.01165603241217646,
+        "-1": -0.010510655376363517,
+        "0": -0.0020683131560086405,
+        "1": -0.0017126320393308359,
+        "2": -0.015316411878486272,
+        "3": -0.01999723116087633
+       },
+       "headline": {
+        "log_points": -0.0176568215196813,
+        "percent": -1.7501853269295848,
+        "standard_error_log_points": 0.031701841819126005,
+        "degrees_of_freedom": 6.847547864699953,
+        "range_90_log_points": [
+         -0.07792024387925028,
+         0.04260660083988768
+        ],
+        "range_90_percent": [
+         -7.496179894002261,
+         4.3527291330404445
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.359443473991297,
+        "F": 0.5458240599435938,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.5361143665269426,
+        "p_value": 0.674078573131494,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "LA",
+      "label": "influence deletion: state LA left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "LA",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "17698:LA"
+       ],
+       "matched_units_in_the_state": [
+        "17698:LA"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01801200073755193
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 760,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14384759557840202,
+        "6958:TX": 0.14854750485204007,
+        "14127:NE": 0.15292513069631086,
+        "14354:UT": 0.15049955599003756,
+        "15473:NM": 0.1361398672636508,
+        "17166:NV": 0.11918799047845408,
+        "20065:GA": 0.14885235514112088
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.01670507323093233,
+        "-5": 0.015907870943001997,
+        "-4": 0.022958847950221583,
+        "-3": 0.0,
+        "-2": 0.011878545258605534,
+        "-1": -0.009562926539812479,
+        "0": 0.0002628651479110924,
+        "1": 0.0008888562962360291,
+        "2": -0.00953842456374156,
+        "3": -0.01792585052540835
+       },
+       "headline": {
+        "log_points": -0.013732137544574955,
+        "percent": -1.3638281848089495,
+        "standard_error_log_points": 0.02900454068362966,
+        "degrees_of_freedom": 6.7436460832918765,
+        "range_90_log_points": [
+         -0.06899942958755739,
+         0.04153515449840749
+        ],
+        "range_90_percent": [
+         -6.6672787540494864,
+         4.2409806601241895
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.3284908413498324,
+        "F": 0.768853808601441,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.514130605728917,
+        "p_value": 0.5630063993891601,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "MO",
+      "label": "influence deletion: state MO left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "MO",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "10000:MO",
+        "17833:MO",
+        "5860:MO"
+       ],
+       "matched_units_in_the_state": [
+        "10000:MO",
+        "17833:MO",
+        "5860:MO"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 7,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.018095916537652468
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 740,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14546045269518335,
+        "6958:TX": 0.14926190435329095,
+        "14127:NE": 0.14810937567999516,
+        "14354:UT": 0.15123321683550905,
+        "15473:NM": 0.1371603398932975,
+        "17166:NV": 0.11935947274623188,
+        "20065:GA": 0.14941523779649807
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.016075348922886146,
+        "-5": 0.015376829085282876,
+        "-4": 0.022567762618364226,
+        "-3": 0.0,
+        "-2": 0.012289631960096515,
+        "-1": -0.011770055555685978,
+        "0": -0.002629831784652762,
+        "1": -0.0004860054865151661,
+        "2": -0.015858864386176223,
+        "3": -0.023758055268082376
+       },
+       "headline": {
+        "log_points": -0.0198084598271293,
+        "percent": -1.9613561288176873,
+        "standard_error_log_points": 0.033479131439987424,
+        "degrees_of_freedom": 6.83443588561096,
+        "range_90_log_points": [
+         -0.0834692445133659,
+         0.04385232485910731
+        ],
+        "range_90_percent": [
+         -8.008062119567565,
+         4.482804836585441
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.4203326697390843,
+        "F": 0.5587104559798531,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.504510712052157,
+        "p_value": 0.6671366879082705,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "NC",
+      "label": "influence deletion: state NC left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "NC",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "21632:NC"
+       ],
+       "matched_units_in_the_state": [
+        "21632:NC"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 9,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.017918596120284357
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 760,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14472079369083424,
+        "6958:TX": 0.14816270316207186,
+        "14127:NE": 0.15382152343061478,
+        "14354:UT": 0.15002610906098532,
+        "15473:NM": 0.13687154562820356,
+        "17166:NV": 0.1209235598968055,
+        "20065:GA": 0.14547376513049384
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.01566609516619504,
+        "-5": 0.015782591299117032,
+        "-4": 0.022443544769719083,
+        "-3": 0.0,
+        "-2": 0.012292614905930463,
+        "-1": -0.009748115024144577,
+        "0": -0.00018403585204502387,
+        "1": -0.001314098887050849,
+        "2": -0.012576394109477883,
+        "3": -0.022099497089721212
+       },
+       "headline": {
+        "log_points": -0.017337945599599548,
+        "percent": -1.7188508312352875,
+        "standard_error_log_points": 0.030365321335993182,
+        "degrees_of_freedom": 6.851133480250504,
+        "range_90_log_points": [
+         -0.07505605902432624,
+         0.040380167825127156
+        ],
+        "range_90_percent": [
+         -7.230852060837302,
+         4.12065321832427
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.677617419180236,
+        "F": 0.6209004453020652,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.57151693073115,
+        "p_value": 0.6336889431509292,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "NE",
+      "label": "influence deletion: state NE left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "NE",
+       "hosts_leaving": [
+        "14127:NE"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "10000:MO",
+        "10005:KS",
+        "11292:TX",
+        "17698:LA",
+        "17698:TX",
+        "17718:NM",
+        "17718:TX",
+        "17833:MO",
+        "22500:KS",
+        "5860:MO"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "matched_units_in_the_state": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01896031033270845
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 660,
+       "regressors": 26,
+       "clusters": 15,
+       "host_headline_weights": {
+        "803:AZ": 0.1703951785797837,
+        "6958:TX": 0.18133586560477558,
+        "14354:UT": 0.1852572965154135,
+        "15473:NM": 0.15647965716828618,
+        "17166:NV": 0.12476885855580741,
+        "20065:GA": 0.18176314357594245
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.019597662202648296,
+        "-5": 0.028545124437216775,
+        "-4": 0.028641157070778567,
+        "-3": 0.0,
+        "-2": 0.03277567736860243,
+        "-1": 0.0061832167079038415,
+        "0": 0.01149961770857419,
+        "1": 0.02322187275571781,
+        "2": 0.017619820618186795,
+        "3": 0.010621779547150927
+       },
+       "headline": {
+        "log_points": 0.01412080008266886,
+        "percent": 1.4220969515661426,
+        "standard_error_log_points": 0.03397963614750913,
+        "degrees_of_freedom": 5.530942043648458,
+        "range_90_log_points": [
+         -0.052924268544768685,
+         0.0811658687101064
+        ],
+        "range_90_percent": [
+         -5.1548162599575775,
+         8.455077468631423
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 0.5654971147073591,
+        "F": 0.11682573171991555,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.2599509468436905,
+        "p_value": 0.9447674319404437,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "NM",
+      "label": "influence deletion: state NM left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "NM",
+       "hosts_leaving": [
+        "15473:NM"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "14354:WA",
+        "14354:WY",
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA",
+        "56146:CO",
+        "5701:NM",
+        "5701:TX",
+        "9191:ID"
+       ],
+       "matched_units_leaving_remaining_hosts": [
+        "17718:NM",
+        "5701:NM"
+       ],
+       "matched_units_in_the_state": [
+        "17718:NM",
+        "5701:NM"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.02148882923917019
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 620,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.1672681516486621,
+        "6958:TX": 0.1730867885944825,
+        "14127:NE": 0.17585401982513127,
+        "14354:UT": 0.17436470766358603,
+        "17166:NV": 0.13818112030981364,
+        "20065:GA": 0.1712452119583297
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.014987448825488373,
+        "-5": 0.005508146709248655,
+        "-4": 0.010253735847631631,
+        "-3": 0.0,
+        "-2": 0.007642241735370134,
+        "-1": -0.02458613294837083,
+        "0": -0.014266525440918783,
+        "1": -0.028058513212324554,
+        "2": -0.03856913724668912,
+        "3": -0.04265137776649743
+       },
+       "headline": {
+        "log_points": -0.04061025750659328,
+        "percent": -3.9796710945735487,
+        "standard_error_log_points": 0.023986677329222203,
+        "degrees_of_freedom": 5.850541346536796,
+        "range_90_log_points": [
+         -0.08743481096088498,
+         0.006214295947698421
+        ],
+        "range_90_percent": [
+         -8.37213989744313,
+         0.6233644743711904
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.1251127442556754,
+        "F": 0.451758072628002,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.520931134147202,
+        "p_value": 0.7319063108122581,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "NV",
+      "label": "influence deletion: state NV left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "NV",
+       "hosts_leaving": [
+        "17166:NV"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA",
+        "56146:CO",
+        "5701:NM",
+        "5701:TX",
+        "6022:OR",
+        "6604:CO",
+        "9191:ID"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "matched_units_in_the_state": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.020267215625803654
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 660,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.16557955695484,
+        "6958:TX": 0.1680378651089957,
+        "14127:NE": 0.17207477062804805,
+        "14354:UT": 0.16777149584424145,
+        "15473:NM": 0.15802753673187436,
+        "20065:GA": 0.16850877473199555
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.028082524931924494,
+        "-5": 0.025976263647998005,
+        "-4": 0.03163338925938481,
+        "-3": 0.0,
+        "-2": 0.01959864393354669,
+        "-1": 0.01481452231648632,
+        "0": 0.025827765985377713,
+        "1": 0.01688780037102007,
+        "2": -0.0015668044516924744,
+        "3": -0.0018775954636431752
+       },
+       "headline": {
+        "log_points": -0.0017221999576678248,
+        "percent": -0.1720717822287322,
+        "standard_error_log_points": 0.02574730868395053,
+        "degrees_of_freedom": 5.753504191601994,
+        "range_90_log_points": [
+         -0.052140371833822224,
+         0.04869597191848657
+        ],
+        "range_90_percent": [
+         -5.080438283857966,
+         4.990110279425562
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.1428003906118294,
+        "F": 0.6822282741217839,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.7344325391519764,
+        "p_value": 0.6103008187169847,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "OR",
+      "label": "influence deletion: state OR left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "OR",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "6022:OR"
+       ],
+       "matched_units_in_the_state": [
+        "6022:OR"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01761170106566127
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 750,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14439547293697624,
+        "6958:TX": 0.14849657253454024,
+        "14127:NE": 0.15499520494505548,
+        "14354:UT": 0.1485722498877784,
+        "15473:NM": 0.13624545171629018,
+        "17166:NV": 0.11867659112055828,
+        "20065:GA": 0.14861845685880326
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.010055905871644372,
+        "-5": 0.012251785881654827,
+        "-4": 0.020057075755470437,
+        "-3": 0.0,
+        "-2": 0.011858928264998042,
+        "-1": -0.009127543861606063,
+        "0": -0.0007466818751126637,
+        "1": 0.0002070172104947851,
+        "2": -0.011860131047707641,
+        "3": -0.021017442961940726
+       },
+       "headline": {
+        "log_points": -0.016438787004824183,
+        "percent": -1.6304407498700582,
+        "standard_error_log_points": 0.0313950761224987,
+        "degrees_of_freedom": 6.785354787259336,
+        "range_90_log_points": [
+         -0.07620353128825993,
+         0.043325957278611577
+        ],
+        "range_90_percent": [
+         -7.337241034174742,
+         4.427822947011746
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.1407536661356863,
+        "F": 0.4919757724082198,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.4400385744102975,
+        "p_value": 0.7049871119088772,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "SC",
+      "label": "influence deletion: state SC left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "SC",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "17543:SC",
+        "3046:SC"
+       ],
+       "matched_units_in_the_state": [
+        "17543:SC",
+        "3046:SC"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 8,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.017920910250987878
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 750,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14517778801076142,
+        "6958:TX": 0.14850745018376155,
+        "14127:NE": 0.1540330189673502,
+        "14354:UT": 0.15041823869668675,
+        "15473:NM": 0.13716651202942667,
+        "17166:NV": 0.1213315746667524,
+        "20065:GA": 0.14336541744525075
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.012076207031733985,
+        "-5": 0.01296674057994451,
+        "-4": 0.02166619140452768,
+        "-3": 0.0,
+        "-2": 0.01303789015870812,
+        "-1": -0.009742614554997572,
+        "0": -0.0011713724187097443,
+        "1": -0.003637636924521997,
+        "2": -0.012631839275779799,
+        "3": -0.021281166479932258
+       },
+       "headline": {
+        "log_points": -0.01695650287785603,
+        "percent": -1.6813550514087494,
+        "standard_error_log_points": 0.030595548678008476,
+        "degrees_of_freedom": 6.864203241873554,
+        "range_90_log_points": [
+         -0.07509516831002172,
+         0.04118216255430966
+        ],
+        "range_90_percent": [
+         -7.23448012500182,
+         4.20419092732797
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.2723929313870377,
+        "F": 0.7594067478668619,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.583147921058051,
+        "p_value": 0.56660679616764,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "TN",
+      "label": "influence deletion: state TN left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "TN",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "19898:TN",
+        "3408:TN"
+       ],
+       "matched_units_in_the_state": [
+        "19898:TN",
+        "3408:TN"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 8,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01807209832856408
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 750,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.1451257164127217,
+        "6958:TX": 0.14857753704987592,
+        "14127:NE": 0.15389746319952785,
+        "14354:UT": 0.1505243930648706,
+        "15473:NM": 0.13711117653616978,
+        "17166:NV": 0.12101335133579888,
+        "20065:GA": 0.143750362401025
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.016190476186756324,
+        "-5": 0.01661459953477597,
+        "-4": 0.0228014153700777,
+        "-3": 0.0,
+        "-2": 0.012212254565588138,
+        "-1": -0.010623440343333363,
+        "0": 0.002035024433274586,
+        "1": 0.0037489278748261377,
+        "2": -0.013739011475047698,
+        "3": -0.018087916027784708
+       },
+       "headline": {
+        "log_points": -0.015913463751416203,
+        "percent": -1.578751357337248,
+        "standard_error_log_points": 0.02933992995708569,
+        "degrees_of_freedom": 6.862138367924676,
+        "range_90_log_points": [
+         -0.07166874153824171,
+         0.0398418140354093
+        ],
+        "range_90_percent": [
+         -6.916080689540488,
+         4.064614555742921
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.541642703474535,
+        "F": 0.5898408407780964,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.58354169611551,
+        "p_value": 0.6499220777201931,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "TX",
+      "label": "influence deletion: state TX left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "TX",
+       "hosts_leaving": [
+        "6958:TX"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "11501:TX",
+        "12268:TX",
+        "12452:TX",
+        "13418:TX",
+        "13830:TX",
+        "17561:TX",
+        "2409:TX",
+        "2442:TX",
+        "3282:TX",
+        "3940:TX"
+       ],
+       "matched_units_leaving_remaining_hosts": [
+        "11292:TX",
+        "17698:TX",
+        "17718:TX",
+        "5701:TX"
+       ],
+       "matched_units_in_the_state": [
+        "11292:TX",
+        "11501:TX",
+        "12268:TX",
+        "12452:TX",
+        "13418:TX",
+        "13830:TX",
+        "17561:TX",
+        "17698:TX",
+        "17718:TX",
+        "2409:TX",
+        "2442:TX",
+        "3282:TX",
+        "3940:TX",
+        "5701:TX"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 7,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.012609281825599873
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 590,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.17328731748845771,
+        "14127:NE": 0.18589996060186842,
+        "14354:UT": 0.1799914395346091,
+        "15473:NM": 0.16048611791682,
+        "17166:NV": 0.12066874112651607,
+        "20065:GA": 0.1796664233317115
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": -0.001127176881494843,
+        "-5": -0.017390789951993557,
+        "-4": -0.0031139387939603212,
+        "-3": 0.0,
+        "-2": 0.0014118346570344623,
+        "-1": -0.00878500652404,
+        "0": -0.0007563717027721829,
+        "1": 0.001649104434283212,
+        "2": -0.011744612581354116,
+        "3": -0.029269172327886672
+       },
+       "headline": {
+        "log_points": -0.020506892454620396,
+        "percent": -2.029805609994289,
+        "standard_error_log_points": 0.04007790049412134,
+        "degrees_of_freedom": 6.048797409238894,
+        "range_90_log_points": [
+         -0.09827310622660991,
+         0.05725932131736912
+        ],
+        "range_90_percent": [
+         -9.359867389800533,
+         5.893037801397192
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.3676315164077533,
+        "F": 0.5145117441730841,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.7460070205293894,
+        "p_value": 0.6953965844818397,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "UT",
+      "label": "influence deletion: state UT left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "UT",
+       "hosts_leaving": [
+        "14354:UT"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA",
+        "56146:CO",
+        "5701:NM",
+        "5701:TX",
+        "6022:OR",
+        "6604:CO",
+        "9191:ID"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "matched_units_in_the_state": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.033562235299202145
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2011,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 660,
+       "regressors": 24,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.16965433122937396,
+        "6958:TX": 0.17389291483445107,
+        "14127:NE": 0.1797191844514851,
+        "15473:NM": 0.16176672641355289,
+        "17166:NV": 0.14052110524251712,
+        "20065:GA": 0.17444573782861467
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.015986586218740505,
+        "-5": 0.01896464289945693,
+        "-4": 0.03179843469847088,
+        "-3": 0.0,
+        "-2": 0.0035982049196001467,
+        "-1": -0.01978554134050921,
+        "0": -0.010277465183575371,
+        "1": -0.007523524298322374,
+        "2": -0.01365391277565507,
+        "3": -0.014811043986946944
+       },
+       "headline": {
+        "log_points": -0.014232478381301008,
+        "percent": -1.4131675452686638,
+        "standard_error_log_points": 0.03405342418945277,
+        "degrees_of_freedom": 5.629462091911684,
+        "range_90_log_points": [
+         -0.0811926861707698,
+         0.05272772940816778
+        ],
+        "range_90_percent": [
+         -7.798398540801854,
+         5.414259401539409
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 6.693674668429977,
+        "F": 1.3804027476296206,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.244867945333259,
+        "p_value": 0.3904133580601834,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "WA",
+      "label": "influence deletion: state WA left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "WA",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "14354:WA",
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA"
+       ],
+       "matched_units_in_the_state": [
+        "14354:WA",
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 5,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 6,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 5,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 6,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01660445029681362
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 590,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.13978152786436182,
+        "6958:TX": 0.1528160205563011,
+        "14127:NE": 0.1559166133731223,
+        "14354:UT": 0.1420686671118866,
+        "15473:NM": 0.13110754674111932,
+        "17166:NV": 0.12611786745855877,
+        "20065:GA": 0.15219175689464914
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.005878519436169238,
+        "-5": 0.017822646465403873,
+        "-4": 0.02835709935632142,
+        "-3": 0.0,
+        "-2": 0.013317551657047158,
+        "-1": -0.0033001197800239905,
+        "0": 0.010518123831690618,
+        "1": 0.009821348223094379,
+        "2": -0.0007056186779949873,
+        "3": -0.0037999014222894548
+       },
+       "headline": {
+        "log_points": -0.002252760050142221,
+        "percent": -0.2250224490580276,
+        "standard_error_log_points": 0.033678922026550165,
+        "degrees_of_freedom": 6.97223900057421,
+        "range_90_log_points": [
+         -0.0660983687277342,
+         0.06159284862744976
+        ],
+        "range_90_percent": [
+         -6.396121718145132,
+         6.352923917477918
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 2.7486411102146056,
+        "F": 0.63407205761301,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.494707300890827,
+        "p_value": 0.6274221455820036,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "state",
+      "value": "WY",
+      "label": "influence deletion: state WY left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "state",
+       "value": "WY",
+       "hosts_leaving": [],
+       "matched_units_leaving_with_those_hosts": [],
+       "matched_units_leaving_remaining_hosts": [
+        "14354:WY"
+       ],
+       "matched_units_in_the_state": [
+        "14354:WY"
+       ],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 7,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 9,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01829197956988946
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 750,
+       "regressors": 26,
+       "clusters": 18,
+       "host_headline_weights": {
+        "803:AZ": 0.14317108042024668,
+        "6958:TX": 0.14834766316013456,
+        "14127:NE": 0.15418949204067461,
+        "14354:UT": 0.1502690755360056,
+        "15473:NM": 0.1353979628595744,
+        "17166:NV": 0.12047298196489054,
+        "20065:GA": 0.1481517440184775
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 7,
+       "event_year_coefficients": {
+        "-6": 0.017802075920727495,
+        "-5": 0.018433212160429143,
+        "-4": 0.024167460046131194,
+        "-3": 0.0,
+        "-2": 0.011981492001480146,
+        "-1": -0.01025203981065476,
+        "0": -0.0012029214071155678,
+        "1": -0.0013033469960284615,
+        "2": -0.012296229835870334,
+        "3": -0.02038680442024042
+       },
+       "headline": {
+        "log_points": -0.01634151712805538,
+        "percent": -1.6208718895906111,
+        "standard_error_log_points": 0.028494976667937915,
+        "degrees_of_freedom": 6.828764038932693,
+        "range_90_log_points": [
+         -0.07053185538378309,
+         0.03784882112767234
+        ],
+        "range_90_percent": [
+         -6.810194691716139,
+         3.8574210531589372
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.01729889084662,
+        "F": 0.6989315557243931,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.555752408838575,
+        "p_value": 0.59495855725701,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     }
+    ],
+    "design": {
+     "hosts": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "6958:TX",
+       "cohort": 2017,
+       "matches": [
+        "2442:TX",
+        "11501:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX"
+       ]
+      },
+      {
+       "utility": "14127:NE",
+       "cohort": 2019,
+       "matches": [
+        "22500:KS",
+        "10005:KS",
+        "10000:MO",
+        "17718:TX",
+        "17698:LA",
+        "17698:TX",
+        "5860:MO",
+        "17833:MO",
+        "17718:NM",
+        "11292:TX"
+       ]
+      },
+      {
+       "utility": "14354:UT",
+       "cohort": 2015,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "56146:CO",
+        "5701:NM",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "17166:NV",
+       "cohort": 2017,
+       "matches": [
+        "5701:TX",
+        "17470:WA",
+        "16868:WA",
+        "9191:ID",
+        "3660:WA",
+        "18429:WA",
+        "5701:NM",
+        "56146:CO",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "20065:GA",
+       "cohort": 2021,
+       "matches": [
+        "21632:NC",
+        "10623:FL",
+        "3046:SC",
+        "18445:FL",
+        "19898:TN",
+        "17832:GA",
+        "3408:TN",
+        "17543:SC",
+        "3757:FL",
+        "6909:FL"
+       ]
+      }
+     ],
+     "hosts_dropped": [],
+     "unresolved_ownership": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+       ],
+       "reason_by_year": {
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+       ],
+       "reason_by_year": {
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+       "in_this_run": "kept"
+      }
+     ],
+     "load_unknown_excluded": []
+    },
+    "deletions_not_estimated": [],
+    "estimated": true,
+    "zero_note": "the 90% range includes zero where the full design's does not: reported, not treated as a reversal",
+    "summary": {
+     "full_design_estimate_log_points": -0.016118590920387275,
+     "full_design_range_includes_zero": true,
+     "deletions_run": 19,
+     "deletions_in_the_range": [
+      "state AZ",
+      "state CO",
+      "state FL",
+      "state GA",
+      "state ID",
+      "state KS",
+      "state LA",
+      "state MO",
+      "state NC",
+      "state NE",
+      "state NM",
+      "state NV",
+      "state OR",
+      "state SC",
+      "state TN",
+      "state TX",
+      "state UT",
+      "state WA",
+      "state WY"
+     ],
+     "deletions_not_estimated": [],
+     "deletions_that_remove_nothing_reported_beside_the_range": [],
+     "range_of_estimates_log_points": [
+      -0.04061025750659328,
+      0.01412080008266886
+     ],
+     "moves_it_most": {
+      "deletion": "state NE",
+      "estimate_log_points": 0.01412080008266886,
+      "moves_by_log_points": 0.030239391003056136
+     },
+     "exact_tie_for_moves_it_most": null,
+     "ranges_that_span_zero_where_the_full_designs_does_not": [],
+     "range_of_estimates_percent": [
+      -3.9796710945735487,
+      1.4220969515661426
+     ]
+    }
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

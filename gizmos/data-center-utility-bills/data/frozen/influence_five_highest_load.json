@@ -1,0 +1,118 @@
+{
+ "what_this_is": "The ranking behind the five-highest-load deletion (Reported checks, Influence) on the headline set at 2% under the headline rules: each host's data center load in GWh in its own event year 3 (first-crossing year plus 3), largest first, with the gap between adjacent ranks, the five to drop and the hosts kept, and the rank test of the design without the five, made on the regressors alone. Joe's ruling of 2026-11-19 (D-105): absolute data-center load in event year 3, not load share. Quantities only: no price, revenue, bill or outcome is read and nothing is fitted. PROVISIONAL: the design stands as of 2026-11-18 and the plan is a DRAFT, not frozen.",
+ "built_by": "pipeline/analysis/influence_load.py (main)",
+ "load_source": "data/interim/utility_year_dose.parquet, field dc_gwh",
+ "set": "headline_set",
+ "threshold": 0.02,
+ "rules": "headline",
+ "readings": [
+  "the hosts in the estimate are the stacked hosts (at least one matched comparison utility); the agent's reading",
+  "no tolerance is set for a near tie; only an exact tie at the line between rank 5 and rank 6 stops the run, and the gaps are reported"
+ ],
+ "ranking": {
+  "load_column": "dc_gwh",
+  "event_year": 3,
+  "how_many_dropped": 5,
+  "hosts_in_the_estimate": 7,
+  "hosts_with_no_matches_not_ranked": [],
+  "ranking": [
+   {
+    "rank": 1,
+    "host": "803:AZ",
+    "name": "Arizona Public Service Co",
+    "cohort": 2020,
+    "event_year_3_calendar_year": 2023,
+    "dc_gwh": 2848.653370994547,
+    "gap_to_the_next_rank_gwh": 1230.7027469945472
+   },
+   {
+    "rank": 2,
+    "host": "14127:NE",
+    "name": "Omaha Public Power District",
+    "cohort": 2019,
+    "event_year_3_calendar_year": 2022,
+    "dc_gwh": 1617.9506239999998,
+    "gap_to_the_next_rank_gwh": 433.57062399999995
+   },
+   {
+    "rank": 3,
+    "host": "20065:GA",
+    "name": "Walton Electric Member Corp",
+    "cohort": 2021,
+    "event_year_3_calendar_year": 2024,
+    "dc_gwh": 1184.3799999999999,
+    "gap_to_the_next_rank_gwh": 254.53969570825632
+   },
+   {
+    "rank": 4,
+    "host": "14354:UT",
+    "name": "PacifiCorp",
+    "cohort": 2015,
+    "event_year_3_calendar_year": 2018,
+    "dc_gwh": 929.8403042917436,
+    "gap_to_the_next_rank_gwh": 0.0036562917435958298
+   },
+   {
+    "rank": 5,
+    "host": "15473:NM",
+    "name": "Public Service Co of NM",
+    "cohort": 2019,
+    "event_year_3_calendar_year": 2022,
+    "dc_gwh": 929.836648,
+    "gap_to_the_next_rank_gwh": 584.836648
+   },
+   {
+    "rank": 6,
+    "host": "17166:NV",
+    "name": "Sierra Pacific Power Co",
+    "cohort": 2017,
+    "event_year_3_calendar_year": 2020,
+    "dc_gwh": 345.0,
+    "gap_to_the_next_rank_gwh": 204.84
+   },
+   {
+    "rank": 7,
+    "host": "6958:TX",
+    "name": "City of Garland - (TX)",
+    "cohort": 2017,
+    "event_year_3_calendar_year": 2020,
+    "dc_gwh": 140.16,
+    "gap_to_the_next_rank_gwh": null
+   }
+  ],
+  "exact_ties": [],
+  "tie_at_the_line": null,
+  "gap_at_the_line_gwh": 584.836648,
+  "to_drop": [
+   "803:AZ",
+   "14127:NE",
+   "20065:GA",
+   "14354:UT",
+   "15473:NM"
+  ],
+  "kept": [
+   "17166:NV",
+   "6958:TX"
+  ],
+  "failure_in_words": null
+ },
+ "rank_test_of_the_design_without_the_five": {
+  "estimable": true,
+  "smallest_singular_value_ratio": 0.06285313196858414,
+  "hosts_with_no_matches": [],
+  "hosts_with_zero_weight": []
+ },
+ "design_inputs_sha256": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+ "fingerprint": {
+  "sha256": "c5d498118a2145c0b8d520d02d90bcc1e4bafbf1c9eb9c15934a757eb3a51478",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+   "assumptions": "264fec5de34e98e5d0dd08f7d78c73700d65f682e7fa2c1f79161036e9aab409",
+   "settings": "a9e3e3b5c4317084d2da7f507dc2803eee0f993237a81cab2f197f033b44565b",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ }
+}

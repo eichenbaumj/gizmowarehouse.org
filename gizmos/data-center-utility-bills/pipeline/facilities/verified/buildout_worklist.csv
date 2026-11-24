@@ -1,0 +1,75 @@
+fid,state,utility_id_eia,utility_name,lookup_result,applied
+bi:18-0,AZ,803,Arizona Public Service Co,phases,False
+bi:878-1,TX,1015,Austin Energy,phases,False
+bi:668-0,MS,3841,Coast Electric Power Assn - (MS),single_building,False
+bi:582-0,IL,4110,Commonwealth Edison Co,not_found,False
+bi:595-0,IL,4110,Commonwealth Edison Co,single_building,False
+bi:578-0,IL,4110,Commonwealth Edison Co,phases,False
+bi:585-0,IL,4110,Commonwealth Edison Co,phases,True
+bi:568-0,IL,4110,Commonwealth Edison Co,phases,False
+bi:557-0,IL,4110,Commonwealth Edison Co,not_found,False
+bi:570-0,IL,4110,Commonwealth Edison Co,not_found,False
+bi:590-0,IL,4110,Commonwealth Edison Co,not_found,False
+bi:564-0,IL,4110,Commonwealth Edison Co,single_building,False
+bi:677-0,NC,5416,"Duke Energy Carolinas, LLC",phases,False
+bi:676-0,NC,5416,"Duke Energy Carolinas, LLC",phases,False
+bi:678-0,NC,5416,"Duke Energy Carolinas, LLC",phases,False
+bi:16-0,AZ,5729,Electrical Dist No8 Maricopa,phases,False
+bi:51-0,AZ,5729,Electrical Dist No8 Maricopa,phases,False
+bi:1188-0,TX,6958,City of Garland - (TX),phases,True
+bi:534-0,GA,7090,GreyStone Power Corporation,not_found,False
+bi:540-0,GA,7140,Georgia Power Co,not_found,False
+bi:541-0,GA,7140,Georgia Power Co,phases,False
+bi:1006-0,VA,8198,City of Harrisonburg - (VA),single_building,False
+bi:1110-0,WA,8699,Inland Power & Light Company,phases,False
+bi:1261-0,CO,9336,CORE Electric Cooperative,not_found,False
+bi:468-0,CO,11187,City of Longmont,not_found,False
+bi:1333-0,CA,11208,Los Angeles Department of Water & Power,phases,False
+bi:74-0,CA,11208,Los Angeles Department of Water & Power,not_found,False
+bi:1184-0,CA,11208,Los Angeles Department of Water & Power,not_found,False
+bi:90-0,CA,11208,Los Angeles Department of Water & Power,phases,False
+bi:978-0,VA,12260,Mecklenburg Electric Cooperative,not_found,False
+bi:992-0,VA,12260,Mecklenburg Electric Cooperative,phases,False
+bi:542-0,IA,12341,MidAmerican Energy Co,phases,False
+bi:550-0,IA,12341,MidAmerican Energy Co,not_found,False
+bi:545-0,IA,12341,MidAmerican Energy Co,phases,False
+bi:1270-0,AZ,12351,City of Mesa - (AZ),not_found,False
+bi:658-0,MO,12698,Evergy Missouri West,not_found,False
+bi:659-0,MO,12698,Evergy Missouri West,not_found,False
+bi:795-0,OH,14006,Ohio Power Co,phases,False
+bi:805-0,OH,14006,Ohio Power Co,not_found,False
+bi:784-0,NY,14154,Orange & Rockland Utils Inc,not_found,False
+bi:343-0,CA,14328,Pacific Gas & Electric Co.,phases,True
+bi:165-0,CA,14328,Pacific Gas & Electric Co.,not_found,False
+bi:842-0,OR,14354,PacifiCorp,phases,False
+bi:943-0,UT,14354,PacifiCorp,phases,False
+bi:937-0,UT,14354,PacifiCorp,not_found,False
+bi:941-0,UT,14354,PacifiCorp,phases,False
+bi:1196-0,NJ,15477,Public Service Elec & Gas Co,phases,False
+bi:737-0,NJ,15477,Public Service Elec & Gas Co,phases,True
+bi:1208-0,NJ,15477,Public Service Elec & Gas Co,phases,False
+bi:1207-1,NJ,15477,Public Service Elec & Gas Co,phases,False
+bi:1217-0,NJ,15477,Public Service Elec & Gas Co,not_found,False
+bi:12-0,AZ,16572,Salt River Project,phases,False
+bi:37-0,AZ,16572,Salt River Project,single_building,False
+bi:31-0,AZ,16572,Salt River Project,phases,False
+bi:46-0,AZ,16572,Salt River Project,phases,False
+bi:927-0,TX,16604,City of San Antonio - (TX),phases,False
+bi:1212-0,TX,16604,City of San Antonio - (TX),not_found,False
+bi:934-0,TX,16604,City of San Antonio - (TX),phases,False
+bi:928-0,TX,16604,City of San Antonio - (TX),phases,False
+bi:505-0,GA,16865,Sawnee Electric Membership Corporation,not_found,False
+bi:38-0,AZ,19604,USBIA-San Carlos Project,not_found,False
+bi:963-7,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:975-0,VA,19876,Virginia Electric & Power Co,phases,False
+bi:1019-0,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:1010-6,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:1089-2,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:952-4,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:1050-0,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:972-1,VA,19876,Virginia Electric & Power Co,single_building,False
+bi:1061-2,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:1278-0,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:1097-0,VA,19876,Virginia Electric & Power Co,not_found,False
+bi:993-0,VA,40228,Rappahannock Electric Coop,phases,False
+bi:997-0,VA,40228,Rappahannock Electric Coop,not_found,False

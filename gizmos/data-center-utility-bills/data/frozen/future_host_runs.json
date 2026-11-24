@@ -1,0 +1,3239 @@
+{
+ "what_this_is": "Provisional, quantity-only: the future-host criterion applied to the late hosts at 2%, the side run 'Future hosts as a second comparison group' under Joe's ruling of 2026-11-19, and E2's units, fake dates and design. The design stands as of 2026-11-18 and the plan is not frozen. Load, sales, customers, regions, ownership and the usable flag only; no price, revenue or bill is read.",
+ "ruling_of_2026_11_19": "Add eligible future hosts to each cohort's side-run comparison pool and match under the existing rules. Report how many enter the matches and any sample changes. This does not change the headline pool.",
+ "criterion": {
+  "quiet_through": "g+3, share under 0.5% in every year from 2001",
+  "first_crossing_at_least": "g+7",
+  "threshold": 0.02,
+  "every_history": true,
+  "agent_reading_no_crossing_in_the_panel": "a history with no crossing through 2025 meets 'g+7 or later' only where g+7 is 2026 or earlier"
+ },
+ "histories": {
+  "source": "timing.StateRun's screen cases and pass_c_exact._State.grid over each unit's relevant questions, one representative per class of settings merged for the unit; both readings; plus the slow path of headline-set rule 2 (adopted by Joe on 2026-11-19, D-111)",
+  "inputs_note": "timing.load_rebuilt reads data/interim/epoch_gaps.parquet, which this pass may not read; it sets a value read only for fixed-history rows with a not_a_site correction, and none is in force. Every late host's place test reproduces the frozen one (place_test_reproduction).",
+  "outside_the_admissible_histories_by_the_plans_definition": [
+   "the ten-year screen case (a labelled stress test, D-54 ruling 1)",
+   "the permit-error reach (reported under its own name, D-61 section 6)",
+   "stress scenarios (never an admissible history, D-96 item 3)",
+   "the later-start shifts (chosen stress sizes, reported beside the result)",
+   "the state's unassigned remainder (a stated limit, not a history, D-46 ruling 6)",
+   "rows with no size (they carry no load in any history)"
+  ],
+  "slow_path_changed_an_admission": []
+ },
+ "place_test_reproduction": {
+  "compared_fields": [
+   "keeps_its_place",
+   "configurations_by_screen_shift",
+   "range",
+   "status",
+   "method"
+  ],
+  "units": [
+   {
+    "utility": "15776:FL",
+    "reproduces": true
+   },
+   {
+    "utility": "9324:IN",
+    "reproduces": true
+   },
+   {
+    "utility": "13756:IN",
+    "reproduces": true
+   },
+   {
+    "utility": "22822:IN",
+    "reproduces": true
+   },
+   {
+    "utility": "12685:MS",
+    "reproduces": true
+   },
+   {
+    "utility": "12199:ND",
+    "reproduces": true
+   },
+   {
+    "utility": "20413:ND",
+    "reproduces": true
+   },
+   {
+    "utility": "11018:NE",
+    "reproduces": true
+   },
+   {
+    "utility": "19856:NJ",
+    "reproduces": true
+   },
+   {
+    "utility": "13998:OH",
+    "reproduces": true
+   },
+   {
+    "utility": "19501:OH",
+    "reproduces": true
+   },
+   {
+    "utility": "13788:OR",
+    "reproduces": true
+   },
+   {
+    "utility": "12293:TN",
+    "reproduces": true
+   },
+   {
+    "utility": "1175:TX",
+    "reproduces": true
+   },
+   {
+    "utility": "1273:TX",
+    "reproduces": true
+   },
+   {
+    "utility": "5063:TX",
+    "reproduces": true
+   },
+   {
+    "utility": "8620:TX",
+    "reproduces": true
+   },
+   {
+    "utility": "18976:TX",
+    "reproduces": true
+   },
+   {
+    "utility": "44372:TX",
+    "reproduces": true
+   },
+   {
+    "utility": "12866:UT",
+    "reproduces": true
+   },
+   {
+    "utility": "11560:VA",
+    "reproduces": true
+   }
+  ],
+  "all_reproduce": true
+ },
+ "late_hosts_at_2pct": {
+  "1175:TX": {
+   "name": "Bandera Electric Coop, Inc",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 16384,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:911-0 assignment",
+       "bi:910-0 assignment",
+       "bi:929-0 assignment",
+       "bi:1212-0 assignment",
+       "bi:907-0 assignment",
+       "bi:907-0 date",
+       "bi:914-0 assignment",
+       "bi:914-0 date",
+       "bi:918-0 assignment",
+       "bi:918-0 date",
+       "bi:928-0 assignment",
+       "epoch:Microsoft SAT40 assignment",
+       "epoch:Microsoft SAT14 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 16384,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:911-0 assignment",
+       "bi:910-0 assignment",
+       "bi:929-0 assignment",
+       "bi:1212-0 assignment",
+       "bi:907-0 assignment",
+       "bi:907-0 date",
+       "bi:914-0 assignment",
+       "bi:914-0 date",
+       "bi:918-0 assignment",
+       "bi:918-0 date",
+       "bi:928-0 assignment",
+       "epoch:Microsoft SAT40 assignment",
+       "epoch:Microsoft SAT14 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 16384,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:911-0 assignment",
+       "bi:910-0 assignment",
+       "bi:929-0 assignment",
+       "bi:1212-0 assignment",
+       "bi:907-0 assignment",
+       "bi:907-0 date",
+       "bi:914-0 assignment",
+       "bi:914-0 date",
+       "bi:918-0 assignment",
+       "bi:918-0 date",
+       "bi:928-0 assignment",
+       "epoch:Microsoft SAT40 assignment",
+       "epoch:Microsoft SAT14 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment",
+     "timing"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 16440,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "enumerated in every screen case",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2003,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "1273:TX": {
+   "name": "Bartlett Electric Coop, Inc",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:924-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:924-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:924-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 3,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2024,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "5063:TX": {
+   "name": "City of Denton - (TX)",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 1,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": 2025
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "8620:TX": {
+   "name": "HILCO Electric Cooperative, Inc.",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 8,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:930-0 assignment",
+       "bi:1258-0 assignment",
+       "epoch:Google Red Oak assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 8,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:930-0 assignment",
+       "bi:1258-0 assignment",
+       "epoch:Google Red Oak assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 8,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:930-0 assignment",
+       "bi:1258-0 assignment",
+       "epoch:Google Red Oak assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 30,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2014,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "9324:IN": {
+   "name": "Indiana Michigan Power Co",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:603-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:603-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:603-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 3,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": 2025
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "11018:NE": {
+   "name": "Lincoln Electric System",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 1,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": 2025
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "11560:VA": {
+   "name": "City of Manassas - (VA)",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:1040-2 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:1040-2 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:1040-2 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 2,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2024,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "12199:ND": {
+   "name": "Montana-Dakota Utilities Co",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:679-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:679-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:679-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 6,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2020,
+    "latest": 2025
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)",
+    "crypto-mining load of 2% or more (largest 96.7%)"
+   ]
+  },
+  "12293:TN": {
+   "name": "City of Memphis - (TN)",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 1,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2024,
+    "latest": 2024
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "12685:MS": {
+   "name": "Entergy Mississippi LLC",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 1,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": 2025
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "12866:UT": {
+   "name": "Moon Lake Electric Assn Inc",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 2,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2024,
+    "latest": 2024
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "13756:IN": {
+   "name": "Northern Indiana Pub Serv Co",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 6,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2020,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "13788:OR": {
+   "name": "Northern Wasco County PUD - (OR)",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 1,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 1,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": 2025
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "13998:OH": {
+   "name": "Ohio Edison Co",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "epoch:AWS New Albany assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "epoch:AWS New Albany assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "epoch:AWS New Albany assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 2,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2024,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "15776:FL": {
+   "name": "Central Florida Tourism Oversight District",
+   "first_crossing_on_the_frame": 2023,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2023"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2023"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:1209-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:1209-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:1209-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 3,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2023,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "18976:TX": {
+   "name": "Trinity Valley Elec Coop Inc",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 4,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:930-0 assignment",
+       "bi:1258-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 4,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:930-0 assignment",
+       "bi:1258-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 4,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:930-0 assignment",
+       "bi:1258-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 15,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2014,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "19501:OH": {
+   "name": "Union Rural Electric Coop, Inc",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2024"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": true,
+    "status": "keeps its place within the modeled histories",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2024"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": true,
+      "relevant_questions": [
+       "bi:794-0 date"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": true,
+      "relevant_questions": [
+       "bi:794-0 date"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": true,
+      "relevant_questions": [
+       "bi:794-0 date"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "timing"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 5,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "date cases (every year of each interval, open below, never)": "enumerated in every screen case",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2024,
+    "latest": 2024
+   },
+   "late_host_in_every_admissible_history": true,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017
+   ],
+   "other_comparison_rules_failed": []
+  },
+  "19856:NJ": {
+   "name": "City of Vineland - (NJ)",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "epoch:Microsoft-Nebius New Jersey assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "epoch:Microsoft-Nebius New Jersey assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "epoch:Microsoft-Nebius New Jersey assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 2,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "20413:ND": {
+   "name": "Mountrail-Williams Elec Coop",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:679-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:679-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:679-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 6,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2020,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)",
+    "crypto-mining load of 2% or more (largest 322.1%)"
+   ]
+  },
+  "22822:IN": {
+   "name": "Clark County Rural E M C - (IN)",
+   "first_crossing_on_the_frame": 2025,
+   "place_test_reference": {
+    "defined": true,
+    "place": "late",
+    "crossing": "2025"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": false,
+    "status": "does not keep its place",
+    "method": "exact"
+   },
+   "coverage_complete": true,
+   "why_incomplete": [],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:609-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:609-0 assignment"
+      ],
+      "enumerated": true
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 2,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:609-0 assignment"
+      ],
+      "enumerated": true
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 3,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "enumerated in every screen case",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "enumerated",
+      "3": "enumerated",
+      "5": "enumerated"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": {
+    "earliest": 2025,
+    "latest": "never"
+   },
+   "late_host_in_every_admissible_history": false,
+   "criterion_holds_for_cohorts": [
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018
+   ],
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  },
+  "44372:TX": {
+   "name": "Oncor Electric Delivery Company, LLC",
+   "first_crossing_on_the_frame": 2024,
+   "place_test_reference": {
+    "defined": true,
+    "place": "neither",
+    "crossing": "never"
+   },
+   "place_test_verdict": {
+    "keeps_its_place": null,
+    "status": "unsettled: every screen case over the ceiling of 100000 on its own (0: 262144, 3: 262144, 5: 262144), and the envelope cannot settle it; uncertain in assignment, comparison eligibility",
+    "method": "envelope"
+   },
+   "coverage_complete": false,
+   "why_incomplete": [
+    "no positive 2009-2011 sales base, so no share can be computed",
+    "screen case 0: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated",
+    "screen case 3: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated",
+    "screen case 5: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated"
+   ],
+   "coverage": {
+    "reference": {
+     "defined": true,
+     "place": "neither",
+     "crossing": "never"
+    },
+    "screen_cases": [
+     {
+      "screen_shift": 0,
+      "configurations": 262144,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:881-0 assignment",
+       "bi:930-0 assignment",
+       "bi:882-0 assignment",
+       "bi:1181-0 assignment",
+       "bi:1190-0 assignment",
+       "bi:900-0 assignment",
+       "bi:876-0 assignment",
+       "bi:931-0 assignment",
+       "bi:935-0 assignment",
+       "bi:1198-0 assignment",
+       "bi:1392-0 assignment",
+       "bi:1258-0 assignment",
+       "bi:1199-0 assignment",
+       "bi:924-0 assignment",
+       "bi:932-0 assignment",
+       "bi:925-0 assignment",
+       "bi:922-0 assignment",
+       "epoch:Google Red Oak assignment"
+      ],
+      "enumerated": false
+     },
+     {
+      "screen_shift": 3,
+      "configurations": 262144,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:881-0 assignment",
+       "bi:930-0 assignment",
+       "bi:882-0 assignment",
+       "bi:1181-0 assignment",
+       "bi:1190-0 assignment",
+       "bi:900-0 assignment",
+       "bi:876-0 assignment",
+       "bi:931-0 assignment",
+       "bi:935-0 assignment",
+       "bi:1198-0 assignment",
+       "bi:1392-0 assignment",
+       "bi:1258-0 assignment",
+       "bi:1199-0 assignment",
+       "bi:924-0 assignment",
+       "bi:932-0 assignment",
+       "bi:925-0 assignment",
+       "bi:922-0 assignment",
+       "epoch:Google Red Oak assignment"
+      ],
+      "enumerated": false
+     },
+     {
+      "screen_shift": 5,
+      "configurations": 262144,
+      "factor_recomputed_in_each": false,
+      "relevant_questions": [
+       "bi:881-0 assignment",
+       "bi:930-0 assignment",
+       "bi:882-0 assignment",
+       "bi:1181-0 assignment",
+       "bi:1190-0 assignment",
+       "bi:900-0 assignment",
+       "bi:876-0 assignment",
+       "bi:931-0 assignment",
+       "bi:935-0 assignment",
+       "bi:1198-0 assignment",
+       "bi:1392-0 assignment",
+       "bi:1258-0 assignment",
+       "bi:1199-0 assignment",
+       "bi:924-0 assignment",
+       "bi:932-0 assignment",
+       "bi:925-0 assignment",
+       "bi:922-0 assignment",
+       "epoch:Google Red Oak assignment"
+      ],
+      "enumerated": false
+     }
+    ],
+    "question_kinds_relevant": [
+     "assignment"
+    ],
+    "readings": [
+     "as_built",
+     "no_anchoring"
+    ],
+    "ceiling_per_screen_case": 100000,
+    "distinct_histories_enumerated": 0,
+    "classes": {
+     "assignment (as mapped, each candidate, off the panel; contains D-46 ruling 4's three cases)": "not enumerated in screen case(s) 0, 3, 5",
+     "date cases (every year of each interval, open below, never)": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "capacity cases": "no question of this kind is relevant to the unit (nothing to enumerate)",
+     "generic screen (0, 3 and 5 years earlier)": {
+      "0": "not enumerated: over the ceiling",
+      "3": "not enumerated: over the ceiling",
+      "5": "not enumerated: over the ceiling"
+     },
+     "anchoring (each state's factor recomputed in every configuration)": "within each enumerated case",
+     "readings (as built; with no anchoring)": "both, within each enumerated case"
+    }
+   },
+   "slow_path_history_added": true,
+   "first_crossing_across_its_histories": null,
+   "late_host_in_every_admissible_history": null,
+   "criterion_holds_for_cohorts": "not shown: coverage incomplete",
+   "other_comparison_rules_failed": [
+    "set aside (power_simulation.set_aside at 2%: D-20, D-28 or a treatment_bounds list)"
+   ]
+  }
+ },
+ "late_hosts_not_shown_admissible_in_every_admissible_history": [
+  {
+   "utility": "44372:TX",
+   "name": "Oncor Electric Delivery Company, LLC",
+   "why": [
+    "no positive 2009-2011 sales base, so no share can be computed",
+    "screen case 0: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated",
+    "screen case 3: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated",
+    "screen case 5: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated"
+   ]
+  }
+ ],
+ "criterion_holds_by_cohort_before_the_other_rules": {
+  "2011": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12199:ND",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13756:IN",
+   "13788:OR",
+   "13998:OH",
+   "15776:FL",
+   "19501:OH",
+   "19856:NJ",
+   "20413:ND",
+   "22822:IN"
+  ],
+  "2012": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12199:ND",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13756:IN",
+   "13788:OR",
+   "13998:OH",
+   "15776:FL",
+   "19501:OH",
+   "19856:NJ",
+   "20413:ND",
+   "22822:IN"
+  ],
+  "2013": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12199:ND",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13756:IN",
+   "13788:OR",
+   "13998:OH",
+   "15776:FL",
+   "19501:OH",
+   "19856:NJ",
+   "20413:ND",
+   "22822:IN"
+  ],
+  "2014": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "13998:OH",
+   "15776:FL",
+   "19501:OH",
+   "19856:NJ",
+   "22822:IN"
+  ],
+  "2015": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "13998:OH",
+   "15776:FL",
+   "19501:OH",
+   "19856:NJ",
+   "22822:IN"
+  ],
+  "2016": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "13998:OH",
+   "15776:FL",
+   "19501:OH",
+   "19856:NJ",
+   "22822:IN"
+  ],
+  "2017": [
+   "1273:TX",
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "11560:VA",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "13998:OH",
+   "19501:OH",
+   "19856:NJ",
+   "22822:IN"
+  ],
+  "2018": [
+   "5063:TX",
+   "9324:IN",
+   "11018:NE",
+   "12685:MS",
+   "13788:OR",
+   "19856:NJ",
+   "22822:IN"
+  ]
+ },
+ "admitted_by_cohort_meeting_the_other_rules": {
+  "2011": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2012": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2013": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2014": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2015": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2016": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2017": [
+   "5063:TX",
+   "9324:IN",
+   "12293:TN",
+   "12685:MS",
+   "12866:UT",
+   "13788:OR",
+   "19501:OH"
+  ],
+  "2018": [
+   "5063:TX",
+   "9324:IN",
+   "12685:MS",
+   "13788:OR"
+  ]
+ },
+ "side_run": {
+  "hosts": "the headline set's",
+  "headline_cohorts": [
+   2015,
+   2017,
+   2019,
+   2020,
+   2021
+  ],
+  "future_hosts_added_to_each_headline_cohorts_pool": {
+   "2015": {
+    "admitted_and_meeting_the_other_rules": [
+     "5063:TX",
+     "9324:IN",
+     "12293:TN",
+     "12685:MS",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH"
+    ],
+    "after_the_load_unknown_gate": [
+     "12293:TN",
+     "12685:MS",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH",
+     "5063:TX",
+     "9324:IN"
+    ],
+    "with_a_usable_full_window_in_the_cohorts_window": [
+     "5063:TX",
+     "9324:IN",
+     "12293:TN",
+     "12685:MS",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH"
+    ]
+   },
+   "2017": {
+    "admitted_and_meeting_the_other_rules": [
+     "5063:TX",
+     "9324:IN",
+     "12293:TN",
+     "12685:MS",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH"
+    ],
+    "after_the_load_unknown_gate": [
+     "12293:TN",
+     "12685:MS",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH",
+     "5063:TX",
+     "9324:IN"
+    ],
+    "with_a_usable_full_window_in_the_cohorts_window": [
+     "5063:TX",
+     "9324:IN",
+     "12293:TN",
+     "12685:MS",
+     "12866:UT",
+     "13788:OR",
+     "19501:OH"
+    ]
+   },
+   "2019": {
+    "admitted_and_meeting_the_other_rules": [],
+    "after_the_load_unknown_gate": [],
+    "with_a_usable_full_window_in_the_cohorts_window": []
+   },
+   "2020": {
+    "admitted_and_meeting_the_other_rules": [],
+    "after_the_load_unknown_gate": [],
+    "with_a_usable_full_window_in_the_cohorts_window": []
+   },
+   "2021": {
+    "admitted_and_meeting_the_other_rules": [],
+    "after_the_load_unknown_gate": [],
+    "with_a_usable_full_window_in_the_cohorts_window": []
+   }
+  },
+  "headline_pool_unchanged": {
+   "headline_design_against_design_support_json": true,
+   "wrapper_with_nobody_admitted_equals_the_headline_design": true,
+   "differences": [],
+   "headline_pool": "built by design.build_with_rules from design.split; this module never passes its additions to it"
+  },
+  "against_the_headline_design": {
+   "per_host": [
+    {
+     "utility": "14354:UT",
+     "name": "PacifiCorp",
+     "cohort": 2015,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 184,
+     "pool_in_the_reference_year_side_run": 186,
+     "future_hosts_among_its_matches": [],
+     "n_future_hosts_among_its_matches": 0,
+     "matches_entered": [],
+     "matches_left": []
+    },
+    {
+     "utility": "6958:TX",
+     "name": "City of Garland - (TX)",
+     "cohort": 2017,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 37,
+     "pool_in_the_reference_year_side_run": 38,
+     "future_hosts_among_its_matches": [
+      "5063:TX"
+     ],
+     "n_future_hosts_among_its_matches": 1,
+     "matches_entered": [
+      "5063:TX"
+     ],
+     "matches_left": [
+      "12452:TX"
+     ]
+    },
+    {
+     "utility": "17166:NV",
+     "name": "Sierra Pacific Power Co",
+     "cohort": 2017,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 118,
+     "pool_in_the_reference_year_side_run": 120,
+     "future_hosts_among_its_matches": [],
+     "n_future_hosts_among_its_matches": 0,
+     "matches_entered": [],
+     "matches_left": []
+    },
+    {
+     "utility": "14127:NE",
+     "name": "Omaha Public Power District",
+     "cohort": 2019,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 107,
+     "pool_in_the_reference_year_side_run": 107,
+     "future_hosts_among_its_matches": [],
+     "n_future_hosts_among_its_matches": 0,
+     "matches_entered": [],
+     "matches_left": []
+    },
+    {
+     "utility": "15473:NM",
+     "name": "Public Service Co of NM",
+     "cohort": 2019,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 128,
+     "pool_in_the_reference_year_side_run": 128,
+     "future_hosts_among_its_matches": [],
+     "n_future_hosts_among_its_matches": 0,
+     "matches_entered": [],
+     "matches_left": []
+    },
+    {
+     "utility": "803:AZ",
+     "name": "Arizona Public Service Co",
+     "cohort": 2020,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 128,
+     "pool_in_the_reference_year_side_run": 128,
+     "future_hosts_among_its_matches": [],
+     "n_future_hosts_among_its_matches": 0,
+     "matches_entered": [],
+     "matches_left": []
+    },
+    {
+     "utility": "20065:GA",
+     "name": "Walton Electric Member Corp",
+     "cohort": 2021,
+     "in_the_headline_design": true,
+     "in_the_side_run": true,
+     "pool_in_the_reference_year_headline": 342,
+     "pool_in_the_reference_year_side_run": 342,
+     "future_hosts_among_its_matches": [],
+     "n_future_hosts_among_its_matches": 0,
+     "matches_entered": [],
+     "matches_left": []
+    }
+   ],
+   "hosts_gained": [],
+   "hosts_lost": [],
+   "totals": {
+    "hosts_in_the_headline_design": 7,
+    "hosts_in_the_side_run": 7,
+    "hosts_with_a_future_host_among_their_matches": 1,
+    "future_host_matches": 1,
+    "distinct_future_hosts_matched": 1,
+    "matches_changed": 1
+   }
+  },
+  "investor_owned_future_hosts_with_no_ownership_row_and_rule_2_2": {
+   "what_this_is": "report only, nothing changed (Joe's ruling of 2026-11-19 speaks to E2 alone): each admitted future host that is investor-owned with no ownership row in some year of a headline cohort's window (rule 2.2 read year by year, Joe, 2026-11-19, D-107), and for each headline host of that cohort whether the unit is in its in-region pool and whether rule 2.2's bar (ownership.ineligible_for, NO_ROW) removes it there. The bar is applied by build_with_rules inside side_run_design to every host's in-region pool; it bites only on an investor-owned host, and only on units in the host's region in the reference year.",
+   "units": [
+    {
+     "utility": "12685:MS",
+     "name": "Entergy Mississippi LLC",
+     "ownership_class": "investor_owned",
+     "admitted_for_cohorts": [
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018
+     ],
+     "headline_hosts_of_those_cohorts": [
+      {
+       "host": "6958:TX",
+       "host_name": "City of Garland - (TX)",
+       "cohort": 2017,
+       "host_ownership_class": "public",
+       "host_region": "ERCOT",
+       "unit_region_in_the_reference_year": "MISO",
+       "in_the_hosts_in_region_pool": false,
+       "barred_from_its_pool_by": [],
+       "among_its_matches": false
+      },
+      {
+       "host": "14354:UT",
+       "host_name": "PacifiCorp",
+       "cohort": 2015,
+       "host_ownership_class": "investor_owned",
+       "host_region": "West",
+       "unit_region_in_the_reference_year": "Southeast",
+       "in_the_hosts_in_region_pool": false,
+       "barred_from_its_pool_by": [],
+       "among_its_matches": false
+      },
+      {
+       "host": "17166:NV",
+       "host_name": "Sierra Pacific Power Co",
+       "cohort": 2017,
+       "host_ownership_class": "investor_owned",
+       "host_region": "West",
+       "unit_region_in_the_reference_year": "MISO",
+       "in_the_hosts_in_region_pool": false,
+       "barred_from_its_pool_by": [],
+       "among_its_matches": false
+      }
+     ]
+    }
+   ]
+  },
+  "design": {
+   "hosts": [
+    {
+     "utility": "803:AZ",
+     "name": "Arizona Public Service Co",
+     "cohort": 2020,
+     "region": "West",
+     "pool_in_the_reference_year": 128,
+     "matches": [
+      "9191:ID",
+      "16868:WA",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "14354:WY",
+      "14354:WA",
+      "5701:NM",
+      "56146:CO"
+     ]
+    },
+    {
+     "utility": "6958:TX",
+     "name": "City of Garland - (TX)",
+     "cohort": 2017,
+     "region": "ERCOT",
+     "pool_in_the_reference_year": 38,
+     "matches": [
+      "5063:TX",
+      "2442:TX",
+      "11501:TX",
+      "2409:TX",
+      "17561:TX",
+      "3940:TX",
+      "3282:TX",
+      "13830:TX",
+      "13418:TX",
+      "12268:TX"
+     ]
+    },
+    {
+     "utility": "14127:NE",
+     "name": "Omaha Public Power District",
+     "cohort": 2019,
+     "region": "SPP",
+     "pool_in_the_reference_year": 107,
+     "matches": [
+      "22500:KS",
+      "10005:KS",
+      "10000:MO",
+      "17718:TX",
+      "17698:LA",
+      "17698:TX",
+      "5860:MO",
+      "17833:MO",
+      "17718:NM",
+      "11292:TX"
+     ]
+    },
+    {
+     "utility": "14354:UT",
+     "name": "PacifiCorp",
+     "cohort": 2015,
+     "region": "West",
+     "pool_in_the_reference_year": 186,
+     "matches": [
+      "9191:ID",
+      "16868:WA",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "56146:CO",
+      "5701:NM",
+      "6022:OR",
+      "6604:CO"
+     ]
+    },
+    {
+     "utility": "15473:NM",
+     "name": "Public Service Co of NM",
+     "cohort": 2019,
+     "region": "West",
+     "pool_in_the_reference_year": 128,
+     "matches": [
+      "9191:ID",
+      "16868:WA",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "14354:WY",
+      "14354:WA",
+      "5701:NM",
+      "56146:CO"
+     ]
+    },
+    {
+     "utility": "17166:NV",
+     "name": "Sierra Pacific Power Co",
+     "cohort": 2017,
+     "region": "West",
+     "pool_in_the_reference_year": 120,
+     "matches": [
+      "5701:TX",
+      "17470:WA",
+      "16868:WA",
+      "9191:ID",
+      "3660:WA",
+      "18429:WA",
+      "5701:NM",
+      "56146:CO",
+      "6022:OR",
+      "6604:CO"
+     ]
+    },
+    {
+     "utility": "20065:GA",
+     "name": "Walton Electric Member Corp",
+     "cohort": 2021,
+     "region": "Southeast",
+     "pool_in_the_reference_year": 342,
+     "matches": [
+      "21632:NC",
+      "10623:FL",
+      "3046:SC",
+      "18445:FL",
+      "19898:TN",
+      "17832:GA",
+      "3408:TN",
+      "17543:SC",
+      "3757:FL",
+      "6909:FL"
+     ]
+    }
+   ],
+   "dropped": [],
+   "support_rule_by_host": [
+    {
+     "utility_id_eia": 803,
+     "state": "AZ",
+     "cohort": 2020,
+     "pool_in_the_reference_year": 128,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 6958,
+     "state": "TX",
+     "cohort": 2017,
+     "pool_in_the_reference_year": 38,
+     "matched_in_region_event_year_2": 9,
+     "matched_in_region_event_year_3": 9,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 14127,
+     "state": "NE",
+     "cohort": 2019,
+     "pool_in_the_reference_year": 107,
+     "matched_in_region_event_year_2": 9,
+     "matched_in_region_event_year_3": 9,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 14354,
+     "state": "UT",
+     "cohort": 2015,
+     "pool_in_the_reference_year": 186,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 15473,
+     "state": "NM",
+     "cohort": 2019,
+     "pool_in_the_reference_year": 128,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 17166,
+     "state": "NV",
+     "cohort": 2017,
+     "pool_in_the_reference_year": 120,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 20065,
+     "state": "GA",
+     "cohort": 2021,
+     "pool_in_the_reference_year": 342,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    }
+   ],
+   "load_unknown_excluded": [],
+   "hosts_with_unresolved_ownership": [
+    {
+     "utility": "803:AZ",
+     "cohort": 2020,
+     "years": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+     ],
+     "reason_by_year": {
+      "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+     },
+     "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+     "in_this_run": "kept"
+    },
+    {
+     "utility": "15473:NM",
+     "cohort": 2019,
+     "years": [
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+     ],
+     "reason_by_year": {
+      "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+      "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+     },
+     "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+     "in_this_run": "kept"
+    }
+   ]
+  }
+ },
+ "E2": {
+  "units": [
+   {
+    "utility": "5063:TX",
+    "name": "City of Denton - (TX)",
+    "fake_date_f": 2018,
+    "window": [
+     2012,
+     2021
+    ],
+    "reference_year": 2015,
+    "first_crossing_on_the_frame": 2025
+   },
+   {
+    "utility": "9324:IN",
+    "name": "Indiana Michigan Power Co",
+    "fake_date_f": 2018,
+    "window": [
+     2012,
+     2021
+    ],
+    "reference_year": 2015,
+    "first_crossing_on_the_frame": 2025
+   },
+   {
+    "utility": "12293:TN",
+    "name": "City of Memphis - (TN)",
+    "fake_date_f": 2017,
+    "window": [
+     2011,
+     2020
+    ],
+    "reference_year": 2014,
+    "first_crossing_on_the_frame": 2024
+   },
+   {
+    "utility": "12866:UT",
+    "name": "Moon Lake Electric Assn Inc",
+    "fake_date_f": 2017,
+    "window": [
+     2011,
+     2020
+    ],
+    "reference_year": 2014,
+    "first_crossing_on_the_frame": 2024
+   },
+   {
+    "utility": "13788:OR",
+    "name": "Northern Wasco County PUD - (OR)",
+    "fake_date_f": 2018,
+    "window": [
+     2012,
+     2021
+    ],
+    "reference_year": 2015,
+    "first_crossing_on_the_frame": 2025
+   },
+   {
+    "utility": "19501:OH",
+    "name": "Union Rural Electric Coop, Inc",
+    "fake_date_f": 2017,
+    "window": [
+     2011,
+     2020
+    ],
+    "reference_year": 2014,
+    "first_crossing_on_the_frame": 2024
+   }
+  ],
+  "left_out": [
+   {
+    "utility": "1175:TX",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Bandera Electric Coop, Inc"
+   },
+   {
+    "utility": "1273:TX",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Bartlett Electric Coop, Inc"
+   },
+   {
+    "utility": "8620:TX",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "HILCO Electric Cooperative, Inc."
+   },
+   {
+    "utility": "11018:NE",
+    "why": [
+     "set aside"
+    ],
+    "name": "Lincoln Electric System"
+   },
+   {
+    "utility": "11560:VA",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "City of Manassas - (VA)"
+   },
+   {
+    "utility": "12199:ND",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Montana-Dakota Utilities Co"
+   },
+   {
+    "utility": "12685:MS",
+    "why": [
+     "left out of E2 (Joe, 2026-11-19): an investor-owned pseudo-host with no ownership row covering every year (2012 to 2021) of its fake window, so no shared parent with its investor-owned matches can be shown or ruled out (rule 2.3); the ownership table was sourced for cohort hosts and eligible comparisons, not for late hosts standing as hosts. The general rule (any investor-owned pseudo-host with a year of its fake window that no ownership row covers) is the session's reading of the ruling"
+    ],
+    "ownership_rule_of_2026_11_19": true,
+    "fake_date_f": 2018,
+    "fake_window": [
+     2012,
+     2021
+    ],
+    "years_with_no_ownership_row": [
+     2012,
+     2013,
+     2014,
+     2015,
+     2016,
+     2017,
+     2018,
+     2019,
+     2020,
+     2021
+    ],
+    "name": "Entergy Mississippi LLC"
+   },
+   {
+    "utility": "13756:IN",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Northern Indiana Pub Serv Co"
+   },
+   {
+    "utility": "13998:OH",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Ohio Edison Co"
+   },
+   {
+    "utility": "15776:FL",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Central Florida Tourism Oversight District"
+   },
+   {
+    "utility": "18976:TX",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Trinity Valley Elec Coop Inc"
+   },
+   {
+    "utility": "19856:NJ",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "City of Vineland - (NJ)"
+   },
+   {
+    "utility": "20413:ND",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Mountrail-Williams Elec Coop"
+   },
+   {
+    "utility": "22822:IN",
+    "why": [
+     "not a late host in every admissible history",
+     "set aside"
+    ],
+    "name": "Clark County Rural E M C - (IN)"
+   },
+   {
+    "utility": "44372:TX",
+    "why": [
+     "not shown admissible in every admissible history: no positive 2009-2011 sales base, so no share can be computed; screen case 0: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated; screen case 3: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated; screen case 5: 262144 configurations, over the ceiling of 100000; the place test takes this case to the envelope, which gives no share series, so its histories are not enumerated",
+     "set aside"
+    ],
+    "name": "Oncor Electric Delivery Company, LLC"
+   }
+  ],
+  "pseudo_hosts_with_no_ownership_row_ruling_of_2026_11_19": {
+   "ruling": "I accept excluding Entergy Mississippi from E2 with the reason disclosed, unless existing permitted evidence resolves the relevant affiliation. This does not change headline-host eligibility.",
+   "existing_permitted_evidence_checked": "pipeline/analysis/ownership.csv: no row for utility_id_eia 12685 (rows exist for Entergy Arkansas, Entergy Louisiana and Entergy New Orleans, each listed at 2025-12-31 with earlier years assumed). pipeline/analysis/leads/: no lead row names 12685 or Entergy Mississippi in any lead file; the name appears only inside the captured page text of two fetch records in ownership_opened_2026-11-18.csv (fetch 125, entergy.com's customer menu; fetch 272, Entergy Corporation's Exhibit 21 as of 2025-12-31, whose searched fragments were Entergy Arkansas, Entergy Louisiana and Entergy New Orleans). Neither is a row with a source, and the Exhibit 21 text speaks to 2025-12-31, outside the window 2012 to 2021. Not resolved; no row was added and no lookup was made (checked 2026-11-19)",
+   "rule_as_implemented": "any investor-owned pseudo-host (the panel's ownership class) with a year of its fake window f-6 to f+3 that no row of ownership.csv covers is left out of E2 and named; the session's reading of the ruling, applied as a rule of E2's unit selection only",
+   "units_the_rule_removes": [
+    {
+     "utility": "12685:MS",
+     "why": [
+      "left out of E2 (Joe, 2026-11-19): an investor-owned pseudo-host with no ownership row covering every year (2012 to 2021) of its fake window, so no shared parent with its investor-owned matches can be shown or ruled out (rule 2.3); the ownership table was sourced for cohort hosts and eligible comparisons, not for late hosts standing as hosts. The general rule (any investor-owned pseudo-host with a year of its fake window that no ownership row covers) is the session's reading of the ruling"
+     ],
+     "ownership_rule_of_2026_11_19": true,
+     "fake_date_f": 2018,
+     "fake_window": [
+      2012,
+      2021
+     ],
+     "years_with_no_ownership_row": [
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021
+     ],
+     "name": "Entergy Mississippi LLC",
+     "matches_before_the_ruling": [
+      "20856:WI",
+      "3265:LA",
+      "814:AR",
+      "13780:WI",
+      "15470:IN",
+      "13478:LA",
+      "11241:LA",
+      "56697:IL",
+      "11479:WI",
+      "689:MN"
+     ]
+    }
+   ],
+   "units_before_the_ruling": [
+    "12293:TN",
+    "12685:MS",
+    "12866:UT",
+    "13788:OR",
+    "19501:OH",
+    "5063:TX",
+    "9324:IN"
+   ],
+   "units_after_the_ruling": [
+    "12293:TN",
+    "12866:UT",
+    "13788:OR",
+    "19501:OH",
+    "5063:TX",
+    "9324:IN"
+   ],
+   "other_units_matches_unchanged": true,
+   "headline_host_eligibility": "unchanged: the rule is applied to E2's units only; the headline design is built by design.split and build_with_rules with no input from it (see side_run.headline_pool_unchanged)"
+  },
+  "pool": "the headline design's eligible comparison pool (design.split, headline set); no late host is in it",
+  "design": {
+   "hosts": [
+    {
+     "utility": "5063:TX",
+     "name": "City of Denton - (TX)",
+     "cohort": 2018,
+     "region": "ERCOT",
+     "pool_in_the_reference_year": 37,
+     "matches": [
+      "2442:TX",
+      "2409:TX",
+      "17561:TX",
+      "3940:TX",
+      "3282:TX",
+      "13830:TX",
+      "13418:TX",
+      "12268:TX",
+      "12452:TX",
+      "7129:TX"
+     ]
+    },
+    {
+     "utility": "9324:IN",
+     "name": "Indiana Michigan Power Co",
+     "cohort": 2018,
+     "region": "PJM",
+     "pool_in_the_reference_year": 92,
+     "matches": [
+      "12796:WV",
+      "18997:OH",
+      "3755:OH",
+      "17637:MD",
+      "15263:WV",
+      "18085:OH",
+      "19876:NC",
+      "5070:DE",
+      "17066:VA",
+      "17564:KY"
+     ]
+    },
+    {
+     "utility": "12293:TN",
+     "name": "City of Memphis - (TN)",
+     "cohort": 2017,
+     "region": "Southeast",
+     "pool_in_the_reference_year": 342,
+     "matches": [
+      "11249:KY",
+      "9617:FL",
+      "13216:TN",
+      "10171:KY",
+      "5416:SC",
+      "17539:SC",
+      "9601:GA",
+      "14610:FL",
+      "10857:FL",
+      "20885:FL"
+     ]
+    },
+    {
+     "utility": "12866:UT",
+     "name": "Moon Lake Electric Assn Inc",
+     "cohort": 2017,
+     "region": "West",
+     "pool_in_the_reference_year": 127,
+     "matches": [
+      "12692:MT",
+      "1625:WA",
+      "14170:WA",
+      "5862:CO",
+      "10681:OR",
+      "40165:UT",
+      "8566:WY",
+      "14245:NV",
+      "12187:OR",
+      "7222:WY"
+     ]
+    },
+    {
+     "utility": "13788:OR",
+     "name": "Northern Wasco County PUD - (OR)",
+     "cohort": 2018,
+     "region": "West",
+     "pool_in_the_reference_year": 127,
+     "matches": [
+      "13314:NM",
+      "6957:UT",
+      "15231:WA",
+      "19784:WA",
+      "6582:OR",
+      "17845:UT",
+      "3295:WA",
+      "16603:CO",
+      "12744:WA",
+      "17732:UT"
+     ]
+    },
+    {
+     "utility": "19501:OH",
+     "name": "Union Rural Electric Coop, Inc",
+     "cohort": 2017,
+     "region": "PJM",
+     "pool_in_the_reference_year": 105,
+     "matches": [
+      "40221:PA",
+      "13693:OH",
+      "7096:IL",
+      "5625:MD",
+      "14599:OH",
+      "10830:OH",
+      "3329:PA",
+      "1325:IL",
+      "15095:OH",
+      "15410:VA"
+     ]
+    }
+   ],
+   "dropped": [],
+   "support_rule_by_host": [
+    {
+     "utility_id_eia": 5063,
+     "state": "TX",
+     "cohort": 2018,
+     "pool_in_the_reference_year": 37,
+     "matched_in_region_event_year_2": 9,
+     "matched_in_region_event_year_3": 9,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 9324,
+     "state": "IN",
+     "cohort": 2018,
+     "pool_in_the_reference_year": 92,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 12293,
+     "state": "TN",
+     "cohort": 2017,
+     "pool_in_the_reference_year": 342,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 12866,
+     "state": "UT",
+     "cohort": 2017,
+     "pool_in_the_reference_year": 127,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 13788,
+     "state": "OR",
+     "cohort": 2018,
+     "pool_in_the_reference_year": 127,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    },
+    {
+     "utility_id_eia": 19501,
+     "state": "OH",
+     "cohort": 2017,
+     "pool_in_the_reference_year": 105,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": ""
+    }
+   ],
+   "load_unknown_excluded": [],
+   "hosts_with_unresolved_ownership": []
+  }
+ },
+ "inputs": {
+  "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+  "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+  "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6",
+  "data/interim/utility_year_dose.parquet": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34",
+  "data/frozen/timing_place_test.json": "451907076aa10cbf81a78cd95ca81e57252008267e239e1c645e4d22956fcfae",
+  "data/frozen/treatment_bounds.json": "fdccbc0642431756578726b96f53f2822c9c01025c8e5fd497647351c1448351",
+  "data/frozen/design_support.json": "714854ce2eab2a277f9922485f19a67fc08a1b8ad9e4ab2fe217fa2d7c3473e2",
+  "pipeline/analysis/future_hosts.py": "7c26dbddc7d3e9ccdf60dd631e2b574d86e4d821131e793f7218afce2047be7f",
+  "pipeline/analysis/design.py": "07aa7e29777ead3e160ea942879e9c7a7245fdb69851c4b7b23f5f4a9738cdf1",
+  "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+  "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+  "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4"
+ }
+}

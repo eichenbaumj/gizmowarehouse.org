@@ -1,0 +1,365 @@
+{
+  "what_this_is": "What starting every still permit-dated site of 20 MW or more 3, 5 and 10 years earlier does to hosts and to comparison utilities, and each headline host's such sites. Load and sales only. A stress test: it decides nothing.",
+  "undated_large_sites_carrying_load": 76,
+  "their_mw": 5350.7,
+  "utilities_they_are_on": 35,
+  "of_them_filed_as_an_update_to_an_existing_source": 30,
+  "thresholds": {
+    "2%": {
+      "groups_as_built": {
+        "early": 32,
+        "cohort": 41,
+        "late": 21
+      },
+      "groups_at_3_years_earlier": {
+        "early": 29,
+        "cohort": 46,
+        "late": 20
+      },
+      "groups_at_5_years_earlier": {
+        "early": 29,
+        "cohort": 46,
+        "late": 20
+      },
+      "groups_at_10_years_earlier": {
+        "early": 33,
+        "cohort": 42,
+        "late": 20
+      },
+      "utilities_that_change_place": {
+        "at_3_years": 11,
+        "at_5_years": 12,
+        "at_10_years": 17
+      },
+      "factor": "recomputed in every shifted case (D-58 rule 1.7, from step D)",
+      "factor_held_at_its_built_value": {
+        "utilities_that_change_place": {
+          "at_3_years": 7,
+          "at_5_years": 9,
+          "at_10_years": 15
+        }
+      },
+      "changed_by_the_factor_recompute_alone": {
+        "at_3_years": {
+          "move_only_with_the_factor_recomputed": [
+            "4065:OH",
+            "12341:IA",
+            "12351:AZ",
+            "16572:AZ"
+          ],
+          "move_only_with_the_factor_held": []
+        },
+        "at_5_years": {
+          "move_only_with_the_factor_recomputed": [
+            "4065:OH",
+            "12341:IA",
+            "12351:AZ",
+            "16572:AZ"
+          ],
+          "move_only_with_the_factor_held": [
+            "4110:IL"
+          ]
+        },
+        "at_10_years": {
+          "move_only_with_the_factor_recomputed": [
+            "4065:OH",
+            "12341:IA",
+            "12351:AZ"
+          ],
+          "move_only_with_the_factor_held": [
+            "14006:OH"
+          ]
+        }
+      },
+      "the_standard_screen_three_and_five_years": {
+        "utilities": 12,
+        "of_which_cohort_utilities": 4
+      },
+      "moved_by_ten_years_and_by_neither_three_nor_five": {
+        "utilities": 5,
+        "of_which_cohort_utilities": 5,
+        "of_which_in_the_headline_set": 1,
+        "list": [
+          {
+            "utility": "803:AZ",
+            "name": "Arizona Public Service Co",
+            "as_built": "treated 2020",
+            "3_years_earlier": 2021,
+            "5_years_earlier": 2020,
+            "10_years_earlier": 2015,
+            "in_the_headline_set": true,
+            "a_cohort_utility": true
+          },
+          {
+            "utility": "4110:IL",
+            "name": "Commonwealth Edison Co",
+            "as_built": "treated 2014",
+            "3_years_earlier": 2014,
+            "5_years_earlier": 2013,
+            "10_years_earlier": 2010,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          },
+          {
+            "utility": "19325:OR",
+            "name": "Umatilla Electric Coop Assn",
+            "as_built": "treated 2013",
+            "3_years_earlier": 2013,
+            "5_years_earlier": 2013,
+            "10_years_earlier": 2010,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          },
+          {
+            "utility": "7752:TX",
+            "name": "Guadalupe Valley Elec Coop Inc",
+            "as_built": "treated 2021",
+            "3_years_earlier": 2021,
+            "5_years_earlier": 2020,
+            "10_years_earlier": 2015,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          },
+          {
+            "utility": "3461:WY",
+            "name": "Cheyenne Light Fuel & Power",
+            "as_built": "treated 2015",
+            "3_years_earlier": 2015,
+            "5_years_earlier": 2015,
+            "10_years_earlier": 2012,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          }
+        ]
+      },
+      "headline_set": {
+        "hosts": 7,
+        "left_if_the_ten_year_case_were_also_a_screen": 6,
+        "would_leave": [
+          "Arizona Public Service Co"
+        ]
+      },
+      "comparison_utilities": {
+        "eligible": 3019,
+        "of_which_carry_an_undated_large_site": 0,
+        "no_longer_under_0.5pct_at_3_years_earlier": 0,
+        "no_longer_under_0.5pct_at_5_years_earlier": 0,
+        "no_longer_under_0.5pct_at_10_years_earlier": 0,
+        "names_at_ten_years": [],
+        "why_so_few": "a site of 20 MW is 175 GWh a year, so a utility that carries one and is still under 0.5% has to sell 35 TWh or more"
+      }
+    },
+    "5%": {
+      "groups_as_built": {
+        "early": 19,
+        "cohort": 37,
+        "late": 24
+      },
+      "groups_at_3_years_earlier": {
+        "early": 18,
+        "cohort": 40,
+        "late": 22
+      },
+      "groups_at_5_years_earlier": {
+        "early": 19,
+        "cohort": 40,
+        "late": 21
+      },
+      "groups_at_10_years_earlier": {
+        "early": 22,
+        "cohort": 37,
+        "late": 21
+      },
+      "utilities_that_change_place": {
+        "at_3_years": 10,
+        "at_5_years": 11,
+        "at_10_years": 16
+      },
+      "factor": "recomputed in every shifted case (D-58 rule 1.7, from step D)",
+      "factor_held_at_its_built_value": {
+        "utilities_that_change_place": {
+          "at_3_years": 8,
+          "at_5_years": 12,
+          "at_10_years": 15
+        }
+      },
+      "changed_by_the_factor_recompute_alone": {
+        "at_3_years": {
+          "move_only_with_the_factor_recomputed": [
+            "8198:VA",
+            "19604:AZ"
+          ],
+          "move_only_with_the_factor_held": []
+        },
+        "at_5_years": {
+          "move_only_with_the_factor_recomputed": [
+            "8198:VA",
+            "19604:AZ"
+          ],
+          "move_only_with_the_factor_held": [
+            "803:AZ",
+            "7140:GA",
+            "14006:OH"
+          ]
+        },
+        "at_10_years": {
+          "move_only_with_the_factor_recomputed": [
+            "8198:VA",
+            "19604:AZ"
+          ],
+          "move_only_with_the_factor_held": [
+            "14006:OH"
+          ]
+        }
+      },
+      "the_standard_screen_three_and_five_years": {
+        "utilities": 12,
+        "of_which_cohort_utilities": 7
+      },
+      "moved_by_ten_years_and_by_neither_three_nor_five": {
+        "utilities": 4,
+        "of_which_cohort_utilities": 3,
+        "of_which_in_the_headline_set": 0,
+        "list": [
+          {
+            "utility": "803:AZ",
+            "name": "Arizona Public Service Co",
+            "as_built": "treated 2022",
+            "3_years_earlier": 2022,
+            "5_years_earlier": 2021,
+            "10_years_earlier": 2016,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          },
+          {
+            "utility": "4110:IL",
+            "name": "Commonwealth Edison Co",
+            "as_built": "treated 2018",
+            "3_years_earlier": 2019,
+            "5_years_earlier": 2018,
+            "10_years_earlier": 2015,
+            "in_the_headline_set": false,
+            "a_cohort_utility": false
+          },
+          {
+            "utility": "19325:OR",
+            "name": "Umatilla Electric Coop Assn",
+            "as_built": "treated 2013",
+            "3_years_earlier": 2013,
+            "5_years_earlier": 2013,
+            "10_years_earlier": 2010,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          },
+          {
+            "utility": "7752:TX",
+            "name": "Guadalupe Valley Elec Coop Inc",
+            "as_built": "treated 2021",
+            "3_years_earlier": 2021,
+            "5_years_earlier": 2020,
+            "10_years_earlier": 2015,
+            "in_the_headline_set": false,
+            "a_cohort_utility": true
+          }
+        ]
+      },
+      "headline_set": {
+        "hosts": 5,
+        "left_if_the_ten_year_case_were_also_a_screen": 5,
+        "would_leave": []
+      },
+      "comparison_utilities": {
+        "eligible": 3019,
+        "of_which_carry_an_undated_large_site": 0,
+        "no_longer_under_0.5pct_at_3_years_earlier": 0,
+        "no_longer_under_0.5pct_at_5_years_earlier": 0,
+        "no_longer_under_0.5pct_at_10_years_earlier": 0,
+        "names_at_ten_years": [],
+        "why_so_few": "a site of 20 MW is 175 GWh a year, so a utility that carries one and is still under 0.5% has to sell 35 TWh or more"
+      }
+    }
+  },
+  "headline_hosts_permit_dated_sites_of_20_mw_or_more": [
+    {
+      "host": "Arizona Public Service Co",
+      "host_first_crossing": 2020,
+      "site": "bi:1301-0",
+      "operator": "QTS",
+      "place": "Litchfield Park, Maricopa County, AZ",
+      "mw": 406.0,
+      "permit_based_start": 2025,
+      "first_permit_year": 2024,
+      "latest_permit_year": 2024,
+      "permit_kind": "New",
+      "filed_as_an_update_to_an_existing_source": false,
+      "serving_utility": "verified_by_hand",
+      "after_the_hosts_first_crossing": true,
+      "public_record_on_file": {
+        "source": "Maricopa County Assessor, tax year 2027 roll",
+        "record": "The permit address, 17501 W Bethany Home Rd (QTS GLENDALE I DC16 LLC), is vacant commercial land with no construction year. Five other QTS Glendale parcels (DC1, DC2, DC9, DC13, DC14) are coded partly complete with construction years 2024 to 2026; ten more and the infrastructure parcel are vacant.",
+        "caution": "The roll is not a dated page and a partly complete campus can carry load. Needs a dated page either way."
+      }
+    },
+    {
+      "host": "Arizona Public Service Co",
+      "host_first_crossing": 2020,
+      "site": "bi:36-0",
+      "operator": "Aligned Data Centers",
+      "place": "Waddell, Maricopa County, AZ",
+      "mw": 134.6,
+      "permit_based_start": 2025,
+      "first_permit_year": 2024,
+      "latest_permit_year": 2024,
+      "permit_kind": "New",
+      "filed_as_an_update_to_an_existing_source": false,
+      "serving_utility": "verified_by_hand",
+      "after_the_hosts_first_crossing": true,
+      "public_record_on_file": {
+        "source": "Maricopa County Assessor, tax year 2027 roll",
+        "record": "8807 N Reems Rd, ALIGNED DATA CENTERS (GLENDALE) PROPCO LLC: coded partly complete, construction year 2024, value up from $221M to $328M between rolls.",
+        "caution": "Partly complete on the roll is not proof of no load."
+      }
+    }
+  ],
+  "headline_hosts_with_none": [
+    "City of Garland - (TX)",
+    "Omaha Public Power District",
+    "PacifiCorp",
+    "Public Service Co of NM",
+    "Sierra Pacific Power Co",
+    "Walton Electric Member Corp"
+  ],
+  "fingerprint": {
+    "files": {
+      "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+      "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+      "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+      "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+      "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+      "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+      "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+      "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+      "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+      "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+      "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+      "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+      "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+      "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+      "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+      "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6",
+      "data/frozen/headline_set.csv": "1694b56d583530b8a5496f3a9e252191d99e43cf1645d6ee555a10ce979ff6fd"
+    },
+    "settings": {
+      "thresholds": [
+        0.02,
+        0.05
+      ],
+      "shifts": [
+        3,
+        5,
+        10
+      ],
+      "min_mw": 20
+    }
+  }
+}

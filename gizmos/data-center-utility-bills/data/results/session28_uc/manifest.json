@@ -1,0 +1,719 @@
+{
+ "what_this_is": "The manifest of one execution directory: every record written, in the order written, with its file's sha256. the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered. run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced. Written by pipeline/analysis/execute_outcomes.py.",
+ "order_of_unblinding": [
+  "reconciliation_row_U",
+  "reconciliation_row_C",
+  "inventory_against_sales",
+  "main_headline_set",
+  "main_ten_year_set",
+  "main_plus_unsettled",
+  "main_every_cohort_utility",
+  "timing_run_no_anchoring_years",
+  "customer_weighted",
+  "other_outcome_kwh_per_customer",
+  "other_outcome_bill_per_customer",
+  "other_outcome_residential_customers",
+  "second_number_as_assigned",
+  "second_number_settled_only_classes_2_to_4",
+  "second_number_ten_highest_leverage_left_out",
+  "second_number_sensitivity_scenario_a_runner_up_placement",
+  "second_number_sensitivity_scenario_b_other_end_of_every_dated_interval",
+  "second_number_e3_after_period_2024_2025",
+  "second_number_year_by_year",
+  "affiliates_readmitted",
+  "shared_suppliers_removed",
+  "leave_one_comparison_out",
+  "leave_one_company_out",
+  "unresolved_ownership_excluded",
+  "later_start_plus_1",
+  "later_start_plus_3",
+  "later_start_plus_5",
+  "callaway_santanna",
+  "estimators_agree",
+  "longer_horizon",
+  "future_hosts_as_comparisons",
+  "own_state_comparisons",
+  "threshold_1pct",
+  "threshold_5pct",
+  "fuel_mix_categorical",
+  "fuel_mix_none",
+  "size_band_side_run",
+  "E1",
+  "E2",
+  "E3",
+  "E4a",
+  "E4b",
+  "E5",
+  "E6",
+  "E7_earlier",
+  "E7_later",
+  "condition_1_load_share",
+  "condition_2_investor_owned",
+  "condition_3_retail_choice_proxy",
+  "condition_4_past_utilization",
+  "influence_each_market_region_left_out",
+  "influence_each_state_left_out",
+  "influence_virginia_left_out",
+  "influence_five_highest_load_utilities_dropped",
+  "tariff_check",
+  "regional_layer",
+  "exploratory_work"
+ ],
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "474756359174633a2ae9ec3222983ab43288bb6c",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T00:41:09+00:00"
+ },
+ "records": [
+  {
+   "sequence": 1,
+   "file": "0001_read_time_checks.json",
+   "sha256": "cbbe6debea01c039f26be0590b301b89298413f1fca72aef6cde657c7e6cf463",
+   "kind": "read_time_checks",
+   "stage": "before_any_estimate",
+   "entry_id": null,
+   "estimated": false,
+   "written_at_utc": "2026-11-21T00:41:09+00:00"
+  },
+  {
+   "sequence": 2,
+   "file": "0002_reconciliation_row_U.json",
+   "sha256": "b7c507f38c9f7ca47f7218347169baa90b4f14da3353971b7029ef19b51c860e",
+   "kind": "entry",
+   "stage": "row_U",
+   "entry_id": "reconciliation_row_U",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T00:41:16+00:00"
+  },
+  {
+   "sequence": 3,
+   "file": "0003_reconciliation_row_C.json",
+   "sha256": "205574a0ba48076f50fb210e7d5e53d18cea930099e5603f6449203f0def9e29",
+   "kind": "entry",
+   "stage": "row_C",
+   "entry_id": "reconciliation_row_C",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T00:41:17+00:00"
+  },
+  {
+   "sequence": 4,
+   "file": "0004_read_time_checks.json",
+   "sha256": "1fdc14a295486c0e26c5be0cdd7f558e188e2471cd118b8f4d8cd831e102bfc2",
+   "kind": "read_time_checks",
+   "stage": "before_any_estimate",
+   "entry_id": null,
+   "estimated": false,
+   "written_at_utc": "2026-11-21T04:12:19+00:00"
+  },
+  {
+   "sequence": 5,
+   "file": "0005_inventory_against_sales.json",
+   "sha256": "a26298d60897f07eb2119ff4a284a25d42d75fbe64697350bda20b2cfec85944",
+   "kind": "entry",
+   "stage": "inventory_against_sales",
+   "entry_id": "inventory_against_sales",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:22+00:00"
+  },
+  {
+   "sequence": 6,
+   "file": "0006_main_headline_set.json",
+   "sha256": "4e09f8274c5aead90ab6d04711a86b03dc1944fe4dafc77ae9fdae4a6c512647",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "main_headline_set",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:24+00:00"
+  },
+  {
+   "sequence": 7,
+   "file": "0007_main_ten_year_set.json",
+   "sha256": "76202288accb72b49b9ee2a4a87a11cb26107bca2d0e9e69110925cd383d33de",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "main_ten_year_set",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:26+00:00"
+  },
+  {
+   "sequence": 8,
+   "file": "0008_main_plus_unsettled.json",
+   "sha256": "b0871faa2972440234253d15a374ed2bbf59074af5282d54587a93ee19e38f2f",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "main_plus_unsettled",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:31+00:00"
+  },
+  {
+   "sequence": 9,
+   "file": "0009_main_every_cohort_utility.json",
+   "sha256": "5395daad426a0cc26f02cd4307ff7266d5201efc8ec81fe0b06724c901844353",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "main_every_cohort_utility",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:41+00:00"
+  },
+  {
+   "sequence": 10,
+   "file": "0010_timing_run_no_anchoring_years.json",
+   "sha256": "2dc5bedd7acc285a28489f193e2d1efba4d4b0401b825983250f6e80ced4e43f",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "timing_run_no_anchoring_years",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:49+00:00"
+  },
+  {
+   "sequence": 11,
+   "file": "0011_customer_weighted.json",
+   "sha256": "28c529b19a63eaf9ad41390d01f6d5319c3f5227f2db6d1c761bb2f61af56bfc",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "customer_weighted",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:51+00:00"
+  },
+  {
+   "sequence": 12,
+   "file": "0012_other_outcome_kwh_per_customer.json",
+   "sha256": "7a5b4cfc8ac4c6f2e53c551bc8f8be246529e1591dfdad249e77ba84047f10b0",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "other_outcome_kwh_per_customer",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:53+00:00"
+  },
+  {
+   "sequence": 13,
+   "file": "0013_other_outcome_bill_per_customer.json",
+   "sha256": "8da9f9a9a04a56764e44b7ff77edd900540d210a1c709ca6c25a52ba86a89011",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "other_outcome_bill_per_customer",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:56+00:00"
+  },
+  {
+   "sequence": 14,
+   "file": "0014_other_outcome_residential_customers.json",
+   "sha256": "730495324225558305d48732df06a4f6b75e1e0c9b3d402952fecb3a3fbd43f7",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "other_outcome_residential_customers",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:58+00:00"
+  },
+  {
+   "sequence": 15,
+   "file": "0015_second_number_as_assigned.json",
+   "sha256": "bad1dfdb4be84f57f1a7888948ef95e9738e1e3060e49b1c3068fc4aaaab3b5f",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_as_assigned",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:58+00:00"
+  },
+  {
+   "sequence": 16,
+   "file": "0016_second_number_settled_only_classes_2_to_4.json",
+   "sha256": "3ab28ec61d6008c9dcb440cd83e96bddaca4e4a68d5139f6cf4ff3bebb040505",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_settled_only_classes_2_to_4",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:58+00:00"
+  },
+  {
+   "sequence": 17,
+   "file": "0017_second_number_ten_highest_leverage_left_out.json",
+   "sha256": "a1549e882458c5aed7bcc291ded944da79dc72e9544df8c9dd58a2cc0a3c6319",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_ten_highest_leverage_left_out",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:58+00:00"
+  },
+  {
+   "sequence": 18,
+   "file": "0018_second_number_sensitivity_scenario_a_runner_up_placement.json",
+   "sha256": "caab141e61e747099a29445f27eee35ddff1ec47a69f0b80479730bd6e60e083",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_sensitivity_scenario_a_runner_up_placement",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:58+00:00"
+  },
+  {
+   "sequence": 19,
+   "file": "0019_second_number_sensitivity_scenario_b_other_end_of_every_dated_interval.json",
+   "sha256": "208bbe76c9920be6405a0a23f466ee2d6a26feb723c3c4ec62e13c09939b5f90",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_sensitivity_scenario_b_other_end_of_every_dated_interval",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:59+00:00"
+  },
+  {
+   "sequence": 20,
+   "file": "0020_second_number_e3_after_period_2024_2025.json",
+   "sha256": "6e8acad391076618e0cf98046843a48771719fdebcfd5a353d934e615b0450b6",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_e3_after_period_2024_2025",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:59+00:00"
+  },
+  {
+   "sequence": 21,
+   "file": "0021_second_number_year_by_year.json",
+   "sha256": "e94ba493b01ee8587019f7420e491911511c3c8617de6a7cff1191c2ed6629bf",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "second_number_year_by_year",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:12:59+00:00"
+  },
+  {
+   "sequence": 22,
+   "file": "0022_affiliates_readmitted.json",
+   "sha256": "ee28b875fe5850b4d1bd1d67ee7fbfc871dc9184a68d036c49bbc37ded69778c",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "affiliates_readmitted",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:00+00:00"
+  },
+  {
+   "sequence": 23,
+   "file": "0023_shared_suppliers_removed.json",
+   "sha256": "be654f36c23cdd0d805a3a8b38ab303bd4b20cf9ceffde3b8d4948856041864c",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "shared_suppliers_removed",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:03+00:00"
+  },
+  {
+   "sequence": 24,
+   "file": "0024_leave_one_comparison_out.json",
+   "sha256": "223404d0fc0049bc282660614baebaf7052c2f4c20d01a89e99e9afff745f60b",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "leave_one_comparison_out",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:08+00:00"
+  },
+  {
+   "sequence": 25,
+   "file": "0025_leave_one_company_out.json",
+   "sha256": "0569d28c14c9eb58f4d52d7c2d5bdfbec1a93a75f9110ba43d8048c52b0b5dfd",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "leave_one_company_out",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:12+00:00"
+  },
+  {
+   "sequence": 26,
+   "file": "0026_unresolved_ownership_excluded.json",
+   "sha256": "6cf17e9cf85254cdd27954dfc32f982326d338f14ff03344063ee5510fa404bd",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "unresolved_ownership_excluded",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:37+00:00"
+  },
+  {
+   "sequence": 27,
+   "file": "0027_later_start_plus_1.json",
+   "sha256": "486148fc326ed5b28724b208a4007b5d868c8412e11e812df2e82422b3d50c50",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "later_start_plus_1",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:42+00:00"
+  },
+  {
+   "sequence": 28,
+   "file": "0028_later_start_plus_3.json",
+   "sha256": "0d68286073a37894e18b2d7ebd8a370b167d32c38d800af51970dbed3f4bdbc2",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "later_start_plus_3",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:47+00:00"
+  },
+  {
+   "sequence": 29,
+   "file": "0029_later_start_plus_5.json",
+   "sha256": "22813daa8aae597f5a0c40ecc7cfa2963e1d5fa9553095033ff48ae25fadf385",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "later_start_plus_5",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:52+00:00"
+  },
+  {
+   "sequence": 30,
+   "file": "0030_callaway_santanna.json",
+   "sha256": "9b33ec4ab0bcac10b8fc949ae14e01c4b1b0def5bec628638bcb26d3e9dd80d8",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "callaway_santanna",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:13:54+00:00"
+  },
+  {
+   "sequence": 31,
+   "file": "0031_estimators_agree.json",
+   "sha256": "137a6724ec5da1a575b453a4f14ea365ce045d92d6348a0947a550ece9903d42",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "estimators_agree",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:14:17+00:00"
+  },
+  {
+   "sequence": 32,
+   "file": "0032_longer_horizon.json",
+   "sha256": "7f60106ab74c2011f802c09eeee27f4109cb9627e816be7341b4d2caf97d25f7",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "longer_horizon",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:14:57+00:00"
+  },
+  {
+   "sequence": 33,
+   "file": "0033_future_hosts_as_comparisons.json",
+   "sha256": "0363c4c86d33358bab2f270a254af22c967a7951658bbf26db14e6b9fc2e3f82",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "future_hosts_as_comparisons",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:04+00:00"
+  },
+  {
+   "sequence": 34,
+   "file": "0034_own_state_comparisons.json",
+   "sha256": "3499d5d63b271e0390516f17150b2570c361e9885f301bd9c2eacb4b2b5c7025",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "own_state_comparisons",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:20+00:00"
+  },
+  {
+   "sequence": 35,
+   "file": "0035_threshold_1pct.json",
+   "sha256": "2002e7e1c93bbf7e739f28a32ef71a23037d1b8d3b8a93f02240fcaf2e09a41b",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "threshold_1pct",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:33+00:00"
+  },
+  {
+   "sequence": 36,
+   "file": "0036_threshold_5pct.json",
+   "sha256": "5c2c2c606ad35dc0ab2566bd0658ab56d4ab6e75bc6e297bc6f01b795ab9b918",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "threshold_5pct",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:52+00:00"
+  },
+  {
+   "sequence": 37,
+   "file": "0037_fuel_mix_categorical.json",
+   "sha256": "cc4d29844ca738af2387b31bb74d1d043f0459bca8d92f0178b50931c24e7504",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "fuel_mix_categorical",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:55+00:00"
+  },
+  {
+   "sequence": 38,
+   "file": "0038_fuel_mix_none.json",
+   "sha256": "7cb35c1b0c1d37bc7b0e9057dc9b9fec12ffcfbef54d4ca01609539b95fa7f84",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "fuel_mix_none",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:57+00:00"
+  },
+  {
+   "sequence": 39,
+   "file": "0039_size_band_side_run.json",
+   "sha256": "49e435fd321a9f0bc301ecf4fb6c74096222d2593f1450c019650c1052db7040",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "size_band_side_run",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:15:59+00:00"
+  },
+  {
+   "sequence": 40,
+   "file": "0040_E1.json",
+   "sha256": "29cf5667e0767e22203ac5f40c4ff9b7a2d9d14da8cc5bcd38688abec61eecf4",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E1",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:16:10+00:00"
+  },
+  {
+   "sequence": 41,
+   "file": "0041_E2.json",
+   "sha256": "41bef247f93c4f2589ed11558de0c14d6c53c1bcde8c449ecfc49bd1f8bb7b50",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E2",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:16:12+00:00"
+  },
+  {
+   "sequence": 42,
+   "file": "0042_E3.json",
+   "sha256": "afedba186a1aa956adf60574ccb0eb415ed979122e7332d3cc6df3bf1ae3ce77",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E3",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:16:20+00:00"
+  },
+  {
+   "sequence": 43,
+   "file": "0043_E4a.json",
+   "sha256": "36fc2543cd88dc60365cdab2aaf870eb839cd8217a2f809ddf6779d594bf4214",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E4a",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:16:45+00:00"
+  },
+  {
+   "sequence": 44,
+   "file": "0044_E4b.json",
+   "sha256": "d777dd6011397fb0ef7d7539fb073cba5220c3664b53fc688d1e79275e0da10b",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E4b",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:17:09+00:00"
+  },
+  {
+   "sequence": 45,
+   "file": "0045_E5.json",
+   "sha256": "7a2b826aeaf4d15c7654a2b13e1cd693d5bb6ad7262513ed6ec1070ad525132c",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E5",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:17:21+00:00"
+  },
+  {
+   "sequence": 46,
+   "file": "0046_E6.json",
+   "sha256": "2f8f9b205a562537e13e841f60c9215d05ac2d88c14db401a1bb1a0c534a011f",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E6",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:17:34+00:00"
+  },
+  {
+   "sequence": 47,
+   "file": "0047_E7_earlier.json",
+   "sha256": "4f95f8beb5939cecc6b1f9a2991d28ad321a98ccf66ba48f1f76661a8e6c4e27",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E7_earlier",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T04:56:26+00:00"
+  },
+  {
+   "sequence": 48,
+   "file": "0048_E7_later.json",
+   "sha256": "541b0b03cd9573bd658be3eac98ff5678d9831c913cac7fbd667115519661c0d",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "E7_later",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:03+00:00"
+  },
+  {
+   "sequence": 49,
+   "file": "0049_condition_1_load_share.json",
+   "sha256": "17685aa5760978e382502f7f04e3f6045cb337a0f3b22f5557d36e70319f9db2",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "condition_1_load_share",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:15+00:00"
+  },
+  {
+   "sequence": 50,
+   "file": "0050_condition_2_investor_owned.json",
+   "sha256": "0aa307f128beac58d0ec1df32f4929a82b345ef90d477ef7e646ad9e457da9f6",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "condition_2_investor_owned",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:27+00:00"
+  },
+  {
+   "sequence": 51,
+   "file": "0051_condition_3_retail_choice_proxy.json",
+   "sha256": "f5490583449734f5ed2ad1634946dd4f2ec38926cd2322e9e3098973fb123e21",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "condition_3_retail_choice_proxy",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:40+00:00"
+  },
+  {
+   "sequence": 52,
+   "file": "0052_condition_4_past_utilization.json",
+   "sha256": "ee73af87598756981c1bd8aaa216dad4ccee0e067cd3a346ae4b797970834b3b",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "condition_4_past_utilization",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:53+00:00"
+  },
+  {
+   "sequence": 53,
+   "file": "0053_influence_each_market_region_left_out.json",
+   "sha256": "613e15850278a8aab2c64e2c9ad5b96720676e896fb99100d6591f25c8e632aa",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "influence_each_market_region_left_out",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:55+00:00"
+  },
+  {
+   "sequence": 54,
+   "file": "0054_influence_each_state_left_out.json",
+   "sha256": "2e6786f261ede2d519ad3f8d89273d1125d15207afa2c8d2c6f40ec942f7baba",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "influence_each_state_left_out",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:36:58+00:00"
+  },
+  {
+   "sequence": 55,
+   "file": "0055_influence_virginia_left_out.json",
+   "sha256": "864c5b83faf65fb1809ae7c26ccb209b18c34210f1ef918b6d97d42dde2466c9",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "influence_virginia_left_out",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:37:01+00:00"
+  },
+  {
+   "sequence": 56,
+   "file": "0056_influence_five_highest_load_utilities_dropped.json",
+   "sha256": "0fbf97cf741465cfae8f896e69736328300d91ee9e1a16b075aa843dffb62b80",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "influence_five_highest_load_utilities_dropped",
+   "estimated": true,
+   "written_at_utc": "2026-11-21T05:37:03+00:00"
+  },
+  {
+   "sequence": 57,
+   "file": "0057_tariff_check.json",
+   "sha256": "39f2454deff0870aa645514882e42292d9201c12b3c710c85ea7f77e366b97e4",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "tariff_check",
+   "estimated": false,
+   "written_at_utc": "2026-11-21T05:37:03+00:00"
+  },
+  {
+   "sequence": 58,
+   "file": "0058_regional_layer.json",
+   "sha256": "42d258f1fff821c18179136e83c6a8d0f459ed3398706d906fe07cba77fa1638",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "regional_layer",
+   "estimated": false,
+   "written_at_utc": "2026-11-21T05:37:03+00:00"
+  },
+  {
+   "sequence": 59,
+   "file": "0059_exploratory_work.json",
+   "sha256": "1d7b4cca016c1417fbb2d146ceb2513dc798f615e9187ccb6853922b9eb0b692",
+   "kind": "entry",
+   "stage": "remaining",
+   "entry_id": "exploratory_work",
+   "estimated": false,
+   "written_at_utc": "2026-11-21T05:37:03+00:00"
+  }
+ ]
+}

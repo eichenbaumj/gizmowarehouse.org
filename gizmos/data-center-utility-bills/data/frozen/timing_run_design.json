@@ -1,0 +1,431 @@
+{
+ "what_this_is": "The timing run (Reported beside the headline; R7, adopted by Joe on 2026-11-19, D-107): the headline set at 2% with Public Service of Colorado and Ohio Power added at their no-anchoring years, each matched at its own reference year under every existing rule; whether the seven headline hosts' matches are unchanged; each added host's rule results and matches; and the rank test made before any fit on the regressors alone. Ohio Power's matches follow the ownership code in the file when this was run. Quantities only: load, sales, customers, ownership and the usable flag; no price, revenue, bill or outcome is read and nothing is fitted. A timing run on a design on which no validation was made. PROVISIONAL: the design stands as of 2026-11-18 and the plan is a DRAFT, not frozen.",
+ "built_by": "pipeline/analysis/timing_run.py (main)",
+ "years_source": {
+  "record": "data/frozen/treatment_bounds.json, thresholds / 2% / labelled_runs_beside_the_headline / timing_run_at_no_anchoring_years",
+  "checked_against": "data/frozen/headline_set.csv, first_crossing_no_anchoring at 2%",
+  "files_agree": true,
+  "differences_from_the_plan": []
+ },
+ "set": "headline_set",
+ "threshold": 0.02,
+ "rules": "headline",
+ "readings": [
+  "the seven's matches unchanged is a condition of the run; if it fails the run is not estimated (the agent's reading)"
+ ],
+ "label": "timing run: the headline set with Public Service of Colorado and Ohio Power added at their no-anchoring years; under the procedure validated on the headline set; no validation was made on this design",
+ "original_hosts": [
+  "803:AZ",
+  "6958:TX",
+  "14127:NE",
+  "14354:UT",
+  "15473:NM",
+  "17166:NV",
+  "20065:GA"
+ ],
+ "original_hosts_unchanged": true,
+ "original_hosts_differences": [],
+ "added_hosts": [
+  {
+   "host": "15466:CO",
+   "name": "Public Service Co of Colorado",
+   "no_anchoring_year": 2015,
+   "reference_year": 2012,
+   "window": [
+    2009,
+    2018
+   ],
+   "in_the_design": true,
+   "named_as_failing": [],
+   "rules": {
+    "load_unknown_gate": "passes",
+    "full_window_usable": "passes",
+    "region_fuel_mix_and_degree_days_in_every_window_year": "passes",
+    "ownership_exclusions_on_its_pool": [
+     {
+      "utility": "12825:MT",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2009,
+       2010,
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "NorthWestern Energy LLC - (MT)"
+     },
+     {
+      "utility": "12919:AZ",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2009,
+       2010,
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "Morenci Water and Electric"
+     },
+     {
+      "utility": "15500:WA",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2009,
+       2010,
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "Puget Sound Energy Inc"
+     },
+     {
+      "utility": "19728:AZ",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2009,
+       2010,
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "UNS Electric, Inc"
+     },
+     {
+      "utility": "20169:ID",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2009,
+       2010,
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "Avista Corp"
+     }
+    ],
+    "support_rule": {
+     "pool_in_the_reference_year": 188,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": null
+    },
+    "unresolved_ownership": "named as a host with unresolved ownership and kept under the headline rules: a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018"
+   },
+   "matches": [
+    {
+     "utility": "9191:ID",
+     "name": "Idaho Power Co"
+    },
+    {
+     "utility": "16868:WA",
+     "name": "City of Seattle - (WA)"
+    },
+    {
+     "utility": "17470:WA",
+     "name": "PUD No 1 of Snohomish County - (WA)"
+    },
+    {
+     "utility": "5701:TX",
+     "name": "El Paso Electric Co"
+    },
+    {
+     "utility": "3660:WA",
+     "name": "PUD No 1 of Clark County - (WA)"
+    },
+    {
+     "utility": "18429:WA",
+     "name": "City of Tacoma - (WA)"
+    },
+    {
+     "utility": "14354:WY",
+     "name": "PacifiCorp"
+    },
+    {
+     "utility": "14354:WA",
+     "name": "PacifiCorp"
+    },
+    {
+     "utility": "56146:CO",
+     "name": "Black Hills Colorado Electric, LLC"
+    },
+    {
+     "utility": "5701:NM",
+     "name": "El Paso Electric Co"
+    }
+   ],
+   "ownership_rule_code": "pipeline/analysis/ownership.py, ineligible_for, as in the file at run time"
+  },
+  {
+   "host": "14006:OH",
+   "name": "Ohio Power Co",
+   "no_anchoring_year": 2017,
+   "reference_year": 2014,
+   "window": [
+    2011,
+    2020
+   ],
+   "in_the_design": true,
+   "named_as_failing": [],
+   "rules": {
+    "load_unknown_gate": "passes",
+    "full_window_usable": "passes",
+    "region_fuel_mix_and_degree_days_in_every_window_year": "passes",
+    "ownership_exclusions_on_its_pool": [
+     {
+      "utility": "733:VA",
+      "why": "same ultimate parent as the host in a year of its window (D-58, rule 2.3)"
+     },
+     {
+      "utility": "733:WV",
+      "why": "same ultimate parent as the host in a year of its window (D-58, rule 2.3)"
+     },
+     {
+      "utility": "4922:OH",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018,
+       2019,
+       2020
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "Dayton Power & Light Co"
+     },
+     {
+      "utility": "5027:MD",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015
+      ],
+      "no_row_covers_any_window_year": false,
+      "name": "Delmarva Power"
+     },
+     {
+      "utility": "5487:PA",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018,
+       2019,
+       2020
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "Duquesne Light Co"
+     },
+     {
+      "utility": "9324:MI",
+      "why": "same ultimate parent as the host in a year of its window (D-58, rule 2.3)"
+     },
+     {
+      "utility": "10331:TN",
+      "why": "same ultimate parent as the host in a year of its window (D-58, rule 2.3)"
+     },
+     {
+      "utility": "15270:DC",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015
+      ],
+      "no_row_covers_any_window_year": false,
+      "name": "Potomac Electric Power Co"
+     },
+     {
+      "utility": "20334:PA",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018,
+       2019,
+       2020
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "Wellsborough Electric Co"
+     },
+     {
+      "utility": "20521:WV",
+      "why": "same ultimate parent as the host in a year of its window (D-58, rule 2.3)"
+     },
+     {
+      "utility": "22053:KY",
+      "why": "same ultimate parent as the host in a year of its window (D-58, rule 2.3)"
+     },
+     {
+      "utility": "66101:NY",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018,
+       2019,
+       2020
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "FirstEnergy Pennsylvania Electric Co"
+     },
+     {
+      "utility": "66101:PA",
+      "why": "investor-owned with no row in the ownership table covering a year of the investor-owned host's window, so it cannot be shown to be unaffiliated with the host in that year (D-58, rule 2.2, read year by year, D-107)",
+      "uncovered_window_years": [
+       2011,
+       2012,
+       2013,
+       2014,
+       2015,
+       2016,
+       2017,
+       2018,
+       2019,
+       2020
+      ],
+      "no_row_covers_any_window_year": true,
+      "name": "FirstEnergy Pennsylvania Electric Co"
+     }
+    ],
+    "support_rule": {
+     "pool_in_the_reference_year": 92,
+     "matched_in_region_event_year_2": 10,
+     "matched_in_region_event_year_3": 10,
+     "keeps_its_place": true,
+     "why_not": null
+    },
+    "unresolved_ownership": "not listed"
+   },
+   "matches": [
+    {
+     "utility": "3755:OH",
+     "name": "Cleveland Electric Illum Co"
+    },
+    {
+     "utility": "12796:WV",
+     "name": "Monongahela Power Co"
+    },
+    {
+     "utility": "18997:OH",
+     "name": "The Toledo Edison Co"
+    },
+    {
+     "utility": "17637:MD",
+     "name": "Southern Maryland Elec Coop Inc"
+    },
+    {
+     "utility": "15263:WV",
+     "name": "The Potomac Edison Company"
+    },
+    {
+     "utility": "18085:OH",
+     "name": "South Central Power Company"
+    },
+    {
+     "utility": "19876:NC",
+     "name": "Virginia Electric & Power Co"
+    },
+    {
+     "utility": "5070:DE",
+     "name": "Delaware Electric Cooperative"
+    },
+    {
+     "utility": "17066:VA",
+     "name": "Shenandoah Valley Elec Coop"
+    },
+    {
+     "utility": "17564:KY",
+     "name": "South Kentucky Rural E C C"
+    }
+   ],
+   "ownership_rule_code": "pipeline/analysis/ownership.py, ineligible_for, as in the file at run time"
+  }
+ ],
+ "hosts_in_the_timing_design": [
+  "803:AZ",
+  "6958:TX",
+  "14127:NE",
+  "14354:UT",
+  "15473:NM",
+  "17166:NV",
+  "20065:GA",
+  "15466:CO",
+  "14006:OH"
+ ],
+ "rank_test_before_any_fit": {
+  "estimable": true,
+  "smallest_singular_value_ratio": 0.023392719156379815,
+  "hosts_with_no_matches": [],
+  "hosts_with_zero_weight": []
+ },
+ "design_inputs_sha256": "21d30d4400dff4d51cb9b9b08b2d39ebc3059fd9f634dde9a7a0668bd2da21ab",
+ "fingerprint": {
+  "sha256": "5889a1bf045a7acd7ec001bcace2c3ea55835a8bb577a1e88df17f4190749498",
+  "of": {
+   "design_inputs": "21d30d4400dff4d51cb9b9b08b2d39ebc3059fd9f634dde9a7a0668bd2da21ab",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "a680621992148af4b28266a2f3ca2a91a00f71357c0d912fd505629e6d952323",
+   "assumptions": "92c4bc0d42c2b7e3fb37f44a173328cbc7dce93c1fed0da9aa5cfd2bffcaee75",
+   "settings": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ },
+ "headline_design_inputs_sha256_same_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366"
+}

@@ -1,0 +1,1212 @@
+{
+ "sequence": 53,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "influence_each_market_region_left_out",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T05:36:55+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "influence_each_market_region_left_out",
+  "plan_section": "Reported checks, Influence (each market region left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and \"moves most\" adopted by Joe on 2026-11-19, D-111)",
+  "sets": [
+   "headline_set at 2%"
+  ],
+  "builder": "design.build_with_rules under the headline rules, then influence_deletions.delete_region for each region in regions_present (every host whose reference-year region it is leaves with its matches; nothing rematched)",
+  "estimator": "influence_deletions.estimate_deletion per region (rule 7's treatment and the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector); influence_deletions.summarise",
+  "labels": [
+   "reported check",
+   "influence deletion: each market region present left out; under the procedure validated on the headline set; no validation was made on this design",
+   "under the procedure validated on the headline set; no validation was made on this design"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "label": "influence deletion: each market region present left out; under the procedure validated on the headline set; no validation was made on this design",
+    "full_design": {
+     "procedure": {
+      "name": "C",
+      "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+      "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+      "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+     },
+     "hosts_in_the_design": [
+      "803:AZ",
+      "6958:TX",
+      "14127:NE",
+      "14354:UT",
+      "15473:NM",
+      "17166:NV",
+      "20065:GA"
+     ],
+     "hosts_with_no_matches": [],
+     "numerical_failure": null,
+     "fuel_control": "gas_share_by_calendar_year",
+     "control_columns_left_out": [
+      {
+       "year": 2009,
+       "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+      }
+     ],
+     "hosts_fully_absorbed": [],
+     "absorbed_controls_option": null,
+     "controls_left_out_as_exactly_absorbed": [],
+     "columns": [
+      "event_year_-6",
+      "event_year_-5",
+      "event_year_-4",
+      "event_year_-2",
+      "event_year_-1",
+      "event_year_0",
+      "event_year_1",
+      "event_year_2",
+      "event_year_3",
+      "heating_degree_days",
+      "cooling_degree_days",
+      "gas_share_x_2010",
+      "gas_share_x_2011",
+      "gas_share_x_2012",
+      "gas_share_x_2013",
+      "gas_share_x_2014",
+      "gas_share_x_2015",
+      "gas_share_x_2016",
+      "gas_share_x_2017",
+      "gas_share_x_2018",
+      "gas_share_x_2019",
+      "gas_share_x_2020",
+      "gas_share_x_2021",
+      "gas_share_x_2022",
+      "gas_share_x_2023",
+      "gas_share_x_2024"
+     ],
+     "rows": 770,
+     "regressors": 26,
+     "clusters": 19,
+     "host_headline_weights": {
+      "803:AZ": 0.14398041024051586,
+      "6958:TX": 0.14771192124171217,
+      "14127:NE": 0.15350870955845367,
+      "14354:UT": 0.14952807041751578,
+      "15473:NM": 0.13660054086124543,
+      "17166:NV": 0.1207637766581045,
+      "20065:GA": 0.14790657102245208
+     },
+     "hosts_with_zero_weight": [],
+     "count_N": 7,
+     "event_year_coefficients": {
+      "-6": 0.015005674613785321,
+      "-5": 0.015272382464421256,
+      "-4": 0.02228055535633362,
+      "-3": 0.0,
+      "-2": 0.012246061391044984,
+      "-1": -0.010003898549598326,
+      "0": -0.0009093095287858715,
+      "1": -0.0004228463870641942,
+      "2": -0.01180127541668232,
+      "3": -0.02043590642409223
+     },
+     "headline": {
+      "log_points": -0.016118590920387275,
+      "percent": -1.5989381589364007,
+      "standard_error_log_points": 0.030347750541277523,
+      "degrees_of_freedom": 6.83900806235111,
+      "range_90_log_points": [
+       -0.0738190727874288,
+       0.04158189094665425
+      ],
+      "range_90_percent": [
+       -7.116026897696128,
+       4.245852627170334
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "event_years": [
+       2,
+       3
+      ]
+     },
+     "early_years_test": {
+      "Q": 2.7852545976581027,
+      "F": 0.6453796762415994,
+      "numerator_degrees_of_freedom": 3,
+      "denominator_degrees_of_freedom": 4.560366337781463,
+      "p_value": 0.6212552484504491,
+      "fails_at_p_below_0.10": false,
+      "event_years": [
+       -6,
+       -5,
+       -4
+      ]
+     },
+     "validation": "under the procedure validated on the headline set; no validation was made on this design",
+     "validation_check": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     },
+     "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+    },
+    "deletions": [
+     {
+      "kind": "region",
+      "value": "ERCOT",
+      "label": "influence deletion: region ERCOT left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "region",
+       "value": "ERCOT",
+       "hosts_leaving": [
+        "6958:TX"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "11501:TX",
+        "12268:TX",
+        "12452:TX",
+        "13418:TX",
+        "13830:TX",
+        "17561:TX",
+        "2409:TX",
+        "2442:TX",
+        "3282:TX",
+        "3940:TX"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.017903229540258168
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 660,
+       "regressors": 26,
+       "clusters": 19,
+       "host_headline_weights": {
+        "803:AZ": 0.16890603143760344,
+        "14127:NE": 0.18019793310515403,
+        "14354:UT": 0.17544958880534797,
+        "15473:NM": 0.16017456313986028,
+        "17166:NV": 0.14171006610647957,
+        "20065:GA": 0.17356181740556348
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.0003690245043083684,
+        "-5": -0.0014383190807546985,
+        "-4": 0.007095398085648755,
+        "-3": 0.0,
+        "-2": 0.006430811287748969,
+        "-1": -0.01094093298680985,
+        "0": -0.00314241113761023,
+        "1": -0.0024226211256089883,
+        "2": -0.016833122656682683,
+        "3": -0.025282193379390062
+       },
+       "headline": {
+        "log_points": -0.02105765801803637,
+        "percent": -2.08374936276116,
+        "standard_error_log_points": 0.0362408528938189,
+        "degrees_of_freedom": 6.173375557052529,
+        "range_90_log_points": [
+         -0.09112754884523697,
+         0.049012232809164225
+        ],
+        "range_90_percent": [
+         -8.709873602894682,
+         5.023319796373779
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 0.7575196043648403,
+        "F": 0.16875080092575762,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 4.029593990609571,
+        "p_value": 0.9122362190469584,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "region",
+      "value": "SPP",
+      "label": "influence deletion: region SPP left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "region",
+       "value": "SPP",
+       "hosts_leaving": [
+        "14127:NE"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "10000:MO",
+        "10005:KS",
+        "11292:TX",
+        "17698:LA",
+        "17698:TX",
+        "17718:NM",
+        "17718:TX",
+        "17833:MO",
+        "22500:KS",
+        "5860:MO"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01896031033270845
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023",
+        "gas_share_x_2024"
+       ],
+       "rows": 660,
+       "regressors": 26,
+       "clusters": 15,
+       "host_headline_weights": {
+        "803:AZ": 0.1703951785797837,
+        "6958:TX": 0.18133586560477558,
+        "14354:UT": 0.1852572965154135,
+        "15473:NM": 0.15647965716828618,
+        "17166:NV": 0.12476885855580741,
+        "20065:GA": 0.18176314357594245
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.019597662202648296,
+        "-5": 0.028545124437216775,
+        "-4": 0.028641157070778567,
+        "-3": 0.0,
+        "-2": 0.03277567736860243,
+        "-1": 0.0061832167079038415,
+        "0": 0.01149961770857419,
+        "1": 0.02322187275571781,
+        "2": 0.017619820618186795,
+        "3": 0.010621779547150927
+       },
+       "headline": {
+        "log_points": 0.01412080008266886,
+        "percent": 1.4220969515661426,
+        "standard_error_log_points": 0.03397963614750913,
+        "degrees_of_freedom": 5.530942043648458,
+        "range_90_log_points": [
+         -0.052924268544768685,
+         0.0811658687101064
+        ],
+        "range_90_percent": [
+         -5.1548162599575775,
+         8.455077468631423
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 0.5654971147073591,
+        "F": 0.11682573171991555,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.2599509468436905,
+        "p_value": 0.9447674319404437,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "region",
+      "value": "Southeast",
+      "label": "influence deletion: region Southeast left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "region",
+       "value": "Southeast",
+       "hosts_leaving": [
+        "20065:GA"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "10623:FL",
+        "17543:SC",
+        "17832:GA",
+        "18445:FL",
+        "19898:TN",
+        "21632:NC",
+        "3046:SC",
+        "3408:TN",
+        "3757:FL",
+        "6909:FL"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 6,
+       "matches_left_by_host": [
+        {
+         "host": "803:AZ",
+         "name": "Arizona Public Service Co",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14354:UT",
+         "name": "PacifiCorp",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "15473:NM",
+         "name": "Public Service Co of NM",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "17166:NV",
+         "name": "Sierra Pacific Power Co",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.01875893491816801
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "803:AZ",
+        "6958:TX",
+        "14127:NE",
+        "14354:UT",
+        "15473:NM",
+        "17166:NV"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2009,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2010",
+        "gas_share_x_2011",
+        "gas_share_x_2012",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023"
+       ],
+       "rows": 660,
+       "regressors": 25,
+       "clusters": 14,
+       "host_headline_weights": {
+        "803:AZ": 0.1599854746233496,
+        "6958:TX": 0.1793997984068623,
+        "14127:NE": 0.18591986211439454,
+        "14354:UT": 0.18093117208203804,
+        "15473:NM": 0.1600408406610391,
+        "17166:NV": 0.1337228521123113
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 6,
+       "event_year_coefficients": {
+        "-6": 0.03362160088333745,
+        "-5": 0.030063766965811558,
+        "-4": 0.030342018690262665,
+        "-3": 0.0,
+        "-2": 0.023103768759418816,
+        "-1": -0.009802590284001208,
+        "0": -0.007685120305924851,
+        "1": -0.0055452925913362615,
+        "2": -0.015151737403349939,
+        "3": -0.017173966833767207
+       },
+       "headline": {
+        "log_points": -0.01616285211855857,
+        "percent": -1.6032934114497557,
+        "standard_error_log_points": 0.03356107634589042,
+        "degrees_of_freedom": 5.645212171598273,
+        "range_90_log_points": [
+         -0.0821194929170161,
+         0.04979378867989896
+        ],
+        "range_90_percent": [
+         -7.8838120200405895,
+         5.105433472557743
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.3132123351216825,
+        "F": 0.6957493850463394,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 3.4050720065386137,
+        "p_value": 0.6079065791168278,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     },
+     {
+      "kind": "region",
+      "value": "West",
+      "label": "influence deletion: region West left out; under the procedure validated on the headline set; no validation was made on this design",
+      "what_left": {
+       "kind": "region",
+       "value": "West",
+       "hosts_leaving": [
+        "14354:UT",
+        "15473:NM",
+        "17166:NV",
+        "803:AZ"
+       ],
+       "matched_units_leaving_with_those_hosts": [
+        "14354:WA",
+        "14354:WY",
+        "16868:WA",
+        "17470:WA",
+        "18429:WA",
+        "3660:WA",
+        "56146:CO",
+        "5701:NM",
+        "5701:TX",
+        "6022:OR",
+        "6604:CO",
+        "9191:ID"
+       ],
+       "matched_units_leaving_remaining_hosts": [],
+       "removes_nothing": false
+      },
+      "after_deletion": {
+       "hosts_remaining": 3,
+       "matches_left_by_host": [
+        {
+         "host": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "14127:NE",
+         "name": "Omaha Public Power District",
+         "matches_left": 10,
+         "matches_before": 10
+        },
+        {
+         "host": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "matches_left": 10,
+         "matches_before": 10
+        }
+       ],
+       "hosts_with_fewer_than_five_matches_inadequately_supported_kept": [],
+       "hosts_with_no_matches_not_estimable": [],
+       "hosts_with_zero_weight_not_estimable": [],
+       "zero_weight_checked": "influence.zero_weight_hosts, through influence.estimable",
+       "rank_test_before_any_fit": {
+        "estimable": true,
+        "smallest_singular_value_ratio": 0.0882797727387419
+       }
+      },
+      "result": {
+       "procedure": {
+        "name": "C",
+        "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+        "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+        "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+       },
+       "hosts_in_the_design": [
+        "6958:TX",
+        "14127:NE",
+        "20065:GA"
+       ],
+       "hosts_with_no_matches": [],
+       "numerical_failure": null,
+       "fuel_control": "gas_share_by_calendar_year",
+       "control_columns_left_out": [
+        {
+         "year": 2011,
+         "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+        },
+        {
+         "year": 2012,
+         "why": "a linear combination of the fixed effects and the control columns before it in calendar order (singular-value ratio under 1e-8), judged with the event-time columns set aside (D-59 item 7; D-61 section 8)"
+        },
+        {
+         "year": 2024,
+         "why": "a linear combination of the fixed effects and the control columns before it in calendar order (singular-value ratio under 1e-8), judged with the event-time columns set aside (D-59 item 7; D-61 section 8)"
+        }
+       ],
+       "hosts_fully_absorbed": [],
+       "absorbed_controls_option": null,
+       "controls_left_out_as_exactly_absorbed": [],
+       "columns": [
+        "event_year_-6",
+        "event_year_-5",
+        "event_year_-4",
+        "event_year_-2",
+        "event_year_-1",
+        "event_year_0",
+        "event_year_1",
+        "event_year_2",
+        "event_year_3",
+        "heating_degree_days",
+        "cooling_degree_days",
+        "gas_share_x_2013",
+        "gas_share_x_2014",
+        "gas_share_x_2015",
+        "gas_share_x_2016",
+        "gas_share_x_2017",
+        "gas_share_x_2018",
+        "gas_share_x_2019",
+        "gas_share_x_2020",
+        "gas_share_x_2021",
+        "gas_share_x_2022",
+        "gas_share_x_2023"
+       ],
+       "rows": 330,
+       "regressors": 22,
+       "clusters": 11,
+       "host_headline_weights": {
+        "6958:TX": 0.3415509394009669,
+        "14127:NE": 0.33250850212113225,
+        "20065:GA": 0.3259405584779073
+       },
+       "hosts_with_zero_weight": [],
+       "count_N": 3,
+       "event_year_coefficients": {
+        "-6": 0.030466857622043042,
+        "-5": 0.023097648437572053,
+        "-4": 0.04301316327569991,
+        "-3": 0.0,
+        "-2": 0.0006542002842029057,
+        "-1": -0.015553127416675258,
+        "0": 0.016042650429516844,
+        "1": 0.006113747862456742,
+        "2": 0.004456579197786627,
+        "3": -0.019107931364955002
+       },
+       "headline": {
+        "log_points": -0.007325676083584188,
+        "percent": -0.7298908721434483,
+        "standard_error_log_points": 0.025507673398139922,
+        "degrees_of_freedom": 2.3349852539999127,
+        "range_90_log_points": [
+         -0.07500852422016638,
+         0.06035717205299801
+        ],
+        "range_90_percent": [
+         -7.226442192747659,
+         6.221587262294188
+        ],
+        "status": "estimate with its 90% range under the selected procedure",
+        "event_years": [
+         2,
+         3
+        ]
+       },
+       "early_years_test": {
+        "Q": 3.6396011708929947,
+        "F": 0.1665752312279401,
+        "numerator_degrees_of_freedom": 3,
+        "denominator_degrees_of_freedom": 0.31830924335126376,
+        "p_value": 0.9145238634428109,
+        "fails_at_p_below_0.10": false,
+        "event_years": [
+         -6,
+         -5,
+         -4
+        ]
+       },
+       "validation": "under the procedure validated on the headline set; no validation was made on this design",
+       "validation_check": {
+        "claimed": false,
+        "passed": null,
+        "why": "not claimed: the caller passed validated_design=False"
+       },
+       "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+      },
+      "estimated": true,
+      "failure_in_words": null
+     }
+    ],
+    "design": {
+     "hosts": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "6958:TX",
+       "cohort": 2017,
+       "matches": [
+        "2442:TX",
+        "11501:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX"
+       ]
+      },
+      {
+       "utility": "14127:NE",
+       "cohort": 2019,
+       "matches": [
+        "22500:KS",
+        "10005:KS",
+        "10000:MO",
+        "17718:TX",
+        "17698:LA",
+        "17698:TX",
+        "5860:MO",
+        "17833:MO",
+        "17718:NM",
+        "11292:TX"
+       ]
+      },
+      {
+       "utility": "14354:UT",
+       "cohort": 2015,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "56146:CO",
+        "5701:NM",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "17166:NV",
+       "cohort": 2017,
+       "matches": [
+        "5701:TX",
+        "17470:WA",
+        "16868:WA",
+        "9191:ID",
+        "3660:WA",
+        "18429:WA",
+        "5701:NM",
+        "56146:CO",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "20065:GA",
+       "cohort": 2021,
+       "matches": [
+        "21632:NC",
+        "10623:FL",
+        "3046:SC",
+        "18445:FL",
+        "19898:TN",
+        "17832:GA",
+        "3408:TN",
+        "17543:SC",
+        "3757:FL",
+        "6909:FL"
+       ]
+      }
+     ],
+     "hosts_dropped": [],
+     "unresolved_ownership": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+       ],
+       "reason_by_year": {
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+       ],
+       "reason_by_year": {
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+       "in_this_run": "kept"
+      }
+     ],
+     "load_unknown_excluded": []
+    },
+    "deletions_not_estimated": [],
+    "estimated": true,
+    "zero_note": "the 90% range includes zero where the full design's does not: reported, not treated as a reversal",
+    "summary": {
+     "full_design_estimate_log_points": -0.016118590920387275,
+     "full_design_range_includes_zero": true,
+     "deletions_run": 4,
+     "deletions_in_the_range": [
+      "region ERCOT",
+      "region SPP",
+      "region Southeast",
+      "region West"
+     ],
+     "deletions_not_estimated": [],
+     "deletions_that_remove_nothing_reported_beside_the_range": [],
+     "range_of_estimates_log_points": [
+      -0.02105765801803637,
+      0.01412080008266886
+     ],
+     "moves_it_most": {
+      "deletion": "region SPP",
+      "estimate_log_points": 0.01412080008266886,
+      "moves_by_log_points": 0.030239391003056136
+     },
+     "exact_tie_for_moves_it_most": null,
+     "ranges_that_span_zero_where_the_full_designs_does_not": [],
+     "range_of_estimates_percent": [
+      -2.08374936276116,
+      1.4220969515661426
+     ]
+    }
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

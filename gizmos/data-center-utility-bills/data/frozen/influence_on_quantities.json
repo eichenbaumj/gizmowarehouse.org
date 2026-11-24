@@ -1,0 +1,254 @@
+{
+  "what_this_is": "D-58 rule 7 before the freeze, on quantities only: for each deletion (one comparison utility-state, or one company with every unit of its ultimate parent; a utility with no parent is its own company), which hosts it leaves short, without matches or without weight, and whether the fit can be computed. No price and no outcome is read.",
+  "rules": "headline",
+  "fuel_control": "gas_share_by_calendar_year",
+  "threshold": "2%",
+  "ownership_assumption": "municipal systems, public power districts and distribution cooperatives with no row are each their own owner (D-58 rule 2.2); investor-owned units whose company is taken from the absence of a row are flagged in each company row",
+  "sets": {
+    "headline_set": {
+      "deletions": {
+        "company": 36,
+        "comparison": 42
+      },
+      "company_rows": "computed from the ownership table",
+      "full_design_estimable": true,
+      "leave_a_host_with_fewer_than_five_matches": [],
+      "leave_a_host_with_no_matches": [],
+      "leave_a_host_with_zero_weight": [],
+      "make_the_fit_not_estimable": [],
+      "ten_deletions_removing_the_most_net_weight": [
+        {
+          "kind": "company",
+          "removed": "El Paso Electric / Infrastructure Investments Fund (IIF)",
+          "units": [
+            "5701:NM",
+            "5701:TX"
+          ],
+          "net_weight_removed": 0.427599
+        },
+        {
+          "kind": "comparison",
+          "removed": "5701:TX",
+          "units": [
+            "5701:TX"
+          ],
+          "net_weight_removed": 0.230717
+        },
+        {
+          "kind": "comparison",
+          "removed": "5701:NM",
+          "units": [
+            "5701:NM"
+          ],
+          "net_weight_removed": 0.196882
+        },
+        {
+          "kind": "company",
+          "removed": "Evergy",
+          "units": [
+            "10000:MO",
+            "10005:KS",
+            "22500:KS"
+          ],
+          "net_weight_removed": 0.18364
+        },
+        {
+          "kind": "company",
+          "removed": "Berkshire Hathaway",
+          "units": [
+            "14354:WA",
+            "14354:WY"
+          ],
+          "net_weight_removed": 0.178512
+        },
+        {
+          "kind": "comparison",
+          "removed": "56146:CO",
+          "units": [
+            "56146:CO"
+          ],
+          "net_weight_removed": 0.139588
+        },
+        {
+          "kind": "company",
+          "removed": "Black Hills Corporation",
+          "units": [
+            "56146:CO"
+          ],
+          "net_weight_removed": 0.139588
+        },
+        {
+          "kind": "company",
+          "removed": "American Electric Power",
+          "units": [
+            "17698:LA",
+            "17698:TX"
+          ],
+          "net_weight_removed": 0.133088
+        },
+        {
+          "kind": "company",
+          "removed": "Xcel Energy",
+          "units": [
+            "17718:NM",
+            "17718:TX"
+          ],
+          "net_weight_removed": 0.13299
+        },
+        {
+          "kind": "comparison",
+          "removed": "9191:ID",
+          "units": [
+            "9191:ID"
+          ],
+          "net_weight_removed": 0.132245
+        }
+      ],
+      "largest_net_weight_removed_by_one_company": {
+        "company": "El Paso Electric / Infrastructure Investments Fund (IIF)",
+        "net_weight_removed": 0.427599,
+        "units": [
+          "5701:NM",
+          "5701:TX"
+        ],
+        "investor_owned_units_with_no_row": []
+      },
+      "net_weight_note": "net weight as D-57 defines it, on the full design under the gas-share control: signed weights summed by utility-state and calendar year, then magnitudes",
+      "hosts_in_the_design": 7,
+      "fingerprint": {
+        "sha256": "1746390a04ff11c2d21ca5aa7773f36690c8221e15960aaee31a5e5968ba406d",
+        "of": {
+          "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "5b1864bde1aa392371961829f67bc54e8e073abfa8115a4687c8b46bb7d6d4a5",
+          "assumptions": "17367a6a05fb238061dfeaaa2ae0b537a44334d1e54e1e21a8532a4b1fd4ae89",
+          "settings": "f1cea4f93d26c10b9671b4830174eb10aad0f78bc9147dbd288faa2778945774",
+          "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        "version": 1
+      }
+    },
+    "headline_set_with_the_ten_year_case": {
+      "deletions": {
+        "company": 36,
+        "comparison": 42
+      },
+      "company_rows": "computed from the ownership table",
+      "full_design_estimable": true,
+      "leave_a_host_with_fewer_than_five_matches": [],
+      "leave_a_host_with_no_matches": [],
+      "leave_a_host_with_zero_weight": [],
+      "make_the_fit_not_estimable": [],
+      "ten_deletions_removing_the_most_net_weight": [
+        {
+          "kind": "company",
+          "removed": "El Paso Electric / Infrastructure Investments Fund (IIF)",
+          "units": [
+            "5701:NM",
+            "5701:TX"
+          ],
+          "net_weight_removed": 0.367796
+        },
+        {
+          "kind": "company",
+          "removed": "Evergy",
+          "units": [
+            "10000:MO",
+            "10005:KS",
+            "22500:KS"
+          ],
+          "net_weight_removed": 0.230782
+        },
+        {
+          "kind": "comparison",
+          "removed": "5701:TX",
+          "units": [
+            "5701:TX"
+          ],
+          "net_weight_removed": 0.210738
+        },
+        {
+          "kind": "comparison",
+          "removed": "5701:NM",
+          "units": [
+            "5701:NM"
+          ],
+          "net_weight_removed": 0.157058
+        },
+        {
+          "kind": "company",
+          "removed": "American Electric Power",
+          "units": [
+            "17698:LA",
+            "17698:TX"
+          ],
+          "net_weight_removed": 0.155017
+        },
+        {
+          "kind": "company",
+          "removed": "Xcel Energy",
+          "units": [
+            "17718:NM",
+            "17718:TX"
+          ],
+          "net_weight_removed": 0.154255
+        },
+        {
+          "kind": "comparison",
+          "removed": "6022:OR",
+          "units": [
+            "6022:OR"
+          ],
+          "net_weight_removed": 0.131577
+        },
+        {
+          "kind": "company",
+          "removed": "6022:OR",
+          "units": [
+            "6022:OR"
+          ],
+          "net_weight_removed": 0.131577
+        },
+        {
+          "kind": "comparison",
+          "removed": "9191:ID",
+          "units": [
+            "9191:ID"
+          ],
+          "net_weight_removed": 0.129415
+        },
+        {
+          "kind": "company",
+          "removed": "IDACORP",
+          "units": [
+            "9191:ID"
+          ],
+          "net_weight_removed": 0.129415
+        }
+      ],
+      "largest_net_weight_removed_by_one_company": {
+        "company": "El Paso Electric / Infrastructure Investments Fund (IIF)",
+        "net_weight_removed": 0.367796,
+        "units": [
+          "5701:NM",
+          "5701:TX"
+        ],
+        "investor_owned_units_with_no_row": []
+      },
+      "net_weight_note": "net weight as D-57 defines it, on the full design under the gas-share control: signed weights summed by utility-state and calendar year, then magnitudes",
+      "hosts_in_the_design": 6,
+      "fingerprint": {
+        "sha256": "5e079784dc62bc476935d89ab9f55a3de78735bcc4970a1e81aa2ac7f1c8f4d5",
+        "of": {
+          "design_inputs": "d0bd87b0b7605b34a7dcdc3bb2a1eab435bd0e1e8fe2dddb889691b3d37b017e",
+          "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+          "code_version": "5b1864bde1aa392371961829f67bc54e8e073abfa8115a4687c8b46bb7d6d4a5",
+          "assumptions": "0713f30da88ca63ffceeab4179592854d9163fccf9c6755750358c82fd875f80",
+          "settings": "f1cea4f93d26c10b9671b4830174eb10aad0f78bc9147dbd288faa2778945774",
+          "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+        },
+        "version": 1
+      }
+    }
+  }
+}

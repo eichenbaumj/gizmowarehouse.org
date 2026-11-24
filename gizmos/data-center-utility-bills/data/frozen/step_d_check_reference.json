@@ -1,0 +1,47 @@
+{
+ "reference": {
+  "reference_attribution": {
+   "file": "docs/gate1/expansion-test-2026-11-19-s18.json",
+   "built_on_corrections": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+   "what": "the exact attribution rerun on 2026-11-19 on the corrections in force (s18); each difference's `reference` is that attribution's place and first crossing at 2%"
+  },
+  "differences": [],
+  "unexplained": [],
+  "moved_by_the_map": [],
+  "batch_c_sites_off_their_snapshot_utility": []
+ },
+ "fingerprint": {
+  "files": {
+   "pipeline/facilities/verified/pass_c_corrections_s17.json": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22",
+   "docs/gate1/expansion-test-2026-11-19-s18.json": "25761f2843234595089912804157743ce803c1231db2d410139578980ab37c50",
+   "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+   "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+   "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+   "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+   "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+   "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+   "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+   "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+   "pipeline/facilities/step_d_check.py": "f87804b726d4a94c46ec41388de094844412bd192818ed102f9f87415b4ff385",
+   "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+   "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+   "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+   "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+   "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+   "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+   "data/interim/utility_year_dose.parquet": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34",
+   "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6",
+   "data/interim/state_load_by_year.parquet": "063f675798bebbadc6267d1c176b2947fcfc2d12287218339efb09732d161b06",
+   "data/interim/epoch_gaps.parquet": "f4d79f38bcc8aae6db159962ab12355dcda1cb1d639ec7cdc27498551df8dc7c",
+   "data/interim/snapshot-2026-11-14/facilities.parquet": "87b1acd0503f35b2fb13b8be167c6be11de2054c874931a55b999c124ccc8aec",
+   "data/interim/snapshot-2026-11-14/facility_year.parquet": "61962c7b9988cbe027fd607036f761f56cfbad20c97a21dfbfd974263bb99268",
+   "data/interim/snapshot-2026-11-14/utility_year_dose.parquet": "107a92b3ead6abaf4394d5949848273d4d6d41de74ca6af1efa8df50ffd2412b",
+   "data/interim/snapshot-2026-11-14/state_anchor.parquet": "82139d9ab34f9eb9434d197672fe38f773341ef174d4bdda2fa09593fb625d99",
+   "data/interim/snapshot-2026-11-14/state_load_by_year.parquet": "6337f89bdb1ca03b6d746f2c26e4bfbb0653e714230331f2d826008016013a10",
+   "data/interim/snapshot-2026-11-14/epoch_gaps.parquet": "f4d79f38bcc8aae6db159962ab12355dcda1cb1d639ec7cdc27498551df8dc7c"
+  },
+  "settings": {
+   "check": "reference"
+  }
+ }
+}

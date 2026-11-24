@@ -17,6 +17,7 @@ Joe is a partner at 17A, a consulting firm serving state and local government. M
 
 ## Gizmos
 
+- [Do Data Centers Raise Your Electric Bill?](/gizmo/data-center-utility-bills) (2026-11): Probably not by more than 5%, and very unlikely by more than 10%. A test of household electricity prices at utilities that took on data centers. Code, plan and results (GitHub): https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/data-center-utility-bills
 - [The Trouble With Hoyt-Schermerhorn](/gizmo/hoyt-schermerhorn-crime-analysis) (2026-11): Downtown Brooklyn's Hoyt-Schermerhorn ranks second in NYC for violent complaints. A courthouse and a mall explain most of it. Street robbery never rose.
 - [The Price of Insuring Yourself](/gizmo/self-insurance-cost) (2026-10): Self-insured New York governments may spend a fifth more on liability, and their bills swing nearly twice as much. 135 governments read, 2015 to 2024. Code and data pipeline (GitHub): https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/self-insurance-cost
 - [Introducing Daf Yomi Dot Dev](/gizmo/daf-yomi) (2026-09): daf-yomi.dev shows today's page of Talmud with a short AI-written note and one question, plus a daily email. How I built it with Claude, and why. Open daf-yomi.dev: https://daf-yomi.dev; Source on GitHub: https://github.com/eichenbaumj/daf-yomi
@@ -43,3 +44,4 @@ One page per state, county, city, or jurisdiction, generated from the datasets b
 
 - [These 5 Million People Are About to Lose Their Medicaid — But They Don't Have To methodology](/gizmo/medicaid-work-requirements/methodology)
 - [High Floor, Low Ceiling: How Public-Sector Wage Compression Erodes Public Service methodology](/gizmo/public-private-compensation-comparison/methodology)
+- [Do Data Centers Raise Your Electric Bill? methodology](/gizmo/data-center-utility-bills/methodology)

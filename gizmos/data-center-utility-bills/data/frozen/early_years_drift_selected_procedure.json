@@ -1,0 +1,248 @@
+{
+ "what_this_is": "Exercise 4a of session 24: how often the selected procedure's early-years test detects a drift of 1% a year on the current design (the headline set at 2% under the headline rules). Authorized by Joe on 2026-11-20 (D-113). Specification: docs/gate1/simulation-spec-4a-early-years-drift-2026-11-20.md, committed before any dataset was drawn. Every price here is made up, and no price was read. This is a property of this test on this design under made-up prices of two assumed kinds. It is NOT evidence about real pre-trends, NOT a validation figure (stage 2's rates stand as the validation), NOT a figure for the companion sets, and NOT a rerun of any stage of the comparison. The plan is a draft pre-analysis plan; it is not frozen and not registered with anyone outside. Run once; never extended or rerun after its answer is seen.",
+ "seed": 20261206,
+ "stream_layout": "dataset k of process p draws from numpy.random.SeedSequence([20261206, p, k, 0]), p the comparison's index of the process (0 for G0, 6 for G6); candidate C draws nothing",
+ "datasets_per_process": 2000,
+ "block": 25,
+ "drift_log_points_a_year": 0.01,
+ "drift_path": "0.01 times the host indicator times years past the reference year, over the whole window (inference_check.fixed_parts's trend, inference_check.TREND_PATH), added to the made-up history",
+ "processes": {
+  "G0_as_in_D38": {
+   "index_in_the_comparison": 0,
+   "grid": {
+    "region_step_sd": 0.03,
+    "state_sd": 0.015,
+    "state_rho": 0.6,
+    "own_sd": 0.03,
+    "own_rho": 0.7
+   }
+  },
+  "G6_all_of_it": {
+   "index_in_the_comparison": 6,
+   "grid": {
+    "region_step_sd": 0.03,
+    "state_sd": 0.015,
+    "state_rho": 0.9,
+    "own_sd": 0.03,
+    "own_rho": 0.7,
+    "own_scale_sd": 0.5,
+    "steps": {
+     "prob": 0.25,
+     "mean": 0.03,
+     "sd": 0.04,
+     "noise_sd": 0.01
+    },
+    "ownership_step_sd": 0.02
+   }
+  }
+ },
+ "procedure": "Candidate C, the selected procedure (candidates.CandidateC, unchanged): CR2 with the Satterthwaite t range for the headline (the mean of event years 2 and 3), and the approximate Hotelling test of event years -6, -5 and -4 being zero for the early years, which fails at p below 0.1 (candidates.ALPHA). Each dataset is read with CandidateC.run(y, 0.0, planted=None) as drawn, and with CandidateC.run(y + 0.01 * trend, 0.0, planted=None) with the drift planted. C draws nothing, so there is no bootstrap seed.",
+ "by_process": {
+  "G0_as_in_D38": {
+   "datasets": 2000,
+   "early_years_test_detects_the_drift": {
+    "count": 258,
+    "datasets": 2000,
+    "rate": 0.129,
+    "exact_95_interval": [
+     0.11461,
+     0.14449
+    ],
+    "what_counts": "a drift reading with no numerical failure whose early-years test fails at p below 0.10; a dataset whose drift reading fails numerically stays in the denominator and counts as no detection",
+    "interval": "Clopper and Pearson's exact 95% interval (inference_comparison.clopper_pearson)",
+    "measured_share_under_one_half": true,
+    "exact_95_interval_contains_one_half": false
+   },
+   "numerical_failures_under_the_drift_counted_as_no_detection": {
+    "count": 0,
+    "causes": {},
+    "where": {}
+   },
+   "mean_headline_estimate_with_the_drift_planted": {
+    "log_points": 0.054398297169674883,
+    "percent_as_100_times_log_points": 5.4398297169674885,
+    "over": "datasets in which the candidate computed an estimate (no numerical failure, finite estimate)",
+    "datasets_used": 2000
+   },
+   "bias_the_drift_puts_in_the_headline_by_construction": {
+    "log_points": 0.055,
+    "percent_as_100_times_log_points": 5.5,
+    "why": "the headline is the mean of event years 2 and 3, 5.5 years past the reference year on average, times the drift of 0.01 a year"
+   },
+   "mechanics_reading_not_a_validation_figure_same_datasets_with_nothing_planted": {
+    "what_this_is": "A mechanics reading, NOT a validation figure: the same datasets read with nothing planted, to show how much of the detection rate is the test's ordinary rate of failing a flat history. It is not set against the 11% standard; stage 2's rates stand as the validation (spec section 3).",
+    "early_years_test_rejects_a_flat_history": {
+     "count": 99,
+     "datasets": 2000,
+     "rate": 0.0495,
+     "exact_95_interval": [
+      0.04041,
+      0.05994
+     ],
+     "failures_counted_as_rejections": true
+    },
+    "numerical_failures": {
+     "count": 0,
+     "causes": {},
+     "where": {}
+    },
+    "mean_headline_estimate": {
+     "log_points": -0.0006017028303252483,
+     "percent_as_100_times_log_points": -0.06017028303252483,
+     "over": "datasets in which the candidate computed an estimate (no numerical failure, finite estimate)",
+     "datasets_used": 2000
+    }
+   }
+  },
+  "G6_all_of_it": {
+   "datasets": 2000,
+   "early_years_test_detects_the_drift": {
+    "count": 95,
+    "datasets": 2000,
+    "rate": 0.0475,
+    "exact_95_interval": [
+     0.0386,
+     0.05776
+    ],
+    "what_counts": "a drift reading with no numerical failure whose early-years test fails at p below 0.10; a dataset whose drift reading fails numerically stays in the denominator and counts as no detection",
+    "interval": "Clopper and Pearson's exact 95% interval (inference_comparison.clopper_pearson)",
+    "measured_share_under_one_half": true,
+    "exact_95_interval_contains_one_half": false
+   },
+   "numerical_failures_under_the_drift_counted_as_no_detection": {
+    "count": 0,
+    "causes": {},
+    "where": {}
+   },
+   "mean_headline_estimate_with_the_drift_planted": {
+    "log_points": 0.054694635253919203,
+    "percent_as_100_times_log_points": 5.46946352539192,
+    "over": "datasets in which the candidate computed an estimate (no numerical failure, finite estimate)",
+    "datasets_used": 2000
+   },
+   "bias_the_drift_puts_in_the_headline_by_construction": {
+    "log_points": 0.055,
+    "percent_as_100_times_log_points": 5.5,
+    "why": "the headline is the mean of event years 2 and 3, 5.5 years past the reference year on average, times the drift of 0.01 a year"
+   },
+   "mechanics_reading_not_a_validation_figure_same_datasets_with_nothing_planted": {
+    "what_this_is": "A mechanics reading, NOT a validation figure: the same datasets read with nothing planted, to show how much of the detection rate is the test's ordinary rate of failing a flat history. It is not set against the 11% standard; stage 2's rates stand as the validation (spec section 3).",
+    "early_years_test_rejects_a_flat_history": {
+     "count": 73,
+     "datasets": 2000,
+     "rate": 0.0365,
+     "exact_95_interval": [
+      0.02872,
+      0.04568
+     ],
+     "failures_counted_as_rejections": true
+    },
+    "numerical_failures": {
+     "count": 0,
+     "causes": {},
+     "where": {}
+    },
+    "mean_headline_estimate": {
+     "log_points": -0.0003053647460809299,
+     "percent_as_100_times_log_points": -0.030536474608092994,
+     "over": "datasets in which the candidate computed an estimate (no numerical failure, finite estimate)",
+     "datasets_used": 2000
+    }
+   }
+  }
+ },
+ "reading_rule": {
+  "rule": "Spec section 4. If both measured rates are under one half, the second sentence is added for the headline set. If both are at or over, it is not added. If one is under and one is not, no rule is chosen and the matter goes back to Joe",
+  "measured_shares": {
+   "G0_as_in_D38": 0.129,
+   "G6_all_of_it": 0.0475
+  },
+  "outcome": "added",
+  "in_words": "Both processes' measured detection rates are under one half, so the second sentence ('On a set this small it would miss a large one.') is added to the early-years reading for the headline set.",
+  "note": "The comparison is of the measured share with one half, as the plan's words have it, and each exact interval is reported beside its share. That reading of the plan's words is the session's and is Joe's to strike"
+ },
+ "design_inputs_sha256": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+ "design_quantities": {
+  "g7_units": {
+   "comparison_utilities": [
+    {
+     "utility": "5701:TX",
+     "net_weight": 0.230717
+    },
+    {
+     "utility": "5701:NM",
+     "net_weight": 0.196882
+    },
+    {
+     "utility": "56146:CO",
+     "net_weight": 0.139588
+    },
+    {
+     "utility": "9191:ID",
+     "net_weight": 0.132245
+    },
+    {
+     "utility": "14354:WY",
+     "net_weight": 0.115823
+    }
+   ],
+   "hosts": [
+    {
+     "utility": "14127:NE",
+     "weight": 0.153509
+    },
+    {
+     "utility": "14354:UT",
+     "weight": 0.149528
+    }
+   ]
+  },
+  "g8": {
+   "mode": "ownership and suppliers (suppliers.csv, sha256 1a4786d0c20d8064c9d288ea22e65b7352fb6531217d7bf2363508bf045665c8)",
+   "units": 3026,
+   "unit_years_with_a_parent_from_the_table": 2109,
+   "unit_years_their_own_company": 73541,
+   "unit_years_with_a_supplier": 2100,
+   "companies": 49,
+   "units_that_are_their_own_company_in_some_year": 2956,
+   "suppliers": 28
+  },
+  "host_weights_sum_to": 1.0,
+  "states_with_no_gas_share_given_no_fuel_walk": [
+   "AS",
+   "GU",
+   "PR",
+   "VI"
+  ],
+  "units_in_the_panel_codes": 3026,
+  "units_in_the_assembled_design": 49,
+  "design_units_with_an_ownership_class_outside_the_three": 0,
+  "clusters": 19,
+  "rows": 770,
+  "regressors": 26
+ },
+ "fingerprint": {
+  "sha256": "e95537b962bc661e55f127c363ecaff7c4aefe3e489227928c142919b3d449e8",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "de91f28fc1a2fd9b40e93665a7db432293239519b0b72cbff32d2c7b756d68e8",
+   "assumptions": "d0ea5b441148d6011d5523d243856ac4ef503530a1c89793d8f3bb191882807e",
+   "settings": "bc8b2176ec39b5de97b2af4d5e451b83ea18461f20a39878de15f0f087271b9b",
+   "seeds": "dd4d00b9af0b21264e4e8e01ea2a6e2a8ae959c9000891c8318f547cc230d854"
+  },
+  "version": 1
+ },
+ "specification_sha256": "b74f5ab677033d8cd771098dc7c513350610ec47b40b7d2c276593524899c914",
+ "workers": 6,
+ "machine": {
+  "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+  "processor": "arm",
+  "logical_cpus": 18,
+  "python": "3.13.5",
+  "numpy": "2.4.6"
+ },
+ "commit": "aad456df40e377f8e18908377be89f22ceec9c8a",
+ "seconds_for_the_datasets": 25.9,
+ "per_dataset_records_kept": "No per-dataset record is written to disk."
+}

@@ -1,0 +1,886 @@
+utility,utility_name,one_of_the_26_hosts,unsettled_cells,site,question,channel,site_state,site_is_on,operator,county,mw_full,already_on_the_target_list
+176:AZ,Ajo Improvement Co,False,40,bi:15-0,date,factor,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+176:AZ,Ajo Improvement Co,False,40,bi:61-0,assignment,own load,AZ,24211.0,Carter Funds,Pima,4.7,False
+176:AZ,Ajo Improvement Co,False,40,bi:67-0,assignment,own load,AZ,24211.0,Ark Data Centers,Pima,0.5,False
+176:AZ,Ajo Improvement Co,False,40,bi:63-0,assignment,own load,AZ,24211.0,Kyndryl,Pima,0.3,False
+176:AZ,Ajo Improvement Co,False,40,bi:62-0,assignment,own load,AZ,24211.0,DakotaCom.Net,Pima,0.1,False
+803:AZ,Arizona Public Service Co,True,19,bi:15-0,date,factor,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+803:AZ,Arizona Public Service Co,True,19,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+803:AZ,Arizona Public Service Co,True,19,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+803:AZ,Arizona Public Service Co,True,19,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+803:AZ,Arizona Public Service Co,True,19,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+803:AZ,Arizona Public Service Co,True,19,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+803:AZ,Arizona Public Service Co,True,19,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+803:AZ,Arizona Public Service Co,True,19,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+803:AZ,Arizona Public Service Co,True,19,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+803:AZ,Arizona Public Service Co,True,19,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+2469:AZ,Buckeye Water C&D District,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+5729:AZ,Electrical Dist No8 Maricopa,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+8139:AZ,Harquahala Valley Pwr District,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+12351:AZ,City of Mesa - (AZ),False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+13961:AZ,Ocotillo Water Conserv. Dist.,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:61-0,assignment,own load,AZ,24211.0,Carter Funds,Pima,4.7,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:67-0,assignment,own load,AZ,24211.0,Ark Data Centers,Pima,0.5,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:63-0,assignment,own load,AZ,24211.0,Kyndryl,Pima,0.3,False
+14543:AZ,Tohono O'Odham Utility Authority,False,100,bi:62-0,assignment,own load,AZ,24211.0,DakotaCom.Net,Pima,0.1,False
+16572:AZ,Salt River Project,False,53,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+16572:AZ,Salt River Project,False,53,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+16572:AZ,Salt River Project,False,53,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+16572:AZ,Salt River Project,False,53,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+16572:AZ,Salt River Project,False,53,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+16572:AZ,Salt River Project,False,53,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+16572:AZ,Salt River Project,False,53,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+16572:AZ,Salt River Project,False,53,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+16572:AZ,Salt River Project,False,53,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+16572:AZ,Salt River Project,False,53,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+16572:AZ,Salt River Project,False,53,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+16572:AZ,Salt River Project,False,53,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+16572:AZ,Salt River Project,False,53,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+16572:AZ,Salt River Project,False,53,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+16572:AZ,Salt River Project,False,53,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+16572:AZ,Salt River Project,False,53,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+16572:AZ,Salt River Project,False,53,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+16572:AZ,Salt River Project,False,53,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+16572:AZ,Salt River Project,False,53,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+16572:AZ,Salt River Project,False,53,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+19016:AZ,Tonopah Irrigation District,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:61-0,assignment,own load,AZ,24211.0,Carter Funds,Pima,4.7,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:67-0,assignment,own load,AZ,24211.0,Ark Data Centers,Pima,0.5,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:63-0,assignment,own load,AZ,24211.0,Kyndryl,Pima,0.3,False
+19604:AZ,USBIA-San Carlos Project,False,100,bi:62-0,assignment,own load,AZ,24211.0,DakotaCom.Net,Pima,0.1,False
+24211:AZ,Tucson Electric Power Co,False,1,bi:61-0,assignment,own load,AZ,24211.0,Carter Funds,Pima,4.7,False
+24211:AZ,Tucson Electric Power Co,False,1,bi:67-0,assignment,own load,AZ,24211.0,Ark Data Centers,Pima,0.5,False
+24211:AZ,Tucson Electric Power Co,False,1,bi:63-0,assignment,own load,AZ,24211.0,Kyndryl,Pima,0.3,False
+24211:AZ,Tucson Electric Power Co,False,1,bi:62-0,assignment,own load,AZ,24211.0,DakotaCom.Net,Pima,0.1,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:61-0,assignment,own load,AZ,24211.0,Carter Funds,Pima,4.7,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:67-0,assignment,own load,AZ,24211.0,Ark Data Centers,Pima,0.5,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:63-0,assignment,own load,AZ,24211.0,Kyndryl,Pima,0.3,False
+27000:AZ,WAPA-- Western Area Power Administration,False,97,bi:62-0,assignment,own load,AZ,24211.0,DakotaCom.Net,Pima,0.1,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+40355:AZ,Maricopa County M W C Dist #1,False,100,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:32-0,assignment,own load,AZ,16572.0,Stack Infrastructure,Maricopa,212.8,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:12-0,assignment,own load,AZ,16572.0,CyrusOne,Maricopa,52.4,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:37-0,assignment,own load,AZ,16572.0,Apple,Maricopa,64.3,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:13-0,assignment,own load,AZ,16572.0,Aligned Data Centers,Maricopa,44.9,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:16-0,assignment,own load,AZ,5729.0,Microsoft,Maricopa,39.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:15-0,assignment,own load,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:15-0,date,both,AZ,12351.0,Aligned Data Centers,Maricopa,36.3,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:31-0,assignment,own load,AZ,16572.0,Iron Mountain,Maricopa,27.7,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:24-0,assignment,own load,AZ,16572.0,Meta,Maricopa,2.8,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:46-0,assignment,own load,AZ,16572.0,Digital Realty,Maricopa,16.6,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:27-0,assignment,own load,AZ,65261.0,Aligned Data Centers,Maricopa,14.4,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:51-0,assignment,own load,AZ,5729.0,GoDaddy,Maricopa,5.4,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:54-0,assignment,own load,AZ,65261.0,Landmark Dividend,Maricopa,5.2,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:33-0,assignment,own load,AZ,65261.0,Iron Mountain,Maricopa,4.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:29-0,assignment,own load,AZ,65261.0,American Express,Maricopa,3.6,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:35-0,assignment,own load,AZ,65261.0,11:11 Systems,Maricopa,3.4,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:57-0,assignment,own load,AZ,16572.0,phoenixNAP,Maricopa,3.3,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:1268-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,3.1,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:39-0,assignment,own load,AZ,16572.0,CBRE,Maricopa,3.0,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:40-0,assignment,own load,AZ,16572.0,Charles Schwab,Maricopa,2.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:34-0,assignment,own load,AZ,16572.0,Centersquare,Maricopa,2.1,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:38-0,assignment,own load,AZ,19604.0,Care Mark,Maricopa,2.1,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:49-0,assignment,own load,AZ,16572.0,Fiserv,Maricopa,1.6,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:1269-0,assignment,own load,AZ,19604.0,Flexential,Maricopa,1.6,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:14-0,assignment,own load,AZ,16572.0,H5 Data Centers,Maricopa,1.4,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:41-0,assignment,own load,AZ,16572.0,Expedient,Maricopa,1.2,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:42-0,assignment,own load,AZ,16572.0,Cox Communications,Maricopa,1.0,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:48-0,assignment,own load,AZ,16572.0,Ensono,Maricopa,1.0,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:25-0,assignment,own load,AZ,5729.0,Digital Realty,Maricopa,0.8,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:1270-0,assignment,own load,AZ,12351.0,Mapletree Industrial Trust,Maricopa,0.8,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:23-0,assignment,own load,AZ,16572.0,Comarch,Maricopa,0.7,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:45-0,assignment,own load,AZ,5729.0,DataBank,Maricopa,0.7,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:47-0,assignment,own load,AZ,16572.0,EdgeConneX,Maricopa,0.7,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:56-0,assignment,own load,AZ,16572.0,Northern Trust Securities,Maricopa,0.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:30-0,assignment,own load,AZ,16572.0,Nestle,Maricopa,0.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:43-0,assignment,own load,AZ,65261.0,Cox Communications,Maricopa,0.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:50-0,assignment,own load,AZ,19604.0,Global Federal Credit Union,Maricopa,0.5,False
+65261:AZ,Gila River Indian Utility Authority (GRICUA),False,50,bi:58-0,assignment,own load,AZ,65261.0,PSCU Financial Services,Maricopa,0.4,False
+3989:CO,City of Colorado Springs - (CO),True,36,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+3989:CO,City of Colorado Springs - (CO),True,36,bi:445-0,assignment,own load,CO,3989.0,Walmart,El Paso,13.4,True
+3989:CO,City of Colorado Springs - (CO),True,36,bi:444-0,date,own load,CO,3989.0,Verizon,El Paso,12.4,True
+3989:CO,City of Colorado Springs - (CO),True,36,bi:446-0,assignment,own load,CO,3989.0,FedEx,El Paso,7.4,True
+3989:CO,City of Colorado Springs - (CO),True,36,bi:446-0,date,own load,CO,3989.0,FedEx,El Paso,7.4,True
+9336:CO,CORE Electric Cooperative,False,67,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+9336:CO,CORE Electric Cooperative,False,67,bi:461-0,assignment,own load,CO,9336.0,Flexential,Douglas,13.4,False
+9336:CO,CORE Electric Cooperative,False,67,bi:1261-0,assignment,own load,CO,9336.0,Centersquare,Arapahoe,3.4,False
+9336:CO,CORE Electric Cooperative,False,67,bi:459-0,assignment,own load,CO,9336.0,US Signal,Arapahoe,1.8,False
+9336:CO,CORE Electric Cooperative,False,67,bi:440-0,assignment,own load,CO,9336.0,Expedient,Arapahoe,1.7,False
+11187:CO,City of Longmont,False,44,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+11187:CO,City of Longmont,False,44,bi:468-0,assignment,own load,CO,11187.0,Stonepeak Infrastructure Partners,Boulder,1.5,False
+11187:CO,City of Longmont,False,44,bi:469-0,assignment,own load,CO,11187.0,American Honda Motor Company,Boulder,0.9,False
+13050:CO,"Mountain Parks Electric, Inc",True,16,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+13050:CO,"Mountain Parks Electric, Inc",True,16,bi:1260-0,assignment,own load,CO,13050.0,Crusoe Energy,Jackson,2.6,True
+13058:CO,"Mountain View Elec Assn, Inc",False,4,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+13058:CO,"Mountain View Elec Assn, Inc",False,4,bi:475-0,assignment,own load,CO,13058.0,Evergeen Technologies,Lincoln,1.7,False
+15257:CO,"Poudre Valley REA, Inc",False,100,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+15257:CO,"Poudre Valley REA, Inc",False,100,bi:436-0,assignment,own load,CO,15257.0,Kyndryl,Boulder,22.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:434-0,assignment,own load,CO,15466.0,QTS,Arapahoe,44.5,False
+15466:CO,Public Service Co of Colorado,False,81,bi:434-0,date,both,CO,15466.0,QTS,Arapahoe,44.5,False
+15466:CO,Public Service Co of Colorado,False,81,bi:436-0,assignment,own load,CO,15257.0,Kyndryl,Boulder,22.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:435-0,assignment,own load,CO,15466.0,JPMorgan Chase,Arapahoe,19.9,False
+15466:CO,Public Service Co of Colorado,False,81,bi:473-0,assignment,own load,CO,15466.0,Amazon,Arapahoe,19.1,False
+15466:CO,Public Service Co of Colorado,False,81,bi:438-0,assignment,own load,CO,19499.0,JPMorgan Chase,Broomfield,16.5,True
+15466:CO,Public Service Co of Colorado,False,81,bi:465-0,assignment,own load,CO,15466.0,Centersquare,Douglas,8.9,False
+15466:CO,Public Service Co of Colorado,False,81,bi:457-0,assignment,own load,CO,15466.0,Equinix,Arapahoe,7.2,False
+15466:CO,Public Service Co of Colorado,False,81,bi:442-0,assignment,own load,CO,15466.0,Spectrum,Arapahoe,6.3,False
+15466:CO,Public Service Co of Colorado,False,81,bi:432-0,assignment,own load,CO,15466.0,365 Data Centers,Adams,5.1,False
+15466:CO,Public Service Co of Colorado,False,81,bi:455-0,assignment,own load,CO,15466.0,US General Services Administration,Jefferson,3.7,False
+15466:CO,Public Service Co of Colorado,False,81,bi:443-0,assignment,own load,CO,15466.0,DataBank,Arapahoe,3.6,False
+15466:CO,Public Service Co of Colorado,False,81,bi:439-0,assignment,own load,CO,15466.0,Oracle,Jefferson,3.4,False
+15466:CO,Public Service Co of Colorado,False,81,bi:464-0,assignment,own load,CO,15466.0,Centersquare,Douglas,3.4,False
+15466:CO,Public Service Co of Colorado,False,81,bi:470-0,assignment,own load,CO,15466.0,11:11 Systems,Adams,2.0,False
+15466:CO,Public Service Co of Colorado,False,81,bi:471-0,assignment,own load,CO,15466.0,Google,Adams,2.0,False
+15466:CO,Public Service Co of Colorado,False,81,bi:458-0,assignment,own load,CO,15466.0,Computershare,Arapahoe,1.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:440-0,assignment,own load,CO,9336.0,Expedient,Arapahoe,1.7,False
+15466:CO,Public Service Co of Colorado,False,81,bi:447-0,assignment,own load,CO,15466.0,Leidos,Adams,1.7,False
+15466:CO,Public Service Co of Colorado,False,81,bi:451-0,assignment,own load,CO,15466.0,Denver Federal Center,Denver,1.6,False
+15466:CO,Public Service Co of Colorado,False,81,bi:433-0,assignment,own load,CO,15466.0,Lumen Technologies,Arapahoe,1.6,False
+15466:CO,Public Service Co of Colorado,False,81,bi:437-0,assignment,own load,CO,15466.0,Leidos,Boulder,1.4,False
+15466:CO,Public Service Co of Colorado,False,81,bi:450-0,assignment,own load,CO,15466.0,Sidus Group,Denver,1.4,False
+15466:CO,Public Service Co of Colorado,False,81,bi:456-0,assignment,own load,CO,15466.0,Nissan,Arapahoe,1.4,False
+15466:CO,Public Service Co of Colorado,False,81,bi:441-0,assignment,own load,CO,15466.0,Equinix,Arapahoe,1.1,False
+15466:CO,Public Service Co of Colorado,False,81,bi:454-0,assignment,own load,CO,15466.0,CoreSite,Denver,1.1,False
+15466:CO,Public Service Co of Colorado,False,81,bi:452-0,assignment,own load,CO,15466.0,Iron Mountain,Denver,0.9,False
+15466:CO,Public Service Co of Colorado,False,81,bi:448-0,assignment,own load,CO,15466.0,Lumen Technologies,Denver,0.7,False
+15466:CO,Public Service Co of Colorado,False,81,bi:460-0,assignment,own load,CO,15466.0,Catholic Health Initiative,Denver,0.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:462-0,assignment,own load,CO,15466.0,Visa,Douglas,0.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:463-0,assignment,own load,CO,15466.0,Exempla Data Center,Jefferson,0.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:472-0,assignment,own load,CO,15466.0,DataBank,Jefferson,0.8,False
+15466:CO,Public Service Co of Colorado,False,81,bi:449-0,assignment,own load,CO,15466.0,DataBank,Denver,0.2,False
+19499:CO,"United Power, Inc",True,40,bi:434-0,date,factor,CO,15466.0,QTS,Arapahoe,44.5,False
+19499:CO,"United Power, Inc",True,40,bi:438-0,assignment,own load,CO,19499.0,JPMorgan Chase,Broomfield,16.5,True
+19499:CO,"United Power, Inc",True,40,bi:453-1,assignment,own load,CO,19499.0,Oracle,Denver,2.2,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:434-0,assignment,own load,CO,15466.0,QTS,Arapahoe,44.5,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:434-0,date,both,CO,15466.0,QTS,Arapahoe,44.5,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:436-0,assignment,own load,CO,15257.0,Kyndryl,Boulder,22.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:435-0,assignment,own load,CO,15466.0,JPMorgan Chase,Arapahoe,19.9,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:473-0,assignment,own load,CO,15466.0,Amazon,Arapahoe,19.1,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:438-0,assignment,own load,CO,19499.0,JPMorgan Chase,Broomfield,16.5,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:445-0,assignment,own load,CO,3989.0,Walmart,El Paso,13.4,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:461-0,assignment,own load,CO,9336.0,Flexential,Douglas,13.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:465-0,assignment,own load,CO,15466.0,Centersquare,Douglas,8.9,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:446-0,assignment,own load,CO,3989.0,FedEx,El Paso,7.4,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:446-0,date,own load,CO,3989.0,FedEx,El Paso,7.4,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:457-0,assignment,own load,CO,15466.0,Equinix,Arapahoe,7.2,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:442-0,assignment,own load,CO,15466.0,Spectrum,Arapahoe,6.3,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:432-0,assignment,own load,CO,15466.0,365 Data Centers,Adams,5.1,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:455-0,assignment,own load,CO,15466.0,US General Services Administration,Jefferson,3.7,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:443-0,assignment,own load,CO,15466.0,DataBank,Arapahoe,3.6,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:439-0,assignment,own load,CO,15466.0,Oracle,Jefferson,3.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:464-0,assignment,own load,CO,15466.0,Centersquare,Douglas,3.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:1261-0,assignment,own load,CO,9336.0,Centersquare,Arapahoe,3.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:1260-0,assignment,own load,CO,13050.0,Crusoe Energy,Jackson,2.6,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:453-1,assignment,own load,CO,19499.0,Oracle,Denver,2.2,True
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:470-0,assignment,own load,CO,15466.0,11:11 Systems,Adams,2.0,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:471-0,assignment,own load,CO,15466.0,Google,Adams,2.0,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:458-0,assignment,own load,CO,15466.0,Computershare,Arapahoe,1.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:459-0,assignment,own load,CO,9336.0,US Signal,Arapahoe,1.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:440-0,assignment,own load,CO,9336.0,Expedient,Arapahoe,1.7,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:447-0,assignment,own load,CO,15466.0,Leidos,Adams,1.7,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:451-0,assignment,own load,CO,15466.0,Denver Federal Center,Denver,1.6,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:475-0,assignment,own load,CO,13058.0,Evergeen Technologies,Lincoln,1.7,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:433-0,assignment,own load,CO,15466.0,Lumen Technologies,Arapahoe,1.6,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:468-0,assignment,own load,CO,11187.0,Stonepeak Infrastructure Partners,Boulder,1.5,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:437-0,assignment,own load,CO,15466.0,Leidos,Boulder,1.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:450-0,assignment,own load,CO,15466.0,Sidus Group,Denver,1.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:456-0,assignment,own load,CO,15466.0,Nissan,Arapahoe,1.4,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:441-0,assignment,own load,CO,15466.0,Equinix,Arapahoe,1.1,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:454-0,assignment,own load,CO,15466.0,CoreSite,Denver,1.1,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:452-0,assignment,own load,CO,15466.0,Iron Mountain,Denver,0.9,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:469-0,assignment,own load,CO,11187.0,American Honda Motor Company,Boulder,0.9,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:448-0,assignment,own load,CO,15466.0,Lumen Technologies,Denver,0.7,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:460-0,assignment,own load,CO,15466.0,Catholic Health Initiative,Denver,0.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:462-0,assignment,own load,CO,15466.0,Visa,Douglas,0.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:463-0,assignment,own load,CO,15466.0,Exempla Data Center,Jefferson,0.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:472-0,assignment,own load,CO,15466.0,DataBank,Jefferson,0.8,False
+27000:CO,WAPA-- Western Area Power Administration,False,100,bi:449-0,assignment,own load,CO,15466.0,DataBank,Denver,0.2,False
+10000:KS,Evergy Metro,False,8,bi:616-0,date,own load,KS,9996.0,State Farm,Johnson,6.7,True
+10000:KS,Evergy Metro,False,8,bi:615-0,date,both,KS,9996.0,CLOP Olathe KS LLC,Johnson,5.3,False
+10728:KS,"Lane-Scott Electric Coop, Inc",False,12,bi:615-0,date,factor,KS,9996.0,CLOP Olathe KS LLC,Johnson,5.3,False
+10728:KS,"Lane-Scott Electric Coop, Inc",False,12,bi:612-0,assignment,own load,KS,19820.0,Armstrong Energy Corporation,Edwards,0.9,False
+19820:KS,Victory Electric Coop Assn Inc,False,6,bi:615-0,date,factor,KS,9996.0,CLOP Olathe KS LLC,Johnson,5.3,False
+19820:KS,Victory Electric Coop Assn Inc,False,6,bi:612-0,assignment,own load,KS,19820.0,Armstrong Energy Corporation,Edwards,0.9,False
+5773:MN,City of Elk River,True,56,bi:646-0,date,own load,MN,5773.0,Target,Sherburne,16.7,True
+13781:MN,Northern States Power Co - Minnesota,False,10,bi:640-0,assignment,own load,MN,13781.0,Target,Hennepin,18.2,False
+13781:MN,Northern States Power Co - Minnesota,False,10,bi:641-0,assignment,own load,MN,13781.0,DataBank,Hennepin,15.8,False
+13781:MN,Northern States Power Co - Minnesota,False,10,bi:656-0,assignment,own load,MN,13781.0,T5 Data Centers,Hennepin,13.1,False
+13781:MN,Northern States Power Co - Minnesota,False,10,bi:653-0,assignment,own load,MN,13781.0,Fairview Health Services,Hennepin,4.2,False
+13781:MN,Northern States Power Co - Minnesota,False,10,bi:649-0,assignment,own load,MN,13781.0,FIS Global,Hennepin,2.0,False
+13781:MN,Northern States Power Co - Minnesota,False,10,bi:642-0,assignment,own load,MN,13781.0,Data Recognition Corporation,Hennepin,0.6,False
+20996:MN,Wright-Hennepin Coop Elec Assn,False,1,bi:650-0,assignment,own load,MN,20996.0,Data Recognition Corporation,Hennepin,1.0,False
+3093:MO,Carroll Electric Coop Corp - (AR),False,100,bi:667-0,assignment,own load,MO,13520.0,Walmart,McDonald,15.1,True
+3093:MO,Carroll Electric Coop Corp - (AR),False,100,bi:667-0,date,own load,MO,13520.0,Walmart,McDonald,15.1,True
+10370:MO,City of Kirkwood - (MO),False,100,bi:1159-0,assignment,own load,MO,10370.0,Digital Realty,St. Louis,10.4,False
+10370:MO,City of Kirkwood - (MO),False,100,bi:1160-0,assignment,own load,MO,10370.0,Digital Realty,St. Louis,5.1,False
+10370:MO,City of Kirkwood - (MO),False,100,bi:1161-0,assignment,own load,MO,10370.0,Lumen Technologies,St. Louis,2.6,False
+10370:MO,City of Kirkwood - (MO),False,100,bi:1164-0,assignment,own load,MO,10370.0,Verizon,St. Louis,1.3,False
+10370:MO,City of Kirkwood - (MO),False,100,bi:1162-0,assignment,own load,MO,10370.0,H5 Data Centers,St. Louis,0.3,False
+10370:MO,City of Kirkwood - (MO),False,100,bi:1163-0,assignment,own load,MO,10370.0,H5 Data Centers,St. Louis,0.3,False
+12698:MO,Evergy Missouri West,False,86,bi:662-0,assignment,own load,MO,15138.0,Meta,Jackson,2.6,False
+12698:MO,Evergy Missouri West,False,86,bi:664-0,assignment,own load,MO,15138.0,MasterCard,Platte,34.0,False
+12698:MO,Evergy Missouri West,False,86,bi:658-0,assignment,own load,MO,12698.0,Oracle,Clay,25.8,False
+12698:MO,Evergy Missouri West,False,86,bi:659-0,assignment,own load,MO,12698.0,Oracle,Clay,19.9,False
+12698:MO,Evergy Missouri West,False,86,bi:1158-0,assignment,own load,MO,12698.0,Cogent,Jackson,10.4,False
+12698:MO,Evergy Missouri West,False,86,bi:663-0,assignment,own load,MO,12698.0,Iron Mountain,Nodaway,4.9,False
+12698:MO,Evergy Missouri West,False,86,bi:661-0,assignment,own load,MO,12698.0,Oracle,Jackson,1.0,False
+13520:MO,"New-Mac Electric Coop, Inc",True,100,bi:667-0,assignment,own load,MO,13520.0,Walmart,McDonald,15.1,True
+13520:MO,"New-Mac Electric Coop, Inc",True,100,bi:667-0,date,own load,MO,13520.0,Walmart,McDonald,15.1,True
+15138:MO,"Platte-Clay Electric Coop, Inc",False,92,bi:662-0,assignment,own load,MO,15138.0,Meta,Jackson,2.6,False
+15138:MO,"Platte-Clay Electric Coop, Inc",False,92,bi:664-0,assignment,own load,MO,15138.0,MasterCard,Platte,34.0,False
+19436:MO,Union Electric Co - (MO),False,22,bi:662-0,assignment,own load,MO,15138.0,Meta,Jackson,2.6,False
+19436:MO,Union Electric Co - (MO),False,22,bi:1159-0,assignment,own load,MO,10370.0,Digital Realty,St. Louis,10.4,False
+19436:MO,Union Electric Co - (MO),False,22,bi:1160-0,assignment,own load,MO,10370.0,Digital Realty,St. Louis,5.1,False
+19436:MO,Union Electric Co - (MO),False,22,bi:1161-0,assignment,own load,MO,10370.0,Lumen Technologies,St. Louis,2.6,False
+19436:MO,Union Electric Co - (MO),False,22,bi:1164-0,assignment,own load,MO,10370.0,Verizon,St. Louis,1.3,False
+19436:MO,Union Electric Co - (MO),False,22,bi:1162-0,assignment,own load,MO,10370.0,H5 Data Centers,St. Louis,0.3,False
+19436:MO,Union Electric Co - (MO),False,22,bi:1163-0,assignment,own load,MO,10370.0,H5 Data Centers,St. Louis,0.3,False
+3542:OH,Duke Energy Ohio Inc,False,1,bi:794-0,date,factor,OH,14006.0,Amazon,Franklin,82.9,False
+3762:OH,City of Cleveland - (OH),False,21,bi:794-0,date,factor,OH,14006.0,Amazon,Franklin,82.9,False
+3762:OH,City of Cleveland - (OH),False,21,bi:1251-0,assignment,own load,OH,3762.0,H5 Data Centers,Cuyahoga,1.2,False
+3762:OH,City of Cleveland - (OH),False,21,bi:788-0,assignment,own load,OH,3762.0,DataBank,Cuyahoga,0.2,False
+4065:OH,City of Columbus - (OH),False,72,bi:794-0,date,factor,OH,14006.0,Amazon,Franklin,82.9,False
+4065:OH,City of Columbus - (OH),False,72,bi:791-0,assignment,own load,OH,4065.0,Cologix,Franklin,14.2,False
+4065:OH,City of Columbus - (OH),False,72,bi:790-0,assignment,own load,OH,14006.0,Cologix,Franklin,7.8,False
+4065:OH,City of Columbus - (OH),False,72,bi:789-0,assignment,own load,OH,14006.0,Kyndryl,Franklin,3.7,False
+4065:OH,City of Columbus - (OH),False,72,bi:1246-0,assignment,own load,OH,4065.0,Centersquare,Delaware,2.2,False
+7977:OH,City of Hamilton - (OH),True,45,bi:794-0,date,factor,OH,14006.0,Amazon,Franklin,82.9,False
+7977:OH,City of Hamilton - (OH),True,45,bi:1250-0,date,own load,OH,7977.0,CyrusOne,Butler,3.1,True
+10668:OH,Licking Rural Electric Inc,False,8,bi:794-0,date,factor,OH,14006.0,Amazon,Franklin,82.9,False
+10668:OH,Licking Rural Electric Inc,False,8,bi:797-0,assignment,own load,OH,14006.0,Amazon,Licking,67.0,False
+10668:OH,Licking Rural Electric Inc,False,8,epoch:Google New Albany,assignment,own load,OH,14006.0,Google,,333.0,False
+10668:OH,Licking Rural Electric Inc,False,8,epoch:AWS New Albany,assignment,own load,OH,13998.0,Amazon,,213.0,False
+13998:OH,Ohio Edison Co,False,8,epoch:AWS New Albany,assignment,own load,OH,13998.0,Amazon,,213.0,False
+14006:OH,Ohio Power Co,False,3,bi:794-0,date,factor,OH,14006.0,Amazon,Franklin,82.9,False
+14006:OH,Ohio Power Co,False,3,bi:789-0,assignment,own load,OH,14006.0,Kyndryl,Franklin,3.7,False
+14006:OH,Ohio Power Co,False,3,bi:1246-0,assignment,own load,OH,4065.0,Centersquare,Delaware,2.2,False
+1738:OR,Bonneville Power Administration,False,56,bi:821-0,assignment,own load,OR,19325.0,Amazon,Morrow,48.7,True
+1738:OR,Bonneville Power Administration,False,56,bi:817-0,assignment,own load,OR,19325.0,Amazon,Morrow,22.0,False
+1738:OR,Bonneville Power Administration,False,56,bi:817-0,date,own load,OR,19325.0,Amazon,Morrow,22.0,False
+1738:OR,Bonneville Power Administration,False,56,bi:852-0,date,factor,OR,15248.0,"Showers Development, LLC",Washington,4.8,True
+15248:OR,Portland General Electric Co,True,9,bi:833-0,date,own load,OR,15248.0,Flexential,Washington,7.0,True
+15248:OR,Portland General Electric Co,True,9,bi:837-0,date,own load,OR,15248.0,Stack Infrastructure,Washington,6.8,True
+15248:OR,Portland General Electric Co,True,9,bi:837-0,capacity,own load,OR,15248.0,Stack Infrastructure,Washington,6.8,True
+15248:OR,Portland General Electric Co,True,9,bi:852-0,date,factor,OR,15248.0,"Showers Development, LLC",Washington,4.8,True
+19325:OR,Umatilla Electric Coop Assn,True,24,bi:848-0,date,own load,OR,19325.0,Amazon,Umatilla,56.1,False
+19325:OR,Umatilla Electric Coop Assn,True,24,bi:821-0,assignment,own load,OR,19325.0,Amazon,Morrow,48.7,True
+19325:OR,Umatilla Electric Coop Assn,True,24,bi:817-0,assignment,own load,OR,19325.0,Amazon,Morrow,22.0,False
+19325:OR,Umatilla Electric Coop Assn,True,24,bi:817-0,date,own load,OR,19325.0,Amazon,Morrow,22.0,False
+19325:OR,Umatilla Electric Coop Assn,True,24,bi:852-0,date,factor,OR,15248.0,"Showers Development, LLC",Washington,4.8,True
+1015:TX,Austin Energy,False,54,bi:878-1,assignment,own load,TX,1015.0,CyrusOne,Travis,51.3,False
+1015:TX,Austin Energy,False,54,bi:877-0,assignment,own load,TX,1015.0,DXC Technology,Travis,50.2,False
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:911-0,assignment,own load,TX,16604.0,Vantage Data Centers,Bexar,16.0,False
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:910-0,assignment,own load,TX,7752.0,Vantage Data Centers,Bexar,99.3,False
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:929-0,assignment,own load,TX,16604.0,Microsoft,Bexar,75.0,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:1212-0,assignment,own load,TX,16604.0,Microsoft,Bexar,59.2,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:907-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:907-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:914-0,assignment,own load,TX,16604.0,Amazon,Bexar,53.4,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:914-0,date,own load,TX,16604.0,Amazon,Bexar,53.4,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:918-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:918-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,bi:928-0,assignment,own load,TX,16604.0,Microsoft,Bexar,30.0,True
+1175:TX,"Bandera Electric Coop, Inc",False,72,epoch:Microsoft SAT40,assignment,own load,TX,1175.0,Microsoft,,75.0,False
+1175:TX,"Bandera Electric Coop, Inc",False,72,epoch:Microsoft SAT14,assignment,own load,TX,16604.0,Microsoft,,47.0,False
+1273:TX,"Bartlett Electric Coop, Inc",False,8,bi:924-0,assignment,own load,TX,1273.0,Sabey Data Centers,Williamson,23.0,False
+1287:TX,City of Bartlett,False,8,bi:924-0,assignment,own load,TX,1273.0,Sabey Data Centers,Williamson,23.0,False
+1892:TX,"Bluebonnet Electric Coop, Inc",False,76,bi:878-1,assignment,own load,TX,1015.0,CyrusOne,Travis,51.3,False
+1892:TX,"Bluebonnet Electric Coop, Inc",False,76,bi:877-0,assignment,own load,TX,1015.0,DXC Technology,Travis,50.2,False
+1892:TX,"Bluebonnet Electric Coop, Inc",False,76,bi:924-0,assignment,own load,TX,1273.0,Sabey Data Centers,Williamson,23.0,False
+4262:TX,Cooke County Elec Coop Assn,True,84,bi:1181-0,assignment,own load,TX,4262.0,CyrusOne,Denton,45.0,True
+4262:TX,Cooke County Elec Coop Assn,True,84,bi:1392-0,assignment,own load,TX,5078.0,Citigroup,Denton,30.0,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:881-0,assignment,own load,TX,5078.0,Meta,Tarrant,105.1,False
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:882-0,assignment,own load,TX,5078.0,Meta,Tarrant,21.5,False
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:1181-0,assignment,own load,TX,4262.0,CyrusOne,Denton,45.0,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:1190-0,assignment,own load,TX,7559.0,Aligned Data Centers,Collin,117.1,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:876-0,assignment,own load,TX,5078.0,CyrusOne,Collin,73.7,False
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:931-0,assignment,own load,TX,7559.0,Stack Infrastructure,Collin,68.8,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:935-0,assignment,own load,TX,5078.0,QTS,Denton,45.0,False
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:1198-0,assignment,own load,TX,5078.0,CoreWeave,Collin,41.2,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:1392-0,assignment,own load,TX,5078.0,Citigroup,Denton,30.0,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:1199-0,assignment,own load,TX,5078.0,DXC Technology,Collin,25.9,True
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:932-0,assignment,own load,TX,5078.0,Stack Infrastructure,Collin,20.2,False
+5078:TX,"Denton County Elec Coop, Inc",False,82,bi:925-0,assignment,own load,TX,5078.0,Flexential,Collin,14.5,False
+6173:TX,Fannin County Electric Coop,False,60,bi:1190-0,assignment,own load,TX,7559.0,Aligned Data Centers,Collin,117.1,True
+6173:TX,Fannin County Electric Coop,False,60,bi:876-0,assignment,own load,TX,5078.0,CyrusOne,Collin,73.7,False
+6173:TX,Fannin County Electric Coop,False,60,bi:931-0,assignment,own load,TX,7559.0,Stack Infrastructure,Collin,68.8,True
+6173:TX,Fannin County Electric Coop,False,60,bi:1198-0,assignment,own load,TX,5078.0,CoreWeave,Collin,41.2,True
+6173:TX,Fannin County Electric Coop,False,60,bi:1199-0,assignment,own load,TX,5078.0,DXC Technology,Collin,25.9,True
+6173:TX,Fannin County Electric Coop,False,60,bi:932-0,assignment,own load,TX,5078.0,Stack Infrastructure,Collin,20.2,False
+6173:TX,Fannin County Electric Coop,False,60,bi:925-0,assignment,own load,TX,5078.0,Flexential,Collin,14.5,False
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:930-0,assignment,own load,TX,6182.0,QTS,Dallas,435.0,True
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:1190-0,assignment,own load,TX,7559.0,Aligned Data Centers,Collin,117.1,True
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:876-0,assignment,own load,TX,5078.0,CyrusOne,Collin,73.7,False
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:931-0,assignment,own load,TX,7559.0,Stack Infrastructure,Collin,68.8,True
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:1198-0,assignment,own load,TX,5078.0,CoreWeave,Collin,41.2,True
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:1258-0,assignment,own load,TX,18976.0,Amazon,Dallas,27.4,False
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:1199-0,assignment,own load,TX,5078.0,DXC Technology,Collin,25.9,True
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:932-0,assignment,own load,TX,5078.0,Stack Infrastructure,Collin,20.2,False
+6182:TX,"Farmers Electric Coop, Inc - (TX)",True,60,bi:925-0,assignment,own load,TX,5078.0,Flexential,Collin,14.5,False
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:1190-0,assignment,own load,TX,7559.0,Aligned Data Centers,Collin,117.1,True
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:876-0,assignment,own load,TX,5078.0,CyrusOne,Collin,73.7,False
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:931-0,assignment,own load,TX,7559.0,Stack Infrastructure,Collin,68.8,True
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:1198-0,assignment,own load,TX,5078.0,CoreWeave,Collin,41.2,True
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:1199-0,assignment,own load,TX,5078.0,DXC Technology,Collin,25.9,True
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:932-0,assignment,own load,TX,5078.0,Stack Infrastructure,Collin,20.2,False
+7559:TX,"Grayson-Collin Elec Coop, Inc",True,60,bi:925-0,assignment,own load,TX,5078.0,Flexential,Collin,14.5,False
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:911-0,assignment,own load,TX,16604.0,Vantage Data Centers,Bexar,16.0,False
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:910-0,assignment,own load,TX,7752.0,Vantage Data Centers,Bexar,99.3,False
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:929-0,assignment,own load,TX,16604.0,Microsoft,Bexar,75.0,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:1212-0,assignment,own load,TX,16604.0,Microsoft,Bexar,59.2,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:907-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:907-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:914-0,assignment,own load,TX,16604.0,Amazon,Bexar,53.4,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:914-0,date,own load,TX,16604.0,Amazon,Bexar,53.4,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:918-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:918-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,bi:928-0,assignment,own load,TX,16604.0,Microsoft,Bexar,30.0,True
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,epoch:Microsoft SAT40,assignment,own load,TX,1175.0,Microsoft,,75.0,False
+7752:TX,Guadalupe Valley Elec Coop Inc,True,72,epoch:Microsoft SAT14,assignment,own load,TX,16604.0,Microsoft,,47.0,False
+8620:TX,"HILCO Electric Cooperative, Inc.",False,48,bi:930-0,assignment,own load,TX,6182.0,QTS,Dallas,435.0,True
+8620:TX,"HILCO Electric Cooperative, Inc.",False,48,bi:1258-0,assignment,own load,TX,18976.0,Amazon,Dallas,27.4,False
+8620:TX,"HILCO Electric Cooperative, Inc.",False,48,epoch:Google Red Oak,assignment,own load,TX,8620.0,Google,,77.0,False
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:887-0,assignment,own load,TX,16638.0,CyrusOne,Harris,84.0,True
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:1200-0,assignment,own load,TX,55937.0,Serverfarm,Harris,108.6,True
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:1200-0,date,own load,TX,55937.0,Serverfarm,Harris,108.6,True
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:1185-0,assignment,own load,TX,55937.0,Digital Realty,Harris,43.2,False
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:889-0,assignment,own load,TX,55937.0,DataBank,Harris,37.4,False
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:886-0,assignment,own load,TX,55937.0,Serverfarm,Travis,21.0,True
+8901:TX,"CenterPoint Energy Houston Electric, LLC",False,40,bi:1191-0,assignment,own load,TX,55937.0,Equinix,Harris,19.3,False
+10009:TX,Karnes Electric Coop Inc,False,72,bi:911-0,assignment,own load,TX,16604.0,Vantage Data Centers,Bexar,16.0,False
+10009:TX,Karnes Electric Coop Inc,False,72,bi:910-0,assignment,own load,TX,7752.0,Vantage Data Centers,Bexar,99.3,False
+10009:TX,Karnes Electric Coop Inc,False,72,bi:929-0,assignment,own load,TX,16604.0,Microsoft,Bexar,75.0,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:1212-0,assignment,own load,TX,16604.0,Microsoft,Bexar,59.2,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:907-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:907-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:914-0,assignment,own load,TX,16604.0,Amazon,Bexar,53.4,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:914-0,date,own load,TX,16604.0,Amazon,Bexar,53.4,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:918-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:918-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+10009:TX,Karnes Electric Coop Inc,False,72,bi:928-0,assignment,own load,TX,16604.0,Microsoft,Bexar,30.0,True
+10009:TX,Karnes Electric Coop Inc,False,72,epoch:Microsoft SAT40,assignment,own load,TX,1175.0,Microsoft,,75.0,False
+10009:TX,Karnes Electric Coop Inc,False,72,epoch:Microsoft SAT14,assignment,own load,TX,16604.0,Microsoft,,47.0,False
+10817:TX,"Lea County Electric Coop, Inc - (NM)",False,3,bi:922-0,assignment,own load,TX,11364.0,Seaboard Marine,Gaines,1.2,False
+11364:TX,"Lyntegar Electric Coop, Inc",False,2,bi:922-0,assignment,own load,TX,11364.0,Seaboard Marine,Gaines,1.2,False
+13332:TX,"Navarro County Elec Coop, Inc",False,4,epoch:Google Red Oak,assignment,own load,TX,8620.0,Google,,77.0,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:911-0,assignment,own load,TX,16604.0,Vantage Data Centers,Bexar,16.0,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:910-0,assignment,own load,TX,7752.0,Vantage Data Centers,Bexar,99.3,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:929-0,assignment,own load,TX,16604.0,Microsoft,Bexar,75.0,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:1212-0,assignment,own load,TX,16604.0,Microsoft,Bexar,59.2,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:907-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:907-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:914-0,assignment,own load,TX,16604.0,Amazon,Bexar,53.4,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:914-0,date,own load,TX,16604.0,Amazon,Bexar,53.4,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:918-0,assignment,own load,TX,7752.0,Amazon,Bexar,53.4,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:918-0,date,own load,TX,7752.0,Amazon,Bexar,53.4,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:878-1,assignment,own load,TX,1015.0,CyrusOne,Travis,51.3,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:877-0,assignment,own load,TX,1015.0,DXC Technology,Travis,50.2,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:928-0,assignment,own load,TX,16604.0,Microsoft,Bexar,30.0,True
+14626:TX,"Pedernales Electric Coop, Inc",False,75,bi:924-0,assignment,own load,TX,1273.0,Sabey Data Centers,Williamson,23.0,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,epoch:Microsoft SAT40,assignment,own load,TX,1175.0,Microsoft,,75.0,False
+14626:TX,"Pedernales Electric Coop, Inc",False,75,epoch:Microsoft SAT14,assignment,own load,TX,16604.0,Microsoft,,47.0,False
+16604:TX,City of San Antonio - (TX),False,1,bi:929-0,assignment,own load,TX,16604.0,Microsoft,Bexar,75.0,True
+16604:TX,City of San Antonio - (TX),False,1,bi:928-0,assignment,own load,TX,16604.0,Microsoft,Bexar,30.0,True
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:887-0,assignment,own load,TX,16638.0,CyrusOne,Harris,84.0,True
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:1200-0,assignment,own load,TX,55937.0,Serverfarm,Harris,108.6,True
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:1200-0,date,own load,TX,55937.0,Serverfarm,Harris,108.6,True
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:1185-0,assignment,own load,TX,55937.0,Digital Realty,Harris,43.2,False
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:889-0,assignment,own load,TX,55937.0,DataBank,Harris,37.4,False
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:886-0,assignment,own load,TX,55937.0,Serverfarm,Travis,21.0,True
+16638:TX,"San Bernard Electric Coop, Inc",True,80,bi:1191-0,assignment,own load,TX,55937.0,Equinix,Harris,19.3,False
+18976:TX,Trinity Valley Elec Coop Inc,False,48,bi:930-0,assignment,own load,TX,6182.0,QTS,Dallas,435.0,True
+18976:TX,Trinity Valley Elec Coop Inc,False,48,bi:1258-0,assignment,own load,TX,18976.0,Amazon,Dallas,27.4,False
+19159:TX,"Tri-County Electric Coop, Inc (TX)",False,83,bi:881-0,assignment,own load,TX,5078.0,Meta,Tarrant,105.1,False
+19159:TX,"Tri-County Electric Coop, Inc (TX)",False,83,bi:882-0,assignment,own load,TX,5078.0,Meta,Tarrant,21.5,False
+19159:TX,"Tri-County Electric Coop, Inc (TX)",False,83,bi:1181-0,assignment,own load,TX,4262.0,CyrusOne,Denton,45.0,True
+19159:TX,"Tri-County Electric Coop, Inc (TX)",False,83,bi:935-0,assignment,own load,TX,5078.0,QTS,Denton,45.0,False
+19159:TX,"Tri-County Electric Coop, Inc (TX)",False,83,bi:1392-0,assignment,own load,TX,5078.0,Citigroup,Denton,30.0,True
+19490:TX,United Electric Coop Service Inc - (TX),False,38,bi:881-0,assignment,own load,TX,5078.0,Meta,Tarrant,105.1,False
+19490:TX,United Electric Coop Service Inc - (TX),False,38,bi:882-0,assignment,own load,TX,5078.0,Meta,Tarrant,21.5,False
+19490:TX,United Electric Coop Service Inc - (TX),False,38,bi:935-0,assignment,own load,TX,5078.0,QTS,Denton,45.0,False
+19490:TX,United Electric Coop Service Inc - (TX),False,38,epoch:Google Red Oak,assignment,own load,TX,8620.0,Google,,77.0,False
+20948:TX,Wise Electric Coop Inc,False,84,bi:1181-0,assignment,own load,TX,4262.0,CyrusOne,Denton,45.0,True
+20948:TX,Wise Electric Coop Inc,False,84,bi:1392-0,assignment,own load,TX,5078.0,Citigroup,Denton,30.0,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:930-0,assignment,own load,TX,6182.0,QTS,Dallas,435.0,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:1181-0,assignment,own load,TX,4262.0,CyrusOne,Denton,45.0,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:1190-0,assignment,own load,TX,7559.0,Aligned Data Centers,Collin,117.1,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:900-0,assignment,own load,TX,44372.0,X Energy Corporation,Ward,88.3,False
+40051:TX,Texas-New Mexico Power Co,False,42,bi:876-0,assignment,own load,TX,5078.0,CyrusOne,Collin,73.7,False
+40051:TX,Texas-New Mexico Power Co,False,42,bi:931-0,assignment,own load,TX,7559.0,Stack Infrastructure,Collin,68.8,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:1198-0,assignment,own load,TX,5078.0,CoreWeave,Collin,41.2,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:1392-0,assignment,own load,TX,5078.0,Citigroup,Denton,30.0,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:1258-0,assignment,own load,TX,18976.0,Amazon,Dallas,27.4,False
+40051:TX,Texas-New Mexico Power Co,False,42,bi:1199-0,assignment,own load,TX,5078.0,DXC Technology,Collin,25.9,True
+40051:TX,Texas-New Mexico Power Co,False,42,bi:932-0,assignment,own load,TX,5078.0,Stack Infrastructure,Collin,20.2,False
+40051:TX,Texas-New Mexico Power Co,False,42,bi:925-0,assignment,own load,TX,5078.0,Flexential,Collin,14.5,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:881-0,assignment,own load,TX,5078.0,Meta,Tarrant,105.1,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:930-0,assignment,own load,TX,6182.0,QTS,Dallas,435.0,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:882-0,assignment,own load,TX,5078.0,Meta,Tarrant,21.5,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:1181-0,assignment,own load,TX,4262.0,CyrusOne,Denton,45.0,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:1190-0,assignment,own load,TX,7559.0,Aligned Data Centers,Collin,117.1,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:900-0,assignment,own load,TX,44372.0,X Energy Corporation,Ward,88.3,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:876-0,assignment,own load,TX,5078.0,CyrusOne,Collin,73.7,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:931-0,assignment,own load,TX,7559.0,Stack Infrastructure,Collin,68.8,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:935-0,assignment,own load,TX,5078.0,QTS,Denton,45.0,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:1198-0,assignment,own load,TX,5078.0,CoreWeave,Collin,41.2,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:1392-0,assignment,own load,TX,5078.0,Citigroup,Denton,30.0,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:1258-0,assignment,own load,TX,18976.0,Amazon,Dallas,27.4,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:1199-0,assignment,own load,TX,5078.0,DXC Technology,Collin,25.9,True
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:924-0,assignment,own load,TX,1273.0,Sabey Data Centers,Williamson,23.0,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:932-0,assignment,own load,TX,5078.0,Stack Infrastructure,Collin,20.2,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:925-0,assignment,own load,TX,5078.0,Flexential,Collin,14.5,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,bi:922-0,assignment,own load,TX,11364.0,Seaboard Marine,Gaines,1.2,False
+44372:TX,"Oncor Electric Delivery Company, LLC",False,42,epoch:Google Red Oak,assignment,own load,TX,8620.0,Google,,77.0,False
+55937:TX,Entergy Texas Inc.,False,75,bi:887-0,assignment,own load,TX,16638.0,CyrusOne,Harris,84.0,True
+55937:TX,Entergy Texas Inc.,False,75,bi:1200-0,assignment,own load,TX,55937.0,Serverfarm,Harris,108.6,True
+55937:TX,Entergy Texas Inc.,False,75,bi:1200-0,date,own load,TX,55937.0,Serverfarm,Harris,108.6,True
+55937:TX,Entergy Texas Inc.,False,75,bi:1185-0,assignment,own load,TX,55937.0,Digital Realty,Harris,43.2,False
+55937:TX,Entergy Texas Inc.,False,75,bi:889-0,assignment,own load,TX,55937.0,DataBank,Harris,37.4,False
+55937:TX,Entergy Texas Inc.,False,75,bi:886-0,assignment,own load,TX,55937.0,Serverfarm,Travis,21.0,True
+55937:TX,Entergy Texas Inc.,False,75,bi:1191-0,assignment,own load,TX,55937.0,Equinix,Harris,19.3,False
+14354:UT,PacifiCorp,True,1,bi:938-0,assignment,own load,UT,15444.0,Newfold Digital,Utah,2.3,True
+14354:UT,PacifiCorp,True,1,bi:1125-0,assignment,own load,UT,14354.0,Flexential,Salt Lake,1.3,False
+14354:UT,PacifiCorp,True,1,bi:939-0,assignment,own load,UT,14354.0,Blue Cross Blue Shield,Salt Lake,1.1,False
+14354:UT,PacifiCorp,True,1,bi:1124-0,assignment,own load,UT,14354.0,Flexential,Salt Lake,0.5,False
+15444:UT,Provo City Corp,True,57,bi:938-0,assignment,own load,UT,15444.0,Newfold Digital,Utah,2.3,True
+27000:UT,WAPA-- Western Area Power Administration,False,100,bi:944-0,assignment,own load,UT,14354.0,NOVVA Data Centers,Salt Lake,26.7,False
+27000:UT,WAPA-- Western Area Power Administration,False,100,bi:945-0,assignment,own load,UT,14354.0,Aligned Data Centers,Salt Lake,9.2,False
+27000:UT,WAPA-- Western Area Power Administration,False,100,bi:1125-0,assignment,own load,UT,14354.0,Flexential,Salt Lake,1.3,False
+27000:UT,WAPA-- Western Area Power Administration,False,100,bi:939-0,assignment,own load,UT,14354.0,Blue Cross Blue Shield,Salt Lake,1.1,False
+27000:UT,WAPA-- Western Area Power Administration,False,100,bi:1124-0,assignment,own load,UT,14354.0,Flexential,Salt Lake,0.5,False
+8198:VA,City of Harrisonburg - (VA),False,68,bi:950-5,date,factor,VA,19876.0,Amazon,Loudoun,54.2,False
+8198:VA,City of Harrisonburg - (VA),False,68,bi:1280-0,date,factor,VA,19876.0,Microsoft,Mecklenberg,40.3,False
+8198:VA,City of Harrisonburg - (VA),False,68,bi:1006-0,assignment,own load,VA,8198.0,DBT Data,Rockingham,6.2,False
+11560:VA,City of Manassas - (VA),False,8,bi:1040-2,assignment,own load,VA,11560.0,Digital Realty,Prince William,36.0,False
+12260:VA,Mecklenburg Electric Cooperative,False,48,bi:950-5,date,factor,VA,19876.0,Amazon,Loudoun,54.2,False
+12260:VA,Mecklenburg Electric Cooperative,False,48,bi:1280-0,date,factor,VA,19876.0,Microsoft,Mecklenberg,40.3,False
+12260:VA,Mecklenburg Electric Cooperative,False,48,bi:992-0,assignment,own load,VA,12260.0,DXC Technology,Mecklenberg,6.3,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1020-0,assignment,own load,VA,13640.0,Google,Loudoun,81.0,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1036-5,assignment,own load,VA,13640.0,QTS,Prince William,59.5,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1039-3,assignment,own load,VA,13640.0,Amazon,Prince William,56.7,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1087-5,assignment,own load,VA,13640.0,Amazon,Loudoun,55.5,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1087-5,date,own load,VA,13640.0,Amazon,Loudoun,55.5,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:950-5,date,factor,VA,19876.0,Amazon,Loudoun,54.2,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1091-4,assignment,own load,VA,13640.0,Amazon,Loudoun,50.9,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:989-6,assignment,own load,VA,13640.0,Amazon,Loudoun,49.4,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1033-3,assignment,own load,VA,13640.0,Amazon,Prince William,46.1,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1076-0,assignment,own load,VA,13640.0,CyrusOne,Loudoun,44.8,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1029-4,assignment,own load,VA,13640.0,Amazon,Prince William,44.6,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1041-4,assignment,own load,VA,13640.0,Amazon,Prince William,42.9,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1280-0,date,factor,VA,19876.0,Microsoft,Mecklenberg,40.3,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:946-0,assignment,own load,VA,13640.0,Yondr,Loudoun,37.4,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1021-3,assignment,own load,VA,13640.0,Compass Datacenters,Loudoun,33.2,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1088-2,assignment,own load,VA,13640.0,Amazon,Loudoun,30.3,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1081-2,assignment,own load,VA,13640.0,Amazon,Loudoun,29.7,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1075-2,assignment,own load,VA,13640.0,Amazon,Loudoun,28.1,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1031-2,assignment,own load,VA,13640.0,Amazon,Prince William,27.5,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1275-1,assignment,own load,VA,13640.0,Stack Infrastructure,Loudoun,26.5,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1034-1,assignment,own load,VA,13640.0,Amazon,Prince William,25.2,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1027-1,assignment,own load,VA,13640.0,Amazon,Prince William,21.8,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1042-2,assignment,own load,VA,13640.0,Amazon,Prince William,15.6,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1035-0,assignment,own load,VA,13640.0,Stack Infrastructure,Prince William,13.3,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1026-0,assignment,own load,VA,13640.0,Microsoft,Prince William,13.1,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1018-0,assignment,own load,VA,13640.0,Microsoft,Loudoun,13.0,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1273-0,assignment,own load,VA,13640.0,Microsoft,Prince William,13.0,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1025-0,assignment,own load,VA,13640.0,Comcast,Prince William,10.8,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1038-0,assignment,own load,VA,13640.0,CloudHQ,Prince William,9.5,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1084-0,assignment,own load,VA,13640.0,CyrusOne,Loudoun,5.4,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1287-0,assignment,own load,VA,13640.0,CyrusOne,Loudoun,5.4,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:980-0,assignment,own load,VA,13640.0,Digital Realty,Prince William,5.0,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1032-0,assignment,own load,VA,13640.0,Verizon,Prince William,5.0,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1073-0,assignment,own load,VA,13640.0,Centersquare,Loudoun,4.4,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1096-0,assignment,own load,VA,13640.0,OVHcloud,Fauquier,3.7,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1030-0,assignment,own load,VA,13640.0,Equinix,Prince William,2.9,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1282-0,assignment,own load,VA,13640.0,COPT Defense Properties,Fairfax,2.7,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:982-0,assignment,own load,VA,13640.0,DXC Technology,Fairfax,0.8,False
+13640:VA,Northern Virginia Elec Coop,False,89,bi:1289-0,assignment,own load,VA,13640.0,US Federal Bureau of Investigation,Fairfax,0.6,False
+13640:VA,Northern Virginia Elec Coop,False,89,epoch:Google Bristow,assignment,own load,VA,13640.0,Google,,238.0,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:950-5,date,factor,VA,19876.0,Amazon,Loudoun,54.2,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:1280-0,date,factor,VA,19876.0,Microsoft,Mecklenberg,40.3,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:993-0,assignment,own load,VA,40228.0,Equinix,Culpeper,12.3,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:1006-0,assignment,own load,VA,8198.0,DBT Data,Rockingham,6.2,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:980-0,assignment,own load,VA,13640.0,Digital Realty,Prince William,5.0,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:1032-0,assignment,own load,VA,13640.0,Verizon,Prince William,5.0,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:1073-0,assignment,own load,VA,13640.0,Centersquare,Loudoun,4.4,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:1030-0,assignment,own load,VA,13640.0,Equinix,Prince William,2.9,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:1074-0,date,own load,VA,19876.0,Centersquare,Loudoun,1.2,False
+19876:VA,Virginia Electric & Power Co,False,4,bi:982-0,assignment,own load,VA,13640.0,DXC Technology,Fairfax,0.8,False
+40228:VA,Rappahannock Electric Coop,False,6,bi:950-5,date,factor,VA,19876.0,Amazon,Loudoun,54.2,False
+40228:VA,Rappahannock Electric Coop,False,6,bi:1280-0,date,factor,VA,19876.0,Microsoft,Mecklenberg,40.3,False
+40228:VA,Rappahannock Electric Coop,False,6,bi:993-0,assignment,own load,VA,40228.0,Equinix,Culpeper,12.3,False
+3461:WY,Cheyenne Light Fuel & Power,True,84,bi:1123-0,assignment,own load,WY,3461.0,Lunavi,Laramie,5.1,True
+3461:WY,Cheyenne Light Fuel & Power,True,84,bi:1123-0,date,own load,WY,3461.0,Lunavi,Laramie,5.1,True
+19545:WY,"Black Hills Power, Inc.",False,100,bi:1123-0,assignment,own load,WY,3461.0,Lunavi,Laramie,5.1,True
+19545:WY,"Black Hills Power, Inc.",False,100,bi:1123-0,date,own load,WY,3461.0,Lunavi,Laramie,5.1,True
+27000:WY,WAPA-- Western Area Power Administration,False,100,bi:1123-0,assignment,own load,WY,3461.0,Lunavi,Laramie,5.1,True
+27000:WY,WAPA-- Western Area Power Administration,False,100,bi:1123-0,date,own load,WY,3461.0,Lunavi,Laramie,5.1,True
+1586:AR,City of Bentonville - (AR),True,51,bi:1157-0,assignment,own load,AR,1586.0,Walmart,Benton,2.6,True

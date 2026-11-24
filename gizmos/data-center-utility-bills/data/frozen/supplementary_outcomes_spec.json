@@ -1,0 +1,90 @@
+{
+  "what_this_is": "The settled specification of the three supplementary outcomes (Joe, 2026-11-20, D-117) and one quantity-side check of residential customer counts on the headline set at 2%. PROVISIONAL: the design stands as of 2026-11-18 and the plan is a DRAFT, not frozen. No price, revenue, bill or kWh-per-customer value is read; the only level read is res_customers from the quantity file. Written by pipeline/analysis/supplementary_outcomes.py.",
+  "specifications": {
+    "kwh_per_residential_customer": {
+      "name": "kwh_per_residential_customer",
+      "source_column": "res_kwh_per_customer_month",
+      "source_file": "the panel's outcome file, read by no one before the freeze and after it only through the gated door",
+      "level_in_the_panel": "res_mwh * 1000 / res_customers / 12, missing where res_customers is not positive (pipeline/electricity/panel.py)",
+      "unit": "kWh per residential customer per month",
+      "transformation": "natural log",
+      "constant_added": null,
+      "imputation": "none",
+      "rows_dropped": "none",
+      "non_computable_rule": "A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. (Joe, 2026-11-20 (D-117))",
+      "validation_limit": "These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that (\"under the procedure validated on the headline set; no validation was made on this design\")."
+    },
+    "bill_per_customer": {
+      "name": "bill_per_customer",
+      "source_column": "res_bill_per_customer_month",
+      "source_file": "the panel's outcome file, read by no one before the freeze and after it only through the gated door",
+      "level_in_the_panel": "res_revenue_full / res_customers / 12, missing where res_customers is not positive (pipeline/electricity/panel.py); no price index is applied",
+      "unit": "nominal dollars per residential customer per month",
+      "transformation": "natural log",
+      "constant_added": null,
+      "imputation": "none",
+      "rows_dropped": "none",
+      "non_computable_rule": "A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. (Joe, 2026-11-20 (D-117))",
+      "validation_limit": "These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that (\"under the procedure validated on the headline set; no validation was made on this design\")."
+    },
+    "residential_customers": {
+      "name": "residential_customers",
+      "source_column": "res_customers",
+      "source_file": "the panel's quantity file, data/interim/panel_quantities.parquet",
+      "level_in_the_panel": "res_customers as the quantity file carries it",
+      "unit": "residential customers, a count",
+      "transformation": "natural log",
+      "constant_added": null,
+      "imputation": "none",
+      "rows_dropped": "none",
+      "non_computable_rule": "A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. (Joe, 2026-11-20 (D-117))",
+      "validation_limit": "These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that (\"under the procedure validated on the headline set; no validation was made on this design\")."
+    }
+  },
+  "joe_words": {
+    "text": "Settle the supplementary outcome definitions before freezing. Use natural logs of: residential kWh per customer per month; residential bill per customer per month, in nominal dollars; residential customer counts. State those units and transformations explicitly. Do not add a constant, impute values, or silently drop observations to make a logarithm possible. A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. It does not change the headline price design or other outcomes. Carry the existing limits on validation of these supplementary outcomes.",
+    "attribution": "Joe, 2026-11-20 (D-117)"
+  },
+  "label": "supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))",
+  "reasons": {
+    "missing": "missing (no row in the frame, or no value)",
+    "nonfinite": "not finite (plus or minus infinity)",
+    "nonpositive": "zero or negative"
+  },
+  "quantity_side_check": {
+    "outcome": "residential_customers",
+    "set": "headline_set",
+    "threshold": 0.02,
+    "rules": "headline",
+    "level": "res_customers from data/interim/panel_quantities.parquet, read by the columns utility_id_eia, state, year and res_customers only",
+    "design_inputs_sha256_prefix": "b8515c35cba1",
+    "hosts_in_the_design": 7,
+    "hosts_stacked": 7,
+    "stacked_rows": 770,
+    "required_unit_years": 536,
+    "affected_unit_years": 0,
+    "affected_stacked_rows": 0,
+    "by_reason": {
+      "missing": {
+        "in_words": "missing (no row in the frame, or no value)",
+        "unit_years": 0,
+        "stacked_rows": 0,
+        "examples": []
+      },
+      "nonfinite": {
+        "in_words": "not finite (plus or minus infinity)",
+        "unit_years": 0,
+        "stacked_rows": 0,
+        "examples": []
+      },
+      "nonpositive": {
+        "in_words": "zero or negative",
+        "unit_years": 0,
+        "stacked_rows": 0,
+        "examples": []
+      }
+    },
+    "computable": true
+  },
+  "not_checked_here": "kWh per residential customer and the bill per customer are columns of the panel's outcome file, which is not read before the freeze, so whether they are missing, not finite or not positive on the design's rows cannot be checked this way. They were not constructed here from quantity columns."
+}

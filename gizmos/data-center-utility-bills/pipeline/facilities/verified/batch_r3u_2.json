@@ -1,0 +1,23 @@
+[
+ {
+  "fid": "bi:784-0",
+  "group": "big",
+  "round": 3,
+  "state": "NY",
+  "is_data_center": true,
+  "site_name": "Kyndryl (formerly IBM) Sterling Forest data center, 299-300 Long Meadow Rd, Town of Warwick, Orange County, NY",
+  "operator": "Kyndryl",
+  "duplicate_of": "bi:1401-0",
+  "energized_year": null,
+  "energized_year_source_url": null,
+  "year_confidence": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "status_source_url": "https://data.ny.gov/resource/mbk7-f2r2.json?$where=starts_with(application_id,'3-3354-00261')",
+  "verification": "Session 7, job T7 (D-44, D-45). Duplicate permit row. bi:784-0 (300 Long Meadow Rd, company 'kyndryl holdings inc', 26,562 kW) and bi:1401-0 (299 Long Meadow Rd, company 'IBM Corp', 17,500 kW) are one permitted air facility. New York DEC's permit application file (data.ny.gov dataset mbk7-f2r2) has one Air State Facility permit, 3-3354-00261/00013, at '299-300 LONG MEADOW RD TUXEDO PARK 10987', town 'WARWICK': a new application by 'International Business Machines Corporation' effective 2015-10-14, and a modification by 'KYNDRYL, INC.', 'MOD - TRANSFER FROM IBM TO KYNDRYL', effective 2022-04-14. The permit text (extapps.dec.ny.gov/data/dar/afs/permits/333540026100013_r0_1.pdf) says 'The facility is a data center located in the town of Warwick. Air emission sources identified in the permit are two boilers and seven diesel generators' and describes 'diesel generators, each rated at 2500 KW'. Seven times 2,500 kW is 17,500 kW, the capacity on bi:1401-0, so that row is kept and this one is dropped. Where this row's 26,562 kW comes from is not established (a lookup agent's inference: the generators plus the two boilers' heat input; not verified). Found by an Opus 5.5 record hunt with no web search; the application file and the permit text were then opened by the session model on 2026-11-12. D-44 said the smaller row would be the one marked; the larger is marked here because the permit matches the smaller, and D-45 records the change."
+ }
+]

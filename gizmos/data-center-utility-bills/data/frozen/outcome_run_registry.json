@@ -1,0 +1,1322 @@
+{
+ "what_this_is": "The registry of every run the pre-analysis plan lists on outcomes, in its order of unblinding, with each run's plan section, sets, design builder, estimator, labels and status. A list only: no design is built for it and no outcome, price, revenue or bill is read. The plan was frozen on Joe's explicit approval on 2026-11-20 at commit ea426c4 (approved specification ed3a2ff); it is internally frozen and not externally preregistered. When this registry was last brought to the code, on 2026-11-20 (session 27), the gate file GATE1_SIGNED did not exist and access to outcomes had not been authorized. A status of 'built' means the builder and the estimator compose on invented inputs (tests/test_run_outcomes_invented.py), nothing more. Row M is out of scope for this freeze by Joe's ruling of 2026-11-19 (D-109) and is listed after the executable order of unblinding, not in it.",
+ "built_by": "pipeline/analysis/run_outcomes.py",
+ "statuses": {
+  "built": "design builder and estimator exist and compose on invented inputs",
+  "design_only": "a builder exists; what is missing is named",
+  "needs_package": "the pinned package is not installed",
+  "blocked": "the run is defined and something named stops it",
+  "not_built": "the plan lists the run and no module covers it",
+  "out_of_scope_for_this_freeze": "out of scope for this freeze by Joe's ruling of 2026-11-19 (D-109): not run, in no executable order of unblinding and in no built count; its code is dormant"
+ },
+ "outcome_access": "load_outcomes_after_the_freeze is the only door to outcomes. It refuses in words a purpose other than 'outcome_analysis_after_the_freeze' (panel.load_outcomes' exempt purposes, construction QA and the power simulation, are never taken through it), then refuses unless GATE1_SIGNED exists, then unless DCUB_OUTCOME_RUN_AUTHORIZED=1, then unless PREANALYSIS.md is committed with no uncommitted change and the freeze commit ea426c4 is an ancestor of HEAD, and it refuses power_simulation.read_listed_outcomes as a reader. Only then does it call the reader, panel.load_outcomes by default, once, with purpose='outcome_analysis_after_the_freeze' and nothing else, and it returns the frame untouched with a record of how it was read that carries no outcome value. The gate file is created only on Joe's separate authorization to access outcomes. No other path in this module loads outcomes, and every runner takes its outcome frame as an argument.",
+ "counts_by_status": {
+  "built": 54,
+  "design_only": 0,
+  "needs_package": 0,
+  "blocked": 0,
+  "not_built": 3,
+  "out_of_scope_for_this_freeze": 1
+ },
+ "order_of_unblinding": [
+  "reconciliation_row_U",
+  "reconciliation_row_C",
+  "inventory_against_sales",
+  "main_headline_set",
+  "main_ten_year_set",
+  "main_plus_unsettled",
+  "main_every_cohort_utility",
+  "timing_run_no_anchoring_years",
+  "customer_weighted",
+  "other_outcome_kwh_per_customer",
+  "other_outcome_bill_per_customer",
+  "other_outcome_residential_customers",
+  "second_number_as_assigned",
+  "second_number_settled_only_classes_2_to_4",
+  "second_number_ten_highest_leverage_left_out",
+  "second_number_sensitivity_scenario_a_runner_up_placement",
+  "second_number_sensitivity_scenario_b_other_end_of_every_dated_interval",
+  "second_number_e3_after_period_2024_2025",
+  "second_number_year_by_year",
+  "affiliates_readmitted",
+  "shared_suppliers_removed",
+  "leave_one_comparison_out",
+  "leave_one_company_out",
+  "unresolved_ownership_excluded",
+  "later_start_plus_1",
+  "later_start_plus_3",
+  "later_start_plus_5",
+  "callaway_santanna",
+  "estimators_agree",
+  "longer_horizon",
+  "future_hosts_as_comparisons",
+  "own_state_comparisons",
+  "threshold_1pct",
+  "threshold_5pct",
+  "fuel_mix_categorical",
+  "fuel_mix_none",
+  "size_band_side_run",
+  "E1",
+  "E2",
+  "E3",
+  "E4a",
+  "E4b",
+  "E5",
+  "E6",
+  "E7_earlier",
+  "E7_later",
+  "condition_1_load_share",
+  "condition_2_investor_owned",
+  "condition_3_retail_choice_proxy",
+  "condition_4_past_utilization",
+  "influence_each_market_region_left_out",
+  "influence_each_state_left_out",
+  "influence_virginia_left_out",
+  "influence_five_highest_load_utilities_dropped",
+  "tariff_check",
+  "regional_layer",
+  "exploratory_work"
+ ],
+ "order_of_unblinding_means": "the executable order: every entry but those out of scope for this freeze, in the plan's order; run_all runs these and no other",
+ "out_of_scope_for_this_freeze": {
+  "count": 1,
+  "ids": [
+   "reconciliation_row_M"
+  ],
+  "ruling": "Joe, 2026-11-19 (D-109)"
+ },
+ "built_is_not_ready": "'built' means the builder and the estimator compose on invented inputs, nothing more. A built entry with a non-empty needs_before_research_data still needs those inputs from the caller before it can run on research data. They are inputs built by named functions from named files under rules the plan and Joe's rulings state, row C's fiber shares (December filings, D-107) among them. No needs text of a built entry names an element as the caller's choice; the last one so named, which history of the inventory is supplied to inventory_against_sales, was settled by Joe on 2026-11-20 (D-119) as the inventory as built, the load history underlying the headline design, which the registry supplies as RunInputs.side.dose. Some needs carry a condition that cannot be checked before outcomes are read (whether row U's flags frame covers every outcome unit-year) or before a check passes (the per-state reconstruction check, before a scenario's work is used in that state), and row U's flags over step U3's window rest on the session's reading of that window, which Joe may strike.",
+ "built_entries_with_needs": 10,
+ "built_entries_with_needs_ids": [
+  "reconciliation_row_U",
+  "reconciliation_row_C",
+  "inventory_against_sales",
+  "timing_run_no_anchoring_years",
+  "second_number_settled_only_classes_2_to_4",
+  "second_number_ten_highest_leverage_left_out",
+  "second_number_sensitivity_scenario_a_runner_up_placement",
+  "second_number_sensitivity_scenario_b_other_end_of_every_dated_interval",
+  "callaway_santanna",
+  "estimators_agree"
+ ],
+ "built_entries_with_stopped_steps": 0,
+ "built_entries_with_stopped_steps_ids": [],
+ "stopped_steps_means": "a built entry composes on invented inputs; a step listed in its stopped_on_research_inputs cannot run on the real quantity files until Joe rules or authorizes what it names",
+ "entries": [
+  {
+   "id": "reconciliation_row_U",
+   "plan_section": "Reconciliation rows (reported first, whatever they show), Row U (Ryu and Hiatt), steps U0 to U3",
+   "sets": [
+    "the_papers_specification_on_our_panel"
+   ],
+   "builder": "reconciliation_treatment cumulative-MW treatments supplied per step (RowUInputs)",
+   "estimator": "reconciliation_mu.run_u_step (ln price on ln(MW + 1), utility and year effects, by state) per step, the ownership estimates and U0's pooled estimate returned as comparisons under our specification with no verdict; u1_sentence (the adopted U1 sentences, D-109)",
+   "labels": [
+    "reconciliation row: the paper's specification on our panel, reported first whatever it shows",
+    "reported first",
+    "comparisons under our specification, comparison-only by Joe's ruling of 2026-11-19 (D-109), no reproduction verdict; the paper's figure and band are beside the pooled estimate as a comparison band, and the ownership ordering is uncontrolled",
+    "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": [
+    "res_price_default_service",
+    "res_price"
+   ],
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.reconciliation_u (RowUInputs) and RunInputs.reconciliation_u_inputs_are (INVENTED_INPUTS or RESEARCH_DATA_AFTER_THE_FREEZE; with no value the row stops in words and none is chosen for the caller). On research data the row is refused in words, before any step, without the gate file and the run's authorization, with a Short Form code other than the adopted one (D-115), or with a specification not equal to reconciliation_mu.ryu_spec(reconciliation_mu.U_SHORT_FORM_ADOPTED_CODE) (session 27; refusing a departure in any other field is the session's reading of the fixed specification). The specification is fixed: reconciliation_mu.ryu_spec(reconciliation_mu.U_SHORT_FORM_ADOPTED_CODE), that is 'unit_years_filed', the Short Form rule adopted by Joe on 2026-11-20 (D-115); every other field is this study's approximation adopted by Joe on 2026-11-19 (D-107; U0's assignment D-109) or the paper's own value, refused in words if departed from. sample_flags come from short_form_filers.adopted_row_u_flags (its choices are short_form_filers.ADOPTED_ROW_U_CHOICES, the one named place) on a frame that covers every outcome unit-year reaching the Short Form filter, built from the filer table data/interim/reconciliation_short_form_filers.parquet (18,172 rows, one for each utility, state and year with a row in the Short Form table, written by the one authorized read of 2026-11-20, D-113) and the 2019 flags in data/interim/reconciliation_short_form_flags.parquet, both already on disk, and never from a new read under data/raw. Step U3's window is 2015 to 2025, so the flags are built with step_window=(2015, 2025), the adopted rule applied year by year over the step's own window; one frame of 2015 to 2025 built that way serves every step, since a filing counts for its own year alone (the session's reading, which Joe may strike). On the records no 2025 unit-year of the quantity panel has a filer-table row (1,362 unit-years, 0 with a record of a filing; data/frozen/reconciliation_mu_design.json). An outcome unit-year the frame does not cover stops the step in words and it is recorded as not computed; whether the frame covers every outcome unit-year cannot be shown before outcomes are read. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109). On the quantity side (data/frozen/reconciliation_mu_design.json, short_form_flags_for_row_u), the frame with no exclusion has 16,648 unit-years and 1,808 utilities; one flagged unit-year of 2019 leaves directly, and the same utility's 2023 and 2024 leave through the three-year requirement, leaving 16,645 unit-years and 1,807 utilities. Of the frame's 1,974 unit-years of 2019, 1 has a flag of true, 1,780 have a missing flag and 193 have no flags row, the last two kept with no record either way. The filer table has rows in each year from 2012 to 2018 and from 2020 to 2025 and none in 2019; of its 13,090 unit-years in row U's window of 2015 to 2024, none has a row in the quantity panel (data/interim/panel_quantities.parquet). No price is read for these counts, so the paper's missing-price drop is not applied and this is not the paper's sample. The paper's 1,798 utilities retained and its Short Form group of approximately 560 are printed beside ours for comparison only and are no part of any reason. U0's treatment is cumulative_mw on reconciliation_treatment.assign_polygon_smallest(sites, data/interim/reconciliation_polygon_incidence.parquet, data/interim/panel_reported_ids.parquet, **ROW_U_POLYGON), the smallest containing polygon over every polygon with the type not read, our labelled approximation (D-109), built on the real quantity files 2026-11-19 (2,157 of 2,203 data center sites mapped to a panel unit; one exact area tie listed, not broken; that site has no assigned polygon, is listed apart in the entity-type list and counts in \"lying in any\" (adopted by Joe on 2026-11-19, D-111)). It is the same rule and the same assignment as C0 to C2, which is not independent validation. U1 to U3 need a cumulative-MW treatment on the inventory's site-year load (reconciliation_treatment.cumulative_mw, mw_source 'site_year_load'). The ownership classes are reconciliation_mu.adopted_row_u_ownership_classes(q), on quantities that cover 2001 to 2025 (a subset of years is refused in words). Each utility-state's class comes from the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state; the years searched are the quantity panel's 2001 to 2025, and the class is time-invariant, mapped by reconciliation_mu.U_MAP unchanged, settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119) (reconciliation_mu.OWNERSHIP_SPECIFICATION_D117). A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class. The panel's entity_type is one type per utility id, the type its own filings report most often, so on this panel the reading over the years searched changes no class. Joe ruled on 2026-11-20 (D-119) that rows U and C keep this type, described as the utility-level modal reported type carried across the panel and not the latest year-by-year EIA classification, with no further raw-data investigation (his words are reconciliation_mu.OWNERSHIP_RULING_D119_WORDS); no claim is made that it equals EIA's year-by-year record (reconciliation_mu.PANEL_ENTITY_TYPE_STATEMENT). Outcome frames res_price_default_service and res_price. No assigned site is not proof of no facility. No step returns a reproduction verdict (D-107, D-109); u1_sentence returns the adopted U1 sentence chosen by whether our co-op and municipal coefficients are each above our investor-owned one, by a strict comparison of our point estimates, exactly equal coefficients giving \"not each above\" and no test entering the choice (adopted by Joe on 2026-11-19, D-111), and u1_indistinguishable decides nothing.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "reconciliation_row_C",
+   "plan_section": "Reconciliation rows (reported first, whatever they show), Row C (Scalera, Bosetti and Pecci), steps C0 to C4 and the test C5",
+   "sets": [
+    "the_papers_specification_on_our_panel"
+   ],
+   "builder": "counts, load share, fiber share and spending supplied (RowCInputs)",
+   "estimator": "reconciliation_c.run_row_c (OLS and two-stage least squares, utility-state and state-by-year effects; C5's reduced form on never-host utility-states), every step returned as a comparison under our specification with no verdict",
+   "labels": [
+    "reconciliation row: the paper's specification on our panel, reported first whatever it shows",
+    "reported first",
+    "comparisons under our specification, comparison-only by Joe's ruling of 2026-11-19 (D-109), no reproduction verdict; every instrumented step and C5's yardstick, and C0 with the paper's figure and band beside it as a comparison band",
+    "C5's interval is the row's own (clustered by utility-state)",
+    "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": [
+    "res_price_cents_per_kwh_real_2024"
+   ],
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.reconciliation_c (RowCInputs). choices must equal reconciliation_c.SPECIFICATION (check_specification refuses any other value in words); c4_cap 99.5 (OURS_C4_CAP); spending_tables with 'paper' and 'current'; hosts_for_c5 equal to never_host_units(None, None, counts_verified, 'zero_count_panel_years'). counts_polygon for C0 to C2: operating_counts(sites, reconciliation_treatment.assign_polygon_smallest(sites, data/interim/reconciliation_polygon_incidence.parquet, data/interim/panel_reported_ids.parquet, **ROW_C_POLYGON).table)[0] (the smallest containing polygon by area over every territory, the type not read, our reading of the paper's words, adopted by Joe on 2026-11-19, D-111), built on the real quantity files 2026-11-19 (2,157 of 2,203 data center sites mapped to a panel unit; one exact area tie listed, not broken); this layer copy has 2,931 polygons against the paper's 3,805 territories, so it is not shown to be the paper's layer. The fiber shares are an input the caller supplies, their content settled as the shares from the December Form 477 filings (ours, adopted by Joe on 2026-11-19, D-107). The ownership classes are reconciliation_c.adopted_row_c_ownership(q), on quantities that cover 2001 to 2025 (a subset of years is refused in words). Each utility-state's class comes from the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state; the years searched are the quantity panel's 2001 to 2025, and the class is time-invariant, mapped by reconciliation_c.ROW_C_OWNERSHIP_MAP unchanged, settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119) (reconciliation_mu.OWNERSHIP_SPECIFICATION_D117). A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class. The panel's entity_type is one type per utility id, the type its own filings report most often, so on this panel the reading over the years searched changes no class. Joe ruled on 2026-11-20 (D-119) that rows U and C keep this type, described as the utility-level modal reported type carried across the panel and not the latest year-by-year EIA classification, with no further raw-data investigation (his words are reconciliation_mu.OWNERSHIP_RULING_D119_WORDS); no claim is made that it equals EIA's year-by-year record (reconciliation_mu.PANEL_ENTITY_TYPE_STATEMENT). Outcome frame res_price_cents_per_kwh_real_2024: the panel's delivery-inclusive res_price, nominal cents per kWh, put in real 2024 cents per kWh, our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction; it is carried by reconciliation_c.SPECIFICATION as price_series (reconciliation_c.OURS_PRICE_SERIES) and is refused in words if departed from. Our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction. Row C's nominal price is this study's delivery-inclusive res_price (res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing), in cents per kWh, put in real 2024 cents per kWh with row C's deflator (the CPI-U annual convention, D-111). The paper divides total residential revenue by total residential sales from the EIA-861 Sales to Ultimate Customers files (section S1.3, p. 29) and does not say whether delivery-only or energy-only rows enter. No other price series is built or compared, and nothing is fetched or read for it. This module checks the series a caller states (Choices.price_series); it cannot detect an outcome frame that was in fact built from another column. That the frame's values are res_price, deflated by cpi_factors_to_2024, is the caller's responsibility. The real 2024 dollars are by row C's deflator, the CPI-U annual average (BLS CUUR0000SA0, cpi_u in data/frozen/dc_construction_spending.csv, factors from reconciliation_c.cpi_factors_to_2024), ours and not the paper's, adopted by Joe on 2026-11-19 (D-111); it is carried by reconciliation_c.SPECIFICATION as price_deflator, is not the caller's choice and is refused in words if departed from. The paper says only \"the CPI\"; our spending series deflated with it equals the paper's printed Table S3 for 2015 to 2023 at printed precision, which supports and does not establish that it is the paper's series. Comparison-only (D-109); no step returns a reproduction verdict. C0 to C2's assignment is the same rule as row U's U0, which is not independent validation. No assigned site is not proof of no facility; C5's never-host classification is the operational one and is not redefined.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "inventory_against_sales",
+   "plan_section": "Reported checks, Does the inventory show up in sales?",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules; non-residential sales (side.q) and the inventory's load (side.dose)",
+   "estimator": "inventory_against_sales.check on its adopted settings (D-107; quantities only: reads no outcome)",
+   "labels": [
+    "reported check",
+    "not applicable: a quantity-side check that reads no outcome and estimates nothing on price"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": null,
+   "reads_an_outcome": false,
+   "needs_before_research_data": "RunInputs.inventory_inputs_are (research data is refused by the module's guard unless the gate file exists and the run is authorized). side.q needs nonres_mwh including 2009 to 2011; side.dose needs dc_gwh (base_retail_gwh is no longer read). The history of the inventory is settled by Joe's ruling of 2026-11-20 (D-119), in his words: \"Use the inventory as built, the load history underlying the headline design, for the inventory-against-sales check.\" The check is given the inventory as built, which this registry supplies as RunInputs.side.dose, the dose frame the headline design's sets are split on (inventory_against_sales.INVENTORY_HISTORY_D119). The check cannot detect a frame built from another history, since it takes whatever frame it is given, so the registry establishes it before the check is called, in two ways (session 27): equal content by hash, run_outcomes.frame_fingerprint(side.dose) against RunInputs.inventory_as_built.dose_fingerprint, the stamp taken when the sets were split; and the headline set split again from the frame, design.split on side.q and side.dose giving exactly the hosts with their cohorts and the comparison-eligible units of RunInputs.sets. On research data RunInputs.inventory_as_built is required and a substituted split function is refused; a mismatch is refused in words and the check is not run.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "main_headline_set",
+   "plan_section": "Electricity: the main estimate; The headline; Reported checks (early-years test, trend illustrations)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector; outcome_analysis.early_years_reading and trend_illustrations; the second early-years sentence follows RunInputs.catches_drift, which a caller takes for the headline set at 2% from data/frozen/early_years_drift_selected_procedure.json through run_outcomes.catches_drift_from_file. That file is the result of exercise 4a (docs/gate1/simulation-spec-4a-early-years-drift-2026-11-20.md), run once under Joe's ruling of 2026-11-20 (D-113). The early-years test detected a drift of 1% a year in 0.129 of datasets under G0 (exact 95% interval 0.11461 to 0.14449) and in 0.0475 under G6 (0.0386 to 0.05776), both under one half, so the file's outcome is 'added' and the function gives True for the headline set; the companion sets get no value. It is a figure carried into a reading the plan already fixed and changes no rule. The rates are a property of this test on this design under made-up prices of two assumed kinds and are not evidence about real pre-trends",
+   "labels": [
+    "headline",
+    "the selected procedure (CR2, Satterthwaite) was validated on this design (headline set at 2%)"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "main_ten_year_set",
+   "plan_section": "Electricity: the main estimate, the sets beside it; Order of unblinding",
+   "sets": [
+    "headline_set_with_the_ten_year_case at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector; early-years reading and trend illustrations",
+   "labels": [
+    "stress test",
+    "reported beside the headline",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "main_plus_unsettled",
+   "plan_section": "Electricity: the main estimate, the sets beside it; Order of unblinding",
+   "sets": [
+    "headline_set_plus_hosts_unsettled_on_assignment at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector; early-years reading and trend illustrations",
+   "labels": [
+    "reported beside the headline",
+    "rests on hosts unsettled on assignment",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "main_every_cohort_utility",
+   "plan_section": "Electricity: the main estimate, the sets beside it; Order of unblinding",
+   "sets": [
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector; early-years reading and trend illustrations",
+   "labels": [
+    "reported beside the headline",
+    "every cohort utility as built, assignment and dating limitations kept explicit",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "timing_run_no_anchoring_years",
+   "plan_section": "Electricity: the main estimate, the sets beside it ('As a timing run': Public Service of Colorado and Ohio Power at their no-anchoring years at 2%; R7, Joe, 2026-11-19, D-107)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "timing_run.build (the headline set with the two hosts added at their no-anchoring years, each matched at its own reference year under every existing rule; the other hosts' matches checked unchanged)",
+   "estimator": "timing_run.estimate_timing_run (the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector)",
+   "labels": [
+    "timing run",
+    "timing run: the headline set with Public Service of Colorado and Ohio Power added at their no-anchoring years; under the procedure validated on the headline set; no validation was made on this design",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.timing_added: {(utility_id_eia, state): year} from timing_run.no_anchoring_years(<the treatment_bounds.json record at timing_run.RECORD_PATH>, <headline_set.csv frame>)['years']; required, no default; the registry reads no file.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "customer_weighted",
+   "plan_section": "Electricity: the main estimate, Weights ('the same estimate weighted by each host's residential customers in its reference year'; Joe, 2026-11-19, D-105)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules; each host's residential customers in its reference year from side.q (res_customers), on every row of its sub-experiment (weighted_fit.customer_weights)",
+   "estimator": "weighted_fit.weighted_fit (weighted least squares on the kernel's own regressors, inference_check.fixed_parts on outcome_analysis.stackable; point estimate only, no range), with the nominal customer weight shares and the effective contributions to the weighted headline reported apart, the effective contribution shown as the own-row headline weight (its definition accepted by Joe on 2026-11-19, D-111)",
+   "labels": [
+    "labelled",
+    "descriptive: the customer-weighted point estimate, with no range (the selected inference procedure has no path that takes weights and was not validated with them; Joe, 2026-11-19, D-105)",
+    "not applicable: a descriptive point estimate with no range, so no validation is claimed (None is kept for the validated headline alone)"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "other_outcome_kwh_per_customer",
+   "plan_section": "Other outcomes and robustness: other outcomes; Electricity: the main estimate, Outcome",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector on the natural log of kWh per residential customer per month, which supplementary_outcomes.run_on_design (log_frame_for_design) takes on the levels the caller supplies, in that unit (column res_kwh_per_customer_month of the panel's outcome file, read by no one before the freeze and after it only through the gated door), with no constant added, nothing imputed and no row dropped. A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. (Joe, 2026-11-20 (D-117)) Such a result is returned as a record with its reasons and counts, and nothing is estimated on that design for that outcome; the headline price design and the other outcomes are unchanged by it",
+   "labels": [
+    "another outcome, reported next to price and not treated as a placebo",
+    "supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))",
+    "These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that (\"under the procedure validated on the headline set; no validation was made on this design\").",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "kwh_per_residential_customer",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "other_outcome_bill_per_customer",
+   "plan_section": "Other outcomes and robustness: other outcomes; The headline ('Any statement about an increase of 5%')",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector on the natural log of nominal dollars per residential customer per month, which supplementary_outcomes.run_on_design (log_frame_for_design) takes on the levels the caller supplies, in that unit (column res_bill_per_customer_month of the panel's outcome file, read by no one before the freeze and after it only through the gated door), with no constant added, nothing imputed and no row dropped. A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. (Joe, 2026-11-20 (D-117)) Such a result is returned as a record with its reasons and counts, and nothing is estimated on that design for that outcome; the headline price design and the other outcomes are unchanged by it",
+   "labels": [
+    "another outcome, reported next to price and not treated as a placebo",
+    "supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))",
+    "These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that (\"under the procedure validated on the headline set; no validation was made on this design\").",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "bill_per_customer",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "other_outcome_residential_customers",
+   "plan_section": "Other outcomes and robustness: other outcomes",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector on the natural log of residential customers, a count, which supplementary_outcomes.run_on_design (log_frame_for_design) takes on the levels the caller supplies, in that unit (column res_customers of the panel's quantity file, data/interim/panel_quantities.parquet), with no constant added, nothing imputed and no row dropped. A missing, nonfinite or nonpositive value on a required design row makes that outcome/design result non-computable, with the reason and affected-row count reported. (Joe, 2026-11-20 (D-117)) Such a result is returned as a record with its reasons and counts, and nothing is estimated on that design for that outcome; the headline price design and the other outcomes are unchanged by it",
+   "labels": [
+    "another outcome, reported next to price and not treated as a placebo",
+    "supplementary outcome: the natural log of the level, with no constant added, nothing imputed and no row dropped (Joe, 2026-11-20 (D-117))",
+    "These outcomes run on the headline design under the procedure validated for the price outcome. No validation was made for them, and each result carries the kernel's label for that (\"under the procedure validated on the headline set; no validation was made on this design\").",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "residential_customers",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_as_assigned",
+   "plan_section": "The second number: per point of load; rule 8.3, the run on doses as assigned",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number.build_frame (usable in all six years, region, size band)",
+   "estimator": "second_number.run (estimator.Fit, the wild cluster bootstrap as built, candidate A), outcome aligned by second_number.outcome_matrix",
+   "labels": [
+    "secondary, behind the main estimate",
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_settled_only_classes_2_to_4",
+   "plan_section": "The second number: per point of load; rule 8.3 (the settled run: classes 2 to 4 at each form, no endpoint exposure in modeled histories, zero exposure change with load in reach, and settled; D-105)",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number.build_frame, classify_by_cap (each form at its own cap), run_samples",
+   "estimator": "second_number.run_single_dose (per form, each utility at its single dose)",
+   "labels": [
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.second_number['established']: the common-dose mapping, common_dose_rule.established_as_ruled(...), equivalently second_number.common_dose_finding()[0], per Joe's ruling D-107 (judged on the wider admissible histories; under it neither Portland General nor Umatilla has an established common change at any form, so both stay outside the exception). Required, with no default.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_ten_highest_leverage_left_out",
+   "plan_section": "The second number: per point of load; rule 8.3 (at each form, the ten highest-leverage utilities among that form's classes 5 to 8, not settled, left out; D-105)",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number.build_frame, classify_by_cap (each form at its own cap), run_samples (leave_out_ten per form)",
+   "estimator": "second_number.run_single_dose (per form, each utility at its single dose)",
+   "labels": [
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.second_number['established']: the common-dose mapping, common_dose_rule.established_as_ruled(...), equivalently second_number.common_dose_finding()[0], per Joe's ruling D-107 (judged on the wider admissible histories; under it neither Portland General nor Umatilla has an established common change at any form, so both stay outside the exception). Required, with no default.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_sensitivity_scenario_a_runner_up_placement",
+   "plan_section": "The second number: per point of load; rule 8.3 and 'A limitation, stated' (sensitivity scenario A, runner-up placement; Joe, 2026-11-19, D-107, adopting R2 of D-106)",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number_scenarios.realise_history (pass_c_exact.realise per state) with scenario_a_settings(runner_up_placement(...)), then points_of, then scenario_frame",
+   "estimator": "second_number_scenarios.run_scenario (second_number.run, the wild cluster bootstrap as built, candidate A)",
+   "labels": [
+    "Sensitivity scenario A, runner-up placement (Joe, D-107; R2 of D-106): every unresolved load-carrying site moved to the first other candidate that can hold its full load under the inventory's own placement rule, every date, capacity and basis as the inventory has it, each state's factor recomputed. Under Joe's rule (D-111) for what a candidate already carries, the 460 unresolved sites are lifted first, all other load kept counted, and placed in descending size, each counting where it lands; matching the earlier count is not the reason for the rule. Umatilla enters at 25.0 and 50.0 points at the caps (462 uncapped) and Portland General at 18.8 points. Besides its own kind of question it differs from the primary run in three ways: the two sites with no load history carry load at the early end of each of their questions (bi:852-0 from 2024; bi:837-0's date and the rest of its capacity at 2011), where the primary run leaves out every utility they reach; Oregon's factor is recomputed with those sites carrying load; and its sample differs (Portland General and Umatilla enter at the dose this history gives them, and any unit with load in this history and no 2009-2011 base leaves). It is a sensitivity scenario, not a bound and not necessarily a one-change comparison with the primary analysis.",
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.second_number['scenario_points'][name] (load share in points by unit and year, from second_number_scenarios.points_of on realise_history) and ['scenario_no_dose'][name]; units (['scenario_units']) = every panel unit less the price hold, the two load-unknown units included. Quantity side only. The per-state reconstruction check must pass in a state before its scenario work is used there (Joe, D-107).",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_sensitivity_scenario_b_other_end_of_every_dated_interval",
+   "plan_section": "The second number: per point of load; rule 8.3 and 'A limitation, stated' (sensitivity scenario B, the other end of every dated interval; Joe, 2026-11-19, D-107, adopting R2 of D-106)",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number_scenarios.realise_history (pass_c_exact.realise per state) with scenario_b_settings(...), then points_of, then scenario_frame",
+   "estimator": "second_number_scenarios.run_scenario (second_number.run, the wild cluster bootstrap as built, candidate A)",
+   "labels": [
+    "Sensitivity scenario B, the other end of every dated interval (Joe, D-107; R2 of D-106): each date entry in force that has a convention at the end of its interval its convention does not sit at, every assignment as the inventory has it, each state's factor recomputed. Umatilla enters at 0.0 points at both caps (316 uncapped) and Portland General at 18.9 points. Besides its own kind of question it differs from the primary run in three ways: the two sites with no load history carry load at the early end of each of their questions (bi:852-0 from 2024; bi:837-0's date and the rest of its capacity at 2011), where the primary run leaves out every utility they reach; Oregon's factor is recomputed with those sites carrying load; and its sample differs (Portland General and Umatilla enter at the dose this history gives them, and any unit with load in this history and no 2009-2011 base leaves). It is a sensitivity scenario, not a bound and not necessarily a one-change comparison with the primary analysis.",
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.second_number['scenario_points'][name] (load share in points by unit and year, from second_number_scenarios.points_of on realise_history) and ['scenario_no_dose'][name]; units (['scenario_units']) = every panel unit less the price hold, the two load-unknown units included. Quantity side only. The per-state reconstruction check must pass in a state before its scenario work is used there (Joe, D-107).",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_e3_after_period_2024_2025",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E3 (the second number's after period of 2024 to 2025)",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number.build_frame(post=E3_POST)",
+   "estimator": "second_number.run",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "second_number_year_by_year",
+   "plan_section": "The second number: per point of load (the year-by-year version, a side run)",
+   "sets": [
+    "second_number_sample"
+   ],
+   "builder": "second_number.panel_frame",
+   "estimator": "second_number.run",
+   "labels": [
+    "side run",
+    "not calibrated by the inference comparison"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "affiliates_readmitted",
+   "plan_section": "Other runs, listed in advance: Affiliates readmitted (rule 2.3)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under power_simulation.AFFILIATES_READMITTED",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "labelled sensitivity",
+    "the agent's reading: the plan does not settle this (which sets)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "shared_suppliers_removed",
+   "plan_section": "Other runs, listed in advance: Shared suppliers removed (rule 2.4)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then prefreeze_summaries.supplier_exercise and remove_pairs (per host and match, no rematching)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "labelled sensitivity",
+    "the agent's reading: the plan does not settle this (which sets)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "leave_one_comparison_out",
+   "plan_section": "Other runs, listed in advance: Leave one comparison out (rule 7); Reported checks, Influence",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then influence.deletions and influence.leave_out per deletion",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector, one fit per deletion",
+   "labels": [
+    "labelled sensitivity",
+    "the agent's reading: the plan does not settle this (which sets)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "leave_one_company_out",
+   "plan_section": "Other runs, listed in advance: Leave one company out (rule 7); Reported checks, Influence",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then influence.deletions (company rows) and influence.leave_out per deletion; a utility with no ownership row is deleted alone, a deletion convention for the leave-one-company-out exercise and not evidence of independent ownership (Joe, 2026-11-19, D-111)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector, one fit per deletion",
+   "labels": [
+    "labelled sensitivity",
+    "the agent's reading: the plan does not settle this (which sets)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "unresolved_ownership_excluded",
+   "plan_section": "Electricity: the main estimate, Comparison utilities (the sensitivity that excludes hosts with unresolved ownership)",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under power_simulation.UNRESOLVED_OWNERSHIP_EXCLUDED",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "labelled sensitivity",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "later_start_plus_1",
+   "plan_section": "Other runs, listed in advance: The later-start sensitivity, on outcomes (+1 year)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "inventory_runs.later_start_rows, rebuild, redate (G-a)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "stress test",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "later_start_plus_3",
+   "plan_section": "Other runs, listed in advance: The later-start sensitivity, on outcomes (+3 years)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "inventory_runs.later_start_rows, rebuild, redate (G-a)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "stress test",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "later_start_plus_5",
+   "plan_section": "Other runs, listed in advance: The later-start sensitivity, on outcomes (+5 years)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "inventory_runs.later_start_rows, rebuild, redate (G-a)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "stress test",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "callaway_santanna",
+   "plan_section": "Other runs, listed in advance: Callaway and Sant'Anna's estimator with two years of anticipation",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "callaway_santanna.sample and frame (CSSampleInputs and RunInputs.side)",
+   "estimator": "callaway_santanna.run (diff-diff 4.0.0, pinned; installed in the gizmo folder's .venv only)",
+   "labels": [
+    "a second estimator of the same quantity",
+    "secondary and uncalibrated: a t-based range, the headline plus or minus the t critical value on the number of states less one times the bootstrap standard error of the headline (the module's construction, accepted by Joe on 2026-11-19, D-105); not calibrated by the inference comparison",
+    "This run's comparison sample differs from the headline's. On the headline set at 2%, 680 of the 1,670 never-treated units are in no cohort's host region at that cohort's reference year (g-3), and 605 of them are in none of the four host regions (West, ERCOT, SPP, Southeast) at any of the five reference years (counted 2026-11-19 from this module's sample() on quantity files; docs/gate1/callaway-santanna-regions-without-host-2026-11-19.md). The headline's matched comparison utilities come from each host's own region in its reference year. These units stay in this run's sample by Joe's ruling of 2026-11-19 (D-111) and inform the gas-share slope, region entering as a covariate. A difference between this run's estimate and the headline estimate cannot be attributed solely to the estimator.",
+    "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "RunInputs.cs_sample (CSSampleInputs: host and comparison set-asides, the price hold, the D-34 history). The run needs diff-diff 4.0.0, installed only in the gizmo folder's .venv; under another interpreter it is a failure in words.",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "estimators_agree",
+   "plan_section": "Reported checks, Do the estimators agree?",
+   "sets": [
+    "four_stacked_sets_and_callaway_santanna_at_2pct"
+   ],
+   "builder": "the four main entries' runners and callaway_santanna's, on the same price outcome",
+   "estimator": "estimators_table.table (from_stacked_result, from_callaway_santanna_result)",
+   "labels": [
+    "reported check",
+    "They estimate somewhat different averages and need not agree.",
+    "the Callaway and Sant'Anna row carries estimators_table.CALLAWAY_SANTANNA_SAMPLE_LABEL (Joe, 2026-11-19, D-111): 680 of 1,670 never-treated units in no cohort's host region kept; a difference from the headline estimate cannot be attributed solely to the estimator"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": "Whatever the four main entries and callaway_santanna need (the latter runs only under the .venv).",
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "longer_horizon",
+   "plan_section": "Other runs, listed in advance: A longer horizon",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "side_runs.long_horizon (thirteen-year windows, rematched)",
+   "estimator": "outcome_analysis.estimate_long_horizon (estimate_span on event years -6 to 6, headline 4 to 6; and estimate on the same hosts and matches); outcome aligned by outcome_vector_span and outcome_vector",
+   "labels": [
+    "side run",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "future_hosts_as_comparisons",
+   "plan_section": "Other runs, listed in advance: Future hosts as a second comparison group",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "future_hosts.side_run_design (each cohort's pool plus its admitted future hosts)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "side run",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "own_state_comparisons",
+   "plan_section": "Other runs, listed in advance: Comparison utilities from the host's own state only",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "side_runs.own_state",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector with absorbed_controls=LEAVE_OUT_IF_EXACTLY_ABSORBED",
+   "labels": [
+    "side run",
+    "not shown beside the headline",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "threshold_1pct",
+   "plan_section": "Other runs, listed in advance: Thresholds of 1% and 5% (the 1% run)",
+   "sets": [
+    "every_cohort_utility at 1%"
+   ],
+   "builder": "every cohort utility as built at 1% (every_cohort_utility_at, supplied by the caller), then build_with_rules",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "exploratory",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "threshold_5pct",
+   "plan_section": "Other runs, listed in advance: Thresholds of 1% and 5% (the 5% run, both readings)",
+   "sets": [
+    "headline_set at 5%",
+    "every_cohort_utility at 5%"
+   ],
+   "builder": "side_runs.without_rappahannock, then build_with_rules at 5% (the footnote with Rappahannock beside it)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "both sets reported, the headline rules first (adopted by Joe on 2026-11-19, D-111)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "fuel_mix_categorical",
+   "plan_section": "Electricity: the main estimate, Fuel-mix control (labelled sensitivity: the categorical group-by-year specification)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under power_simulation.CATEGORICAL_FUEL",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "labelled sensitivity",
+    "the agent's reading: the plan does not settle this (place in the order and which sets)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "fuel_mix_none",
+   "plan_section": "Electricity: the main estimate, Fuel-mix control (labelled sensitivity: no fuel-mix control)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under power_simulation.NO_FUEL_CONTROL",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "labelled sensitivity",
+    "the agent's reading: the plan does not settle this (place in the order and which sets)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "size_band_side_run",
+   "plan_section": "Electricity: the main estimate, Size adjustment (the size-band form as a side run)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "size_band_run.build (cells of reference-year region by size band, every eligible unit of the host's cell its comparisons, the support rule's first limb as written; R7, Joe, 2026-11-19, D-107; the tested per-host form, adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which two hosts share a cohort and a cell is refused in words as outside this freeze, and no extension is built)",
+   "estimator": "size_band_run.estimate_size_band (the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector)",
+   "labels": [
+    "side run",
+    "side run: the size-band form (cells of reference-year region by size band), in the tested per-host form adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which hosts share a cohort and a cell is outside this freeze; under the procedure validated on the headline set; no validation was made on this design",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E1",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E1 events shifted six years early",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "side_runs.e1 (G-a at g-9)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E2",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E2 fake events for future hosts",
+   "sets": [
+    "e2_eligible_future_host_sample at 2%"
+   ],
+   "builder": "future_hosts.e2_design (each unit at its fake date f, the main pool, G-a)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E3",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E3 drop 2021 to 2023 (full windows)",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "side_runs.e3",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "earlier-cohort sensitivity",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E4a",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E4(a) the slow path",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "inventory_runs.e4a, redate (G-a)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E4b",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E4(b) anchoring off",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "inventory_runs.e4b, redate (G-a)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E5",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E5 high-upward-scaling states dropped",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then side_runs.e5 (G-b)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "removes units with no rematching (G-b)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E6",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E6 comparison utilities that change market region dropped",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then side_runs.e6 (G-b)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "removes units with no rematching (G-b)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E7_earlier",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E7 permit-dated start years redrawn (earlier)",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "inventory_runs.e7_designs (seed 20261203), redate (G-a) per draw. The caller's context for each set: inventory_runs.Context.from_files(0.02) for the headline set and inventory_runs.Context.from_files(0.02, which=\"every_cohort_utility\") for every cohort utility, which gives that set no set-aside list, as design.split does (inventory_runs.aside_for); the roster is the set's own hosts from RunInputs.sets. E7's quantity-side summary for the headline set and for every cohort utility is written by inventory_runs.main to data/frozen/inventory_run_designs.json, blocks E7 and E7_every_cohort_utility, at the specified 200 draws a direction under seed 20261203. For every cohort utility the primary reporting denominator of those quantity-side shares is the 36 hosts of the set's reference design, with the roster of 41 reported beside it (Joe, 2026-11-20, D-117), by presentation only with nothing redrawn: e7_presentation.denominators reads the stored block E7_every_cohort_utility, and data/frozen/e7_reporting_denominator.json holds both figures",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector, point estimate per draw",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "point estimates only, no range per draw (E7)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "E7_later",
+   "plan_section": "Other outcomes and robustness: falsification and robustness, E7 permit-dated start years redrawn (later, the mirror, an assumption)",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "inventory_runs.e7_designs (seed 20261203), redate (G-a) per draw. The caller's context for each set: inventory_runs.Context.from_files(0.02) for the headline set and inventory_runs.Context.from_files(0.02, which=\"every_cohort_utility\") for every cohort utility, which gives that set no set-aside list, as design.split does (inventory_runs.aside_for); the roster is the set's own hosts from RunInputs.sets. E7's quantity-side summary for the headline set and for every cohort utility is written by inventory_runs.main to data/frozen/inventory_run_designs.json, blocks E7 and E7_every_cohort_utility, at the specified 200 draws a direction under seed 20261203. For every cohort utility the primary reporting denominator of those quantity-side shares is the 36 hosts of the set's reference design, with the roster of 41 reported beside it (Joe, 2026-11-20, D-117), by presentation only with nothing redrawn: e7_presentation.denominators reads the stored block E7_every_cohort_utility, and data/frozen/e7_reporting_denominator.json holds both figures",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector, point estimate per draw",
+   "labels": [
+    "falsification and robustness run (reported whatever it shows; none is a gate)",
+    "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+    "point estimates only, no range per draw (E7)",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "condition_1_load_share",
+   "plan_section": "Conditions tested (four), 1: load share of 10% or more in event year 3",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, conditions.load_share_grouping",
+   "estimator": "conditions.contrast (outcome_analysis.point_fit; no range, no test)",
+   "labels": [
+    "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+    "companion set: the agent's reading: the plan does not settle this"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "condition_2_investor_owned",
+   "plan_section": "Conditions tested (four), 2: investor-owned against public and cooperative",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, conditions.ownership_grouping",
+   "estimator": "conditions.contrast (no range, no test)",
+   "labels": [
+    "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+    "companion set: the agent's reading: the plan does not settle this"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "condition_3_retail_choice_proxy",
+   "plan_section": "Conditions tested (four), 3: retail choice by a proxy (the host's own unit; the state reading beside it)",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, conditions.retail_choice_grouping (both readings)",
+   "estimator": "conditions.contrast (no range, no test)",
+   "labels": [
+    "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+    "a proxy for retail choice (observed delivery-only residential activity in the cohort reference year), not a regulatory classification",
+    "companion set: the agent's reading: the plan does not settle this"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "condition_4_past_utilization",
+   "plan_section": "Conditions tested (four), 4: past utilization above against at or below the median",
+   "sets": [
+    "headline_set at 2%",
+    "every_cohort_utility at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, conditions.past_utilization_grouping",
+   "estimator": "conditions.contrast (no range, no test)",
+   "labels": [
+    "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+    "companion set: the agent's reading: the plan does not settle this"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "influence_each_market_region_left_out",
+   "plan_section": "Reported checks, Influence (each market region left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and \"moves most\" adopted by Joe on 2026-11-19, D-111)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then influence_deletions.delete_region for each region in regions_present (every host whose reference-year region it is leaves with its matches; nothing rematched)",
+   "estimator": "influence_deletions.estimate_deletion per region (rule 7's treatment and the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector); influence_deletions.summarise",
+   "labels": [
+    "reported check",
+    "influence deletion: each market region present left out; under the procedure validated on the headline set; no validation was made on this design",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "influence_each_state_left_out",
+   "plan_section": "Reported checks, Influence (each state left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and \"moves most\" adopted by Joe on 2026-11-19, D-111)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then influence_deletions.delete_state for each state in states_present except Virginia (its hosts leave, its comparison utilities leave every remaining host's matches; nothing rematched)",
+   "estimator": "influence_deletions.estimate_deletion per state (rule 7's treatment and the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector); influence_deletions.summarise",
+   "labels": [
+    "reported check",
+    "influence deletion: each state present left out (Virginia apart); under the procedure validated on the headline set; no validation was made on this design",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "influence_virginia_left_out",
+   "plan_section": "Reported checks, Influence (Virginia left out; R7, Joe, 2026-11-19, D-107; its definitions of present regions and states, a state deletion, the range's members and \"moves most\" adopted by Joe on 2026-11-19, D-111)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then influence_deletions.delete_state(d, 'VA'), whether or not Virginia is in the design",
+   "estimator": "influence_deletions.estimate_deletion(d, 'state', 'VA', ...), with its sentence on what Virginia removes (checked on the design; an unchanged estimate is not presented as a check passed)",
+   "labels": [
+    "reported check",
+    "influence deletion: state VA left out; under the procedure validated on the headline set; no validation was made on this design",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "influence_five_highest_load_utilities_dropped",
+   "plan_section": "Reported checks, Influence (the five highest-load utilities dropped; Joe, 2026-11-19, D-105: absolute data center load in event year 3, not load share)",
+   "sets": [
+    "headline_set at 2%"
+   ],
+   "builder": "design.build_with_rules under the headline rules, then influence_load.drop_the_five (the five hosts with the largest dc_gwh from side.dose in their own event year 3, dropped with their sub-experiments; every other host keeps its matches; the rules carried)",
+   "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector on the deleted design, after the rank test made before any fit (influence.estimable)",
+   "labels": [
+    "reported check",
+    "under the procedure validated on the headline set; no validation was made on this design"
+   ],
+   "status": "built",
+   "reason": null,
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "tariff_check",
+   "plan_section": "Reported checks, The tariff check (docs/tariff-check.md)",
+   "sets": [],
+   "builder": "none",
+   "estimator": "none",
+   "labels": [
+    "reported check"
+   ],
+   "status": "not_built",
+   "reason": "no tariff is collected before the freeze and no module rebuilds bills from rate schedules",
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "regional_layer",
+   "plan_section": "Electricity: regional layer (accounting, not an estimate)",
+   "sets": [],
+   "builder": "none",
+   "estimator": "none",
+   "labels": [
+    "exploratory"
+   ],
+   "status": "not_built",
+   "reason": "no module computes PJM capacity cost per customer or the exploratory description of bills after June 2025; nothing in the plan specifies the latter",
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "exploratory_work",
+   "plan_section": "Order of unblinding (last: exploratory work)",
+   "sets": [],
+   "builder": "none",
+   "estimator": "none",
+   "labels": [
+    "exploratory"
+   ],
+   "status": "not_built",
+   "reason": "not specified by the plan, so there is nothing to build",
+   "outcome": "log_residential_price",
+   "reads_an_outcome": true,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": null
+  },
+  {
+   "id": "reconciliation_row_M",
+   "plan_section": "Reconciliation rows, Row M (Meeks, Pless, Qi and Wang), steps M0 to M4: out of scope for this freeze (Joe, 2026-11-19, D-109)",
+   "sets": [
+    "the_papers_specification_on_our_panel"
+   ],
+   "builder": "none in this freeze (dormant: reconciliation_treatment first-year treatments per step, RowMInputs)",
+   "estimator": "none in this freeze (dormant: reconciliation_mu.run_m_step per step and describe_row_m; the row's verdict logic is not applied in this freeze)",
+   "labels": [
+    "out of scope for this freeze (Joe, 2026-11-19, D-109): M0 to M4 not run, the row's code dormant",
+    "the paper's published numbers as the paper's, as context; nothing of ours beside them as a test"
+   ],
+   "status": "out_of_scope_for_this_freeze",
+   "reason": "Out of scope for this freeze by Joe's ruling of 2026-11-19 (D-109). M0 to M4 are not run. The reasons, as they are: the row's sample flags and M0's assignment need inputs that are not read and not authorized (EIA-861 inputs under data/raw, the service-territory table, a site-to-county table and county boundaries); several elements of the paper's specification would be approximations of ours that Joe has not adopted; and he decided not to adopt them, not to read the additional tables and not to fetch county boundaries for this freeze. The row's code and tests are kept as they are and are dormant (run_outcomes._row_mu('M') as ROW_M_DORMANT_RUNNER, RowMInputs and NEEDS_M, and reconciliation_mu's row M parts); its verdict logic is dormant and not applied in this freeze, and no row M result supports a reproduction verdict. The paper's published numbers are reported as the paper's, as context, and nothing of ours is set beside them as a test. A utility or county with no territory row, no assigned site or no polygon is never described as untreated or as evidence of no treatment. Row M is in no executable order of unblinding and in no built count, and run() refuses it in words.",
+   "outcome": null,
+   "reads_an_outcome": false,
+   "needs_before_research_data": null,
+   "stopped_on_research_inputs": null,
+   "context_reported_as_the_papers": "The paper's published residential estimates, reported as the paper's and as context, with nothing of ours set beside them as a test (Meeks, Pless, Qi and Wang, 'Who Pays for Growth? Evidence from Data Centers and the Grid', SSRN 6967558, dated 2026-10-23; pooled, Table 2 col. 2, p. 47; investor-owned, public and cooperative, Table 3 Panels A to C col. 2, p. 48; standard errors in parentheses): pooled 0.021 (0.008), investor-owned 0.052 (0.014), public 0.017 (0.015), cooperative -0.007 (0.010)."
+  }
+ ]
+}

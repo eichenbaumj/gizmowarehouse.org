@@ -1,0 +1,809 @@
+{
+  "what_this_is": "Quantity-side design summary for reconciliation rows M and U (PREANALYSIS.md, 'The reconciliation rows'): how many panel units each buildable step treats, in which first years and by ownership class, and how the inventory places its sites. PROVISIONAL: the design stands as of 2026-11-18, the plan is a DRAFT and not frozen, and these counts move with the inventory. No price, revenue or outcome was read; counts are before any outcome-based sample rule (usable price, Short Form, three classes, the paper's 3-year rule) and before the treatment rules' own choices are settled, so each count names the choice it uses. The one exception is short_form_flags_for_row_u, which counts row U's quantity-side sample under the Short Form rule Joe adopted on 2026-11-20 (D-115), still with no price read.",
+  "written_by": "pipeline/analysis/reconciliation_mu.py main(), written in session 19 and extended for row U in session 21, 2026-11-19 (the U0 assignment on the polygon incidence table and the Short Form flags' coverage), and in session 22 for Joe's ruling D-109 (U0 on the smallest containing polygon over every polygon, built; the four entity types listed; U0's identity with C0 to C2 computed; the missing-coverage qualification), and in session 25, 2026-11-20, for Joe's ruling D-115 (row U's quantity-side sample under the adopted Short Form rule, in short_form_flags_for_row_u), and in session 26, 2026-11-20, for Joe's ruling D-117 (row U's ownership classes from the panel's entity type read over 2001 to 2025, in row_u_ownership_classification_d117), and for his ruling D-119 of the same day (that type kept and described as the utility-level modal reported type carried across the panel, not the latest year-by-year EIA classification, with no further raw-data investigation)",
+  "rows_u_and_c_status": "Comparison-only by Joe's ruling of 2026-11-19 (D-109). U0's assignment and C0 to C2's assignment are the same rule, the smallest containing polygon over every polygon of the layer with the type not read, applied to the same table. Their agreement site by site is one rule applied twice and is not independent validation of either. No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+  "ownership_classes_used_here": "Row U: the panel's entity type of each utility-state, the utility-level modal reported type carried across the panel and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's column over 2001 to 2025 (D-117), one class for every year of the unit, mapped by reconciliation_mu.U_MAP, settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119); adopted_row_u_ownership_classes, row_u_ownership_classification_d117. Row M, dormant and outside D-117: the unit's last reported type by ownership_classes(q, 'M', 'last'), mapped by M_MAP, the agent's reading for this summary, not a ruling.",
+  "row_u_ownership_classification_d117": {
+    "specification": {
+      "settled": "settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119)",
+      "pick": "the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state (missing values dropped explicitly before the last nonmissing value is taken)",
+      "years_searched": [
+        2001,
+        2025
+      ],
+      "classification": "time-invariant: one class per utility-state, the same class in every year of that utility-state",
+      "missing_entity_type": "A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class.",
+      "row_u_mapping": "reconciliation_mu.U_MAP, unchanged; every other entity type is 'other' and enters the pooled run only",
+      "row_c_mapping": "reconciliation_c.ROW_C_OWNERSHIP_MAP, the panel's grouping; investor_owned against every other class"
+    },
+    "pick": "the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state",
+    "years_searched": [
+      2001,
+      2025
+    ],
+    "classification": "time-invariant: one class per utility-state, the same class in every year of that utility-state",
+    "mapping": {
+      "Investor Owned": "investor_owned",
+      "Cooperative": "cooperative",
+      "Municipal": "municipal"
+    },
+    "other_types": "every other entity type is 'other' and enters the pooled run only (Ryu and Hiatt p. 8)",
+    "years_present_in_the_quantities": [
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "utility_states": 3231,
+    "utility_states_with_more_than_one_distinct_entity_type_across_years": 0,
+    "utilities_with_more_than_one_distinct_entity_type_across_years_and_states": 0,
+    "utility_states_with_no_entity_type_in_any_year": 0,
+    "utility_states_whose_class_differs_last_nonmissing_against_most_often": 0,
+    "utility_states_whose_class_differs_from_the_summarys_earlier_classes": 0,
+    "earlier_classes_were": "ownership_classes(q, 'U', 'last'), pandas' groupby last over every year of the quantities, which skips a missing type by its default",
+    "class_counts": {
+      "municipal": 1861,
+      "cooperative": 964,
+      "investor_owned": 243,
+      "other": 163
+    },
+    "no_class_is": "A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class.",
+    "what_the_panel_column_is": "The panel's entity_type column (data/interim/panel_quantities.parquet) is not a year-by-year report. pipeline/electricity/panel.py build(), read as code by the agent, computes it once per utility id as the type that id's own non-imputed filings report most often (value_counts().index[0] over the rows with a type), keeps only ids whose type is one of the six distribution entity types, and joins it to every row on utility_id_eia, so it is the same in every year of a utility-state and in every state of a utility; the panel's ownership column is that type mapped by panel.OWNERSHIP_GROUP. On this panel the last nonmissing type over 2001 to 2025 and the most frequent type are therefore the same for every utility-state by construction, and the years searched change no class. Joe ruled on 2026-11-20 (D-119) that rows U and C keep this type, in his words: \"Keep the existing panel entity type for rows U and C, accurately described as the utility-level modal reported type carried across the panel, not the latest year-by-year EIA classification. No further raw-data investigation.\" The classes of rows U and C are therefore the utility-level modal reported type carried across the panel. Whether a year-by-year record of EIA's would differ for some utility was NOT established; it would need a read of the EIA-861 sales table under data/raw, which was not made, and under the same ruling no further raw-data investigation is made. Nothing here claims equivalence with EIA's year-by-year record."
+  },
+  "not_built": {
+    "M0": "county_touch needs the EIA-861 service-territory table (county by utility and state), data/raw/pudl/core_eia861__yearly_service_territory.parquet, which this agent may not read, and a county for every site: facilities.county_name is missing for 1046 of 2244 rows.",
+    "M1_to_M3_county_year_counting": "the paper's county-year summing needs each site's county; missing for 1046 rows, so not built here."
+  },
+  "sites": {
+    "all_rows": 2244,
+    "crypto": 41,
+    "verified_rule_unassigned": {
+      "a cryptocurrency mine, not a data center": 41,
+      "the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+      "the inventory gives the site no utility (behind_the_meter)": 9,
+      "the inventory gives the site no utility (wholesale_direct)": 8,
+      "the inventory gives the site no utility (none)": 6,
+      "the site has no state": 2
+    },
+    "placed_by": {
+      "smallest_polygon": 902,
+      "unique": 872,
+      "verified_by_hand": 181,
+      "next_larger_load_feasible": 168,
+      "fallback_largest_flagged": 68,
+      "behind_the_meter": 14,
+      "none": 12,
+      "wholesale_direct": 11,
+      "ercot_wires_outside_panel": 11,
+      "candidates_widened": 3,
+      "reopened": 2
+    },
+    "with_more_than_one_candidate_territory": 1241,
+    "data_centers_with_size_and_year": 1079,
+    "where_the_two_size_columns_disagree_about_5_mw": 91,
+    "how_rules_differ_site_by_site": "only the verified rule can be built from permitted files; placed_by and the candidate count describe where the geometric rules could differ from it, and are not those rules"
+  },
+  "steps": {
+    "M1|site|mw_full": {
+      "treatment_rule": "verified|above_5mw|site|mw_full",
+      "window": [
+        2010,
+        2024
+      ],
+      "jurisdictions": "CONTIGUOUS_48",
+      "same_treatment_as": "M2 (only the price changes)",
+      "units": 3071,
+      "never_in_the_inventory": 2957,
+      "first_treated_before_window": 40,
+      "first_treated_inside_window": 55,
+      "first_treated_after_window": 19,
+      "inside_window_by_first_year": {
+        "2010": 5,
+        "2011": 6,
+        "2012": 4,
+        "2013": 1,
+        "2014": 2,
+        "2015": 1,
+        "2016": 5,
+        "2017": 2,
+        "2018": 3,
+        "2019": 2,
+        "2020": 5,
+        "2021": 3,
+        "2022": 2,
+        "2023": 2,
+        "2024": 12
+      },
+      "inside_window_by_ownership": {
+        "investor_owned": 25,
+        "cooperative": 19,
+        "public": 11
+      },
+      "first_treated_in_the_window_s_first_year_so_no_base_year": 5,
+      "sites_left_out": {
+        "no size on the inventory": 1095,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no start year on the inventory": 24,
+        "no unit under the rule: the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+        "no unit under the rule: the inventory gives the site no utility (behind_the_meter)": 9,
+        "no unit under the rule: the inventory gives the site no utility (wholesale_direct)": 8,
+        "no unit under the rule: the inventory gives the site no utility (none)": 6,
+        "no unit under the rule: the site has no state": 2
+      }
+    },
+    "M3|site|mw_full": {
+      "treatment_rule": "verified|above_5mw|site|mw_full",
+      "window": [
+        2010,
+        2025
+      ],
+      "jurisdictions": "CONTIGUOUS_48",
+      "same_treatment_as": null,
+      "units": 3071,
+      "never_in_the_inventory": 2957,
+      "first_treated_before_window": 40,
+      "first_treated_inside_window": 66,
+      "first_treated_after_window": 8,
+      "inside_window_by_first_year": {
+        "2010": 5,
+        "2011": 6,
+        "2012": 4,
+        "2013": 1,
+        "2014": 2,
+        "2015": 1,
+        "2016": 5,
+        "2017": 2,
+        "2018": 3,
+        "2019": 2,
+        "2020": 5,
+        "2021": 3,
+        "2022": 2,
+        "2023": 2,
+        "2024": 12,
+        "2025": 11
+      },
+      "inside_window_by_ownership": {
+        "investor_owned": 29,
+        "cooperative": 22,
+        "public": 15
+      },
+      "first_treated_in_the_window_s_first_year_so_no_base_year": 5,
+      "sites_left_out": {
+        "no size on the inventory": 1095,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no start year on the inventory": 24,
+        "no unit under the rule: the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+        "no unit under the rule: the inventory gives the site no utility (behind_the_meter)": 9,
+        "no unit under the rule: the inventory gives the site no utility (wholesale_direct)": 8,
+        "no unit under the rule: the inventory gives the site no utility (none)": 6,
+        "no unit under the rule: the site has no state": 2
+      }
+    },
+    "M1|site|mw_full_raw": {
+      "treatment_rule": "verified|above_5mw|site|mw_full_raw",
+      "window": [
+        2010,
+        2024
+      ],
+      "jurisdictions": "CONTIGUOUS_48",
+      "same_treatment_as": "M2 (only the price changes)",
+      "units": 3071,
+      "never_in_the_inventory": 2957,
+      "first_treated_before_window": 44,
+      "first_treated_inside_window": 50,
+      "first_treated_after_window": 20,
+      "inside_window_by_first_year": {
+        "2010": 3,
+        "2011": 6,
+        "2012": 4,
+        "2013": 3,
+        "2014": 2,
+        "2016": 4,
+        "2017": 2,
+        "2018": 3,
+        "2019": 1,
+        "2020": 4,
+        "2021": 3,
+        "2022": 2,
+        "2023": 1,
+        "2024": 12
+      },
+      "inside_window_by_ownership": {
+        "investor_owned": 22,
+        "cooperative": 17,
+        "public": 11
+      },
+      "first_treated_in_the_window_s_first_year_so_no_base_year": 3,
+      "sites_left_out": {
+        "no size on the inventory": 1095,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no start year on the inventory": 24,
+        "no unit under the rule: the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+        "no unit under the rule: the inventory gives the site no utility (behind_the_meter)": 9,
+        "no unit under the rule: the inventory gives the site no utility (wholesale_direct)": 8,
+        "no unit under the rule: the inventory gives the site no utility (none)": 6,
+        "no unit under the rule: the site has no state": 2
+      }
+    },
+    "M3|site|mw_full_raw": {
+      "treatment_rule": "verified|above_5mw|site|mw_full_raw",
+      "window": [
+        2010,
+        2025
+      ],
+      "jurisdictions": "CONTIGUOUS_48",
+      "same_treatment_as": null,
+      "units": 3071,
+      "never_in_the_inventory": 2957,
+      "first_treated_before_window": 44,
+      "first_treated_inside_window": 61,
+      "first_treated_after_window": 9,
+      "inside_window_by_first_year": {
+        "2010": 3,
+        "2011": 6,
+        "2012": 4,
+        "2013": 3,
+        "2014": 2,
+        "2016": 4,
+        "2017": 2,
+        "2018": 3,
+        "2019": 1,
+        "2020": 4,
+        "2021": 3,
+        "2022": 2,
+        "2023": 1,
+        "2024": 12,
+        "2025": 11
+      },
+      "inside_window_by_ownership": {
+        "investor_owned": 27,
+        "cooperative": 19,
+        "public": 15
+      },
+      "first_treated_in_the_window_s_first_year_so_no_base_year": 3,
+      "sites_left_out": {
+        "no size on the inventory": 1095,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no start year on the inventory": 24,
+        "no unit under the rule: the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+        "no unit under the rule: the inventory gives the site no utility (behind_the_meter)": 9,
+        "no unit under the rule: the inventory gives the site no utility (wholesale_direct)": 8,
+        "no unit under the rule: the inventory gives the site no utility (none)": 6,
+        "no unit under the rule: the site has no state": 2
+      }
+    },
+    "M4|dose_2pct": {
+      "treatment_rule": "verified|dose_at_least_0.02",
+      "window": [
+        2010,
+        2025
+      ],
+      "jurisdictions": "CONTIGUOUS_48",
+      "units": 3071,
+      "never_in_the_inventory": 2978,
+      "first_treated_before_window": 26,
+      "first_treated_inside_window": 67,
+      "first_treated_after_window": 0,
+      "inside_window_by_first_year": {
+        "2010": 6,
+        "2011": 2,
+        "2012": 7,
+        "2013": 2,
+        "2014": 4,
+        "2015": 3,
+        "2016": 3,
+        "2017": 6,
+        "2019": 5,
+        "2020": 4,
+        "2021": 3,
+        "2022": 2,
+        "2023": 1,
+        "2024": 8,
+        "2025": 11
+      },
+      "inside_window_by_ownership": {
+        "public": 23,
+        "investor_owned": 22,
+        "cooperative": 22
+      },
+      "first_treated_in_the_window_s_first_year_so_no_base_year": 6,
+      "notes": [
+        "2 units have no non-missing dose in any year and are never treated here"
+      ]
+    },
+    "U0|site_year_load": {
+      "treatment_rule": "polygon_smallest_any_type|site_year_load",
+      "window": [
+        2015,
+        2024
+      ],
+      "jurisdictions": "FIFTY_STATES_AND_DC",
+      "same_treatment_as": null,
+      "units_in_window": 3052,
+      "units_with_mw_above_zero_in_some_window_year": 167,
+      "of_which_by_ownership": {
+        "investor_owned": 65,
+        "cooperative": 45,
+        "municipal": 39,
+        "other": 18
+      },
+      "first_window_year_with_mw_above_zero": {
+        "2015": 118,
+        "2016": 6,
+        "2017": 6,
+        "2018": 2,
+        "2019": 6,
+        "2020": 6,
+        "2021": 4,
+        "2022": 3,
+        "2023": 2,
+        "2024": 14
+      },
+      "units_above_zero_in_the_first_window_year": 118,
+      "units_whose_mw_comes_from_another_state_of_the_same_utility": 18,
+      "unit_years_with_mw_above_zero": 1405,
+      "sites_left_out": {
+        "no site-year load on the inventory": 1156,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no unit under the rule: the chosen polygon's utility is not a panel unit in the site's state": 35,
+        "no unit under the rule: no territory polygon contains the site": 8,
+        "no unit under the rule: the site has no state": 2,
+        "no unit under the rule: tie in area between polygons [13825, 17569]; no tie rule": 1
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "notes": [],
+      "assignment_rule": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+      "coincidence_with_row_c": "U0's assignment and C0 to C2's assignment are the same rule, the smallest containing polygon over every polygon of the layer with the type not read, applied to the same table. Their agreement site by site is one rule applied twice and is not independent validation of either."
+    },
+    "U1|site_year_load": {
+      "treatment_rule": "verified|site_year_load",
+      "window": [
+        2015,
+        2024
+      ],
+      "jurisdictions": "FIFTY_STATES_AND_DC",
+      "same_treatment_as": "U2 (only the price changes)",
+      "units_in_window": 3052,
+      "units_with_mw_above_zero_in_some_window_year": 174,
+      "of_which_by_ownership": {
+        "investor_owned": 75,
+        "cooperative": 44,
+        "municipal": 29,
+        "other": 26
+      },
+      "first_window_year_with_mw_above_zero": {
+        "2015": 114,
+        "2016": 5,
+        "2017": 19,
+        "2018": 2,
+        "2019": 4,
+        "2020": 6,
+        "2021": 3,
+        "2022": 4,
+        "2023": 2,
+        "2024": 15
+      },
+      "units_above_zero_in_the_first_window_year": 114,
+      "units_whose_mw_comes_from_another_state_of_the_same_utility": 30,
+      "unit_years_with_mw_above_zero": 1448,
+      "sites_left_out": {
+        "no site-year load on the inventory": 1151,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no unit under the rule: the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+        "no unit under the rule: the inventory gives the site no utility (behind_the_meter)": 9,
+        "no unit under the rule: the inventory gives the site no utility (wholesale_direct)": 8,
+        "no unit under the rule: the inventory gives the site no utility (none)": 6,
+        "no unit under the rule: the site has no state": 2
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "notes": []
+    },
+    "U3|site_year_load": {
+      "treatment_rule": "verified|site_year_load",
+      "window": [
+        2015,
+        2025
+      ],
+      "jurisdictions": "FIFTY_STATES_AND_DC",
+      "same_treatment_as": null,
+      "units_in_window": 3052,
+      "units_with_mw_above_zero_in_some_window_year": 189,
+      "of_which_by_ownership": {
+        "investor_owned": 82,
+        "cooperative": 47,
+        "municipal": 33,
+        "other": 27
+      },
+      "first_window_year_with_mw_above_zero": {
+        "2015": 114,
+        "2016": 5,
+        "2017": 19,
+        "2018": 2,
+        "2019": 4,
+        "2020": 6,
+        "2021": 3,
+        "2022": 4,
+        "2023": 2,
+        "2024": 15,
+        "2025": 15
+      },
+      "units_above_zero_in_the_first_window_year": 114,
+      "units_whose_mw_comes_from_another_state_of_the_same_utility": 33,
+      "unit_years_with_mw_above_zero": 1637,
+      "sites_left_out": {
+        "no site-year load on the inventory": 1151,
+        "no unit under the rule: a cryptocurrency mine, not a data center": 41,
+        "no unit under the rule: the inventory gives the site no utility (ercot_wires_outside_panel)": 11,
+        "no unit under the rule: the inventory gives the site no utility (behind_the_meter)": 9,
+        "no unit under the rule: the inventory gives the site no utility (wholesale_direct)": 8,
+        "no unit under the rule: the inventory gives the site no utility (none)": 6,
+        "no unit under the rule: the site has no state": 2
+      },
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "notes": []
+    }
+  },
+  "U0_assignment_on_the_real_layer": {
+    "status": "BUILT on the real quantity files (no price read): U0's assignment by Joe's ruling of 2026-11-19 (D-109), the smallest containing polygon over every polygon of the layer, the type not read, as our labelled approximation. Before D-109 row U used retail first, and every polygon of this layer being classed ambiguous, U0 placed 0 of 2,203 data center sites and was stopped. U0 itself is a regression on price and waits for the freeze.",
+    "rule": "polygon_smallest_any_type",
+    "rule_label": "Our smallest-polygon approximation, not the paper's assignment. Each site goes to the smallest territory polygon that strictly contains it, over every polygon of the layer, the polygon's type not read (ours, a labelled approximation adopted by Joe on 2026-11-19, D-109). The paper gives priority to retail providers over wholesale-only territories (Ryu and Hiatt p. 5, Sec. 2.1). This layer's TYPE field does not establish which polygons are retail, so that priority is not applied, and exact reproduction of the paper's assignment is unavailable; the layer's vintage is also not the paper's. A site in two polygons of identical smallest area is listed with both and not placed (the tie is not broken), and a site in no polygon is listed and enters no utility. This is the same rule as row C's assignment at C0 to C2, so the two assignments agree by construction; that agreement is one rule applied twice and is not independent validation.",
+    "coincidence_with_c0_to_c2": "U0's assignment and C0 to C2's assignment are the same rule, the smallest containing polygon over every polygon of the layer with the type not read, applied to the same table. Their agreement site by site is one rule applied twice and is not independent validation of either.",
+    "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+    "inputs": [
+      "data/interim/reconciliation_polygon_incidence.parquet",
+      "data/interim/reconciliation_polygon_incidence_types.parquet",
+      "data/interim/panel_reported_ids.parquet",
+      "data/interim/facilities.parquet"
+    ],
+    "typed_incidence_table": "data/interim/reconciliation_polygon_incidence_types.parquet, written by reconciliation_inputs.py --types-only on 2026-11-19 (session 22) from one read of the territory layer by ID, TYPE and geometry (D-109); its fid, utility_id_reported and area match the incidence table row for row (checked here and when it was written)",
+    "incidence_rows": 4997,
+    "polygon_ids_containing_a_site": 372,
+    "polygons_in_layer": "2,931 (data/frozen/reconciliation_polygon_incidence_summary.json, counts.polygons_in_layer)",
+    "type_class_read": false,
+    "inventory_rows": 2244,
+    "crypto_rows_not_counted": 41,
+    "data_center_sites": 2203,
+    "data_center_sites_assigned_to_a_panel_unit": 2157,
+    "data_center_sites_listed_as_depending_on_ambiguous_polygons": 0,
+    "data_center_sites_with_no_point": 5,
+    "data_center_sites_with_a_point_in_no_polygon": 3,
+    "data_center_sites_unassigned_by_kind": {
+      "not a panel unit": 35,
+      "no territory polygon contains the site": 8,
+      "the site has no state": 2,
+      "tie in area": 1
+    },
+    "exact_area_ties_not_broken": {
+      "osm:way/571010571": "tie in area between polygons [13825, 17569]; no tie rule"
+    },
+    "before_d109": {
+      "rule": "polygon_smallest (retail first, D-107)",
+      "data_center_sites_assigned_to_a_panel_unit": 0,
+      "data_center_sites_listed_as_depending_on_ambiguous_polygons": 2192
+    },
+    "identity_with_c0_to_c2_site_by_site": {
+      "sites_compared": 2203,
+      "identical": 2203,
+      "differ": 0,
+      "placed_on_the_same_unit": 2157,
+      "left_unplaced_for_the_same_reason": 46,
+      "differing_fids": [],
+      "what_it_means": "one rule applied twice; not independent validation (rt.ROW_U_C_COINCIDENCE)"
+    },
+    "entity_type_list": {
+      "label": "Entity types as the layer's TYPE field names them, not a verified wholesale classification. For each type, the sites whose ASSIGNED polygon (the smallest containing polygon, U0's rule) carries that type are listed, and beside them the count of sites lying in ANY polygon of that type. The list decides no assignment, since U0 places every site by area alone, whatever these types are (Joe, 2026-11-19, D-109).",
+      "types": [
+        "FEDERAL",
+        "STATE",
+        "MUNICIPAL MKTG AUTHORITY",
+        "WHOLESALE POWER MARKETER"
+      ],
+      "by_type": {
+        "FEDERAL": {
+          "assigned_fids": [
+            "bi:822-0",
+            "bi:823-0",
+            "bi:841-0",
+            "bi:842-0",
+            "bi:846-0",
+            "bi:847-0",
+            "bi:848-0",
+            "osm:way/1126159710",
+            "osm:way/1126159711",
+            "osm:way/1126159714",
+            "osm:way/1126159715",
+            "osm:way/1152747559",
+            "osm:way/1152748037",
+            "osm:way/1280344153",
+            "osm:way/1374895921",
+            "osm:way/1374895922",
+            "osm:way/1386017498",
+            "osm:way/1386017499",
+            "osm:way/1501824326",
+            "osm:way/1501824327",
+            "osm:way/1501824328",
+            "osm:way/1501824329",
+            "osm:way/373945186",
+            "osm:way/397914434",
+            "osm:way/653416730",
+            "osm:way/706759845",
+            "osm:way/752001022",
+            "osm:way/772827597",
+            "osm:way/772827601"
+          ],
+          "assigned_count": 29,
+          "lying_in_any_count": 459,
+          "assigned_and_mapped_to_a_panel_unit": 29
+        },
+        "STATE": {
+          "assigned_fids": [
+            "bi:1358-0",
+            "epoch:Google Pryor (North)",
+            "osm:node/10014176940",
+            "osm:way/1320038649",
+            "osm:way/365941471",
+            "osm:way/459188725"
+          ],
+          "assigned_count": 6,
+          "lying_in_any_count": 42,
+          "assigned_and_mapped_to_a_panel_unit": 6
+        },
+        "MUNICIPAL MKTG AUTHORITY": {
+          "assigned_fids": [
+            "osm:node/12112361725",
+            "osm:way/233888384",
+            "osm:way/758278314",
+            "osm:way/830138727"
+          ],
+          "assigned_count": 4,
+          "lying_in_any_count": 10,
+          "assigned_and_mapped_to_a_panel_unit": 0
+        },
+        "WHOLESALE POWER MARKETER": {
+          "assigned_fids": [],
+          "assigned_count": 0,
+          "lying_in_any_count": 0,
+          "assigned_and_mapped_to_a_panel_unit": 0
+        }
+      },
+      "listed_sites_any_type": 39,
+      "listed_sites_mapped_to_a_panel_unit": 35,
+      "ties_not_broken": {
+        "osm:way/571010571": {
+          "tied_polygon_ids": [
+            13825,
+            17569
+          ],
+          "types_of_the_tied_polygons": [
+            "NOT AVAILABLE"
+          ]
+        }
+      },
+      "data_center_sites_with_a_containing_polygon": 2195
+    },
+    "note": "A site with no point has no incidence row and is listed by the assignment as in no polygon; it is counted here apart, from facilities.parquet's lat and lon."
+  },
+  "short_form_flags_for_row_u": {
+    "status": "The Short Form rule for row U was adopted by Joe on 2026-11-20 (D-115) and is applied below, on the quantity side, in sample_under_the_adopted_short_form_rule. Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109). The records are the filer table (data/interim/reconciliation_short_form_filers.parquet, written once by the authorized read of 2026-11-20, D-113, and not regenerated) and the 2019 flags (data/interim/reconciliation_short_form_flags.parquet); the read under data/raw is not repeated. The flag in the flags file is True on some rows of 2019 and missing on every other row, and it is never False; under the adopted rule only a flag of true in 2019 is read as a record of a filing. Whether this flag is what the paper means by Short Form filers (endnote 10, p. 17) is not established.",
+    "table": "data/interim/reconciliation_short_form_flags.parquet",
+    "filer_table": "data/interim/reconciliation_short_form_filers.parquet",
+    "filer_table_rows": 18172,
+    "rows": 66329,
+    "years": [
+      2001,
+      2025
+    ],
+    "rows_by_year": {
+      "2001": 4123,
+      "2002": 3269,
+      "2003": 3279,
+      "2004": 3278,
+      "2005": 3281,
+      "2006": 3269,
+      "2007": 3268,
+      "2008": 3280,
+      "2009": 3275,
+      "2010": 3267,
+      "2011": 3276,
+      "2012": 2189,
+      "2013": 2196,
+      "2014": 2248,
+      "2015": 2285,
+      "2016": 2285,
+      "2017": 2300,
+      "2018": 2306,
+      "2019": 3357,
+      "2020": 1710,
+      "2021": 1712,
+      "2022": 1717,
+      "2023": 1722,
+      "2024": 1710,
+      "2025": 1727
+    },
+    "short_form_true_rows": 1038,
+    "short_form_false_rows": 0,
+    "short_form_missing_rows": 65291,
+    "short_form_true_rows_by_year": {
+      "2019": 1038
+    },
+    "data_observed_false_rows": 195,
+    "rows_sharing_a_unit_year_with_another_row": 36,
+    "window_rows": 21104,
+    "row_u_quantity_sample_in_the_window": {
+      "what_this_is": "row U's frame with no Short Form exclusion, the frame the adopted rule is applied to: unit-years 2015-2024 in the 50 states and DC with an ownership class (scheme U, the panel's entity type, the utility-level modal reported type carried across the panel, read over 2001 to 2025; D-117 and D-119) and the three-year count on those rows; no price was read, so the paper's missing-price drop is not applied. NOT the paper's sample.",
+      "unit_years": 16648,
+      "units": 1988,
+      "utilities": 1808,
+      "unit_years_with_no_flag_row": 1780,
+      "unit_years_with_a_missing_flag": 14867,
+      "unit_years_flagged_true": 1
+    },
+    "sample_under_the_adopted_short_form_rule": {
+      "rule": "adopted by Joe on 2026-11-20 (ledger entry D-115)",
+      "rule_in_joes_words": "Exclude a utility-state-year where the Short Form table records a filing, or, for 2019, the operational flag is true. Keep other unit-years as 'kept with no record of a filing,' without claiming non-filing. Apply the three-year requirement after exclusion. Retain the explicitly incomplete 2019 exclusion and its missing-flag/no-row counts.",
+      "choices_supplied_to_sample_flags_from_table": {
+        "window": [
+          2015,
+          2024
+        ],
+        "years": "years_filed",
+        "level": "utility_state",
+        "no_row_in_covered_year": "kept_no_record_of_a_filing",
+        "year_not_covered": "no_exclusion_labelled",
+        "year_2019": "flags_true_excluded_missing_kept",
+        "no_2019_flags_row": "kept_no_record_of_a_filing"
+      },
+      "reconciliation_mu_code": "unit_years_filed",
+      "label": "Short Form exclusion as adopted by Joe on 2026-11-20 (D-115): a utility-state-year leaves where a record shows a Short Form filing, a row in the Short Form table that year or, for 2019, a flag of true in the operational file. Every other unit-year is kept with no record of a filing, which is no claim about whether it filed. The three-year count is taken after the exclusion. The 2019 exclusion is explicitly incomplete. The table has no 2019 rows, the exclusion that year rests on the operational file's flags, and a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing. The sample is still not the paper's sample, and the row is comparison-only (D-109). Outcome availability (whether a unit-year has a price) is not used in place of the paper's Short Form exclusion (Joe, 2026-11-19, D-109).",
+      "frame_with_no_exclusion": {
+        "what_it_is": "row U's quantity-side frame: unit-years 2015 to 2024 in the 50 states and DC with an ownership class (scheme U, the panel's entity type, the utility-level modal reported type carried across the panel, read over 2001 to 2025; D-117 and D-119), then the three-year count by utility, with no Short Form exclusion. No price read, so the paper's missing-price drop is not applied",
+        "unit_years": 16648,
+        "utility_states": 1988,
+        "utilities": 1808,
+        "before_the_three_year_count": {
+          "unit_years": 17721,
+          "utility_states": 3052,
+          "utilities": 2863
+        }
+      },
+      "leaving_directly_where_a_record_shows_a_filing": {
+        "what_it_is": "unit-years of the frame with no exclusion that carry a record of a Short Form filing (a table row that year, or a 2019 flag of true) and leave for that reason",
+        "unit_years_by_year": {
+          "2015": 0,
+          "2016": 0,
+          "2017": 0,
+          "2018": 0,
+          "2019": 1,
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "utilities_by_year": {
+          "2015": 0,
+          "2016": 0,
+          "2017": 0,
+          "2018": 0,
+          "2019": 1,
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 0,
+          "2024": 0
+        },
+        "unit_years_total": 1,
+        "utility_states": 1,
+        "utilities": 1
+      },
+      "leaving_through_the_three_year_requirement_after_the_exclusion": {
+        "what_it_is": "unit-years of the frame with no exclusion that carry no record of a filing and leave because, once the direct exclusion is made, their utility appears in fewer than three years; the three-year requirement is applied after the exclusion",
+        "unit_years_by_year": {
+          "2015": 0,
+          "2016": 0,
+          "2017": 0,
+          "2018": 0,
+          "2019": 0,
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 1,
+          "2024": 1
+        },
+        "utilities_by_year": {
+          "2015": 0,
+          "2016": 0,
+          "2017": 0,
+          "2018": 0,
+          "2019": 0,
+          "2020": 0,
+          "2021": 0,
+          "2022": 0,
+          "2023": 1,
+          "2024": 1
+        },
+        "unit_years_total": 2,
+        "utility_states": 1,
+        "utilities": 1
+      },
+      "sample_under_the_adopted_rule": {
+        "unit_years": 16645,
+        "utility_states": 1987,
+        "utilities": 1807,
+        "utility_states_removed_entirely_from_the_frame": 1,
+        "utilities_removed_entirely_from_the_frame": 1
+      },
+      "in_run_u_steps_order": {
+        "what_it_is": "the same sample computed as run_u_step orders it: the Short Form filter on the rows before the three-year count, then the count. Most flagged 2019 unit-years belong to utilities in the panel in no other window year, which the three-year count removes with or without the exclusion, so the reduction is reported against the frame with no exclusion",
+        "rows_before_the_three_year_count": 17721,
+        "flagged_unit_years_among_them": 1037,
+        "after_the_short_form_filter": 16684,
+        "after_the_three_year_count": 16645,
+        "same_sample_as_reported_apart": true,
+        "notes": [
+          "1037 unit-years left out as Short Form filers (unit_years_filed)",
+          "39 unit-years of utilitys with fewer than 3 years are left out (Ryu and Hiatt p. 6, Sec. 2.2; counted after every other restriction, ours, D-107)"
+        ]
+      },
+      "year_2019_explicitly_incomplete": {
+        "statement": "The 2019 exclusion is explicitly incomplete. In 2019 the Short Form table has no rows, and the exclusion rests on the operational file's flags; a 2019 unit-year with a missing flag or with no flags row is kept with no record either way. A missing flag or an absent row does not establish non-filing.",
+        "in_the_frame_with_no_exclusion": {
+          "unit_years_in_2019": 1974,
+          "flagged_true": 1,
+          "kept_with_no_record_either_way_missing_flag": 1780,
+          "kept_with_no_record_either_way_no_flags_row": 193
+        },
+        "in_the_sample_under_the_adopted_rule": {
+          "unit_years_in_2019": 1973,
+          "flagged_true": 0,
+          "kept_with_no_record_either_way_missing_flag": 1780,
+          "kept_with_no_record_either_way_no_flags_row": 193
+        }
+      },
+      "not_the_papers_sample": "The sample is still not the paper's. No price was read, the paper's missing-price drop is not applied, and the row's other approximations are ours.",
+      "comparison_only": "Row U is comparison-only (Joe, 2026-11-19, D-109); no reproduction claim attaches to it, and these counts are no part of any reason for the rule.",
+      "paper_figure_printed_for_comparison_only_never_a_target_a_tiebreak_or_a_reason": {
+        "retained_utilities": 1798,
+        "short_form_group": "approximately 560",
+        "where": "Ryu and Hiatt, Sec. 2.2 (p. 6) and endnote 10 (p. 17), as quoted in the access request",
+        "note": "printed beside our counts for comparison only; never a target, a tiebreak or a reason for any choice"
+      }
+    },
+    "step_u3_window_under_the_adopted_rule": {
+      "what_this_is": "Step U3's window is 2015 to 2025. The rule Joe adopted is stated for a utility-state-year, so for this step it is applied year by year over the step's own window (the session's reading, his to strike). Counted here on the quantity side, before the three-year count: the unit-years of the years past row U's own window, and how many of them a record shows as a filing. Where that count is zero, this reading and a reading with no exclusion in those years give the same flags.",
+      "window": [
+        2015,
+        2025
+      ],
+      "unit_years_before_the_three_year_count": 19083,
+      "unit_years_in_the_years_past_row_us_own_window": {
+        "2025": 1362
+      },
+      "of_them_with_a_record_of_a_filing": 0,
+      "of_them_kept_with_no_record_of_a_filing": 1362,
+      "flags_of_row_us_own_window_equal_under_either_window": true
+    },
+    "data_observed_is_read": false
+  }
+}

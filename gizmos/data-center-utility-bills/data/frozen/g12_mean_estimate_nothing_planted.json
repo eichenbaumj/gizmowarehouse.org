@@ -1,0 +1,413 @@
+{
+ "what_this_is": "G12's mean estimate with nothing planted (session 24, exercise 4b), authorized by Joe on 2026-11-20 (D-113). The specification is docs/gate1/simulation-spec-4b-g12-mean-estimate-2026-11-20.md (sha256 under hashes.specification). It is the mean of candidate C's headline estimate over the G12 datasets of step E's stage 2 (20,000) and stage 1 (2,000), with G11's beside it labelled as not the named figure, computed from the preserved per-dataset records of stages 1 and 2. No dataset was drawn and no stage was rerun. Every price behind the records was made up; no price was read. It is not a fresh run of G12, not a threshold, and not a change to the fuel-mix control. The plan sets no threshold for a mean away from zero and none is set here. The plan, PREANALYSIS.md, is a draft pre-analysis plan and is not frozen.",
+ "limit_read_from_the_code": "In G12 the fuel shock is a national walk whose steps are normal with mean zero, loaded by the square root of a state's gas share plus a state deviation. The walk and its mirror image are equally likely, and the headline estimate is a linear function of the outcome. So the estimate's mean over datasets is zero in expectation whatever the adjustment does. A measured mean near zero is what this construction gives whether or not the linear adjustment is adequate; the mean can show a failure only if it is away from zero, and it cannot show adequacy. What bears on adequacy in these records is how the estimate moves with the realised walk (the slope on the realised change and the root-mean-square error). This is the session's reading of the code, written before any record was read.",
+ "checks": [
+  {
+   "check": "1. the manifest's fingerprint, stage, seed, datasets a process and candidates equal the stage file's",
+   "stage": "stage1",
+   "compared": {
+    "fingerprint_sha256": "fd914a7b15f261a7df000cceb1989a4249d41426a6ed6600cc2458d51970d0ca",
+    "stage": "stage1",
+    "seed": 20261201,
+    "datasets_per_process": 2000,
+    "candidates": [
+     "A",
+     "B",
+     "C"
+    ]
+   },
+   "holds": true
+  },
+  {
+   "check": "2. the count of records equals the stage file's datasets a process, every block present, every dataset number present exactly once",
+   "stage": "stage1",
+   "process": "G12_fuel_shocks_not_linear_in_the_share",
+   "records": 2000,
+   "datasets_per_process": 2000,
+   "holds": true
+  },
+  {
+   "check": "3. the range-miss and early-years-rejection counts recomputed from the records under candidate C equal the stage file's stored counts exactly",
+   "stage": "stage1",
+   "process": "G12_fuel_shocks_not_linear_in_the_share",
+   "recomputed": {
+    "miss": 184,
+    "reject": 90
+   },
+   "stored": {
+    "miss": 184,
+    "reject": 90
+   },
+   "stored_at": {
+    "miss": "by_candidate.C.by_process[G12_fuel_shocks_not_linear_in_the_share].range_misses_the_true_value.count",
+    "reject": "by_candidate.C.by_process[G12_fuel_shocks_not_linear_in_the_share].early_years_test_rejects_a_flat_history.count"
+   },
+   "holds": true,
+   "also_compared_not_a_check_of_the_specification": {
+    "numerical_failures_recomputed": 0,
+    "numerical_failures_stored": 0,
+    "stored_at": "by_candidate.C.by_process[G12_fuel_shocks_not_linear_in_the_share].numerical_failures.count",
+    "agree": true
+   }
+  },
+  {
+   "check": "2. the count of records equals the stage file's datasets a process, every block present, every dataset number present exactly once",
+   "stage": "stage1",
+   "process": "G11_fuel_shocks_linear_in_the_share",
+   "records": 2000,
+   "datasets_per_process": 2000,
+   "holds": true
+  },
+  {
+   "check": "3. the range-miss and early-years-rejection counts recomputed from the records under candidate C equal the stage file's stored counts exactly",
+   "stage": "stage1",
+   "process": "G11_fuel_shocks_linear_in_the_share",
+   "recomputed": {
+    "miss": 216,
+    "reject": 102
+   },
+   "stored": {
+    "miss": 216,
+    "reject": 102
+   },
+   "stored_at": {
+    "miss": "by_candidate.C.by_process[G11_fuel_shocks_linear_in_the_share].range_misses_the_true_value.count",
+    "reject": "by_candidate.C.by_process[G11_fuel_shocks_linear_in_the_share].early_years_test_rejects_a_flat_history.count"
+   },
+   "holds": true,
+   "also_compared_not_a_check_of_the_specification": {
+    "numerical_failures_recomputed": 0,
+    "numerical_failures_stored": 0,
+    "stored_at": "by_candidate.C.by_process[G11_fuel_shocks_linear_in_the_share].numerical_failures.count",
+    "agree": true
+   }
+  },
+  {
+   "check": "1. the manifest's fingerprint, stage, seed, datasets a process and candidates equal the stage file's",
+   "stage": "stage2",
+   "compared": {
+    "fingerprint_sha256": "fd914a7b15f261a7df000cceb1989a4249d41426a6ed6600cc2458d51970d0ca",
+    "stage": "stage2",
+    "seed": 20261202,
+    "datasets_per_process": 20000,
+    "candidates": [
+     "C"
+    ]
+   },
+   "holds": true
+  },
+  {
+   "check": "2. the count of records equals the stage file's datasets a process, every block present, every dataset number present exactly once",
+   "stage": "stage2",
+   "process": "G12_fuel_shocks_not_linear_in_the_share",
+   "records": 20000,
+   "datasets_per_process": 20000,
+   "holds": true
+  },
+  {
+   "check": "3. the range-miss and early-years-rejection counts recomputed from the records under candidate C equal the stage file's stored counts exactly",
+   "stage": "stage2",
+   "process": "G12_fuel_shocks_not_linear_in_the_share",
+   "recomputed": {
+    "miss": 1788,
+    "reject": 1103
+   },
+   "stored": {
+    "miss": 1788,
+    "reject": 1103
+   },
+   "stored_at": {
+    "miss": "range.by_process[G12_fuel_shocks_not_linear_in_the_share].count",
+    "reject": "early_years_test.by_process[G12_fuel_shocks_not_linear_in_the_share].count"
+   },
+   "holds": true,
+   "also_compared_not_a_check_of_the_specification": {
+    "numerical_failures_recomputed": 0,
+    "numerical_failures_stored": 0,
+    "stored_at": "numerical_failures[G12_fuel_shocks_not_linear_in_the_share].count",
+    "agree": true
+   }
+  },
+  {
+   "check": "2. the count of records equals the stage file's datasets a process, every block present, every dataset number present exactly once",
+   "stage": "stage2",
+   "process": "G11_fuel_shocks_linear_in_the_share",
+   "records": 20000,
+   "datasets_per_process": 20000,
+   "holds": true
+  },
+  {
+   "check": "3. the range-miss and early-years-rejection counts recomputed from the records under candidate C equal the stage file's stored counts exactly",
+   "stage": "stage2",
+   "process": "G11_fuel_shocks_linear_in_the_share",
+   "recomputed": {
+    "miss": 1862,
+    "reject": 1069
+   },
+   "stored": {
+    "miss": 1862,
+    "reject": 1069
+   },
+   "stored_at": {
+    "miss": "range.by_process[G11_fuel_shocks_linear_in_the_share].count",
+    "reject": "early_years_test.by_process[G11_fuel_shocks_linear_in_the_share].count"
+   },
+   "holds": true,
+   "also_compared_not_a_check_of_the_specification": {
+    "numerical_failures_recomputed": 0,
+    "numerical_failures_stored": 0,
+    "stored_at": "numerical_failures[G11_fuel_shocks_linear_in_the_share].count",
+    "agree": true
+   }
+  }
+ ],
+ "figures": {
+  "G12_fuel_shocks_not_linear_in_the_share": {
+   "is_the_named_figure": true,
+   "label": "G12's mean estimate with nothing planted, the named figure",
+   "stage2_20000_datasets": {
+    "candidate": "C",
+    "over": "datasets in which the candidate computed an estimate (no failure recorded and a finite estimate)",
+    "datasets": 20000,
+    "datasets_used": 20000,
+    "datasets_left_out": 0,
+    "left_out_by_cause": {},
+    "log_points": {
+     "mean_estimate": -5.868143701080546e-05,
+     "standard_deviation": 0.024153435579405042,
+     "standard_error": 0.00017079058087149731,
+     "interval_of_the_mean_95": [
+      -0.0003934309755189402,
+      0.0002760681014973293
+     ]
+    },
+    "percent": {
+     "mean_estimate": -0.005868143701080546,
+     "standard_deviation": 2.415343557940504,
+     "standard_error": 0.017079058087149733,
+     "interval_of_the_mean_95": [
+      -0.039343097551894024,
+      0.02760681014973293
+     ]
+    },
+    "interval": "the mean plus and minus 1.96 standard errors; the standard deviation has n - 1 in its divisor",
+    "percent_is": "100 times the log-point figure, as the stage reports and power_simulation.json give percent",
+    "interval_contains_zero": true
+   },
+   "stage1_2000_datasets": {
+    "candidate": "C",
+    "over": "datasets in which the candidate computed an estimate (no failure recorded and a finite estimate)",
+    "datasets": 2000,
+    "datasets_used": 2000,
+    "datasets_left_out": 0,
+    "left_out_by_cause": {},
+    "log_points": {
+     "mean_estimate": 0.00023137164053202197,
+     "standard_deviation": 0.02427469288788147,
+     "standard_error": 0.0005427986343023365,
+     "interval_of_the_mean_95": [
+      -0.0008325136827005575,
+      0.0012952569637646014
+     ]
+    },
+    "percent": {
+     "mean_estimate": 0.023137164053202198,
+     "standard_deviation": 2.427469288788147,
+     "standard_error": 0.05427986343023365,
+     "interval_of_the_mean_95": [
+      -0.08325136827005575,
+      0.12952569637646014
+     ]
+    },
+    "interval": "the mean plus and minus 1.96 standard errors; the standard deviation has n - 1 in its divisor",
+    "percent_is": "100 times the log-point figure, as the stage reports and power_simulation.json give percent",
+    "interval_contains_zero": true
+   },
+   "stage1_candidates_agree": {
+    "candidates": [
+     "A",
+     "B",
+     "C"
+    ],
+    "datasets_compared": 2000,
+    "largest_absolute_difference_log_points": 2.914335439641036e-16,
+    "datasets_differing_by_more_than_the_tolerance": 0,
+    "tolerance_log_points": 1e-09,
+    "tolerance_is": "the agent's reading of floating-point noise; the specification names no tolerance",
+    "agree": true,
+    "statement": "the three candidates carry the same estimate, within the tolerance, on every dataset where all three computed one"
+   },
+   "realised_path": {
+    "stage1_stored": {
+     "source": "inference_comparison_stage1.json, by_candidate.C.by_process[G12_fuel_shocks_not_linear_in_the_share].realised_path, read by name and not recomputed",
+     "over": "datasets whose candidate computed an estimate",
+     "datasets_used": 2000,
+     "slope_of_the_estimate_on_the_realised_change": -0.017831287682348294,
+     "root_mean_square_error_log_points": 0.02426972635362017
+    },
+    "stage2_recomputed": {
+     "source": "recomputed from stage 2's per-dataset records under candidate C by inference_comparison.realised_path; inference_validation_stage2.json holds no realised-path statistics",
+     "over": "datasets whose candidate computed an estimate",
+     "datasets_used": 20000,
+     "slope_of_the_estimate_on_the_realised_change": -0.02070551015288398,
+     "root_mean_square_error_log_points": 0.024152903021728147
+    },
+    "stage2_file_holds_realised_path_statistics": false
+   }
+  },
+  "G11_fuel_shocks_linear_in_the_share": {
+   "is_the_named_figure": false,
+   "label": "G11's mean estimate with nothing planted, beside G12's for the comparison the plan's sentence makes; NOT the named figure",
+   "stage2_20000_datasets": {
+    "candidate": "C",
+    "over": "datasets in which the candidate computed an estimate (no failure recorded and a finite estimate)",
+    "datasets": 20000,
+    "datasets_used": 20000,
+    "datasets_left_out": 0,
+    "left_out_by_cause": {},
+    "log_points": {
+     "mean_estimate": 0.0001894350103564882,
+     "standard_deviation": 0.023763963024352124,
+     "standard_error": 0.00016803659402385762,
+     "interval_of_the_mean_95": [
+      -0.00013991671393027278,
+      0.0005187867346432492
+     ]
+    },
+    "percent": {
+     "mean_estimate": 0.01894350103564882,
+     "standard_deviation": 2.376396302435212,
+     "standard_error": 0.016803659402385762,
+     "interval_of_the_mean_95": [
+      -0.013991671393027278,
+      0.05187867346432491
+     ]
+    },
+    "interval": "the mean plus and minus 1.96 standard errors; the standard deviation has n - 1 in its divisor",
+    "percent_is": "100 times the log-point figure, as the stage reports and power_simulation.json give percent",
+    "interval_contains_zero": true
+   },
+   "stage1_2000_datasets": {
+    "candidate": "C",
+    "over": "datasets in which the candidate computed an estimate (no failure recorded and a finite estimate)",
+    "datasets": 2000,
+    "datasets_used": 2000,
+    "datasets_left_out": 0,
+    "left_out_by_cause": {},
+    "log_points": {
+     "mean_estimate": -0.0002639264809777888,
+     "standard_deviation": 0.024025721914098592,
+     "standard_error": 0.0005372314740843082,
+     "interval_of_the_mean_95": [
+      -0.0013169001701830328,
+      0.0007890472082274551
+     ]
+    },
+    "percent": {
+     "mean_estimate": -0.02639264809777888,
+     "standard_deviation": 2.4025721914098592,
+     "standard_error": 0.053723147408430816,
+     "interval_of_the_mean_95": [
+      -0.13169001701830327,
+      0.07890472082274551
+     ]
+    },
+    "interval": "the mean plus and minus 1.96 standard errors; the standard deviation has n - 1 in its divisor",
+    "percent_is": "100 times the log-point figure, as the stage reports and power_simulation.json give percent",
+    "interval_contains_zero": true
+   },
+   "stage1_candidates_agree": {
+    "candidates": [
+     "A",
+     "B",
+     "C"
+    ],
+    "datasets_compared": 2000,
+    "largest_absolute_difference_log_points": 2.8449465006019636e-16,
+    "datasets_differing_by_more_than_the_tolerance": 0,
+    "tolerance_log_points": 1e-09,
+    "tolerance_is": "the agent's reading of floating-point noise; the specification names no tolerance",
+    "agree": true,
+    "statement": "the three candidates carry the same estimate, within the tolerance, on every dataset where all three computed one"
+   },
+   "realised_path": {
+    "stage1_stored": {
+     "source": "inference_comparison_stage1.json, by_candidate.C.by_process[G11_fuel_shocks_linear_in_the_share].realised_path, read by name and not recomputed",
+     "over": "datasets whose candidate computed an estimate",
+     "datasets_used": 2000,
+     "slope_of_the_estimate_on_the_realised_change": 0.00933787292500688,
+     "root_mean_square_error_log_points": 0.02402116468916967
+    },
+    "stage2_recomputed": {
+     "source": "recomputed from stage 2's per-dataset records under candidate C by inference_comparison.realised_path; inference_validation_stage2.json holds no realised-path statistics",
+     "over": "datasets whose candidate computed an estimate",
+     "datasets_used": 20000,
+     "slope_of_the_estimate_on_the_realised_change": 0.0011147589274725519,
+     "root_mean_square_error_log_points": 0.023764123967632226
+    },
+    "stage2_file_holds_realised_path_statistics": false
+   }
+  }
+ },
+ "beside_the_mean": {
+  "range_half_width_mean_pct": 6.652,
+  "source": "power_simulation.json, new_host_estimate.2%.headline_set.nothing_planted.range_half_width_mean (percent), read by name and not recomputed",
+  "why": "the selected procedure's mean range half-width on the headline set, so that the size of a mean can be judged"
+ },
+ "hashes_as_read": {
+  "stage_files": {
+   "stage1": {
+    "path": "inference_comparison_stage1.json",
+    "sha256": "6f6ba5d995687c992ee23ebad7b7d2db5fc7f8e35e743ac7a480d725495f4a53"
+   },
+   "stage2": {
+    "path": "inference_validation_stage2.json",
+    "sha256": "6f003527ae92632f5a9c7999eaa0737e01f6c7a89cec7615c9a4548cf8dc474a"
+   }
+  },
+  "manifests": {
+   "stage1": {
+    "path": "stage1/manifest.json",
+    "sha256": "abdf99ee7af1b61f1681785f03d56a9e8a9db1e850ac72b93c708e254b1a1565"
+   },
+   "stage2": {
+    "path": "stage2/manifest.json",
+    "sha256": "ec733c8c616c578a088593d0eba894ba8d9c01ebea7221f9b2014e87093badff"
+   }
+  },
+  "block_files": {
+   "stage1:G12_fuel_shocks_not_linear_in_the_share": {
+    "blocks_read": 80,
+    "block_files_sha256": "5eaf9b772bf73a06b9ff9c0306dda2ec73991a9fd3219c8fdc8a38c06b1cfb1b",
+    "block_files_sha256_is": "the sha256 of the lines 'name sha256' of every block file read, in block order (the agent's addition, for provenance)"
+   },
+   "stage1:G11_fuel_shocks_linear_in_the_share": {
+    "blocks_read": 80,
+    "block_files_sha256": "ef3084e7af92d1d5f7aab7ceefe55167f1acb9292c529739089c4df4d9917610",
+    "block_files_sha256_is": "the sha256 of the lines 'name sha256' of every block file read, in block order (the agent's addition, for provenance)"
+   },
+   "stage2:G12_fuel_shocks_not_linear_in_the_share": {
+    "blocks_read": 800,
+    "block_files_sha256": "6f32b70b59fe05a39c13bd2ae2a979ff6814fb0473ddf2c30f5ad117689d5922",
+    "block_files_sha256_is": "the sha256 of the lines 'name sha256' of every block file read, in block order (the agent's addition, for provenance)"
+   },
+   "stage2:G11_fuel_shocks_linear_in_the_share": {
+    "blocks_read": 800,
+    "block_files_sha256": "e3e4c47a67cd3b4a57f010efa217ba65dd419a43425e55e4770e05536a337b6b",
+    "block_files_sha256_is": "the sha256 of the lines 'name sha256' of every block file read, in block order (the agent's addition, for provenance)"
+   }
+  },
+  "power_simulation": {
+   "path": "power_simulation.json",
+   "sha256": "fb628175838bcf14a24788d78f43953e81abd1fa6034e861231327cf3b755791"
+  },
+  "specification": {
+   "path": "docs/gate1/simulation-spec-4b-g12-mean-estimate-2026-11-20.md",
+   "sha256": "35f729aeebdb86e9b6c0ef27325e2277042838074ea172908620d0b2112693b5"
+  },
+  "this_module": {
+   "path": "pipeline/analysis/g12_mean_estimate.py",
+   "sha256": "96f4ad686487017492389acda3d1467d667f7069875624b6f78d4932cd5438da"
+  }
+ }
+}

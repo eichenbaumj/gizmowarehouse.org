@@ -1,0 +1,611 @@
+{
+ "sequence": 39,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "size_band_side_run",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:15:59+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "size_band_side_run",
+  "plan_section": "Electricity: the main estimate, Size adjustment (the size-band form as a side run)",
+  "sets": [
+   "headline_set at 2%"
+  ],
+  "builder": "size_band_run.build (cells of reference-year region by size band, every eligible unit of the host's cell its comparisons, the support rule's first limb as written; R7, Joe, 2026-11-19, D-107; the tested per-host form, adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which two hosts share a cohort and a cell is refused in words as outside this freeze, and no extension is built)",
+  "estimator": "size_band_run.estimate_size_band (the rank test before any fit, then outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector)",
+  "labels": [
+   "side run",
+   "side run: the size-band form (cells of reference-year region by size band), in the tested per-host form adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which hosts share a cohort and a cell is outside this freeze; under the procedure validated on the headline set; no validation was made on this design",
+   "under the procedure validated on the headline set; no validation was made on this design"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "label": "side run: the size-band form (cells of reference-year region by size band), in the tested per-host form adopted by Joe on 2026-11-19 (D-111) for the headline set at 2%; a set in which hosts share a cohort and a cell is outside this freeze; under the procedure validated on the headline set; no validation was made on this design",
+    "hosts_with_no_comparison_in_its_cell_not_estimable": [],
+    "first_limb_failures": [],
+    "rank_test_before_any_fit": {
+     "estimable": true,
+     "smallest_singular_value_ratio": 0.0198777151522446,
+     "hosts_with_no_matches": [],
+     "hosts_with_zero_weight": []
+    },
+    "result": {
+     "procedure": {
+      "name": "C",
+      "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+      "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+      "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+     },
+     "hosts_in_the_design": [
+      "803:AZ",
+      "6958:TX",
+      "14127:NE",
+      "14354:UT",
+      "15473:NM",
+      "17166:NV",
+      "20065:GA"
+     ],
+     "hosts_with_no_matches": [],
+     "numerical_failure": null,
+     "fuel_control": "gas_share_by_calendar_year",
+     "control_columns_left_out": [
+      {
+       "year": 2009,
+       "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+      }
+     ],
+     "hosts_fully_absorbed": [],
+     "absorbed_controls_option": null,
+     "controls_left_out_as_exactly_absorbed": [],
+     "columns": [
+      "event_year_-6",
+      "event_year_-5",
+      "event_year_-4",
+      "event_year_-2",
+      "event_year_-1",
+      "event_year_0",
+      "event_year_1",
+      "event_year_2",
+      "event_year_3",
+      "heating_degree_days",
+      "cooling_degree_days",
+      "gas_share_x_2010",
+      "gas_share_x_2011",
+      "gas_share_x_2012",
+      "gas_share_x_2013",
+      "gas_share_x_2014",
+      "gas_share_x_2015",
+      "gas_share_x_2016",
+      "gas_share_x_2017",
+      "gas_share_x_2018",
+      "gas_share_x_2019",
+      "gas_share_x_2020",
+      "gas_share_x_2021",
+      "gas_share_x_2022",
+      "gas_share_x_2023",
+      "gas_share_x_2024"
+     ],
+     "rows": 890,
+     "regressors": 26,
+     "clusters": 19,
+     "host_headline_weights": {
+      "803:AZ": 0.1392640639241054,
+      "6958:TX": 0.16089643414888805,
+      "14127:NE": 0.15522525339091853,
+      "14354:UT": 0.14709223687512107,
+      "15473:NM": 0.12964504100497715,
+      "17166:NV": 0.10985191945738224,
+      "20065:GA": 0.15802505119863786
+     },
+     "hosts_with_zero_weight": [],
+     "count_N": 7,
+     "event_year_coefficients": {
+      "-6": 0.0031737228452967114,
+      "-5": 0.013565424332960069,
+      "-4": 0.02446159823654442,
+      "-3": 0.0,
+      "-2": 0.009887757247606842,
+      "-1": -0.017564636523619805,
+      "0": -0.01880703063612778,
+      "1": -0.012210376457132407,
+      "2": -0.022871128900898333,
+      "3": -0.038596977960866655
+     },
+     "headline": {
+      "log_points": -0.030734053430882494,
+      "percent": -3.026656393410236,
+      "standard_error_log_points": 0.026663598023684374,
+      "degrees_of_freedom": 6.676982720989294,
+      "range_90_log_points": [
+       -0.08162044546168391,
+       0.020152338599918926
+      ],
+      "range_90_percent": [
+       -7.837830198233014,
+       2.0356767909063302
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "event_years": [
+       2,
+       3
+      ]
+     },
+     "early_years_test": {
+      "Q": 2.5430715963738226,
+      "F": 0.5736510795792077,
+      "numerator_degrees_of_freedom": 3,
+      "denominator_degrees_of_freedom": 4.186631335385342,
+      "p_value": 0.660810950806926,
+      "fails_at_p_below_0.10": false,
+      "event_years": [
+       -6,
+       -5,
+       -4
+      ]
+     },
+     "validation": "under the procedure validated on the headline set; no validation was made on this design",
+     "validation_check": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     },
+     "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks"
+    },
+    "estimated": true,
+    "failure_in_words": null,
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "design": {
+     "hosts": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA"
+       ]
+      },
+      {
+       "utility": "6958:TX",
+       "cohort": 2017,
+       "matches": [
+        "2442:TX",
+        "11501:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX",
+        "7129:TX",
+        "28978:TX",
+        "8898:TX",
+        "19806:TX",
+        "28604:TX",
+        "3470:TX",
+        "16146:TX",
+        "7979:TX",
+        "55982:TX",
+        "27369:TX",
+        "9590:TX",
+        "6183:TX",
+        "6427:TX",
+        "20230:TX",
+        "7634:TX",
+        "10649:TX"
+       ]
+      },
+      {
+       "utility": "14127:NE",
+       "cohort": 2019,
+       "matches": [
+        "22500:KS",
+        "10005:KS",
+        "10000:MO",
+        "17718:TX",
+        "17698:LA",
+        "17698:TX",
+        "5860:MO"
+       ]
+      },
+      {
+       "utility": "14354:UT",
+       "cohort": 2015,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA"
+       ]
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA"
+       ]
+      },
+      {
+       "utility": "17166:NV",
+       "cohort": 2017,
+       "matches": [
+        "5701:TX",
+        "17470:WA",
+        "16868:WA",
+        "9191:ID",
+        "3660:WA",
+        "18429:WA"
+       ]
+      },
+      {
+       "utility": "20065:GA",
+       "cohort": 2021,
+       "matches": [
+        "21632:NC",
+        "10623:FL",
+        "3046:SC",
+        "18445:FL",
+        "3408:TN",
+        "17543:SC",
+        "3757:FL",
+        "3916:GA",
+        "18304:FL",
+        "20885:FL",
+        "10857:FL",
+        "9601:GA",
+        "14610:FL",
+        "13216:TN",
+        "11249:KY",
+        "9617:FL",
+        "10171:KY",
+        "5416:SC",
+        "17539:SC",
+        "3046:NC",
+        "195:AL"
+       ]
+      }
+     ],
+     "hosts_dropped": [],
+     "unresolved_ownership": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+       ],
+       "reason_by_year": {
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+       ],
+       "reason_by_year": {
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+       "in_this_run": "kept"
+      }
+     ],
+     "load_unknown_excluded": []
+    },
+    "cells": [
+     {
+      "host": "803:AZ",
+      "name": null,
+      "cohort": 2020,
+      "reference_year": 2017,
+      "region": "West",
+      "size_band": "100,000 or more",
+      "residential_customers_in_the_reference_year": 1080665.0,
+      "eligible_in_its_region_in_the_reference_year": 128,
+      "comparison_utilities_in_its_cell": 8,
+      "comparisons": [
+       "9191:ID",
+       "16868:WA",
+       "17470:WA",
+       "5701:TX",
+       "3660:WA",
+       "18429:WA",
+       "14354:WY",
+       "14354:WA"
+      ]
+     },
+     {
+      "host": "6958:TX",
+      "name": null,
+      "cohort": 2017,
+      "reference_year": 2014,
+      "region": "ERCOT",
+      "size_band": "10,000 to 99,999",
+      "residential_customers_in_the_reference_year": 62868.0,
+      "eligible_in_its_region_in_the_reference_year": 37,
+      "comparison_utilities_in_its_cell": 26,
+      "comparisons": [
+       "2442:TX",
+       "11501:TX",
+       "2409:TX",
+       "17561:TX",
+       "3940:TX",
+       "3282:TX",
+       "13830:TX",
+       "13418:TX",
+       "12268:TX",
+       "12452:TX",
+       "7129:TX",
+       "28978:TX",
+       "8898:TX",
+       "19806:TX",
+       "28604:TX",
+       "3470:TX",
+       "16146:TX",
+       "7979:TX",
+       "55982:TX",
+       "27369:TX",
+       "9590:TX",
+       "6183:TX",
+       "6427:TX",
+       "20230:TX",
+       "7634:TX",
+       "10649:TX"
+      ]
+     },
+     {
+      "host": "14127:NE",
+      "name": null,
+      "cohort": 2019,
+      "reference_year": 2016,
+      "region": "SPP",
+      "size_band": "100,000 or more",
+      "residential_customers_in_the_reference_year": 323784.0,
+      "eligible_in_its_region_in_the_reference_year": 107,
+      "comparison_utilities_in_its_cell": 7,
+      "comparisons": [
+       "22500:KS",
+       "10005:KS",
+       "10000:MO",
+       "17718:TX",
+       "17698:LA",
+       "17698:TX",
+       "5860:MO"
+      ]
+     },
+     {
+      "host": "14354:UT",
+      "name": null,
+      "cohort": 2015,
+      "reference_year": 2012,
+      "region": "West",
+      "size_band": "100,000 or more",
+      "residential_customers_in_the_reference_year": 722473.0,
+      "eligible_in_its_region_in_the_reference_year": 184,
+      "comparison_utilities_in_its_cell": 6,
+      "comparisons": [
+       "9191:ID",
+       "16868:WA",
+       "17470:WA",
+       "5701:TX",
+       "3660:WA",
+       "18429:WA"
+      ]
+     },
+     {
+      "host": "15473:NM",
+      "name": null,
+      "cohort": 2019,
+      "reference_year": 2016,
+      "region": "West",
+      "size_band": "100,000 or more",
+      "residential_customers_in_the_reference_year": 461248.0,
+      "eligible_in_its_region_in_the_reference_year": 128,
+      "comparison_utilities_in_its_cell": 8,
+      "comparisons": [
+       "9191:ID",
+       "16868:WA",
+       "17470:WA",
+       "5701:TX",
+       "3660:WA",
+       "18429:WA",
+       "14354:WY",
+       "14354:WA"
+      ]
+     },
+     {
+      "host": "17166:NV",
+      "name": null,
+      "cohort": 2017,
+      "reference_year": 2014,
+      "region": "West",
+      "size_band": "100,000 or more",
+      "residential_customers_in_the_reference_year": 284301.0,
+      "eligible_in_its_region_in_the_reference_year": 118,
+      "comparison_utilities_in_its_cell": 6,
+      "comparisons": [
+       "5701:TX",
+       "17470:WA",
+       "16868:WA",
+       "9191:ID",
+       "3660:WA",
+       "18429:WA"
+      ]
+     },
+     {
+      "host": "20065:GA",
+      "name": null,
+      "cohort": 2021,
+      "reference_year": 2018,
+      "region": "Southeast",
+      "size_band": "100,000 or more",
+      "residential_customers_in_the_reference_year": 118824.0,
+      "eligible_in_its_region_in_the_reference_year": 342,
+      "comparison_utilities_in_its_cell": 21,
+      "comparisons": [
+       "21632:NC",
+       "10623:FL",
+       "3046:SC",
+       "18445:FL",
+       "3408:TN",
+       "17543:SC",
+       "3757:FL",
+       "3916:GA",
+       "18304:FL",
+       "20885:FL",
+       "10857:FL",
+       "9601:GA",
+       "14610:FL",
+       "13216:TN",
+       "11249:KY",
+       "9617:FL",
+       "10171:KY",
+       "5416:SC",
+       "17539:SC",
+       "3046:NC",
+       "195:AL"
+      ]
+     }
+    ],
+    "estimate_log_points": -0.030734053430882494,
+    "range_90_log_points": [
+     -0.08162044546168391,
+     0.020152338599918926
+    ],
+    "numerical_failure_in_words": null,
+    "count_N": 7
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

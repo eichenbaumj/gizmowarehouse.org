@@ -1,0 +1,133 @@
+{
+  "source_page": "https://www.eia.gov/electricity/data/state/",
+  "source_url": "https://www.eia.gov/electricity/data/state/annual_generation_state.xlsx",
+  "workbook_title_cell": "State Historical Tables for 2025 | Released: September 2026 | Next Update: October 2027",
+  "date_fetched": "2026-11-12T15:00:13.689028+00:00",
+  "last_modified_header": "Fri, 11 Sep 2026 13:34:58 GMT",
+  "raw_path": "data/raw/eia_state_generation/annual_generation_state.xlsx",
+  "raw_sha256": "678535c21b30c98bb1dc27632ec12db1beb3687f3bb524e4c8850f7d89fe71a1",
+  "type_of_producer": "Total Electric Power Industry",
+  "years": [
+    2008,
+    2009,
+    2010
+  ],
+  "units_in_tercile_sample": 49,
+  "cut_rule": "low: mean < cut_low; mid: cut_low <= mean <= cut_high; high: mean > cut_high; cuts are numpy linear quantiles at 1/3 and 2/3 of the tercile sample (the contiguous states plus DC that have data)",
+  "cut_points": {
+    "cut_low": 0.04885,
+    "cut_high": 0.271946
+  },
+  "count_per_group_sample": {
+    "low": 16,
+    "mid": 17,
+    "high": 16
+  },
+  "off_sample_groups": {
+    "AK": "high",
+    "HI": "low"
+  },
+  "shares_outside_0_1": [
+    {
+      "state": "ND",
+      "year": 2008,
+      "share": -2e-06
+    }
+  ],
+  "shares_outside_0_1_note": "EIA reports a small negative net generation for some state-source-years (station use exceeding output); kept as published, not clipped",
+  "gas_row_absent_handling": "positive Total row, no Natural Gas row: share set to 0.0 only if the other listed sources sum to Total within 1 MWh (gas_row_absent = True); otherwise left blank",
+  "gas_row_absent_state_years": [
+    {
+      "state": "DC",
+      "year": 2008,
+      "total_mwh": 72316.0,
+      "sum_of_other_listed_sources_mwh": 72316.0,
+      "difference_mwh": 0.0,
+      "other_sources": {
+        "Petroleum": 72316.0
+      },
+      "gas_share_set_to": 0.0
+    },
+    {
+      "state": "DC",
+      "year": 2009,
+      "total_mwh": 35499.0,
+      "sum_of_other_listed_sources_mwh": 35499.0,
+      "difference_mwh": 0.0,
+      "other_sources": {
+        "Petroleum": 35499.0
+      },
+      "gas_share_set_to": 0.0
+    },
+    {
+      "state": "DC",
+      "year": 2010,
+      "total_mwh": 199858.0,
+      "sum_of_other_listed_sources_mwh": 199858.0,
+      "difference_mwh": 0.0,
+      "other_sources": {
+        "Petroleum": 199858.0
+      },
+      "gas_share_set_to": 0.0
+    },
+    {
+      "state": "HI",
+      "year": 2008,
+      "total_mwh": 11376385.0,
+      "sum_of_other_listed_sources_mwh": 11376384.0,
+      "difference_mwh": 1.0,
+      "other_sources": {
+        "Coal": 1647592.0,
+        "Geothermal": 234333.0,
+        "Hydroelectric Conventional": 84343.0,
+        "Other": 159146.0,
+        "Other Biomass": 302423.0,
+        "Other Gases": 38572.0,
+        "Petroleum": 8669934.0,
+        "Solar Thermal and Photovoltaic": 18.0,
+        "Wind": 240023.0
+      },
+      "gas_share_set_to": 0.0
+    },
+    {
+      "state": "HI",
+      "year": 2009,
+      "total_mwh": 11010533.0,
+      "sum_of_other_listed_sources_mwh": 11010534.0,
+      "difference_mwh": -1.0,
+      "other_sources": {
+        "Coal": 1500166.0,
+        "Geothermal": 167591.0,
+        "Hydroelectric Conventional": 112649.0,
+        "Other": 381432.0,
+        "Other Biomass": 284427.0,
+        "Other Gases": 22345.0,
+        "Petroleum": 8289107.0,
+        "Solar Thermal and Photovoltaic": 1390.0,
+        "Wind": 251427.0
+      },
+      "gas_share_set_to": 0.0
+    },
+    {
+      "state": "HI",
+      "year": 2010,
+      "total_mwh": 10836036.0,
+      "sum_of_other_listed_sources_mwh": 10836036.0,
+      "difference_mwh": 0.0,
+      "other_sources": {
+        "Coal": 1545513.0,
+        "Geothermal": 200595.0,
+        "Hydroelectric Conventional": 70423.0,
+        "Other": 363880.0,
+        "Other Biomass": 283474.0,
+        "Other Gases": 21915.0,
+        "Petroleum": 8087337.0,
+        "Solar Thermal and Photovoltaic": 1770.0,
+        "Wind": 261120.0,
+        "Wood and Wood Derived Fuels": 9.0
+      },
+      "gas_share_set_to": 0.0
+    }
+  ],
+  "states_with_missing_data": []
+}

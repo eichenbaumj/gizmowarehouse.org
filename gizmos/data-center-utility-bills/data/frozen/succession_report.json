@@ -1,0 +1,354 @@
+{
+  "rows_summed": 48,
+  "rows_not_linked": 13,
+  "units_with_predecessors": 30,
+  "unit_years_blending_more_than_one_id": 272,
+  "problems": [],
+  "summed": [
+    {
+      "predecessor": "9162:IA",
+      "unit": "9417:IA",
+      "predecessor_last_year": 2001,
+      "predecessor_peak_res_customers": 296297,
+      "unit_sales_change_at_handover": 0.004
+    },
+    {
+      "predecessor": "9392:IA",
+      "unit": "9417:IA",
+      "predecessor_last_year": 2001,
+      "predecessor_peak_res_customers": 98942,
+      "unit_sales_change_at_handover": 0.004
+    },
+    {
+      "predecessor": "9392:MN",
+      "unit": "9417:MN",
+      "predecessor_last_year": 2001,
+      "predecessor_peak_res_customers": 33714,
+      "unit_sales_change_at_handover": 0.042
+    },
+    {
+      "predecessor": "9392:IL",
+      "unit": "9750:IL",
+      "predecessor_last_year": 2001,
+      "predecessor_peak_res_customers": 9363,
+      "unit_sales_change_at_handover": 0.066
+    },
+    {
+      "predecessor": "9417:IL",
+      "unit": "9750:IL",
+      "predecessor_last_year": 2007,
+      "predecessor_peak_res_customers": 10782,
+      "unit_sales_change_at_handover": -0.021
+    },
+    {
+      "predecessor": "3611:AZ",
+      "unit": "19728:AZ",
+      "predecessor_last_year": 2002,
+      "predecessor_peak_res_customers": 64764,
+      "unit_sales_change_at_handover": -0.576
+    },
+    {
+      "predecessor": "3611:HI",
+      "unit": "10071:HI",
+      "predecessor_last_year": 2002,
+      "predecessor_peak_res_customers": 23786,
+      "unit_sales_change_at_handover": 0.242
+    },
+    {
+      "predecessor": "3611:VT",
+      "unit": "19791:VT",
+      "predecessor_last_year": 2002,
+      "predecessor_peak_res_customers": 18351,
+      "unit_sales_change_at_handover": -0.659
+    },
+    {
+      "predecessor": "4148:NH",
+      "unit": "24590:NH",
+      "predecessor_last_year": 2002,
+      "predecessor_peak_res_customers": 23702,
+      "unit_sales_change_at_handover": 0.026
+    },
+    {
+      "predecessor": "6077:NH",
+      "unit": "24590:NH",
+      "predecessor_last_year": 2002,
+      "predecessor_peak_res_customers": 35570,
+      "unit_sales_change_at_handover": 0.026
+    },
+    {
+      "predecessor": "16687:GA",
+      "unit": "7140:GA",
+      "predecessor_last_year": 2005,
+      "predecessor_peak_res_customers": 126768,
+      "unit_sales_change_at_handover": 0.014
+    },
+    {
+      "predecessor": "19436:IL",
+      "unit": "56697:IL",
+      "predecessor_last_year": 2005,
+      "predecessor_peak_res_customers": 56876,
+      "unit_sales_change_at_handover": -0.021
+    },
+    {
+      "predecessor": "3252:IL",
+      "unit": "56697:IL",
+      "predecessor_last_year": 2009,
+      "predecessor_peak_res_customers": 188770,
+      "unit_sales_change_at_handover": 0.086
+    },
+    {
+      "predecessor": "3253:IL",
+      "unit": "56697:IL",
+      "predecessor_last_year": 2009,
+      "predecessor_peak_res_customers": 335476,
+      "unit_sales_change_at_handover": 0.086
+    },
+    {
+      "predecessor": "9208:IL",
+      "unit": "56697:IL",
+      "predecessor_last_year": 2009,
+      "predecessor_peak_res_customers": 551068,
+      "unit_sales_change_at_handover": 0.086
+    },
+    {
+      "predecessor": "12796:OH",
+      "unit": "14006:OH",
+      "predecessor_last_year": 2005,
+      "predecessor_peak_res_customers": 24886,
+      "unit_sales_change_at_handover": -0.081
+    },
+    {
+      "predecessor": "4062:OH",
+      "unit": "14006:OH",
+      "predecessor_last_year": 2010,
+      "predecessor_peak_res_customers": 667021,
+      "unit_sales_change_at_handover": 0.021
+    },
+    {
+      "predecessor": "1998:MA",
+      "unit": "54913:MA",
+      "predecessor_last_year": 2006,
+      "predecessor_peak_res_customers": 606679,
+      "unit_sales_change_at_handover": 0.016
+    },
+    {
+      "predecessor": "2886:MA",
+      "unit": "54913:MA",
+      "predecessor_last_year": 2006,
+      "predecessor_peak_res_customers": 40471,
+      "unit_sales_change_at_handover": 0.016
+    },
+    {
+      "predecessor": "4089:MA",
+      "unit": "54913:MA",
+      "predecessor_last_year": 2006,
+      "predecessor_peak_res_customers": 316893,
+      "unit_sales_change_at_handover": 0.016
+    },
+    {
+      "predecessor": "20455:MA",
+      "unit": "54913:MA",
+      "predecessor_last_year": 2017,
+      "predecessor_peak_res_customers": 192609,
+      "unit_sales_change_at_handover": 0.019
+    },
+    {
+      "predecessor": "12698:CO",
+      "unit": "56146:CO",
+      "predecessor_last_year": 2008,
+      "predecessor_peak_res_customers": 80955,
+      "unit_sales_change_at_handover": -0.043
+    },
+    {
+      "predecessor": "7806:LA",
+      "unit": "11241:LA",
+      "predecessor_last_year": 2007,
+      "predecessor_peak_res_customers": 315360,
+      "unit_sales_change_at_handover": -0.019
+    },
+    {
+      "predecessor": "7806:TX",
+      "unit": "55937:TX",
+      "predecessor_last_year": 2007,
+      "predecessor_peak_res_customers": 341132,
+      "unit_sales_change_at_handover": 0.001
+    },
+    {
+      "predecessor": "55936:LA",
+      "unit": "11241:LA",
+      "predecessor_last_year": 2015,
+      "predecessor_peak_res_customers": 337242,
+      "unit_sales_change_at_handover": 0.001
+    },
+    {
+      "predecessor": "17166:CA",
+      "unit": "57483:CA",
+      "predecessor_last_year": 2010,
+      "predecessor_peak_res_customers": 40877,
+      "unit_sales_change_at_handover": -0.015
+    },
+    {
+      "predecessor": "40051:NM",
+      "unit": "15473:NM",
+      "predecessor_last_year": 2006,
+      "predecessor_peak_res_customers": 42915,
+      "unit_sales_change_at_handover": 0.033
+    },
+    {
+      "predecessor": "19804:FL",
+      "unit": "6452:FL",
+      "predecessor_last_year": 2018,
+      "predecessor_peak_res_customers": 29470,
+      "unit_sales_change_at_handover": 0.009
+    },
+    {
+      "predecessor": "7801:FL",
+      "unit": "6452:FL",
+      "predecessor_last_year": 2021,
+      "predecessor_peak_res_customers": 418852,
+      "unit_sales_change_at_handover": 0.03
+    },
+    {
+      "predecessor": "13119:TN",
+      "unit": "12470:TN",
+      "predecessor_last_year": 2019,
+      "predecessor_peak_res_customers": 58848,
+      "unit_sales_change_at_handover": -0.041
+    },
+    {
+      "predecessor": "20847:MI",
+      "unit": "60631:MI",
+      "predecessor_last_year": 2019,
+      "predecessor_peak_res_customers": 24586,
+      "unit_sales_change_at_handover": -0.118
+    },
+    {
+      "predecessor": "20860:MI",
+      "unit": "60631:MI",
+      "predecessor_last_year": 2016,
+      "predecessor_peak_res_customers": 8095,
+      "unit_sales_change_at_handover": -0.202
+    },
+    {
+      "predecessor": "12390:PA",
+      "unit": "66101:PA",
+      "predecessor_last_year": 2023,
+      "predecessor_peak_res_customers": 518166,
+      "unit_sales_change_at_handover": 0.025
+    },
+    {
+      "predecessor": "14711:PA",
+      "unit": "66101:PA",
+      "predecessor_last_year": 2023,
+      "predecessor_peak_res_customers": 502201,
+      "unit_sales_change_at_handover": 0.025
+    },
+    {
+      "predecessor": "14716:PA",
+      "unit": "66101:PA",
+      "predecessor_last_year": 2023,
+      "predecessor_peak_res_customers": 149685,
+      "unit_sales_change_at_handover": 0.025
+    },
+    {
+      "predecessor": "20387:PA",
+      "unit": "66101:PA",
+      "predecessor_last_year": 2023,
+      "predecessor_peak_res_customers": 632879,
+      "unit_sales_change_at_handover": 0.025
+    },
+    {
+      "predecessor": "14711:NY",
+      "unit": "66101:NY",
+      "predecessor_last_year": 2023,
+      "predecessor_peak_res_customers": 3400,
+      "unit_sales_change_at_handover": 0.065
+    },
+    {
+      "predecessor": "5027:VA",
+      "unit": "84:VA",
+      "predecessor_last_year": 2007,
+      "predecessor_peak_res_customers": 19186,
+      "unit_sales_change_at_handover": -0.053
+    },
+    {
+      "predecessor": "5659:MI",
+      "unit": "3828:MI",
+      "predecessor_last_year": 2009,
+      "predecessor_peak_res_customers": 19068,
+      "unit_sales_change_at_handover": -0.064
+    },
+    {
+      "predecessor": "3109:TX",
+      "unit": "17008:TX",
+      "predecessor_last_year": 2009,
+      "predecessor_peak_res_customers": 28326,
+      "unit_sales_change_at_handover": 0.191
+    },
+    {
+      "predecessor": "19688:LA",
+      "unit": "17698:LA",
+      "predecessor_last_year": 2010,
+      "predecessor_peak_res_customers": 38090,
+      "unit_sales_change_at_handover": 0.02
+    },
+    {
+      "predecessor": "3292:VT",
+      "unit": "7601:VT",
+      "predecessor_last_year": 2012,
+      "predecessor_peak_res_customers": 137137,
+      "unit_sales_change_at_handover": 0.014
+    },
+    {
+      "predecessor": "11522:ME",
+      "unit": "1179:ME",
+      "predecessor_last_year": 2013,
+      "predecessor_peak_res_customers": 30349,
+      "unit_sales_change_at_handover": -0.002
+    },
+    {
+      "predecessor": "599:AK",
+      "unit": "3522:AK",
+      "predecessor_last_year": 2020,
+      "predecessor_peak_res_customers": 24881,
+      "unit_sales_change_at_handover": -0.012
+    },
+    {
+      "predecessor": "14557:SC",
+      "unit": "66073:SC",
+      "predecessor_last_year": 2022,
+      "predecessor_peak_res_customers": 28754,
+      "unit_sales_change_at_handover": 0.058
+    },
+    {
+      "predecessor": "11693:SC",
+      "unit": "66073:SC",
+      "predecessor_last_year": 2022,
+      "predecessor_peak_res_customers": 6050,
+      "unit_sales_change_at_handover": 0.058
+    },
+    {
+      "predecessor": "3390:OK",
+      "unit": "60482:OK",
+      "predecessor_last_year": 2015,
+      "predecessor_peak_res_customers": 15498,
+      "unit_sales_change_at_handover": -0.037
+    },
+    {
+      "predecessor": "10375:OK",
+      "unit": "60482:OK",
+      "predecessor_last_year": 2015,
+      "predecessor_peak_res_customers": 5543,
+      "unit_sales_change_at_handover": -0.037
+    }
+  ],
+  "summed_with_a_sales_jump_over_15pct_at_handover": [
+    "3611:AZ",
+    "3611:HI",
+    "3611:VT",
+    "20860:MI",
+    "3109:TX"
+  ],
+  "units_of_20000_res_customers_that_stop_early_with_no_row": [],
+  "units_of_20000_res_customers_that_start_late_and_succeed_no_one": []
+}

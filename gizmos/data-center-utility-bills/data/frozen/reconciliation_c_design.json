@@ -1,0 +1,472 @@
+{
+  "what_this_is": "Provisional quantity-side summary for reconciliation row C (Scalera, Bosetti and Pecci). No price, revenue or bill is read. The design stands as of 2026-11-18 and the pre-analysis plan is a draft, not frozen. Every figure below uses row C's specification: the paper's values where the bounded read of 2026-11-19 settled them and this study's approximations, ours and not the paper's, adopted by Joe on 2026-11-19 (D-107; reconciliation_c.SPECIFICATION), and the panel here is balanced on the quantity file's rows, a stand-in for the paper's rule (ten years of non-missing price), which cannot be applied without reading price. The nominal price series (res_price, our comparison specification) and the ownership classes (the panel's entity type, read over 2001 to 2025) were settled by Joe on 2026-11-20 (D-117), and he ruled the same day (D-119) that the type is kept and described as the utility-level modal reported type carried across the panel, not the latest year-by-year EIA classification; the price series is stated here and no price is read for it.",
+  "written_by": "pipeline/analysis/reconciliation_c.py main(); the polygon assignment for C0 to C2 added in session 21, 2026-11-19; the D-109 labels, the identity with row U's U0 and the missing-coverage qualification added in session 22; the price deflator as ours (D-111) and the polygon rule's reading unmarked (D-111) in session 23; the nominal price series as our comparison specification and the ownership classes by the panel's entity type read over 2001 to 2025 (both D-117) in session 26, 2026-11-20, and that type described as the utility-level modal reported type carried across the panel under Joe's ruling of the same day (D-119)",
+  "choices_specification_d107": {
+    "percentile_method": "stata_default",
+    "cap_population": "estimation_sample",
+    "spending_log_unit": "billions",
+    "small_sample": "cr1_stata",
+    "drop_singletons": true,
+    "share_in_percent": true,
+    "ownership_method": "interaction",
+    "interval": "t_G_minus_1",
+    "never_host_basis": "zero_count_panel_years",
+    "contiguous_only": true,
+    "price_deflator": "cpi_u_annual_average",
+    "price_series": "res_price"
+  },
+  "facility_counts_verified_assignment": {
+    "report": {
+      "sites": 2244,
+      "crypto_sites_not_counted": 41,
+      "data_center_sites": 2203,
+      "data_center_sites_without_energized_year": 920,
+      "data_center_sites_without_an_assigned_utility": 34,
+      "data_center_sites_with_more_than_one_assigned_unit": 0,
+      "counted_site_years": 7812
+    },
+    "by_year_on_stand_in_panel": {
+      "2015": {
+        "sites_operating_in_panel_units": 518.0,
+        "units_with_one_or_more": 96,
+        "max": 77.0
+      },
+      "2016": {
+        "sites_operating_in_panel_units": 563.0,
+        "units_with_one_or_more": 101,
+        "max": 86.0
+      },
+      "2017": {
+        "sites_operating_in_panel_units": 617.0,
+        "units_with_one_or_more": 107,
+        "max": 98.0
+      },
+      "2018": {
+        "sites_operating_in_panel_units": 665.0,
+        "units_with_one_or_more": 109,
+        "max": 104.0
+      },
+      "2019": {
+        "sites_operating_in_panel_units": 724.0,
+        "units_with_one_or_more": 113,
+        "max": 119.0
+      },
+      "2020": {
+        "sites_operating_in_panel_units": 793.0,
+        "units_with_one_or_more": 118,
+        "max": 133.0
+      },
+      "2021": {
+        "sites_operating_in_panel_units": 850.0,
+        "units_with_one_or_more": 123,
+        "max": 146.0
+      },
+      "2022": {
+        "sites_operating_in_panel_units": 916.0,
+        "units_with_one_or_more": 128,
+        "max": 157.0
+      },
+      "2023": {
+        "sites_operating_in_panel_units": 991.0,
+        "units_with_one_or_more": 131,
+        "max": 181.0
+      },
+      "2024": {
+        "sites_operating_in_panel_units": 1111.0,
+        "units_with_one_or_more": 145,
+        "max": 208.0
+      }
+    }
+  },
+  "balanced_panel_by_quantity_rows": {
+    "units_with_a_row_every_year_2015_2024": 1338,
+    "of_which_contiguous_48_and_dc": 1323,
+    "of_which_with_a_fiber_share": 1312,
+    "contiguous_without_a_fiber_share": 11,
+    "by_ownership": {
+      "cooperative": 608,
+      "public": 526,
+      "investor_owned": 178
+    },
+    "by_ownership_is": "row C's classes by adopted_row_c_ownership, settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119); units of the stand-in sample with no class are counted apart in row_c_ownership_classification_d117 and are in no class here"
+  },
+  "never_hosts_on_stand_in_panel": {
+    "no_assigned_site": 1049,
+    "zero_count_panel_years": 1167,
+    "specification": "zero_count_panel_years (unchanged by D-109)",
+    "limitation": "C5's never-host utility-states are those with no facility counted in any panel year 2015-2024 under the inventory's own assignment; that operational classification is unchanged. It cannot establish that a unit has no data center: no assigned site is not proof of no facility, and a facility the inventory misses, or one it holds with no start year, leaves its unit among the never-host units. This says what the classification cannot establish and redefines nothing."
+  },
+  "rows_u_and_c_status": "Comparison-only by Joe's ruling of 2026-11-19 (D-109). No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+  "caps_by_year_on_stand_in_panel": {
+    "stata_default": {
+      "99.5": {
+        "2015": 19.0,
+        "2016": 20.0,
+        "2017": 22.0,
+        "2018": 22.0,
+        "2019": 24.0,
+        "2020": 27.0,
+        "2021": 30.0,
+        "2022": 30.0,
+        "2023": 33.0,
+        "2024": 37.0
+      },
+      "99.9": {
+        "2015": 66.0,
+        "2016": 69.0,
+        "2017": 72.0,
+        "2018": 77.0,
+        "2019": 81.0,
+        "2020": 87.0,
+        "2021": 94.0,
+        "2022": 96.0,
+        "2023": 97.0,
+        "2024": 108.0
+      },
+      "99.0": {
+        "2015": 8.0,
+        "2016": 9.0,
+        "2017": 10.0,
+        "2018": 10.0,
+        "2019": 10.0,
+        "2020": 10.0,
+        "2021": 10.0,
+        "2022": 13.0,
+        "2023": 14.0,
+        "2024": 14.0
+      }
+    },
+    "linear": {
+      "99.5": {
+        "2015": 16.779999999999745,
+        "2016": 19.444999999999936,
+        "2017": 22.0,
+        "2018": 22.0,
+        "2019": 23.444999999999936,
+        "2020": 25.889999999999873,
+        "2021": 27.779999999999745,
+        "2022": 27.779999999999745,
+        "2023": 30.22499999999968,
+        "2024": 32.55999999999949
+      },
+      "99.9": {
+        "2015": 54.493000000002894,
+        "2016": 57.18200000000297,
+        "2017": 59.56000000000313,
+        "2018": 63.31600000000344,
+        "2019": 67.93800000000329,
+        "2020": 75.4930000000029,
+        "2021": 80.93800000000329,
+        "2022": 84.80400000000282,
+        "2023": 88.29200000000219,
+        "2024": 98.0480000000025
+      },
+      "99.0": {
+        "2015": 8.0,
+        "2016": 8.8900000000001,
+        "2017": 9.7800000000002,
+        "2018": 9.7800000000002,
+        "2019": 9.8900000000001,
+        "2020": 9.8900000000001,
+        "2021": 10.0,
+        "2022": 12.6700000000003,
+        "2023": 13.8900000000001,
+        "2024": 13.8900000000001
+      }
+    }
+  },
+  "fiber_share_percent_on_stand_in_panel": {
+    "n": 1312,
+    "mean": 0.128147688888997,
+    "sd": 0.3355277983600253,
+    "min": 0.0,
+    "p10": 0.00077323139804,
+    "median": 0.022356142845,
+    "p90": 0.2911027961200008,
+    "p99": 1.820509215440003,
+    "max": 2.932053682,
+    "share_zero": 0.026676829268292682
+  },
+  "instrument": {
+    "paper": {
+      "spending_bn_2021_2024": {
+        "2021": 11.5,
+        "2022": 13.5,
+        "2023": 20.6,
+        "2024": 31.1
+      },
+      "z_post_years": {
+        "n": 5248,
+        "mean": 0.36866602349296546,
+        "sd": 0.9749681252500766,
+        "min": 0.0,
+        "p10": 0.0021387526450536445,
+        "median": 0.06343370125507633,
+        "p90": 0.8257206323860282,
+        "p99": 5.3611252885012375,
+        "max": 10.078077842041122,
+        "share_zero": 0.026676829268292682
+      }
+    },
+    "current": {
+      "spending_bn_2021_2024": {
+        "2021": 11.5175,
+        "2022": 13.4874,
+        "2023": 20.5847,
+        "2024": 34.797
+      },
+      "z_post_years": {
+        "n": 5248,
+        "mean": 0.3722595145826091,
+        "sd": 0.9864759861804919,
+        "min": 0.0,
+        "p10": 0.002160715584241163,
+        "median": 0.06405552390282862,
+        "p90": 0.8343385697613233,
+        "p99": 5.422565223291713,
+        "max": 10.40741595445673,
+        "share_zero": 0.026676829268292682
+      }
+    }
+  },
+  "first_stage_count_on_instrument_verified_assignment_cap_99_5": {
+    "paper": {
+      "coef": 0.41095433672939935,
+      "se": 0.08980926224005033,
+      "cluster_robust_f": 20.938466820126834,
+      "n_obs": 13110,
+      "n_clusters": 1311,
+      "singleton_rows_dropped": 10,
+      "failure": null
+    },
+    "current": {
+      "coef": 0.4071353619409929,
+      "se": 0.08895919053543641,
+      "cluster_robust_f": 20.94575429777401,
+      "n_obs": 13110,
+      "n_clusters": 1311,
+      "singleton_rows_dropped": 10,
+      "failure": null
+    }
+  },
+  "c4_load_share_on_stand_in_panel": {
+    "n": 13120,
+    "mean": 0.021656238841468868,
+    "sd": 0.18871748567265104,
+    "min": 0.0,
+    "p10": 0.0,
+    "median": 0.0,
+    "p90": 0.0,
+    "p99": 0.7083467511409274,
+    "max": 5.312636160849382,
+    "share_zero": 0.9139481707317073
+  },
+  "polygon_assignment_steps_C0_to_C2": {
+    "status": "Built and run on the real quantity files for the assignment and the counts (no price read). C0 to C2 themselves are regressions on price and wait for the freeze.",
+    "rule": "polygon_smallest_any_type",
+    "rule_is": "the smallest polygon containing the site over every territory in the layer, the type not read (Scalera, Bosetti and Pecci S1.1, p. 25; section 2.1, p. 4); that the type plays no part is our reading of the paper's words, adopted by Joe on 2026-11-19 (D-111). Every polygon of this copy is classed ambiguous, which this rule does not read.",
+    "coincidence_with_row_u_u0": "U0's assignment and C0 to C2's assignment are the same rule, the smallest containing polygon over every polygon of the layer with the type not read, applied to the same table. Their agreement site by site is one rule applied twice and is not independent validation of either.",
+    "identity_with_u0_site_by_site": {
+      "sites_compared": 2203,
+      "identical": 2203,
+      "differ": 0,
+      "placed_on_the_same_unit": 2157,
+      "left_unplaced_for_the_same_reason": 46
+    },
+    "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+    "status_d109": "comparison-only by Joe's ruling of 2026-11-19 (D-109); C0 to C2 return no verdict",
+    "layer_note": "This copy of the HIFLD layer has 2,931 polygons (data/frozen/reconciliation_polygon_incidence_summary.json), where the paper counts 3,805 utility-State territories in the contiguous states (S1.1, p. 25), so it is not shown to be the paper's layer; exact reproduction of the assignment is unavailable.",
+    "inputs": [
+      "data/interim/reconciliation_polygon_incidence.parquet",
+      "data/interim/panel_reported_ids.parquet",
+      "data/interim/facilities.parquet"
+    ],
+    "data_center_sites": 2203,
+    "data_center_sites_mapped_to_a_panel_unit": 2157,
+    "data_center_sites_not_placed_by_kind": {
+      "a point in no polygon": 3,
+      "an exact tie in area, not broken": 1,
+      "no point": 5,
+      "the chosen polygon's utility is not a panel unit in the site's state": 35,
+      "the site has no state": 2
+    },
+    "exact_area_ties_not_broken": {
+      "osm:way/571010571": "tie in area between polygons [13825, 17569]; no tie rule"
+    },
+    "sites_depending_on_ambiguous_polygon_classes": 0,
+    "against_the_inventorys_own_assignment_C3": {
+      "data_center_sites_placed_by_C3": 2167,
+      "placed_by_both": 2130,
+      "placed_by_both_on_the_same_unit": 1890,
+      "placed_by_both_on_different_units": 240,
+      "placed_by_the_polygon_rule_only": 27,
+      "placed_by_C3_only": 37
+    },
+    "operating_counts_polygon_assignment": {
+      "sites": 2244,
+      "crypto_sites_not_counted": 41,
+      "data_center_sites": 2203,
+      "data_center_sites_without_energized_year": 920,
+      "data_center_sites_without_an_assigned_utility": 46,
+      "data_center_sites_with_more_than_one_assigned_unit": 0,
+      "counted_site_years": 7783
+    },
+    "on_stand_in_panel": {
+      "units_with_one_or_more_in_2024": {
+        "polygon": 143,
+        "C3_inventory": 145
+      },
+      "sites_operating_in_panel_units_2024": {
+        "polygon": 1087.0,
+        "C3_inventory": 1111.0
+      },
+      "units_where_the_2024_count_differs": 64,
+      "cap_99_5": {
+        "units_changed": 8,
+        "unit_years_changed": 59,
+        "max_before_cap": 200.0,
+        "max_after_cap": 33.0
+      },
+      "first_stage_count_on_instrument_cap_99_5": {
+        "paper": {
+          "coef": 0.3216190005085711,
+          "se": 0.0685144644376125,
+          "cluster_robust_f": 22.035294607526023,
+          "n_obs": 13110,
+          "n_clusters": 1311,
+          "singleton_rows_dropped": 10,
+          "failure": null
+        },
+        "current": {
+          "coef": 0.3190702669729396,
+          "se": 0.06802345700849571,
+          "cluster_robust_f": 22.00165106479634,
+          "n_obs": 13110,
+          "n_clusters": 1311,
+          "singleton_rows_dropped": 10,
+          "failure": null
+        }
+      }
+    }
+  },
+  "paper_comparison": {
+    "what_this_is": "Quantity-side figures beside the numbers the paper prints, from the bounded read (docs/gate1/bounded-read-row-c-2026-11-19.md). For comparison only; no band applies.",
+    "cap_99_5_on_stand_in_panel": {
+      "stata_default": {
+        "units_changed": 8,
+        "unit_years_changed": 60,
+        "max_after_cap": 37.0,
+        "max_before_cap": 208.0
+      },
+      "linear": {
+        "units_changed": 8,
+        "unit_years_changed": 68,
+        "max_after_cap": 32.55999999999949,
+        "max_before_cap": 208.0
+      }
+    },
+    "paper_cap_99_5": {
+      "units_adjusted": 8,
+      "max_stock_after_cap": 62,
+      "source": "paper S2.8, p. 50; Table S14 Panel A col 3, p. 51"
+    },
+    "fiber_share_percent_paper_table_s4": {
+      "mean": 0.0655,
+      "sd": 0.19,
+      "min": 0.0,
+      "p10": 0.000527,
+      "median": 0.0159,
+      "p90": 0.132,
+      "max": 2.29,
+      "units_positive": 1217,
+      "source": "paper Table S4, p. 34, 'computed across all utility-State territories in the estimation sample', units percent; 1,217 positive: S2.10, p. 57"
+    },
+    "spending_column_matches_paper_table_s3": true
+  },
+  "deflator_on_file": "cpi_u in data/frozen/dc_construction_spending.csv; factors cpi_u[2024]/cpi_u[year]",
+  "price_deflator_specification_d111": {
+    "value": "the CPI-U annual average (BLS CUUR0000SA0), cpi_u in data/frozen/dc_construction_spending.csv, factors cpi_u[2024]/cpi_u[year] (cpi_u_annual_average)",
+    "label": "ours, not the paper's: this study's convention, adopted by Joe on 2026-11-19 (D-111). The price is put in real 2024 dollars with the CPI-U annual average (BLS CUUR0000SA0), column cpi_u of data/frozen/dc_construction_spending.csv, the factor cpi_u[2024] / cpi_u[year] (cpi_factors_to_2024); nothing is fetched for it. The paper says only \"the CPI\" (section 2.1, p. 4; notes to Table S2, p. 30) and names no series. Our Census spending series deflated with this series equals the paper's printed Table S3 at printed precision for 2015 to 2023, which supports and does not establish that it is the paper's series; that the paper used it for price is not established.",
+    "paper": "\"the Consumer Price Index (CPI)\" (section 2.1, p. 4; Table S2 notes, p. 30); no series named",
+    "choices_field": "price_deflator = cpi_u_annual_average",
+    "years_on_file": [
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "covers_row_c_window": "2015-2024 (reconciliation_c.YEARS), checked by cpi_factors_to_2024"
+  },
+  "price_series_specification_d117": {
+    "value": "res_price, cents per kWh, nominal (before row C's deflator): res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing",
+    "label": "Our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction. Row C's nominal price is this study's delivery-inclusive res_price (res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing), in cents per kWh, put in real 2024 cents per kWh with row C's deflator (the CPI-U annual convention, D-111). The paper divides total residential revenue by total residential sales from the EIA-861 Sales to Ultimate Customers files (section S1.3, p. 29) and does not say whether delivery-only or energy-only rows enter. No other price series is built or compared, and nothing is fetched or read for it.",
+    "paper": "\"dividing total revenue by total sales, specific to each sector\" (section S1.3, p. 29); whether delivery-only or energy-only rows enter is not stated",
+    "choices_field": "price_series = res_price",
+    "unit_nominal": "cents per kWh, nominal (before row C's deflator)",
+    "unit_after_deflator": "cents per kWh, real 2024 dollars (after cpi_factors_to_2024)",
+    "deflator": "price_deflator = cpi_u_annual_average (D-111), factors from cpi_factors_to_2024",
+    "what_the_module_cannot_check": "This module checks the series a caller states (Choices.price_series); it cannot detect an outcome frame that was in fact built from another column. That the frame's values are res_price, deflated by cpi_factors_to_2024, is the caller's responsibility.",
+    "price_read_for_this_block": false
+  },
+  "row_c_ownership_classification_d117": {
+    "specification": {
+      "settled": "settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119)",
+      "pick": "the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state (missing values dropped explicitly before the last nonmissing value is taken)",
+      "years_searched": [
+        2001,
+        2025
+      ],
+      "classification": "time-invariant: one class per utility-state, the same class in every year of that utility-state",
+      "missing_entity_type": "A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class.",
+      "row_u_mapping": "reconciliation_mu.U_MAP, unchanged; every other entity type is 'other' and enters the pooled run only",
+      "row_c_mapping": "reconciliation_c.ROW_C_OWNERSHIP_MAP, the panel's grouping; investor_owned against every other class"
+    },
+    "mapping": {
+      "Investor Owned": "investor_owned",
+      "Cooperative": "cooperative",
+      "Municipal": "public",
+      "Political Subdivision": "public",
+      "State": "public",
+      "Federal": "public"
+    },
+    "split": "investor_owned on one side; on the other, every class except investor_owned (OWNERSHIP_OTHER_RULE, unchanged)",
+    "compared_against": "the panel's ownership column as this summary read it before D-117: the first row of each utility-state (q.drop_duplicates on utility_id_eia and state)",
+    "all_panel_units": {
+      "units": 3231,
+      "units_with_no_class_under_d117": 0,
+      "units_with_a_class_under_d117_and_no_value_in_the_panel_ownership_column": 0,
+      "units_compared": 3231,
+      "units_whose_class_differs": 0,
+      "units_whose_investor_owned_side_differs": 0
+    },
+    "balanced_stand_in_sample_units": {
+      "units": 1312,
+      "units_with_no_class_under_d117": 0,
+      "units_with_a_class_under_d117_and_no_value_in_the_panel_ownership_column": 0,
+      "units_compared": 1312,
+      "units_whose_class_differs": 0,
+      "units_whose_investor_owned_side_differs": 0
+    },
+    "steps_a_difference_would_touch": "C1's and C3's ownership split (ownership_split, investor_owned against every other class), on each spending series; no other step of row C reads ownership. The by_ownership count of this summary also uses it.",
+    "years_present_in_the_panel": {
+      "first": 2001,
+      "last": 2025,
+      "count": 25,
+      "equal_to_the_years_searched": true
+    },
+    "units_with_more_than_one_distinct_entity_type_across_years": 0,
+    "units_with_more_than_one_distinct_ownership_value_across_years": 0,
+    "units_with_no_entity_type_in_any_year": 0,
+    "what_the_panel_column_is": "The panel's entity_type column (data/interim/panel_quantities.parquet) is not a year-by-year report. pipeline/electricity/panel.py build(), read as code by the agent, computes it once per utility id as the type that id's own non-imputed filings report most often (value_counts().index[0] over the rows with a type), keeps only ids whose type is one of the six distribution entity types, and joins it to every row on utility_id_eia, so it is the same in every year of a utility-state and in every state of a utility; the panel's ownership column is that type mapped by panel.OWNERSHIP_GROUP. On this panel the last nonmissing type over 2001 to 2025 and the most frequent type are therefore the same for every utility-state by construction, and the years searched change no class. Joe ruled on 2026-11-20 (D-119) that rows U and C keep this type, in his words: \"Keep the existing panel entity type for rows U and C, accurately described as the utility-level modal reported type carried across the panel, not the latest year-by-year EIA classification. No further raw-data investigation.\" The classes of rows U and C are therefore the utility-level modal reported type carried across the panel. Whether a year-by-year record of EIA's would differ for some utility was NOT established; it would need a read of the EIA-861 sales table under data/raw, which was not made, and under the same ruling no further raw-data investigation is made. Nothing here claims equivalence with EIA's year-by-year record.",
+    "not_established": "the type EIA reports for each utility year by year. The panel carries one type per utility id, and Joe ruled on 2026-11-20 (D-119) that rows U and C keep it, described as the utility-level modal reported type carried across the panel, with no further raw-data investigation, so no comparison with a year-by-year record is made. These are counts on the panel's column only.",
+    "no_class_is": "A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class."
+  }
+}

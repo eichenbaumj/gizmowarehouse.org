@@ -1,0 +1,29 @@
+{
+  "fetched_at": "2026-11-11T15:38:26.863826+00:00",
+  "files": [
+    {
+      "url": "https://epoch.ai/data/data_centers/data_centers.zip",
+      "ok": true,
+      "path": "data/raw/facilities/epoch/data_centers.zip",
+      "bytes": 120063,
+      "sha256": "0323eff265bb3060db1c4e123b274e989d8cab8448655e917c48aa373e3e235a",
+      "last_modified": null
+    },
+    {
+      "url": "https://tbimedia.s3.us-east-1.amazonaws.com/bistudios/_00/dev_edit/graphics/2025/09/2025-09-datacenters-map-table/index.js",
+      "ok": true,
+      "path": "data/raw/facilities/bi/index.js",
+      "bytes": 9842193,
+      "sha256": "0bdf72ebcdfa417079a0a3ec9656c700822d29ef990cc73fa32a09dbdec1a81d",
+      "last_modified": "Thu, 19 Feb 2026 15:28:49 GMT"
+    },
+    {
+      "url": "https://overpass-api.de/api/interpreter",
+      "ok": true,
+      "path": "data/raw/facilities/osm/us_data_centers.json",
+      "bytes": 1338110,
+      "sha256": "6ce3e9091638167db0430cce84a7e2e5501a2268da020ebdecc8401fba09f2c5",
+      "last_modified": null
+    }
+  ]
+}

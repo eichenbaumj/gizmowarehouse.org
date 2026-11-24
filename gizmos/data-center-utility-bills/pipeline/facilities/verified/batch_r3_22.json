@@ -1,0 +1,439 @@
+[
+ {
+  "fid": "bi:1075-2",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon (AWS) Erins Run campus, 23825 Erins Run Drive, Sterling, VA 20166",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2018,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2723825%20ERINS%20RUN%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\": \"23825 ERINS RUN DR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2018",
+  "year_site_match": "Loudoun County 'Existing Structures' layer record whose Structure Address is 23825 ERINS RUN DR, use COM_DATA_CENTER; the parcel query (LU_MCPI 124299328000) returns 23825, 23835 and 23845 Erins Run Dr as data centers.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "County record confirmed as quoted. Same parcel: 23835 = 2019, 23845 = 2020, so 2018 is the earliest data center structure. LU_AS_OF_DATE on this record is epoch 1751342400000 (2025-07-01, my conversion). Caveat: the layer metadata carries no definition of 'Demographic Year Built' (description field empty), and LU_DEMOG_DATE_BUILT is null; this is a county year-built value, not an energization date. Building permit issue epoch 1525233600000 (2018-05-02, my conversion) and a 2018 year built imply a fast build; I am uncertain whether the building was actually in service in 2018 versus early 2019. No operator or press statement was opened.",
+  "lead": {
+   "energized_year": 2018,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2723825%20ERINS%20RUN%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"23825 ERINS RUN DR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2018",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_MCPI%3D%27124299328000%27&outFields=LU_ADDRESS,LU_USE,LU_BP_ISSUE_DATE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+   ],
+   "phases": [
+    {
+     "label": "23825 Erins Run Dr (building permit issued 2018-05-02)",
+     "year": 2018,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_MCPI%3D%27124299328000%27&outFields=LU_ADDRESS,LU_USE,LU_BP_ISSUE_DATE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    },
+    {
+     "label": "23835 Erins Run Dr",
+     "year": 2019,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_MCPI%3D%27124299328000%27&outFields=LU_ADDRESS,LU_USE,LU_BP_ISSUE_DATE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    },
+    {
+     "label": "23845 Erins Run Dr",
+     "year": 2020,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_MCPI%3D%27124299328000%27&outFields=LU_ADDRESS,LU_USE,LU_BP_ISSUE_DATE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Loudoun County's public Build-Out Land Use 'Existing Structures' GIS layer (as of 2025-07-01) records 23825 Erins Run Dr as a COM_DATA_CENTER structure with 'Demographic Year Built' 2018; the same parcel (PIN 124299328000, found by the item's coordinates) holds 23835 (2019) and 23845 (2020). The field is a county demographics year-built, not an energization date, so medium. No operator or press statement found; directory pages were seen in search but not used."
+  }
+ },
+ {
+  "fid": "bi:1088-2",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon (AWS) data center, 22945 International Drive, Sterling, VA 20166",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2018,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2722945%20INTERNATIONAL%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\": \"22945 INTERNATIONAL DR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2018",
+  "year_site_match": "Loudoun County 'Existing Structures' layer returns exactly one feature for Structure Address 22945 INTERNATIONAL DR, use COM_DATA_CENTER.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "County record confirmed as quoted (one feature). Medium only: 'Demographic Year Built' is undefined in the layer metadata and is a county year-built, not an energization date. I did not open a page showing the building-permit issue date or the parcel number the researcher cites, so those are unverified here. The layer as-of date (2025-07-01) was read on a different record in the same layer, not this one, so page_date is left null. No operator or press source opened.",
+  "lead": {
+   "energized_year": 2018,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2722945%20INTERNATIONAL%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"22945 INTERNATIONAL DR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2018",
+   "operating_status": "operating",
+   "phases": [
+    {
+     "label": "22945 International Dr (building permit issued 2018-06-22)",
+     "year": 2018,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2722945%20INTERNATIONAL%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Loudoun County Build-Out Land Use 'Existing Structures' layer lists 22945 International Dr (parcel 034357851000 at the item's coordinates) as a data center with 'Demographic Year Built' 2018; it is the only structure on that parcel. Building permit issue date in the same layer is 2018-06-22, so a 2018 year built implies a fast shell build; I am uncertain whether the field tracks completion or permit final. No operator or press source found."
+  }
+ },
+ {
+  "fid": "bi:1081-2",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "TransDulles Centre 2 (Pathfinder Plaza) data centers, 45900 Pathfinder Plaza (permit: Pathfinder Way), Sterling, VA 20164",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2017,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745900%20PATHFINDER%20PLZ%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\": \"45900 PATHFINDER PLZ \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2017",
+  "year_site_match": "County structure record for 45900 PATHFINDER PLZ (data center); parcel query LU_MCPI 033201325000 also returns 45930 and 45950 Pathfinder Plz as data centers built 2017. IREI and Commercial Observer both name '45900, 45930 and 45950 Pathfinder Plaza in Sterling, Va.'",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "Three sources agree on 2017 as the construction year. IREI (dated April 11, 2018; article is paywalled, visible excerpt only) says 'Constructed in 2017' and 'are fully leased to a global cloud-computing platform'. Commercial Observer (July 23, 2024) says 'The three data centers on the site were built in 2017' with AWS 'occupying them as a tenant'. Kept at medium, not high: every page states construction year, none states an opening or go-live date, so first operation could be 2017 or early 2018; I am uncertain which. The 'Pathfinder Way' vs 'Pathfinder Plaza' permit-address tie rests on the researcher's parcel/coordinate match, which I did not independently check.",
+  "lead": {
+   "energized_year": 2017,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745900%20PATHFINDER%20PLZ%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"45900 PATHFINDER PLZ \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2017",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://irei.com/news/cbre-global-investors-fund-acquires-state-art-data-center-portfolio-northern-virginia/",
+    "https://commercialobserver.com/2024/07/amazon-pays-136m-nova-data-center",
+    "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_MCPI%3D%27033201325000%27&outFields=LU_ADDRESS,LU_USE,LU_BP_ISSUE_DATE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+   ],
+   "phases": [
+    {
+     "label": "45900 Pathfinder Plaza",
+     "year": 2017,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745900%20PATHFINDER%20PLZ%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    },
+    {
+     "label": "45930 and 45950 Pathfinder Plaza",
+     "year": 2017,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_MCPI%3D%27033201325000%27&outFields=LU_ADDRESS,LU_USE,LU_BP_ISSUE_DATE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "The item's coordinates fall on parcel 033201325000 (subdivision TransDulles Centre 2), where Loudoun County's structures layer lists 45900, 45930 and 45950 Pathfinder Plaza as data centers built 2017. IREI (2018-04-11) says the three buildings were 'Constructed in 2017' and 'fully leased to a global cloud-computing platform' when CBRE Global Investors bought them; Commercial Observer (2024-07-23) says AWS occupied them as tenant before buying them in 2024. The permit says 'Pathfinder Way'; the addresses on record are Pathfinder Plaza, tied here by parcel and coordinates. Lease-up by April 2018 suggests operation began 2017 or early 2018; I am uncertain which."
+  }
+ },
+ {
+  "fid": "bi:1069-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon (AWS) Kipper Drive data center, 22370 Kipper Drive, Sterling/Dulles, VA 20166",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2020,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2722370%20KIPPER%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\":\"22370 KIPPER DR \",\"LU_USE\":\"COM_DATA_CENTER\",\"LU_DEMOG_YEAR_BUILT\":2020",
+  "year_site_match": "Loudoun County 'Existing Structures' layer returns exactly one feature for Structure Address 22370 KIPPER DR, use COM_DATA_CENTER.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "County record confirmed as quoted (one feature; whitespace in the quote is as the fetch tool returned it, values unchanged). Medium only: 'Demographic Year Built' is undefined in the layer metadata and is a county year-built, not an energization date. I did not open a page showing the permit issue date, the parcel number, or the neighbouring 22420 Kipper Dr record the researcher mentions. Layer as-of date not read on this record. No operator or press source opened.",
+  "lead": {
+   "energized_year": 2020,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2722370%20KIPPER%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"22370 KIPPER DR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2020",
+   "operating_status": "operating",
+   "phases": [
+    {
+     "label": "22370 Kipper Dr (building permit issued 2019-08-02)",
+     "year": 2020,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2722370%20KIPPER%20DR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Loudoun County's structures layer records 22370 Kipper Dr (parcel 044193385000 at the item's coordinates) as a data center with 'Demographic Year Built' 2020; building permit issued 2019-08-02. A neighbouring AWS building at 22420 Kipper Dr sits on a separate parcel (045494813000), also year built 2020, and is not counted as this site. No operator or press source found."
+  }
+ },
+ {
+  "fid": "bi:951-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon (AWS) Beaumeade Circle data center, 21320 Beaumeade Circle, Ashburn, VA 20147",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2022,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2721320%20BEAUMEADE%20CIR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\": \"21320 BEAUMEADE CIR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2022",
+  "year_site_match": "Loudoun County 'Existing Structures' layer returns exactly one feature for Structure Address 21320 BEAUMEADE CIR, use COM_DATA_CENTER.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "County record confirmed as quoted (one feature). Medium only: 'Demographic Year Built' is undefined in the layer metadata and is a county year-built, not an energization date. The researcher notes a directory listing says 'first built 2024'; directories are not evidence, but the conflict means actual go-live could be later than the county's 2022 year built. I am uncertain about this and found no operator or press page to settle it. Permit issue date, parcel number and the adjacent 21310 record were not opened by me. Layer as-of date not read on this record.",
+  "lead": {
+   "energized_year": 2022,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2721320%20BEAUMEADE%20CIR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"21320 BEAUMEADE CIR \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2022",
+   "operating_status": "operating",
+   "phases": [
+    {
+     "label": "21320 Beaumeade Cir (building permit issued 2021-04-19)",
+     "year": 2022,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2721320%20BEAUMEADE%20CIR%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Loudoun County's structures layer lists 21320 Beaumeade Cir (parcel 061407107000 at the item's coordinates) as a data center with 'Demographic Year Built' 2022, building permit issued 2021-04-19. Adjacent 21310 Beaumeade Cir is on a separate parcel (061303369000), also 2022. A directory's 'first built 2024' claim conflicts with the county record and was not used. No operator or press source found."
+  }
+ },
+ {
+  "fid": "bi:1080-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon (AWS) Maries Road data centers, 45761-45771 Maries Road, Sterling, VA 20166",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2019,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745771%20MARIES%20RD%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\": \"45771 MARIES RD \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2019",
+  "year_site_match": "Loudoun County 'Existing Structures' layer records for Structure Address 45771 MARIES RD and 45761 MARIES RD, both COM_DATA_CENTER, both year built 2019; these are the two addresses in the site's 45761-45771 range.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "Both county records confirmed via WebFetch (the 45761 record the researcher read with curl was re-read here with WebFetch and matches: COM_DATA_CENTER, 2019). Medium only: 'Demographic Year Built' is undefined in the layer metadata and is a county year-built, not an energization date. Permit issue dates and the parcel number were not opened by me. Layer as-of date not read on these records. No operator or press source opened.",
+  "lead": {
+   "energized_year": 2019,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745771%20MARIES%20RD%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"45771 MARIES RD \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2019",
+   "operating_status": "operating",
+   "phases": [
+    {
+     "label": "45771 Maries Rd (building permit issued 2018-06-15)",
+     "year": 2019,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745771%20MARIES%20RD%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    },
+    {
+     "label": "45761 Maries Rd (building permit issued 2018-10-10)",
+     "year": 2019,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2745761%20MARIES%20RD%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "The item's coordinates fall on parcel 030382006000 (Tall Oaks Subdivision), where Loudoun County's structures layer lists two data center structures, 45771 and 45761 Maries Rd, both 'Demographic Year Built' 2019. The phase-2 URL was read with curl, not WebFetch. No operator or press source found to confirm an energization date."
+  }
+ },
+ {
+  "fid": "bi:971-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon (AWS) data center, 20945 Loudoun County Parkway, Ashburn, VA 20147",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2018,
+  "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2720945%20LOUDOUN%20COUNTY%20PKWY%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"LU_ADDRESS\": \"20945 LOUDOUN COUNTY PKWY \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2018",
+  "year_site_match": "Loudoun County 'Existing Structures' layer returns exactly one feature for Structure Address 20945 LOUDOUN COUNTY PKWY, use COM_DATA_CENTER.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "County record confirmed as quoted (one feature). Medium only: 'Demographic Year Built' is undefined in the layer metadata and is a county year-built, not an energization date. The researcher's permit issue date (2018-01-11) and parcel number were not opened by me; if the permit date is right, a 2018 year built is plausible but in-service could have slipped to 2019. I am uncertain about this. Layer as-of date not read on this record. No operator or press source opened.",
+  "lead": {
+   "energized_year": 2018,
+   "energized_year_source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2720945%20LOUDOUN%20COUNTY%20PKWY%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_year_built_or_construction_complete",
+   "year_evidence_quote": "\"LU_ADDRESS\": \"20945 LOUDOUN COUNTY PKWY \", \"LU_USE\": \"COM_DATA_CENTER\", \"LU_DEMOG_YEAR_BUILT\": 2018",
+   "operating_status": "operating",
+   "phases": [
+    {
+     "label": "20945 Loudoun County Pkwy (building permit issued 2018-01-11)",
+     "year": 2018,
+     "mw": null,
+     "source_url": "https://logis.loudoun.gov/gis/rest/services/Projects/BuildOut_LandUse/MapServer/0/query?where=LU_ADDRESS%20LIKE%20%2720945%20LOUDOUN%20COUNTY%20PKWY%25%27&outFields=LU_ADDRESS,LU_USE,LU_DEMOG_YEAR_BUILT&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Loudoun County's structures layer records 20945 Loudoun County Pkwy (parcel 059309091000 at the item's coordinates) as the only structure there, a data center with 'Demographic Year Built' 2018 and building permit issued 2018-01-11. No operator, press or ENERGY STAR source found. I did not run a separate search for this address."
+  }
+ },
+ {
+  "fid": "bi:1034-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Amazon AWS IAD-130/IAD-131 (Amazon Freedom Boulevard campus), 9040 Freedom Center Blvd, Manassas, VA 20110",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2020,
+  "energized_year_source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%279040%20FREEDOM%20CENTER%20BLVD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"BuildingName\": \"Amazon AWS IAD-130\", \"Address\": \"9040 FREEDOM CENTER BLVD\", \"BuildingStatus\": \"Completed\", \"YearBuilt\": 2020, \"OCCDate\": 1600228800000, \"PermitCase\": \"BLD2019-01155\", \"PermitStatus\": \"Finaled\"",
+  "year_site_match": "Prince William County 'Data Center Buildings' layer record with Building Name 'Amazon AWS IAD-130' and Address '9040 FREEDOM CENTER BLVD'; sister record 'Amazon AWS IAD-131' at 9020 Freedom Center Blvd.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "County record confirmed as quoted: Completed, Year Built 2020, Occupancy Date epoch 1600228800000 (2020-09-16, my conversion), permit Finaled. IAD-131 at 9020: Year Built 2020, Occupancy Date epoch 1606885200000 (2020-12-02, my conversion). Layer description says it 'tracks data center buildings from a inception to occupancy and operational status'. Medium: year built plus a county occupancy date, not an operator go-live statement. The 'Data Center Campuses' layer the researcher mentions was not opened by me. The layer has no as-of date on the pages I opened, so page_date is null.",
+  "lead": {
+   "energized_year": 2020,
+   "energized_year_source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%279040%20FREEDOM%20CENTER%20BLVD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_operating_or_opened",
+   "year_evidence_quote": "\"BuildingName\": \"Amazon AWS IAD-130\", \"Address\": \"9040 FREEDOM CENTER BLVD\", \"BuildingStatus\": \"Completed\", \"YearBuilt\": 2020, \"OCCDate\": 1600228800000",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%279020%20FREEDOM%20CENTER%20BLVD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson"
+   ],
+   "phases": [
+    {
+     "label": "IAD-130, 9040 Freedom Center Blvd (occupancy 2020-09-16)",
+     "year": 2020,
+     "mw": null,
+     "source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%279040%20FREEDOM%20CENTER%20BLVD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson"
+    },
+    {
+     "label": "IAD-131, 9020 Freedom Center Blvd (occupancy 2020-12-02)",
+     "year": 2020,
+     "mw": null,
+     "source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%279020%20FREEDOM%20CENTER%20BLVD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Prince William County's public 'Data Center Buildings' GIS layer names 9040 Freedom Center Blvd as Amazon AWS IAD-130, Completed, YearBuilt 2020, permit BLD2019-01155 Finaled, with occupancy date epoch 1600228800000 (2020-09-16). The companion 'Data Center Campuses' layer calls the campus 'Amazon Freedom Boulevard', status Completed; sister building IAD-131 had occupancy 2020-12-02. An occupancy date is a government record, not an energization statement, so medium. The same PW layer dates every Amazon and Iron Mountain building in the county and could help other batches."
+  }
+ },
+ {
+  "fid": "bi:1027-1",
+  "group": "big",
+  "round": 3,
+  "is_data_center": true,
+  "site_name": "Iron Mountain Data Center VA-5 (Iron Mountain Manassas campus), 11580 Hayden Rd, Manassas, VA 20109",
+  "operator": "Amazon",
+  "state": "VA",
+  "energized_year": 2025,
+  "energized_year_source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%2711580%20HAYDEN%20RD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson",
+  "year_confidence": "medium",
+  "year_basis": "government_record_year_built_or_construction_complete",
+  "year_evidence_quote": "\"BuildingName\": \"Iron Mountain Data Center VA-5\", \"Address\": \"11580 HAYDEN RD\", \"BuildingStatus\": \"Completed\", \"YearBuilt\": 2025, \"OCCDate\": 1749614400000, \"PermitCase\": \"BLD2023-03508\", \"PermitStatus\": \"Finaled\"",
+  "year_site_match": "Prince William County 'Data Center Buildings' layer record with Building Name 'Iron Mountain Data Center VA-5' and Address '11580 HAYDEN RD', matching the claim's named building and address.",
+  "operating_status": null,
+  "status_source_url": null,
+  "status_confidence": null,
+  "status_as_of": null,
+  "load_mw_2025": null,
+  "load_basis": null,
+  "load_source_url": null,
+  "serving_utility": null,
+  "utility_source_url": null,
+  "utility_confidence": null,
+  "verification": "2025 is verified ONLY for the building at this address (VA-5: Year Built 2025, Occupancy Date epoch 1749614400000 = 2025-06-11, my conversion). SITE-DEFINITION FLAG: the same county layer, which I opened, lists five Iron Mountain buildings on Hayden Rd: VA-1 at 11680 (Year Built 2017, occupancy epoch 1506225600000 = 2017-09-24), VA-2 at 11660 (2019), VA-3 at 11640 (2024), VA-4 at 11600 (Year Built 2024, same 2025-06-11 occupancy date as VA-5), VA-5 at 11580 (2025). If the study's unit is the whole Iron Mountain Manassas campus, the first-building year is 2017, not 2025; that choice belongs to the study, not to this check. That VA-4 and VA-5 share a parcel, and that Amazon is the tenant, are the researcher's statements; I opened no page supporting either, and the operator on the record is Iron Mountain. No as-of date on the pages opened, so page_date is null.",
+  "lead": {
+   "energized_year": 2025,
+   "energized_year_source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%2711580%20HAYDEN%20RD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson",
+   "year_confidence": "medium",
+   "year_basis": "government_record_operating_or_opened",
+   "year_evidence_quote": "\"BuildingName\": \"Iron Mountain Data Center VA-5\", \"Address\": \"11580 HAYDEN RD\", \"BuildingStatus\": \"Completed\", \"YearBuilt\": 2025, \"OCCDate\": 1749614400000",
+   "operating_status": "operating",
+   "other_urls": [
+    "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%2711600%20HAYDEN%20RD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson"
+   ],
+   "phases": [
+    {
+     "label": "VA-5, 11580 Hayden Rd (occupancy 2025-06-11)",
+     "year": 2025,
+     "mw": null,
+     "source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%2711580%20HAYDEN%20RD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson"
+    },
+    {
+     "label": "VA-4, 11600 Hayden Rd, same parcel (assessed year built 2024, occupancy 2025-06-11)",
+     "year": 2025,
+     "mw": null,
+     "source_url": "https://gisweb.pwcva.gov/arcgis/rest/services/CountyMapper/LandDevelopment/MapServer/10/query?where=Address%3D%2711600%20HAYDEN%20RD%27&outFields=BuildingName,Address,BuildingStatus,YearBuilt,OCCDate,PermitCase,PermitStatus&returnGeometry=false&f=pjson"
+    }
+   ],
+   "notes": "Prince William County's Data Center Buildings layer identifies 11580 Hayden Rd as Iron Mountain Data Center VA-5, Completed, YearBuilt 2025, permit BLD2023-03508 Finaled, occupancy date 2025-06-11. VA-4 on the same parcel (GPIN 7596-66-0725) has the same occupancy date. The building is Iron Mountain's; the Amazon generator permit suggests Amazon is the tenant, but I am uncertain about this and found no page saying so. The wider Iron Mountain Manassas campus is much older (VA-1 at 11680 Hayden Rd, occupancy 2017-09-24, on a different address), so if the study treats the whole Iron Mountain campus as the site the year would be 2017, not 2025."
+  }
+ }
+]

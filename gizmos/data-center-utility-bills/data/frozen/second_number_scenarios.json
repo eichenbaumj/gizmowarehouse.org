@@ -1,0 +1,4929 @@
+{
+ "what_this_is": "Quantity-only and PROVISIONAL: the second number's two sensitivity scenarios (Joe, 2026-11-19, D-107; R2 of D-106) on the design as it stands on 2026-11-19, with the per-state reconstruction check that comes first, the sites and rows each moves, each state's factor, and the sample differences from the primary run. The plan is a DRAFT and not frozen. No price, revenue or bill was read; no estimate is here. They are sensitivity scenarios, not bounds or necessarily one-change comparisons with the primary analysis.",
+ "built_by": "pipeline/analysis/second_number_scenarios.py",
+ "reconstruction_check": {
+  "document": "docs/gate1/second-number-reconstruction-check-2026-11-19.md",
+  "tolerance_relative": 1e-09,
+  "passes_in_every_state": true,
+  "states_failing": [],
+  "units_compared": 3229,
+  "units_agree": 3229
+ },
+ "early_end_settings_of_the_two_sites_with_no_load_history": {
+  "bi:852-0 date": 2024,
+  "bi:837-0 date": 2011,
+  "bi:837-0 capacity": 2011
+ },
+ "reading_of_report_sample_differences": "the session's reading, Joe's to strike: for each scenario, every utility in its sample that is not in the primary run's and the reverse, by name, with its dose at each form; the class given is the utility's class in the primary classification at each form, since a single history defines no classes of its own (the agent's reading)",
+ "scenarios": {
+  "sensitivity_scenario_a_runner_up_placement": {
+   "label": "Sensitivity scenario A, runner-up placement (Joe, D-107; R2 of D-106): every unresolved load-carrying site moved to the first other candidate that can hold its full load under the inventory's own placement rule, every date, capacity and basis as the inventory has it, each state's factor recomputed. Under Joe's rule (D-111) for what a candidate already carries, the 460 unresolved sites are lifted first, all other load kept counted, and placed in descending size, each counting where it lands; matching the earlier count is not the reason for the rule. Umatilla enters at 25.0 and 50.0 points at the caps (462 uncapped) and Portland General at 18.8 points. Besides its own kind of question it differs from the primary run in three ways: the two sites with no load history carry load at the early end of each of their questions (bi:852-0 from 2024; bi:837-0's date and the rest of its capacity at 2011), where the primary run leaves out every utility they reach; Oregon's factor is recomputed with those sites carrying load; and its sample differs (Portland General and Umatilla enter at the dose this history gives them, and any unit with load in this history and no 2009-2011 base leaves). It is a sensitivity scenario, not a bound and not necessarily a one-change comparison with the primary analysis.",
+   "states_built": [
+    "AK",
+    "AL",
+    "AR",
+    "AS",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "GU",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "PR",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VI",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+   ],
+   "states_stopped": {},
+   "sample": {
+    "utilities": 1184,
+    "primary_run_utilities": 1182,
+    "in_this_scenario_not_in_the_primary_run": [
+     {
+      "utility": "15248:OR",
+      "name": "Portland General Electric Co",
+      "change_in_dose_points_this_scenario": {
+       "uncapped": 18.837354,
+       "capped_at_25_points": 18.837354,
+       "capped_at_50_points": 18.837354
+      },
+      "change_in_dose_points_primary_as_assigned": null,
+      "class_in_the_primary_classification": {
+       "uncapped": "no_single_dose",
+       "capped_at_25_points": "no_single_dose",
+       "capped_at_50_points": "no_single_dose"
+      }
+     },
+     {
+      "utility": "19325:OR",
+      "name": "Umatilla Electric Coop Assn",
+      "change_in_dose_points_this_scenario": {
+       "uncapped": 461.887154,
+       "capped_at_25_points": 25.0,
+       "capped_at_50_points": 50.0
+      },
+      "change_in_dose_points_primary_as_assigned": null,
+      "class_in_the_primary_classification": {
+       "uncapped": "no_single_dose",
+       "capped_at_25_points": "no_single_dose",
+       "capped_at_50_points": "no_single_dose"
+      }
+     }
+    ],
+    "in_the_primary_run_not_in_this_scenario": [],
+    "frame_left_out_by_usability_region_size_or_no_dose": 2046
+   },
+   "states_whose_factor_differs_from_the_inventory_and_OR_TX": {
+    "OR": {
+     "recomputed": 0.41249962805698687,
+     "inventory": 0.4174402691339885
+    },
+    "TX": {
+     "recomputed": 3.0,
+     "inventory": 3.0
+    }
+   },
+   "units_whose_load_differs_from_the_reconstruction_in_some_year": {
+    "count": 115,
+    "units": [
+     "10009:TX",
+     "1015:TX",
+     "10325:CA",
+     "10370:MO",
+     "10599:OK",
+     "10817:TX",
+     "11208:CA",
+     "11364:TX",
+     "11560:VA",
+     "1175:TX",
+     "11804:MA",
+     "12260:VA",
+     "12341:IA",
+     "12351:AZ",
+     "12642:IA",
+     "12686:MS",
+     "12698:MO",
+     "1273:TX",
+     "12745:CA",
+     "1307:ND",
+     "13208:IL",
+     "13407:NV",
+     "13441:NH",
+     "13520:MO",
+     "13640:VA",
+     "13647:IN",
+     "13781:SD",
+     "13998:OH",
+     "14006:OH",
+     "14063:OK",
+     "14328:CA",
+     "14354:OR",
+     "14354:UT",
+     "14401:CA",
+     "14626:TX",
+     "15138:MO",
+     "15257:CO",
+     "15444:UT",
+     "15466:CO",
+     "15472:NH",
+     "15474:OK",
+     "15776:FL",
+     "1586:AR",
+     "16088:CA",
+     "16295:CA",
+     "16534:CA",
+     "16572:AZ",
+     "16604:TX",
+     "16612:CA",
+     "16638:TX",
+     "16655:CA",
+     "16865:GA",
+     "17267:SD",
+     "17609:CA",
+     "1764:WV",
+     "176:AZ",
+     "18454:FL",
+     "1892:TX",
+     "18976:TX",
+     "19159:TX",
+     "19281:CA",
+     "19325:OR",
+     "19436:MO",
+     "19490:TX",
+     "19499:CO",
+     "19545:WY",
+     "19604:AZ",
+     "19785:OK",
+     "19856:NJ",
+     "19876:VA",
+     "20169:WA",
+     "20413:ND",
+     "22822:IN",
+     "24211:AZ",
+     "24590:NH",
+     "26510:NH",
+     "27000:AZ",
+     "27000:CA",
+     "27000:CO",
+     "27000:UT",
+     "3093:MO",
+     "3461:WY",
+     "3478:OK",
+     "3755:OH",
+     "3762:OH",
+     "3841:MS",
+     "3989:CO",
+     "40228:VA",
+     "4065:OH",
+     "4110:IL",
+     "4262:TX",
+     "4356:NV",
+     "5078:TX",
+     "54913:MA",
+     "55937:TX",
+     "5729:AZ",
+     "5860:AR",
+     "590:CA",
+     "6374:MA",
+     "6455:FL",
+     "65261:AZ",
+     "7090:GA",
+     "7140:GA",
+     "733:WV",
+     "7559:TX",
+     "7752:TX",
+     "803:AZ",
+     "8179:IN",
+     "8198:VA",
+     "8620:TX",
+     "8699:WA",
+     "9336:CO",
+     "9417:IA",
+     "963:NJ",
+     "994:IN"
+    ],
+    "what": "against the reconstruction at every setting of the inventory (realise with no settings), in which the two sites with no load history already sit at their early end, so the count is what this scenario's own kind of question moves; the reconstruction equals the dose file for every unit no load-unknown site reaches (the check)"
+   },
+   "sample_units_whose_change_in_dose_differs_from_the_primary_at_some_form": [
+    {
+     "utility": "10009:TX",
+     "name": "Karnes Electric Coop Inc",
+     "this_scenario": {
+      "uncapped": 191.109981,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "1015:TX",
+     "name": "Austin Energy",
+     "this_scenario": {
+      "uncapped": 1.345452,
+      "capped_at_25_points": 1.345452,
+      "capped_at_50_points": 1.345452
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.376072,
+      "capped_at_25_points": 5.376072,
+      "capped_at_50_points": 5.376072
+     }
+    },
+    {
+     "utility": "10370:MO",
+     "name": "City of Kirkwood - (MO)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 43.502513,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 10.049941
+     }
+    },
+    {
+     "utility": "10599:OK",
+     "name": "Lake Region Electric Coop, Inc - (OK)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.675794,
+      "capped_at_25_points": 0.675794,
+      "capped_at_50_points": 0.675794
+     }
+    },
+    {
+     "utility": "11208:CA",
+     "name": "Los Angeles Department of Water & Power",
+     "this_scenario": {
+      "uncapped": 1.624779,
+      "capped_at_25_points": 1.624779,
+      "capped_at_50_points": 1.624779
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.626778,
+      "capped_at_25_points": 1.626778,
+      "capped_at_50_points": 1.626778
+     }
+    },
+    {
+     "utility": "11364:TX",
+     "name": "Lyntegar Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.524538,
+      "capped_at_25_points": 0.524538,
+      "capped_at_50_points": 0.524538
+     }
+    },
+    {
+     "utility": "11560:VA",
+     "name": "City of Manassas - (VA)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 13.127846,
+      "capped_at_25_points": 12.709282,
+      "capped_at_50_points": 13.127846
+     }
+    },
+    {
+     "utility": "1175:TX",
+     "name": "Bandera Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 39.408595,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 3.530468
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 90.377045,
+      "capped_at_25_points": 16.666667,
+      "capped_at_50_points": 33.333333
+     }
+    },
+    {
+     "utility": "11804:MA",
+     "name": "Massachusetts Electric Co",
+     "this_scenario": {
+      "uncapped": 0.488898,
+      "capped_at_25_points": 0.488898,
+      "capped_at_50_points": 0.488898
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.130518,
+      "capped_at_25_points": 0.130518,
+      "capped_at_50_points": 0.130518
+     }
+    },
+    {
+     "utility": "12260:VA",
+     "name": "Mecklenburg Electric Cooperative",
+     "this_scenario": {
+      "uncapped": 232.587556,
+      "capped_at_25_points": 21.820428,
+      "capped_at_50_points": 46.820428
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 222.458398,
+      "capped_at_25_points": 21.820428,
+      "capped_at_50_points": 46.820428
+     }
+    },
+    {
+     "utility": "12341:IA",
+     "name": "MidAmerican Energy Co",
+     "this_scenario": {
+      "uncapped": 15.973247,
+      "capped_at_25_points": 15.973247,
+      "capped_at_50_points": 15.973247
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 40.072276,
+      "capped_at_25_points": 23.890861,
+      "capped_at_50_points": 39.102147
+     }
+    },
+    {
+     "utility": "12351:AZ",
+     "name": "City of Mesa - (AZ)",
+     "this_scenario": {
+      "uncapped": 65.813147,
+      "capped_at_25_points": 5.070055,
+      "capped_at_50_points": 24.667722
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 65.966802,
+      "capped_at_25_points": 22.734685,
+      "capped_at_50_points": 42.81759
+     }
+    },
+    {
+     "utility": "12642:IA",
+     "name": "Maquoketa Valley Rrl Elec Coop",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.149716,
+      "capped_at_25_points": 1.149716,
+      "capped_at_50_points": 1.149716
+     }
+    },
+    {
+     "utility": "12686:MS",
+     "name": "Mississippi Power Co",
+     "this_scenario": {
+      "uncapped": 0.784156,
+      "capped_at_25_points": 0.784156,
+      "capped_at_50_points": 0.784156
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "12698:MO",
+     "name": "Evergy Missouri West",
+     "this_scenario": {
+      "uncapped": 3.894507,
+      "capped_at_25_points": 3.894507,
+      "capped_at_50_points": 3.894507
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.706301,
+      "capped_at_25_points": 3.706301,
+      "capped_at_50_points": 3.706301
+     }
+    },
+    {
+     "utility": "1273:TX",
+     "name": "Bartlett Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 36.687099,
+      "capped_at_25_points": 16.666667,
+      "capped_at_50_points": 28.8957
+     }
+    },
+    {
+     "utility": "13208:IL",
+     "name": "City of Naperville - (IL)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 62.964156,
+      "capped_at_25_points": 17.129481,
+      "capped_at_50_points": 42.129481
+     }
+    },
+    {
+     "utility": "13407:NV",
+     "name": "Nevada Power Co",
+     "this_scenario": {
+      "uncapped": 0.663662,
+      "capped_at_25_points": 0.663662,
+      "capped_at_50_points": 0.663662
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.730576,
+      "capped_at_25_points": 0.730576,
+      "capped_at_50_points": 0.730576
+     }
+    },
+    {
+     "utility": "13441:NH",
+     "name": "New Hampshire Elec Coop Inc",
+     "this_scenario": {
+      "uncapped": 0.059847,
+      "capped_at_25_points": 0.059847,
+      "capped_at_50_points": 0.059847
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "13520:MO",
+     "name": "New-Mac Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 35.637281,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 35.637281
+     }
+    },
+    {
+     "utility": "13640:VA",
+     "name": "Northern Virginia Elec Coop",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 201.289307,
+      "capped_at_25_points": 21.261286,
+      "capped_at_50_points": 46.261286
+     }
+    },
+    {
+     "utility": "13647:IN",
+     "name": "Noble County R E M C",
+     "this_scenario": {
+      "uncapped": 7.372956,
+      "capped_at_25_points": 7.372956,
+      "capped_at_50_points": 7.372956
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "13781:SD",
+     "name": "Northern States Power Co - Minnesota",
+     "this_scenario": {
+      "uncapped": 2.431021,
+      "capped_at_25_points": 2.431021,
+      "capped_at_50_points": 2.431021
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "13998:OH",
+     "name": "Ohio Edison Co",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.324647,
+      "capped_at_25_points": 3.324647,
+      "capped_at_50_points": 3.324647
+     }
+    },
+    {
+     "utility": "14006:OH",
+     "name": "Ohio Power Co",
+     "this_scenario": {
+      "uncapped": 14.496187,
+      "capped_at_25_points": 14.496187,
+      "capped_at_50_points": 14.496187
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 12.861753,
+      "capped_at_25_points": 12.861753,
+      "capped_at_50_points": 12.861753
+     }
+    },
+    {
+     "utility": "14063:OK",
+     "name": "Oklahoma Gas & Electric Co",
+     "this_scenario": {
+      "uncapped": 0.635076,
+      "capped_at_25_points": 0.635076,
+      "capped_at_50_points": 0.635076
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.622331,
+      "capped_at_25_points": 0.622331,
+      "capped_at_50_points": 0.622331
+     }
+    },
+    {
+     "utility": "14328:CA",
+     "name": "Pacific Gas & Electric Co.",
+     "this_scenario": {
+      "uncapped": 3.401906,
+      "capped_at_25_points": 3.401906,
+      "capped_at_50_points": 3.401906
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.374511,
+      "capped_at_25_points": 1.374511,
+      "capped_at_50_points": 1.374511
+     }
+    },
+    {
+     "utility": "14354:OR",
+     "name": "PacifiCorp",
+     "this_scenario": {
+      "uncapped": 17.819379,
+      "capped_at_25_points": 17.819379,
+      "capped_at_50_points": 17.819379
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 14.258497,
+      "capped_at_25_points": 14.258497,
+      "capped_at_50_points": 14.258497
+     }
+    },
+    {
+     "utility": "14354:UT",
+     "name": "PacifiCorp",
+     "this_scenario": {
+      "uncapped": 14.119378,
+      "capped_at_25_points": 14.119378,
+      "capped_at_50_points": 14.119378
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 14.030703,
+      "capped_at_25_points": 14.030703,
+      "capped_at_50_points": 14.030703
+     }
+    },
+    {
+     "utility": "14401:CA",
+     "name": "City of Palo Alto - (CA)",
+     "this_scenario": {
+      "uncapped": 0.443741,
+      "capped_at_25_points": 0.443741,
+      "capped_at_50_points": 0.443741
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.276055,
+      "capped_at_25_points": 3.276055,
+      "capped_at_50_points": 3.276055
+     }
+    },
+    {
+     "utility": "14626:TX",
+     "name": "Pedernales Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 9.424689,
+      "capped_at_25_points": 9.424689,
+      "capped_at_50_points": 9.424689
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "15138:MO",
+     "name": "Platte-Clay Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 2.762003,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "15444:UT",
+     "name": "Provo City Corp",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 2.622214,
+      "capped_at_25_points": 2.622214,
+      "capped_at_50_points": 2.622214
+     }
+    },
+    {
+     "utility": "15466:CO",
+     "name": "Public Service Co of Colorado",
+     "this_scenario": {
+      "uncapped": 3.809065,
+      "capped_at_25_points": 3.809065,
+      "capped_at_50_points": 3.809065
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.303837,
+      "capped_at_25_points": 3.303837,
+      "capped_at_50_points": 3.303837
+     }
+    },
+    {
+     "utility": "15472:NH",
+     "name": "Public Service Co of NH",
+     "this_scenario": {
+      "uncapped": 0.001852,
+      "capped_at_25_points": 0.001852,
+      "capped_at_50_points": 0.001852
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "15474:OK",
+     "name": "Public Service Co of Oklahoma",
+     "this_scenario": {
+      "uncapped": 1.29306,
+      "capped_at_25_points": 1.29306,
+      "capped_at_50_points": 1.29306
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "1586:AR",
+     "name": "City of Bentonville - (AR)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.910013,
+      "capped_at_25_points": 3.910013,
+      "capped_at_50_points": 3.910013
+     }
+    },
+    {
+     "utility": "16295:CA",
+     "name": "City of Roseville - (CA)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.385907,
+      "capped_at_25_points": 0.385907,
+      "capped_at_50_points": 0.385907
+     }
+    },
+    {
+     "utility": "16534:CA",
+     "name": "Sacramento Municipal Util Dist",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 2.94449,
+      "capped_at_25_points": 2.94449,
+      "capped_at_50_points": 2.94449
+     }
+    },
+    {
+     "utility": "16572:AZ",
+     "name": "Salt River Project",
+     "this_scenario": {
+      "uncapped": 11.68949,
+      "capped_at_25_points": 11.68949,
+      "capped_at_50_points": 11.68949
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 13.120765,
+      "capped_at_25_points": 13.120765,
+      "capped_at_50_points": 13.120765
+     }
+    },
+    {
+     "utility": "16604:TX",
+     "name": "City of San Antonio - (TX)",
+     "this_scenario": {
+      "uncapped": 14.83916,
+      "capped_at_25_points": 14.214297,
+      "capped_at_50_points": 14.83916
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 21.928673,
+      "capped_at_25_points": 16.1225,
+      "capped_at_50_points": 21.928673
+     }
+    },
+    {
+     "utility": "16638:TX",
+     "name": "San Bernard Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 88.278183,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 143.050251,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     }
+    },
+    {
+     "utility": "16655:CA",
+     "name": "City of Santa Clara - (CA)",
+     "this_scenario": {
+      "uncapped": 25.281071,
+      "capped_at_25_points": 24.320055,
+      "capped_at_50_points": 25.281071
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 114.461343,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 20.571983
+     }
+    },
+    {
+     "utility": "16865:GA",
+     "name": "Sawnee Electric Membership Corporation",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.78368,
+      "capped_at_25_points": 4.78368,
+      "capped_at_50_points": 4.78368
+     }
+    },
+    {
+     "utility": "17267:SD",
+     "name": "Sioux Valley SW Elec Coop",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 8.817597,
+      "capped_at_25_points": 8.817597,
+      "capped_at_50_points": 8.817597
+     }
+    },
+    {
+     "utility": "17609:CA",
+     "name": "Southern California Edison Co",
+     "this_scenario": {
+      "uncapped": 0.44811,
+      "capped_at_25_points": 0.44811,
+      "capped_at_50_points": 0.44811
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.518063,
+      "capped_at_25_points": 0.518063,
+      "capped_at_50_points": 0.518063
+     }
+    },
+    {
+     "utility": "18454:FL",
+     "name": "Tampa Electric Co",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.703219,
+      "capped_at_25_points": 1.703219,
+      "capped_at_50_points": 1.703219
+     }
+    },
+    {
+     "utility": "1892:TX",
+     "name": "Bluebonnet Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 30.31838,
+      "capped_at_25_points": 4.067457,
+      "capped_at_50_points": 28.287079
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "18976:TX",
+     "name": "Trinity Valley Elec Coop Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 6.881415,
+      "capped_at_25_points": 6.881415,
+      "capped_at_50_points": 6.881415
+     }
+    },
+    {
+     "utility": "19159:TX",
+     "name": "Tri-County Electric Coop, Inc (TX)",
+     "this_scenario": {
+      "uncapped": 17.383505,
+      "capped_at_25_points": 17.383505,
+      "capped_at_50_points": 17.383505
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "19281:CA",
+     "name": "Turlock Irrigation District",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.053555,
+      "capped_at_25_points": 0.053555,
+      "capped_at_50_points": 0.053555
+     }
+    },
+    {
+     "utility": "19436:MO",
+     "name": "Union Electric Co - (MO)",
+     "this_scenario": {
+      "uncapped": 0.24824,
+      "capped_at_25_points": 0.24824,
+      "capped_at_50_points": 0.24824
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "19490:TX",
+     "name": "United Electric Coop Service Inc - (TX)",
+     "this_scenario": {
+      "uncapped": 68.511283,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "19499:CO",
+     "name": "United Power, Inc",
+     "this_scenario": {
+      "uncapped": 1.493131,
+      "capped_at_25_points": 1.493131,
+      "capped_at_50_points": 1.493131
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 12.869368,
+      "capped_at_25_points": 12.869368,
+      "capped_at_50_points": 12.869368
+     }
+    },
+    {
+     "utility": "19545:WY",
+     "name": "Black Hills Power, Inc.",
+     "this_scenario": {
+      "uncapped": 26.317765,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 26.317765
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "19604:AZ",
+     "name": "USBIA-San Carlos Project",
+     "this_scenario": {
+      "uncapped": 46.244176,
+      "capped_at_25_points": 10.530649,
+      "capped_at_50_points": 35.530649
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 11.82452,
+      "capped_at_25_points": 11.82452,
+      "capped_at_50_points": 11.82452
+     }
+    },
+    {
+     "utility": "19785:OK",
+     "name": "Verdigris Valley Elec Coop Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 35.07553,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "19856:NJ",
+     "name": "City of Vineland - (NJ)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 15.119051,
+      "capped_at_25_points": 8.333333,
+      "capped_at_50_points": 15.119051
+     }
+    },
+    {
+     "utility": "19876:VA",
+     "name": "Virginia Electric & Power Co",
+     "this_scenario": {
+      "uncapped": 42.163481,
+      "capped_at_25_points": 22.766952,
+      "capped_at_50_points": 40.571523
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 32.606011,
+      "capped_at_25_points": 23.061927,
+      "capped_at_50_points": 32.606011
+     }
+    },
+    {
+     "utility": "20169:WA",
+     "name": "Avista Corp",
+     "this_scenario": {
+      "uncapped": 1.159345,
+      "capped_at_25_points": 1.159345,
+      "capped_at_50_points": 1.159345
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "20413:ND",
+     "name": "Mountrail-Williams Elec Coop",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 8.339115,
+      "capped_at_25_points": 8.333333,
+      "capped_at_50_points": 8.339115
+     }
+    },
+    {
+     "utility": "22822:IN",
+     "name": "Clark County Rural E M C - (IN)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.92418,
+      "capped_at_25_points": 1.92418,
+      "capped_at_50_points": 1.92418
+     }
+    },
+    {
+     "utility": "24211:AZ",
+     "name": "Tucson Electric Power Co",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.214901,
+      "capped_at_25_points": 0.214901,
+      "capped_at_50_points": 0.214901
+     }
+    },
+    {
+     "utility": "24590:NH",
+     "name": "Unitil Energy Systems",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.154493,
+      "capped_at_25_points": 1.154493,
+      "capped_at_50_points": 1.154493
+     }
+    },
+    {
+     "utility": "26510:NH",
+     "name": "Liberty Utilities (Granite State Electri",
+     "this_scenario": {
+      "uncapped": 1.563472,
+      "capped_at_25_points": 1.563472,
+      "capped_at_50_points": 1.563472
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.065416,
+      "capped_at_25_points": 0.065416,
+      "capped_at_50_points": 0.065416
+     }
+    },
+    {
+     "utility": "3093:MO",
+     "name": "Carroll Electric Coop Corp - (AR)",
+     "this_scenario": {
+      "uncapped": 97.186944,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "3461:WY",
+     "name": "Cheyenne Light Fuel & Power",
+     "this_scenario": {
+      "uncapped": 135.195994,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 139.504404,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     }
+    },
+    {
+     "utility": "3478:OK",
+     "name": "Cimarron Electric Coop",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.209468,
+      "capped_at_25_points": 1.209468,
+      "capped_at_50_points": 1.209468
+     }
+    },
+    {
+     "utility": "3755:OH",
+     "name": "Cleveland Electric Illum Co",
+     "this_scenario": {
+      "uncapped": 0.068091,
+      "capped_at_25_points": 0.068091,
+      "capped_at_50_points": 0.068091
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "3762:OH",
+     "name": "City of Cleveland - (OH)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.783197,
+      "capped_at_25_points": 0.783197,
+      "capped_at_50_points": 0.783197
+     }
+    },
+    {
+     "utility": "3841:MS",
+     "name": "Coast Electric Power Assn - (MS)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.416146,
+      "capped_at_25_points": 4.416146,
+      "capped_at_50_points": 4.416146
+     }
+    },
+    {
+     "utility": "3989:CO",
+     "name": "City of Colorado Springs - (CO)",
+     "this_scenario": {
+      "uncapped": 5.033578,
+      "capped_at_25_points": 5.033578,
+      "capped_at_50_points": 5.033578
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.999746,
+      "capped_at_25_points": 5.999746,
+      "capped_at_50_points": 5.999746
+     }
+    },
+    {
+     "utility": "40228:VA",
+     "name": "Rappahannock Electric Coop",
+     "this_scenario": {
+      "uncapped": 3.942865,
+      "capped_at_25_points": 3.942865,
+      "capped_at_50_points": 3.942865
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.988647,
+      "capped_at_25_points": 4.988647,
+      "capped_at_50_points": 4.988647
+     }
+    },
+    {
+     "utility": "4065:OH",
+     "name": "City of Columbus - (OH)",
+     "this_scenario": {
+      "uncapped": 8.769636,
+      "capped_at_25_points": 8.769636,
+      "capped_at_50_points": 8.769636
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.880815,
+      "capped_at_25_points": 5.880815,
+      "capped_at_50_points": 5.880815
+     }
+    },
+    {
+     "utility": "4110:IL",
+     "name": "Commonwealth Edison Co",
+     "this_scenario": {
+      "uncapped": 8.958363,
+      "capped_at_25_points": 8.958363,
+      "capped_at_50_points": 8.958363
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 7.96226,
+      "capped_at_25_points": 7.96226,
+      "capped_at_50_points": 7.96226
+     }
+    },
+    {
+     "utility": "4262:TX",
+     "name": "Cooke County Elec Coop Assn",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 94.730999,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     }
+    },
+    {
+     "utility": "5078:TX",
+     "name": "Denton County Elec Coop, Inc",
+     "this_scenario": {
+      "uncapped": 50.650213,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 71.920219,
+      "capped_at_25_points": 18.41846,
+      "capped_at_50_points": 43.41846
+     }
+    },
+    {
+     "utility": "54913:MA",
+     "name": "NSTAR Electric Company",
+     "this_scenario": {
+      "uncapped": 3.039015,
+      "capped_at_25_points": 3.039015,
+      "capped_at_50_points": 3.039015
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 2.339784,
+      "capped_at_25_points": 2.339784,
+      "capped_at_50_points": 2.339784
+     }
+    },
+    {
+     "utility": "55937:TX",
+     "name": "Entergy Texas Inc.",
+     "this_scenario": {
+      "uncapped": 6.618009,
+      "capped_at_25_points": 6.618009,
+      "capped_at_50_points": 6.618009
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.873454,
+      "capped_at_25_points": 4.873454,
+      "capped_at_50_points": 4.873454
+     }
+    },
+    {
+     "utility": "5860:AR",
+     "name": "Empire District Electric Co",
+     "this_scenario": {
+      "uncapped": 15.10853,
+      "capped_at_25_points": 15.10853,
+      "capped_at_50_points": 15.10853
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "590:CA",
+     "name": "City of Anaheim - (CA)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.122089,
+      "capped_at_25_points": 0.122089,
+      "capped_at_50_points": 0.122089
+     }
+    },
+    {
+     "utility": "6374:MA",
+     "name": "Fitchburg Gas & Elec Light Co",
+     "this_scenario": {
+      "uncapped": 2.059284,
+      "capped_at_25_points": 2.059284,
+      "capped_at_50_points": 2.059284
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 57.900879,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 10.329445
+     }
+    },
+    {
+     "utility": "6455:FL",
+     "name": "Duke Energy Florida, LLC",
+     "this_scenario": {
+      "uncapped": 1.035411,
+      "capped_at_25_points": 1.035411,
+      "capped_at_50_points": 1.035411
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "7090:GA",
+     "name": "GreyStone Power Corporation",
+     "this_scenario": {
+      "uncapped": 4.787602,
+      "capped_at_25_points": 4.787602,
+      "capped_at_50_points": 4.787602
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 42.358109,
+      "capped_at_25_points": 23.591109,
+      "capped_at_50_points": 35.681833
+     }
+    },
+    {
+     "utility": "7140:GA",
+     "name": "Georgia Power Co",
+     "this_scenario": {
+      "uncapped": 5.419534,
+      "capped_at_25_points": 5.419534,
+      "capped_at_50_points": 5.419534
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.03514,
+      "capped_at_25_points": 4.03514,
+      "capped_at_50_points": 4.03514
+     }
+    },
+    {
+     "utility": "733:WV",
+     "name": "Appalachian Power Co",
+     "this_scenario": {
+      "uncapped": 0.001914,
+      "capped_at_25_points": 0.001914,
+      "capped_at_50_points": 0.001914
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "7559:TX",
+     "name": "Grayson-Collin Elec Coop, Inc",
+     "this_scenario": {
+      "uncapped": 186.930933,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 218.181363,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     }
+    },
+    {
+     "utility": "7752:TX",
+     "name": "Guadalupe Valley Elec Coop Inc",
+     "this_scenario": {
+      "uncapped": 92.218712,
+      "capped_at_25_points": 15.736184,
+      "capped_at_50_points": 40.736184
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 54.580241,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 49.645851
+     }
+    },
+    {
+     "utility": "803:AZ",
+     "name": "Arizona Public Service Co",
+     "this_scenario": {
+      "uncapped": 16.334065,
+      "capped_at_25_points": 16.334065,
+      "capped_at_50_points": 16.334065
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 14.848957,
+      "capped_at_25_points": 14.848957,
+      "capped_at_50_points": 14.848957
+     }
+    },
+    {
+     "utility": "8179:IN",
+     "name": "Harrison County Rural E M C",
+     "this_scenario": {
+      "uncapped": 1.668282,
+      "capped_at_25_points": 1.668282,
+      "capped_at_50_points": 1.668282
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "8198:VA",
+     "name": "City of Harrisonburg - (VA)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.109386,
+      "capped_at_25_points": 5.109386,
+      "capped_at_50_points": 5.109386
+     }
+    },
+    {
+     "utility": "8620:TX",
+     "name": "HILCO Electric Cooperative, Inc.",
+     "this_scenario": {
+      "uncapped": 17.583783,
+      "capped_at_25_points": 14.194594,
+      "capped_at_50_points": 17.583783
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 59.736689,
+      "capped_at_25_points": 8.333333,
+      "capped_at_50_points": 16.666667
+     }
+    },
+    {
+     "utility": "8699:WA",
+     "name": "Inland Power & Light Company",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 7.755967,
+      "capped_at_25_points": 7.755967,
+      "capped_at_50_points": 7.755967
+     }
+    },
+    {
+     "utility": "9417:IA",
+     "name": "Interstate Power and Light Co",
+     "this_scenario": {
+      "uncapped": 32.049535,
+      "capped_at_25_points": 24.49936,
+      "capped_at_50_points": 32.049535
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     }
+    },
+    {
+     "utility": "963:NJ",
+     "name": "Atlantic City Electric Co",
+     "this_scenario": {
+      "uncapped": 1.131703,
+      "capped_at_25_points": 1.131703,
+      "capped_at_50_points": 1.131703
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.093337,
+      "capped_at_25_points": 0.093337,
+      "capped_at_50_points": 0.093337
+     }
+    },
+    {
+     "utility": "994:IN",
+     "name": "City of Auburn - (IN)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.805061,
+      "capped_at_25_points": 3.805061,
+      "capped_at_50_points": 3.805061
+     }
+    }
+   ],
+   "units_with_load_and_no_positive_base_no_dose": [
+    "44372:TX",
+    "65261:AZ"
+   ],
+   "counts": {
+    "sites": 460,
+    "sites_moved": 380,
+    "sites_staying": 80,
+    "units_gaining_or_losing_a_site_by_placement": 121,
+    "units_carrying_different_load_on_realised_load": 115,
+    "r2_counts": {
+     "sites": 460,
+     "sites_moved": 380,
+     "units_carrying_different_load": 121
+    },
+    "differs_from_r2": {}
+   },
+   "rule": "What a candidate already carries (Joe's rule, adopted on 2026-11-19, D-111): \"lift the 460 unresolved sites first, keeping all other load counted, then place them in the adopted descending-size order\". Adopted on the condition, met, that a check made first and apart from the module found that lifting first neither introduces a capacity exceedance nor increases a pre-existing one (docs/gate1/scenario-a-exceedance-check-2026-11-19.md). Matching the earlier count is not the reason for the rule. A site for which no other candidate fits, or with no other panel candidate, stays where it is and counts on its unit from its own turn in the order. That clause stands by Joe's ruling of 2026-11-20 (D-113), and no further placement variant is tested; counting it only after every site is placed was not tried. Against the earlier reading (every site counted where it sat until it moved), 27 sites change destination and one more site moves (docs/gate1/scenario-a-count-reconciliation-2026-11-19.md).",
+   "moves": [
+    {
+     "fid": "bi:551-0",
+     "state": "IA",
+     "from": 12341,
+     "to": 9417
+    },
+    {
+     "fid": "epoch:Google Bristow",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:527-0",
+     "state": "GA",
+     "from": 7090,
+     "to": 7140
+    },
+    {
+     "fid": "epoch:AWS New Albany",
+     "state": "OH",
+     "from": 13998,
+     "to": 14006
+    },
+    {
+     "fid": "epoch:Microsoft Project Osmium",
+     "state": "IA",
+     "from": 12341,
+     "to": 9417
+    },
+    {
+     "fid": "bi:1190-0",
+     "state": "TX",
+     "from": 7559,
+     "to": 5078
+    },
+    {
+     "fid": "bi:591-0",
+     "state": "IL",
+     "from": 13208,
+     "to": 4110
+    },
+    {
+     "fid": "bi:549-0",
+     "state": "IA",
+     "from": 12341,
+     "to": 9417
+    },
+    {
+     "fid": "bi:881-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 19490
+    },
+    {
+     "fid": "bi:910-0",
+     "state": "TX",
+     "from": 7752,
+     "to": 10009
+    },
+    {
+     "fid": "bi:528-0",
+     "state": "GA",
+     "from": 7090,
+     "to": 7140
+    },
+    {
+     "fid": "bi:977-0",
+     "state": "VA",
+     "from": 12260,
+     "to": 19876
+    },
+    {
+     "fid": "bi:887-0",
+     "state": "TX",
+     "from": 16638,
+     "to": 55937
+    },
+    {
+     "fid": "bi:1020-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "epoch:Google Red Oak",
+     "state": "TX",
+     "from": 8620,
+     "to": 19490
+    },
+    {
+     "fid": "bi:929-0",
+     "state": "TX",
+     "from": 16604,
+     "to": 1175
+    },
+    {
+     "fid": "epoch:Microsoft SAT40",
+     "state": "TX",
+     "from": 1175,
+     "to": 7752
+    },
+    {
+     "fid": "bi:550-0",
+     "state": "IA",
+     "from": 12341,
+     "to": 9417
+    },
+    {
+     "fid": "bi:876-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 7559
+    },
+    {
+     "fid": "bi:931-0",
+     "state": "TX",
+     "from": 7559,
+     "to": 5078
+    },
+    {
+     "fid": "bi:811-0",
+     "state": "OK",
+     "from": 19785,
+     "to": 15474
+    },
+    {
+     "fid": "bi:1036-5",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1212-0",
+     "state": "TX",
+     "from": 16604,
+     "to": 7752
+    },
+    {
+     "fid": "bi:1039-3",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1087-5",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:267-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:848-0",
+     "state": "OR",
+     "from": 19325,
+     "to": 14354
+    },
+    {
+     "fid": "bi:907-0",
+     "state": "TX",
+     "from": 7752,
+     "to": 10009
+    },
+    {
+     "fid": "bi:914-0",
+     "state": "TX",
+     "from": 16604,
+     "to": 7752
+    },
+    {
+     "fid": "bi:918-0",
+     "state": "TX",
+     "from": 7752,
+     "to": 14626
+    },
+    {
+     "fid": "bi:393-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:878-1",
+     "state": "TX",
+     "from": 1015,
+     "to": 1892
+    },
+    {
+     "fid": "bi:1091-4",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:877-0",
+     "state": "TX",
+     "from": 1015,
+     "to": 1892
+    },
+    {
+     "fid": "epoch:Microsoft-Nebius New Jersey",
+     "state": "NJ",
+     "from": 19856,
+     "to": 963
+    },
+    {
+     "fid": "bi:989-6",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:536-0",
+     "state": "GA",
+     "from": 7090,
+     "to": 7140
+    },
+    {
+     "fid": "epoch:Microsoft SAT14",
+     "state": "TX",
+     "from": 16604,
+     "to": 7752
+    },
+    {
+     "fid": "bi:679-0",
+     "state": "ND",
+     "from": 20413,
+     "to": 1307
+    },
+    {
+     "fid": "bi:1033-3",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1181-0",
+     "state": "TX",
+     "from": 4262,
+     "to": 5078
+    },
+    {
+     "fid": "bi:935-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 19159
+    },
+    {
+     "fid": "bi:394-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:13-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 5729
+    },
+    {
+     "fid": "bi:1076-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1029-4",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1185-0",
+     "state": "TX",
+     "from": 55937,
+     "to": 16638
+    },
+    {
+     "fid": "bi:1041-4",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:343-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1198-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 7559
+    },
+    {
+     "fid": "bi:1277-0",
+     "state": "VA",
+     "from": 12260,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1280-0",
+     "state": "VA",
+     "from": 19876,
+     "to": 12260
+    },
+    {
+     "fid": "bi:16-0",
+     "state": "AZ",
+     "from": 5729,
+     "to": 803
+    },
+    {
+     "fid": "bi:889-0",
+     "state": "TX",
+     "from": 55937,
+     "to": 16638
+    },
+    {
+     "fid": "bi:946-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:15-0",
+     "state": "AZ",
+     "from": 12351,
+     "to": 16572
+    },
+    {
+     "fid": "bi:1040-2",
+     "state": "VA",
+     "from": 11560,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1399-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:664-0",
+     "state": "MO",
+     "from": 15138,
+     "to": 12698
+    },
+    {
+     "fid": "bi:1021-3",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1220-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "epoch:Vantage TX1",
+     "state": "TX",
+     "from": 7752,
+     "to": 14626
+    },
+    {
+     "fid": "bi:1129-0",
+     "state": "FL",
+     "from": 18454,
+     "to": 6455
+    },
+    {
+     "fid": "bi:1088-2",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1392-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 4262
+    },
+    {
+     "fid": "bi:928-0",
+     "state": "TX",
+     "from": 16604,
+     "to": 7752
+    },
+    {
+     "fid": "bi:1081-2",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1075-2",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "epoch:CoreWeave Dalton 1 & 2",
+     "state": "GA",
+     "from": 4744,
+     "to": 13716
+    },
+    {
+     "fid": "bi:31-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 12351
+    },
+    {
+     "fid": "bi:1031-2",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1258-0",
+     "state": "TX",
+     "from": 18976,
+     "to": 8620
+    },
+    {
+     "fid": "bi:1275-1",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:377-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:384-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1199-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 7559
+    },
+    {
+     "fid": "bi:1057-0",
+     "state": "VA",
+     "from": 19876,
+     "to": 12260
+    },
+    {
+     "fid": "bi:810-0",
+     "state": "OK",
+     "from": 19785,
+     "to": 15474
+    },
+    {
+     "fid": "bi:165-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1034-1",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:333-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:505-0",
+     "state": "GA",
+     "from": 16865,
+     "to": 7140
+    },
+    {
+     "fid": "bi:924-0",
+     "state": "TX",
+     "from": 1273,
+     "to": 1892
+    },
+    {
+     "fid": "bi:436-0",
+     "state": "CO",
+     "from": 15257,
+     "to": 15466
+    },
+    {
+     "fid": "bi:534-0",
+     "state": "GA",
+     "from": 7140,
+     "to": 7090
+    },
+    {
+     "fid": "bi:1027-1",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:882-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 19490
+    },
+    {
+     "fid": "bi:932-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 7559
+    },
+    {
+     "fid": "bi:1363-0",
+     "state": "MA",
+     "from": 6374,
+     "to": 54913
+    },
+    {
+     "fid": "bi:369-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1365-0",
+     "state": "MA",
+     "from": 6374,
+     "to": 54913
+    },
+    {
+     "fid": "bi:1132-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:46-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:231-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:438-0",
+     "state": "CO",
+     "from": 19499,
+     "to": 15466
+    },
+    {
+     "fid": "bi:911-0",
+     "state": "TX",
+     "from": 16604,
+     "to": 7752
+    },
+    {
+     "fid": "bi:1042-2",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:667-0",
+     "state": "MO",
+     "from": 13520,
+     "to": 3093
+    },
+    {
+     "fid": "bi:1338-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:502-0",
+     "state": "GA",
+     "from": 16865,
+     "to": 7140
+    },
+    {
+     "fid": "bi:925-0",
+     "state": "TX",
+     "from": 5078,
+     "to": 7559
+    },
+    {
+     "fid": "bi:503-0",
+     "state": "GA",
+     "from": 16865,
+     "to": 7140
+    },
+    {
+     "fid": "bi:27-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 19604
+    },
+    {
+     "fid": "bi:791-0",
+     "state": "OH",
+     "from": 4065,
+     "to": 14006
+    },
+    {
+     "fid": "bi:1035-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1026-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1018-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1273-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:367-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1209-0",
+     "state": "FL",
+     "from": 15776,
+     "to": 6455
+    },
+    {
+     "fid": "bi:979-0",
+     "state": "VA",
+     "from": 19876,
+     "to": 12260
+    },
+    {
+     "fid": "bi:993-0",
+     "state": "VA",
+     "from": 40228,
+     "to": 19876
+    },
+    {
+     "fid": "bi:379-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:338-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:338-1",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1025-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:382-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1159-0",
+     "state": "MO",
+     "from": 10370,
+     "to": 19436
+    },
+    {
+     "fid": "bi:1135-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:335-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:152-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1038-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:383-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1110-0",
+     "state": "WA",
+     "from": 8699,
+     "to": 20169
+    },
+    {
+     "fid": "bi:371-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1384-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:609-0",
+     "state": "IN",
+     "from": 22822,
+     "to": 8179
+    },
+    {
+     "fid": "bi:234-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:668-0",
+     "state": "MS",
+     "from": 3841,
+     "to": 12686
+    },
+    {
+     "fid": "bi:530-0",
+     "state": "GA",
+     "from": 16865,
+     "to": 7140
+    },
+    {
+     "fid": "bi:373-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:206-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:790-0",
+     "state": "OH",
+     "from": 14006,
+     "to": 4065
+    },
+    {
+     "fid": "bi:390-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:446-0",
+     "state": "CO",
+     "from": 3989,
+     "to": 27000
+    },
+    {
+     "fid": "bi:342-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:115-0",
+     "state": "CA",
+     "from": 17609,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1139-0",
+     "state": "FL",
+     "from": 18454,
+     "to": 6455
+    },
+    {
+     "fid": "bi:376-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:391-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:418-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:374-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:405-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1138-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:389-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1006-0",
+     "state": "VA",
+     "from": 8198,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1132-1",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:344-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:868-0",
+     "state": "SD",
+     "from": 17267,
+     "to": 13781
+    },
+    {
+     "fid": "bi:1373-0",
+     "state": "MA",
+     "from": 6374,
+     "to": 11804
+    },
+    {
+     "fid": "bi:1084-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1287-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:51-0",
+     "state": "AZ",
+     "from": 5729,
+     "to": 12351
+    },
+    {
+     "fid": "bi:339-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:422-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1132-2",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:54-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 19604
+    },
+    {
+     "fid": "bi:139-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:166-0",
+     "state": "CA",
+     "from": 17609,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1160-0",
+     "state": "MO",
+     "from": 10370,
+     "to": 19436
+    },
+    {
+     "fid": "bi:1123-0",
+     "state": "WY",
+     "from": 3461,
+     "to": 19545
+    },
+    {
+     "fid": "bi:1032-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:980-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:372-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:338-2",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1369-0",
+     "state": "MA",
+     "from": 6374,
+     "to": 54913
+    },
+    {
+     "fid": "bi:61-0",
+     "state": "AZ",
+     "from": 24211,
+     "to": 19604
+    },
+    {
+     "fid": "bi:352-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1374-0",
+     "state": "MA",
+     "from": 6374,
+     "to": 11804
+    },
+    {
+     "fid": "bi:222-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:33-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 803
+    },
+    {
+     "fid": "bi:1073-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:246-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:163-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1111-0",
+     "state": "WA",
+     "from": 8699,
+     "to": 20169
+    },
+    {
+     "fid": "bi:218-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:375-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:548-0",
+     "state": "IA",
+     "from": 12341,
+     "to": 9417
+    },
+    {
+     "fid": "bi:419-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:535-0",
+     "state": "GA",
+     "from": 7090,
+     "to": 7140
+    },
+    {
+     "fid": "bi:1096-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:789-0",
+     "state": "OH",
+     "from": 14006,
+     "to": 4065
+    },
+    {
+     "fid": "bi:29-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 12351
+    },
+    {
+     "fid": "bi:370-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:547-0",
+     "state": "IA",
+     "from": 12341,
+     "to": 9417
+    },
+    {
+     "fid": "bi:420-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:35-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 803
+    },
+    {
+     "fid": "bi:404-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:57-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:1366-0",
+     "state": "MA",
+     "from": 54913,
+     "to": 6374
+    },
+    {
+     "fid": "bi:150-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1268-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:1257-0",
+     "state": "CA",
+     "from": 14401,
+     "to": 27000
+    },
+    {
+     "fid": "bi:368-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:392-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1361-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:322-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:337-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:76-0",
+     "state": "CA",
+     "from": 16088,
+     "to": 17609
+    },
+    {
+     "fid": "bi:147-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:223-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:336-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:424-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:39-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:1330-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:248-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1178-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1030-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:24-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:1282-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1327-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:662-0",
+     "state": "MO",
+     "from": 15138,
+     "to": 12698
+    },
+    {
+     "fid": "bi:1161-0",
+     "state": "MO",
+     "from": 10370,
+     "to": 19436
+    },
+    {
+     "fid": "bi:1157-0",
+     "state": "AR",
+     "from": 1586,
+     "to": 5860
+    },
+    {
+     "fid": "bi:350-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1155-0",
+     "state": "FL",
+     "from": 18454,
+     "to": 6455
+    },
+    {
+     "fid": "bi:40-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:103-0",
+     "state": "CA",
+     "from": 590,
+     "to": 17609
+    },
+    {
+     "fid": "bi:1137-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:239-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:938-0",
+     "state": "UT",
+     "from": 15444,
+     "to": 14354
+    },
+    {
+     "fid": "bi:1246-0",
+     "state": "OH",
+     "from": 4065,
+     "to": 14006
+    },
+    {
+     "fid": "bi:34-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 19604
+    },
+    {
+     "fid": "bi:38-0",
+     "state": "AZ",
+     "from": 19604,
+     "to": 803
+    },
+    {
+     "fid": "bi:259-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:348-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:417-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:387-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:345-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:347-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:341-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:164-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:440-0",
+     "state": "CO",
+     "from": 9336,
+     "to": 15466
+    },
+    {
+     "fid": "bi:603-0",
+     "state": "IN",
+     "from": 994,
+     "to": 13647
+    },
+    {
+     "fid": "bi:425-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:49-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1375-0",
+     "state": "MA",
+     "from": 6374,
+     "to": 11804
+    },
+    {
+     "fid": "bi:1269-0",
+     "state": "AZ",
+     "from": 19604,
+     "to": 803
+    },
+    {
+     "fid": "bi:1136-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:327-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:263-0",
+     "state": "CA",
+     "from": 16295,
+     "to": 14328
+    },
+    {
+     "fid": "bi:154-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1318-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:698-0",
+     "state": "NH",
+     "from": 24590,
+     "to": 26510
+    },
+    {
+     "fid": "bi:1256-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:416-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:14-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 5729
+    },
+    {
+     "fid": "bi:1125-0",
+     "state": "UT",
+     "from": 14354,
+     "to": 27000
+    },
+    {
+     "fid": "bi:429-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1164-0",
+     "state": "MO",
+     "from": 10370,
+     "to": 19436
+    },
+    {
+     "fid": "bi:1265-0",
+     "state": "NV",
+     "from": 13407,
+     "to": 4356
+    },
+    {
+     "fid": "bi:1251-0",
+     "state": "OH",
+     "from": 3762,
+     "to": 3755
+    },
+    {
+     "fid": "bi:41-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1372-0",
+     "state": "MA",
+     "from": 54913,
+     "to": 6374
+    },
+    {
+     "fid": "bi:922-0",
+     "state": "TX",
+     "from": 11364,
+     "to": 10817
+    },
+    {
+     "fid": "bi:329-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1323-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:939-0",
+     "state": "UT",
+     "from": 14354,
+     "to": 27000
+    },
+    {
+     "fid": "bi:230-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:115-1",
+     "state": "CA",
+     "from": 17609,
+     "to": 27000
+    },
+    {
+     "fid": "bi:406-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:48-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 27000
+    },
+    {
+     "fid": "bi:325-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:388-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:324-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:42-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 27000
+    },
+    {
+     "fid": "bi:233-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:452-0",
+     "state": "CO",
+     "from": 15466,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1270-0",
+     "state": "AZ",
+     "from": 12351,
+     "to": 16572
+    },
+    {
+     "fid": "bi:1321-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:25-0",
+     "state": "AZ",
+     "from": 5729,
+     "to": 19604
+    },
+    {
+     "fid": "bi:232-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:70-0",
+     "state": "CA",
+     "from": 17609,
+     "to": 27000
+    },
+    {
+     "fid": "bi:982-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:407-0",
+     "state": "CA",
+     "from": 10325,
+     "to": 14328
+    },
+    {
+     "fid": "bi:258-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:23-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 27000
+    },
+    {
+     "fid": "bi:47-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 27000
+    },
+    {
+     "fid": "bi:45-0",
+     "state": "AZ",
+     "from": 5729,
+     "to": 803
+    },
+    {
+     "fid": "bi:1322-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1289-0",
+     "state": "VA",
+     "from": 13640,
+     "to": 19876
+    },
+    {
+     "fid": "bi:1400-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1381-0",
+     "state": "MA",
+     "from": 54913,
+     "to": 11804
+    },
+    {
+     "fid": "bi:1331-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1317-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:378-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:56-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 12351
+    },
+    {
+     "fid": "bi:264-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:412-0",
+     "state": "CA",
+     "from": 12745,
+     "to": 14328
+    },
+    {
+     "fid": "bi:156-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:410-0",
+     "state": "CA",
+     "from": 10325,
+     "to": 14328
+    },
+    {
+     "fid": "bi:100-0",
+     "state": "CA",
+     "from": 17609,
+     "to": 27000
+    },
+    {
+     "fid": "bi:146-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:364-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1324-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:43-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 803
+    },
+    {
+     "fid": "bi:1305-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:30-0",
+     "state": "AZ",
+     "from": 16572,
+     "to": 65261
+    },
+    {
+     "fid": "bi:67-0",
+     "state": "AZ",
+     "from": 24211,
+     "to": 176
+    },
+    {
+     "fid": "bi:701-0",
+     "state": "NH",
+     "from": 26510,
+     "to": 15472
+    },
+    {
+     "fid": "bi:1124-0",
+     "state": "UT",
+     "from": 14354,
+     "to": 27000
+    },
+    {
+     "fid": "bi:50-0",
+     "state": "AZ",
+     "from": 19604,
+     "to": 803
+    },
+    {
+     "fid": "bi:1308-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:346-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:426-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:332-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:58-0",
+     "state": "AZ",
+     "from": 65261,
+     "to": 803
+    },
+    {
+     "fid": "bi:351-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:546-0",
+     "state": "IA",
+     "from": 12642,
+     "to": 9417
+    },
+    {
+     "fid": "bi:225-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:808-0",
+     "state": "OK",
+     "from": 3478,
+     "to": 14063
+    },
+    {
+     "fid": "bi:1340-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1162-0",
+     "state": "MO",
+     "from": 10370,
+     "to": 19436
+    },
+    {
+     "fid": "bi:1163-0",
+     "state": "MO",
+     "from": 10370,
+     "to": 19436
+    },
+    {
+     "fid": "bi:1380-0",
+     "state": "MA",
+     "from": 54913,
+     "to": 11804
+    },
+    {
+     "fid": "bi:423-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:326-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1359-0",
+     "state": "OK",
+     "from": 10599,
+     "to": 15474
+    },
+    {
+     "fid": "bi:63-0",
+     "state": "AZ",
+     "from": 24211,
+     "to": 176
+    },
+    {
+     "fid": "bi:145-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:257-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:334-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:380-0",
+     "state": "CA",
+     "from": 16655,
+     "to": 14328
+    },
+    {
+     "fid": "bi:78-0",
+     "state": "CA",
+     "from": 590,
+     "to": 17609
+    },
+    {
+     "fid": "bi:1307-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1179-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1119-0",
+     "state": "WV",
+     "from": 1764,
+     "to": 733
+    },
+    {
+     "fid": "bi:788-0",
+     "state": "OH",
+     "from": 3762,
+     "to": 3755
+    },
+    {
+     "fid": "bi:221-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:328-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1266-0",
+     "state": "NV",
+     "from": 13407,
+     "to": 4356
+    },
+    {
+     "fid": "bi:1266-1",
+     "state": "NV",
+     "from": 13407,
+     "to": 4356
+    },
+    {
+     "fid": "bi:1255-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1319-0",
+     "state": "CA",
+     "from": 16612,
+     "to": 14328
+    },
+    {
+     "fid": "bi:132-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:136-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:411-0",
+     "state": "CA",
+     "from": 10325,
+     "to": 14328
+    },
+    {
+     "fid": "bi:226-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:702-0",
+     "state": "NH",
+     "from": 26510,
+     "to": 15472
+    },
+    {
+     "fid": "bi:1337-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:1339-0",
+     "state": "CA",
+     "from": 19281,
+     "to": 14328
+    },
+    {
+     "fid": "bi:427-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:131-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:140-0",
+     "state": "CA",
+     "from": 11208,
+     "to": 17609
+    },
+    {
+     "fid": "bi:1264-0",
+     "state": "NV",
+     "from": 13407,
+     "to": 4356
+    },
+    {
+     "fid": "bi:1306-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:134-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:349-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1309-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:141-0",
+     "state": "CA",
+     "from": 11208,
+     "to": 17609
+    },
+    {
+     "fid": "bi:421-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:62-0",
+     "state": "AZ",
+     "from": 24211,
+     "to": 176
+    },
+    {
+     "fid": "bi:135-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:130-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:699-0",
+     "state": "NH",
+     "from": 24590,
+     "to": 26510
+    },
+    {
+     "fid": "bi:238-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:408-0",
+     "state": "CA",
+     "from": 12745,
+     "to": 14328
+    },
+    {
+     "fid": "bi:133-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:323-0",
+     "state": "CA",
+     "from": 16534,
+     "to": 14328
+    },
+    {
+     "fid": "bi:340-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:430-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:395-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:107-0",
+     "state": "CA",
+     "from": 590,
+     "to": 17609
+    },
+    {
+     "fid": "bi:262-0",
+     "state": "CA",
+     "from": 16295,
+     "to": 14328
+    },
+    {
+     "fid": "bi:224-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1326-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:123-0",
+     "state": "CA",
+     "from": 17609,
+     "to": 27000
+    },
+    {
+     "fid": "bi:155-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:697-0",
+     "state": "NH",
+     "from": 26510,
+     "to": 13441
+    },
+    {
+     "fid": "bi:137-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:138-0",
+     "state": "CA",
+     "from": 10325,
+     "to": 14328
+    },
+    {
+     "fid": "bi:91-0",
+     "state": "CA",
+     "from": 590,
+     "to": 17609
+    },
+    {
+     "fid": "bi:256-0",
+     "state": "CA",
+     "from": 14328,
+     "to": 27000
+    },
+    {
+     "fid": "bi:1118-0",
+     "state": "WV",
+     "from": 1764,
+     "to": 733
+    },
+    {
+     "fid": "bi:696-0",
+     "state": "NH",
+     "from": 26510,
+     "to": 15472
+    },
+    {
+     "fid": "bi:1117-0",
+     "state": "WV",
+     "from": 1764,
+     "to": 733
+    },
+    {
+     "fid": "epoch:Anthropic Barber Lake",
+     "state": "TX",
+     "from": 4146,
+     "to": 27369
+    },
+    {
+     "fid": "epoch:Google Cedar Rapids",
+     "state": "IA",
+     "from": 11053,
+     "to": 12341
+    },
+    {
+     "fid": "epoch:OpenAI Stargate Milam",
+     "state": "TX",
+     "from": 1273,
+     "to": 55982
+    },
+    {
+     "fid": "epoch:QTS Cedar Rapids",
+     "state": "IA",
+     "from": 11053,
+     "to": 9417
+    }
+   ],
+   "staying_why": {
+    "no other candidate can hold its full load; the site stays where it is": 62,
+    "no other panel candidate; the site stays where it is": 18
+   }
+  },
+  "sensitivity_scenario_b_other_end_of_every_dated_interval": {
+   "label": "Sensitivity scenario B, the other end of every dated interval (Joe, D-107; R2 of D-106): each date entry in force that has a convention at the end of its interval its convention does not sit at, every assignment as the inventory has it, each state's factor recomputed. Umatilla enters at 0.0 points at both caps (316 uncapped) and Portland General at 18.9 points. Besides its own kind of question it differs from the primary run in three ways: the two sites with no load history carry load at the early end of each of their questions (bi:852-0 from 2024; bi:837-0's date and the rest of its capacity at 2011), where the primary run leaves out every utility they reach; Oregon's factor is recomputed with those sites carrying load; and its sample differs (Portland General and Umatilla enter at the dose this history gives them, and any unit with load in this history and no 2009-2011 base leaves). It is a sensitivity scenario, not a bound and not necessarily a one-change comparison with the primary analysis.",
+   "states_built": [
+    "AK",
+    "AL",
+    "AR",
+    "AS",
+    "AZ",
+    "CA",
+    "CO",
+    "CT",
+    "DC",
+    "DE",
+    "FL",
+    "GA",
+    "GU",
+    "HI",
+    "IA",
+    "ID",
+    "IL",
+    "IN",
+    "KS",
+    "KY",
+    "LA",
+    "MA",
+    "MD",
+    "ME",
+    "MI",
+    "MN",
+    "MO",
+    "MS",
+    "MT",
+    "NC",
+    "ND",
+    "NE",
+    "NH",
+    "NJ",
+    "NM",
+    "NV",
+    "NY",
+    "OH",
+    "OK",
+    "OR",
+    "PA",
+    "PR",
+    "RI",
+    "SC",
+    "SD",
+    "TN",
+    "TX",
+    "UT",
+    "VA",
+    "VI",
+    "VT",
+    "WA",
+    "WI",
+    "WV",
+    "WY"
+   ],
+   "states_stopped": {},
+   "sample": {
+    "utilities": 1184,
+    "primary_run_utilities": 1182,
+    "in_this_scenario_not_in_the_primary_run": [
+     {
+      "utility": "15248:OR",
+      "name": "Portland General Electric Co",
+      "change_in_dose_points_this_scenario": {
+       "uncapped": 18.898717,
+       "capped_at_25_points": 18.898717,
+       "capped_at_50_points": 18.898717
+      },
+      "change_in_dose_points_primary_as_assigned": null,
+      "class_in_the_primary_classification": {
+       "uncapped": "no_single_dose",
+       "capped_at_25_points": "no_single_dose",
+       "capped_at_50_points": "no_single_dose"
+      }
+     },
+     {
+      "utility": "19325:OR",
+      "name": "Umatilla Electric Coop Assn",
+      "change_in_dose_points_this_scenario": {
+       "uncapped": 315.841136,
+       "capped_at_25_points": 0.0,
+       "capped_at_50_points": 0.0
+      },
+      "change_in_dose_points_primary_as_assigned": null,
+      "class_in_the_primary_classification": {
+       "uncapped": "no_single_dose",
+       "capped_at_25_points": "no_single_dose",
+       "capped_at_50_points": "no_single_dose"
+      }
+     }
+    ],
+    "in_the_primary_run_not_in_this_scenario": [],
+    "frame_left_out_by_usability_region_size_or_no_dose": 2046
+   },
+   "states_whose_factor_differs_from_the_inventory_and_OR_TX": {
+    "AZ": {
+     "recomputed": 0.5087321846826448,
+     "inventory": 0.490932891004505
+    },
+    "CO": {
+     "recomputed": 0.8819290200800088,
+     "inventory": 0.8233898069292344
+    },
+    "KS": {
+     "recomputed": 0.4124819938719613,
+     "inventory": 0.5717231722117382
+    },
+    "OH": {
+     "recomputed": 0.6457156416270433,
+     "inventory": 0.5744344617254172
+    },
+    "OR": {
+     "recomputed": 0.41249962805698687,
+     "inventory": 0.4174402691339885
+    },
+    "TX": {
+     "recomputed": 3.0,
+     "inventory": 3.0
+    },
+    "VA": {
+     "recomputed": 0.4216210087288602,
+     "inventory": 0.41501257956863474
+    }
+   },
+   "units_whose_load_differs_from_the_reconstruction_in_some_year": {
+    "count": 39,
+    "units": [
+     "10000:KS",
+     "11187:CO",
+     "12260:VA",
+     "12351:AZ",
+     "13050:CO",
+     "13058:CO",
+     "13520:MO",
+     "13640:VA",
+     "14006:OH",
+     "14127:NE",
+     "15248:OR",
+     "15257:CO",
+     "15466:CO",
+     "16572:AZ",
+     "16604:TX",
+     "19325:OR",
+     "19499:CO",
+     "19501:OH",
+     "19604:AZ",
+     "19820:KS",
+     "19876:VA",
+     "24211:AZ",
+     "3542:OH",
+     "3762:OH",
+     "3989:CO",
+     "40228:VA",
+     "4065:OH",
+     "4922:OH",
+     "55937:TX",
+     "5729:AZ",
+     "5773:MN",
+     "65261:AZ",
+     "733:VA",
+     "7752:TX",
+     "7977:OH",
+     "803:AZ",
+     "8198:VA",
+     "84:VA",
+     "9336:CO"
+    ],
+    "what": "against the reconstruction at every setting of the inventory (realise with no settings), in which the two sites with no load history already sit at their early end, so the count is what this scenario's own kind of question moves; the reconstruction equals the dose file for every unit no load-unknown site reaches (the check)"
+   },
+   "sample_units_whose_change_in_dose_differs_from_the_primary_at_some_form": [
+    {
+     "utility": "10000:KS",
+     "name": "Evergy Metro",
+     "this_scenario": {
+      "uncapped": 1.186648,
+      "capped_at_25_points": 1.186648,
+      "capped_at_50_points": 1.186648
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.244127,
+      "capped_at_25_points": 1.244127,
+      "capped_at_50_points": 1.244127
+     }
+    },
+    {
+     "utility": "11187:CO",
+     "name": "City of Longmont",
+     "this_scenario": {
+      "uncapped": 2.80803,
+      "capped_at_25_points": 2.80803,
+      "capped_at_50_points": 2.80803
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 2.621643,
+      "capped_at_25_points": 2.621643,
+      "capped_at_50_points": 2.621643
+     }
+    },
+    {
+     "utility": "12260:VA",
+     "name": "Mecklenburg Electric Cooperative",
+     "this_scenario": {
+      "uncapped": 226.000701,
+      "capped_at_25_points": 21.769798,
+      "capped_at_50_points": 46.769798
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 222.458398,
+      "capped_at_25_points": 21.820428,
+      "capped_at_50_points": 46.820428
+     }
+    },
+    {
+     "utility": "12351:AZ",
+     "name": "City of Mesa - (AZ)",
+     "this_scenario": {
+      "uncapped": 11.393083,
+      "capped_at_25_points": 7.550851,
+      "capped_at_50_points": 11.393083
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 65.966802,
+      "capped_at_25_points": 22.734685,
+      "capped_at_50_points": 42.81759
+     }
+    },
+    {
+     "utility": "13050:CO",
+     "name": "Mountain Parks Electric, Inc",
+     "this_scenario": {
+      "uncapped": 7.780657,
+      "capped_at_25_points": 7.780657,
+      "capped_at_50_points": 7.780657
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 7.264206,
+      "capped_at_25_points": 7.264206,
+      "capped_at_50_points": 7.264206
+     }
+    },
+    {
+     "utility": "13058:CO",
+     "name": "Mountain View Elec Assn, Inc",
+     "this_scenario": {
+      "uncapped": 0.748864,
+      "capped_at_25_points": 0.748864,
+      "capped_at_50_points": 0.748864
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.699157,
+      "capped_at_25_points": 0.699157,
+      "capped_at_50_points": 0.699157
+     }
+    },
+    {
+     "utility": "13520:MO",
+     "name": "New-Mac Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 35.637281,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 35.637281
+     }
+    },
+    {
+     "utility": "13640:VA",
+     "name": "Northern Virginia Elec Coop",
+     "this_scenario": {
+      "uncapped": 206.893319,
+      "capped_at_25_points": 21.201753,
+      "capped_at_50_points": 46.201753
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 201.289307,
+      "capped_at_25_points": 21.261286,
+      "capped_at_50_points": 46.261286
+     }
+    },
+    {
+     "utility": "14006:OH",
+     "name": "Ohio Power Co",
+     "this_scenario": {
+      "uncapped": 12.992647,
+      "capped_at_25_points": 12.992647,
+      "capped_at_50_points": 12.992647
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 12.861753,
+      "capped_at_25_points": 12.861753,
+      "capped_at_50_points": 12.861753
+     }
+    },
+    {
+     "utility": "14127:NE",
+     "name": "Omaha Public Power District",
+     "this_scenario": {
+      "uncapped": 40.662789,
+      "capped_at_25_points": 22.863409,
+      "capped_at_50_points": 39.530076
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 40.665823,
+      "capped_at_25_points": 22.866443,
+      "capped_at_50_points": 39.533109
+     }
+    },
+    {
+     "utility": "15466:CO",
+     "name": "Public Service Co of Colorado",
+     "this_scenario": {
+      "uncapped": 3.042921,
+      "capped_at_25_points": 3.042921,
+      "capped_at_50_points": 3.042921
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.303837,
+      "capped_at_25_points": 3.303837,
+      "capped_at_50_points": 3.303837
+     }
+    },
+    {
+     "utility": "16572:AZ",
+     "name": "Salt River Project",
+     "this_scenario": {
+      "uncapped": 13.432387,
+      "capped_at_25_points": 13.432387,
+      "capped_at_50_points": 13.432387
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 13.120765,
+      "capped_at_25_points": 13.120765,
+      "capped_at_50_points": 13.120765
+     }
+    },
+    {
+     "utility": "16604:TX",
+     "name": "City of San Antonio - (TX)",
+     "this_scenario": {
+      "uncapped": 21.67643,
+      "capped_at_25_points": 15.870257,
+      "capped_at_50_points": 21.67643
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 21.928673,
+      "capped_at_25_points": 16.1225,
+      "capped_at_50_points": 21.928673
+     }
+    },
+    {
+     "utility": "19499:CO",
+     "name": "United Power, Inc",
+     "this_scenario": {
+      "uncapped": 13.784321,
+      "capped_at_25_points": 13.784321,
+      "capped_at_50_points": 13.784321
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 12.869368,
+      "capped_at_25_points": 12.869368,
+      "capped_at_50_points": 12.869368
+     }
+    },
+    {
+     "utility": "19501:OH",
+     "name": "Union Rural Electric Coop, Inc",
+     "this_scenario": {
+      "uncapped": 10.58441,
+      "capped_at_25_points": 10.58441,
+      "capped_at_50_points": 10.58441
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 9.415987,
+      "capped_at_25_points": 9.415987,
+      "capped_at_50_points": 9.415987
+     }
+    },
+    {
+     "utility": "19604:AZ",
+     "name": "USBIA-San Carlos Project",
+     "this_scenario": {
+      "uncapped": 12.25323,
+      "capped_at_25_points": 12.25323,
+      "capped_at_50_points": 12.25323
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 11.82452,
+      "capped_at_25_points": 11.82452,
+      "capped_at_50_points": 11.82452
+     }
+    },
+    {
+     "utility": "19820:KS",
+     "name": "Victory Electric Coop Assn Inc",
+     "this_scenario": {
+      "uncapped": 0.557109,
+      "capped_at_25_points": 0.557109,
+      "capped_at_50_points": 0.557109
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.772185,
+      "capped_at_25_points": 0.772185,
+      "capped_at_50_points": 0.772185
+     }
+    },
+    {
+     "utility": "19876:VA",
+     "name": "Virginia Electric & Power Co",
+     "this_scenario": {
+      "uncapped": 32.237733,
+      "capped_at_25_points": 23.042697,
+      "capped_at_50_points": 32.237733
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 32.606011,
+      "capped_at_25_points": 23.061927,
+      "capped_at_50_points": 32.606011
+     }
+    },
+    {
+     "utility": "24211:AZ",
+     "name": "Tucson Electric Power Co",
+     "this_scenario": {
+      "uncapped": 0.222692,
+      "capped_at_25_points": 0.222692,
+      "capped_at_50_points": 0.222692
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.214901,
+      "capped_at_25_points": 0.214901,
+      "capped_at_50_points": 0.214901
+     }
+    },
+    {
+     "utility": "3542:OH",
+     "name": "Duke Energy Ohio Inc",
+     "this_scenario": {
+      "uncapped": 0.280682,
+      "capped_at_25_points": 0.280682,
+      "capped_at_50_points": 0.280682
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.249698,
+      "capped_at_25_points": 0.249698,
+      "capped_at_50_points": 0.249698
+     }
+    },
+    {
+     "utility": "3762:OH",
+     "name": "City of Cleveland - (OH)",
+     "this_scenario": {
+      "uncapped": 0.880384,
+      "capped_at_25_points": 0.880384,
+      "capped_at_50_points": 0.880384
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.783197,
+      "capped_at_25_points": 0.783197,
+      "capped_at_50_points": 0.783197
+     }
+    },
+    {
+     "utility": "3989:CO",
+     "name": "City of Colorado Springs - (CO)",
+     "this_scenario": {
+      "uncapped": 6.081348,
+      "capped_at_25_points": 6.081348,
+      "capped_at_50_points": 6.081348
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.999746,
+      "capped_at_25_points": 5.999746,
+      "capped_at_50_points": 5.999746
+     }
+    },
+    {
+     "utility": "40228:VA",
+     "name": "Rappahannock Electric Coop",
+     "this_scenario": {
+      "uncapped": 5.068084,
+      "capped_at_25_points": 5.068084,
+      "capped_at_50_points": 5.068084
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.988647,
+      "capped_at_25_points": 4.988647,
+      "capped_at_50_points": 4.988647
+     }
+    },
+    {
+     "utility": "4065:OH",
+     "name": "City of Columbus - (OH)",
+     "this_scenario": {
+      "uncapped": 6.610561,
+      "capped_at_25_points": 6.610561,
+      "capped_at_50_points": 6.610561
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.880815,
+      "capped_at_25_points": 5.880815,
+      "capped_at_50_points": 5.880815
+     }
+    },
+    {
+     "utility": "4922:OH",
+     "name": "Dayton Power & Light Co",
+     "this_scenario": {
+      "uncapped": 0.107491,
+      "capped_at_25_points": 0.107491,
+      "capped_at_50_points": 0.107491
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.095625,
+      "capped_at_25_points": 0.095625,
+      "capped_at_50_points": 0.095625
+     }
+    },
+    {
+     "utility": "55937:TX",
+     "name": "Entergy Texas Inc.",
+     "this_scenario": {
+      "uncapped": 8.800513,
+      "capped_at_25_points": 8.800513,
+      "capped_at_50_points": 8.800513
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.873454,
+      "capped_at_25_points": 4.873454,
+      "capped_at_50_points": 4.873454
+     }
+    },
+    {
+     "utility": "5773:MN",
+     "name": "City of Elk River",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 58.88126,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 50.0
+     }
+    },
+    {
+     "utility": "733:VA",
+     "name": "Appalachian Power Co",
+     "this_scenario": {
+      "uncapped": 0.034505,
+      "capped_at_25_points": 0.034505,
+      "capped_at_50_points": 0.034505
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 0.033964,
+      "capped_at_25_points": 0.033964,
+      "capped_at_50_points": 0.033964
+     }
+    },
+    {
+     "utility": "7752:TX",
+     "name": "Guadalupe Valley Elec Coop Inc",
+     "this_scenario": {
+      "uncapped": 35.342383,
+      "capped_at_25_points": 22.163197,
+      "capped_at_50_points": 33.156259
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 54.580241,
+      "capped_at_25_points": 25.0,
+      "capped_at_50_points": 49.645851
+     }
+    },
+    {
+     "utility": "7977:OH",
+     "name": "City of Hamilton - (OH)",
+     "this_scenario": {
+      "uncapped": 0.0,
+      "capped_at_25_points": 0.0,
+      "capped_at_50_points": 0.0
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 4.412174,
+      "capped_at_25_points": 4.412174,
+      "capped_at_50_points": 4.412174
+     }
+    },
+    {
+     "utility": "803:AZ",
+     "name": "Arizona Public Service Co",
+     "this_scenario": {
+      "uncapped": 15.247957,
+      "capped_at_25_points": 15.247957,
+      "capped_at_50_points": 15.247957
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 14.848957,
+      "capped_at_25_points": 14.848957,
+      "capped_at_50_points": 14.848957
+     }
+    },
+    {
+     "utility": "8198:VA",
+     "name": "City of Harrisonburg - (VA)",
+     "this_scenario": {
+      "uncapped": 5.190745,
+      "capped_at_25_points": 5.190745,
+      "capped_at_50_points": 5.190745
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 5.109386,
+      "capped_at_25_points": 5.109386,
+      "capped_at_50_points": 5.109386
+     }
+    },
+    {
+     "utility": "84:VA",
+     "name": "A & N Electric Coop",
+     "this_scenario": {
+      "uncapped": 1.120111,
+      "capped_at_25_points": 1.120111,
+      "capped_at_50_points": 1.120111
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 1.102555,
+      "capped_at_25_points": 1.102555,
+      "capped_at_50_points": 1.102555
+     }
+    },
+    {
+     "utility": "9336:CO",
+     "name": "CORE Electric Cooperative",
+     "this_scenario": {
+      "uncapped": 4.159378,
+      "capped_at_25_points": 4.159378,
+      "capped_at_50_points": 4.159378
+     },
+     "primary_as_assigned_from_the_dose_file": {
+      "uncapped": 3.883294,
+      "capped_at_25_points": 3.883294,
+      "capped_at_50_points": 3.883294
+     }
+    }
+   ],
+   "units_with_load_and_no_positive_base_no_dose": [
+    "10325:CA",
+    "44372:TX",
+    "65261:AZ"
+   ],
+   "counts": {
+    "date_entries_with_a_convention": 48,
+    "rows_moved": 45,
+    "earlier": 24,
+    "later": 21,
+    "kept_one_year_intervals": [
+     "bi:684-0",
+     "bi:1123-0",
+     "bi:445-0"
+    ],
+    "units_carrying_different_load_on_realised_load": 39,
+    "r2_counts": {
+     "date_entries_with_a_convention": 48,
+     "rows_moved": 45,
+     "earlier": 24,
+     "later": 21
+    },
+    "differs_from_r2": {}
+   },
+   "settings": [
+    {
+     "fid": "bi:817-0",
+     "convention": 2018,
+     "setting": 2012,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:848-0",
+     "convention": 2018,
+     "setting": 2012,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:684-0",
+     "convention": 2015,
+     "setting": 2015,
+     "moves": "none",
+     "why": "a one-year interval keeps its year"
+    },
+    {
+     "fid": "bi:687-0",
+     "convention": 2014,
+     "setting": 2012,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:690-0",
+     "convention": 2015,
+     "setting": 2010,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1123-0",
+     "convention": 2014,
+     "setting": 2014,
+     "moves": "none",
+     "why": "a one-year interval keeps its year"
+    },
+    {
+     "fid": "bi:446-0",
+     "convention": 2009,
+     "setting": 2011,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:445-0",
+     "convention": 2012,
+     "setting": 2012,
+     "moves": "none",
+     "why": "a one-year interval keeps its year"
+    },
+    {
+     "fid": "bi:444-0",
+     "convention": 2013,
+     "setting": 2009,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:667-0",
+     "convention": 2011,
+     "setting": 1999,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end (open below, entered as the enumeration enters it: full load from 2001)"
+    },
+    {
+     "fid": "bi:646-0",
+     "convention": 2020,
+     "setting": 2006,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:616-0",
+     "convention": 2018,
+     "setting": 2015,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:615-0",
+     "convention": 2025,
+     "setting": 2023,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1250-0",
+     "convention": 2011,
+     "setting": 1999,
+     "moves": "earlier",
+     "why": "interior convention: the early end is at least as far from it (open below, entered as the enumeration enters it: full load from 2001)"
+    },
+    {
+     "fid": "bi:833-0",
+     "convention": 2015,
+     "setting": 2019,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:832-0",
+     "convention": 2022,
+     "setting": 2021,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1062-0",
+     "convention": 2015,
+     "setting": 2017,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1074-0",
+     "convention": 2006,
+     "setting": 2011,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1082-0",
+     "convention": 2018,
+     "setting": 2020,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1087-5",
+     "convention": 2020,
+     "setting": 2021,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1090-5",
+     "convention": 2014,
+     "setting": 2015,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:950-5",
+     "convention": 2014,
+     "setting": 2025,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:962-5",
+     "convention": 2021,
+     "setting": 2022,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:969-5",
+     "convention": 2011,
+     "setting": 2012,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:970-1",
+     "convention": 2020,
+     "setting": 2021,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:988-2",
+     "convention": 2019,
+     "setting": 2020,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:434-0",
+     "convention": 2023,
+     "setting": 2024,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:15-0",
+     "convention": 2023,
+     "setting": 2025,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:914-0",
+     "convention": 2021,
+     "setting": 2022,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:907-0",
+     "convention": 2021,
+     "setting": 2022,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:918-0",
+     "convention": 2021,
+     "setting": 2024,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1200-0",
+     "convention": 2006,
+     "setting": 2009,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1280-0",
+     "convention": 2022,
+     "setting": 2023,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1089-2",
+     "convention": 2021,
+     "setting": 2022,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:794-0",
+     "convention": 2022,
+     "setting": 2023,
+     "moves": "later",
+     "why": "convention at the early end: to the late end"
+    },
+    {
+     "fid": "bi:1021-3",
+     "convention": 2023,
+     "setting": 2019,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1086-3",
+     "convention": 2015,
+     "setting": 2012,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1091-4",
+     "convention": 2017,
+     "setting": 2016,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1274-0",
+     "convention": 2013,
+     "setting": 2010,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:1281-1",
+     "convention": 2023,
+     "setting": 2011,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:964-0",
+     "convention": 2020,
+     "setting": 2017,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:989-6",
+     "convention": 2016,
+     "setting": 2015,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:978-0",
+     "convention": 2021,
+     "setting": 2020,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:820-0",
+     "convention": 2019,
+     "setting": 2018,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end"
+    },
+    {
+     "fid": "bi:823-0",
+     "convention": 2019,
+     "setting": 1999,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end (open below, entered as the enumeration enters it: full load from 2001)"
+    },
+    {
+     "fid": "bi:822-0",
+     "convention": 2019,
+     "setting": 1999,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end (open below, entered as the enumeration enters it: full load from 2001)"
+    },
+    {
+     "fid": "bi:819-0",
+     "convention": 2022,
+     "setting": 1999,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end (open below, entered as the enumeration enters it: full load from 2001)"
+    },
+    {
+     "fid": "bi:846-0",
+     "convention": 2022,
+     "setting": 1999,
+     "moves": "earlier",
+     "why": "convention at the late end: to the early end (open below, entered as the enumeration enters it: full load from 2001)"
+    }
+   ]
+  }
+ },
+ "dependency_on_the_ownership_repair": {
+  "reads_a_design_eligibility_list_or_matched_set": false,
+  "pipeline_analysis_modules_imported_by_this_run": [
+   "pipeline.analysis.estimator",
+   "pipeline.analysis.power_simulation",
+   "pipeline.analysis.second_number",
+   "pipeline.analysis.usable_flag"
+  ],
+  "ownership_imported": false,
+  "why": "the scenario sample is second_number.build_frame over every panel unit less the price hold (usability, market region, size band) and the doses are realised loads over sales; no design, eligibility list, matched set or ownership table is read. The primary classes are read from second_number_design.json's per-utility classes, which come from doses and histories only."
+ },
+ "uncertain": [
+  "I am uncertain whether the capacity test's starting load matches what the build used before its overrides: the rule here starts from what each candidate carries in the inventory as assigned less the 460 sites being placed (every other site on it, at its scaled full load, as pick_utilities counts load) and adds each of the 460 where it lands; build_inventory.pick_utilities started from nothing and placed every site in one pass before the overrides. The rule is stated, not a replication.",
+  "Whether Texas's factor moves under B: it is clipped at 3.0 in the inventory; the factor recomputed under B is reported in the factor table, and the raw factor before the clip is not reported."
+ ]
+}

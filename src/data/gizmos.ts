@@ -46,6 +46,22 @@ export function categoryFromSlug(slug: string): Category | undefined {
 
 export const gizmos: Gizmo[] = [
   {
+    slug: "data-center-utility-bills",
+    title: "Do Data Centers Raise Your Electric Bill?",
+    categories: ["State Government", "City Government"],
+    date: "2026-11",
+    dek: "Politicians in both parties say they do. I went through more than 2,200 data centers and 25 years of public utility data to check.",
+    summary:
+      "Politicians in both parties say data centers raise household electric bills. I went through 2,244 data centers and 25 years of federal utility data to check. From what I found, they probably do not raise household electricity prices by more than 5%, and very unlikely by more than 10%. The piece maps the data centers, prices what it would cost to pay households back, and lists what the test cannot see.",
+    seoTitle: "Do Data Centers Raise Electricity Bills? What 25 Years of Utility Data Show",
+    metaDescription:
+      "Probably not by more than 5%, and very unlikely by more than 10%. A test of household electricity prices at utilities that took on data centers.",
+    links: [
+      { label: "Technical version", url: "/gizmo/data-center-utility-bills/methodology" },
+      { label: "Code, plan and results (GitHub)", url: "https://github.com/eichenbaumj/gizmowarehouse.org/tree/main/gizmos/data-center-utility-bills" },
+    ],
+  },
+  {
     slug: "hoyt-schermerhorn-crime-analysis",
     title: "The Trouble With Hoyt-Schermerhorn",
     dek: "More violent complaints are recorded here than anywhere else in Brooklyn. The count has more than tripled since 2006, while the city's barely moved. A third of them are logged at one courthouse. I wanted to know what the rest are.",

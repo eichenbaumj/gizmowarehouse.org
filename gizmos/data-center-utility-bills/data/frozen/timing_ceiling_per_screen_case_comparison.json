@@ -1,0 +1,274 @@
+{
+ "what_this_is": "The record of what the ceiling amendment changed; it decides nothing and is never read by treatment_bounds. Until 2026-11-18 the configurations of the three screen cases were summed against the 100,000 ceiling, and over it every case went to the envelope. Joe amended the rule at Stop 3 (2026-11-18), with these consequences known: the ceiling applies to each predefined screen case's enumeration separately, a case at or under it is enumerated completely, and only a case over it goes to the envelope. Each row is a utility whose verdict differs between the two rules.",
+ "ceiling": 100000,
+ "screen_shifts": [
+  0,
+  3,
+  5
+ ],
+ "rule_in_force": "per_screen_case",
+ "superseded_rule": "summed_until_2026_11_18",
+ "utilities_over_the_ceiling_when_summed_evaluated": 44,
+ "summed_rule_envelope_utilities_evaluated_under_the_rule_in_force": [
+  "12351:AZ at 2%",
+  "13640:VA at 2%",
+  "13961:AZ at 2%",
+  "13961:AZ at 5%",
+  "14328:CA at 2%",
+  "14328:CA at 5%",
+  "14543:AZ at 2%",
+  "14543:AZ at 5%",
+  "14626:TX at 2%",
+  "14626:TX at 5%",
+  "15466:CO at 2%",
+  "15466:CO at 5%",
+  "16534:CA at 2%",
+  "16534:CA at 5%",
+  "16572:AZ at 2%",
+  "16572:AZ at 5%",
+  "16655:CA at 2%",
+  "16655:CA at 5%",
+  "19016:AZ at 2%",
+  "19016:AZ at 5%",
+  "19325:OR at 2%",
+  "19325:OR at 5%",
+  "19604:AZ at 2%",
+  "19604:AZ at 5%",
+  "2469:AZ at 2%",
+  "2469:AZ at 5%",
+  "27000:AZ at 2%",
+  "27000:AZ at 5%",
+  "27000:CA at 2%",
+  "27000:CA at 5%",
+  "27000:CO at 2%",
+  "27000:CO at 5%",
+  "40355:AZ at 2%",
+  "40355:AZ at 5%",
+  "44372:TX at 2%",
+  "44372:TX at 5%",
+  "5729:AZ at 2%",
+  "5729:AZ at 5%",
+  "65261:AZ at 2%",
+  "65261:AZ at 5%",
+  "803:AZ at 2%",
+  "803:AZ at 5%",
+  "8139:AZ at 2%",
+  "8139:AZ at 5%"
+ ],
+ "utilities_whose_verdict_differs": [
+  {
+   "utility": "803:AZ",
+   "name": "Arizona Public Service Co",
+   "theta": 0.02,
+   "configurations_by_screen_shift": {
+    "0": 49152,
+    "3": 49152,
+    "5": 49152
+   },
+   "configurations_summed": 147456,
+   "summed_rule_until_2026_11_18": {
+    "keeps_its_place": null,
+    "method": "envelope",
+    "status": "unsettled: 147456 configurations, over the ceiling of 100000, and the envelope cannot settle it; uncertain in anchoring, assignment, comparison eligibility, timing"
+   },
+   "in_force_per_screen_case": {
+    "keeps_its_place": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "failure": null,
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    }
+   }
+  },
+  {
+   "utility": "803:AZ",
+   "name": "Arizona Public Service Co",
+   "theta": 0.05,
+   "configurations_by_screen_shift": {
+    "0": 49152,
+    "3": 49152,
+    "5": 49152
+   },
+   "configurations_summed": 147456,
+   "summed_rule_until_2026_11_18": {
+    "keeps_its_place": null,
+    "method": "envelope",
+    "status": "unsettled: 147456 configurations, over the ceiling of 100000, and the envelope cannot settle it; uncertain in anchoring, assignment, comparison eligibility, timing"
+   },
+   "in_force_per_screen_case": {
+    "keeps_its_place": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:16-0 assignment": 5729,
+      "bi:15-0 date": 2023,
+      "bi:27-0 assignment": 65261,
+      "bi:51-0 assignment": 5729,
+      "bi:54-0 assignment": 65261,
+      "bi:33-0 assignment": 65261,
+      "bi:29-0 assignment": 65261,
+      "bi:35-0 assignment": 803,
+      "bi:38-0 assignment": 803,
+      "bi:1269-0 assignment": 803,
+      "bi:25-0 assignment": 5729,
+      "bi:45-0 assignment": 5729,
+      "bi:43-0 assignment": 65261,
+      "bi:50-0 assignment": 803,
+      "bi:58-0 assignment": 803
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2022",
+     "crossing_no_anchoring": "2020",
+     "largest_share_no_anchoring": 0.39424496770453843
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    }
+   }
+  },
+  {
+   "utility": "16534:CA",
+   "name": "Sacramento Municipal Util Dist",
+   "theta": 0.02,
+   "configurations_by_screen_shift": {
+    "0": 65536,
+    "3": 65536,
+    "5": 65536
+   },
+   "configurations_summed": 196608,
+   "summed_rule_until_2026_11_18": {
+    "keeps_its_place": null,
+    "method": "envelope",
+    "status": "unsettled: 196608 configurations, over the ceiling of 100000, and the envelope cannot settle it; uncertain in assignment, comparison eligibility"
+   },
+   "in_force_per_screen_case": {
+    "keeps_its_place": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:267-0 assignment": 14328,
+      "bi:1338-0 assignment": 16534,
+      "bi:206-0 assignment": 16534,
+      "bi:246-0 assignment": 16534,
+      "bi:1361-0 assignment": 16534,
+      "bi:248-0 assignment": 16534,
+      "bi:327-0 assignment": 16534,
+      "bi:324-0 assignment": 16534,
+      "bi:325-0 assignment": 16534,
+      "bi:329-0 assignment": 16534,
+      "bi:264-0 assignment": 16534,
+      "bi:145-0 assignment": 16534,
+      "bi:326-0 assignment": 16534,
+      "bi:328-0 assignment": 16534,
+      "bi:1337-0 assignment": 16534,
+      "bi:323-0 assignment": 16534
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2017",
+     "crossing_no_anchoring": "2017",
+     "largest_share_no_anchoring": 0.03498904620376492
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    }
+   }
+  },
+  {
+   "utility": "16534:CA",
+   "name": "Sacramento Municipal Util Dist",
+   "theta": 0.05,
+   "configurations_by_screen_shift": {
+    "0": 65536,
+    "3": 65536,
+    "5": 65536
+   },
+   "configurations_summed": 196608,
+   "summed_rule_until_2026_11_18": {
+    "keeps_its_place": null,
+    "method": "envelope",
+    "status": "unsettled: 196608 configurations, over the ceiling of 100000, and the envelope cannot settle it; uncertain in assignment, comparison eligibility"
+   },
+   "in_force_per_screen_case": {
+    "keeps_its_place": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:267-0 assignment": 16534,
+      "bi:1338-0 assignment": 16534,
+      "bi:206-0 assignment": 16534,
+      "bi:246-0 assignment": 16534,
+      "bi:1361-0 assignment": 16534,
+      "bi:248-0 assignment": 16534,
+      "bi:327-0 assignment": 16534,
+      "bi:324-0 assignment": 16534,
+      "bi:325-0 assignment": 16534,
+      "bi:329-0 assignment": 16534,
+      "bi:264-0 assignment": 16534,
+      "bi:145-0 assignment": 16534,
+      "bi:326-0 assignment": 16534,
+      "bi:328-0 assignment": 16534,
+      "bi:1337-0 assignment": 16534,
+      "bi:323-0 assignment": 16534
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2012",
+     "crossing_no_anchoring": "2004",
+     "largest_share_no_anchoring": 0.08388717714233243
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    }
+   }
+  }
+ ],
+ "fingerprint": {
+  "files": {
+   "pipeline/facilities/verified/pass_c_corrections_s17.json": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22",
+   "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+   "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+   "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+   "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+   "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+   "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+   "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+   "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+   "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+   "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+   "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+   "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+   "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+   "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+   "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+   "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+  },
+  "settings": {
+   "thresholds": [
+    0.02,
+    0.05
+   ],
+   "screen_shifts": [
+    0,
+    3,
+    5
+   ],
+   "ceiling": 100000,
+   "ceiling_rule": "per_screen_case",
+   "compared_with": "summed_until_2026_11_18"
+  }
+ }
+}

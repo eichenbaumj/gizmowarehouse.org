@@ -1,0 +1,6244 @@
+{
+ "what_this_is": "A labelled comparison that decides nothing and is never read by treatment_bounds or anything downstream. In force (Joe, Stop 3, 2026-11-18), bi:822-0 and bi:823-0 are open below because the record does not establish their permits' kind ('new source' is the recorder's note, not DEQ's wording). Here they are instead bounded not before 2018, with everything else as in force.",
+ "entries_used_for_the_comparison": [
+  {
+   "fid": "bi:823-0",
+   "kind": "date",
+   "earliest": 2018,
+   "latest": 2019,
+   "never_is_possible": false,
+   "convention": 2019,
+   "why": "labelled comparison only (decides nothing): not before 2018, the recorder's note 'new source' counted as the permit's kind; in force the row is open below",
+   "ends": "tested"
+  },
+  {
+   "fid": "bi:822-0",
+   "kind": "date",
+   "earliest": 2018,
+   "latest": 2019,
+   "never_is_possible": false,
+   "convention": 2019,
+   "why": "labelled comparison only (decides nothing): not before 2018, the recorder's note 'new source' counted as the permit's kind; in force the row is open below",
+   "ends": "tested"
+  }
+ ],
+ "utilities_whose_verdict_differs": [],
+ "every_oregon_utility": [
+  {
+   "utility": "907:OR",
+   "name": "City of Ashland - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "1176:OR",
+   "name": "City of Bandon - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "1736:OR",
+   "name": "Blachly-Lane County Coop El Assn",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "1738:OR",
+   "name": "Bonneville Power Administration",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "2955:OR",
+   "name": "Canby Utility Board",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3136:OR",
+   "name": "City of Cascade Locks - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3240:OR",
+   "name": "Central Electric Coop Inc - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3264:OR",
+   "name": "Central Lincoln People's Ut Dt",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3739:OR",
+   "name": "Clearwater Power Company",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4005:OR",
+   "name": "Columbia Basin Elec Cooperative, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4008:OR",
+   "name": "Columbia Power Coop Assn Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4041:OR",
+   "name": "Columbia Rural Elec Assn, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4317:OR",
+   "name": "Coos-Curry Electric Coop, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4743:OR",
+   "name": "Consumers Power, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "5327:OR",
+   "name": "Douglas Electric Coop - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "5354:OR",
+   "name": "City of Drain - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "6022:OR",
+   "name": "City of Eugene - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "6582:OR",
+   "name": "City of Forest Grove",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "8515:OR",
+   "name": "City of Hermiston",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "8830:OR",
+   "name": "Hood River Electric Coop",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "9191:OR",
+   "name": "Idaho Power Co",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "10681:OR",
+   "name": "Lane Electric Coop Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "11589:OR",
+   "name": "Harney Electric Coop, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12187:OR",
+   "name": "City of McMinnville - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12439:OR",
+   "name": "Midstate Electric Coop, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12615:OR",
+   "name": "City of Milton-Freewater- (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12789:OR",
+   "name": "City of Monmouth - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "13788:OR",
+   "name": "Northern Wasco County PUD - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2025",
+     "latest_crossing": "2025",
+     "places": [
+      "late"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2025",
+     "latest_crossing": "2025",
+     "places": [
+      "late"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "14109:OR",
+   "name": "Oregon Trail El Cons Coop, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "14354:OR",
+   "name": "PacifiCorp",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 28,
+     "3": 28,
+     "5": 28
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:848-0 assignment": 14354,
+      "bi:848-0 date": 2012,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2012",
+     "crossing_no_anchoring": "2012",
+     "largest_share_no_anchoring": 0.23811360868031067
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2012",
+     "latest_crossing": "2014",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2014",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 28,
+     "3": 28,
+     "5": 28
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:848-0 assignment": 14354,
+      "bi:848-0 date": 2012,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2012",
+     "crossing_no_anchoring": "2012",
+     "largest_share_no_anchoring": 0.23811360868031067
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2012",
+     "latest_crossing": "2014",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2014",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "15248:OR",
+   "name": "Portland General Electric Co",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 2430,
+     "3": 2430,
+     "5": 2430
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:832-0 date": 2021,
+      "bi:833-0 date": 2015,
+      "bi:837-0 date": 2011,
+      "bi:837-0 capacity": 2011,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2021",
+     "crossing_no_anchoring": "2016",
+     "largest_share_no_anchoring": 0.3271341726785295
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2021",
+     "latest_crossing": "2021",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2021",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 2430,
+     "3": 2430,
+     "5": 2430
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:832-0 date": 2021,
+      "bi:833-0 date": 2015,
+      "bi:837-0 date": 2011,
+      "bi:837-0 capacity": 2011,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2021",
+     "crossing_no_anchoring": "2016",
+     "largest_share_no_anchoring": 0.3271341726785295
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2021",
+     "latest_crossing": "2021",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2021",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "16555:OR",
+   "name": "Salem Electric - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "17839:OR",
+   "name": "City of Springfield - (OR)",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "18260:OR",
+   "name": "Surprise Valley Electrification",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "18917:OR",
+   "name": "Tillamook Peoples Utility Dist",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "19325:OR",
+   "name": "Umatilla Electric Coop Assn",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": null,
+    "keeps_with_assignment_as_mapped": null,
+    "method": "envelope",
+    "status": "unsettled: every screen case over the ceiling of 100000 on its own (0: 99574272, 3: 99574272, 5: 99574272), and the envelope cannot settle it; uncertain in anchoring, assignment, comparison eligibility, timing",
+    "configurations_by_screen_shift": {
+     "0": 99574272,
+     "3": 99574272,
+     "5": 99574272
+    },
+    "by_screen_shift": {
+     "0": null,
+     "3": null,
+     "5": null
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": null,
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2013",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": null,
+    "keeps_with_assignment_as_mapped": null,
+    "method": "envelope",
+    "status": "unsettled: every screen case over the ceiling of 100000 on its own (0: 903168, 3: 903168, 5: 903168), and the envelope cannot settle it; uncertain in anchoring, assignment, comparison eligibility, timing",
+    "configurations_by_screen_shift": {
+     "0": 903168,
+     "3": 903168,
+     "5": 903168
+    },
+    "by_screen_shift": {
+     "0": null,
+     "3": null,
+     "5": null
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": null,
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2013",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "20138:OR",
+   "name": "Wasco Electric Coop, Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "20385:OR",
+   "name": "West Oregon Electric Coop Inc",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "27000:OR",
+   "name": "WAPA-- Western Area Power Administration",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "28541:OR",
+   "name": "Clatskanie Peoples Util Dist",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "40437:OR",
+   "name": "Emerald People's Utility Dist",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "40438:OR",
+   "name": "Columbia River Peoples Ut Dist",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "65352:OR",
+   "name": "Umpqua Indian Utility Cooperative",
+   "theta": 0.02,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "907:OR",
+   "name": "City of Ashland - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "1176:OR",
+   "name": "City of Bandon - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "1736:OR",
+   "name": "Blachly-Lane County Coop El Assn",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "1738:OR",
+   "name": "Bonneville Power Administration",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "2955:OR",
+   "name": "Canby Utility Board",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3136:OR",
+   "name": "City of Cascade Locks - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3240:OR",
+   "name": "Central Electric Coop Inc - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3264:OR",
+   "name": "Central Lincoln People's Ut Dt",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "3739:OR",
+   "name": "Clearwater Power Company",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4005:OR",
+   "name": "Columbia Basin Elec Cooperative, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4008:OR",
+   "name": "Columbia Power Coop Assn Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4041:OR",
+   "name": "Columbia Rural Elec Assn, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4317:OR",
+   "name": "Coos-Curry Electric Coop, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "4743:OR",
+   "name": "Consumers Power, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "5327:OR",
+   "name": "Douglas Electric Coop - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "5354:OR",
+   "name": "City of Drain - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "6022:OR",
+   "name": "City of Eugene - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "6582:OR",
+   "name": "City of Forest Grove",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "8515:OR",
+   "name": "City of Hermiston",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "8830:OR",
+   "name": "Hood River Electric Coop",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "9191:OR",
+   "name": "Idaho Power Co",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "10681:OR",
+   "name": "Lane Electric Coop Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "11589:OR",
+   "name": "Harney Electric Coop, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12187:OR",
+   "name": "City of McMinnville - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12439:OR",
+   "name": "Midstate Electric Coop, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12615:OR",
+   "name": "City of Milton-Freewater- (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "12789:OR",
+   "name": "City of Monmouth - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "13788:OR",
+   "name": "Northern Wasco County PUD - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2025",
+     "latest_crossing": "2025",
+     "places": [
+      "late"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2025",
+     "latest_crossing": "2025",
+     "places": [
+      "late"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "late",
+     "crossing": "2025",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "14109:OR",
+   "name": "Oregon Trail El Cons Coop, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "14354:OR",
+   "name": "PacifiCorp",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 28,
+     "3": 28,
+     "5": 28
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:848-0 assignment": 14354,
+      "bi:848-0 date": 2012,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2014",
+     "crossing_no_anchoring": "2013",
+     "largest_share_no_anchoring": 0.23811360868031067
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2014",
+     "latest_crossing": "2018",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2018",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 28,
+     "3": 28,
+     "5": 28
+    },
+    "by_screen_shift": {
+     "0": false,
+     "3": false,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 0,
+     "settings": {
+      "bi:848-0 assignment": 14354,
+      "bi:848-0 date": 2012,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2014",
+     "crossing_no_anchoring": "2013",
+     "largest_share_no_anchoring": 0.23811360868031067
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2014",
+     "latest_crossing": "2018",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2018",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "15248:OR",
+   "name": "Portland General Electric Co",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 2430,
+     "3": 2430,
+     "5": 2430
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 5,
+     "settings": {
+      "bi:832-0 date": 2021,
+      "bi:833-0 date": 2015,
+      "bi:837-0 date": 2011,
+      "bi:837-0 capacity": 2011,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2022",
+     "crossing_no_anchoring": "2020",
+     "largest_share_no_anchoring": 0.3465110995921826
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2022",
+     "latest_crossing": "2022",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2022",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": false,
+    "keeps_with_assignment_as_mapped": false,
+    "method": "exact",
+    "status": "does not keep its place",
+    "configurations_by_screen_shift": {
+     "0": 2430,
+     "3": 2430,
+     "5": 2430
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": false
+    },
+    "failure": {
+     "screen_shift": 5,
+     "settings": {
+      "bi:832-0 date": 2021,
+      "bi:833-0 date": 2015,
+      "bi:837-0 date": 2011,
+      "bi:837-0 capacity": 2011,
+      "bi:852-0 date": 2024
+     },
+     "place_as_built": "cohort",
+     "crossing_as_built": "2022",
+     "crossing_no_anchoring": "2020",
+     "largest_share_no_anchoring": 0.3465110995921826
+    },
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": "2022",
+     "latest_crossing": "2022",
+     "places": [
+      "cohort"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2022",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "16555:OR",
+   "name": "Salem Electric - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "17839:OR",
+   "name": "City of Springfield - (OR)",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "18260:OR",
+   "name": "Surprise Valley Electrification",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "18917:OR",
+   "name": "Tillamook Peoples Utility Dist",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "19325:OR",
+   "name": "Umatilla Electric Coop Assn",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": null,
+    "keeps_with_assignment_as_mapped": null,
+    "method": "envelope",
+    "status": "unsettled: every screen case over the ceiling of 100000 on its own (0: 99574272, 3: 99574272, 5: 99574272), and the envelope cannot settle it; uncertain in anchoring, assignment, comparison eligibility, timing",
+    "configurations_by_screen_shift": {
+     "0": 99574272,
+     "3": 99574272,
+     "5": 99574272
+    },
+    "by_screen_shift": {
+     "0": null,
+     "3": null,
+     "5": null
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": null,
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2013",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": null,
+    "keeps_with_assignment_as_mapped": null,
+    "method": "envelope",
+    "status": "unsettled: every screen case over the ceiling of 100000 on its own (0: 903168, 3: 903168, 5: 903168), and the envelope cannot settle it; uncertain in anchoring, assignment, comparison eligibility, timing",
+    "configurations_by_screen_shift": {
+     "0": 903168,
+     "3": 903168,
+     "5": 903168
+    },
+    "by_screen_shift": {
+     "0": null,
+     "3": null,
+     "5": null
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": null,
+    "reference": {
+     "defined": true,
+     "place": "cohort",
+     "crossing": "2013",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "20138:OR",
+   "name": "Wasco Electric Coop, Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "20385:OR",
+   "name": "West Oregon Electric Coop Inc",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "27000:OR",
+   "name": "WAPA-- Western Area Power Administration",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "28541:OR",
+   "name": "Clatskanie Peoples Util Dist",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "40437:OR",
+   "name": "Emerald People's Utility Dist",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "40438:OR",
+   "name": "Columbia River Peoples Ut Dist",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  },
+  {
+   "utility": "65352:OR",
+   "name": "Umpqua Indian Utility Cooperative",
+   "theta": 0.05,
+   "in_force": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   },
+   "looser_reading": {
+    "keeps_its_place": true,
+    "keeps_with_assignment_as_mapped": true,
+    "method": "exact",
+    "status": "keeps its place within the modeled histories",
+    "configurations_by_screen_shift": {
+     "0": 1,
+     "3": 1,
+     "5": 1
+    },
+    "by_screen_shift": {
+     "0": true,
+     "3": true,
+     "5": true
+    },
+    "failure": null,
+    "fails_only_open_below": false,
+    "lower_end_that_would_let_it_stay": null,
+    "range": {
+     "earliest_crossing": null,
+     "latest_crossing": "never",
+     "places": [
+      "comparison"
+     ]
+    },
+    "reference": {
+     "defined": true,
+     "place": "comparison",
+     "crossing": "never",
+     "why_undefined": null,
+     "undefined_by": []
+    }
+   }
+  }
+ ],
+ "fingerprint": {
+  "files": {
+   "pipeline/facilities/verified/pass_c_corrections_s17.json": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22",
+   "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+   "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+   "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+   "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+   "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+   "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+   "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+   "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+   "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+   "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+   "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+   "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+   "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+   "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+   "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+   "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+  },
+  "settings": {
+   "thresholds": [
+    0.02,
+    0.05
+   ],
+   "screen_shifts": [
+    0,
+    3,
+    5
+   ],
+   "ceiling": 100000,
+   "ceiling_rule": "per_screen_case",
+   "looser_reading": {
+    "bi:822-0": 2018,
+    "bi:823-0": 2018
+   }
+  }
+ }
+}

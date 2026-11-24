@@ -1,0 +1,4469 @@
+{
+  "what_this_is": "D-46, ruling 5 as amended. Within each state's 2024 remainder, the largest number of eligible comparison utilities that could fail the 0.5% rule. A description of a limit: it moves no one in or out of any set.",
+  "read_this_first": [
+    "It takes the unanchored inventory's assignments as they stand and does not search over the assignment alternatives of ruling 4.",
+    "'Somewhere in the period' is the number that could each fail in some year under one feasible spread of hidden load that does not shrink; their years can differ. 'In the same year' is the number that could be at 0.5% or more in one calendar year.",
+    "The largest number is not the expected number. The smallest is zero: the remainder may be outside the panel (ERCOT's wires companies, behind-the-meter and wholesale-direct sites) or may be error in the state total.",
+    "Failing the 0.5% rule is not the same as biasing the estimate: hidden load that was steady through a window need not move prices differently.",
+    "The state total is itself an estimate (D-2), so the remainder is too. The sales bound is an inference from quantities.",
+    "Host figures are each host's own worst case, with every state's remainder spent on that host's matches first. Hosts that share a state cannot all be at their worst together: 'hosts individually vulnerable; the scenarios need not coexist'."
+  ],
+  "eligible_comparison_utilities": 3019,
+  "above_the_customer_floor": 1742,
+  "period": [
+    2001,
+    2024
+  ],
+  "states": {
+    "AK": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.0,
+      "all": {
+        "eligible_comparison_utilities": 78,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 6,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 72,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 8,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 36,
+            "hidden_gwh": 0.11,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 72,
+            "hidden_gwh": 31.4,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 12,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 12,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.28,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.61,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 6,
+            "hidden_gwh": 2.58,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 12,
+            "hidden_gwh": 28.98,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "AL": {
+      "state_remainder_gwh": 634.5,
+      "state_total_twh": 1.693,
+      "all": {
+        "eligible_comparison_utilities": 63,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 61,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 61,
+        "could_be_at_the_level_in_the_same_year": 61,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 61,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.03,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 7,
+            "hidden_gwh": 0.97,
+            "share_of_the_state_total": 0.0006
+          },
+          "half": {
+            "utilities": 31,
+            "hidden_gwh": 21.7,
+            "share_of_the_state_total": 0.0128
+          },
+          "all": {
+            "utilities": 61,
+            "hidden_gwh": 409.62,
+            "share_of_the_state_total": 0.2419
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 50,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 50,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 50,
+        "could_be_at_the_level_in_the_same_year": 50,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 50,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.31,
+            "share_of_the_state_total": 0.0002
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 2.01,
+            "share_of_the_state_total": 0.0012
+          },
+          "half": {
+            "utilities": 25,
+            "hidden_gwh": 26.49,
+            "share_of_the_state_total": 0.0156
+          },
+          "all": {
+            "utilities": 50,
+            "hidden_gwh": 381.02,
+            "share_of_the_state_total": 0.2251
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "AR": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.018,
+      "all": {
+        "eligible_comparison_utilities": 31,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 31,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0042
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.91,
+            "share_of_the_state_total": 0.0508
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 13.03,
+            "share_of_the_state_total": 0.7241
+          },
+          "all": {
+            "utilities": 31,
+            "hidden_gwh": 196.67,
+            "share_of_the_state_total": 10.9263
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 27,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 27,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.4,
+            "share_of_the_state_total": 0.0221
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 1.45,
+            "share_of_the_state_total": 0.0806
+          },
+          "half": {
+            "utilities": 14,
+            "hidden_gwh": 15.79,
+            "share_of_the_state_total": 0.877
+          },
+          "all": {
+            "utilities": 27,
+            "hidden_gwh": 195.76,
+            "share_of_the_state_total": 10.8755
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "AS": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": null,
+      "all": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "no_state_total"
+    },
+    "AZ": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 7.396,
+      "all": {
+        "eligible_comparison_utilities": 35,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 3,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 32,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.03,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.21,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 2.14,
+            "share_of_the_state_total": 0.0003
+          },
+          "all": {
+            "utilities": 32,
+            "hidden_gwh": 40.83,
+            "share_of_the_state_total": 0.0055
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 17,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 17,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.11,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.22,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 9,
+            "hidden_gwh": 4.07,
+            "share_of_the_state_total": 0.0006
+          },
+          "all": {
+            "utilities": 17,
+            "hidden_gwh": 38.28,
+            "share_of_the_state_total": 0.0052
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "CA": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 9.058,
+      "all": {
+        "eligible_comparison_utilities": 43,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 10,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 33,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.25,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 17,
+            "hidden_gwh": 5.93,
+            "share_of_the_state_total": 0.0007
+          },
+          "all": {
+            "utilities": 33,
+            "hidden_gwh": 74.0,
+            "share_of_the_state_total": 0.0082
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 27,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 27,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.17,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.67,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 14,
+            "hidden_gwh": 7.39,
+            "share_of_the_state_total": 0.0008
+          },
+          "all": {
+            "utilities": 27,
+            "hidden_gwh": 73.05,
+            "share_of_the_state_total": 0.0081
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "CO": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 1.956,
+      "all": {
+        "eligible_comparison_utilities": 51,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 51,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 0.07,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 26,
+            "hidden_gwh": 3.59,
+            "share_of_the_state_total": 0.0018
+          },
+          "all": {
+            "utilities": 51,
+            "hidden_gwh": 66.97,
+            "share_of_the_state_total": 0.0342
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 31,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 31,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.25,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 1.15,
+            "share_of_the_state_total": 0.0006
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 9.44,
+            "share_of_the_state_total": 0.0048
+          },
+          "all": {
+            "utilities": 31,
+            "hidden_gwh": 63.08,
+            "share_of_the_state_total": 0.0322
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "CT": {
+      "state_remainder_gwh": 269.0,
+      "state_total_twh": 0.269,
+      "all": {
+        "eligible_comparison_utilities": 11,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 10,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 10,
+        "could_be_at_the_level_in_the_same_year": 10,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 10,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.11,
+            "share_of_the_state_total": 0.0004
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.11,
+            "share_of_the_state_total": 0.0004
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 2.6,
+            "share_of_the_state_total": 0.0097
+          },
+          "all": {
+            "utilities": 10,
+            "hidden_gwh": 149.79,
+            "share_of_the_state_total": 0.5568
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 8,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 8,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 8,
+        "could_be_at_the_level_in_the_same_year": 8,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 8,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.29,
+            "share_of_the_state_total": 0.0011
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.29,
+            "share_of_the_state_total": 0.0011
+          },
+          "half": {
+            "utilities": 4,
+            "hidden_gwh": 3.41,
+            "share_of_the_state_total": 0.0127
+          },
+          "all": {
+            "utilities": 8,
+            "hidden_gwh": 148.92,
+            "share_of_the_state_total": 0.5536
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "DC": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.0,
+      "all": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 1,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 1,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 1,
+            "hidden_gwh": 36.9,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "DE": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.022,
+      "all": {
+        "eligible_comparison_utilities": 10,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 10,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0035
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0035
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 1.84,
+            "share_of_the_state_total": 0.0839
+          },
+          "all": {
+            "utilities": 10,
+            "hidden_gwh": 15.32,
+            "share_of_the_state_total": 0.6963
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 9,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 9,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.38,
+            "share_of_the_state_total": 0.0173
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.38,
+            "share_of_the_state_total": 0.0173
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 2.46,
+            "share_of_the_state_total": 0.1119
+          },
+          "all": {
+            "utilities": 9,
+            "hidden_gwh": 15.24,
+            "share_of_the_state_total": 0.6927
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "FL": {
+      "state_remainder_gwh": 707.5,
+      "state_total_twh": 1.303,
+      "all": {
+        "eligible_comparison_utilities": 48,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 47,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 47,
+        "could_be_at_the_level_in_the_same_year": 47,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 47,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.65,
+            "share_of_the_state_total": 0.0005
+          },
+          "half": {
+            "utilities": 24,
+            "hidden_gwh": 18.62,
+            "share_of_the_state_total": 0.0143
+          },
+          "all": {
+            "utilities": 47,
+            "hidden_gwh": 266.44,
+            "share_of_the_state_total": 0.2045
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 41,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 40,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 40,
+        "could_be_at_the_level_in_the_same_year": 40,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 40,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": 0.0002
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 1.32,
+            "share_of_the_state_total": 0.001
+          },
+          "half": {
+            "utilities": 20,
+            "hidden_gwh": 24.71,
+            "share_of_the_state_total": 0.019
+          },
+          "all": {
+            "utilities": 40,
+            "hidden_gwh": 265.4,
+            "share_of_the_state_total": 0.2037
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "GA": {
+      "state_remainder_gwh": 4716.2,
+      "state_total_twh": 8.054,
+      "all": {
+        "eligible_comparison_utilities": 93,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 92,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 92,
+        "could_be_at_the_level_in_the_same_year": 92,
+        "that_year": 2010,
+        "can_be_reached_at_any_size_of_remainder": 92,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 10,
+            "hidden_gwh": 0.64,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 46,
+            "hidden_gwh": 23.66,
+            "share_of_the_state_total": 0.0029
+          },
+          "all": {
+            "utilities": 92,
+            "hidden_gwh": 216.62,
+            "share_of_the_state_total": 0.0269
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 78,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 78,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 78,
+        "could_be_at_the_level_in_the_same_year": 78,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 78,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.12,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 8,
+            "hidden_gwh": 2.61,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 39,
+            "hidden_gwh": 31.78,
+            "share_of_the_state_total": 0.0039
+          },
+          "all": {
+            "utilities": 78,
+            "hidden_gwh": 214.6,
+            "share_of_the_state_total": 0.0266
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "GU": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": null,
+      "all": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "no_state_total"
+    },
+    "HI": {
+      "state_remainder_gwh": 21.0,
+      "state_total_twh": 0.021,
+      "all": {
+        "eligible_comparison_utilities": 4,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 3,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 3,
+        "could_be_at_the_level_in_the_same_year": 3,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 4,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 2.18,
+            "share_of_the_state_total": 0.1036
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 2.18,
+            "share_of_the_state_total": 0.1036
+          },
+          "half": {
+            "utilities": 2,
+            "hidden_gwh": 7.73,
+            "share_of_the_state_total": 0.3682
+          },
+          "all": {
+            "utilities": 4,
+            "hidden_gwh": 50.17,
+            "share_of_the_state_total": 2.3889
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 4,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 3,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 3,
+        "could_be_at_the_level_in_the_same_year": 3,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 4,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 2.18,
+            "share_of_the_state_total": 0.1036
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 2.18,
+            "share_of_the_state_total": 0.1036
+          },
+          "half": {
+            "utilities": 2,
+            "hidden_gwh": 7.73,
+            "share_of_the_state_total": 0.3682
+          },
+          "all": {
+            "utilities": 4,
+            "hidden_gwh": 50.17,
+            "share_of_the_state_total": 2.3889
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "IA": {
+      "state_remainder_gwh": 1830.2,
+      "state_total_twh": 7.894,
+      "all": {
+        "eligible_comparison_utilities": 184,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 4,
+        "could_fail_one_at_a_time": 180,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 180,
+        "could_be_at_the_level_in_the_same_year": 180,
+        "that_year": 2020,
+        "can_be_reached_at_any_size_of_remainder": 180,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 18,
+            "hidden_gwh": 0.15,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 90,
+            "hidden_gwh": 3.22,
+            "share_of_the_state_total": 0.0004
+          },
+          "all": {
+            "utilities": 180,
+            "hidden_gwh": 55.61,
+            "share_of_the_state_total": 0.007
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 51,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 49,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 49,
+        "could_be_at_the_level_in_the_same_year": 49,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 49,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.78,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 25,
+            "hidden_gwh": 9.38,
+            "share_of_the_state_total": 0.0012
+          },
+          "all": {
+            "utilities": 49,
+            "hidden_gwh": 45.41,
+            "share_of_the_state_total": 0.0058
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "ID": {
+      "state_remainder_gwh": 217.7,
+      "state_total_twh": 0.265,
+      "all": {
+        "eligible_comparison_utilities": 34,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 32,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 32,
+        "could_be_at_the_level_in_the_same_year": 32,
+        "that_year": 2011,
+        "can_be_reached_at_any_size_of_remainder": 32,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.03,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 1.72,
+            "share_of_the_state_total": 0.0065
+          },
+          "all": {
+            "utilities": 32,
+            "hidden_gwh": 114.3,
+            "share_of_the_state_total": 0.4313
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 16,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 16,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 16,
+        "could_be_at_the_level_in_the_same_year": 16,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 16,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.14,
+            "share_of_the_state_total": 0.0005
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.38,
+            "share_of_the_state_total": 0.0015
+          },
+          "half": {
+            "utilities": 8,
+            "hidden_gwh": 3.82,
+            "share_of_the_state_total": 0.0144
+          },
+          "all": {
+            "utilities": 16,
+            "hidden_gwh": 111.7,
+            "share_of_the_state_total": 0.4215
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "IL": {
+      "state_remainder_gwh": 678.7,
+      "state_total_twh": 9.186,
+      "all": {
+        "eligible_comparison_utilities": 70,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 69,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 69,
+        "could_be_at_the_level_in_the_same_year": 69,
+        "that_year": 2009,
+        "can_be_reached_at_any_size_of_remainder": 69,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 7,
+            "hidden_gwh": 0.28,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 35,
+            "hidden_gwh": 7.4,
+            "share_of_the_state_total": 0.0008
+          },
+          "all": {
+            "utilities": 69,
+            "hidden_gwh": 242.25,
+            "share_of_the_state_total": 0.0264
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 52,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 51,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 51,
+        "could_be_at_the_level_in_the_same_year": 51,
+        "that_year": 2007,
+        "can_be_reached_at_any_size_of_remainder": 51,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.19,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 1.4,
+            "share_of_the_state_total": 0.0002
+          },
+          "half": {
+            "utilities": 26,
+            "hidden_gwh": 10.39,
+            "share_of_the_state_total": 0.0011
+          },
+          "all": {
+            "utilities": 51,
+            "hidden_gwh": 240.2,
+            "share_of_the_state_total": 0.0261
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "IN": {
+      "state_remainder_gwh": 665.3,
+      "state_total_twh": 0.82,
+      "all": {
+        "eligible_comparison_utilities": 113,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 112,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 112,
+        "could_be_at_the_level_in_the_same_year": 112,
+        "that_year": 2006,
+        "can_be_reached_at_any_size_of_remainder": 112,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 12,
+            "hidden_gwh": 0.21,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 56,
+            "hidden_gwh": 7.72,
+            "share_of_the_state_total": 0.0094
+          },
+          "all": {
+            "utilities": 112,
+            "hidden_gwh": 280.49,
+            "share_of_the_state_total": 0.3421
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 64,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 63,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 63,
+        "could_be_at_the_level_in_the_same_year": 63,
+        "that_year": 2004,
+        "can_be_reached_at_any_size_of_remainder": 63,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.3,
+            "share_of_the_state_total": 0.0004
+          },
+          "a_tenth": {
+            "utilities": 7,
+            "hidden_gwh": 2.41,
+            "share_of_the_state_total": 0.0029
+          },
+          "half": {
+            "utilities": 32,
+            "hidden_gwh": 21.55,
+            "share_of_the_state_total": 0.0263
+          },
+          "all": {
+            "utilities": 63,
+            "hidden_gwh": 252.55,
+            "share_of_the_state_total": 0.308
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "KS": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.08,
+      "all": {
+        "eligible_comparison_utilities": 156,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 7,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 149,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 15,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0011
+          },
+          "half": {
+            "utilities": 75,
+            "hidden_gwh": 2.79,
+            "share_of_the_state_total": 0.0349
+          },
+          "all": {
+            "utilities": 149,
+            "hidden_gwh": 162.84,
+            "share_of_the_state_total": 2.0354
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 54,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 5,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 49,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.19,
+            "share_of_the_state_total": 0.0024
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 1.0,
+            "share_of_the_state_total": 0.0125
+          },
+          "half": {
+            "utilities": 25,
+            "hidden_gwh": 8.26,
+            "share_of_the_state_total": 0.1033
+          },
+          "all": {
+            "utilities": 49,
+            "hidden_gwh": 156.56,
+            "share_of_the_state_total": 1.957
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "KY": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 1.46,
+      "all": {
+        "eligible_comparison_utilities": 61,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 4,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 57,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.04,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 0.53,
+            "share_of_the_state_total": 0.0004
+          },
+          "half": {
+            "utilities": 29,
+            "hidden_gwh": 19.7,
+            "share_of_the_state_total": 0.0135
+          },
+          "all": {
+            "utilities": 57,
+            "hidden_gwh": 426.36,
+            "share_of_the_state_total": 0.292
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 50,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 4,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 46,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.17,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 1.55,
+            "share_of_the_state_total": 0.0011
+          },
+          "half": {
+            "utilities": 23,
+            "hidden_gwh": 24.91,
+            "share_of_the_state_total": 0.0171
+          },
+          "all": {
+            "utilities": 46,
+            "hidden_gwh": 343.29,
+            "share_of_the_state_total": 0.2351
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "LA": {
+      "state_remainder_gwh": 67.0,
+      "state_total_twh": 0.067,
+      "all": {
+        "eligible_comparison_utilities": 39,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 36,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 33,
+        "could_be_at_the_level_in_the_same_year": 33,
+        "that_year": 2011,
+        "can_be_reached_at_any_size_of_remainder": 37,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": 0.003
+          },
+          "half": {
+            "utilities": 19,
+            "hidden_gwh": 7.27,
+            "share_of_the_state_total": 0.1085
+          },
+          "all": {
+            "utilities": 37,
+            "hidden_gwh": 416.86,
+            "share_of_the_state_total": 6.2218
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 29,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 28,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 25,
+        "could_be_at_the_level_in_the_same_year": 25,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 29,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.25,
+            "share_of_the_state_total": 0.0037
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.87,
+            "share_of_the_state_total": 0.013
+          },
+          "half": {
+            "utilities": 15,
+            "hidden_gwh": 11.34,
+            "share_of_the_state_total": 0.1693
+          },
+          "all": {
+            "utilities": 29,
+            "hidden_gwh": 415.99,
+            "share_of_the_state_total": 6.2088
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "MA": {
+      "state_remainder_gwh": 515.6,
+      "state_total_twh": 1.358,
+      "all": {
+        "eligible_comparison_utilities": 43,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 41,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 41,
+        "could_be_at_the_level_in_the_same_year": 41,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 41,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.02,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.38,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 21,
+            "hidden_gwh": 6.06,
+            "share_of_the_state_total": 0.0045
+          },
+          "all": {
+            "utilities": 41,
+            "hidden_gwh": 39.3,
+            "share_of_the_state_total": 0.0289
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 37,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 37,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 37,
+        "could_be_at_the_level_in_the_same_year": 37,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 37,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.14,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.64,
+            "share_of_the_state_total": 0.0005
+          },
+          "half": {
+            "utilities": 19,
+            "hidden_gwh": 7.43,
+            "share_of_the_state_total": 0.0055
+          },
+          "all": {
+            "utilities": 37,
+            "hidden_gwh": 39.06,
+            "share_of_the_state_total": 0.0288
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "MD": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.179,
+      "all": {
+        "eligible_comparison_utilities": 9,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 9,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 2.03,
+            "share_of_the_state_total": 0.0113
+          },
+          "all": {
+            "utilities": 9,
+            "hidden_gwh": 47.37,
+            "share_of_the_state_total": 0.2646
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 7,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 7,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": 0.0011
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": 0.0011
+          },
+          "half": {
+            "utilities": 4,
+            "hidden_gwh": 3.61,
+            "share_of_the_state_total": 0.0202
+          },
+          "all": {
+            "utilities": 7,
+            "hidden_gwh": 47.26,
+            "share_of_the_state_total": 0.264
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "ME": {
+      "state_remainder_gwh": 18.3,
+      "state_total_twh": 0.024,
+      "all": {
+        "eligible_comparison_utilities": 10,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 9,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 9,
+        "could_be_at_the_level_in_the_same_year": 9,
+        "that_year": 2020,
+        "can_be_reached_at_any_size_of_remainder": 10,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 0.58,
+            "share_of_the_state_total": 0.024
+          },
+          "all": {
+            "utilities": 10,
+            "hidden_gwh": 51.36,
+            "share_of_the_state_total": 2.1398
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 6,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 5,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 5,
+        "could_be_at_the_level_in_the_same_year": 5,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 6,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.45,
+            "share_of_the_state_total": 0.0188
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.45,
+            "share_of_the_state_total": 0.0188
+          },
+          "half": {
+            "utilities": 3,
+            "hidden_gwh": 1.41,
+            "share_of_the_state_total": 0.0589
+          },
+          "all": {
+            "utilities": 6,
+            "hidden_gwh": 51.23,
+            "share_of_the_state_total": 2.1346
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "MI": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.354,
+      "all": {
+        "eligible_comparison_utilities": 57,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 57,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 0.25,
+            "share_of_the_state_total": 0.0007
+          },
+          "half": {
+            "utilities": 29,
+            "hidden_gwh": 5.67,
+            "share_of_the_state_total": 0.016
+          },
+          "all": {
+            "utilities": 57,
+            "hidden_gwh": 211.21,
+            "share_of_the_state_total": 0.5966
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 41,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 41,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.11,
+            "share_of_the_state_total": 0.0003
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.72,
+            "share_of_the_state_total": 0.002
+          },
+          "half": {
+            "utilities": 21,
+            "hidden_gwh": 9.3,
+            "share_of_the_state_total": 0.0263
+          },
+          "all": {
+            "utilities": 41,
+            "hidden_gwh": 207.19,
+            "share_of_the_state_total": 0.5853
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "MN": {
+      "state_remainder_gwh": 296.8,
+      "state_total_twh": 0.612,
+      "all": {
+        "eligible_comparison_utilities": 175,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 173,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 173,
+        "could_be_at_the_level_in_the_same_year": 173,
+        "that_year": 2011,
+        "can_be_reached_at_any_size_of_remainder": 173,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 18,
+            "hidden_gwh": 0.18,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 87,
+            "hidden_gwh": 7.24,
+            "share_of_the_state_total": 0.0118
+          },
+          "all": {
+            "utilities": 173,
+            "hidden_gwh": 168.19,
+            "share_of_the_state_total": 0.2748
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 80,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 80,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 80,
+        "could_be_at_the_level_in_the_same_year": 80,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 80,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.15,
+            "share_of_the_state_total": 0.0003
+          },
+          "a_tenth": {
+            "utilities": 8,
+            "hidden_gwh": 2.18,
+            "share_of_the_state_total": 0.0036
+          },
+          "half": {
+            "utilities": 40,
+            "hidden_gwh": 21.07,
+            "share_of_the_state_total": 0.0344
+          },
+          "all": {
+            "utilities": 80,
+            "hidden_gwh": 158.01,
+            "share_of_the_state_total": 0.2582
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "MO": {
+      "state_remainder_gwh": 794.1,
+      "state_total_twh": 1.31,
+      "all": {
+        "eligible_comparison_utilities": 131,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 3,
+        "could_fail_one_at_a_time": 128,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 128,
+        "could_be_at_the_level_in_the_same_year": 128,
+        "that_year": 2020,
+        "can_be_reached_at_any_size_of_remainder": 128,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 13,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0002
+          },
+          "half": {
+            "utilities": 64,
+            "hidden_gwh": 8.15,
+            "share_of_the_state_total": 0.0062
+          },
+          "all": {
+            "utilities": 128,
+            "hidden_gwh": 184.76,
+            "share_of_the_state_total": 0.141
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 74,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 74,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 74,
+        "could_be_at_the_level_in_the_same_year": 74,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 74,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.16,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 8,
+            "hidden_gwh": 1.74,
+            "share_of_the_state_total": 0.0013
+          },
+          "half": {
+            "utilities": 37,
+            "hidden_gwh": 19.22,
+            "share_of_the_state_total": 0.0147
+          },
+          "all": {
+            "utilities": 74,
+            "hidden_gwh": 178.89,
+            "share_of_the_state_total": 0.1366
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "MS": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.075,
+      "all": {
+        "eligible_comparison_utilities": 48,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 48,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.07,
+            "share_of_the_state_total": 0.001
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.72,
+            "share_of_the_state_total": 0.0096
+          },
+          "half": {
+            "utilities": 24,
+            "hidden_gwh": 16.52,
+            "share_of_the_state_total": 0.2203
+          },
+          "all": {
+            "utilities": 48,
+            "hidden_gwh": 118.78,
+            "share_of_the_state_total": 1.5838
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 42,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 42,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.15,
+            "share_of_the_state_total": 0.0019
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 1.92,
+            "share_of_the_state_total": 0.0256
+          },
+          "half": {
+            "utilities": 21,
+            "hidden_gwh": 18.64,
+            "share_of_the_state_total": 0.2486
+          },
+          "all": {
+            "utilities": 42,
+            "hidden_gwh": 98.41,
+            "share_of_the_state_total": 1.3121
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "MT": {
+      "state_remainder_gwh": 297.6,
+      "state_total_twh": 0.596,
+      "all": {
+        "eligible_comparison_utilities": 39,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 37,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 37,
+        "could_be_at_the_level_in_the_same_year": 37,
+        "that_year": 2014,
+        "can_be_reached_at_any_size_of_remainder": 37,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.04,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 19,
+            "hidden_gwh": 4.12,
+            "share_of_the_state_total": 0.0069
+          },
+          "all": {
+            "utilities": 37,
+            "hidden_gwh": 68.66,
+            "share_of_the_state_total": 0.1152
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 24,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 23,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 23,
+        "could_be_at_the_level_in_the_same_year": 23,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 23,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0004
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.83,
+            "share_of_the_state_total": 0.0014
+          },
+          "half": {
+            "utilities": 12,
+            "hidden_gwh": 5.31,
+            "share_of_the_state_total": 0.0089
+          },
+          "all": {
+            "utilities": 23,
+            "hidden_gwh": 65.79,
+            "share_of_the_state_total": 0.1104
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "NC": {
+      "state_remainder_gwh": 1488.7,
+      "state_total_twh": 3.704,
+      "all": {
+        "eligible_comparison_utilities": 108,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 105,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 105,
+        "could_be_at_the_level_in_the_same_year": 105,
+        "that_year": 2010,
+        "can_be_reached_at_any_size_of_remainder": 105,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 11,
+            "hidden_gwh": 0.24,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 53,
+            "hidden_gwh": 13.09,
+            "share_of_the_state_total": 0.0035
+          },
+          "all": {
+            "utilities": 106,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 75,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 75,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 75,
+        "could_be_at_the_level_in_the_same_year": 75,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 75,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 8,
+            "hidden_gwh": 1.98,
+            "share_of_the_state_total": 0.0005
+          },
+          "half": {
+            "utilities": 38,
+            "hidden_gwh": 27.0,
+            "share_of_the_state_total": 0.0073
+          },
+          "all": {
+            "utilities": 75,
+            "hidden_gwh": 376.25,
+            "share_of_the_state_total": 0.1016
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "ND": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 1.931,
+      "all": {
+        "eligible_comparison_utilities": 31,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 3,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 28,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.02,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 14,
+            "hidden_gwh": 1.11,
+            "share_of_the_state_total": 0.0006
+          },
+          "all": {
+            "utilities": 28,
+            "hidden_gwh": 34.95,
+            "share_of_the_state_total": 0.0181
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 16,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 14,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.36,
+            "share_of_the_state_total": 0.0002
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.87,
+            "share_of_the_state_total": 0.0005
+          },
+          "half": {
+            "utilities": 7,
+            "hidden_gwh": 6.49,
+            "share_of_the_state_total": 0.0034
+          },
+          "all": {
+            "utilities": 14,
+            "hidden_gwh": 33.84,
+            "share_of_the_state_total": 0.0175
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "NE": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 4.788,
+      "all": {
+        "eligible_comparison_utilities": 159,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 157,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 16,
+            "hidden_gwh": 0.19,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 79,
+            "hidden_gwh": 2.87,
+            "share_of_the_state_total": 0.0006
+          },
+          "all": {
+            "utilities": 157,
+            "hidden_gwh": 62.48,
+            "share_of_the_state_total": 0.013
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 49,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 49,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 1.44,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 25,
+            "hidden_gwh": 10.85,
+            "share_of_the_state_total": 0.0023
+          },
+          "all": {
+            "utilities": 49,
+            "hidden_gwh": 53.15,
+            "share_of_the_state_total": 0.0111
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "NH": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.019,
+      "all": {
+        "eligible_comparison_utilities": 8,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 6,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0008
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0008
+          },
+          "half": {
+            "utilities": 3,
+            "hidden_gwh": 0.21,
+            "share_of_the_state_total": 0.0111
+          },
+          "all": {
+            "utilities": 6,
+            "hidden_gwh": 4.56,
+            "share_of_the_state_total": 0.2399
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 4,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 3,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.33,
+            "share_of_the_state_total": 0.0172
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.33,
+            "share_of_the_state_total": 0.0172
+          },
+          "half": {
+            "utilities": 2,
+            "hidden_gwh": 0.69,
+            "share_of_the_state_total": 0.0362
+          },
+          "all": {
+            "utilities": 3,
+            "hidden_gwh": 4.35,
+            "share_of_the_state_total": 0.2288
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "NJ": {
+      "state_remainder_gwh": 543.3,
+      "state_total_twh": 4.187,
+      "all": {
+        "eligible_comparison_utilities": 10,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 10,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 10,
+        "could_be_at_the_level_in_the_same_year": 10,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 10,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.04,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.04,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 0.83,
+            "share_of_the_state_total": 0.0002
+          },
+          "all": {
+            "utilities": 10,
+            "hidden_gwh": 11.58,
+            "share_of_the_state_total": 0.0028
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 9,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 9,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 9,
+        "could_be_at_the_level_in_the_same_year": 9,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 9,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.09,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.09,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 1.13,
+            "share_of_the_state_total": 0.0003
+          },
+          "all": {
+            "utilities": 9,
+            "hidden_gwh": 11.54,
+            "share_of_the_state_total": 0.0028
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "NM": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.98,
+      "all": {
+        "eligible_comparison_utilities": 32,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 31,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.05,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 5.39,
+            "share_of_the_state_total": 0.0055
+          },
+          "all": {
+            "utilities": 31,
+            "hidden_gwh": 66.45,
+            "share_of_the_state_total": 0.0678
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 24,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 24,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.18,
+            "share_of_the_state_total": 0.0002
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.61,
+            "share_of_the_state_total": 0.0006
+          },
+          "half": {
+            "utilities": 12,
+            "hidden_gwh": 6.4,
+            "share_of_the_state_total": 0.0065
+          },
+          "all": {
+            "utilities": 24,
+            "hidden_gwh": 62.53,
+            "share_of_the_state_total": 0.0638
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "NV": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 4.891,
+      "all": {
+        "eligible_comparison_utilities": 18,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 3,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 15,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 8,
+            "hidden_gwh": 0.66,
+            "share_of_the_state_total": 0.0001
+          },
+          "all": {
+            "utilities": 15,
+            "hidden_gwh": 12.47,
+            "share_of_the_state_total": 0.0025
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 6,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 6,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.37,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.37,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 3,
+            "hidden_gwh": 2.87,
+            "share_of_the_state_total": 0.0006
+          },
+          "all": {
+            "utilities": 6,
+            "hidden_gwh": 11.32,
+            "share_of_the_state_total": 0.0023
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "NY": {
+      "state_remainder_gwh": 673.8,
+      "state_total_twh": 4.296,
+      "all": {
+        "eligible_comparison_utilities": 59,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 58,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 58,
+        "could_be_at_the_level_in_the_same_year": 58,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 58,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.03,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 0.22,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 29,
+            "hidden_gwh": 3.73,
+            "share_of_the_state_total": 0.0009
+          },
+          "all": {
+            "utilities": 58,
+            "hidden_gwh": 371.59,
+            "share_of_the_state_total": 0.0865
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 28,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 28,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 28,
+        "could_be_at_the_level_in_the_same_year": 28,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 28,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.25,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.82,
+            "share_of_the_state_total": 0.0002
+          },
+          "half": {
+            "utilities": 14,
+            "hidden_gwh": 4.79,
+            "share_of_the_state_total": 0.0011
+          },
+          "all": {
+            "utilities": 28,
+            "hidden_gwh": 367.15,
+            "share_of_the_state_total": 0.0855
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "OH": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 6.823,
+      "all": {
+        "eligible_comparison_utilities": 109,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 109,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 11,
+            "hidden_gwh": 0.21,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 55,
+            "hidden_gwh": 5.75,
+            "share_of_the_state_total": 0.0008
+          },
+          "all": {
+            "utilities": 109,
+            "hidden_gwh": 258.18,
+            "share_of_the_state_total": 0.0378
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 54,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 54,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.22,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 1.78,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 27,
+            "hidden_gwh": 16.1,
+            "share_of_the_state_total": 0.0024
+          },
+          "all": {
+            "utilities": 54,
+            "hidden_gwh": 250.89,
+            "share_of_the_state_total": 0.0368
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "OK": {
+      "state_remainder_gwh": 1101.6,
+      "state_total_twh": 1.96,
+      "all": {
+        "eligible_comparison_utilities": 90,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 89,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 89,
+        "could_be_at_the_level_in_the_same_year": 89,
+        "that_year": 2020,
+        "can_be_reached_at_any_size_of_remainder": 89,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 9,
+            "hidden_gwh": 0.09,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 45,
+            "hidden_gwh": 3.46,
+            "share_of_the_state_total": 0.0018
+          },
+          "all": {
+            "utilities": 89,
+            "hidden_gwh": 72.1,
+            "share_of_the_state_total": 0.0368
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 48,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 47,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 47,
+        "could_be_at_the_level_in_the_same_year": 47,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 47,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.17,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 1.05,
+            "share_of_the_state_total": 0.0005
+          },
+          "half": {
+            "utilities": 24,
+            "hidden_gwh": 12.56,
+            "share_of_the_state_total": 0.0064
+          },
+          "all": {
+            "utilities": 47,
+            "hidden_gwh": 69.05,
+            "share_of_the_state_total": 0.0352
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "OR": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 11.005,
+      "all": {
+        "eligible_comparison_utilities": 39,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 37,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.14,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 19,
+            "hidden_gwh": 6.79,
+            "share_of_the_state_total": 0.0006
+          },
+          "all": {
+            "utilities": 37,
+            "hidden_gwh": 65.74,
+            "share_of_the_state_total": 0.006
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 29,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 29,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.32,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 1.0,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 15,
+            "hidden_gwh": 10.7,
+            "share_of_the_state_total": 0.001
+          },
+          "all": {
+            "utilities": 29,
+            "hidden_gwh": 64.88,
+            "share_of_the_state_total": 0.0059
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "PA": {
+      "state_remainder_gwh": 2401.5,
+      "state_total_twh": 2.728,
+      "all": {
+        "eligible_comparison_utilities": 55,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 54,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 54,
+        "could_be_at_the_level_in_the_same_year": 54,
+        "that_year": 2009,
+        "can_be_reached_at_any_size_of_remainder": 54,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 0.12,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 27,
+            "hidden_gwh": 2.63,
+            "share_of_the_state_total": 0.001
+          },
+          "all": {
+            "utilities": 54,
+            "hidden_gwh": 301.05,
+            "share_of_the_state_total": 0.1104
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 34,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 34,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 34,
+        "could_be_at_the_level_in_the_same_year": 34,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 34,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.1,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.56,
+            "share_of_the_state_total": 0.0002
+          },
+          "half": {
+            "utilities": 17,
+            "hidden_gwh": 4.71,
+            "share_of_the_state_total": 0.0017
+          },
+          "all": {
+            "utilities": 34,
+            "hidden_gwh": 299.68,
+            "share_of_the_state_total": 0.1099
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "PR": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": null,
+      "all": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "no_state_total"
+    },
+    "RI": {
+      "state_remainder_gwh": 17.0,
+      "state_total_twh": 0.017,
+      "all": {
+        "eligible_comparison_utilities": 3,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 2,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 2,
+        "could_be_at_the_level_in_the_same_year": 2,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 3,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.05,
+            "share_of_the_state_total": 0.0031
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.05,
+            "share_of_the_state_total": 0.0031
+          },
+          "half": {
+            "utilities": 2,
+            "hidden_gwh": 0.32,
+            "share_of_the_state_total": 0.0186
+          },
+          "all": {
+            "utilities": 3,
+            "hidden_gwh": 38.58,
+            "share_of_the_state_total": 2.2695
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 2,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 1,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 1,
+        "could_be_at_the_level_in_the_same_year": 1,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 2,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0155
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0155
+          },
+          "half": {
+            "utilities": 1,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0155
+          },
+          "all": {
+            "utilities": 2,
+            "hidden_gwh": 38.53,
+            "share_of_the_state_total": 2.2664
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "SC": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 1.781,
+      "all": {
+        "eligible_comparison_utilities": 44,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 44,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.35,
+            "share_of_the_state_total": 0.0002
+          },
+          "half": {
+            "utilities": 22,
+            "hidden_gwh": 14.34,
+            "share_of_the_state_total": 0.0081
+          },
+          "all": {
+            "utilities": 44,
+            "hidden_gwh": 389.44,
+            "share_of_the_state_total": 0.2187
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 38,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 38,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.3,
+            "share_of_the_state_total": 0.0002
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 1.64,
+            "share_of_the_state_total": 0.0009
+          },
+          "half": {
+            "utilities": 19,
+            "hidden_gwh": 18.56,
+            "share_of_the_state_total": 0.0104
+          },
+          "all": {
+            "utilities": 38,
+            "hidden_gwh": 388.83,
+            "share_of_the_state_total": 0.2183
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "SD": {
+      "state_remainder_gwh": 98.0,
+      "state_total_twh": 0.114,
+      "all": {
+        "eligible_comparison_utilities": 72,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 70,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 70,
+        "could_be_at_the_level_in_the_same_year": 70,
+        "that_year": 2020,
+        "can_be_reached_at_any_size_of_remainder": 70,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 7,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0007
+          },
+          "half": {
+            "utilities": 35,
+            "hidden_gwh": 2.48,
+            "share_of_the_state_total": 0.0218
+          },
+          "all": {
+            "utilities": 70,
+            "hidden_gwh": 42.58,
+            "share_of_the_state_total": 0.3735
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 32,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 32,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 32,
+        "could_be_at_the_level_in_the_same_year": 32,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 32,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.26,
+            "share_of_the_state_total": 0.0023
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 1.19,
+            "share_of_the_state_total": 0.0105
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 6.61,
+            "share_of_the_state_total": 0.058
+          },
+          "all": {
+            "utilities": 32,
+            "hidden_gwh": 38.78,
+            "share_of_the_state_total": 0.3402
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "TN": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 1.97,
+      "all": {
+        "eligible_comparison_utilities": 85,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 84,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 9,
+            "hidden_gwh": 1.1,
+            "share_of_the_state_total": 0.0006
+          },
+          "half": {
+            "utilities": 42,
+            "hidden_gwh": 45.31,
+            "share_of_the_state_total": 0.023
+          },
+          "all": {
+            "utilities": 84,
+            "hidden_gwh": 337.98,
+            "share_of_the_state_total": 0.1716
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 76,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 76,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.25,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 8,
+            "hidden_gwh": 4.31,
+            "share_of_the_state_total": 0.0022
+          },
+          "half": {
+            "utilities": 38,
+            "hidden_gwh": 51.21,
+            "share_of_the_state_total": 0.026
+          },
+          "all": {
+            "utilities": 76,
+            "hidden_gwh": 304.39,
+            "share_of_the_state_total": 0.1545
+          }
+        }
+      },
+      "kind": "measured_load_at_or_above_the_total"
+    },
+    "TX": {
+      "state_remainder_gwh": 20510.7,
+      "state_total_twh": 33.539,
+      "all": {
+        "eligible_comparison_utilities": 131,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 10,
+        "could_fail_one_at_a_time": 121,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 121,
+        "could_be_at_the_level_in_the_same_year": 121,
+        "that_year": 2008,
+        "can_be_reached_at_any_size_of_remainder": 121,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 13,
+            "hidden_gwh": 0.71,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 61,
+            "hidden_gwh": 14.63,
+            "share_of_the_state_total": 0.0004
+          },
+          "all": {
+            "utilities": 121,
+            "hidden_gwh": 299.31,
+            "share_of_the_state_total": 0.0089
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 92,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 4,
+        "could_fail_one_at_a_time": 88,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 88,
+        "could_be_at_the_level_in_the_same_year": 88,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 88,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 9,
+            "hidden_gwh": 1.8,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 44,
+            "hidden_gwh": 23.96,
+            "share_of_the_state_total": 0.0007
+          },
+          "all": {
+            "utilities": 88,
+            "hidden_gwh": 291.56,
+            "share_of_the_state_total": 0.0087
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "UT": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 3.27,
+      "all": {
+        "eligible_comparison_utilities": 49,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 3,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 46,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 0.05,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 23,
+            "hidden_gwh": 1.42,
+            "share_of_the_state_total": 0.0004
+          },
+          "all": {
+            "utilities": 46,
+            "hidden_gwh": 18.59,
+            "share_of_the_state_total": 0.0057
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 22,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 22,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.09,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.41,
+            "share_of_the_state_total": 0.0001
+          },
+          "half": {
+            "utilities": 11,
+            "hidden_gwh": 3.36,
+            "share_of_the_state_total": 0.001
+          },
+          "all": {
+            "utilities": 22,
+            "hidden_gwh": 16.92,
+            "share_of_the_state_total": 0.0052
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "VA": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 33.947,
+      "all": {
+        "eligible_comparison_utilities": 27,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 26,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.06,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 0.34,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 13,
+            "hidden_gwh": 7.64,
+            "share_of_the_state_total": 0.0002
+          },
+          "all": {
+            "utilities": 26,
+            "hidden_gwh": 114.57,
+            "share_of_the_state_total": 0.0034
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 23,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 23,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.33,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 3,
+            "hidden_gwh": 1.24,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 12,
+            "hidden_gwh": 9.62,
+            "share_of_the_state_total": 0.0003
+          },
+          "all": {
+            "utilities": 23,
+            "hidden_gwh": 114.23,
+            "share_of_the_state_total": 0.0034
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "VI": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": null,
+      "all": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 1,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": null,
+        "can_be_reached_at_any_size_of_remainder": 0,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 0,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "no_state_total"
+    },
+    "VT": {
+      "state_remainder_gwh": 3.0,
+      "state_total_twh": 0.003,
+      "all": {
+        "eligible_comparison_utilities": 21,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 18,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 15,
+        "could_be_at_the_level_in_the_same_year": 15,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 19,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.003
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.03,
+            "share_of_the_state_total": 0.0114
+          },
+          "half": {
+            "utilities": 10,
+            "hidden_gwh": 0.95,
+            "share_of_the_state_total": 0.3155
+          },
+          "all": {
+            "utilities": 19,
+            "hidden_gwh": 27.74,
+            "share_of_the_state_total": 9.2453
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 10,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 9,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 7,
+        "could_be_at_the_level_in_the_same_year": 7,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 10,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.16,
+            "share_of_the_state_total": 0.0526
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.16,
+            "share_of_the_state_total": 0.0526
+          },
+          "half": {
+            "utilities": 5,
+            "hidden_gwh": 1.23,
+            "share_of_the_state_total": 0.4086
+          },
+          "all": {
+            "utilities": 10,
+            "hidden_gwh": 26.33,
+            "share_of_the_state_total": 8.7755
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "WA": {
+      "state_remainder_gwh": 1833.1,
+      "state_total_twh": 6.342,
+      "all": {
+        "eligible_comparison_utilities": 62,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 5,
+        "could_fail_one_at_a_time": 56,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 56,
+        "could_be_at_the_level_in_the_same_year": 56,
+        "that_year": 2015,
+        "can_be_reached_at_any_size_of_remainder": 56,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 6,
+            "hidden_gwh": 0.23,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 29,
+            "hidden_gwh": 11.67,
+            "share_of_the_state_total": 0.0018
+          },
+          "all": {
+            "utilities": 57,
+            "hidden_gwh": null,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 46,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 2,
+        "could_fail_one_at_a_time": 44,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 44,
+        "could_be_at_the_level_in_the_same_year": 44,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 44,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 5,
+            "hidden_gwh": 1.34,
+            "share_of_the_state_total": 0.0002
+          },
+          "half": {
+            "utilities": 22,
+            "hidden_gwh": 16.51,
+            "share_of_the_state_total": 0.0026
+          },
+          "all": {
+            "utilities": 44,
+            "hidden_gwh": 368.99,
+            "share_of_the_state_total": 0.0582
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "WI": {
+      "state_remainder_gwh": 170.1,
+      "state_total_twh": 0.228,
+      "all": {
+        "eligible_comparison_utilities": 118,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 117,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 116,
+        "could_be_at_the_level_in_the_same_year": 116,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 117,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.02,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 12,
+            "hidden_gwh": 0.45,
+            "share_of_the_state_total": 0.002
+          },
+          "half": {
+            "utilities": 59,
+            "hidden_gwh": 8.39,
+            "share_of_the_state_total": 0.0368
+          },
+          "all": {
+            "utilities": 117,
+            "hidden_gwh": 218.76,
+            "share_of_the_state_total": 0.9595
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 68,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 67,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 66,
+        "could_be_at_the_level_in_the_same_year": 66,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 67,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.08,
+            "share_of_the_state_total": 0.0004
+          },
+          "a_tenth": {
+            "utilities": 7,
+            "hidden_gwh": 1.38,
+            "share_of_the_state_total": 0.0061
+          },
+          "half": {
+            "utilities": 34,
+            "hidden_gwh": 14.62,
+            "share_of_the_state_total": 0.0641
+          },
+          "all": {
+            "utilities": 67,
+            "hidden_gwh": 206.05,
+            "share_of_the_state_total": 0.9037
+          }
+        }
+      },
+      "kind": "falls_short"
+    },
+    "WV": {
+      "state_remainder_gwh": 0.0,
+      "state_total_twh": 0.0,
+      "all": {
+        "eligible_comparison_utilities": 15,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 4,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 11,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.1,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 6,
+            "hidden_gwh": 0.74,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 11,
+            "hidden_gwh": 155.85,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 6,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 0,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 0,
+        "could_be_at_the_level_in_the_same_year": 0,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 6,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": null
+          },
+          "a_tenth": {
+            "utilities": 1,
+            "hidden_gwh": 0.2,
+            "share_of_the_state_total": null
+          },
+          "half": {
+            "utilities": 3,
+            "hidden_gwh": 11.76,
+            "share_of_the_state_total": null
+          },
+          "all": {
+            "utilities": 6,
+            "hidden_gwh": 155.31,
+            "share_of_the_state_total": null
+          }
+        }
+      },
+      "kind": "estimates_scaled_down"
+    },
+    "WY": {
+      "state_remainder_gwh": 654.0,
+      "state_total_twh": 1.608,
+      "all": {
+        "eligible_comparison_utilities": 33,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 1,
+        "could_fail_one_at_a_time": 32,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 32,
+        "could_be_at_the_level_in_the_same_year": 32,
+        "that_year": 2009,
+        "can_be_reached_at_any_size_of_remainder": 32,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.0,
+            "share_of_the_state_total": 0.0
+          },
+          "a_tenth": {
+            "utilities": 4,
+            "hidden_gwh": 0.01,
+            "share_of_the_state_total": 0.0
+          },
+          "half": {
+            "utilities": 16,
+            "hidden_gwh": 0.69,
+            "share_of_the_state_total": 0.0004
+          },
+          "all": {
+            "utilities": 32,
+            "hidden_gwh": 78.49,
+            "share_of_the_state_total": 0.0488
+          }
+        }
+      },
+      "above_the_customer_floor": {
+        "eligible_comparison_utilities": 15,
+        "with_no_2009_2011_sales_to_divide_by_left_out": 0,
+        "could_fail_one_at_a_time": 15,
+        "could_each_fail_somewhere_in_the_period_under_one_spread": 15,
+        "could_be_at_the_level_in_the_same_year": 15,
+        "that_year": 2001,
+        "can_be_reached_at_any_size_of_remainder": 15,
+        "smallest_hidden_load_that_would_reach": {
+          "one": {
+            "utilities": 1,
+            "hidden_gwh": 0.17,
+            "share_of_the_state_total": 0.0001
+          },
+          "a_tenth": {
+            "utilities": 2,
+            "hidden_gwh": 0.43,
+            "share_of_the_state_total": 0.0003
+          },
+          "half": {
+            "utilities": 8,
+            "hidden_gwh": 3.53,
+            "share_of_the_state_total": 0.0022
+          },
+          "all": {
+            "utilities": 15,
+            "hidden_gwh": 77.58,
+            "share_of_the_state_total": 0.0482
+          }
+        }
+      },
+      "kind": "falls_short"
+    }
+  },
+  "hosts": {
+    "803:AZ": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2014,
+        2023
+      ],
+      "years_assessed": [
+        2014,
+        2023
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 8,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 8,
+      "that_year": 2014,
+      "clean_left_in_the_worst_case": 2,
+      "by_state": {
+        "CO": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            9.02
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "ID": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 217.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            65.43
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "NM": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            8.24
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "TX": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 20510.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            28.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "WA": {
+          "matches_in_this_state": 5,
+          "state_remainder_gwh": 1833.1,
+          "reachable_within_its_remainder": 5,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            20.29,
+            42.54,
+            66.47,
+            100.59,
+            148.39
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "WY": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 654.0,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            47.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 83.73,
+          "one_combination_by_state_gwh": {
+            "CO": 9.02,
+            "NM": 8.24,
+            "WA": 66.47
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 112.52,
+          "one_combination_by_state_gwh": {
+            "CO": 9.02,
+            "NM": 8.24,
+            "TX": 28.79,
+            "WA": 66.47
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 307.66,
+          "one_combination_by_state_gwh": {
+            "CO": 9.02,
+            "ID": 65.43,
+            "NM": 8.24,
+            "TX": 28.79,
+            "WA": 148.39,
+            "WY": 47.79
+          },
+          "within_the_remainders": "not feasible"
+        }
+      },
+      "name": "Arizona Public Service Co",
+      "cohort": 2020,
+      "region": "West"
+    },
+    "6958:TX": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2011,
+        2020
+      ],
+      "years_assessed": [
+        2011,
+        2020
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 10,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 10,
+      "that_year": 2011,
+      "clean_left_in_the_worst_case": 0,
+      "by_state": {
+        "TX": {
+          "matches_in_this_state": 10,
+          "state_remainder_gwh": 20510.7,
+          "reachable_within_its_remainder": 10,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            2.46,
+            4.97,
+            7.78,
+            11.02,
+            14.95,
+            20.83,
+            26.93,
+            33.15,
+            40.19,
+            49.59
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 14.95,
+          "one_combination_by_state_gwh": {
+            "TX": 14.95
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 20.83,
+          "one_combination_by_state_gwh": {
+            "TX": 20.83
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 49.59,
+          "one_combination_by_state_gwh": {
+            "TX": 49.59
+          },
+          "within_the_remainders": "feasible"
+        }
+      },
+      "name": "City of Garland - (TX)",
+      "cohort": 2017,
+      "region": "ERCOT"
+    },
+    "14127:NE": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2013,
+        2022
+      ],
+      "years_assessed": [
+        2013,
+        2022
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 7,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 7,
+      "that_year": 2013,
+      "clean_left_in_the_worst_case": 3,
+      "by_state": {
+        "KS": {
+          "matches_in_this_state": 2,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            49.14,
+            98.57
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "LA": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 67.0,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            33.43
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "MO": {
+          "matches_in_this_state": 3,
+          "state_remainder_gwh": 794.1,
+          "reachable_within_its_remainder": 3,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            15.28,
+            36.04,
+            79.51
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "NM": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            21.75
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "TX": {
+          "matches_in_this_state": 3,
+          "state_remainder_gwh": 20510.7,
+          "reachable_within_its_remainder": 3,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            10.3,
+            46.12,
+            116.51
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 101.51,
+          "one_combination_by_state_gwh": {
+            "LA": 33.43,
+            "MO": 36.04,
+            "NM": 21.75,
+            "TX": 10.3
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 137.33,
+          "one_combination_by_state_gwh": {
+            "LA": 33.43,
+            "MO": 36.04,
+            "NM": 21.75,
+            "TX": 46.12
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 349.76,
+          "one_combination_by_state_gwh": {
+            "KS": 98.57,
+            "LA": 33.43,
+            "MO": 79.51,
+            "NM": 21.75,
+            "TX": 116.51
+          },
+          "within_the_remainders": "not feasible"
+        }
+      },
+      "name": "Omaha Public Power District",
+      "cohort": 2019,
+      "region": "SPP"
+    },
+    "14354:UT": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2009,
+        2018
+      ],
+      "years_assessed": [
+        2009,
+        2018
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 6,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 6,
+      "that_year": 2009,
+      "clean_left_in_the_worst_case": 4,
+      "by_state": {
+        "CO": {
+          "matches_in_this_state": 2,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            7.16,
+            16.18
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "ID": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 217.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            65.43
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "NM": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            8.24
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "OR": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            12.03
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "TX": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 20510.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            28.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "WA": {
+          "matches_in_this_state": 4,
+          "state_remainder_gwh": 1833.1,
+          "reachable_within_its_remainder": 4,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            22.25,
+            46.18,
+            80.3,
+            128.1
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 58.69,
+          "one_combination_by_state_gwh": {
+            "CO": 16.18,
+            "NM": 8.24,
+            "OR": 12.03,
+            "WA": 22.25
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 82.62,
+          "one_combination_by_state_gwh": {
+            "CO": 16.18,
+            "NM": 8.24,
+            "OR": 12.03,
+            "WA": 46.18
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 258.76,
+          "one_combination_by_state_gwh": {
+            "CO": 16.18,
+            "ID": 65.43,
+            "NM": 8.24,
+            "OR": 12.03,
+            "TX": 28.79,
+            "WA": 128.1
+          },
+          "within_the_remainders": "not feasible"
+        }
+      },
+      "name": "PacifiCorp",
+      "cohort": 2015,
+      "region": "West"
+    },
+    "15473:NM": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2013,
+        2022
+      ],
+      "years_assessed": [
+        2013,
+        2022
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 8,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 8,
+      "that_year": 2013,
+      "clean_left_in_the_worst_case": 2,
+      "by_state": {
+        "CO": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            9.02
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "ID": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 217.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            65.43
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "NM": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            8.24
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "TX": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 20510.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            28.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "WA": {
+          "matches_in_this_state": 5,
+          "state_remainder_gwh": 1833.1,
+          "reachable_within_its_remainder": 5,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            20.29,
+            42.54,
+            66.47,
+            100.59,
+            148.39
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "WY": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 654.0,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            47.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 83.73,
+          "one_combination_by_state_gwh": {
+            "CO": 9.02,
+            "NM": 8.24,
+            "WA": 66.47
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 112.52,
+          "one_combination_by_state_gwh": {
+            "CO": 9.02,
+            "NM": 8.24,
+            "TX": 28.79,
+            "WA": 66.47
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 307.66,
+          "one_combination_by_state_gwh": {
+            "CO": 9.02,
+            "ID": 65.43,
+            "NM": 8.24,
+            "TX": 28.79,
+            "WA": 148.39,
+            "WY": 47.79
+          },
+          "within_the_remainders": "not feasible"
+        }
+      },
+      "name": "Public Service Co of NM",
+      "cohort": 2019,
+      "region": "West"
+    },
+    "17166:NV": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2011,
+        2020
+      ],
+      "years_assessed": [
+        2011,
+        2020
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 6,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 6,
+      "that_year": 2011,
+      "clean_left_in_the_worst_case": 4,
+      "by_state": {
+        "CO": {
+          "matches_in_this_state": 2,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            7.16,
+            16.18
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "ID": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 217.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            65.43
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "NM": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            8.24
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "OR": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            12.03
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "TX": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 20510.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            28.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "WA": {
+          "matches_in_this_state": 4,
+          "state_remainder_gwh": 1833.1,
+          "reachable_within_its_remainder": 4,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            22.25,
+            46.18,
+            80.3,
+            128.1
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 58.69,
+          "one_combination_by_state_gwh": {
+            "CO": 16.18,
+            "NM": 8.24,
+            "OR": 12.03,
+            "WA": 22.25
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 82.62,
+          "one_combination_by_state_gwh": {
+            "CO": 16.18,
+            "NM": 8.24,
+            "OR": 12.03,
+            "WA": 46.18
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 258.76,
+          "one_combination_by_state_gwh": {
+            "CO": 16.18,
+            "ID": 65.43,
+            "NM": 8.24,
+            "OR": 12.03,
+            "TX": 28.79,
+            "WA": 128.1
+          },
+          "within_the_remainders": "not feasible"
+        }
+      },
+      "name": "Sierra Pacific Power Co",
+      "cohort": 2017,
+      "region": "West"
+    },
+    "20065:GA": {
+      "matched": 10,
+      "matched_with_a_base": 10,
+      "window": [
+        2015,
+        2024
+      ],
+      "years_assessed": [
+        2015,
+        2024
+      ],
+      "partly_assessed_2025_left_out": false,
+      "could_fail_somewhere_in_its_window_within_the_remainders": 6,
+      "could_be_at_the_level_in_one_year_within_the_remainders": 6,
+      "that_year": 2015,
+      "clean_left_in_the_worst_case": 4,
+      "by_state": {
+        "FL": {
+          "matches_in_this_state": 4,
+          "state_remainder_gwh": 707.5,
+          "reachable_within_its_remainder": 4,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            8.97,
+            22.52,
+            37.01,
+            53.03
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "GA": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 4716.2,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            9.53
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "NC": {
+          "matches_in_this_state": 1,
+          "state_remainder_gwh": 1488.7,
+          "reachable_within_its_remainder": 1,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            11.79
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "SC": {
+          "matches_in_this_state": 2,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            31.97,
+            86.04
+          ],
+          "cannot_be_reached_in_this_window": 0
+        },
+        "TN": {
+          "matches_in_this_state": 2,
+          "state_remainder_gwh": 0.0,
+          "reachable_within_its_remainder": 0,
+          "hidden_gwh_to_reach_its_cheapest_1_2_3_and_so_on": [
+            11.23,
+            39.32
+          ],
+          "cannot_be_reached_in_this_window": 0
+        }
+      },
+      "tipping_requirement_ignoring_the_remainders": {
+        "5": {
+          "total_gwh": 55.08,
+          "one_combination_by_state_gwh": {
+            "FL": 22.52,
+            "GA": 9.53,
+            "NC": 11.79,
+            "TN": 11.23
+          },
+          "within_the_remainders": "feasible"
+        },
+        "6": {
+          "total_gwh": 69.56,
+          "one_combination_by_state_gwh": {
+            "FL": 37.01,
+            "GA": 9.53,
+            "NC": 11.79,
+            "TN": 11.23
+          },
+          "within_the_remainders": "feasible"
+        },
+        "10": {
+          "total_gwh": 199.71,
+          "one_combination_by_state_gwh": {
+            "FL": 53.03,
+            "GA": 9.53,
+            "NC": 11.79,
+            "SC": 86.04,
+            "TN": 39.32
+          },
+          "within_the_remainders": "not feasible"
+        }
+      },
+      "name": "Walton Electric Member Corp",
+      "cohort": 2021,
+      "region": "Southeast"
+    }
+  },
+  "totals_in_states_that_fall_short": {
+    "all": {
+      "eligible_comparison_utilities_everywhere": 3019,
+      "in_states_that_fall_short": 1819,
+      "could_fail_one_at_a_time": 1762,
+      "could_each_fail_somewhere_in_the_period_under_one_spread": 1755,
+      "could_be_at_the_level_in_the_same_year": 1755,
+      "that_year": 2020
+    },
+    "above_the_customer_floor": {
+      "eligible_comparison_utilities_everywhere": 1742,
+      "in_states_that_fall_short": 1073,
+      "could_fail_one_at_a_time": 1054,
+      "could_each_fail_somewhere_in_the_period_under_one_spread": 1048,
+      "could_be_at_the_level_in_the_same_year": 1048,
+      "that_year": 2007
+    }
+  },
+  "design_rules": "headline",
+  "hosts_individually_vulnerable_the_scenarios_need_not_coexist": {
+    "hosts": 7,
+    "could_be_left_with_fewer_than_five_clean_of_ten": 7,
+    "could_be_left_with_none_clean": 1,
+    "names_fewer_than_five": [
+      "Arizona Public Service Co",
+      "City of Garland - (TX)",
+      "Omaha Public Power District",
+      "PacifiCorp",
+      "Public Service Co of NM",
+      "Sierra Pacific Power Co",
+      "Walton Electric Member Corp"
+    ],
+    "names_none": [
+      "City of Garland - (TX)"
+    ]
+  }
+}

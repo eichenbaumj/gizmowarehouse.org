@@ -1,0 +1,775 @@
+{
+  "params": {
+    "kappa": 0.5,
+    "permit_lag": 1,
+    "ramp_years": 3
+  },
+  "facilities": {
+    "total": 2244,
+    "by_source": {
+      "bi": 1198,
+      "osm": 931,
+      "epoch": 75,
+      "state_search": 40
+    },
+    "in_dose": 1068,
+    "undated": 935,
+    "verified_not_yet_operating": 9,
+    "no_load_estimate": 1105,
+    "no_utility": 48,
+    "utility_assign": {
+      "smallest_polygon": 902,
+      "unique": 872,
+      "verified_by_hand": 181,
+      "next_larger_load_feasible": 168,
+      "fallback_largest_flagged": 68,
+      "behind_the_meter": 14,
+      "none": 12,
+      "wholesale_direct": 11,
+      "ercot_wires_outside_panel": 11,
+      "candidates_widened": 3,
+      "reopened": 2
+    },
+    "state_coverage_flags_by_facility": {
+      "ok": 1516,
+      "undercounted": 406,
+      "overcounted": 138,
+      "small_state": 102,
+      "no_dated_permits": 78,
+      "no_epri_anchor": 4
+    },
+    "left_censored": 359,
+    "load_history_of_sites_in_dose": {
+      "three_year_ramp": 915,
+      "single_building_record": 62,
+      "epoch_timeline": 55,
+      "operator_reported_energy": 19,
+      "verified_phases": 9,
+      "epoch_timeline_after_an_assumed_line": 8
+    },
+    "crypto_sites": 41,
+    "crypto_mw_in_2025": 1172.8,
+    "verify_by_hand_50mw_plus": 188,
+    "epoch_us_sites": 77,
+    "epoch_geocoded": 75,
+    "epoch_superseding_permit_rows": 38,
+    "epoch_rows_on_an_assumed_line_before_their_first_entry": {
+      "epoch:Anthropic Lake Mariner": {
+        "sourced_start": 2022,
+        "first_entry_year": 2026,
+        "first_entry_mw": 245.0
+      },
+      "epoch:CoreWeave Marble NC": {
+        "sourced_start": 2025,
+        "first_entry_year": 2026,
+        "first_entry_mw": 91.0
+      },
+      "epoch:Google Arcola": {
+        "sourced_start": 2019,
+        "first_entry_year": 2026,
+        "first_entry_mw": 93.0
+      },
+      "epoch:Google Fort Wayne": {
+        "sourced_start": 2025,
+        "first_entry_year": 2026,
+        "first_entry_mw": 207.0
+      },
+      "epoch:Google Lincoln": {
+        "sourced_start": 2025,
+        "first_entry_year": 2026,
+        "first_entry_mw": 170.0
+      },
+      "epoch:Google Papillion": {
+        "sourced_start": 2021,
+        "first_entry_year": 2023,
+        "first_entry_mw": 95.0
+      },
+      "epoch:Google Pryor (North)": {
+        "sourced_start": 2011,
+        "first_entry_year": 2024,
+        "first_entry_mw": 63.0
+      },
+      "epoch:Google Storey County": {
+        "sourced_start": 2021,
+        "first_entry_year": 2023,
+        "first_entry_mw": 107.0
+      },
+      "epoch:Microsoft-Nebius New Jersey": {
+        "sourced_start": 2025,
+        "first_entry_year": 2026,
+        "first_entry_mw": 70.0
+      }
+    }
+  },
+  "epri_2024": {
+    "national_inventory_twh": 166.3,
+    "national_epri_twh": 184.2,
+    "national_ratio": 0.903,
+    "log_corr_states_ge_0.25twh": 0.862,
+    "worst_covered_states": [
+      {
+        "state": "VA",
+        "annual_TWh": 33.95,
+        "inventory_twh": 34.53,
+        "ratio": 1.02
+      },
+      {
+        "state": "TX",
+        "annual_TWh": 33.54,
+        "inventory_twh": 20.78,
+        "ratio": 0.62
+      },
+      {
+        "state": "OR",
+        "annual_TWh": 11.0,
+        "inventory_twh": 11.0,
+        "ratio": 1.0
+      },
+      {
+        "state": "IL",
+        "annual_TWh": 9.19,
+        "inventory_twh": 9.19,
+        "ratio": 1.0
+      },
+      {
+        "state": "CA",
+        "annual_TWh": 9.06,
+        "inventory_twh": 9.06,
+        "ratio": 1.0
+      },
+      {
+        "state": "GA",
+        "annual_TWh": 8.05,
+        "inventory_twh": 6.61,
+        "ratio": 0.82
+      },
+      {
+        "state": "IA",
+        "annual_TWh": 7.89,
+        "inventory_twh": 7.89,
+        "ratio": 1.0
+      },
+      {
+        "state": "AZ",
+        "annual_TWh": 7.4,
+        "inventory_twh": 7.4,
+        "ratio": 1.0
+      },
+      {
+        "state": "OH",
+        "annual_TWh": 6.82,
+        "inventory_twh": 6.82,
+        "ratio": 1.0
+      },
+      {
+        "state": "WA",
+        "annual_TWh": 6.34,
+        "inventory_twh": 6.34,
+        "ratio": 1.0
+      },
+      {
+        "state": "NV",
+        "annual_TWh": 4.89,
+        "inventory_twh": 1.55,
+        "ratio": 0.32
+      },
+      {
+        "state": "NE",
+        "annual_TWh": 4.79,
+        "inventory_twh": 6.24,
+        "ratio": 1.3
+      },
+      {
+        "state": "NY",
+        "annual_TWh": 4.3,
+        "inventory_twh": 2.12,
+        "ratio": 0.49
+      },
+      {
+        "state": "NJ",
+        "annual_TWh": 4.19,
+        "inventory_twh": 4.19,
+        "ratio": 1.0
+      },
+      {
+        "state": "NC",
+        "annual_TWh": 3.7,
+        "inventory_twh": 3.7,
+        "ratio": 1.0
+      }
+    ]
+  },
+  "state_anchor": [
+    {
+      "state": "AL",
+      "epri_twh": 1.693,
+      "permit_twh": 0.0,
+      "epoch_twh": 1.059,
+      "raw_factor": NaN,
+      "factor": 1.0,
+      "flag": "no_dated_permits"
+    },
+    {
+      "state": "AZ",
+      "epri_twh": 7.396,
+      "permit_twh": 12.347,
+      "epoch_twh": 1.334,
+      "raw_factor": 0.491,
+      "factor": 0.491,
+      "flag": "ok"
+    },
+    {
+      "state": "CA",
+      "epri_twh": 9.058,
+      "permit_twh": 9.554,
+      "epoch_twh": 0.0,
+      "raw_factor": 0.948,
+      "factor": 0.948,
+      "flag": "ok"
+    },
+    {
+      "state": "CO",
+      "epri_twh": 1.956,
+      "permit_twh": 2.376,
+      "epoch_twh": 0.0,
+      "raw_factor": 0.823,
+      "factor": 0.823,
+      "flag": "ok"
+    },
+    {
+      "state": "CT",
+      "epri_twh": 0.269,
+      "permit_twh": 0.0,
+      "epoch_twh": 0.0,
+      "raw_factor": NaN,
+      "factor": 1.0,
+      "flag": "no_dated_permits"
+    },
+    {
+      "state": "FL",
+      "epri_twh": 1.303,
+      "permit_twh": 0.236,
+      "epoch_twh": 0.359,
+      "raw_factor": 3.994,
+      "factor": 3.0,
+      "flag": "undercounted"
+    },
+    {
+      "state": "GA",
+      "epri_twh": 8.054,
+      "permit_twh": 1.637,
+      "epoch_twh": 1.701,
+      "raw_factor": 3.882,
+      "factor": 3.0,
+      "flag": "undercounted"
+    },
+    {
+      "state": "IA",
+      "epri_twh": 7.894,
+      "permit_twh": 2.648,
+      "epoch_twh": 3.416,
+      "raw_factor": 1.691,
+      "factor": 1.691,
+      "flag": "ok"
+    },
+    {
+      "state": "ID",
+      "epri_twh": 0.265,
+      "permit_twh": 0.0,
+      "epoch_twh": 0.047,
+      "raw_factor": NaN,
+      "factor": 1.0,
+      "flag": "no_dated_permits"
+    },
+    {
+      "state": "IL",
+      "epri_twh": 9.186,
+      "permit_twh": 6.352,
+      "epoch_twh": 2.155,
+      "raw_factor": 1.107,
+      "factor": 1.107,
+      "flag": "ok"
+    },
+    {
+      "state": "IN",
+      "epri_twh": 0.82,
+      "permit_twh": 0.103,
+      "epoch_twh": 0.051,
+      "raw_factor": 7.43,
+      "factor": 3.0,
+      "flag": "undercounted"
+    },
+    {
+      "state": "KY",
+      "epri_twh": 1.46,
+      "permit_twh": 0.0,
+      "epoch_twh": 2.891,
+      "raw_factor": NaN,
+      "factor": 1.0,
+      "flag": "no_dated_permits"
+    },
+    {
+      "state": "MA",
+      "epri_twh": 1.358,
+      "permit_twh": 0.842,
+      "epoch_twh": 0.0,
+      "raw_factor": 1.612,
+      "factor": 1.612,
+      "flag": "ok"
+    },
+    {
+      "state": "MI",
+      "epri_twh": 0.354,
+      "permit_twh": 0.547,
+      "epoch_twh": 0.0,
+      "raw_factor": 0.647,
+      "factor": 0.647,
+      "flag": "ok"
+    },
+    {
+      "state": "MN",
+      "epri_twh": 0.612,
+      "permit_twh": 0.315,
+      "epoch_twh": 0.0,
+      "raw_factor": 1.942,
+      "factor": 1.942,
+      "flag": "ok"
+    },
+    {
+      "state": "MO",
+      "epri_twh": 1.31,
+      "permit_twh": 0.493,
+      "epoch_twh": 0.023,
+      "raw_factor": 2.611,
+      "factor": 2.611,
+      "flag": "ok"
+    },
+    {
+      "state": "MT",
+      "epri_twh": 0.596,
+      "permit_twh": 0.298,
+      "epoch_twh": 0.0,
+      "raw_factor": 1.997,
+      "factor": 1.997,
+      "flag": "ok"
+    },
+    {
+      "state": "NC",
+      "epri_twh": 3.704,
+      "permit_twh": 1.214,
+      "epoch_twh": 1.002,
+      "raw_factor": 2.227,
+      "factor": 2.227,
+      "flag": "ok"
+    },
+    {
+      "state": "ND",
+      "epri_twh": 1.931,
+      "permit_twh": 0.0,
+      "epoch_twh": 4.024,
+      "raw_factor": NaN,
+      "factor": 1.0,
+      "flag": "no_dated_permits"
+    },
+    {
+      "state": "NE",
+      "epri_twh": 4.788,
+      "permit_twh": 0.233,
+      "epoch_twh": 6.198,
+      "raw_factor": 0.0,
+      "factor": 0.2,
+      "flag": "overcounted"
+    },
+    {
+      "state": "NJ",
+      "epri_twh": 4.187,
+      "permit_twh": 3.022,
+      "epoch_twh": 0.622,
+      "raw_factor": 1.18,
+      "factor": 1.18,
+      "flag": "ok"
+    },
+    {
+      "state": "NM",
+      "epri_twh": 0.98,
+      "permit_twh": 0.002,
+      "epoch_twh": 1.143,
+      "raw_factor": 0.0,
+      "factor": 0.2,
+      "flag": "overcounted"
+    },
+    {
+      "state": "NV",
+      "epri_twh": 4.891,
+      "permit_twh": 0.783,
+      "epoch_twh": 5.736,
+      "raw_factor": 0.0,
+      "factor": 0.2,
+      "flag": "overcounted"
+    },
+    {
+      "state": "NY",
+      "epri_twh": 4.296,
+      "permit_twh": 0.826,
+      "epoch_twh": 2.796,
+      "raw_factor": 1.816,
+      "factor": 1.816,
+      "flag": "ok"
+    },
+    {
+      "state": "OH",
+      "epri_twh": 6.823,
+      "permit_twh": 3.818,
+      "epoch_twh": 4.63,
+      "raw_factor": 0.574,
+      "factor": 0.574,
+      "flag": "ok"
+    },
+    {
+      "state": "OK",
+      "epri_twh": 1.96,
+      "permit_twh": 0.307,
+      "epoch_twh": 0.552,
+      "raw_factor": 4.594,
+      "factor": 3.0,
+      "flag": "undercounted"
+    },
+    {
+      "state": "OR",
+      "epri_twh": 11.005,
+      "permit_twh": 14.246,
+      "epoch_twh": 5.058,
+      "raw_factor": 0.417,
+      "factor": 0.417,
+      "flag": "ok"
+    },
+    {
+      "state": "PA",
+      "epri_twh": 2.728,
+      "permit_twh": 0.283,
+      "epoch_twh": 0.044,
+      "raw_factor": 9.494,
+      "factor": 3.0,
+      "flag": "undercounted"
+    },
+    {
+      "state": "SC",
+      "epri_twh": 1.781,
+      "permit_twh": 0.0,
+      "epoch_twh": 3.907,
+      "raw_factor": NaN,
+      "factor": 1.0,
+      "flag": "no_dated_permits"
+    },
+    {
+      "state": "TN",
+      "epri_twh": 1.97,
+      "permit_twh": 0.034,
+      "epoch_twh": 3.571,
+      "raw_factor": 0.0,
+      "factor": 0.2,
+      "flag": "overcounted"
+    },
+    {
+      "state": "TX",
+      "epri_twh": 33.539,
+      "permit_twh": 6.365,
+      "epoch_twh": 6.663,
+      "raw_factor": 4.222,
+      "factor": 3.0,
+      "flag": "undercounted"
+    },
+    {
+      "state": "UT",
+      "epri_twh": 3.27,
+      "permit_twh": 2.078,
+      "epoch_twh": 1.685,
+      "raw_factor": 0.763,
+      "factor": 0.763,
+      "flag": "ok"
+    },
+    {
+      "state": "VA",
+      "epri_twh": 33.947,
+      "permit_twh": 68.873,
+      "epoch_twh": 5.364,
+      "raw_factor": 0.415,
+      "factor": 0.415,
+      "flag": "ok"
+    },
+    {
+      "state": "WA",
+      "epri_twh": 6.342,
+      "permit_twh": 2.95,
+      "epoch_twh": 1.559,
+      "raw_factor": 1.621,
+      "factor": 1.621,
+      "flag": "ok"
+    },
+    {
+      "state": "WY",
+      "epri_twh": 1.608,
+      "permit_twh": 0.954,
+      "epoch_twh": 0.0,
+      "raw_factor": 1.686,
+      "factor": 1.686,
+      "flag": "ok"
+    }
+  ],
+  "step_d": {
+    "corrections_file": "pipeline/facilities/verified/pass_c_corrections_s17.json",
+    "fingerprint": {
+      "files": {
+        "pipeline/facilities/verified/pass_c_corrections_s17.json": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22",
+        "pipeline/facilities/verified/step_d_locations.json": "5fcd58786472de02b6ea84d5e9b43ac22d2e71e6b53d6c894413d1d86c718de9",
+        "pipeline/facilities/verified/government_record_years.csv": "56a36ddfa1e47aa17b380be0876de565613641eb1e3f429e8bda08053bd1825f",
+        "pipeline/facilities/verified/pass_c_withdrawn.json": "cf3077166492a95cfbba9e570b6f1e36819773d9346d50bcd94425f83f59ed0b",
+        "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+        "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+        "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+        "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+        "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+        "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+        "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+        "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+        "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+        "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+        "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+        "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+        "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1"
+      },
+      "settings": {
+        "step": "build_inventory"
+      }
+    },
+    "locations_corrected": {
+      "bi:910-0": "parcel_centroid_coordinate_convention",
+      "bi:911-0": "parcel_centroid_coordinate_convention",
+      "epoch:Microsoft SAT14": "parcel_centroid_coordinate_convention"
+    },
+    "locations_unresolved": {
+      "bi:446-0": "FedEx, Colorado Springs: the inventory's point is on another owner's parcel (350 Spectrum Loop); not corrected (Joe, R8)",
+      "bi:937-0": "NSA Utah Data Center: the inventory's point is a residential parcel in Lehi; no record gives the location; not corrected (Joe, R8)"
+    },
+    "candidates_after_relocation": {
+      "bi:910-0": "1175;7752;10009;14626;16604",
+      "bi:911-0": "16604;1175;7752;10009;14626",
+      "epoch:Microsoft SAT14": "16604;1175;7752;10009;14626"
+    },
+    "utility_after_relocation": {
+      "bi:910-0": 7752,
+      "bi:911-0": 16604,
+      "epoch:Microsoft SAT14": 16604
+    },
+    "timing": {
+      "applied": [
+        "bi:1021-3",
+        "bi:1062-0",
+        "bi:1074-0",
+        "bi:1082-0",
+        "bi:1086-3",
+        "bi:1087-5",
+        "bi:1089-2",
+        "bi:1090-5",
+        "bi:1091-4",
+        "bi:1123-0",
+        "bi:1200-0",
+        "bi:1250-0",
+        "bi:1274-0",
+        "bi:1280-0",
+        "bi:1281-1",
+        "bi:15-0",
+        "bi:434-0",
+        "bi:444-0",
+        "bi:445-0",
+        "bi:446-0",
+        "bi:615-0",
+        "bi:616-0",
+        "bi:646-0",
+        "bi:667-0",
+        "bi:684-0",
+        "bi:687-0",
+        "bi:690-0",
+        "bi:794-0",
+        "bi:817-0",
+        "bi:819-0",
+        "bi:820-0",
+        "bi:822-0",
+        "bi:823-0",
+        "bi:832-0",
+        "bi:833-0",
+        "bi:846-0",
+        "bi:848-0",
+        "bi:907-0",
+        "bi:914-0",
+        "bi:918-0",
+        "bi:950-5",
+        "bi:962-5",
+        "bi:964-0",
+        "bi:969-5",
+        "bi:970-1",
+        "bi:978-0",
+        "bi:988-2",
+        "bi:989-6"
+      ],
+      "load_unknown": [
+        "bi:837-0",
+        "bi:852-0"
+      ]
+    },
+    "assignment": {
+      "assign_already_in_place": [
+        "bi:1250-0",
+        "bi:19-0",
+        "bi:444-0",
+        "bi:615-0",
+        "bi:616-0",
+        "bi:646-0",
+        "bi:817-0",
+        "bi:821-0",
+        "bi:892-0",
+        "bi:917-0"
+      ],
+      "assign_applied": [],
+      "reopened": [
+        "bi:1257-0",
+        "bi:848-0"
+      ],
+      "candidates_widened": [
+        "bi:1123-0",
+        "bi:910-0",
+        "epoch:Microsoft SAT40"
+      ],
+      "narrowed": []
+    },
+    "first_fuel_years_set_aside": [
+      {
+        "fid": "bi:819-0",
+        "first_fuel_year_set_aside": 2021,
+        "permit_based_year": 2022,
+        "year_carried": 2022,
+        "date_basis": "convention_year_within_a_dated_interval",
+        "dated_by": "its date entry in the corrections file in force",
+        "interval": {
+          "earliest": null,
+          "latest": 2022,
+          "convention": 2022,
+          "ends": "tested"
+        },
+        "note": "first generator fuel is on file as evidence that generators were present; it supplies no operating-date bound (D-61 5.1; D-96 reading (1); Joe at Stop 3, 2026-11-18). The row is dated by its date entry in the corrections file in force."
+      },
+      {
+        "fid": "bi:820-0",
+        "first_fuel_year_set_aside": 2018,
+        "permit_based_year": 2019,
+        "year_carried": 2019,
+        "date_basis": "convention_year_within_a_dated_interval",
+        "dated_by": "its date entry in the corrections file in force",
+        "interval": {
+          "earliest": 2018,
+          "latest": 2019,
+          "convention": 2019,
+          "ends": "tested"
+        },
+        "note": "first generator fuel is on file as evidence that generators were present; it supplies no operating-date bound (D-61 5.1; D-96 reading (1); Joe at Stop 3, 2026-11-18). The row is dated by its date entry in the corrections file in force."
+      },
+      {
+        "fid": "bi:822-0",
+        "first_fuel_year_set_aside": 2018,
+        "permit_based_year": 2019,
+        "year_carried": 2019,
+        "date_basis": "convention_year_within_a_dated_interval",
+        "dated_by": "its date entry in the corrections file in force",
+        "interval": {
+          "earliest": null,
+          "latest": 2019,
+          "convention": 2019,
+          "ends": "tested"
+        },
+        "note": "first generator fuel is on file as evidence that generators were present; it supplies no operating-date bound (D-61 5.1; D-96 reading (1); Joe at Stop 3, 2026-11-18). The row is dated by its date entry in the corrections file in force."
+      },
+      {
+        "fid": "bi:823-0",
+        "first_fuel_year_set_aside": 2019,
+        "permit_based_year": 2019,
+        "year_carried": 2019,
+        "date_basis": "convention_year_within_a_dated_interval",
+        "dated_by": "its date entry in the corrections file in force",
+        "interval": {
+          "earliest": null,
+          "latest": 2019,
+          "convention": 2019,
+          "ends": "tested"
+        },
+        "note": "first generator fuel is on file as evidence that generators were present; it supplies no operating-date bound (D-61 5.1; D-96 reading (1); Joe at Stop 3, 2026-11-18). The row is dated by its date entry in the corrections file in force."
+      },
+      {
+        "fid": "bi:846-0",
+        "first_fuel_year_set_aside": 2022,
+        "permit_based_year": 2022,
+        "year_carried": 2022,
+        "date_basis": "convention_year_within_a_dated_interval",
+        "dated_by": "its date entry in the corrections file in force",
+        "interval": {
+          "earliest": null,
+          "latest": 2022,
+          "convention": 2022,
+          "ends": "tested"
+        },
+        "note": "first generator fuel is on file as evidence that generators were present; it supplies no operating-date bound (D-61 5.1; D-96 reading (1); Joe at Stop 3, 2026-11-18). The row is dated by its date entry in the corrections file in force."
+      }
+    ],
+    "year_built_rows": {
+      "total": 115,
+      "no_size_carries_no_load_in_any_history_and_the_years_differ": 66,
+      "two_years_differ_carried_as_a_provisional_interval": 27,
+      "one_year_the_year_built_and_the_permit_based_year_coincide": 22,
+      "with_no_size": 76,
+      "record_review": "unpursued: the record was not opened for what the building was built as; Joe's closure ruling (R1, 2026-11-18) supersedes D-63 rule 3's requirement to read it in step D"
+    },
+    "load_unknown_sites": [
+      {
+        "fid": "bi:837-0",
+        "state": "OR",
+        "why": "no convention for its date and capacity question: no single load history is assigned; the load is unknown, not zero and not 'never operating' (Joe, R2)",
+        "utilities_directly": [
+          "15248:OR"
+        ],
+        "state_factor_moves_across_its_histories": true,
+        "its_2024_twh_across_admissible_histories": [
+          0.13797
+        ]
+      },
+      {
+        "fid": "bi:852-0",
+        "state": "OR",
+        "why": "no convention for its date question: no single load history is assigned; the load is unknown, not zero and not 'never operating' (Joe, R2)",
+        "utilities_directly": [
+          "15248:OR"
+        ],
+        "state_factor_moves_across_its_histories": true,
+        "its_2024_twh_across_admissible_histories": [
+          0.0,
+          0.032662
+        ]
+      }
+    ],
+    "utilities_affected_by_unknown_load": [
+      "15248:OR",
+      "19325:OR"
+    ],
+    "date_basis": {
+      "undated": 924,
+      "first_generator_permit_plus_lag": 866,
+      "verified_public_source": 248,
+      "year_built_used_as_start_by_convention": 115,
+      "epoch_timeline": 42,
+      "convention_year_within_a_dated_interval": 15,
+      "osm_start_date_tag": 13,
+      "verified_not_yet_operating": 9,
+      "convention_latest_year_the_evidence_allows": 6,
+      "operator_reported_energy": 4,
+      "unresolved_start_load_unknown": 2
+    }
+  }
+}

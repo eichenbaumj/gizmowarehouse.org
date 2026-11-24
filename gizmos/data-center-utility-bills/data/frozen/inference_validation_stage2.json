@@ -1,0 +1,373 @@
+{
+ "what_this_is": "Step E stage 2, validation (E5.1), of the candidate stage 1 selected, alone, on fresh datasets.",
+ "candidate": "C",
+ "seed": 20261202,
+ "datasets_per_process": 20000,
+ "processes": [
+  "G0_as_in_D38",
+  "G1_unequal_variances",
+  "G2_more_persistence",
+  "G3_less_persistence",
+  "G4_rate_case_steps",
+  "G5_shocks_common_across_states",
+  "G6_all_of_it",
+  "G7_high_variance_where_the_weight_is",
+  "G8_company_and_supplier_shocks",
+  "G9_unequal_regional_exposure",
+  "G10_own_trends",
+  "G11_fuel_shocks_linear_in_the_share",
+  "G12_fuel_shocks_not_linear_in_the_share"
+ ],
+ "standard": "one-sided 95% Monte Carlo upper bound (rate + 1.645 standard errors) at or under 11% in every process, for the range and for the early-years test separately; no averages",
+ "fingerprint": {
+  "sha256": "fd914a7b15f261a7df000cceb1989a4249d41426a6ed6600cc2458d51970d0ca",
+  "of": {
+   "design_inputs": "b8515c35cba1d17530273ac81eca0994e458c44a6ea15fd2366eb2a905e10366",
+   "rules": "62651481510393de2d0aace6ae866c9094601a6611e09e8762474054e6a712d4",
+   "code_version": "131077f03b182f045f0ecce2cce9a16257cf24c9626ab0b8a0cf049c2ba55265",
+   "assumptions": "8e1bb6126942cfd7616241100f22bf6331583366a85f67da775200a8b7f5037f",
+   "settings": "0cfea801cec2d7ae014536517ebd5f054faa4297af6f53d1fe10bed4722855df",
+   "seeds": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+  },
+  "version": 1
+ },
+ "range": {
+  "verdict": "passed",
+  "by_process": {
+   "G0_as_in_D38": {
+    "count": 1759,
+    "rate": 0.08795,
+    "upper_bound_95": 0.09124,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.08406,
+     0.09196
+    ]
+   },
+   "G1_unequal_variances": {
+    "count": 1706,
+    "rate": 0.0853,
+    "upper_bound_95": 0.08855,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.08146,
+     0.08926
+    ]
+   },
+   "G2_more_persistence": {
+    "count": 1911,
+    "rate": 0.09555,
+    "upper_bound_95": 0.09897,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.09151,
+     0.09971
+    ]
+   },
+   "G3_less_persistence": {
+    "count": 1858,
+    "rate": 0.0929,
+    "upper_bound_95": 0.09628,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.08891,
+     0.09701
+    ]
+   },
+   "G4_rate_case_steps": {
+    "count": 1981,
+    "rate": 0.09905,
+    "upper_bound_95": 0.10252,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.09494,
+     0.10327
+    ]
+   },
+   "G5_shocks_common_across_states": {
+    "count": 1373,
+    "rate": 0.06865,
+    "upper_bound_95": 0.07159,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.06518,
+     0.07224
+    ]
+   },
+   "G6_all_of_it": {
+    "count": 1454,
+    "rate": 0.0727,
+    "upper_bound_95": 0.07572,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.06914,
+     0.07639
+    ]
+   },
+   "G7_high_variance_where_the_weight_is": {
+    "count": 1621,
+    "rate": 0.08105,
+    "upper_bound_95": 0.08422,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.0773,
+     0.08492
+    ]
+   },
+   "G8_company_and_supplier_shocks": {
+    "count": 1941,
+    "rate": 0.09705,
+    "upper_bound_95": 0.10049,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.09298,
+     0.10124
+    ]
+   },
+   "G9_unequal_regional_exposure": {
+    "count": 1863,
+    "rate": 0.09315,
+    "upper_bound_95": 0.09653,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.08916,
+     0.09726
+    ]
+   },
+   "G10_own_trends": {
+    "count": 1955,
+    "rate": 0.09775,
+    "upper_bound_95": 0.1012,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.09367,
+     0.10195
+    ]
+   },
+   "G11_fuel_shocks_linear_in_the_share": {
+    "count": 1862,
+    "rate": 0.0931,
+    "upper_bound_95": 0.09648,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.08911,
+     0.09721
+    ]
+   },
+   "G12_fuel_shocks_not_linear_in_the_share": {
+    "count": 1788,
+    "rate": 0.0894,
+    "upper_bound_95": 0.09272,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.08548,
+     0.09344
+    ]
+   }
+  }
+ },
+ "early_years_test": {
+  "verdict": "passed",
+  "by_process": {
+   "G0_as_in_D38": {
+    "count": 1124,
+    "rate": 0.0562,
+    "upper_bound_95": 0.05888,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05305,
+     0.05948
+    ]
+   },
+   "G1_unequal_variances": {
+    "count": 794,
+    "rate": 0.0397,
+    "upper_bound_95": 0.04197,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.03704,
+     0.0425
+    ]
+   },
+   "G2_more_persistence": {
+    "count": 979,
+    "rate": 0.04895,
+    "upper_bound_95": 0.05146,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.046,
+     0.05203
+    ]
+   },
+   "G3_less_persistence": {
+    "count": 1140,
+    "rate": 0.057,
+    "upper_bound_95": 0.0597,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05383,
+     0.0603
+    ]
+   },
+   "G4_rate_case_steps": {
+    "count": 870,
+    "rate": 0.0435,
+    "upper_bound_95": 0.04587,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.04071,
+     0.04642
+    ]
+   },
+   "G5_shocks_common_across_states": {
+    "count": 983,
+    "rate": 0.04915,
+    "upper_bound_95": 0.05166,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.04619,
+     0.05224
+    ]
+   },
+   "G6_all_of_it": {
+    "count": 637,
+    "rate": 0.03185,
+    "upper_bound_95": 0.03389,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.02946,
+     0.03438
+    ]
+   },
+   "G7_high_variance_where_the_weight_is": {
+    "count": 569,
+    "rate": 0.02845,
+    "upper_bound_95": 0.03038,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.02619,
+     0.03085
+    ]
+   },
+   "G8_company_and_supplier_shocks": {
+    "count": 1180,
+    "rate": 0.059,
+    "upper_bound_95": 0.06174,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05577,
+     0.06236
+    ]
+   },
+   "G9_unequal_regional_exposure": {
+    "count": 1068,
+    "rate": 0.0534,
+    "upper_bound_95": 0.05602,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05032,
+     0.05661
+    ]
+   },
+   "G10_own_trends": {
+    "count": 1091,
+    "rate": 0.05455,
+    "upper_bound_95": 0.05719,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05144,
+     0.05779
+    ]
+   },
+   "G11_fuel_shocks_linear_in_the_share": {
+    "count": 1069,
+    "rate": 0.05345,
+    "upper_bound_95": 0.05607,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05037,
+     0.05666
+    ]
+   },
+   "G12_fuel_shocks_not_linear_in_the_share": {
+    "count": 1103,
+    "rate": 0.05515,
+    "upper_bound_95": 0.05781,
+    "at_or_under_11pct": true,
+    "exact_95_interval": [
+     0.05203,
+     0.0584
+    ]
+   }
+  }
+ },
+ "rates_include_failure_penalties": true,
+ "numerical_failures": {
+  "G0_as_in_D38": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G1_unequal_variances": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G2_more_persistence": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G3_less_persistence": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G4_rate_case_steps": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G5_shocks_common_across_states": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G6_all_of_it": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G7_high_variance_where_the_weight_is": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G8_company_and_supplier_shocks": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G9_unequal_regional_exposure": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G10_own_trends": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G11_fuel_shocks_linear_in_the_share": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  },
+  "G12_fuel_shocks_not_linear_in_the_share": {
+   "count": 0,
+   "causes": {},
+   "where": {}
+  }
+ },
+ "note": "failure to certify does not itself establish invalidity; no result-dependent extension and no runner-up validation (E5.5). The two results are reported separately (E5.1)."
+}

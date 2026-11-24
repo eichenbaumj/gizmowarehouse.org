@@ -1,0 +1,2802 @@
+{
+ "what_this_is": "Quantity-only design side of the runs that change the facility inventory and move event dates (E4(a) slow path, E4(b) anchoring off, the later-start sensitivity on outcomes at +1, +3 and +5 years, and E7's redraw of permit-dated start years), for the headline set at 2%. Each host's event year is its first crossing on the alternative inventory; comparison eligibility is re-read there; then G-a rematches at the new reference year. Timing sensitivity with rematching, not an isolated timing effect. PROVISIONAL: the design stands as of 2026-11-18, the plan is a draft and not frozen, and E7's error distribution is fixed at the freeze. No price, revenue or bill is read.",
+ "threshold": 0.02,
+ "set": "headline_set",
+ "checks": {
+  "dose_from_site_years_equals_utility_year_dose_parquet": true,
+  "largest_factor_difference_from_state_anchor_parquet": 0.0,
+  "rebuild_with_every_history_as_built": {
+   "rows_rebuilt": 2153,
+   "same_site_year_rows": true,
+   "largest_mw_difference": 0.0,
+   "states_whose_factor_moved": {}
+  },
+  "core_on_the_dose_as_built_equals_design_build_with_rules": true
+ },
+ "reference": {
+  "hosts": [
+   {
+    "utility": "803:AZ",
+    "name": "Arizona Public Service Co",
+    "crossing": 2020,
+    "status": "retained",
+    "matches": [
+     "9191:ID",
+     "16868:WA",
+     "17470:WA",
+     "5701:TX",
+     "3660:WA",
+     "18429:WA",
+     "14354:WY",
+     "14354:WA",
+     "5701:NM",
+     "56146:CO"
+    ]
+   },
+   {
+    "utility": "6958:TX",
+    "name": "City of Garland - (TX)",
+    "crossing": 2017,
+    "status": "retained",
+    "matches": [
+     "2442:TX",
+     "11501:TX",
+     "2409:TX",
+     "17561:TX",
+     "3940:TX",
+     "3282:TX",
+     "13830:TX",
+     "13418:TX",
+     "12268:TX",
+     "12452:TX"
+    ]
+   },
+   {
+    "utility": "14127:NE",
+    "name": "Omaha Public Power District",
+    "crossing": 2019,
+    "status": "retained",
+    "matches": [
+     "22500:KS",
+     "10005:KS",
+     "10000:MO",
+     "17718:TX",
+     "17698:LA",
+     "17698:TX",
+     "5860:MO",
+     "17833:MO",
+     "17718:NM",
+     "11292:TX"
+    ]
+   },
+   {
+    "utility": "14354:UT",
+    "name": "PacifiCorp",
+    "crossing": 2015,
+    "status": "retained",
+    "matches": [
+     "9191:ID",
+     "16868:WA",
+     "17470:WA",
+     "5701:TX",
+     "3660:WA",
+     "18429:WA",
+     "56146:CO",
+     "5701:NM",
+     "6022:OR",
+     "6604:CO"
+    ]
+   },
+   {
+    "utility": "15473:NM",
+    "name": "Public Service Co of NM",
+    "crossing": 2019,
+    "status": "retained",
+    "matches": [
+     "9191:ID",
+     "16868:WA",
+     "17470:WA",
+     "5701:TX",
+     "3660:WA",
+     "18429:WA",
+     "14354:WY",
+     "14354:WA",
+     "5701:NM",
+     "56146:CO"
+    ]
+   },
+   {
+    "utility": "17166:NV",
+    "name": "Sierra Pacific Power Co",
+    "crossing": 2017,
+    "status": "retained",
+    "matches": [
+     "5701:TX",
+     "17470:WA",
+     "16868:WA",
+     "9191:ID",
+     "3660:WA",
+     "18429:WA",
+     "5701:NM",
+     "56146:CO",
+     "6022:OR",
+     "6604:CO"
+    ]
+   },
+   {
+    "utility": "20065:GA",
+    "name": "Walton Electric Member Corp",
+    "crossing": 2021,
+    "status": "retained",
+    "matches": [
+     "21632:NC",
+     "10623:FL",
+     "3046:SC",
+     "18445:FL",
+     "19898:TN",
+     "17832:GA",
+     "3408:TN",
+     "17543:SC",
+     "3757:FL",
+     "6909:FL"
+    ]
+   }
+  ],
+  "eligible_comparison_utilities": 3019
+ },
+ "runs": {
+  "E4a_slow_path": {
+   "hosts_in_the_set": 7,
+   "hosts_retained": [
+    "803:AZ",
+    "6958:TX",
+    "14127:NE",
+    "14354:UT",
+    "15473:NM",
+    "17166:NV",
+    "20065:GA"
+   ],
+   "hosts_out_and_why": {},
+   "crossings": {
+    "803:AZ": {
+     "reference": 2020,
+     "alternative": 2021,
+     "moved_by": 1,
+     "group": "cohort"
+    },
+    "6958:TX": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14127:NE": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14354:UT": {
+     "reference": 2015,
+     "alternative": 2015,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "15473:NM": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "17166:NV": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "20065:GA": {
+     "reference": 2021,
+     "alternative": 2021,
+     "moved_by": 0,
+     "group": "cohort"
+    }
+   },
+   "timing_changes": [
+    "803:AZ"
+   ],
+   "estimable_sample_changes": [],
+   "missing_crossings": [],
+   "group_changes": [],
+   "lost_support_or_window": {},
+   "matches_changed": {},
+   "comparison_pool": {
+    "eligible": 3019,
+    "entered": [],
+    "left": []
+   },
+   "rows": {
+    "rows_on_the_slow_path": 327,
+    "not_moved": {
+     "fixed_history": 91,
+     "verified_or_correction_phases": 9,
+     "single_building": 167,
+     "load_unknown": 2,
+     "no_year_or_no_size": 1034,
+     "slow_path_equals_the_ramp": 614
+    },
+    "beyond_buildout_py_selection": {
+     "no_serving_utility": [
+      "bi:1187-0",
+      "bi:1192-0",
+      "bi:762-0",
+      "bi:771-0",
+      "bi:890-1",
+      "bi:892-0"
+     ],
+     "crypto": []
+    }
+   },
+   "factor_by_state_of_the_hosts": {
+    "AZ": {
+     "as_built": 0.490932891004505,
+     "alternative": 0.5129372058222851
+    },
+    "GA": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "NE": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NM": {
+     "as_built": null,
+     "alternative": null,
+     "note": "no changed row in this state"
+    },
+    "NV": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "TX": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "UT": {
+     "as_built": 0.7627926333811607,
+     "alternative": 0.7627926333811607
+    }
+   },
+   "states_whose_factor_moved": [
+    "AZ",
+    "CA",
+    "CO",
+    "MA",
+    "MN",
+    "NJ",
+    "OH",
+    "OR",
+    "VA",
+    "WY"
+   ]
+  },
+  "E4b_anchoring_off": {
+   "hosts_in_the_set": 7,
+   "hosts_retained": [
+    "803:AZ",
+    "6958:TX",
+    "14127:NE",
+    "14354:UT",
+    "15473:NM",
+    "17166:NV",
+    "20065:GA"
+   ],
+   "hosts_out_and_why": {},
+   "crossings": {
+    "803:AZ": {
+     "reference": 2020,
+     "alternative": 2020,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "6958:TX": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14127:NE": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14354:UT": {
+     "reference": 2015,
+     "alternative": 2014,
+     "moved_by": -1,
+     "group": "cohort"
+    },
+    "15473:NM": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "17166:NV": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "20065:GA": {
+     "reference": 2021,
+     "alternative": 2021,
+     "moved_by": 0,
+     "group": "cohort"
+    }
+   },
+   "timing_changes": [
+    "14354:UT"
+   ],
+   "estimable_sample_changes": [],
+   "missing_crossings": [],
+   "group_changes": [],
+   "lost_support_or_window": {},
+   "matches_changed": {
+    "14127:NE": {
+     "added": [
+      "14063:OK"
+     ],
+     "removed": [
+      "11292:TX"
+     ]
+    }
+   },
+   "comparison_pool": {
+    "eligible": 3023,
+    "entered": [
+     "14063:OK",
+     "14715:PA",
+     "20847:WI",
+     "6452:FL"
+    ],
+    "left": []
+   },
+   "factor_by_state_of_the_hosts": {
+    "AZ": {
+     "as_built": 0.490932891004505,
+     "alternative": 1.0
+    },
+    "GA": {
+     "as_built": 3.0,
+     "alternative": 1.0
+    },
+    "NE": {
+     "as_built": 0.2,
+     "alternative": 1.0
+    },
+    "NM": {
+     "as_built": 0.2,
+     "alternative": 1.0
+    },
+    "NV": {
+     "as_built": 0.2,
+     "alternative": 1.0
+    },
+    "TX": {
+     "as_built": 3.0,
+     "alternative": 1.0
+    },
+    "UT": {
+     "as_built": 0.7627926333811607,
+     "alternative": 1.0
+    }
+   }
+  },
+  "later_start_plus_1": {
+   "hosts_in_the_set": 7,
+   "hosts_retained": [
+    "803:AZ",
+    "6958:TX",
+    "14127:NE",
+    "14354:UT",
+    "15473:NM",
+    "17166:NV",
+    "20065:GA"
+   ],
+   "hosts_out_and_why": {},
+   "crossings": {
+    "803:AZ": {
+     "reference": 2020,
+     "alternative": 2020,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "6958:TX": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14127:NE": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14354:UT": {
+     "reference": 2015,
+     "alternative": 2015,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "15473:NM": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "17166:NV": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "20065:GA": {
+     "reference": 2021,
+     "alternative": 2021,
+     "moved_by": 0,
+     "group": "cohort"
+    }
+   },
+   "timing_changes": [],
+   "estimable_sample_changes": [],
+   "missing_crossings": [],
+   "group_changes": [],
+   "lost_support_or_window": {},
+   "matches_changed": {},
+   "comparison_pool": {
+    "eligible": 3020,
+    "entered": [
+     "19798:CA"
+    ],
+    "left": []
+   },
+   "rows_whose_history_changes": 796,
+   "incompatible_shifts": [
+    {
+     "site": "bi:684-0",
+     "shift": 1,
+     "field": "convention",
+     "wanted": 2016,
+     "held_at": 2015,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:684-0",
+     "shift": 1,
+     "field": "latest",
+     "wanted": 2016,
+     "held_at": 2015,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    }
+   ],
+   "incompatible_shift_count": 2,
+   "factor_by_state_of_the_hosts": {
+    "AZ": {
+     "as_built": 0.490932891004505,
+     "alternative": 0.5639187685951487
+    },
+    "GA": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "NE": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NM": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NV": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "TX": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "UT": {
+     "as_built": 0.7627926333811607,
+     "alternative": 0.7916184847419476
+    }
+   },
+   "states_whose_factor_moved": [
+    "AZ",
+    "CA",
+    "CO",
+    "IA",
+    "IL",
+    "KS",
+    "MA",
+    "MN",
+    "MT",
+    "NJ",
+    "NY",
+    "OH",
+    "OR",
+    "UT",
+    "VA",
+    "WY"
+   ]
+  },
+  "later_start_plus_3": {
+   "hosts_in_the_set": 7,
+   "hosts_retained": [
+    "803:AZ",
+    "6958:TX",
+    "14127:NE",
+    "14354:UT",
+    "15473:NM",
+    "17166:NV",
+    "20065:GA"
+   ],
+   "hosts_out_and_why": {},
+   "crossings": {
+    "803:AZ": {
+     "reference": 2020,
+     "alternative": 2020,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "6958:TX": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14127:NE": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14354:UT": {
+     "reference": 2015,
+     "alternative": 2015,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "15473:NM": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "17166:NV": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "20065:GA": {
+     "reference": 2021,
+     "alternative": 2021,
+     "moved_by": 0,
+     "group": "cohort"
+    }
+   },
+   "timing_changes": [],
+   "estimable_sample_changes": [],
+   "missing_crossings": [],
+   "group_changes": [],
+   "lost_support_or_window": {},
+   "matches_changed": {
+    "14127:NE": {
+     "added": [
+      "14063:OK"
+     ],
+     "removed": [
+      "11292:TX"
+     ]
+    }
+   },
+   "comparison_pool": {
+    "eligible": 3025,
+    "entered": [
+     "12866:UT",
+     "14063:OK",
+     "17874:UT",
+     "19501:OH",
+     "19798:CA",
+     "20847:WI"
+    ],
+    "left": []
+   },
+   "rows_whose_history_changes": 796,
+   "incompatible_shifts": [
+    {
+     "site": "bi:446-0",
+     "shift": 3,
+     "field": "convention",
+     "wanted": 2012,
+     "held_at": 2011,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:684-0",
+     "shift": 3,
+     "field": "convention",
+     "wanted": 2018,
+     "held_at": 2015,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:684-0",
+     "shift": 3,
+     "field": "latest",
+     "wanted": 2018,
+     "held_at": 2015,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:1250-0",
+     "shift": 3,
+     "field": "convention",
+     "wanted": 2014,
+     "held_at": 2012,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    }
+   ],
+   "incompatible_shift_count": 4,
+   "factor_by_state_of_the_hosts": {
+    "AZ": {
+     "as_built": 0.490932891004505,
+     "alternative": 0.5888005850015569
+    },
+    "GA": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "NE": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NM": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NV": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "TX": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "UT": {
+     "as_built": 0.7627926333811607,
+     "alternative": 0.8203312633617261
+    }
+   },
+   "states_whose_factor_moved": [
+    "AZ",
+    "CA",
+    "CO",
+    "IA",
+    "IL",
+    "KS",
+    "MA",
+    "MD",
+    "MN",
+    "MT",
+    "NH",
+    "NJ",
+    "NY",
+    "OH",
+    "OR",
+    "UT",
+    "VA",
+    "WY"
+   ]
+  },
+  "later_start_plus_5": {
+   "hosts_in_the_set": 7,
+   "hosts_retained": [
+    "803:AZ",
+    "6958:TX",
+    "14127:NE",
+    "14354:UT",
+    "15473:NM",
+    "17166:NV",
+    "20065:GA"
+   ],
+   "hosts_out_and_why": {},
+   "crossings": {
+    "803:AZ": {
+     "reference": 2020,
+     "alternative": 2020,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "6958:TX": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14127:NE": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "14354:UT": {
+     "reference": 2015,
+     "alternative": 2015,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "15473:NM": {
+     "reference": 2019,
+     "alternative": 2019,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "17166:NV": {
+     "reference": 2017,
+     "alternative": 2017,
+     "moved_by": 0,
+     "group": "cohort"
+    },
+    "20065:GA": {
+     "reference": 2021,
+     "alternative": 2021,
+     "moved_by": 0,
+     "group": "cohort"
+    }
+   },
+   "timing_changes": [],
+   "estimable_sample_changes": [],
+   "missing_crossings": [],
+   "group_changes": [],
+   "lost_support_or_window": {},
+   "matches_changed": {
+    "14127:NE": {
+     "added": [
+      "14063:OK"
+     ],
+     "removed": [
+      "11292:TX"
+     ]
+    }
+   },
+   "comparison_pool": {
+    "eligible": 3027,
+    "entered": [
+     "1167:MD",
+     "12866:UT",
+     "14063:OK",
+     "17874:UT",
+     "19501:OH",
+     "19798:CA",
+     "20847:WI",
+     "9273:IN"
+    ],
+    "left": []
+   },
+   "rows_whose_history_changes": 796,
+   "incompatible_shifts": [
+    {
+     "site": "bi:446-0",
+     "shift": 5,
+     "field": "convention",
+     "wanted": 2014,
+     "held_at": 2011,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:684-0",
+     "shift": 5,
+     "field": "convention",
+     "wanted": 2020,
+     "held_at": 2015,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:684-0",
+     "shift": 5,
+     "field": "latest",
+     "wanted": 2020,
+     "held_at": 2015,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    },
+    {
+     "site": "bi:1250-0",
+     "shift": 5,
+     "field": "convention",
+     "wanted": 2016,
+     "held_at": 2012,
+     "why": "a sourced bound: the start cannot be later than this (D-61 section 6)"
+    }
+   ],
+   "incompatible_shift_count": 4,
+   "factor_by_state_of_the_hosts": {
+    "AZ": {
+     "as_built": 0.490932891004505,
+     "alternative": 0.594472095016853
+    },
+    "GA": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "NE": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NM": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "NV": {
+     "as_built": 0.2,
+     "alternative": 0.2
+    },
+    "TX": {
+     "as_built": 3.0,
+     "alternative": 3.0
+    },
+    "UT": {
+     "as_built": 0.7627926333811607,
+     "alternative": 0.8203312633617261
+    }
+   },
+   "states_whose_factor_moved": [
+    "AZ",
+    "CA",
+    "CO",
+    "DC",
+    "IA",
+    "IL",
+    "KS",
+    "MA",
+    "MD",
+    "MI",
+    "MN",
+    "MO",
+    "MT",
+    "NH",
+    "NJ",
+    "NY",
+    "OH",
+    "OR",
+    "SD",
+    "UT",
+    "VA",
+    "WY"
+   ]
+  }
+ },
+ "E7": {
+  "partial_timing_run": false,
+  "label": "the specified 200 draws a direction",
+  "seconds_per_draw": 2.43,
+  "projected_minutes_for_400_draws": 16.2,
+  "budget_minutes": 600.0,
+  "seed": 20261203,
+  "rows_redrawn": 779,
+  "rows_redrawn_by_size_class": {
+   "under_20": 688,
+   "20_to_50": 62,
+   "50_plus": 29
+  },
+  "permit_dated_rows_on_the_rebuilt_inventory": 866,
+  "permit_dated_rows_not_redrawn": {
+   "no_year_or_no_size": 83,
+   "has_phases_or_a_fixed_history": 0
+  },
+  "rows_with_a_sourced_bound": {
+   "not_before": [],
+   "not_after": []
+  },
+  "unsettled_operating_status_no_load_in_every_draw": {
+   "bi:1301-0": {
+    "why": "QTS Glendale, Arizona: the operator's page says 'In Development'; the assessor's roll shows partly built buildings",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2025,
+    "carries_load_as_built": true,
+    "state": "AZ",
+    "utility": "803:AZ"
+   },
+   "bi:32-0": {
+    "why": "STACK Phoenix 02, Arizona: the assessor's roll shows the land vacant",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2024,
+    "carries_load_as_built": true,
+    "state": "AZ",
+    "utility": "16572:AZ"
+   },
+   "bi:1004-3": {
+    "why": "Amazon Village Place, Gainesville, Virginia: the county lists it under construction, the state lists it operating",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2024,
+    "carries_load_as_built": true,
+    "state": "VA",
+    "utility": "19876:VA"
+   },
+   "bi:976-0": {
+    "why": "Microsoft AVC17, near Clarksville, Virginia: a news page says under construction, the state lists it operating",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2024,
+    "carries_load_as_built": true,
+    "state": "VA",
+    "utility": "12260:VA"
+   }
+  },
+  "error_sign": "dating_report.json: permit-based year minus sourced year, positive where the permit dated the site too late. Earlier: start = permit-based year minus the drawn error; later: plus it.",
+  "directions": {
+   "earlier": {
+    "draws_attempted": 200,
+    "draws_computed": 200,
+    "draws_that_could_not_be_computed": {
+     "count": 0,
+     "by_cause": {}
+    },
+    "by_host": {
+     "803:AZ": {
+      "exact": 0.78,
+      "within_1_year": 0.835,
+      "true_crossing_2_or_more_years_earlier": 0.165,
+      "true_crossing_5_or_more_years_earlier": 0.07,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "6958:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14127:NE": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14354:UT": {
+      "exact": 0.905,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "15473:NM": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "17166:NV": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "20065:GA": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     }
+    },
+    "set_pooled_over_host_draws": {
+     "exact": 0.955,
+     "within_1_year": 0.976,
+     "true_crossing_2_or_more_years_earlier": 0.024,
+     "true_crossing_5_or_more_years_earlier": 0.01,
+     "true_crossing_2_or_more_years_later": 0.0,
+     "never_reaches_the_threshold": 0.0
+    },
+    "mean_hosts_per_draw_in_the_design": 7.0,
+    "mean_hosts_per_draw_with_a_crossing_in_2011_to_2022": 7.0,
+    "draws_held_at_a_bound_by_row": {},
+    "draws_with_any_hold": 0
+   },
+   "later": {
+    "draws_attempted": 200,
+    "draws_computed": 200,
+    "draws_that_could_not_be_computed": {
+     "count": 0,
+     "by_cause": {}
+    },
+    "by_host": {
+     "803:AZ": {
+      "exact": 0.995,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "6958:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14127:NE": {
+      "exact": 0.98,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14354:UT": {
+      "exact": 0.985,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "15473:NM": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "17166:NV": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "20065:GA": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     }
+    },
+    "set_pooled_over_host_draws": {
+     "exact": 0.994,
+     "within_1_year": 1.0,
+     "true_crossing_2_or_more_years_earlier": 0.0,
+     "true_crossing_5_or_more_years_earlier": 0.0,
+     "true_crossing_2_or_more_years_later": 0.0,
+     "never_reaches_the_threshold": 0.0
+    },
+    "mean_hosts_per_draw_in_the_design": 7.0,
+    "mean_hosts_per_draw_with_a_crossing_in_2011_to_2022": 7.0,
+    "draws_held_at_a_bound_by_row": {},
+    "draws_with_any_hold": 0
+   }
+  }
+ },
+ "E7_every_cohort_utility": {
+  "set": "every_cohort_utility",
+  "threshold": 0.02,
+  "what_this_is": "E7's redraw of permit-dated start years for every_cohort_utility at 2%, by the same functions and under the same rule as the headline set's block E7: the same rows redrawn from the same errors, the same seed and draws, the hosts and reference design this set's own (design.split and design.build_with_rules for this set). PROVISIONAL: the design stands as of 2026-11-18, the plan is a draft and not frozen, and E7's error distribution is fixed at the freeze. No price, revenue or bill is read.",
+  "seed_and_draw_streams": "Seed 20261203 (E7_SEED) and the streams exactly as e7_starts builds them. Draw i uses numpy's generator keyed by (E7_SEED, i) over the redrawn rows of e7_rows in their order, which do not depend on the set. So draw i redraws the inventory identically for every set, and only the set's hosts, reference design and roster differ. The agent's reading (session 25, 2026-11-20), since the existing functions give no other stream for a second set without a new rule.",
+  "checks": {
+   "core_on_the_dose_as_built_equals_design_build_with_rules": true,
+   "core_comparison_pool_equals_design_split": true
+  },
+  "reference": {
+   "hosts": [
+    {
+     "utility": "803:AZ",
+     "name": "Arizona Public Service Co",
+     "crossing": 2020,
+     "status": "retained",
+     "matches": [
+      "9191:ID",
+      "16868:WA",
+      "24211:AZ",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "14354:WY",
+      "14354:WA",
+      "5701:NM"
+     ]
+    },
+    {
+     "utility": "994:IN",
+     "name": "City of Auburn - (IN)",
+     "crossing": 2017,
+     "status": "retained",
+     "matches": [
+      "16179:IL",
+      "14194:OH",
+      "18252:MI",
+      "1896:IN",
+      "5336:OH",
+      "3597:PA",
+      "3216:OH",
+      "1456:VA",
+      "12540:DE",
+      "12478:DE"
+     ]
+    },
+    {
+     "utility": "1586:AR",
+     "name": "City of Bentonville - (AR)",
+     "crossing": 2014,
+     "status": "retained",
+     "matches": [
+      "4911:NE",
+      "3226:OK",
+      "17642:NE",
+      "15202:OK",
+      "11251:NE",
+      "4296:OK",
+      "13799:KS",
+      "9246:OK",
+      "18125:OK",
+      "4401:OK"
+     ]
+    },
+    {
+     "utility": "3461:WY",
+     "name": "Cheyenne Light Fuel & Power",
+     "crossing": 2015,
+     "status": "retained",
+     "matches": [
+      "14354:CA",
+      "21538:AZ",
+      "13318:AZ",
+      "3413:WA",
+      "7548:WA",
+      "10539:CO",
+      "6204:NM",
+      "3264:OR",
+      "19189:AZ",
+      "1579:WA"
+     ]
+    },
+    {
+     "utility": "3841:MS",
+     "name": "Coast Electric Power Assn - (MS)",
+     "crossing": 2012,
+     "status": "retained",
+     "matches": [
+      "6235:NC",
+      "6411:GA",
+      "4432:GA",
+      "4624:TN",
+      "19435:NC",
+      "16496:NC",
+      "6342:AR",
+      "24889:NC",
+      "16613:TX",
+      "1889:NC"
+     ]
+    },
+    {
+     "utility": "3989:CO",
+     "name": "City of Colorado Springs - (CO)",
+     "crossing": 2012,
+     "status": "retained",
+     "matches": [
+      "3660:WA",
+      "20169:WA",
+      "18429:WA",
+      "5701:TX",
+      "12825:MT",
+      "17470:WA",
+      "14354:WY",
+      "20169:ID",
+      "14354:WA",
+      "16868:WA"
+     ]
+    },
+    {
+     "utility": "4110:IL",
+     "name": "Commonwealth Edison Co",
+     "crossing": 2014,
+     "status": "retained",
+     "matches": [
+      "3755:OH",
+      "733:VA",
+      "733:WV",
+      "18997:OH",
+      "22053:KY",
+      "17637:MD",
+      "9324:MI",
+      "18085:OH",
+      "19876:NC",
+      "5070:DE"
+     ]
+    },
+    {
+     "utility": "4262:TX",
+     "name": "Cooke County Elec Coop Assn",
+     "crossing": 2012,
+     "status": "retained",
+     "matches": [
+      "9590:TX",
+      "13332:TX",
+      "27369:TX",
+      "10009:TX",
+      "6183:TX",
+      "6427:TX",
+      "20948:TX",
+      "20230:TX",
+      "7634:TX",
+      "10649:TX"
+     ]
+    },
+    {
+     "utility": "5773:MN",
+     "name": "City of Elk River",
+     "crossing": 2020,
+     "status": "retained",
+     "matches": [
+      "13143:IA",
+      "7627:IN",
+      "13196:ND",
+      "17040:IL",
+      "13815:WI",
+      "18047:MN",
+      "8449:KY",
+      "21114:MS",
+      "4715:WI",
+      "305:MI"
+     ]
+    },
+    {
+     "utility": "6182:TX",
+     "name": "Farmers Electric Coop, Inc - (TX)",
+     "crossing": 2014,
+     "status": "retained",
+     "matches": [
+      "2442:TX",
+      "2409:TX",
+      "3282:TX",
+      "17561:TX",
+      "3940:TX",
+      "13830:TX",
+      "19490:TX",
+      "1892:TX",
+      "13418:TX",
+      "12268:TX"
+     ]
+    },
+    {
+     "utility": "6958:TX",
+     "name": "City of Garland - (TX)",
+     "crossing": 2017,
+     "status": "retained",
+     "matches": [
+      "19490:TX",
+      "1892:TX",
+      "19159:TX",
+      "2442:TX",
+      "11501:TX",
+      "2409:TX",
+      "17561:TX",
+      "3940:TX",
+      "3282:TX",
+      "13830:TX"
+     ]
+    },
+    {
+     "utility": "7090:GA",
+     "name": "GreyStone Power Corporation",
+     "crossing": 2022,
+     "status": "retained",
+     "matches": [
+      "21632:NC",
+      "3046:SC",
+      "10623:FL",
+      "18445:FL",
+      "3408:TN",
+      "12686:MS",
+      "19898:TN",
+      "17832:GA",
+      "3757:FL",
+      "17543:SC"
+     ]
+    },
+    {
+     "utility": "7490:OK",
+     "name": "Grand River Dam Authority",
+     "crossing": 2011,
+     "status": "out",
+     "matches": null
+    },
+    {
+     "utility": "7559:TX",
+     "name": "Grayson-Collin Elec Coop, Inc",
+     "crossing": 2012,
+     "status": "retained",
+     "matches": [
+      "3282:TX",
+      "3940:TX",
+      "17561:TX",
+      "13830:TX",
+      "2409:TX",
+      "2442:TX",
+      "13418:TX",
+      "12268:TX",
+      "12452:TX",
+      "8898:TX"
+     ]
+    },
+    {
+     "utility": "7752:TX",
+     "name": "Guadalupe Valley Elec Coop Inc",
+     "crossing": 2021,
+     "status": "retained",
+     "matches": [
+      "19490:TX",
+      "1892:TX",
+      "19159:TX",
+      "11501:TX",
+      "2442:TX",
+      "2409:TX",
+      "17561:TX",
+      "3940:TX",
+      "13830:TX",
+      "13418:TX"
+     ]
+    },
+    {
+     "utility": "7977:OH",
+     "name": "City of Hamilton - (OH)",
+     "crossing": 2012,
+     "status": "out",
+     "matches": null
+    },
+    {
+     "utility": "9336:CO",
+     "name": "CORE Electric Cooperative",
+     "crossing": 2012,
+     "status": "retained",
+     "matches": [
+      "18429:WA",
+      "14354:WY",
+      "20169:ID",
+      "14354:WA",
+      "3660:WA",
+      "56146:CO",
+      "19728:AZ",
+      "5701:NM",
+      "6022:OR",
+      "20169:WA"
+     ]
+    },
+    {
+     "utility": "11187:CO",
+     "name": "City of Longmont",
+     "crossing": 2016,
+     "status": "retained",
+     "matches": [
+      "7548:WA",
+      "10539:CO",
+      "13318:AZ",
+      "6204:NM",
+      "21538:AZ",
+      "14354:CA",
+      "3413:WA",
+      "3264:OR",
+      "19189:AZ",
+      "15419:WA"
+     ]
+    },
+    {
+     "utility": "11208:CA",
+     "name": "Los Angeles Department of Water & Power",
+     "crossing": 2020,
+     "status": "retained",
+     "matches": [
+      "9216:CA",
+      "590:CA",
+      "12745:CA",
+      "7294:CA",
+      "19281:CA",
+      "57483:CA",
+      "15783:CA",
+      "207:CA",
+      "17612:CA",
+      "11124:CA"
+     ]
+    },
+    {
+     "utility": "13050:CO",
+     "name": "Mountain Parks Electric, Inc",
+     "crossing": 2022,
+     "status": "retained",
+     "matches": [
+      "16555:OR",
+      "59013:WA",
+      "14055:WA",
+      "6638:CO",
+      "4743:OR",
+      "12439:OR",
+      "40438:OR",
+      "11135:UT",
+      "40165:UT",
+      "20997:MT"
+     ]
+    },
+    {
+     "utility": "13520:MO",
+     "name": "New-Mac Electric Coop, Inc",
+     "crossing": 2011,
+     "status": "retained",
+     "matches": [
+      "10799:TN",
+      "15700:GA",
+      "20228:TN",
+      "20318:MO",
+      "15016:TN",
+      "13550:TN",
+      "6708:KY",
+      "11011:KY",
+      "11789:TN",
+      "17565:LA"
+     ]
+    },
+    {
+     "utility": "14006:OH",
+     "name": "Ohio Power Co",
+     "crossing": 2019,
+     "status": "retained",
+     "matches": [
+      "3755:OH",
+      "3542:OH",
+      "12796:WV",
+      "18997:OH",
+      "15263:MD",
+      "17637:MD",
+      "15263:WV",
+      "18085:OH",
+      "19876:NC",
+      "5070:DE"
+     ]
+    },
+    {
+     "utility": "14127:NE",
+     "name": "Omaha Public Power District",
+     "crossing": 2019,
+     "status": "retained",
+     "matches": [
+      "22500:KS",
+      "10005:KS",
+      "10000:MO",
+      "15474:OK",
+      "17718:TX",
+      "17698:LA",
+      "17698:TX",
+      "5860:MO",
+      "17698:AR",
+      "17833:MO"
+     ]
+    },
+    {
+     "utility": "14154:NY",
+     "name": "Orange & Rockland Utils Inc",
+     "crossing": 2017,
+     "status": "out",
+     "matches": null
+    },
+    {
+     "utility": "14328:CA",
+     "name": "Pacific Gas & Electric Co.",
+     "crossing": 2015,
+     "status": "retained",
+     "matches": [
+      "9216:CA",
+      "590:CA",
+      "12745:CA",
+      "7294:CA",
+      "19281:CA",
+      "57483:CA",
+      "15783:CA",
+      "207:CA",
+      "17612:CA",
+      "11124:CA"
+     ]
+    },
+    {
+     "utility": "14354:OR",
+     "name": "PacifiCorp",
+     "crossing": 2014,
+     "status": "retained",
+     "matches": [
+      "9191:ID",
+      "24211:AZ",
+      "16868:WA",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "56146:CO",
+      "5701:NM",
+      "6022:OR"
+     ]
+    },
+    {
+     "utility": "14354:UT",
+     "name": "PacifiCorp",
+     "crossing": 2015,
+     "status": "retained",
+     "matches": [
+      "9191:ID",
+      "24211:AZ",
+      "16868:WA",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "56146:CO",
+      "5701:NM",
+      "6022:OR"
+     ]
+    },
+    {
+     "utility": "14401:CA",
+     "name": "City of Palo Alto - (CA)",
+     "crossing": 2017,
+     "status": "retained",
+     "matches": [
+      "11124:CA",
+      "17612:CA",
+      "207:CA",
+      "19840:NV",
+      "15783:CA",
+      "4003:CA",
+      "57483:CA",
+      "1050:CA",
+      "19281:CA",
+      "7294:CA"
+     ]
+    },
+    {
+     "utility": "15248:OR",
+     "name": "Portland General Electric Co",
+     "crossing": 2021,
+     "status": "out",
+     "matches": null
+    },
+    {
+     "utility": "15444:UT",
+     "name": "Provo City Corp",
+     "crossing": 2013,
+     "status": "retained",
+     "matches": [
+      "15419:WA",
+      "5086:CO",
+      "3264:OR",
+      "11256:CO",
+      "17839:OR",
+      "10539:CO",
+      "6204:NM",
+      "9699:NM",
+      "3644:WA",
+      "21538:AZ"
+     ]
+    },
+    {
+     "utility": "15466:CO",
+     "name": "Public Service Co of Colorado",
+     "crossing": 2019,
+     "status": "retained",
+     "matches": [
+      "9191:ID",
+      "16868:WA",
+      "24211:AZ",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "14354:WY",
+      "14354:WA",
+      "5701:NM"
+     ]
+    },
+    {
+     "utility": "15473:NM",
+     "name": "Public Service Co of NM",
+     "crossing": 2019,
+     "status": "retained",
+     "matches": [
+      "9191:ID",
+      "16868:WA",
+      "24211:AZ",
+      "17470:WA",
+      "5701:TX",
+      "3660:WA",
+      "18429:WA",
+      "14354:WY",
+      "14354:WA",
+      "5701:NM"
+     ]
+    },
+    {
+     "utility": "16572:AZ",
+     "name": "Salt River Project",
+     "crossing": 2016,
+     "status": "retained",
+     "matches": [
+      "15500:WA",
+      "9191:ID",
+      "24211:AZ",
+      "16868:WA",
+      "17470:WA",
+      "12825:MT",
+      "5701:TX",
+      "20169:WA",
+      "3660:WA",
+      "18429:WA"
+     ]
+    },
+    {
+     "utility": "16638:TX",
+     "name": "San Bernard Electric Coop, Inc",
+     "crossing": 2016,
+     "status": "retained",
+     "matches": [
+      "12268:TX",
+      "12452:TX",
+      "13418:TX",
+      "7129:TX",
+      "8898:TX",
+      "28978:TX",
+      "19806:TX",
+      "28604:TX",
+      "3470:TX",
+      "3940:TX"
+     ]
+    },
+    {
+     "utility": "17166:NV",
+     "name": "Sierra Pacific Power Co",
+     "crossing": 2017,
+     "status": "retained",
+     "matches": [
+      "5701:TX",
+      "17470:WA",
+      "24211:AZ",
+      "16868:WA",
+      "9191:ID",
+      "3660:WA",
+      "18429:WA",
+      "5701:NM",
+      "56146:CO",
+      "6022:OR"
+     ]
+    },
+    {
+     "utility": "17267:SD",
+     "name": "Sioux Valley SW Elec Coop",
+     "crossing": 2020,
+     "status": "retained",
+     "matches": [
+      "3527:OK",
+      "18125:OK",
+      "4401:OK",
+      "16461:TX",
+      "2985:ND",
+      "12199:MT",
+      "20510:KS",
+      "12894:MN",
+      "10019:KS",
+      "60482:OK"
+     ]
+    },
+    {
+     "utility": "19325:OR",
+     "name": "Umatilla Electric Coop Assn",
+     "crossing": 2013,
+     "status": "out",
+     "matches": null
+    },
+    {
+     "utility": "19499:CO",
+     "name": "United Power, Inc",
+     "crossing": 2019,
+     "status": "retained",
+     "matches": [
+      "6604:CO",
+      "14354:ID",
+      "6022:OR",
+      "19728:AZ",
+      "56146:CO",
+      "5701:NM",
+      "19545:SD",
+      "6395:MT",
+      "8773:CO",
+      "14354:WA"
+     ]
+    },
+    {
+     "utility": "19604:AZ",
+     "name": "USBIA-San Carlos Project",
+     "crossing": 2012,
+     "status": "retained",
+     "matches": [
+      "1625:WA",
+      "7222:WY",
+      "19229:CA",
+      "8566:WY",
+      "17492:NM",
+      "6169:ID",
+      "14245:NV",
+      "40165:UT",
+      "10681:OR",
+      "5862:CO"
+     ]
+    },
+    {
+     "utility": "20065:GA",
+     "name": "Walton Electric Member Corp",
+     "crossing": 2021,
+     "status": "retained",
+     "matches": [
+      "21632:NC",
+      "10623:FL",
+      "3046:SC",
+      "18445:FL",
+      "19898:TN",
+      "17832:GA",
+      "3408:TN",
+      "12686:MS",
+      "17543:SC",
+      "3757:FL"
+     ]
+    },
+    {
+     "utility": "54913:MA",
+     "name": "NSTAR Electric Company",
+     "crossing": 2017,
+     "status": "retained",
+     "matches": [
+      "11804:MA",
+      "13214:RI",
+      "7601:VT",
+      "13441:NH",
+      "19791:VT",
+      "18488:MA",
+      "15748:MA",
+      "3477:MA",
+      "14605:MA",
+      "20038:CT"
+     ]
+    }
+   ],
+   "eligible_comparison_utilities": 3087
+  },
+  "settings": {
+   "e7_seed": 20261203,
+   "e7_draws_specified": 200,
+   "e7_draws_requested": 200,
+   "e7_draws_run": {
+    "earlier": 200,
+    "later": 200
+   }
+  },
+  "partial_timing_run": false,
+  "label": "the specified 200 draws a direction",
+  "seconds_per_draw": 9.31,
+  "projected_minutes_for_400_draws": 62.0,
+  "budget_minutes": 600.0,
+  "seed": 20261203,
+  "rows_redrawn": 779,
+  "rows_redrawn_by_size_class": {
+   "under_20": 688,
+   "20_to_50": 62,
+   "50_plus": 29
+  },
+  "permit_dated_rows_on_the_rebuilt_inventory": 866,
+  "permit_dated_rows_not_redrawn": {
+   "no_year_or_no_size": 83,
+   "has_phases_or_a_fixed_history": 0
+  },
+  "rows_with_a_sourced_bound": {
+   "not_before": [],
+   "not_after": []
+  },
+  "unsettled_operating_status_no_load_in_every_draw": {
+   "bi:1301-0": {
+    "why": "QTS Glendale, Arizona: the operator's page says 'In Development'; the assessor's roll shows partly built buildings",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2025,
+    "carries_load_as_built": true,
+    "state": "AZ",
+    "utility": "803:AZ"
+   },
+   "bi:32-0": {
+    "why": "STACK Phoenix 02, Arizona: the assessor's roll shows the land vacant",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2024,
+    "carries_load_as_built": true,
+    "state": "AZ",
+    "utility": "16572:AZ"
+   },
+   "bi:1004-3": {
+    "why": "Amazon Village Place, Gainesville, Virginia: the county lists it under construction, the state lists it operating",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2024,
+    "carries_load_as_built": true,
+    "state": "VA",
+    "utility": "19876:VA"
+   },
+   "bi:976-0": {
+    "why": "Microsoft AVC17, near Clarksville, Virginia: a news page says under construction, the state lists it operating",
+    "date_basis_on_the_rebuilt_inventory": "first_generator_permit_plus_lag",
+    "start_year_on_the_rebuilt_inventory": 2024,
+    "carries_load_as_built": true,
+    "state": "VA",
+    "utility": "12260:VA"
+   }
+  },
+  "error_sign": "dating_report.json: permit-based year minus sourced year, positive where the permit dated the site too late. Earlier: start = permit-based year minus the drawn error; later: plus it.",
+  "directions": {
+   "earlier": {
+    "draws_attempted": 200,
+    "draws_computed": 200,
+    "draws_that_could_not_be_computed": {
+     "count": 0,
+     "by_cause": {}
+    },
+    "by_host": {
+     "803:AZ": {
+      "exact": 0.78,
+      "within_1_year": 0.835,
+      "true_crossing_2_or_more_years_earlier": 0.165,
+      "true_crossing_5_or_more_years_earlier": 0.07,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "994:IN": {
+      "exact": 0.14,
+      "within_1_year": 0.37,
+      "true_crossing_2_or_more_years_earlier": 0.465,
+      "true_crossing_5_or_more_years_earlier": 0.295,
+      "true_crossing_2_or_more_years_later": 0.16,
+      "never_reaches_the_threshold": 0.005,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.765,
+      "share_of_draws_in_the_design": 0.765
+     },
+     "1586:AR": {
+      "exact": 0.155,
+      "within_1_year": 0.4,
+      "true_crossing_2_or_more_years_earlier": 0.415,
+      "true_crossing_5_or_more_years_earlier": 0.23,
+      "true_crossing_2_or_more_years_later": 0.185,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.675,
+      "share_of_draws_in_the_design": 0.565
+     },
+     "3461:WY": {
+      "exact": 0.695,
+      "within_1_year": 0.92,
+      "true_crossing_2_or_more_years_earlier": 0.08,
+      "true_crossing_5_or_more_years_earlier": 0.04,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.96,
+      "share_of_draws_in_the_design": 0.96
+     },
+     "3841:MS": {
+      "exact": 0.14,
+      "within_1_year": 0.38,
+      "true_crossing_2_or_more_years_earlier": 0.435,
+      "true_crossing_5_or_more_years_earlier": 0.2,
+      "true_crossing_2_or_more_years_later": 0.185,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.565,
+      "share_of_draws_in_the_design": 0.565
+     },
+     "3989:CO": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "4110:IL": {
+      "exact": 0.025,
+      "within_1_year": 0.055,
+      "true_crossing_2_or_more_years_earlier": 0.945,
+      "true_crossing_5_or_more_years_earlier": 0.13,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.385,
+      "share_of_draws_in_the_design": 0.385
+     },
+     "4262:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "5773:MN": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "6182:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "6958:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "7090:GA": {
+      "exact": 0.065,
+      "within_1_year": 0.245,
+      "true_crossing_2_or_more_years_earlier": 0.73,
+      "true_crossing_5_or_more_years_earlier": 0.54,
+      "true_crossing_2_or_more_years_later": 0.025,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.81,
+      "share_of_draws_in_the_design": 0.645
+     },
+     "7490:OK": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "7559:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "7752:TX": {
+      "exact": 0.695,
+      "within_1_year": 0.695,
+      "true_crossing_2_or_more_years_earlier": 0.305,
+      "true_crossing_5_or_more_years_earlier": 0.225,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.93,
+      "share_of_draws_in_the_design": 0.93
+     },
+     "7977:OH": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "9336:CO": {
+      "exact": 0.09,
+      "within_1_year": 0.38,
+      "true_crossing_2_or_more_years_earlier": 0.46,
+      "true_crossing_5_or_more_years_earlier": 0.235,
+      "true_crossing_2_or_more_years_later": 0.16,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.54,
+      "share_of_draws_in_the_design": 0.54
+     },
+     "11187:CO": {
+      "exact": 0.16,
+      "within_1_year": 0.43,
+      "true_crossing_2_or_more_years_earlier": 0.33,
+      "true_crossing_5_or_more_years_earlier": 0.115,
+      "true_crossing_2_or_more_years_later": 0.23,
+      "never_reaches_the_threshold": 0.01,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.9,
+      "share_of_draws_in_the_design": 0.9
+     },
+     "11208:CA": {
+      "exact": 0.005,
+      "within_1_year": 0.035,
+      "true_crossing_2_or_more_years_earlier": 0.005,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.07,
+      "never_reaches_the_threshold": 0.89,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.065,
+      "share_of_draws_in_the_design": 0.065
+     },
+     "13050:CO": {
+      "exact": 0.125,
+      "within_1_year": 0.375,
+      "true_crossing_2_or_more_years_earlier": 0.43,
+      "true_crossing_5_or_more_years_earlier": 0.275,
+      "true_crossing_2_or_more_years_later": 0.155,
+      "never_reaches_the_threshold": 0.04,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.685,
+      "share_of_draws_in_the_design": 0.685
+     },
+     "13520:MO": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14006:OH": {
+      "exact": 0.185,
+      "within_1_year": 0.995,
+      "true_crossing_2_or_more_years_earlier": 0.005,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14127:NE": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14154:NY": {
+      "exact": 0.04,
+      "within_1_year": 0.28,
+      "true_crossing_2_or_more_years_earlier": 0.63,
+      "true_crossing_5_or_more_years_earlier": 0.42,
+      "true_crossing_2_or_more_years_later": 0.09,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.69,
+      "share_of_draws_in_the_design": 0.49
+     },
+     "14328:CA": {
+      "exact": 0.255,
+      "within_1_year": 0.66,
+      "true_crossing_2_or_more_years_earlier": 0.29,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.05,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14354:OR": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14354:UT": {
+      "exact": 0.905,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14401:CA": {
+      "exact": 0.095,
+      "within_1_year": 0.32,
+      "true_crossing_2_or_more_years_earlier": 0.51,
+      "true_crossing_5_or_more_years_earlier": 0.285,
+      "true_crossing_2_or_more_years_later": 0.16,
+      "never_reaches_the_threshold": 0.01,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.785,
+      "share_of_draws_in_the_design": 0.785
+     },
+     "15248:OR": {
+      "exact": 0.73,
+      "within_1_year": 0.91,
+      "true_crossing_2_or_more_years_earlier": 0.09,
+      "true_crossing_5_or_more_years_earlier": 0.01,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "15444:UT": {
+      "exact": 0.13,
+      "within_1_year": 0.36,
+      "true_crossing_2_or_more_years_earlier": 0.49,
+      "true_crossing_5_or_more_years_earlier": 0.275,
+      "true_crossing_2_or_more_years_later": 0.15,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.565,
+      "share_of_draws_in_the_design": 0.565
+     },
+     "15466:CO": {
+      "exact": 0.52,
+      "within_1_year": 0.655,
+      "true_crossing_2_or_more_years_earlier": 0.345,
+      "true_crossing_5_or_more_years_earlier": 0.22,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.99,
+      "share_of_draws_in_the_design": 0.99
+     },
+     "15473:NM": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "16572:AZ": {
+      "exact": 0.54,
+      "within_1_year": 0.895,
+      "true_crossing_2_or_more_years_earlier": 0.105,
+      "true_crossing_5_or_more_years_earlier": 0.03,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.99,
+      "share_of_draws_in_the_design": 0.99
+     },
+     "16638:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "17166:NV": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "17267:SD": {
+      "exact": 0.15,
+      "within_1_year": 0.325,
+      "true_crossing_2_or_more_years_earlier": 0.505,
+      "true_crossing_5_or_more_years_earlier": 0.285,
+      "true_crossing_2_or_more_years_later": 0.155,
+      "never_reaches_the_threshold": 0.015,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.8,
+      "share_of_draws_in_the_design": 0.77
+     },
+     "19325:OR": {
+      "exact": 0.715,
+      "within_1_year": 0.8,
+      "true_crossing_2_or_more_years_earlier": 0.2,
+      "true_crossing_5_or_more_years_earlier": 0.05,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.835,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "19499:CO": {
+      "exact": 0.2,
+      "within_1_year": 0.495,
+      "true_crossing_2_or_more_years_earlier": 0.42,
+      "true_crossing_5_or_more_years_earlier": 0.275,
+      "true_crossing_2_or_more_years_later": 0.04,
+      "never_reaches_the_threshold": 0.045,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.755,
+      "share_of_draws_in_the_design": 0.755
+     },
+     "19604:AZ": {
+      "exact": 0.13,
+      "within_1_year": 0.365,
+      "true_crossing_2_or_more_years_earlier": 0.575,
+      "true_crossing_5_or_more_years_earlier": 0.345,
+      "true_crossing_2_or_more_years_later": 0.06,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.425,
+      "share_of_draws_in_the_design": 0.425
+     },
+     "20065:GA": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "54913:MA": {
+      "exact": 0.195,
+      "within_1_year": 0.41,
+      "true_crossing_2_or_more_years_earlier": 0.57,
+      "true_crossing_5_or_more_years_earlier": 0.32,
+      "true_crossing_2_or_more_years_later": 0.02,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.75,
+      "share_of_draws_in_the_design": 0.75
+     }
+    },
+    "set_pooled_over_host_draws": {
+     "exact": 0.558,
+     "within_1_year": 0.697,
+     "true_crossing_2_or_more_years_earlier": 0.232,
+     "true_crossing_5_or_more_years_earlier": 0.119,
+     "true_crossing_2_or_more_years_later": 0.046,
+     "never_reaches_the_threshold": 0.025
+    },
+    "mean_hosts_per_draw_in_the_design": 30.525,
+    "mean_hosts_per_draw_with_a_crossing_in_2011_to_2022": 34.865,
+    "draws_held_at_a_bound_by_row": {},
+    "draws_with_any_hold": 0
+   },
+   "later": {
+    "draws_attempted": 200,
+    "draws_computed": 200,
+    "draws_that_could_not_be_computed": {
+     "count": 0,
+     "by_cause": {}
+    },
+    "by_host": {
+     "803:AZ": {
+      "exact": 0.995,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "994:IN": {
+      "exact": 0.14,
+      "within_1_year": 0.37,
+      "true_crossing_2_or_more_years_earlier": 0.165,
+      "true_crossing_5_or_more_years_earlier": 0.025,
+      "true_crossing_2_or_more_years_later": 0.335,
+      "never_reaches_the_threshold": 0.13,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.755,
+      "share_of_draws_in_the_design": 0.755
+     },
+     "1586:AR": {
+      "exact": 0.155,
+      "within_1_year": 0.4,
+      "true_crossing_2_or_more_years_earlier": 0.185,
+      "true_crossing_5_or_more_years_earlier": 0.02,
+      "true_crossing_2_or_more_years_later": 0.385,
+      "never_reaches_the_threshold": 0.03,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.895,
+      "share_of_draws_in_the_design": 0.835
+     },
+     "3461:WY": {
+      "exact": 0.43,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "3841:MS": {
+      "exact": 0.14,
+      "within_1_year": 0.38,
+      "true_crossing_2_or_more_years_earlier": 0.185,
+      "true_crossing_5_or_more_years_earlier": 0.005,
+      "true_crossing_2_or_more_years_later": 0.415,
+      "never_reaches_the_threshold": 0.02,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.765,
+      "share_of_draws_in_the_design": 0.765
+     },
+     "3989:CO": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "4110:IL": {
+      "exact": 0.18,
+      "within_1_year": 0.38,
+      "true_crossing_2_or_more_years_earlier": 0.62,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.935,
+      "share_of_draws_in_the_design": 0.935
+     },
+     "4262:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "5773:MN": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "6182:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "6958:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "7090:GA": {
+      "exact": 0.23,
+      "within_1_year": 0.6,
+      "true_crossing_2_or_more_years_earlier": 0.205,
+      "true_crossing_5_or_more_years_earlier": 0.05,
+      "true_crossing_2_or_more_years_later": 0.145,
+      "never_reaches_the_threshold": 0.05,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.55,
+      "share_of_draws_in_the_design": 0.535
+     },
+     "7490:OK": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "7559:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "7752:TX": {
+      "exact": 0.935,
+      "within_1_year": 0.935,
+      "true_crossing_2_or_more_years_earlier": 0.065,
+      "true_crossing_5_or_more_years_earlier": 0.025,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "7977:OH": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "9336:CO": {
+      "exact": 0.12,
+      "within_1_year": 0.29,
+      "true_crossing_2_or_more_years_earlier": 0.13,
+      "true_crossing_5_or_more_years_earlier": 0.01,
+      "true_crossing_2_or_more_years_later": 0.565,
+      "never_reaches_the_threshold": 0.015,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.82,
+      "share_of_draws_in_the_design": 0.82
+     },
+     "11187:CO": {
+      "exact": 0.115,
+      "within_1_year": 0.29,
+      "true_crossing_2_or_more_years_earlier": 0.075,
+      "true_crossing_5_or_more_years_earlier": 0.005,
+      "true_crossing_2_or_more_years_later": 0.51,
+      "never_reaches_the_threshold": 0.125,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.705,
+      "share_of_draws_in_the_design": 0.705
+     },
+     "11208:CA": {
+      "exact": 0.085,
+      "within_1_year": 0.22,
+      "true_crossing_2_or_more_years_earlier": 0.015,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.395,
+      "never_reaches_the_threshold": 0.37,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.365,
+      "share_of_draws_in_the_design": 0.365
+     },
+     "13050:CO": {
+      "exact": 0.125,
+      "within_1_year": 0.375,
+      "true_crossing_2_or_more_years_earlier": 0.195,
+      "true_crossing_5_or_more_years_earlier": 0.01,
+      "true_crossing_2_or_more_years_later": 0.065,
+      "never_reaches_the_threshold": 0.365,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.41,
+      "share_of_draws_in_the_design": 0.41
+     },
+     "13520:MO": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14006:OH": {
+      "exact": 0.665,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14127:NE": {
+      "exact": 0.98,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14154:NY": {
+      "exact": 0.085,
+      "within_1_year": 0.355,
+      "true_crossing_2_or_more_years_earlier": 0.21,
+      "true_crossing_5_or_more_years_earlier": 0.03,
+      "true_crossing_2_or_more_years_later": 0.415,
+      "never_reaches_the_threshold": 0.02,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.89,
+      "share_of_draws_in_the_design": 0.26
+     },
+     "14328:CA": {
+      "exact": 0.13,
+      "within_1_year": 0.42,
+      "true_crossing_2_or_more_years_earlier": 0.02,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.56,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14354:OR": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14354:UT": {
+      "exact": 0.985,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "14401:CA": {
+      "exact": 0.105,
+      "within_1_year": 0.305,
+      "true_crossing_2_or_more_years_earlier": 0.225,
+      "true_crossing_5_or_more_years_earlier": 0.03,
+      "true_crossing_2_or_more_years_later": 0.39,
+      "never_reaches_the_threshold": 0.08,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.785,
+      "share_of_draws_in_the_design": 0.785
+     },
+     "15248:OR": {
+      "exact": 0.965,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "15444:UT": {
+      "exact": 0.13,
+      "within_1_year": 0.36,
+      "true_crossing_2_or_more_years_earlier": 0.15,
+      "true_crossing_5_or_more_years_earlier": 0.02,
+      "true_crossing_2_or_more_years_later": 0.47,
+      "never_reaches_the_threshold": 0.02,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.82,
+      "share_of_draws_in_the_design": 0.82
+     },
+     "15466:CO": {
+      "exact": 0.53,
+      "within_1_year": 0.87,
+      "true_crossing_2_or_more_years_earlier": 0.11,
+      "true_crossing_5_or_more_years_earlier": 0.01,
+      "true_crossing_2_or_more_years_later": 0.02,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "15473:NM": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "16572:AZ": {
+      "exact": 0.505,
+      "within_1_year": 0.96,
+      "true_crossing_2_or_more_years_earlier": 0.02,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.02,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "16638:TX": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "17166:NV": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "17267:SD": {
+      "exact": 0.15,
+      "within_1_year": 0.325,
+      "true_crossing_2_or_more_years_earlier": 0.17,
+      "true_crossing_5_or_more_years_earlier": 0.015,
+      "true_crossing_2_or_more_years_later": 0.22,
+      "never_reaches_the_threshold": 0.285,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.565,
+      "share_of_draws_in_the_design": 0.565
+     },
+     "19325:OR": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 0.0
+     },
+     "19499:CO": {
+      "exact": 0.2,
+      "within_1_year": 0.495,
+      "true_crossing_2_or_more_years_earlier": 0.085,
+      "true_crossing_5_or_more_years_earlier": 0.06,
+      "true_crossing_2_or_more_years_later": 0.175,
+      "never_reaches_the_threshold": 0.245,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.695,
+      "share_of_draws_in_the_design": 0.695
+     },
+     "19604:AZ": {
+      "exact": 0.15,
+      "within_1_year": 0.47,
+      "true_crossing_2_or_more_years_earlier": 0.125,
+      "true_crossing_5_or_more_years_earlier": 0.025,
+      "true_crossing_2_or_more_years_later": 0.395,
+      "never_reaches_the_threshold": 0.01,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.86,
+      "share_of_draws_in_the_design": 0.86
+     },
+     "20065:GA": {
+      "exact": 1.0,
+      "within_1_year": 1.0,
+      "true_crossing_2_or_more_years_earlier": 0.0,
+      "true_crossing_5_or_more_years_earlier": 0.0,
+      "true_crossing_2_or_more_years_later": 0.0,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 1.0,
+      "share_of_draws_in_the_design": 1.0
+     },
+     "54913:MA": {
+      "exact": 0.11,
+      "within_1_year": 0.26,
+      "true_crossing_2_or_more_years_earlier": 0.665,
+      "true_crossing_5_or_more_years_earlier": 0.05,
+      "true_crossing_2_or_more_years_later": 0.075,
+      "never_reaches_the_threshold": 0.0,
+      "share_of_draws_with_a_crossing_in_2011_to_2022": 0.99,
+      "share_of_draws_in_the_design": 0.99
+     }
+    },
+    "set_pooled_over_host_draws": {
+     "exact": 0.594,
+     "within_1_year": 0.733,
+     "true_crossing_2_or_more_years_earlier": 0.088,
+     "true_crossing_5_or_more_years_earlier": 0.01,
+     "true_crossing_2_or_more_years_later": 0.135,
+     "never_reaches_the_threshold": 0.043
+    },
+    "mean_hosts_per_draw_in_the_design": 32.1,
+    "mean_hosts_per_draw_with_a_crossing_in_2011_to_2022": 36.805,
+    "draws_held_at_a_bound_by_row": {},
+    "draws_with_any_hold": 0
+   }
+  }
+ },
+ "E7_blocks_by_set": {
+  "headline_set": "E7 (its set and reference design are the file's top-level `set` and `reference`)",
+  "every_cohort_utility": "E7_every_cohort_utility"
+ },
+ "fingerprint": {
+  "files": {
+   "pipeline/analysis/inventory_runs.py": "f836adb875fac5e649212c7e0d65a0846581b1a784bc6bc7ace1a4ac5ac08b17",
+   "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+   "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+   "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+   "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+   "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+   "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+   "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+   "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+   "pipeline/facilities/step_d_check.py": "f87804b726d4a94c46ec41388de094844412bd192818ed102f9f87415b4ff385",
+   "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+   "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+   "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+   "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+   "pipeline/analysis/design.py": "07aa7e29777ead3e160ea942879e9c7a7245fdb69851c4b7b23f5f4a9738cdf1",
+   "pipeline/analysis/power_simulation.py": "146043ef334387637a6015e7903e020749e6ba18aae8f1805da623c69b1894d7",
+   "pipeline/analysis/misdating.py": "0c5b423b55859d08dc295005bfce08995dd31841317cc6a4fddfff8822fdac5f",
+   "pipeline/facilities/verified/pass_c_corrections_s17.json": "724d08cec4216b9e0276161c0d0dc3b71b4ef1cd8f90e7891c7b2775fba10f22",
+   "pipeline/facilities/verified/date_evidence.csv": "1cfba115f3548d54e2d592b0aa19e06029c05dacde76e432f4f09bc7e08057cb",
+   "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+   "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+   "data/interim/utility_year_dose.parquet": "a3f32be8ea13af4a81f932eeeae4dd5b4a8367e636c66785c38cfa8b34e49c34",
+   "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6",
+   "data/frozen/dating_report.json": "f33603811b1a0b8c22c7723f646431486efb24084423959e26a2f036ab339522"
+  },
+  "settings": {
+   "threshold": 0.02,
+   "e7_seed": 20261203,
+   "e7_draws_specified": 200,
+   "e7_draws_run": {
+    "earlier": 200,
+    "later": 200
+   },
+   "later_start_shifts": [
+    1,
+    3,
+    5
+   ]
+  }
+ },
+ "seconds": 4838.4
+}

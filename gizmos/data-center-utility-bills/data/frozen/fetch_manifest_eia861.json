@@ -1,0 +1,101 @@
+{
+  "fetched_at": "2026-11-11T15:35:29.033603+00:00",
+  "files": [
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_sales.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_sales.parquet",
+      "bytes": 3385272,
+      "sha256": "a10573f0024cb14f8022d71d4dfb4599fbed8571c8ac7111b2c8eb35db40a516",
+      "last_modified": "Tue, 10 Nov 2026 20:43:21 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_service_territory.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_service_territory.parquet",
+      "bytes": 1266393,
+      "sha256": "4d0ce502e1715389d59677dea46a3ccae6275d829e52cc4c4669494ff6535db2",
+      "last_modified": "Tue, 10 Nov 2026 20:43:21 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_utility_data_misc.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_utility_data_misc.parquet",
+      "bytes": 158597,
+      "sha256": "896e6667d9a10eca4bc849e452c06a67a4c5928b700092f332b77abebe269f20",
+      "last_modified": "Tue, 10 Nov 2026 20:43:21 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_operational_data_misc.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_operational_data_misc.parquet",
+      "bytes": 2723612,
+      "sha256": "6b1fe661b22678dfbf4c3d419beb681b98e9e3e96cb1b35cd066c87c3c24d15d",
+      "last_modified": "Tue, 10 Nov 2026 20:43:21 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_operational_data_revenue.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_operational_data_revenue.parquet",
+      "bytes": 1272003,
+      "sha256": "24afc0369c054cbbbe233927ff499722f76143220b8c553d9547460c849c89c9",
+      "last_modified": "Tue, 10 Nov 2026 20:43:21 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_balancing_authority.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_balancing_authority.parquet",
+      "bytes": 14301,
+      "sha256": "9172bb1ffee5c0b7060d45e8b6ed69ea0071706309e94f9a328d156dc4a3c421",
+      "last_modified": "Tue, 10 Nov 2026 20:43:19 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__assn_balancing_authority.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__assn_balancing_authority.parquet",
+      "bytes": 142221,
+      "sha256": "ba21593ce6102f154cfdcb9ac4c8127d29c81d90089f130ccb8c4cdabbbb0e05",
+      "last_modified": "Tue, 10 Nov 2026 20:43:19 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__assn_utility.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__assn_utility.parquet",
+      "bytes": 184483,
+      "sha256": "bac4ab783db88c0c197737372bd98cb0c3937462e759df67699a0eefe857aafb",
+      "last_modified": "Tue, 10 Nov 2026 20:43:19 GMT"
+    },
+    {
+      "url": "https://s3.us-west-2.amazonaws.com/pudl.catalyst.coop/stable/core_eia861__yearly_short_form.parquet",
+      "ok": true,
+      "path": "data/raw/pudl/core_eia861__yearly_short_form.parquet",
+      "bytes": 281448,
+      "sha256": "a6a200ced70dffa2ea93e06e476fd43055ff4fa7289cffa881aa417d72c12e1c",
+      "last_modified": "Tue, 10 Nov 2026 20:43:21 GMT"
+    },
+    {
+      "url": "https://www.eia.gov/electricity/data/eia861/zip/f8612025.zip",
+      "ok": true,
+      "path": "data/raw/eia861_zip/f8612025.zip",
+      "bytes": 4756816,
+      "sha256": "f59f6c732bf685fe0a1591b32227f5ce572dc0dfd26bb5caaeed128ac4e3a396",
+      "last_modified": "Wed, 07 Oct 2026 13:48:05 GMT"
+    },
+    {
+      "url": "https://www.eia.gov/electricity/data/eia861/archive/zip/f8612024.zip",
+      "ok": true,
+      "path": "data/raw/eia861_zip/f8612024.zip",
+      "bytes": 4568208,
+      "sha256": "77ce49c60ac5a6bad50c442fc401aad5404a21da875dc5cbaba353af5ede54de",
+      "last_modified": "Thu, 04 Dec 2025 19:58:07 GMT"
+    },
+    {
+      "url": "https://www.eia.gov/electricity/data/eia861/archive/zip/f8612023.zip",
+      "ok": true,
+      "path": "data/raw/eia861_zip/f8612023.zip",
+      "bytes": 4604583,
+      "sha256": "0acd67ab84cdaef09fd47b4449f2c944f8731c2b3c695ec3a97bb6c0690a4d61",
+      "last_modified": "Wed, 26 Mar 2025 13:05:02 GMT"
+    }
+  ]
+}

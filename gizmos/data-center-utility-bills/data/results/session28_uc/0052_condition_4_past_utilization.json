@@ -1,0 +1,359 @@
+{
+ "sequence": 52,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "condition_4_past_utilization",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T05:36:53+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "condition_4_past_utilization",
+  "plan_section": "Conditions tested (four), 4: past utilization above against at or below the median",
+  "sets": [
+   "headline_set at 2%",
+   "every_cohort_utility at 2%"
+  ],
+  "builder": "design.build_with_rules under the headline rules, conditions.past_utilization_grouping",
+  "estimator": "conditions.contrast (no range, no test)",
+  "labels": [
+   "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+   "companion set: the agent's reading: the plan does not settle this"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "validation": "not applicable: a descriptive contrast with no range and no test, so no validation is claimed (None is kept for the validated headline alone)",
+    "label": "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+    "contrast": {
+     "condition": "past_utilization",
+     "rule": "peak demand in the reference year over the largest peak reported in any earlier year from 2001 (peak = the larger of summer and winter); used only where the utility's footprint is shown comparable over 2001 to the reference year by tests (i) one state, (ii) no succession inside the history and (iii) customer continuity; first group if strictly above the median among the classifiable hosts in the estimate; lines 1 to 6 read the plan's one-line definition (coordinator's instruction of 2026-11-19), adopted by Joe on 2026-11-19 (D-111); line 7 (EIA-imputed rows are no report) is the agent's reading; the three footprint tests read 'comparable utility footprints' in the owner's ruling of 2026-11-19, adopted by Joe on 2026-11-19 (D-111); the 10% line in test (iii) is a convention fixed by the session before any customer series was examined for this purpose",
+     "label": "measures how hard the system had been used; not a measure of spare generation or network capacity",
+     "reading": null,
+     "difference_is": "past utilization above the median minus past utilization at or below the median",
+     "what_this_is": "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+     "estimable_means": "passing the rank test establishes computational estimability only",
+     "hosts_with_no_matches_not_stacked": [],
+     "hosts_not_classifiable_left_out_of_this_contrast": {
+      "803:AZ": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "14354:UT": "not classifiable on this condition: its utility serves more than one state in the panel and files one operational record for the whole utility",
+      "15473:NM": "unavailable: footprint not shown comparable over the ratio's history (failed: (ii) no succession inside the history)",
+      "17166:NV": "unavailable: footprint not shown comparable over the ratio's history (failed: (ii) no succession inside the history)"
+     },
+     "groups": {
+      "first": {
+       "group": "past utilization above the median",
+       "hosts": 1,
+       "named": [
+        {
+         "utility": "14127:NE",
+         "name": "Omaha Public Power District",
+         "cohort": 2019
+        }
+       ],
+       "states": [
+        "NE"
+       ],
+       "number_of_states": 1,
+       "share_of_host_side_weight": 0.3325085021211301,
+       "largest_single_host_share_within_group": 1.0,
+       "effective_number_of_hosts": 1.0,
+       "driven_by": "this contrast is driven by those particular utilities (Omaha Public Power District), not evidence of a general past-utilization effect"
+      },
+      "second": {
+       "group": "past utilization at or below the median",
+       "hosts": 2,
+       "named": [
+        {
+         "utility": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "cohort": 2017
+        },
+        {
+         "utility": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "cohort": 2021
+        }
+       ],
+       "states": [
+        "GA",
+        "TX"
+       ],
+       "number_of_states": 2,
+       "share_of_host_side_weight": 0.6674914978788699,
+       "largest_single_host_share_within_group": 0.5116933181715915,
+       "effective_number_of_hosts": 1.9989067284293265,
+       "driven_by": "this contrast is driven by those particular utilities (City of Garland - (TX), Walton Electric Member Corp), not evidence of a general past-utilization effect"
+      }
+     },
+     "estimable": true,
+     "difference_log_points": -0.07243159166410207,
+     "difference_log_points_x100": -7.243159166410207,
+     "not_estimable_because": null
+    },
+    "estimated": true
+   },
+   "every_cohort_utility at 2%": {
+    "validation": "not applicable: a descriptive contrast with no range and no test, so no validation is claimed (None is kept for the validated headline alone)",
+    "label": "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+    "contrast": {
+     "condition": "past_utilization",
+     "rule": "peak demand in the reference year over the largest peak reported in any earlier year from 2001 (peak = the larger of summer and winter); used only where the utility's footprint is shown comparable over 2001 to the reference year by tests (i) one state, (ii) no succession inside the history and (iii) customer continuity; first group if strictly above the median among the classifiable hosts in the estimate; lines 1 to 6 read the plan's one-line definition (coordinator's instruction of 2026-11-19), adopted by Joe on 2026-11-19 (D-111); line 7 (EIA-imputed rows are no report) is the agent's reading; the three footprint tests read 'comparable utility footprints' in the owner's ruling of 2026-11-19, adopted by Joe on 2026-11-19 (D-111); the 10% line in test (iii) is a convention fixed by the session before any customer series was examined for this purpose",
+     "label": "measures how hard the system had been used; not a measure of spare generation or network capacity",
+     "reading": null,
+     "difference_is": "past utilization above the median minus past utilization at or below the median",
+     "what_this_is": "descriptive and exploratory: no range, no test, no significance stars; the headline procedure's validation is not transferred to it; one group's estimate beside the other's is not evidence that the two differ, and only the difference is described",
+     "estimable_means": "passing the rank test establishes computational estimability only",
+     "hosts_with_no_matches_not_stacked": [],
+     "hosts_not_classifiable_left_out_of_this_contrast": {
+      "803:AZ": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "994:IN": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "5773:MN": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "7559:TX": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "7752:TX": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "14006:OH": "unavailable: footprint not shown comparable over the ratio's history (failed: (ii) no succession inside the history)",
+      "14354:OR": "not classifiable on this condition: its utility serves more than one state in the panel and files one operational record for the whole utility",
+      "14354:UT": "not classifiable on this condition: its utility serves more than one state in the panel and files one operational record for the whole utility",
+      "15473:NM": "unavailable: footprint not shown comparable over the ratio's history (failed: (ii) no succession inside the history)",
+      "17166:NV": "unavailable: footprint not shown comparable over the ratio's history (failed: (ii) no succession inside the history)",
+      "17267:SD": "not classifiable on this condition: its utility serves more than one state in the panel and files one operational record for the whole utility",
+      "19499:CO": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "19604:AZ": "unavailable: footprint not shown comparable over the ratio's history (failed: (iii) customer continuity)",
+      "54913:MA": "unavailable: footprint not shown comparable over the ratio's history (failed: (ii) no succession inside the history)"
+     },
+     "groups": {
+      "first": {
+       "group": "past utilization above the median",
+       "hosts": 11,
+       "named": [
+        {
+         "utility": "1586:AR",
+         "name": "City of Bentonville - (AR)",
+         "cohort": 2014
+        },
+        {
+         "utility": "3461:WY",
+         "name": "Cheyenne Light Fuel & Power",
+         "cohort": 2015
+        },
+        {
+         "utility": "3841:MS",
+         "name": "Coast Electric Power Assn - (MS)",
+         "cohort": 2012
+        },
+        {
+         "utility": "4110:IL",
+         "name": "Commonwealth Edison Co",
+         "cohort": 2014
+        },
+        {
+         "utility": "4262:TX",
+         "name": "Cooke County Elec Coop Assn",
+         "cohort": 2012
+        },
+        {
+         "utility": "6182:TX",
+         "name": "Farmers Electric Coop, Inc - (TX)",
+         "cohort": 2014
+        },
+        {
+         "utility": "7090:GA",
+         "name": "GreyStone Power Corporation",
+         "cohort": 2022
+        },
+        {
+         "utility": "11187:CO",
+         "name": "City of Longmont",
+         "cohort": 2016
+        },
+        {
+         "utility": "11208:CA",
+         "name": "Los Angeles Department of Water & Power",
+         "cohort": 2020
+        },
+        {
+         "utility": "13520:MO",
+         "name": "New-Mac Electric Coop, Inc",
+         "cohort": 2011
+        },
+        {
+         "utility": "16572:AZ",
+         "name": "Salt River Project",
+         "cohort": 2016
+        }
+       ],
+       "states": [
+        "AR",
+        "AZ",
+        "CA",
+        "CO",
+        "GA",
+        "IL",
+        "MO",
+        "MS",
+        "TX",
+        "WY"
+       ],
+       "number_of_states": 10,
+       "share_of_host_side_weight": 0.4973205404086574,
+       "largest_single_host_share_within_group": 0.0926470050133659,
+       "effective_number_of_hosts": 10.987153392842211
+      },
+      "second": {
+       "group": "past utilization at or below the median",
+       "hosts": 11,
+       "named": [
+        {
+         "utility": "3989:CO",
+         "name": "City of Colorado Springs - (CO)",
+         "cohort": 2012
+        },
+        {
+         "utility": "6958:TX",
+         "name": "City of Garland - (TX)",
+         "cohort": 2017
+        },
+        {
+         "utility": "9336:CO",
+         "name": "CORE Electric Cooperative",
+         "cohort": 2012
+        },
+        {
+         "utility": "13050:CO",
+         "name": "Mountain Parks Electric, Inc",
+         "cohort": 2022
+        },
+        {
+         "utility": "14127:NE",
+         "name": "Omaha Public Power District",
+         "cohort": 2019
+        },
+        {
+         "utility": "14328:CA",
+         "name": "Pacific Gas & Electric Co.",
+         "cohort": 2015
+        },
+        {
+         "utility": "14401:CA",
+         "name": "City of Palo Alto - (CA)",
+         "cohort": 2017
+        },
+        {
+         "utility": "15444:UT",
+         "name": "Provo City Corp",
+         "cohort": 2013
+        },
+        {
+         "utility": "15466:CO",
+         "name": "Public Service Co of Colorado",
+         "cohort": 2019
+        },
+        {
+         "utility": "16638:TX",
+         "name": "San Bernard Electric Coop, Inc",
+         "cohort": 2016
+        },
+        {
+         "utility": "20065:GA",
+         "name": "Walton Electric Member Corp",
+         "cohort": 2021
+        }
+       ],
+       "states": [
+        "CA",
+        "CO",
+        "GA",
+        "NE",
+        "TX",
+        "UT"
+       ],
+       "number_of_states": 6,
+       "share_of_host_side_weight": 0.5026794595913424,
+       "largest_single_host_share_within_group": 0.09217307946336491,
+       "effective_number_of_hosts": 10.998562120042708
+      }
+     },
+     "estimable": true,
+     "difference_log_points": -0.055947299981478536,
+     "difference_log_points_x100": -5.594729998147853,
+     "not_estimable_because": null
+    },
+    "estimated": true
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

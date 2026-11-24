@@ -1,0 +1,2233 @@
+{
+ "sequence": 44,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "E4b",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:17:09+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "E4b",
+  "plan_section": "Other outcomes and robustness: falsification and robustness, E4(b) anchoring off",
+  "sets": [
+   "headline_set at 2%",
+   "every_cohort_utility at 2%"
+  ],
+  "builder": "inventory_runs.e4b, redate (G-a)",
+  "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector",
+  "labels": [
+   "falsification and robustness run (reported whatever it shows; none is a gate)",
+   "timing sensitivity with rematching, not an isolated timing effect (G-a)",
+   "under the procedure validated on the headline set; no validation was made on this design"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "procedure": {
+     "name": "C",
+     "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+     "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+     "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+    },
+    "hosts_in_the_design": [
+     "803:AZ",
+     "6958:TX",
+     "14127:NE",
+     "14354:UT",
+     "15473:NM",
+     "17166:NV",
+     "20065:GA"
+    ],
+    "hosts_with_no_matches": [],
+    "numerical_failure": null,
+    "fuel_control": "gas_share_by_calendar_year",
+    "control_columns_left_out": [
+     {
+      "year": 2008,
+      "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+     }
+    ],
+    "hosts_fully_absorbed": [],
+    "absorbed_controls_option": null,
+    "controls_left_out_as_exactly_absorbed": [],
+    "columns": [
+     "event_year_-6",
+     "event_year_-5",
+     "event_year_-4",
+     "event_year_-2",
+     "event_year_-1",
+     "event_year_0",
+     "event_year_1",
+     "event_year_2",
+     "event_year_3",
+     "heating_degree_days",
+     "cooling_degree_days",
+     "gas_share_x_2009",
+     "gas_share_x_2010",
+     "gas_share_x_2011",
+     "gas_share_x_2012",
+     "gas_share_x_2013",
+     "gas_share_x_2014",
+     "gas_share_x_2015",
+     "gas_share_x_2016",
+     "gas_share_x_2017",
+     "gas_share_x_2018",
+     "gas_share_x_2019",
+     "gas_share_x_2020",
+     "gas_share_x_2021",
+     "gas_share_x_2022",
+     "gas_share_x_2023",
+     "gas_share_x_2024"
+    ],
+    "rows": 770,
+    "regressors": 27,
+    "clusters": 20,
+    "host_headline_weights": {
+     "803:AZ": 0.1439803832473635,
+     "6958:TX": 0.1461657545858816,
+     "14127:NE": 0.15039646561459663,
+     "14354:UT": 0.1503654156189397,
+     "15473:NM": 0.13975013949772203,
+     "17166:NV": 0.12291170685342218,
+     "20065:GA": 0.14643013458208573
+    },
+    "hosts_with_zero_weight": [],
+    "count_N": 7,
+    "event_year_coefficients": {
+     "-6": 0.018244079417238494,
+     "-5": 0.02569084385086246,
+     "-4": 0.029689206476178096,
+     "-3": 0.0,
+     "-2": 0.011677843604768288,
+     "-1": 0.0009581487086870732,
+     "0": 0.00794763863535529,
+     "1": 0.010963238861800706,
+     "2": 0.0031927445955845807,
+     "3": -0.004539050470419241
+    },
+    "headline": {
+     "log_points": -0.0006731529374173302,
+     "percent": -0.0672926420808378,
+     "standard_error_log_points": 0.029323700252148335,
+     "degrees_of_freedom": 6.81786689808829,
+     "range_90_log_points": [
+      -0.056453307989591694,
+      0.05510700211475704
+     ],
+     "range_90_percent": [
+      -5.488938742051616,
+      5.6653672804212825
+     ],
+     "status": "estimate with its 90% range under the selected procedure",
+     "event_years": [
+      2,
+      3
+     ]
+    },
+    "early_years_test": {
+     "Q": 2.3661338334104425,
+     "F": 0.5484494517129626,
+     "numerator_degrees_of_freedom": 3,
+     "denominator_degrees_of_freedom": 4.56543147646214,
+     "p_value": 0.672489887922547,
+     "fails_at_p_below_0.10": false,
+     "event_years": [
+      -6,
+      -5,
+      -4
+     ]
+    },
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "validation_check": {
+     "claimed": false,
+     "passed": null,
+     "why": "not claimed: the caller passed validated_design=False"
+    },
+    "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks",
+    "numerical_failure_in_words": null,
+    "design": {
+     "hosts": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "6958:TX",
+       "cohort": 2017,
+       "matches": [
+        "2442:TX",
+        "11501:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX"
+       ]
+      },
+      {
+       "utility": "14127:NE",
+       "cohort": 2019,
+       "matches": [
+        "22500:KS",
+        "10005:KS",
+        "10000:MO",
+        "17718:TX",
+        "17698:LA",
+        "14063:OK",
+        "17698:TX",
+        "5860:MO",
+        "17833:MO",
+        "17718:NM"
+       ]
+      },
+      {
+       "utility": "14354:UT",
+       "cohort": 2014,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "56146:CO",
+        "5701:NM",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "17166:NV",
+       "cohort": 2017,
+       "matches": [
+        "5701:TX",
+        "17470:WA",
+        "16868:WA",
+        "9191:ID",
+        "3660:WA",
+        "18429:WA",
+        "5701:NM",
+        "56146:CO",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "20065:GA",
+       "cohort": 2021,
+       "matches": [
+        "21632:NC",
+        "10623:FL",
+        "3046:SC",
+        "18445:FL",
+        "19898:TN",
+        "17832:GA",
+        "3408:TN",
+        "17543:SC",
+        "3757:FL",
+        "6909:FL"
+       ]
+      }
+     ],
+     "hosts_dropped": [],
+     "unresolved_ownership": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+       ],
+       "reason_by_year": {
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+       ],
+       "reason_by_year": {
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+       "in_this_run": "kept"
+      }
+     ],
+     "load_unknown_excluded": []
+    },
+    "estimated": true,
+    "redated": {
+     "hosts_in_the_set": 7,
+     "hosts_retained": [
+      "803:AZ",
+      "6958:TX",
+      "14127:NE",
+      "14354:UT",
+      "15473:NM",
+      "17166:NV",
+      "20065:GA"
+     ],
+     "hosts_out_and_why": {},
+     "crossings": {
+      "803:AZ": {
+       "reference": 2020,
+       "alternative": 2020,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "6958:TX": {
+       "reference": 2017,
+       "alternative": 2017,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "14127:NE": {
+       "reference": 2019,
+       "alternative": 2019,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "14354:UT": {
+       "reference": 2015,
+       "alternative": 2014,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "15473:NM": {
+       "reference": 2019,
+       "alternative": 2019,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "17166:NV": {
+       "reference": 2017,
+       "alternative": 2017,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "20065:GA": {
+       "reference": 2021,
+       "alternative": 2021,
+       "moved_by": 0,
+       "group": "cohort"
+      }
+     },
+     "timing_changes": [
+      "14354:UT"
+     ],
+     "estimable_sample_changes": [],
+     "missing_crossings": [],
+     "group_changes": [],
+     "lost_support_or_window": {},
+     "matches_changed": {
+      "14127:NE": {
+       "added": [
+        "14063:OK"
+       ],
+       "removed": [
+        "11292:TX"
+       ]
+      }
+     },
+     "comparison_pool": {
+      "eligible": 3023,
+      "entered": [
+       "14063:OK",
+       "14715:PA",
+       "20847:WI",
+       "6452:FL"
+      ],
+      "left": []
+     }
+    },
+    "factors": {
+     "AK": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "AL": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "AR": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "AZ": {
+      "as_built": 0.490932891004505,
+      "alternative": 1.0
+     },
+     "CA": {
+      "as_built": 0.9480568446678316,
+      "alternative": 1.0
+     },
+     "CO": {
+      "as_built": 0.8233898069292344,
+      "alternative": 1.0
+     },
+     "CT": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "DC": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "DE": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "FL": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "GA": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "HI": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "IA": {
+      "as_built": 1.6913073861754802,
+      "alternative": 1.0
+     },
+     "ID": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "IL": {
+      "as_built": 1.106842170132156,
+      "alternative": 1.0
+     },
+     "IN": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "KS": {
+      "as_built": 0.5717231722117382,
+      "alternative": 1.0
+     },
+     "KY": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "LA": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "MA": {
+      "as_built": 1.6120923546104597,
+      "alternative": 1.0
+     },
+     "MD": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "ME": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "MI": {
+      "as_built": 0.6471603754451558,
+      "alternative": 1.0
+     },
+     "MN": {
+      "as_built": 1.9416640365367872,
+      "alternative": 1.0
+     },
+     "MO": {
+      "as_built": 2.611111679168805,
+      "alternative": 1.0
+     },
+     "MS": {
+      "as_built": 0.7872775940796725,
+      "alternative": 1.0
+     },
+     "MT": {
+      "as_built": 1.9973342959859077,
+      "alternative": 1.0
+     },
+     "NC": {
+      "as_built": 2.2266206255592413,
+      "alternative": 1.0
+     },
+     "ND": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "NE": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NH": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NJ": {
+      "as_built": 1.179779930656193,
+      "alternative": 1.0
+     },
+     "NM": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NV": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NY": {
+      "as_built": 1.8157912705918935,
+      "alternative": 1.0
+     },
+     "OH": {
+      "as_built": 0.5744344617254172,
+      "alternative": 1.0
+     },
+     "OK": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "OR": {
+      "as_built": 0.4174402691339885,
+      "alternative": 1.0
+     },
+     "PA": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "RI": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "SC": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "SD": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "TN": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "TX": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "UT": {
+      "as_built": 0.7627926333811607,
+      "alternative": 1.0
+     },
+     "VA": {
+      "as_built": 0.41501257956863474,
+      "alternative": 1.0
+     },
+     "VT": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "WA": {
+      "as_built": 1.621446345518231,
+      "alternative": 1.0
+     },
+     "WI": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "WV": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "WY": {
+      "as_built": 1.6855053333665404,
+      "alternative": 1.0
+     }
+    }
+   },
+   "every_cohort_utility at 2%": {
+    "procedure": {
+     "name": "C",
+     "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+     "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+     "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+    },
+    "hosts_in_the_design": [
+     "803:AZ",
+     "1586:AR",
+     "3461:WY",
+     "3841:MS",
+     "3989:CO",
+     "4110:IL",
+     "4262:TX",
+     "5773:MN",
+     "6182:TX",
+     "6958:TX",
+     "7559:TX",
+     "7752:TX",
+     "9336:CO",
+     "11187:CO",
+     "11208:CA",
+     "13050:CO",
+     "13520:MO",
+     "14006:OH",
+     "14127:NE",
+     "14328:CA",
+     "14354:OR",
+     "14354:UT",
+     "14401:CA",
+     "15444:UT",
+     "15466:CO",
+     "15473:NM",
+     "16638:TX",
+     "17166:NV",
+     "17267:SD",
+     "19499:CO",
+     "19604:AZ",
+     "20065:GA",
+     "54913:MA"
+    ],
+    "hosts_with_no_matches": [],
+    "numerical_failure": null,
+    "fuel_control": "gas_share_by_calendar_year",
+    "control_columns_left_out": [
+     {
+      "year": 2005,
+      "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+     }
+    ],
+    "hosts_fully_absorbed": [],
+    "absorbed_controls_option": null,
+    "controls_left_out_as_exactly_absorbed": [],
+    "columns": [
+     "event_year_-6",
+     "event_year_-5",
+     "event_year_-4",
+     "event_year_-2",
+     "event_year_-1",
+     "event_year_0",
+     "event_year_1",
+     "event_year_2",
+     "event_year_3",
+     "heating_degree_days",
+     "cooling_degree_days",
+     "gas_share_x_2006",
+     "gas_share_x_2007",
+     "gas_share_x_2008",
+     "gas_share_x_2009",
+     "gas_share_x_2010",
+     "gas_share_x_2011",
+     "gas_share_x_2012",
+     "gas_share_x_2013",
+     "gas_share_x_2014",
+     "gas_share_x_2015",
+     "gas_share_x_2016",
+     "gas_share_x_2017",
+     "gas_share_x_2018",
+     "gas_share_x_2019",
+     "gas_share_x_2020",
+     "gas_share_x_2021",
+     "gas_share_x_2022",
+     "gas_share_x_2023",
+     "gas_share_x_2024",
+     "gas_share_x_2025"
+    ],
+    "rows": 3630,
+    "regressors": 31,
+    "clusters": 43,
+    "host_headline_weights": {
+     "803:AZ": 0.03018526882961443,
+     "1586:AR": 0.03039616970527579,
+     "3461:WY": 0.031015620494661608,
+     "3841:MS": 0.028475162358294354,
+     "3989:CO": 0.02978319524302768,
+     "4110:IL": 0.03062653091946296,
+     "4262:TX": 0.030517470649153954,
+     "5773:MN": 0.030705002533874735,
+     "6182:TX": 0.030517470649153968,
+     "6958:TX": 0.03021229594266242,
+     "7559:TX": 0.030517470649153968,
+     "7752:TX": 0.030212295942662424,
+     "9336:CO": 0.03007565617467266,
+     "11187:CO": 0.030686769651366755,
+     "11208:CA": 0.03051747064915397,
+     "13050:CO": 0.0304987580694899,
+     "13520:MO": 0.030272621481149793,
+     "14006:OH": 0.03061201463693392,
+     "14127:NE": 0.030386420309763677,
+     "14328:CA": 0.03051747064915397,
+     "14354:OR": 0.03029370485788957,
+     "14354:UT": 0.030774298820181283,
+     "14401:CA": 0.030560160155688618,
+     "15444:UT": 0.0303671746080716,
+     "15466:CO": 0.030208970122907713,
+     "15473:NM": 0.02982636325855799,
+     "16638:TX": 0.030517470649153968,
+     "17166:NV": 0.02891122561003023,
+     "17267:SD": 0.02997132441071949,
+     "19499:CO": 0.030615722783835966,
+     "19604:AZ": 0.03002975312057014,
+     "20065:GA": 0.030528055894193083,
+     "54913:MA": 0.030664640169588656
+    },
+    "hosts_with_zero_weight": [],
+    "count_N": 33,
+    "event_year_coefficients": {
+     "-6": -0.01993354181989193,
+     "-5": -0.005785414510043181,
+     "-4": 0.0013515689071393203,
+     "-3": 0.0,
+     "-2": 0.005942066758901294,
+     "-1": 0.011104699996402739,
+     "0": 0.016048116169141362,
+     "1": 0.015754682117511513,
+     "2": 0.016999960282410603,
+     "3": 0.024741990985206012
+    },
+    "headline": {
+     "log_points": 0.020870975633808308,
+     "percent": 2.10902976094979,
+     "standard_error_log_points": 0.023895170868886047,
+     "degrees_of_freedom": 10.069906221252472,
+     "range_90_log_points": [
+      -0.022407604454648556,
+      0.06414955572226518
+     ],
+     "range_90_percent": [
+      -2.2158418774256305,
+      6.625185090339636
+     ],
+     "status": "estimate with its 90% range under the selected procedure",
+     "event_years": [
+      2,
+      3
+     ]
+    },
+    "early_years_test": {
+     "Q": 3.732257149452622,
+     "F": 0.9941280582425382,
+     "numerator_degrees_of_freedom": 3,
+     "denominator_degrees_of_freedom": 7.954371674272732,
+     "p_value": 0.44365152667526814,
+     "fails_at_p_below_0.10": false,
+     "event_years": [
+      -6,
+      -5,
+      -4
+     ]
+    },
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "validation_check": {
+     "claimed": false,
+     "passed": null,
+     "why": "not claimed: the caller passed validated_design=False"
+    },
+    "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks",
+    "numerical_failure_in_words": null,
+    "design": {
+     "hosts": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "1586:AR",
+       "cohort": 2013,
+       "matches": [
+        "11251:NE",
+        "17642:NE",
+        "15202:OK",
+        "4911:NE",
+        "13799:KS",
+        "9246:OK",
+        "3226:OK",
+        "4296:OK",
+        "14775:OK",
+        "15746:OK"
+       ]
+      },
+      {
+       "utility": "3461:WY",
+       "cohort": 2016,
+       "matches": [
+        "14354:CA",
+        "21538:AZ",
+        "3413:WA",
+        "13318:AZ",
+        "7548:WA",
+        "10539:CO",
+        "6204:NM",
+        "3264:OR",
+        "19189:AZ",
+        "18280:AZ"
+       ]
+      },
+      {
+       "utility": "3841:MS",
+       "cohort": 2012,
+       "matches": [
+        "6235:NC",
+        "6411:GA",
+        "4432:GA",
+        "4624:TN",
+        "19435:NC",
+        "16496:NC",
+        "6342:AR",
+        "24889:NC",
+        "16613:TX",
+        "1889:NC"
+       ]
+      },
+      {
+       "utility": "3989:CO",
+       "cohort": 2012,
+       "matches": [
+        "3660:WA",
+        "20169:WA",
+        "18429:WA",
+        "5701:TX",
+        "12825:MT",
+        "17470:WA",
+        "14354:WY",
+        "20169:ID",
+        "14354:WA",
+        "16868:WA"
+       ]
+      },
+      {
+       "utility": "4110:IL",
+       "cohort": 2014,
+       "matches": [
+        "3755:OH",
+        "733:VA",
+        "733:WV",
+        "18997:OH",
+        "22053:KY",
+        "17637:MD",
+        "9324:MI",
+        "18085:OH",
+        "19876:NC",
+        "5070:DE"
+       ]
+      },
+      {
+       "utility": "4262:TX",
+       "cohort": 2012,
+       "matches": [
+        "9590:TX",
+        "13332:TX",
+        "27369:TX",
+        "10009:TX",
+        "6183:TX",
+        "6427:TX",
+        "20948:TX",
+        "20230:TX",
+        "7634:TX",
+        "10649:TX"
+       ]
+      },
+      {
+       "utility": "5773:MN",
+       "cohort": 2020,
+       "matches": [
+        "13143:IA",
+        "7627:IN",
+        "13196:ND",
+        "17040:IL",
+        "13815:WI",
+        "18047:MN",
+        "8449:KY",
+        "21114:MS",
+        "4715:WI",
+        "305:MI"
+       ]
+      },
+      {
+       "utility": "6182:TX",
+       "cohort": 2014,
+       "matches": [
+        "2442:TX",
+        "2409:TX",
+        "3282:TX",
+        "17561:TX",
+        "3940:TX",
+        "13830:TX",
+        "19490:TX",
+        "1892:TX",
+        "13418:TX",
+        "12268:TX"
+       ]
+      },
+      {
+       "utility": "6958:TX",
+       "cohort": 2017,
+       "matches": [
+        "19490:TX",
+        "1892:TX",
+        "19159:TX",
+        "2442:TX",
+        "11501:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "3282:TX",
+        "13830:TX"
+       ]
+      },
+      {
+       "utility": "7559:TX",
+       "cohort": 2012,
+       "matches": [
+        "3282:TX",
+        "3940:TX",
+        "17561:TX",
+        "13830:TX",
+        "2409:TX",
+        "2442:TX",
+        "13418:TX",
+        "12268:TX",
+        "12452:TX",
+        "8898:TX"
+       ]
+      },
+      {
+       "utility": "7752:TX",
+       "cohort": 2021,
+       "matches": [
+        "19490:TX",
+        "1892:TX",
+        "19159:TX",
+        "11501:TX",
+        "2442:TX",
+        "2409:TX",
+        "17561:TX",
+        "3940:TX",
+        "13830:TX",
+        "13418:TX"
+       ]
+      },
+      {
+       "utility": "9336:CO",
+       "cohort": 2011,
+       "matches": [
+        "18429:WA",
+        "14354:WY",
+        "20169:ID",
+        "14354:WA",
+        "56146:CO",
+        "3660:WA",
+        "19728:AZ",
+        "5701:NM",
+        "6022:OR",
+        "20169:WA"
+       ]
+      },
+      {
+       "utility": "11187:CO",
+       "cohort": 2016,
+       "matches": [
+        "7548:WA",
+        "10539:CO",
+        "13318:AZ",
+        "6204:NM",
+        "21538:AZ",
+        "14354:CA",
+        "3413:WA",
+        "3264:OR",
+        "19189:AZ",
+        "15419:WA"
+       ]
+      },
+      {
+       "utility": "11208:CA",
+       "cohort": 2019,
+       "matches": [
+        "9216:CA",
+        "590:CA",
+        "12745:CA",
+        "7294:CA",
+        "19281:CA",
+        "57483:CA",
+        "15783:CA",
+        "207:CA",
+        "17612:CA",
+        "11124:CA"
+       ]
+      },
+      {
+       "utility": "13050:CO",
+       "cohort": 2022,
+       "matches": [
+        "16555:OR",
+        "59013:WA",
+        "14055:WA",
+        "6638:CO",
+        "4743:OR",
+        "12439:OR",
+        "40438:OR",
+        "11135:UT",
+        "40165:UT",
+        "20997:MT"
+       ]
+      },
+      {
+       "utility": "13520:MO",
+       "cohort": 2011,
+       "matches": [
+        "10799:TN",
+        "15700:GA",
+        "20228:TN",
+        "20318:MO",
+        "15016:TN",
+        "13550:TN",
+        "6708:KY",
+        "11011:KY",
+        "11789:TN",
+        "17565:LA"
+       ]
+      },
+      {
+       "utility": "14006:OH",
+       "cohort": 2017,
+       "matches": [
+        "3755:OH",
+        "12796:WV",
+        "18997:OH",
+        "17637:MD",
+        "15263:WV",
+        "18085:OH",
+        "19876:NC",
+        "5070:DE",
+        "17066:VA",
+        "17564:KY"
+       ]
+      },
+      {
+       "utility": "14127:NE",
+       "cohort": 2019,
+       "matches": [
+        "22500:KS",
+        "10005:KS",
+        "10000:MO",
+        "15474:OK",
+        "17718:TX",
+        "17698:LA",
+        "14063:OK",
+        "17698:TX",
+        "5860:MO",
+        "17698:AR"
+       ]
+      },
+      {
+       "utility": "14328:CA",
+       "cohort": 2014,
+       "matches": [
+        "9216:CA",
+        "590:CA",
+        "12745:CA",
+        "7294:CA",
+        "19281:CA",
+        "57483:CA",
+        "15783:CA",
+        "207:CA",
+        "11124:CA",
+        "17612:CA"
+       ]
+      },
+      {
+       "utility": "14354:OR",
+       "cohort": 2014,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "56146:CO",
+        "5701:NM",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "14354:UT",
+       "cohort": 2014,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "56146:CO",
+        "5701:NM",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "14401:CA",
+       "cohort": 2017,
+       "matches": [
+        "11124:CA",
+        "17612:CA",
+        "207:CA",
+        "19840:NV",
+        "15783:CA",
+        "4003:CA",
+        "57483:CA",
+        "1050:CA",
+        "19281:CA",
+        "7294:CA"
+       ]
+      },
+      {
+       "utility": "15444:UT",
+       "cohort": 2012,
+       "matches": [
+        "15419:WA",
+        "5086:CO",
+        "3264:OR",
+        "11256:CO",
+        "17839:OR",
+        "10539:CO",
+        "9699:NM",
+        "6204:NM",
+        "14668:WA",
+        "3644:WA"
+       ]
+      },
+      {
+       "utility": "15466:CO",
+       "cohort": 2015,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "56146:CO",
+        "5701:NM"
+       ]
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "matches": [
+        "9191:ID",
+        "16868:WA",
+        "17470:WA",
+        "5701:TX",
+        "3660:WA",
+        "18429:WA",
+        "14354:WY",
+        "14354:WA",
+        "5701:NM",
+        "56146:CO"
+       ]
+      },
+      {
+       "utility": "16638:TX",
+       "cohort": 2016,
+       "matches": [
+        "12268:TX",
+        "12452:TX",
+        "13418:TX",
+        "7129:TX",
+        "8898:TX",
+        "28978:TX",
+        "19806:TX",
+        "28604:TX",
+        "3470:TX",
+        "3940:TX"
+       ]
+      },
+      {
+       "utility": "17166:NV",
+       "cohort": 2017,
+       "matches": [
+        "5701:TX",
+        "17470:WA",
+        "16868:WA",
+        "9191:ID",
+        "3660:WA",
+        "18429:WA",
+        "5701:NM",
+        "56146:CO",
+        "6022:OR",
+        "6604:CO"
+       ]
+      },
+      {
+       "utility": "17267:SD",
+       "cohort": 2022,
+       "matches": [
+        "12199:MT",
+        "16461:TX",
+        "18125:OK",
+        "3527:OK",
+        "20510:KS",
+        "4401:OK",
+        "2985:ND",
+        "60482:OK",
+        "40606:NE",
+        "12894:MN"
+       ]
+      },
+      {
+       "utility": "19499:CO",
+       "cohort": 2019,
+       "matches": [
+        "6604:CO",
+        "14354:ID",
+        "6022:OR",
+        "19728:AZ",
+        "56146:CO",
+        "5701:NM",
+        "19545:SD",
+        "6395:MT",
+        "8773:CO",
+        "14354:WA"
+       ]
+      },
+      {
+       "utility": "19604:AZ",
+       "cohort": 2012,
+       "matches": [
+        "1625:WA",
+        "7222:WY",
+        "19229:CA",
+        "8566:WY",
+        "17492:NM",
+        "6169:ID",
+        "14245:NV",
+        "40165:UT",
+        "10681:OR",
+        "5862:CO"
+       ]
+      },
+      {
+       "utility": "20065:GA",
+       "cohort": 2021,
+       "matches": [
+        "21632:NC",
+        "10623:FL",
+        "3046:SC",
+        "18445:FL",
+        "19898:TN",
+        "17832:GA",
+        "3408:TN",
+        "12686:MS",
+        "17543:SC",
+        "3757:FL"
+       ]
+      },
+      {
+       "utility": "54913:MA",
+       "cohort": 2022,
+       "matches": [
+        "11804:MA",
+        "13214:RI",
+        "7601:VT",
+        "13441:NH",
+        "19791:VT",
+        "18488:MA",
+        "15748:MA",
+        "14605:MA",
+        "3477:MA",
+        "20038:CT"
+       ]
+      }
+     ],
+     "hosts_dropped": [
+      {
+       "utility": "15248:OR",
+       "cohort": null,
+       "why": "load unknown (D-96): dose not settled, carried to step F"
+      },
+      {
+       "utility": "19325:OR",
+       "cohort": null,
+       "why": "load unknown (D-96): dose not settled, carried to step F"
+      },
+      {
+       "utility": "7490:OK",
+       "cohort": 2011,
+       "why": "no usable outcome in every year of its window (D-58, rule 6.3)"
+      },
+      {
+       "utility": "7977:OH",
+       "cohort": 2011,
+       "why": "does not keep its place under the support rule (D-54, ruling 2): 0 of its 10 matched in its region in event year 2, fewer than 8; 0 of its 10 matched in its region in event year 3, fewer than 8"
+      },
+      {
+       "utility": "14154:NY",
+       "cohort": 2020,
+       "why": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10"
+      }
+     ],
+     "unresolved_ownership": [
+      {
+       "utility": "803:AZ",
+       "cohort": 2020,
+       "years": [
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023
+       ],
+       "reason_by_year": {
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "14328:CA",
+       "cohort": 2014,
+       "years": [
+        2008,
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017
+       ],
+       "reason_by_year": {
+        "2008": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2009": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2010": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2011": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2012": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15466:CO",
+       "cohort": 2015,
+       "years": [
+        2009,
+        2010,
+        2011,
+        2012,
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018
+       ],
+       "reason_by_year": {
+        "2009": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2010": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2011": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2012": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018",
+       "in_this_run": "kept"
+      },
+      {
+       "utility": "15473:NM",
+       "cohort": 2019,
+       "years": [
+        2013,
+        2014,
+        2015,
+        2016,
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+       ],
+       "reason_by_year": {
+        "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+        "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+       },
+       "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+       "in_this_run": "kept"
+      }
+     ],
+     "load_unknown_excluded": [
+      {
+       "utility": "15248:OR",
+       "role": "host",
+       "why": "load unknown (D-96): dose not settled, carried to step F"
+      },
+      {
+       "utility": "19325:OR",
+       "role": "host",
+       "why": "load unknown (D-96): dose not settled, carried to step F"
+      }
+     ]
+    },
+    "estimated": true,
+    "redated": {
+     "hosts_in_the_set": 41,
+     "hosts_retained": [
+      "803:AZ",
+      "1586:AR",
+      "3461:WY",
+      "3841:MS",
+      "3989:CO",
+      "4110:IL",
+      "4262:TX",
+      "5773:MN",
+      "6182:TX",
+      "6958:TX",
+      "7559:TX",
+      "7752:TX",
+      "9336:CO",
+      "11187:CO",
+      "11208:CA",
+      "13050:CO",
+      "13520:MO",
+      "14006:OH",
+      "14127:NE",
+      "14328:CA",
+      "14354:OR",
+      "14354:UT",
+      "14401:CA",
+      "15444:UT",
+      "15466:CO",
+      "15473:NM",
+      "16638:TX",
+      "17166:NV",
+      "17267:SD",
+      "19499:CO",
+      "19604:AZ",
+      "20065:GA",
+      "54913:MA"
+     ],
+     "hosts_out_and_why": {
+      "994:IN": "left out: no crossing at the threshold on the alternative inventory (a missing crossing; no date is invented)",
+      "7090:GA": "left out: its group changes on the alternative inventory (E4 'In each'; the roster rule): late (left out: its crossing on the alternative inventory is outside 2011 to 2022)",
+      "7490:OK": "no usable outcome in every year of its window (D-58, rule 6.3)",
+      "7977:OH": "does not keep its place under the support rule (D-54, ruling 2): 0 of its 10 matched in its region in event year 2, fewer than 8; 0 of its 10 matched in its region in event year 3, fewer than 8",
+      "14154:NY": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10",
+      "15248:OR": "load unknown (D-96): dose not settled, carried to step F",
+      "16572:AZ": "left out: its group changes on the alternative inventory (E4 'In each'; the roster rule): early (left out: its crossing on the alternative inventory is outside 2011 to 2022)",
+      "19325:OR": "load unknown (D-96): dose not settled, carried to step F"
+     },
+     "crossings": {
+      "803:AZ": {
+       "reference": 2020,
+       "alternative": 2020,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "994:IN": {
+       "reference": 2017,
+       "alternative": null,
+       "moved_by": null,
+       "group": "never"
+      },
+      "1586:AR": {
+       "reference": 2014,
+       "alternative": 2013,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "3461:WY": {
+       "reference": 2015,
+       "alternative": 2016,
+       "moved_by": 1,
+       "group": "cohort"
+      },
+      "3841:MS": {
+       "reference": 2012,
+       "alternative": 2012,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "3989:CO": {
+       "reference": 2012,
+       "alternative": 2012,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "4110:IL": {
+       "reference": 2014,
+       "alternative": 2014,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "4262:TX": {
+       "reference": 2012,
+       "alternative": 2012,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "5773:MN": {
+       "reference": 2020,
+       "alternative": 2020,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "6182:TX": {
+       "reference": 2014,
+       "alternative": 2014,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "6958:TX": {
+       "reference": 2017,
+       "alternative": 2017,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "7090:GA": {
+       "reference": 2022,
+       "alternative": 2023,
+       "moved_by": 1,
+       "group": "late"
+      },
+      "7490:OK": {
+       "reference": 2011,
+       "alternative": 2011,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "7559:TX": {
+       "reference": 2012,
+       "alternative": 2012,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "7752:TX": {
+       "reference": 2021,
+       "alternative": 2021,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "7977:OH": {
+       "reference": 2012,
+       "alternative": 2011,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "9336:CO": {
+       "reference": 2012,
+       "alternative": 2011,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "11187:CO": {
+       "reference": 2016,
+       "alternative": 2016,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "11208:CA": {
+       "reference": 2020,
+       "alternative": 2019,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "13050:CO": {
+       "reference": 2022,
+       "alternative": 2022,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "13520:MO": {
+       "reference": 2011,
+       "alternative": 2011,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "14006:OH": {
+       "reference": 2019,
+       "alternative": 2017,
+       "moved_by": -2,
+       "group": "cohort"
+      },
+      "14127:NE": {
+       "reference": 2019,
+       "alternative": 2019,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "14154:NY": {
+       "reference": 2017,
+       "alternative": 2020,
+       "moved_by": 3,
+       "group": "cohort"
+      },
+      "14328:CA": {
+       "reference": 2015,
+       "alternative": 2014,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "14354:OR": {
+       "reference": 2014,
+       "alternative": 2014,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "14354:UT": {
+       "reference": 2015,
+       "alternative": 2014,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "14401:CA": {
+       "reference": 2017,
+       "alternative": 2017,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "15248:OR": {
+       "reference": 2021,
+       "alternative": 2020,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "15444:UT": {
+       "reference": 2013,
+       "alternative": 2012,
+       "moved_by": -1,
+       "group": "cohort"
+      },
+      "15466:CO": {
+       "reference": 2019,
+       "alternative": 2015,
+       "moved_by": -4,
+       "group": "cohort"
+      },
+      "15473:NM": {
+       "reference": 2019,
+       "alternative": 2019,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "16572:AZ": {
+       "reference": 2016,
+       "alternative": 2009,
+       "moved_by": -7,
+       "group": "early"
+      },
+      "16638:TX": {
+       "reference": 2016,
+       "alternative": 2016,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "17166:NV": {
+       "reference": 2017,
+       "alternative": 2017,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "17267:SD": {
+       "reference": 2020,
+       "alternative": 2022,
+       "moved_by": 2,
+       "group": "cohort"
+      },
+      "19325:OR": {
+       "reference": 2013,
+       "alternative": 2013,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "19499:CO": {
+       "reference": 2019,
+       "alternative": 2019,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "19604:AZ": {
+       "reference": 2012,
+       "alternative": 2012,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "20065:GA": {
+       "reference": 2021,
+       "alternative": 2021,
+       "moved_by": 0,
+       "group": "cohort"
+      },
+      "54913:MA": {
+       "reference": 2017,
+       "alternative": 2022,
+       "moved_by": 5,
+       "group": "cohort"
+      }
+     },
+     "timing_changes": [
+      "11208:CA",
+      "14006:OH",
+      "14154:NY",
+      "14328:CA",
+      "14354:UT",
+      "15248:OR",
+      "15444:UT",
+      "15466:CO",
+      "1586:AR",
+      "16572:AZ",
+      "17267:SD",
+      "3461:WY",
+      "54913:MA",
+      "7090:GA",
+      "7977:OH",
+      "9336:CO",
+      "994:IN"
+     ],
+     "estimable_sample_changes": [
+      "16572:AZ",
+      "7090:GA",
+      "994:IN"
+     ],
+     "missing_crossings": [
+      "994:IN"
+     ],
+     "group_changes": [
+      "16572:AZ",
+      "7090:GA"
+     ],
+     "lost_support_or_window": {
+      "7490:OK": "no usable outcome in every year of its window (D-58, rule 6.3)",
+      "7977:OH": "does not keep its place under the support rule (D-54, ruling 2): 0 of its 10 matched in its region in event year 2, fewer than 8; 0 of its 10 matched in its region in event year 3, fewer than 8",
+      "14154:NY": "does not keep its place under the support rule (D-54, ruling 2): 9 eligible in its region in the reference year, fewer than 10",
+      "15248:OR": "load unknown (D-96): dose not settled, carried to step F",
+      "19325:OR": "load unknown (D-96): dose not settled, carried to step F"
+     },
+     "matches_changed": {
+      "803:AZ": {
+       "added": [
+        "56146:CO"
+       ],
+       "removed": [
+        "24211:AZ"
+       ]
+      },
+      "1586:AR": {
+       "added": [
+        "14775:OK",
+        "15746:OK"
+       ],
+       "removed": [
+        "18125:OK",
+        "4401:OK"
+       ]
+      },
+      "3461:WY": {
+       "added": [
+        "18280:AZ"
+       ],
+       "removed": [
+        "1579:WA"
+       ]
+      },
+      "14006:OH": {
+       "added": [
+        "17066:VA",
+        "17564:KY"
+       ],
+       "removed": [
+        "15263:MD",
+        "3542:OH"
+       ]
+      },
+      "14127:NE": {
+       "added": [
+        "14063:OK"
+       ],
+       "removed": [
+        "17833:MO"
+       ]
+      },
+      "14354:OR": {
+       "added": [
+        "6604:CO"
+       ],
+       "removed": [
+        "24211:AZ"
+       ]
+      },
+      "14354:UT": {
+       "added": [
+        "6604:CO"
+       ],
+       "removed": [
+        "24211:AZ"
+       ]
+      },
+      "15444:UT": {
+       "added": [
+        "14668:WA"
+       ],
+       "removed": [
+        "21538:AZ"
+       ]
+      },
+      "15466:CO": {
+       "added": [
+        "56146:CO"
+       ],
+       "removed": [
+        "24211:AZ"
+       ]
+      },
+      "15473:NM": {
+       "added": [
+        "56146:CO"
+       ],
+       "removed": [
+        "24211:AZ"
+       ]
+      },
+      "17166:NV": {
+       "added": [
+        "6604:CO"
+       ],
+       "removed": [
+        "24211:AZ"
+       ]
+      },
+      "17267:SD": {
+       "added": [
+        "40606:NE"
+       ],
+       "removed": [
+        "10019:KS"
+       ]
+      }
+     },
+     "comparison_pool": {
+      "eligible": 3090,
+      "entered": [
+       "10599:OK",
+       "11364:TX",
+       "14063:OK",
+       "14715:PA",
+       "20847:WI",
+       "20996:MN",
+       "3478:OK",
+       "6452:FL"
+      ],
+      "left": [
+       "12470:TN",
+       "15263:MD",
+       "15270:MD",
+       "24211:AZ",
+       "3542:OH"
+      ]
+     }
+    },
+    "factors": {
+     "AK": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "AL": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "AR": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "AZ": {
+      "as_built": 0.490932891004505,
+      "alternative": 1.0
+     },
+     "CA": {
+      "as_built": 0.9480568446678316,
+      "alternative": 1.0
+     },
+     "CO": {
+      "as_built": 0.8233898069292344,
+      "alternative": 1.0
+     },
+     "CT": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "DC": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "DE": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "FL": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "GA": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "HI": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "IA": {
+      "as_built": 1.6913073861754802,
+      "alternative": 1.0
+     },
+     "ID": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "IL": {
+      "as_built": 1.106842170132156,
+      "alternative": 1.0
+     },
+     "IN": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "KS": {
+      "as_built": 0.5717231722117382,
+      "alternative": 1.0
+     },
+     "KY": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "LA": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "MA": {
+      "as_built": 1.6120923546104597,
+      "alternative": 1.0
+     },
+     "MD": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "ME": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "MI": {
+      "as_built": 0.6471603754451558,
+      "alternative": 1.0
+     },
+     "MN": {
+      "as_built": 1.9416640365367872,
+      "alternative": 1.0
+     },
+     "MO": {
+      "as_built": 2.611111679168805,
+      "alternative": 1.0
+     },
+     "MS": {
+      "as_built": 0.7872775940796725,
+      "alternative": 1.0
+     },
+     "MT": {
+      "as_built": 1.9973342959859077,
+      "alternative": 1.0
+     },
+     "NC": {
+      "as_built": 2.2266206255592413,
+      "alternative": 1.0
+     },
+     "ND": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "NE": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NH": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NJ": {
+      "as_built": 1.179779930656193,
+      "alternative": 1.0
+     },
+     "NM": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NV": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "NY": {
+      "as_built": 1.8157912705918935,
+      "alternative": 1.0
+     },
+     "OH": {
+      "as_built": 0.5744344617254172,
+      "alternative": 1.0
+     },
+     "OK": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "OR": {
+      "as_built": 0.4174402691339885,
+      "alternative": 1.0
+     },
+     "PA": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "RI": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "SC": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "SD": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "TN": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "TX": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "UT": {
+      "as_built": 0.7627926333811607,
+      "alternative": 1.0
+     },
+     "VA": {
+      "as_built": 0.41501257956863474,
+      "alternative": 1.0
+     },
+     "VT": {
+      "as_built": 1.0,
+      "alternative": 1.0
+     },
+     "WA": {
+      "as_built": 1.621446345518231,
+      "alternative": 1.0
+     },
+     "WI": {
+      "as_built": 3.0,
+      "alternative": 1.0
+     },
+     "WV": {
+      "as_built": 0.2,
+      "alternative": 1.0
+     },
+     "WY": {
+      "as_built": 1.6855053333665404,
+      "alternative": 1.0
+     }
+    }
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

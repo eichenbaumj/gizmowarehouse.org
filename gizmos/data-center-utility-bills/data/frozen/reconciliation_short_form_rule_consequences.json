@@ -1,0 +1,603 @@
+{
+ "what_this_is": "Consequences of alternative Short Form exclusion rules for row U, counted on the quantity side only. Joe adopted one of them on 2026-11-20 (D-115): years filed, by utility-state, 2019 from the operational file's flags with a flag of true excluded and every other 2019 unit-year kept with no record of a filing (named in the field adopted_by_joe_2026_11_20_d115). The counts are no part of any reason for it. Counts only, against row U's quantity-side frame with no exclusion (as reconciliation_mu builds it for reconciliation_mu_design.json; no price read, so NOT the paper's sample). The alternatives are listed side by side and not ranked. The plan is a DRAFT pre-analysis plan and is not frozen; these counts are provisional. A table row means 'has a row in the Short Form table that year'; reading no row as 'kept, with no record of a Short Form filing' is a convention, adopted for row U and used here inside the alternatives that name it; it is no claim about whether a unit filed.",
+ "written_by": "pipeline/analysis/short_form_rule_consequences.py main(), 2026-11-20, session 24, job 2",
+ "inputs": [
+  "data/interim/reconciliation_short_form_filers.parquet",
+  "data/interim/reconciliation_short_form_flags.parquet",
+  "data/interim/panel_quantities.parquet (quantity columns; no price column exists)"
+ ],
+ "frame": {
+  "what_it_is": "row U's quantity-side frame with no Short Form exclusion: unit-years 2015 to 2024 in the 50 states and DC with an ownership class (scheme U, the panel's entity type, the utility-level modal reported type carried across the panel, read over 2001 to 2025; D-117 and D-119), then the three-year count by utility; built by short_form_filers.row_u_quantity_frame from reconciliation_mu.adopted_row_u_ownership_classes and _min_years, as reconciliation_mu main() builds it for reconciliation_mu_design.json. No price read; NOT the paper's sample",
+  "unit_years": 16648,
+  "utility_states": 1988,
+  "utilities": 1808,
+  "unit_years_by_year": {
+   "2015": 1977,
+   "2016": 1979,
+   "2017": 1977,
+   "2018": 1978,
+   "2019": 1974,
+   "2020": 1350,
+   "2021": 1350,
+   "2022": 1351,
+   "2023": 1358,
+   "2024": 1354
+  },
+  "before_the_three_year_count": {
+   "unit_years": 17721,
+   "utility_states": 3052,
+   "utilities": 2863
+  },
+  "unit_years_with_residential_sales_in_the_quantities": 16295
+ },
+ "window": [
+  2015,
+  2024
+ ],
+ "adopted_by_joe_2026_11_20_d115": {
+  "pairing": "years_filed|by_utility_state",
+  "year_2019": "d1_flags_as_source_true_removed_missing_kept",
+  "ruling": "Joe, 2026-11-20 (D-115)",
+  "choices": "short_form_filers.ADOPTED_ROW_U_CHOICES, supplied by short_form_filers.adopted_row_u_flags",
+  "reconciliation_mu_code": "unit_years_filed"
+ },
+ "window_years_the_table_covers": [
+  2015,
+  2016,
+  2017,
+  2018,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024
+ ],
+ "window_years_other_than_2019_the_table_does_not_cover": [],
+ "fixed_for_counting": "in every pairing: a unit-year with no row in a covered year kept under a convention, with no record of a Short Form filing, never shown not to have filed; a window year other than 2019 with no table row not excluded (there is none: see the field above, so this choice has no effect here); a 2019 unit-year with no row in the flags file kept under the same convention. What stopping would do instead is under stopping_options.",
+ "pairings_of_a_and_b": {
+  "years_filed|by_utility_state": {
+   "reconciliation_mu_code": "unit_years_filed",
+   "d1_flags_as_source_true_removed_missing_kept": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "years_filed",
+     "level": "utility_state",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "flags_true_excluded_missing_kept",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 1,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+     },
+     "unit_years_removed_total": 1,
+     "utility_states_with_any_unit_year_removed": 1,
+     "utility_states_removed_entirely": 0,
+     "utilities_removed_entirely": 0,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 1
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 16645,
+     "unit_years_removed_total": 3,
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 1,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 1,
+      "2024": 1
+     },
+     "utility_states_remaining": 1987,
+     "utilities_remaining": 1807,
+     "utility_states_removed_entirely": 1,
+     "utilities_removed_entirely": 1
+    }
+   },
+   "d2_no_exclusion_in_2019": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "years_filed",
+     "level": "utility_state",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "no_exclusion_labelled",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+     },
+     "unit_years_removed_total": 0,
+     "utility_states_with_any_unit_year_removed": 0,
+     "utility_states_removed_entirely": 0,
+     "utilities_removed_entirely": 0,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 0
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 16648,
+     "unit_years_removed_total": 0,
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+     },
+     "utility_states_remaining": 1988,
+     "utilities_remaining": 1808,
+     "utility_states_removed_entirely": 0,
+     "utilities_removed_entirely": 0
+    }
+   }
+  },
+  "years_filed|by_utility": {
+   "reconciliation_mu_code": "not coded in reconciliation_mu (would need that module changed)",
+   "d1_flags_as_source_true_removed_missing_kept": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "years_filed",
+     "level": "utility",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "flags_true_excluded_missing_kept",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 1,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+     },
+     "unit_years_removed_total": 1,
+     "utility_states_with_any_unit_year_removed": 1,
+     "utility_states_removed_entirely": 0,
+     "utilities_removed_entirely": 0,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 1
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 16645,
+     "unit_years_removed_total": 3,
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 1,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 1,
+      "2024": 1
+     },
+     "utility_states_remaining": 1987,
+     "utilities_remaining": 1807,
+     "utility_states_removed_entirely": 1,
+     "utilities_removed_entirely": 1
+    }
+   },
+   "d2_no_exclusion_in_2019": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "years_filed",
+     "level": "utility",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "no_exclusion_labelled",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+     },
+     "unit_years_removed_total": 0,
+     "utility_states_with_any_unit_year_removed": 0,
+     "utility_states_removed_entirely": 0,
+     "utilities_removed_entirely": 0,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 0
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 16648,
+     "unit_years_removed_total": 0,
+     "unit_years_removed_by_year": {
+      "2015": 0,
+      "2016": 0,
+      "2017": 0,
+      "2018": 0,
+      "2019": 0,
+      "2020": 0,
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 0
+     },
+     "utility_states_remaining": 1988,
+     "utilities_remaining": 1808,
+     "utility_states_removed_entirely": 0,
+     "utilities_removed_entirely": 0
+    }
+   }
+  },
+  "ever_filed|by_utility_state": {
+   "reconciliation_mu_code": "not coded in reconciliation_mu (would need that module changed)",
+   "d1_flags_as_source_true_removed_missing_kept": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "ever_filed",
+     "level": "utility_state",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "flags_true_excluded_missing_kept",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "unit_years_removed_total": 3186,
+     "utility_states_with_any_unit_year_removed": 629,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 3160
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 13462,
+     "unit_years_removed_total": 3186,
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "utility_states_remaining": 1359,
+     "utilities_remaining": 1207,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601
+    }
+   },
+   "d2_no_exclusion_in_2019": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "ever_filed",
+     "level": "utility_state",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "no_exclusion_labelled",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "unit_years_removed_total": 3186,
+     "utility_states_with_any_unit_year_removed": 629,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 3160
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 13462,
+     "unit_years_removed_total": 3186,
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "utility_states_remaining": 1359,
+     "utilities_remaining": 1207,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601
+    }
+   }
+  },
+  "ever_filed|by_utility": {
+   "reconciliation_mu_code": "utilities_ever_filed",
+   "d1_flags_as_source_true_removed_missing_kept": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "ever_filed",
+     "level": "utility",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "flags_true_excluded_missing_kept",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "unit_years_removed_total": 3186,
+     "utility_states_with_any_unit_year_removed": 629,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 3160
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 13462,
+     "unit_years_removed_total": 3186,
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "utility_states_remaining": 1359,
+     "utilities_remaining": 1207,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601
+    }
+   },
+   "d2_no_exclusion_in_2019": {
+    "choices_as_supplied": {
+     "window": [
+      2015,
+      2024
+     ],
+     "years": "ever_filed",
+     "level": "utility",
+     "no_row_in_covered_year": "kept_no_record_of_a_filing",
+     "year_not_covered": "no_exclusion_labelled",
+     "year_2019": "no_exclusion_labelled",
+     "no_2019_flags_row": "kept_no_record_of_a_filing"
+    },
+    "directly_on_the_frame": {
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "unit_years_removed_total": 3186,
+     "utility_states_with_any_unit_year_removed": 629,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601,
+     "removed_unit_years_with_residential_sales_in_the_quantities": 3160
+    },
+    "with_the_three_year_count_taken_again_after_the_exclusion": {
+     "unit_years_remaining": 13462,
+     "unit_years_removed_total": 3186,
+     "unit_years_removed_by_year": {
+      "2015": 625,
+      "2016": 628,
+      "2017": 628,
+      "2018": 628,
+      "2019": 627,
+      "2020": 8,
+      "2021": 8,
+      "2022": 8,
+      "2023": 15,
+      "2024": 11
+     },
+     "utility_states_remaining": 1359,
+     "utilities_remaining": 1207,
+     "utility_states_removed_entirely": 629,
+     "utilities_removed_entirely": 601
+    }
+   }
+  }
+ },
+ "ever_filed_by_utility_state_units_whose_window_filings_all_fall_in_years_they_are_not_in_the_frame": 629,
+ "ever_filed_by_utility_state_units_in_the_frame_with_some_window_filing": 629,
+ "stopping_options": {
+  "c_no_row_in_a_covered_year_stops": {
+   "by_utility_state": {
+    "unit_years_that_would_stop_by_year": {
+     "2015": 1977,
+     "2016": 1979,
+     "2017": 1977,
+     "2018": 1978,
+     "2019": 0,
+     "2020": 1350,
+     "2021": 1350,
+     "2022": 1351,
+     "2023": 1358,
+     "2024": 1354
+    },
+    "unit_years_that_would_stop_total": 14674
+   },
+   "by_utility": {
+    "unit_years_that_would_stop_by_year": {
+     "2015": 1977,
+     "2016": 1979,
+     "2017": 1977,
+     "2018": 1978,
+     "2019": 0,
+     "2020": 1350,
+     "2021": 1350,
+     "2022": 1351,
+     "2023": 1358,
+     "2024": 1354
+    },
+    "unit_years_that_would_stop_total": 14674
+   }
+  },
+  "d_2019_missing_flag_stops_frame_unit_years": 1780,
+  "d_2019_no_flags_row_stops_frame_unit_years": 193,
+  "note": "frame unit-years of 2019 whose flag is missing, and whose 2019 row is absent from the flags file; under the stopping options these cannot be read and the rule is not applied"
+ },
+ "d_2019": {
+  "frame_unit_years_in_2019": 1974,
+  "frame_2019_unit_years_flagged_true": 1,
+  "frame_2019_unit_years_with_a_missing_flag": 1780,
+  "frame_2019_unit_years_with_no_2019_row_in_the_flags_file": 193,
+  "d3_continuity_of_the_utility_states_flagged_true_in_2019": {
+   "flagged_true": 1038,
+   "with_a_table_row_in_both_2018_and_2020": 1036,
+   "in_2018_only": 1,
+   "in_2020_only": 0,
+   "in_neither": 1
+  }
+ },
+ "frame_2019_unit_years_not_flagged_by_table_rows_in_2018_and_2020": {
+  "what_this_is": "row U frame unit-years of 2019 that are not flagged true, which are the unit-years the 2019 convention keeps, split by whether the utility-state has a Short Form table row in 2018 and in 2020. A table row in the neighbouring years establishes nothing about 2019.",
+  "with_a_flags_row_whose_flag_is_missing": {
+   "unit_years": 1780,
+   "table_row_in_both_2018_and_2020": 0,
+   "in_2018_only": 0,
+   "in_2020_only": 590,
+   "in_neither": 1190
+  },
+  "with_no_flags_row": {
+   "unit_years": 193,
+   "table_row_in_both_2018_and_2020": 0,
+   "in_2018_only": 0,
+   "in_2020_only": 28,
+   "in_neither": 165
+  }
+ },
+ "frame_unit_years_of_units_with_a_table_row_in_some_window_year": {
+  "what_this_is": "by frame year, the frame unit-years of utility-states with a Short Form table row in some window year (the units an 'ever' reading reaches), split by whether every one of the unit's window table rows is in a later year than that frame year",
+  "all_the_units_table_rows_later_than_this_year": {
+   "2015": 625,
+   "2016": 628,
+   "2017": 628,
+   "2018": 628,
+   "2019": 626,
+   "2020": 8,
+   "2021": 8,
+   "2022": 8,
+   "2023": 8,
+   "2024": 0
+  },
+  "not_all_later": {
+   "2015": 0,
+   "2016": 0,
+   "2017": 0,
+   "2018": 0,
+   "2019": 1,
+   "2020": 0,
+   "2021": 0,
+   "2022": 0,
+   "2023": 7,
+   "2024": 11
+  },
+  "total": 3186
+ },
+ "units_reached_by_ever_whose_first_table_year_is_2020_and_frame_years_all_2019_or_earlier": {
+  "first_table_year_over_the_whole_table_2012_to_2025": 609,
+  "first_table_year_within_the_window": 609,
+  "of_units_reached_by_ever": 629
+ },
+ "paper_printed_figures": {
+  "retained_utilities": 1798,
+  "short_form_group": "approximately 560",
+  "where": "Ryu and Hiatt, Sec. 2.2 (p. 6) and endnote 10 (p. 17), as quoted in the access request",
+  "note": "printed figures only, for comparison; never a target, a tiebreak or a reason for any choice"
+ }
+}

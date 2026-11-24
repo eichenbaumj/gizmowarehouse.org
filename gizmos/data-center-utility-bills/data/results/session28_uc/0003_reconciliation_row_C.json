@@ -1,0 +1,1413 @@
+{
+ "sequence": 3,
+ "kind": "entry",
+ "stage": "row_C",
+ "entry_id": "reconciliation_row_C",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T00:41:17+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "474756359174633a2ae9ec3222983ab43288bb6c",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T00:41:09+00:00"
+ },
+ "body": {
+  "id": "reconciliation_row_C",
+  "plan_section": "Reconciliation rows (reported first, whatever they show), Row C (Scalera, Bosetti and Pecci), steps C0 to C4 and the test C5",
+  "sets": [
+   "the_papers_specification_on_our_panel"
+  ],
+  "builder": "counts, load share, fiber share and spending supplied (RowCInputs)",
+  "estimator": "reconciliation_c.run_row_c (OLS and two-stage least squares, utility-state and state-by-year effects; C5's reduced form on never-host utility-states), every step returned as a comparison under our specification with no verdict",
+  "labels": [
+   "reconciliation row: the paper's specification on our panel, reported first whatever it shows",
+   "reported first",
+   "comparisons under our specification, comparison-only by Joe's ruling of 2026-11-19 (D-109), no reproduction verdict; every instrumented step and C5's yardstick, and C0 with the paper's figure and band beside it as a comparison band",
+   "C5's interval is the row's own (clustered by utility-state)",
+   "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": [
+   "res_price_cents_per_kwh_real_2024"
+  ],
+  "reads_an_outcome": true,
+  "needs_before_research_data": "RunInputs.reconciliation_c (RowCInputs). choices must equal reconciliation_c.SPECIFICATION (check_specification refuses any other value in words); c4_cap 99.5 (OURS_C4_CAP); spending_tables with 'paper' and 'current'; hosts_for_c5 equal to never_host_units(None, None, counts_verified, 'zero_count_panel_years'). counts_polygon for C0 to C2: operating_counts(sites, reconciliation_treatment.assign_polygon_smallest(sites, data/interim/reconciliation_polygon_incidence.parquet, data/interim/panel_reported_ids.parquet, **ROW_C_POLYGON).table)[0] (the smallest containing polygon by area over every territory, the type not read, our reading of the paper's words, adopted by Joe on 2026-11-19, D-111), built on the real quantity files 2026-11-19 (2,157 of 2,203 data center sites mapped to a panel unit; one exact area tie listed, not broken); this layer copy has 2,931 polygons against the paper's 3,805 territories, so it is not shown to be the paper's layer. The fiber shares are an input the caller supplies, their content settled as the shares from the December Form 477 filings (ours, adopted by Joe on 2026-11-19, D-107). The ownership classes are reconciliation_c.adopted_row_c_ownership(q), on quantities that cover 2001 to 2025 (a subset of years is refused in words). Each utility-state's class comes from the panel's entity type, the utility-level modal reported type carried across the panel to every year and state of the utility, and not the latest year-by-year EIA classification (D-119), read as the last nonmissing value of the panel's entity_type column over 2001 to 2025 (D-117), which on this panel returns that same type for every utility-state; the years searched are the quantity panel's 2001 to 2025, and the class is time-invariant, mapped by reconciliation_c.ROW_C_OWNERSHIP_MAP unchanged, settled by Joe on 2026-11-20 (D-117), the type described as his ruling of the same day states (D-119) (reconciliation_mu.OWNERSHIP_SPECIFICATION_D117). A utility-state with no entity type in any year searched gets no class. Under row U it leaves the sample, as a utility not reporting ownership-type data (Ryu and Hiatt p. 6). Under row C it is absent from the mapping, and ownership_split stops in words. A missing type is never read as any ownership class. The panel's entity_type is one type per utility id, the type its own filings report most often, so on this panel the reading over the years searched changes no class. Joe ruled on 2026-11-20 (D-119) that rows U and C keep this type, described as the utility-level modal reported type carried across the panel and not the latest year-by-year EIA classification, with no further raw-data investigation (his words are reconciliation_mu.OWNERSHIP_RULING_D119_WORDS); no claim is made that it equals EIA's year-by-year record (reconciliation_mu.PANEL_ENTITY_TYPE_STATEMENT). Outcome frame res_price_cents_per_kwh_real_2024: the panel's delivery-inclusive res_price, nominal cents per kWh, put in real 2024 cents per kWh, our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction; it is carried by reconciliation_c.SPECIFICATION as price_series (reconciliation_c.OURS_PRICE_SERIES) and is refused in words if departed from. Our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction. Row C's nominal price is this study's delivery-inclusive res_price (res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing), in cents per kWh, put in real 2024 cents per kWh with row C's deflator (the CPI-U annual convention, D-111). The paper divides total residential revenue by total residential sales from the EIA-861 Sales to Ultimate Customers files (section S1.3, p. 29) and does not say whether delivery-only or energy-only rows enter. No other price series is built or compared, and nothing is fetched or read for it. This module checks the series a caller states (Choices.price_series); it cannot detect an outcome frame that was in fact built from another column. That the frame's values are res_price, deflated by cpi_factors_to_2024, is the caller's responsibility. The real 2024 dollars are by row C's deflator, the CPI-U annual average (BLS CUUR0000SA0, cpi_u in data/frozen/dc_construction_spending.csv, factors from reconciliation_c.cpi_factors_to_2024), ours and not the paper's, adopted by Joe on 2026-11-19 (D-111); it is carried by reconciliation_c.SPECIFICATION as price_deflator, is not the caller's choice and is refused in words if departed from. The paper says only \"the CPI\"; our spending series deflated with it equals the paper's printed Table S3 for 2015 to 2023 at printed precision, which supports and does not establish that it is the paper's series. Comparison-only (D-109); no step returns a reproduction verdict. C0 to C2's assignment is the same rule as row U's U0, which is not independent validation. No assigned site is not proof of no facility; C5's never-host classification is the operational one and is not redefined.",
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "outcomes_missing": [],
+  "results": {
+   "the_papers_specification_on_our_panel": {
+    "choices": {
+     "percentile_method": "stata_default",
+     "cap_population": "estimation_sample",
+     "spending_log_unit": "billions",
+     "small_sample": "cr1_stata",
+     "drop_singletons": true,
+     "share_in_percent": true,
+     "ownership_method": "interaction",
+     "interval": "t_G_minus_1",
+     "never_host_basis": "zero_count_panel_years",
+     "contiguous_only": true,
+     "price_deflator": "cpi_u_annual_average",
+     "price_series": "res_price"
+    },
+    "c4_cap": 99.5,
+    "steps": [
+     {
+      "step": "C0",
+      "label": "uninstrumented, polygon assignment, count capped at the 99.5th",
+      "estimator": "ols",
+      "spending_series": null,
+      "estimate": 0.1870941513599993,
+      "se": 0.08124244652376454,
+      "first_stage_f": null,
+      "first_stage_coef": null,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.061,
+       "se": 0.018,
+       "first_stage_f": null,
+       "n_obs": 12370,
+       "n_units": 1237,
+       "source": "plan; paper Table 1 Panel A col 1, p. 13"
+      },
+      "band": [
+       0.025,
+       0.097
+      ],
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). Our uninstrumented estimate under our specification is shown with the paper's figure, 0.061 (0.018; Table 1 Panel A col 1, p. 13), and the band 0.025 to 0.097 beside it as a comparison band. No verdict is given, whether the estimate falls inside the band or outside it. Its assignment is the smallest containing polygon over every polygon of our copy of the layer, the same rule as row U's U0, and our facility list is not the paper's.",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.061,
+        "se": 0.018,
+        "first_stage_f": null,
+        "n_obs": 12370,
+        "n_units": 1237,
+        "source": "plan; paper Table 1 Panel A col 1, p. 13"
+       },
+       "band_beside": [
+        0.025,
+        0.097
+       ],
+       "first_stage_f_ours": null,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 23.0,
+       "2020": 25.0,
+       "2021": 26.0,
+       "2022": 26.0,
+       "2023": 30.0,
+       "2024": 33.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 59,
+       "units_changed_by_cap": 8,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 33.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C1",
+      "label": "instrumented, polygon assignment, count capped at the 99.5th",
+      "estimator": "2sls",
+      "spending_series": "paper",
+      "estimate": 0.9264928914406485,
+      "se": 0.17078657636285044,
+      "first_stage_f": 27.570506336018124,
+      "first_stage_coef": 0.39455738945124486,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.182,
+       "se": 0.034,
+       "first_stage_f": 59.43,
+       "n_obs": 12370,
+       "n_units": 1237,
+       "max_stock": 62,
+       "units_adjusted": 8,
+       "source": "plan; paper Table 1 Panel A col 3, p. 13; Table S14 A col 3, p. 51"
+      },
+      "band": [
+       0.114,
+       0.25
+      ],
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.182,
+        "se": 0.034,
+        "first_stage_f": 59.43,
+        "n_obs": 12370,
+        "n_units": 1237,
+        "max_stock": 62,
+        "units_adjusted": 8,
+        "source": "plan; paper Table 1 Panel A col 3, p. 13; Table S14 A col 3, p. 51"
+       },
+       "band_beside": [
+        0.114,
+        0.25
+       ],
+       "first_stage_f_ours": 27.570506336018124,
+       "first_stage_f_floor_in_the_plans_band": 10.0
+      },
+      "failure": null,
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 23.0,
+       "2020": 25.0,
+       "2021": 26.0,
+       "2022": 26.0,
+       "2023": 30.0,
+       "2024": 33.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 59,
+       "units_changed_by_cap": 8,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 33.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C1",
+      "spending_series": "paper",
+      "method": "interaction",
+      "other_side": "every class except investor_owned",
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 23.0,
+       "2020": 25.0,
+       "2021": 26.0,
+       "2022": 26.0,
+       "2023": 30.0,
+       "2024": 33.0
+      },
+      "paper": {
+       "iou": 0.215,
+       "iou_se": 0.042,
+       "nonprofit_minus_iou": -0.192,
+       "nonprofit_minus_iou_se": 0.064,
+       "sw_f_baseline": 55.44,
+       "sw_f_interaction": 44.18,
+       "source": "paper Table 3 col 1, p. 17; not in the plan"
+      },
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment."
+      },
+      "sw_f_failure": null,
+      "investor_owned": {
+       "estimate": 1.0019161630918938,
+       "se": 0.19209266004551026,
+       "sw_f": 27.949226401077127
+      },
+      "other_minus_investor_owned": {
+       "estimate": -0.902860119612317,
+       "se": 0.3631847102445262,
+       "sw_f": 22.39262160901898
+      },
+      "all_other": {
+       "estimate": 0.09905604347957675,
+       "se": 0.3320028474739593
+      },
+      "n_obs": 12820,
+      "n_clusters": 1282,
+      "singleton_rows_dropped": 10,
+      "failure": null
+     },
+     {
+      "step": "C2_none",
+      "label": "instrumented, polygon assignment, cap removed",
+      "estimator": "2sls",
+      "spending_series": "paper",
+      "estimate": 0.4124275261519602,
+      "se": 0.17762366938781374,
+      "first_stage_f": 6.056687769710044,
+      "first_stage_coef": 0.886348736231704,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.11,
+       "se": 0.044,
+       "first_stage_f": 9.6,
+       "max_stock": 280,
+       "source": "plan (estimate); paper Table S14 A col 1, p. 51"
+      },
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.11,
+        "se": 0.044,
+        "first_stage_f": 9.6,
+        "max_stock": 280,
+        "source": "plan (estimate); paper Table S14 A col 1, p. 51"
+       },
+       "band_beside": null,
+       "first_stage_f_ours": 6.056687769710044,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {},
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 0,
+       "units_changed_by_cap": 0,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 200.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C2_99.9",
+      "label": "instrumented, polygon assignment, cap at the 99.9th",
+      "estimator": "2sls",
+      "spending_series": "paper",
+      "estimate": 0.5768414470271889,
+      "se": 0.15232777390520305,
+      "first_stage_f": 14.09425633493498,
+      "first_stage_coef": 0.6337176679586406,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.15,
+       "se": 0.034,
+       "first_stage_f": 35.57,
+       "max_stock": 127,
+       "source": "plan (estimate); paper Table S14 A col 2, p. 51"
+      },
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.15,
+        "se": 0.034,
+        "first_stage_f": 35.57,
+        "max_stock": 127,
+        "source": "plan (estimate); paper Table S14 A col 2, p. 51"
+       },
+       "band_beside": null,
+       "first_stage_f_ours": 14.09425633493498,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 62.0,
+       "2016": 65.0,
+       "2017": 67.0,
+       "2018": 72.0,
+       "2019": 76.0,
+       "2020": 82.0,
+       "2021": 89.0,
+       "2022": 90.0,
+       "2023": 91.0,
+       "2024": 102.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 10,
+       "units_changed_by_cap": 1,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 102.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C2_99.0",
+      "label": "instrumented, polygon assignment, cap at the 99.0th",
+      "estimator": "2sls",
+      "spending_series": "paper",
+      "estimate": 1.4135490226451344,
+      "se": 0.31591548613490195,
+      "first_stage_f": 40.56309944368511,
+      "first_stage_coef": 0.25860766817121483,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.236,
+       "se": 0.044,
+       "first_stage_f": 71.2,
+       "max_stock": 38,
+       "source": "plan (estimate); paper Table S14 A col 4, p. 51"
+      },
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.236,
+        "se": 0.044,
+        "first_stage_f": 71.2,
+        "max_stock": 38,
+        "source": "plan (estimate); paper Table S14 A col 4, p. 51"
+       },
+       "band_beside": null,
+       "first_stage_f_ours": 40.56309944368511,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 8.0,
+       "2016": 9.0,
+       "2017": 10.0,
+       "2018": 12.0,
+       "2019": 12.0,
+       "2020": 14.0,
+       "2021": 14.0,
+       "2022": 14.0,
+       "2023": 14.0,
+       "2024": 14.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 113,
+       "units_changed_by_cap": 14,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 14.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C3",
+      "label": "instrumented, the inventory's own assignment, count capped at the 99.5th",
+      "estimator": "2sls",
+      "spending_series": "paper",
+      "estimate": 0.73074373341613,
+      "se": 0.13735497627394483,
+      "first_stage_f": 25.29806786100108,
+      "first_stage_coef": 0.5002500875143172,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": null,
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": null,
+       "band_beside": null,
+       "first_stage_f_ours": 25.29806786100108,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 24.0,
+       "2020": 27.0,
+       "2021": 30.0,
+       "2022": 30.0,
+       "2023": 33.0,
+       "2024": 37.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 60,
+       "units_changed_by_cap": 8,
+       "max_regressor_before_cap": 208.0,
+       "max_regressor_after_cap": 37.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C3",
+      "spending_series": "paper",
+      "method": "interaction",
+      "other_side": "every class except investor_owned",
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 24.0,
+       "2020": 27.0,
+       "2021": 30.0,
+       "2022": 30.0,
+       "2023": 33.0,
+       "2024": 37.0
+      },
+      "paper": {
+       "iou": 0.215,
+       "iou_se": 0.042,
+       "nonprofit_minus_iou": -0.192,
+       "nonprofit_minus_iou_se": 0.064,
+       "sw_f_baseline": 55.44,
+       "sw_f_interaction": 44.18,
+       "source": "paper Table 3 col 1, p. 17; not in the plan"
+      },
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment."
+      },
+      "sw_f_failure": null,
+      "investor_owned": {
+       "estimate": 0.7482934240531828,
+       "se": 0.14107801239643838,
+       "sw_f": 28.921564727343487
+      },
+      "other_minus_investor_owned": {
+       "estimate": -0.5520790584175665,
+       "se": 0.48399348943295245,
+       "sw_f": 10.942737855304205
+      },
+      "all_other": {
+       "estimate": 0.19621436563561623,
+       "se": 0.49127365780843407
+      },
+      "n_obs": 12820,
+      "n_clusters": 1282,
+      "singleton_rows_dropped": 10,
+      "failure": null
+     },
+     {
+      "step": "C4",
+      "label": "instrumented, the inventory's own assignment, load share capped at the 99.5th",
+      "estimator": "2sls",
+      "spending_series": "paper",
+      "estimate": 44.883418739282824,
+      "se": 18.4288565571582,
+      "first_stage_f": 8.850946869660195,
+      "first_stage_coef": 0.008144535930192359,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": null,
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": null,
+       "band_beside": null,
+       "first_stage_f_ours": 8.850946869660195,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 0.9796473043601215,
+       "2016": 1.0085206148507013,
+       "2017": 1.0547677381967129,
+       "2018": 1.0740597751824128,
+       "2019": 1.1783975813094412,
+       "2020": 1.2323979513890622,
+       "2021": 1.3378461192482693,
+       "2022": 1.3900468273435622,
+       "2023": 1.4286038009128954,
+       "2024": 1.564039033538003
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 60,
+       "units_changed_by_cap": 10,
+       "max_regressor_before_cap": 5.312636160849382,
+       "max_regressor_after_cap": 1.564039033538003,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C5",
+      "full_sample": {
+       "step": "C5",
+       "label": "full sample",
+       "estimator": "reduced_form",
+       "spending_series": "paper",
+       "estimate": 0.3655546165919579,
+       "se": 0.06998710562375193,
+       "first_stage_f": null,
+       "first_stage_coef": null,
+       "n_obs": 12820,
+       "n_units": 1282,
+       "singleton_rows_dropped": 10,
+       "paper": null,
+       "band": null,
+       "comparison": {},
+       "failure": null,
+       "caps": {},
+       "accounting": {
+        "outcome_units_any_year": 2990,
+        "balanced_units": 1306,
+        "balanced_units_contiguous": 1292,
+        "balanced_units_dropped_no_fiber_share": 9,
+        "unit_years_changed_by_cap": 0,
+        "units_changed_by_cap": 0,
+        "max_regressor_before_cap": 0.0,
+        "max_regressor_after_cap": 0.0,
+        "rows": 12830,
+        "units": 1283
+       },
+       "extra": {
+        "interval_90": [
+         0.2503527607268143,
+         0.48075647245710157
+        ],
+        "interval_basis": "t_G_minus_1"
+       }
+      },
+      "never_host": {
+       "step": "C5",
+       "label": "never-host utility-states",
+       "estimator": "reduced_form",
+       "spending_series": "paper",
+       "estimate": 0.34050565706515706,
+       "se": 0.06451875143423196,
+       "first_stage_f": null,
+       "first_stage_coef": null,
+       "n_obs": 11410,
+       "n_units": 1141,
+       "singleton_rows_dropped": 0,
+       "paper": null,
+       "band": null,
+       "comparison": {},
+       "failure": null,
+       "caps": {},
+       "accounting": {
+        "outcome_units_any_year": 2990,
+        "balanced_units": 1306,
+        "balanced_units_contiguous": 1292,
+        "balanced_units_dropped_no_fiber_share": 9,
+        "units_after_restriction": 1141,
+        "unit_years_changed_by_cap": 0,
+        "units_changed_by_cap": 0,
+        "max_regressor_before_cap": 0.0,
+        "max_regressor_after_cap": 0.0,
+        "rows": 11410,
+        "units": 1141
+       },
+       "extra": {
+        "interval_90": [
+         0.234295445894947,
+         0.44671586823536713
+        ],
+        "interval_basis": "t_G_minus_1"
+       }
+      },
+      "reading": {
+       "literal_branch": "instrument_reaches_non_hosts",
+       "half_of_full": 0.18277730829597896,
+       "interval_includes_zero": false,
+       "ratio_never_to_full": 0.931476834404854,
+       "reading": "instrument_reaches_non_hosts",
+       "sentence": "If a relationship is detected, our instrument also predicts price changes among utilities classified as never hosting a data center. This does not distinguish spillovers from other correlated influences, and it does not establish whether the paper’s differently constructed instrument identifies an effect of hosting.",
+       "note": null,
+       "wording_status": "Adopted by Joe on 2026-11-19 (D-109). The detection sentence is his wording and the non-detection sentence is the drafted one he adopted beside it; neither is a draft. Anything else is reported as unresolved, as the plan has it."
+      },
+      "paper_full_sample": {
+       "estimate": 0.155,
+       "se": 0.028,
+       "first_stage_f": null,
+       "source": "plan; paper Table S6 Panel A col 1, p. 39. Reported beside ours, not tested against (plan, D-16)"
+      },
+      "never_host_basis": "zero_count_panel_years",
+      "never_host_limitation": "C5's never-host utility-states are those with no facility counted in any panel year 2015-2024 under the inventory's own assignment; that operational classification is unchanged. It cannot establish that a unit has no data center: no assigned site is not proof of no facility, and a facility the inventory misses, or one it holds with no start year, leaves its unit among the never-host units. This says what the classification cannot establish and redefines nothing.",
+      "never_host_units_in_outcome": 2847,
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "yardstick_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "ours_full_sample": 0.3655546165919579,
+       "paper_full_sample": {
+        "estimate": 0.155,
+        "se": 0.028,
+        "first_stage_f": null,
+        "source": "plan; paper Table S6 Panel A col 1, p. 39. Reported beside ours, not tested against (plan, D-16)"
+       }
+      },
+      "hosts_from": "the inventory's own assignment (counts_verified)"
+     },
+     {
+      "step": "C1",
+      "label": "instrumented, polygon assignment, count capped at the 99.5th",
+      "estimator": "2sls",
+      "spending_series": "current",
+      "estimate": 0.9247893743023338,
+      "se": 0.17014926374763337,
+      "first_stage_f": 27.52594717989294,
+      "first_stage_coef": 0.3914376267968182,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.182,
+       "se": 0.034,
+       "first_stage_f": 59.43,
+       "n_obs": 12370,
+       "n_units": 1237,
+       "max_stock": 62,
+       "units_adjusted": 8,
+       "source": "plan; paper Table 1 Panel A col 3, p. 13; Table S14 A col 3, p. 51"
+      },
+      "band": [
+       0.114,
+       0.25
+      ],
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.182,
+        "se": 0.034,
+        "first_stage_f": 59.43,
+        "n_obs": 12370,
+        "n_units": 1237,
+        "max_stock": 62,
+        "units_adjusted": 8,
+        "source": "plan; paper Table 1 Panel A col 3, p. 13; Table S14 A col 3, p. 51"
+       },
+       "band_beside": [
+        0.114,
+        0.25
+       ],
+       "first_stage_f_ours": 27.52594717989294,
+       "first_stage_f_floor_in_the_plans_band": 10.0
+      },
+      "failure": null,
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 23.0,
+       "2020": 25.0,
+       "2021": 26.0,
+       "2022": 26.0,
+       "2023": 30.0,
+       "2024": 33.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 59,
+       "units_changed_by_cap": 8,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 33.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C1",
+      "spending_series": "current",
+      "method": "interaction",
+      "other_side": "every class except investor_owned",
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 23.0,
+       "2020": 25.0,
+       "2021": 26.0,
+       "2022": 26.0,
+       "2023": 30.0,
+       "2024": 33.0
+      },
+      "paper": {
+       "iou": 0.215,
+       "iou_se": 0.042,
+       "nonprofit_minus_iou": -0.192,
+       "nonprofit_minus_iou_se": 0.064,
+       "sw_f_baseline": 55.44,
+       "sw_f_interaction": 44.18,
+       "source": "paper Table 3 col 1, p. 17; not in the plan"
+      },
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment."
+      },
+      "sw_f_failure": null,
+      "investor_owned": {
+       "estimate": 0.9993896816435232,
+       "se": 0.19138184130005556,
+       "sw_f": 27.91947926013311
+      },
+      "other_minus_investor_owned": {
+       "estimate": -0.894907079658738,
+       "se": 0.36058171551984614,
+       "sw_f": 22.362075055734607
+      },
+      "all_other": {
+       "estimate": 0.1044826019847852,
+       "se": 0.32924268365201
+      },
+      "n_obs": 12820,
+      "n_clusters": 1282,
+      "singleton_rows_dropped": 10,
+      "failure": null
+     },
+     {
+      "step": "C2_none",
+      "label": "instrumented, polygon assignment, cap removed",
+      "estimator": "2sls",
+      "spending_series": "current",
+      "estimate": 0.4122511919459407,
+      "se": 0.1774567436111594,
+      "first_stage_f": 6.056132889814487,
+      "first_stage_coef": 0.8780989965246465,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.11,
+       "se": 0.044,
+       "first_stage_f": 9.6,
+       "max_stock": 280,
+       "source": "plan (estimate); paper Table S14 A col 1, p. 51"
+      },
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.11,
+        "se": 0.044,
+        "first_stage_f": 9.6,
+        "max_stock": 280,
+        "source": "plan (estimate); paper Table S14 A col 1, p. 51"
+       },
+       "band_beside": null,
+       "first_stage_f_ours": 6.056132889814487,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {},
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 0,
+       "units_changed_by_cap": 0,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 200.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C2_99.9",
+      "label": "instrumented, polygon assignment, cap at the 99.9th",
+      "estimator": "2sls",
+      "spending_series": "current",
+      "estimate": 0.576726479623786,
+      "se": 0.15190857758599802,
+      "first_stage_f": 14.11107679724609,
+      "first_stage_coef": 0.6276759794347582,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.15,
+       "se": 0.034,
+       "first_stage_f": 35.57,
+       "max_stock": 127,
+       "source": "plan (estimate); paper Table S14 A col 2, p. 51"
+      },
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.15,
+        "se": 0.034,
+        "first_stage_f": 35.57,
+        "max_stock": 127,
+        "source": "plan (estimate); paper Table S14 A col 2, p. 51"
+       },
+       "band_beside": null,
+       "first_stage_f_ours": 14.11107679724609,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 62.0,
+       "2016": 65.0,
+       "2017": 67.0,
+       "2018": 72.0,
+       "2019": 76.0,
+       "2020": 82.0,
+       "2021": 89.0,
+       "2022": 90.0,
+       "2023": 91.0,
+       "2024": 102.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 10,
+       "units_changed_by_cap": 1,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 102.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C2_99.0",
+      "label": "instrumented, polygon assignment, cap at the 99.0th",
+      "estimator": "2sls",
+      "spending_series": "current",
+      "estimate": 1.4165678607301686,
+      "se": 0.3162287542186273,
+      "first_stage_f": 40.61651016994645,
+      "first_stage_coef": 0.2555453699035842,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": {
+       "estimate": 0.236,
+       "se": 0.044,
+       "first_stage_f": 71.2,
+       "max_stock": 38,
+       "source": "plan (estimate); paper Table S14 A col 4, p. 51"
+      },
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": {
+        "estimate": 0.236,
+        "se": 0.044,
+        "first_stage_f": 71.2,
+        "max_stock": 38,
+        "source": "plan (estimate); paper Table S14 A col 4, p. 51"
+       },
+       "band_beside": null,
+       "first_stage_f_ours": 40.61651016994645,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 8.0,
+       "2016": 9.0,
+       "2017": 10.0,
+       "2018": 12.0,
+       "2019": 12.0,
+       "2020": 14.0,
+       "2021": 14.0,
+       "2022": 14.0,
+       "2023": 14.0,
+       "2024": 14.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 113,
+       "units_changed_by_cap": 14,
+       "max_regressor_before_cap": 200.0,
+       "max_regressor_after_cap": 14.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C3",
+      "label": "instrumented, the inventory's own assignment, count capped at the 99.5th",
+      "estimator": "2sls",
+      "spending_series": "current",
+      "estimate": 0.7304302789938882,
+      "se": 0.13711179849588032,
+      "first_stage_f": 25.310009352806258,
+      "first_stage_coef": 0.4955946766917214,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": null,
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": null,
+       "band_beside": null,
+       "first_stage_f_ours": 25.310009352806258,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 24.0,
+       "2020": 27.0,
+       "2021": 30.0,
+       "2022": 30.0,
+       "2023": 33.0,
+       "2024": 37.0
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 60,
+       "units_changed_by_cap": 8,
+       "max_regressor_before_cap": 208.0,
+       "max_regressor_after_cap": 37.0,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C3",
+      "spending_series": "current",
+      "method": "interaction",
+      "other_side": "every class except investor_owned",
+      "caps": {
+       "2015": 19.0,
+       "2016": 20.0,
+       "2017": 22.0,
+       "2018": 22.0,
+       "2019": 24.0,
+       "2020": 27.0,
+       "2021": 30.0,
+       "2022": 30.0,
+       "2023": 33.0,
+       "2024": 37.0
+      },
+      "paper": {
+       "iou": 0.215,
+       "iou_se": 0.042,
+       "nonprofit_minus_iou": -0.192,
+       "nonprofit_minus_iou_se": 0.064,
+       "sw_f_baseline": 55.44,
+       "sw_f_interaction": 44.18,
+       "source": "paper Table 3 col 1, p. 17; not in the plan"
+      },
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment."
+      },
+      "sw_f_failure": null,
+      "investor_owned": {
+       "estimate": 0.7477220642086962,
+       "se": 0.1408163315953854,
+       "sw_f": 28.939840721170995
+      },
+      "other_minus_investor_owned": {
+       "estimate": -0.5438220575466993,
+       "se": 0.48090942096765377,
+       "sw_f": 10.964175118768754
+      },
+      "all_other": {
+       "estimate": 0.20390000666199692,
+       "se": 0.4880313058188025
+      },
+      "n_obs": 12820,
+      "n_clusters": 1282,
+      "singleton_rows_dropped": 10,
+      "failure": null
+     },
+     {
+      "step": "C4",
+      "label": "instrumented, the inventory's own assignment, load share capped at the 99.5th",
+      "estimator": "2sls",
+      "spending_series": "current",
+      "estimate": 44.77201428321209,
+      "se": 18.331742240445017,
+      "first_stage_f": 8.897638880992032,
+      "first_stage_coef": 0.008085348934134418,
+      "n_obs": 12820,
+      "n_units": 1282,
+      "singleton_rows_dropped": 10,
+      "paper": null,
+      "band": null,
+      "comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "caveat": "our facility list is not theirs: all three papers use purchased lists, and ours is built from permits and public sources.",
+       "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+       "paper_printed": null,
+       "band_beside": null,
+       "first_stage_f_ours": 8.897638880992032,
+       "first_stage_f_floor_in_the_plans_band": null
+      },
+      "failure": null,
+      "caps": {
+       "2015": 0.9796473043601215,
+       "2016": 1.0085206148507013,
+       "2017": 1.0547677381967129,
+       "2018": 1.0740597751824128,
+       "2019": 1.1783975813094412,
+       "2020": 1.2323979513890622,
+       "2021": 1.3378461192482693,
+       "2022": 1.3900468273435622,
+       "2023": 1.4286038009128954,
+       "2024": 1.564039033538003
+      },
+      "accounting": {
+       "outcome_units_any_year": 2990,
+       "balanced_units": 1306,
+       "balanced_units_contiguous": 1292,
+       "balanced_units_dropped_no_fiber_share": 9,
+       "unit_years_changed_by_cap": 60,
+       "units_changed_by_cap": 10,
+       "max_regressor_before_cap": 5.312636160849382,
+       "max_regressor_after_cap": 1.564039033538003,
+       "rows": 12830,
+       "units": 1283
+      },
+      "extra": {}
+     },
+     {
+      "step": "C5",
+      "full_sample": {
+       "step": "C5",
+       "label": "full sample",
+       "estimator": "reduced_form",
+       "spending_series": "current",
+       "estimate": 0.36199735796381993,
+       "se": 0.06917519211505908,
+       "first_stage_f": null,
+       "first_stage_coef": null,
+       "n_obs": 12820,
+       "n_units": 1282,
+       "singleton_rows_dropped": 10,
+       "paper": null,
+       "band": null,
+       "comparison": {},
+       "failure": null,
+       "caps": {},
+       "accounting": {
+        "outcome_units_any_year": 2990,
+        "balanced_units": 1306,
+        "balanced_units_contiguous": 1292,
+        "balanced_units_dropped_no_fiber_share": 9,
+        "unit_years_changed_by_cap": 0,
+        "units_changed_by_cap": 0,
+        "max_regressor_before_cap": 0.0,
+        "max_regressor_after_cap": 0.0,
+        "rows": 12830,
+        "units": 1283
+       },
+       "extra": {
+        "interval_90": [
+         0.24813194746485892,
+         0.47586276846278097
+        ],
+        "interval_basis": "t_G_minus_1"
+       }
+      },
+      "never_host": {
+       "step": "C5",
+       "label": "never-host utility-states",
+       "estimator": "reduced_form",
+       "spending_series": "current",
+       "estimate": 0.3363073357291538,
+       "se": 0.06374763571183654,
+       "first_stage_f": null,
+       "first_stage_coef": null,
+       "n_obs": 11410,
+       "n_units": 1141,
+       "singleton_rows_dropped": 0,
+       "paper": null,
+       "band": null,
+       "comparison": {},
+       "failure": null,
+       "caps": {},
+       "accounting": {
+        "outcome_units_any_year": 2990,
+        "balanced_units": 1306,
+        "balanced_units_contiguous": 1292,
+        "balanced_units_dropped_no_fiber_share": 9,
+        "units_after_restriction": 1141,
+        "unit_years_changed_by_cap": 0,
+        "units_changed_by_cap": 0,
+        "max_regressor_before_cap": 0.0,
+        "max_regressor_after_cap": 0.0,
+        "rows": 11410,
+        "units": 1141
+       },
+       "extra": {
+        "interval_90": [
+         0.23136652859872542,
+         0.44124814285958214
+        ],
+        "interval_basis": "t_G_minus_1"
+       }
+      },
+      "reading": {
+       "literal_branch": "instrument_reaches_non_hosts",
+       "half_of_full": 0.18099867898190997,
+       "interval_includes_zero": false,
+       "ratio_never_to_full": 0.9290325697978332,
+       "reading": "instrument_reaches_non_hosts",
+       "sentence": "If a relationship is detected, our instrument also predicts price changes among utilities classified as never hosting a data center. This does not distinguish spillovers from other correlated influences, and it does not establish whether the paper’s differently constructed instrument identifies an effect of hosting.",
+       "note": null,
+       "wording_status": "Adopted by Joe on 2026-11-19 (D-109). The detection sentence is his wording and the non-detection sentence is the drafted one he adopted beside it; neither is a draft. Anything else is reported as unresolved, as the plan has it."
+      },
+      "paper_full_sample": {
+       "estimate": 0.155,
+       "se": 0.028,
+       "first_stage_f": null,
+       "source": "plan; paper Table S6 Panel A col 1, p. 39. Reported beside ours, not tested against (plan, D-16)"
+      },
+      "never_host_basis": "zero_count_panel_years",
+      "never_host_limitation": "C5's never-host utility-states are those with no facility counted in any panel year 2015-2024 under the inventory's own assignment; that operational classification is unchanged. It cannot establish that a unit has no data center: no assigned site is not proof of no facility, and a facility the inventory misses, or one it holds with no start year, leaves its unit among the never-host units. This says what the classification cannot establish and redefines nothing.",
+      "never_host_units_in_outcome": 2847,
+      "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+      "yardstick_comparison": {
+       "label": "Comparison-only, by Joe's ruling of 2026-11-19 (D-109). A comparison under our specification, to which no reproduction claim attaches. Our fiber share places each census block by its internal point in every territory that contains it, where the paper counts the blocks that intersect each territory after overlaps are given to the smallest polygon (S1.1, p. 25; S1.5, p. 34), so the two instruments differ unit by unit and not by one scale; and the unit of spending inside the log, billions of real 2024 dollars, is our approximation, the paper naming none (p. 8). Retained only as a labelled comparison (Joe, 2026-11-19, D-107).",
+       "verdict": null,
+       "ours_full_sample": 0.36199735796381993,
+       "paper_full_sample": {
+        "estimate": 0.155,
+        "se": 0.028,
+        "first_stage_f": null,
+        "source": "plan; paper Table S6 Panel A col 1, p. 39. Reported beside ours, not tested against (plan, D-16)"
+       }
+      },
+      "hosts_from": "the inventory's own assignment (counts_verified)"
+     }
+    ],
+    "specification": {
+     "settled_from_the_paper": "the module's constants (docs/gate1/bounded-read-row-c-2026-11-19.md)",
+     "ours_adopted_2026_11_19_d107": {
+      "cap_population": {
+       "value": "estimation_sample",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "\"that year's distribution\" (S2.8, p. 50); the population is not named"
+      },
+      "percentile_method": {
+       "value": "stata_default (order statistic)",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "no formula; capped maxima print as whole numbers (Table S14, p. 51)"
+      },
+      "spending_log_unit": {
+       "value": "billions of real 2024 dollars",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "\"the natural log of national data center construction spending\" (p. 8), no unit; the series is printed in billions (Table S3, p. 34)"
+      },
+      "singleton_groups": {
+       "value": "dropped, iterated",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "not stated; 49 states and 1,243 units fall to 48 and 1,237 unexplained"
+      },
+      "fiber_filings": {
+       "value": "December Form 477 filings (fiber_share_dec)",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "\"annually\" (S1.5, p. 33); no release named"
+      },
+      "small_sample": {
+       "value": "cr1_stata (G/(G-1) x (N-1)/(N-K))",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "clustered by utility-state; no correction or software named"
+      },
+      "c4_cap": {
+       "value": "the 99.5th percentile within year, as on the count",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "no load share; both of its own measures are capped this way (Table 1 notes, p. 13)"
+      },
+      "c5_never_host": {
+       "value": "no facility counted in any panel year (zero_count_panel_years)",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "its never-treated group has no data center presence throughout (Table S11, p. 46)"
+      },
+      "c5_hosts_from": {
+       "value": "the inventory's own assignment (counts_verified)",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "C5 is ours; no such test"
+      },
+      "c5_spending": {
+       "value": "the paper's printed series (Table S3), the current Census series beside it",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "C5 is ours; no such test"
+      },
+      "c5_interval": {
+       "value": "t with the number of utility-state clusters less one degrees of freedom",
+       "label": "ours, not the paper's: this study's approximation, adopted by Joe on 2026-11-19 (D-107)",
+       "paper": "C5 is ours; its one clustered joint test prints G - 1 (Table S24)"
+      },
+      "price_deflator": {
+       "value": "the CPI-U annual average (BLS CUUR0000SA0), cpi_u in data/frozen/dc_construction_spending.csv, factors cpi_u[2024]/cpi_u[year] (cpi_u_annual_average)",
+       "label": "ours, not the paper's: this study's convention, adopted by Joe on 2026-11-19 (D-111). The price is put in real 2024 dollars with the CPI-U annual average (BLS CUUR0000SA0), column cpi_u of data/frozen/dc_construction_spending.csv, the factor cpi_u[2024] / cpi_u[year] (cpi_factors_to_2024); nothing is fetched for it. The paper says only \"the CPI\" (section 2.1, p. 4; notes to Table S2, p. 30) and names no series. Our Census spending series deflated with this series equals the paper's printed Table S3 at printed precision for 2015 to 2023, which supports and does not establish that it is the paper's series; that the paper used it for price is not established.",
+       "paper": "\"the Consumer Price Index (CPI)\" (section 2.1, p. 4; Table S2 notes, p. 30); no series named"
+      },
+      "price_series": {
+       "value": "res_price, cents per kWh, nominal (before row C's deflator): res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing",
+       "label": "Our comparison specification, settled by Joe on 2026-11-20 (D-117), and not a claim that the paper used exactly this construction. Row C's nominal price is this study's delivery-inclusive res_price (res_revenue_full / res_mwh / 10.0, as pipeline/electricity/panel.py build() computes it (read as code): residential revenue over residential sales, bundled and delivery-only customers together, with the supply of delivery-only customers priced at the state's observed supplier average, or, where no supplier row is observed and delivery-only customers are 1% of the unit's residential sales or less, at the unit's own implied supply price; where neither applies the price is missing), in cents per kWh, put in real 2024 cents per kWh with row C's deflator (the CPI-U annual convention, D-111). The paper divides total residential revenue by total residential sales from the EIA-861 Sales to Ultimate Customers files (section S1.3, p. 29) and does not say whether delivery-only or energy-only rows enter. No other price series is built or compared, and nothing is fetched or read for it.",
+       "paper": "\"dividing total revenue by total sales, specific to each sector\" (section S1.3, p. 29); whether delivery-only or energy-only rows enter is not stated"
+      }
+     },
+     "exact_reproduction_unavailable": [
+      "the paper's small-sample correction and software are not stated",
+      "why the paper's sample falls from 1,243 units with ten years of price to 1,237 in its regressions is not explained",
+      "whether the paper's price includes delivery-only or energy-only rows is not stated"
+     ]
+    },
+    "status": "comparison-only by Joe's ruling of 2026-11-19 (D-109); no step returns a verdict",
+    "assignment_c0_to_c2": "U0's assignment and C0 to C2's assignment are the same rule, the smallest containing polygon over every polygon of the layer with the type not read, applied to the same table. Their agreement site by site is one rule applied twice and is not independent validation of either.",
+    "missing_coverage": "No assigned site is not proof of no facility. A unit with no site assigned to it under the polygon rule, or under the inventory's own assignment, is not shown to have no data center. A site outside every polygon, a site in an exact area tie, a site the inventory does not list, or a polygon whose utility is not a panel unit all leave a unit with no assigned site. Missing territory coverage is never evidence of no treatment.",
+    "c5_hosts_from": "the inventory's own assignment (counts_verified)",
+    "estimated": true,
+    "validation": "not applicable: an estimator other than the selected procedure, so no validation is claimed (None is kept for the validated headline alone)",
+    "label": "reconciliation row: the paper's specification on our panel, reported first whatever it shows",
+    "steps_with_a_failure": []
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

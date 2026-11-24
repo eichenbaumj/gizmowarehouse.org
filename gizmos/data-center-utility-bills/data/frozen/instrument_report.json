@@ -1,0 +1,241 @@
+{
+  "national_fiber_blocks_contiguous": {
+    "2017-06": 2240762,
+    "2017-12": 2334067,
+    "2018-06": 2463740,
+    "2018-12": 2826933,
+    "2019-06": 3004397,
+    "2019-12": 3070831
+  },
+  "fcc_fiber_blocks_not_in_census_block_file": {
+    "2017-06": "0 of 2240762",
+    "2017-12": "0 of 2334067",
+    "2018-06": "0 of 2463740",
+    "2018-12": "0 of 2826933",
+    "2019-06": "0 of 3004397",
+    "2019-12": "0 of 3070831"
+  },
+  "census_blocks_contiguous": 11007989,
+  "census_blocks_inside_any_territory": 10915375,
+  "utility_states_with_blocks": 3563,
+  "utility_states_with_fiber_2019_12": 2985,
+  "sum_of_shares_dec": 2.049,
+  "correlation_between_definitions": {
+    "dec_vs_jun": 0.9957,
+    "dec_vs_all6": 0.99893
+  },
+  "table_S4_check_pct_of_national_fiber_blocks": {
+    "paper": {
+      "mean": 0.0655,
+      "sd": 0.19,
+      "min": 0.0,
+      "p10": 0.000527,
+      "median": 0.0159,
+      "p90": 0.132,
+      "max": 2.29
+    },
+    "paper_sample_utility_states": 1237,
+    "paper_shares_sum_to_pct": 81.0,
+    "ours_balanced_panel_2015_2024": {
+      "n": 1333,
+      "mean": 0.124,
+      "sd": 0.325,
+      "min": 0.0,
+      "p10": 0.000542,
+      "median": 0.0215,
+      "p90": 0.274,
+      "max": 2.93
+    },
+    "ours_balanced_panel_shares_sum_to_pct": 165.3,
+    "ours_balanced_panel_if_national_total_sums_territory_counts": {
+      "n": 1333,
+      "mean": 0.0605,
+      "sd": 0.159,
+      "min": 0.0,
+      "p10": 0.000264,
+      "median": 0.0105,
+      "p90": 0.134,
+      "max": 1.43
+    },
+    "ours_balanced_panel_sum_under_that_reading_pct": 80.6,
+    "ours_all_utility_states_with_blocks": {
+      "n": 3563,
+      "mean": 0.0575,
+      "sd": 0.225,
+      "min": 0.0,
+      "p10": 0.0,
+      "median": 0.0021,
+      "p90": 0.094,
+      "max": 3.25
+    },
+    "panel_utility_states_without_a_polygon": 26
+  },
+  "table_S3_check_real_2024_bn": {
+    "2015": {
+      "paper": 3.63,
+      "ours": 3.63,
+      "ours_nominal": 2.75
+    },
+    "2016": {
+      "paper": 5.39,
+      "ours": 5.39,
+      "ours_nominal": 4.12
+    },
+    "2017": {
+      "paper": 5.97,
+      "ours": 5.97,
+      "ours_nominal": 4.67
+    },
+    "2018": {
+      "paper": 8.66,
+      "ours": 8.66,
+      "ours_nominal": 6.93
+    },
+    "2019": {
+      "paper": 10.4,
+      "ours": 10.41,
+      "ours_nominal": 8.48
+    },
+    "2020": {
+      "paper": 11.2,
+      "ours": 11.19,
+      "ours_nominal": 9.23
+    },
+    "2021": {
+      "paper": 11.5,
+      "ours": 11.52,
+      "ours_nominal": 9.95
+    },
+    "2022": {
+      "paper": 13.5,
+      "ours": 13.49,
+      "ours_nominal": 12.58
+    },
+    "2023": {
+      "paper": 20.6,
+      "ours": 20.58,
+      "ours_nominal": 20.0
+    },
+    "2024": {
+      "paper": 31.1,
+      "ours": 34.8,
+      "ours_nominal": 34.8
+    }
+  },
+  "fiber_share_by_panel_unit": {
+    "rows_before_territory_keyed": 3563,
+    "rows_after_unit_keyed": 3551,
+    "units_that_absorbed_more_than_one_map_id": 9,
+    "units_rekeyed_to_a_successor_id_without_merging": 1,
+    "folded_units": [
+      {
+        "unit_id": 84,
+        "state": "VA",
+        "name": "A & N Electric Coop",
+        "map_ids": "84;5027",
+        "n_blocks_summed": 5805,
+        "n_blocks": 5804,
+        "fiber_2019_12_summed": 2488,
+        "fiber_2019_12": 2488
+      },
+      {
+        "unit_id": 9750,
+        "state": "IL",
+        "name": "Jo-Carroll Energy, Inc",
+        "map_ids": "9417;9750",
+        "n_blocks_summed": 2004,
+        "n_blocks": 2004,
+        "fiber_2019_12_summed": 195,
+        "fiber_2019_12": 195
+      },
+      {
+        "unit_id": 14006,
+        "state": "OH",
+        "name": "Ohio Power Co",
+        "map_ids": "12796;14006",
+        "n_blocks_summed": 158686,
+        "n_blocks": 158683,
+        "fiber_2019_12_summed": 26533,
+        "fiber_2019_12": 26533
+      },
+      {
+        "unit_id": 15473,
+        "state": "NM",
+        "name": "Public Service Co of NM",
+        "map_ids": "15473;40051",
+        "n_blocks_summed": 30227,
+        "n_blocks": 30227,
+        "fiber_2019_12_summed": 6128,
+        "fiber_2019_12": 6128
+      },
+      {
+        "unit_id": 56697,
+        "state": "IL",
+        "name": "Ameren Illinois Company",
+        "map_ids": "19436;56697",
+        "n_blocks_summed": 233431,
+        "n_blocks": 233430,
+        "fiber_2019_12_summed": 46653,
+        "fiber_2019_12": 46653
+      },
+      {
+        "unit_id": 57483,
+        "state": "CA",
+        "name": "Liberty Utilities",
+        "map_ids": "17166;57483",
+        "n_blocks_summed": 7375,
+        "n_blocks": 3879,
+        "fiber_2019_12_summed": 168,
+        "fiber_2019_12": 90
+      },
+      {
+        "unit_id": 60631,
+        "state": "MI",
+        "name": "Upper Michigan Energy Resources Corp.",
+        "map_ids": "20847;20860;60631",
+        "n_blocks_summed": 32278,
+        "n_blocks": 23850,
+        "fiber_2019_12_summed": 606,
+        "fiber_2019_12": 532
+      },
+      {
+        "unit_id": 66073,
+        "state": "SC",
+        "name": "MPD Electric Cooperative",
+        "map_ids": "11693;14557",
+        "n_blocks_summed": 10647,
+        "n_blocks": 10647,
+        "fiber_2019_12_summed": 998,
+        "fiber_2019_12": 998
+      },
+      {
+        "unit_id": 66101,
+        "state": "PA",
+        "name": "FirstEnergy Pennsylvania Electric Co",
+        "map_ids": "12390;14711;14716;20387",
+        "n_blocks_summed": 255099,
+        "n_blocks": 239975,
+        "fiber_2019_12_summed": 89238,
+        "fiber_2019_12": 81811
+      }
+    ],
+    "map_id_state_rows_not_in_panel": 561,
+    "map_id_state_rows_not_in_panel_with_nonzero_fiber_share": 208,
+    "panel_units_total": 3231,
+    "panel_units_meeting_floor_in_any_year": 1923,
+    "panel_units_meeting_floor_in_every_year": 1774,
+    "panel_units_above_floor_any_year_without_fiber_row": 61,
+    "panel_units_above_floor_every_year_without_fiber_row": 57,
+    "sum_fiber_share_dec_before": 2.0491631430374744,
+    "sum_fiber_share_dec_after": 2.0465471554179473,
+    "block_counts_are_distinct_blocks_for_folded_units": true,
+    "summed_over_distinct_n_blocks": {
+      "max": 1.9012632121680846,
+      "median": 1.0000189056168587
+    },
+    "summed_over_distinct_fiber_blocks_2019_12": {
+      "max": 1.8666666666666667,
+      "median": 1.0
+    }
+  }
+}

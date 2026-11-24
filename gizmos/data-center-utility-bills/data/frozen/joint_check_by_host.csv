@@ -1,0 +1,8 @@
+utility,name,cohort,region,matched,states_of_its_matches,could_fail_somewhere_in_its_window,could_be_at_the_level_in_one_year,clean_left_in_the_worst_case,partly_assessed,tipping_gwh_to_reach_5,tipping_gwh_to_reach_6,tipping_gwh_to_reach_10,reach_5_within_the_remainders,reach_6_within_the_remainders,reach_10_within_the_remainders
+803:AZ,Arizona Public Service Co,2020,West,10,CO;ID;NM;TX;WA;WY,8,8,2,False,83.73,112.52,307.66,feasible,feasible,not feasible
+6958:TX,City of Garland - (TX),2017,ERCOT,10,TX,10,10,0,False,14.95,20.83,49.59,feasible,feasible,feasible
+14127:NE,Omaha Public Power District,2019,SPP,10,KS;LA;MO;NM;TX,7,7,3,False,101.51,137.33,349.76,feasible,feasible,not feasible
+14354:UT,PacifiCorp,2015,West,10,CO;ID;NM;OR;TX;WA,6,6,4,False,58.69,82.62,258.76,feasible,feasible,not feasible
+15473:NM,Public Service Co of NM,2019,West,10,CO;ID;NM;TX;WA;WY,8,8,2,False,83.73,112.52,307.66,feasible,feasible,not feasible
+17166:NV,Sierra Pacific Power Co,2017,West,10,CO;ID;NM;OR;TX;WA,6,6,4,False,58.69,82.62,258.76,feasible,feasible,not feasible
+20065:GA,Walton Electric Member Corp,2021,Southeast,10,FL;GA;NC;SC;TN,6,6,4,False,55.08,69.56,199.71,feasible,feasible,not feasible

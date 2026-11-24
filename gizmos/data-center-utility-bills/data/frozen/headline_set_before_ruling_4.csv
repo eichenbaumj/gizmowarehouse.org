@@ -1,0 +1,88 @@
+threshold,utility_id_eia,state,name,ownership,region,first_crossing,first_crossing_no_anchoring,in_headline_set,in_set_with_the_ten_year_case,in_every_cohort_utility_run,keeps_its_place_in_the_every_cohort_utility_test,why_not_in_the_headline_set,why_not_in_the_set_with_the_ten_year_case
+2%,9094,AL,City of Huntsville - (AL),public,Southeast,2022,2022,True,True,True,True,,
+2%,1586,AR,City of Bentonville - (AR),public,SPP,2014,2013,True,True,True,True,,
+2%,803,AZ,Arizona Public Service Co,investor_owned,West,2020,2020,True,False,True,True,,D-20 at ten years earlier only
+2%,16572,AZ,Salt River Project,public,West,2016,2009,False,False,True,False,D-46: no anchoring puts the first crossing at 2009 against 2016,D-46: no anchoring puts the first crossing at 2009 against 2016; D-20 at ten years earlier only
+2%,19604,AZ,USBIA-San Carlos Project,public,West,2012,2012,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+2%,11208,CA,Los Angeles Department of Water & Power,public,California,2020,2019,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+2%,14328,CA,Pacific Gas & Electric Co.,investor_owned,California,2015,2014,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+2%,14401,CA,City of Palo Alto - (CA),public,California,2017,2017,True,True,True,True,,
+2%,3989,CO,City of Colorado Springs - (CO),public,West,2013,2013,True,True,True,True,,
+2%,9336,CO,CORE Electric Cooperative,cooperative,West,2012,2011,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+2%,11187,CO,City of Longmont,public,West,2016,2016,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+2%,13050,CO,"Mountain Parks Electric, Inc",cooperative,West,2022,2022,True,True,True,True,,
+2%,15466,CO,Public Service Co of Colorado,investor_owned,West,2019,2015,False,False,True,False,D-46: no anchoring puts the first crossing at 2015 against 2019,D-46: no anchoring puts the first crossing at 2015 against 2019
+2%,19499,CO,"United Power, Inc",cooperative,West,2019,2019,True,True,True,True,,
+2%,7090,GA,GreyStone Power Corporation,cooperative,Southeast,2022,2023,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2023 against 2022,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2023 against 2022
+2%,20065,GA,Walton Electric Member Corp,cooperative,Southeast,2021,2021,True,True,True,True,,
+2%,4110,IL,Commonwealth Edison Co,investor_owned,PJM,2014,2014,False,False,True,True,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-28: its place depends on a load history that could not be verified,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-28: its place depends on a load history that could not be verified
+2%,994,IN,City of Auburn - (IN),public,PJM,2017,never,False,False,True,False,D-46: no anchoring puts the first crossing at never against 2017,D-46: no anchoring puts the first crossing at never against 2017
+2%,9996,KS,City of Kansas City - (KS),public,SPP,2020,2019,True,True,True,True,,
+2%,2144,MA,Town of Braintree - (MA),public,ISO-NE,2013,2013,True,True,True,True,,
+2%,13679,MA,Town of North Attleborough - (MA),public,ISO-NE,2019,2019,True,True,True,True,,
+2%,54913,MA,NSTAR Electric Company,investor_owned,ISO-NE,2019,never,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at never against 2019,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at never against 2019
+2%,5773,MN,City of Elk River,public,MISO,2020,2020,True,True,True,True,,
+2%,13520,MO,"New-Mac Electric Coop, Inc",cooperative,Southeast,2022,2022,True,True,True,True,,
+2%,3841,MS,Coast Electric Power Assn - (MS),cooperative,Southeast,2012,2012,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+2%,11272,MT,"Lower Yellowstone R E A, Inc",cooperative,West,2022,2022,True,True,True,True,,
+2%,12199,MT,Montana-Dakota Utilities Co,investor_owned,SPP,2021,2021,True,True,True,True,,
+2%,14127,NE,Omaha Public Power District,public,SPP,2019,2019,True,True,True,True,,
+2%,15473,NM,Public Service Co of NM,investor_owned,West,2019,2019,True,True,True,True,,
+2%,17166,NV,Sierra Pacific Power Co,investor_owned,West,2017,2017,True,True,True,True,,
+2%,14154,NY,Orange & Rockland Utils Inc,investor_owned,NYISO,2017,2020,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at 2020 against 2017,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at 2020 against 2017
+2%,7977,OH,City of Hamilton - (OH),public,PJM,2012,2011,True,True,True,True,,
+2%,14006,OH,Ohio Power Co,investor_owned,PJM,2019,2017,False,False,True,False,D-46: no anchoring puts the first crossing at 2017 against 2019,D-46: no anchoring puts the first crossing at 2017 against 2019; D-20 at ten years earlier only
+2%,7490,OK,Grand River Dam Authority,public,SPP,2011,2011,False,False,True,False,T3: its place depends on what an Epoch site carried before Epoch's first entry,T3: its place depends on what an Epoch site carried before Epoch's first entry
+2%,14354,OR,PacifiCorp,investor_owned,West,2014,2014,True,True,True,True,,
+2%,15248,OR,Portland General Electric Co,investor_owned,West,2021,2020,True,True,True,True,,
+2%,19325,OR,Umatilla Electric Coop Assn,cooperative,West,2013,2013,True,False,True,True,,D-20 at ten years earlier only
+2%,17267,SD,Sioux Valley SW Elec Coop,cooperative,SPP,2020,2022,False,False,True,False,D-46: no anchoring puts the first crossing at 2022 against 2020,D-46: no anchoring puts the first crossing at 2022 against 2020
+2%,4262,TX,Cooke County Elec Coop Assn,cooperative,ERCOT,2012,2012,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+2%,6182,TX,"Farmers Electric Coop, Inc - (TX)",cooperative,ERCOT,2014,2014,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+2%,6958,TX,City of Garland - (TX),public,ERCOT,2017,2017,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+2%,7559,TX,"Grayson-Collin Elec Coop, Inc",cooperative,ERCOT,2012,2012,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+2%,7752,TX,Guadalupe Valley Elec Coop Inc,cooperative,ERCOT,2021,2021,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified; D-20 at ten years earlier only"
+2%,16638,TX,"San Bernard Electric Coop, Inc",cooperative,ERCOT,2016,2016,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+2%,14354,UT,PacifiCorp,investor_owned,West,2015,2014,True,True,True,True,,
+2%,15444,UT,Provo City Corp,public,West,2013,2012,True,True,True,True,,
+2%,3461,WY,Cheyenne Light Fuel & Power,investor_owned,West,2016,2017,True,False,True,True,,D-20 at ten years earlier only
+5%,9094,AL,City of Huntsville - (AL),public,Southeast,2022,2022,True,True,True,True,,
+5%,803,AZ,Arizona Public Service Co,investor_owned,West,2022,2021,False,False,True,True,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-28: its place depends on a load history that could not be verified,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-28: its place depends on a load history that could not be verified
+5%,16572,AZ,Salt River Project,public,West,2022,2017,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2017 against 2022,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2017 against 2022
+5%,19604,AZ,USBIA-San Carlos Project,public,West,2014,2013,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+5%,16534,CA,Sacramento Municipal Util Dist,public,California,2012,2004,False,False,True,False,D-46: no anchoring puts the first crossing at 2004 against 2012,D-46: no anchoring puts the first crossing at 2004 against 2012
+5%,3989,CO,City of Colorado Springs - (CO),public,West,2015,2014,True,True,True,True,,
+5%,19499,CO,"United Power, Inc",cooperative,West,2019,2019,True,True,True,True,,
+5%,7090,GA,GreyStone Power Corporation,cooperative,Southeast,2022,2023,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2023 against 2022,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2023 against 2022
+5%,20065,GA,Walton Electric Member Corp,cooperative,Southeast,2021,2021,True,True,True,True,,
+5%,12341,IA,MidAmerican Energy Co,investor_owned,MISO,2013,2016,False,False,True,False,D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at 2016 against 2013,D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at 2016 against 2013
+5%,2144,MA,Town of Braintree - (MA),public,ISO-NE,2013,2013,True,True,True,True,,
+5%,13679,MA,Town of North Attleborough - (MA),public,ISO-NE,2020,2020,True,True,True,True,,
+5%,5773,MN,City of Elk River,public,MISO,2020,2020,True,True,True,True,,
+5%,12698,MO,Evergy Missouri West,investor_owned,SPP,2012,never,False,False,True,False,D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at never against 2012,D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at never against 2012
+5%,13520,MO,"New-Mac Electric Coop, Inc",cooperative,Southeast,2022,2023,False,False,True,False,D-46: no anchoring puts the first crossing at 2023 against 2022,D-46: no anchoring puts the first crossing at 2023 against 2022
+5%,11272,MT,"Lower Yellowstone R E A, Inc",cooperative,West,2022,2022,True,True,True,True,,
+5%,12199,MT,Montana-Dakota Utilities Co,investor_owned,SPP,2021,2021,True,True,True,True,,
+5%,5416,NC,"Duke Energy Carolinas, LLC",investor_owned,Southeast,2015,never,False,False,True,False,D-46: no anchoring puts the first crossing at never against 2015,D-46: no anchoring puts the first crossing at never against 2015
+5%,14127,NE,Omaha Public Power District,public,SPP,2020,2020,True,True,True,True,,
+5%,15477,NJ,Public Service Elec & Gas Co,investor_owned,PJM,2012,2013,False,False,True,True,D-28: its place depends on a load history that could not be verified,D-28: its place depends on a load history that could not be verified
+5%,15473,NM,Public Service Co of NM,investor_owned,West,2020,2020,True,True,True,True,,
+5%,17166,NV,Sierra Pacific Power Co,investor_owned,West,2021,2021,False,False,True,False,T3: its place depends on what an Epoch site carried before Epoch's first entry,T3: its place depends on what an Epoch site carried before Epoch's first entry
+5%,14154,NY,Orange & Rockland Utils Inc,investor_owned,NYISO,2020,2020,False,False,True,True,D-20: its timing depends on large permit-dated sites started three or five years earlier,D-20: its timing depends on large permit-dated sites started three or five years earlier
+5%,7490,OK,Grand River Dam Authority,public,SPP,2011,2011,False,False,True,False,T3: its place depends on what an Epoch site carried before Epoch's first entry,T3: its place depends on what an Epoch site carried before Epoch's first entry
+5%,14354,OR,PacifiCorp,investor_owned,West,2018,2018,True,True,True,True,,
+5%,15248,OR,Portland General Electric Co,investor_owned,West,2022,2021,True,True,True,True,,
+5%,19325,OR,Umatilla Electric Coop Assn,cooperative,West,2013,2013,True,False,True,True,,D-20 at ten years earlier only
+5%,17267,SD,Sioux Valley SW Elec Coop,cooperative,SPP,2021,never,False,False,True,False,D-46: no anchoring puts the first crossing at never against 2021,D-46: no anchoring puts the first crossing at never against 2021
+5%,1015,TX,Austin Energy,public,ERCOT,2016,never,False,False,True,False,D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at never against 2016,D-28: its place depends on a load history that could not be verified; D-46: no anchoring puts the first crossing at never against 2016
+5%,4262,TX,Cooke County Elec Coop Assn,cooperative,ERCOT,2012,2012,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+5%,6182,TX,"Farmers Electric Coop, Inc - (TX)",cooperative,ERCOT,2014,2014,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+5%,6958,TX,City of Garland - (TX),public,ERCOT,2019,2019,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+5%,7559,TX,"Grayson-Collin Elec Coop, Inc",cooperative,ERCOT,2012,2012,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+5%,7752,TX,Guadalupe Valley Elec Coop Inc,cooperative,ERCOT,2021,2021,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified; D-20 at ten years earlier only"
+5%,16638,TX,"San Bernard Electric Coop, Inc",cooperative,ERCOT,2016,2016,False,False,True,False,"D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified","D-46, ruling 3: a Texas host, held until its sites' serving utilities are verified"
+5%,14354,UT,PacifiCorp,investor_owned,West,2020,2019,True,True,True,True,,
+5%,13640,VA,Northern Virginia Elec Coop,cooperative,PJM,2011,2006,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2006 against 2011,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2006 against 2011
+5%,19876,VA,Virginia Electric & Power Co,investor_owned,PJM,2014,2010,False,False,True,False,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2010 against 2014,D-20: its timing depends on large permit-dated sites started three or five years earlier; D-46: no anchoring puts the first crossing at 2010 against 2014
+5%,40228,VA,Rappahannock Electric Coop,cooperative,PJM,2011,2009,False,False,True,False,D-28: its place depends on a load history that could not be verified; D-26: its sales base straddles a purchase of territory; D-46: no anchoring puts the first crossing at 2009 against 2011,D-28: its place depends on a load history that could not be verified; D-26: its sales base straddles a purchase of territory; D-46: no anchoring puts the first crossing at 2009 against 2011
+5%,3461,WY,Cheyenne Light Fuel & Power,investor_owned,West,2022,2022,False,False,True,True,D-20: its timing depends on large permit-dated sites started three or five years earlier,D-20: its timing depends on large permit-dated sites started three or five years earlier

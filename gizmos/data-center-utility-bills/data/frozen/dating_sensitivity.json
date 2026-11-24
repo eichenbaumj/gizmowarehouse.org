@@ -1,0 +1,686 @@
+{
+  "undated_large_sites_carrying_load": 76,
+  "their_mw": 5350.7,
+  "utilities_hosting_them": 35,
+  "definition": "timing depends on undated sites if, with those sites started 3, 5, 10 years earlier, the utility enters or leaves the 2011-2022 cohorts or its first crossing moves by 2 years or more (D-20). The later-start and status cases use the same test.",
+  "sites_that_may_not_be_operating": {
+    "bi:1301-0": {
+      "why": "QTS Glendale, Arizona: the operator's page says 'In Development'; the assessor's roll shows partly built buildings",
+      "mw": 406.0,
+      "permit_based_start": 2025,
+      "sourced_start_year": false
+    },
+    "bi:32-0": {
+      "why": "STACK Phoenix 02, Arizona: the assessor's roll shows the land vacant",
+      "mw": 212.8,
+      "permit_based_start": 2024,
+      "sourced_start_year": false
+    },
+    "bi:1004-3": {
+      "why": "Amazon Village Place, Gainesville, Virginia: the county lists it under construction, the state lists it operating",
+      "mw": 55.3,
+      "permit_based_start": 2024,
+      "sourced_start_year": false
+    },
+    "bi:976-0": {
+      "why": "Microsoft AVC17, near Clarksville, Virginia: a news page says under construction, the state lists it operating",
+      "mw": 37.7,
+      "permit_based_start": 2024,
+      "sourced_start_year": false
+    }
+  },
+  "thresholds": {
+    "2%": {
+      "as_built": {
+        "early_hosts": 32,
+        "cohort_utilities": 41,
+        "late_hosts": 21
+      },
+      "treated_as_built": 41,
+      "treated_hosting_an_undated_large_site": 13,
+      "utilities_whose_timing_depends_on_undated_sites": 17,
+      "of_which_treated_as_built": 9,
+      "treated_whose_timing_does_not_depend_on_them": 32,
+      "treated_if_undated_sites_are_removed": 43,
+      "treated_if_started_earlier": {
+        "3_years": 46,
+        "5_years": 46,
+        "10_years": 42
+      },
+      "dependent_utilities": [
+        "12341:IA",
+        "12351:AZ",
+        "13756:IN",
+        "14154:NY",
+        "14940:PA",
+        "16572:AZ",
+        "18976:TX",
+        "19325:OR",
+        "20413:ND",
+        "3461:WY",
+        "4065:OH",
+        "4110:IL",
+        "44372:TX",
+        "54913:MA",
+        "7090:GA",
+        "7752:TX",
+        "803:AZ"
+      ],
+      "dependent_utilities_by_years_earlier": {
+        "3_years": [
+          "12341:IA",
+          "12351:AZ",
+          "13756:IN",
+          "14940:PA",
+          "16572:AZ",
+          "18976:TX",
+          "20413:ND",
+          "4065:OH",
+          "44372:TX",
+          "54913:MA",
+          "7090:GA"
+        ],
+        "5_years": [
+          "12341:IA",
+          "12351:AZ",
+          "13756:IN",
+          "14154:NY",
+          "14940:PA",
+          "16572:AZ",
+          "18976:TX",
+          "20413:ND",
+          "4065:OH",
+          "44372:TX",
+          "54913:MA",
+          "7090:GA"
+        ],
+        "10_years": [
+          "12341:IA",
+          "12351:AZ",
+          "13756:IN",
+          "14154:NY",
+          "14940:PA",
+          "16572:AZ",
+          "18976:TX",
+          "19325:OR",
+          "20413:ND",
+          "3461:WY",
+          "4065:OH",
+          "4110:IL",
+          "44372:TX",
+          "54913:MA",
+          "7090:GA",
+          "7752:TX",
+          "803:AZ"
+        ]
+      },
+      "groups_if_started_earlier": {
+        "3_years": {
+          "early_hosts": 29,
+          "cohort_utilities": 46,
+          "late_hosts": 20
+        },
+        "5_years": {
+          "early_hosts": 29,
+          "cohort_utilities": 46,
+          "late_hosts": 20
+        },
+        "10_years": {
+          "early_hosts": 33,
+          "cohort_utilities": 42,
+          "late_hosts": 20
+        }
+      },
+      "groups_if_started_later": {
+        "2_years": {
+          "early_hosts": 32,
+          "cohort_utilities": 42,
+          "late_hosts": 18
+        },
+        "3_years": {
+          "early_hosts": 31,
+          "cohort_utilities": 43,
+          "late_hosts": 18
+        }
+      },
+      "also_dependent_if_started_later": [
+        "1015:TX",
+        "12341:IL",
+        "12642:IA",
+        "14328:CA"
+      ],
+      "of_which_treated_as_built_later": 1,
+      "groups_if_unsettled_sites_are_not_operating": {
+        "early_hosts": 32,
+        "cohort_utilities": 41,
+        "late_hosts": 21
+      },
+      "utilities_that_change_group_if_unsettled_sites_are_not_operating": [],
+      "utilities_that_stop_being_hosts_if_unsettled_sites_are_not_operating": [],
+      "treated_whose_timing_depends_on_none_of_the_three": 31,
+      "factor_held_at_its_built_value": {
+        "as_built": {
+          "early_hosts": 32,
+          "cohort_utilities": 41,
+          "late_hosts": 21
+        },
+        "treated_as_built": 41,
+        "treated_hosting_an_undated_large_site": 13,
+        "utilities_whose_timing_depends_on_undated_sites": 15,
+        "of_which_treated_as_built": 10,
+        "treated_whose_timing_does_not_depend_on_them": 31,
+        "treated_if_undated_sites_are_removed": 40,
+        "treated_if_started_earlier": {
+          "3_years": 45,
+          "5_years": 45,
+          "10_years": 41
+        },
+        "dependent_utilities": [
+          "13756:IN",
+          "14006:OH",
+          "14154:NY",
+          "14940:PA",
+          "16572:AZ",
+          "18976:TX",
+          "19325:OR",
+          "20413:ND",
+          "3461:WY",
+          "4110:IL",
+          "44372:TX",
+          "54913:MA",
+          "7090:GA",
+          "7752:TX",
+          "803:AZ"
+        ],
+        "dependent_utilities_by_years_earlier": {
+          "3_years": [
+            "13756:IN",
+            "14940:PA",
+            "18976:TX",
+            "20413:ND",
+            "44372:TX",
+            "54913:MA",
+            "7090:GA"
+          ],
+          "5_years": [
+            "13756:IN",
+            "14154:NY",
+            "14940:PA",
+            "18976:TX",
+            "20413:ND",
+            "4110:IL",
+            "44372:TX",
+            "54913:MA",
+            "7090:GA"
+          ],
+          "10_years": [
+            "13756:IN",
+            "14006:OH",
+            "14154:NY",
+            "14940:PA",
+            "16572:AZ",
+            "18976:TX",
+            "19325:OR",
+            "20413:ND",
+            "3461:WY",
+            "4110:IL",
+            "44372:TX",
+            "54913:MA",
+            "7090:GA",
+            "7752:TX",
+            "803:AZ"
+          ]
+        },
+        "groups_if_started_earlier": {
+          "3_years": {
+            "early_hosts": 32,
+            "cohort_utilities": 45,
+            "late_hosts": 18
+          },
+          "5_years": {
+            "early_hosts": 32,
+            "cohort_utilities": 45,
+            "late_hosts": 18
+          },
+          "10_years": {
+            "early_hosts": 36,
+            "cohort_utilities": 41,
+            "late_hosts": 18
+          }
+        },
+        "groups_if_started_later": {
+          "2_years": {
+            "early_hosts": 32,
+            "cohort_utilities": 40,
+            "late_hosts": 18
+          },
+          "3_years": {
+            "early_hosts": 30,
+            "cohort_utilities": 42,
+            "late_hosts": 18
+          }
+        },
+        "also_dependent_if_started_later": [
+          "1015:TX",
+          "14328:CA",
+          "7140:GA"
+        ],
+        "of_which_treated_as_built_later": 1,
+        "groups_if_unsettled_sites_are_not_operating": {
+          "early_hosts": 32,
+          "cohort_utilities": 41,
+          "late_hosts": 21
+        },
+        "utilities_that_change_group_if_unsettled_sites_are_not_operating": [],
+        "utilities_that_stop_being_hosts_if_unsettled_sites_are_not_operating": [],
+        "treated_whose_timing_depends_on_none_of_the_three": 30
+      },
+      "changed_by_the_factor_recompute_alone": {
+        "3_years": {
+          "dependent_only_with_the_factor_recomputed": [
+            "12341:IA",
+            "12351:AZ",
+            "16572:AZ",
+            "4065:OH"
+          ],
+          "dependent_only_with_the_factor_held": []
+        },
+        "5_years": {
+          "dependent_only_with_the_factor_recomputed": [
+            "12341:IA",
+            "12351:AZ",
+            "16572:AZ",
+            "4065:OH"
+          ],
+          "dependent_only_with_the_factor_held": [
+            "4110:IL"
+          ]
+        },
+        "10_years": {
+          "dependent_only_with_the_factor_recomputed": [
+            "12341:IA",
+            "12351:AZ",
+            "4065:OH"
+          ],
+          "dependent_only_with_the_factor_held": [
+            "14006:OH"
+          ]
+        }
+      }
+    },
+    "5%": {
+      "as_built": {
+        "early_hosts": 19,
+        "cohort_utilities": 37,
+        "late_hosts": 24
+      },
+      "treated_as_built": 37,
+      "treated_hosting_an_undated_large_site": 15,
+      "utilities_whose_timing_depends_on_undated_sites": 16,
+      "of_which_treated_as_built": 12,
+      "treated_whose_timing_does_not_depend_on_them": 25,
+      "treated_if_undated_sites_are_removed": 32,
+      "treated_if_started_earlier": {
+        "3_years": 40,
+        "5_years": 40,
+        "10_years": 37
+      },
+      "dependent_utilities": [
+        "13640:VA",
+        "14154:NY",
+        "16572:AZ",
+        "18976:TX",
+        "19325:OR",
+        "19604:AZ",
+        "19876:VA",
+        "20413:ND",
+        "3461:WY",
+        "4110:IL",
+        "44372:TX",
+        "7090:GA",
+        "7140:GA",
+        "7752:TX",
+        "803:AZ",
+        "8198:VA"
+      ],
+      "dependent_utilities_by_years_earlier": {
+        "3_years": [
+          "14154:NY",
+          "18976:TX",
+          "19604:AZ",
+          "19876:VA",
+          "20413:ND",
+          "3461:WY",
+          "44372:TX",
+          "7090:GA",
+          "7140:GA",
+          "8198:VA"
+        ],
+        "5_years": [
+          "13640:VA",
+          "14154:NY",
+          "16572:AZ",
+          "18976:TX",
+          "19604:AZ",
+          "19876:VA",
+          "20413:ND",
+          "3461:WY",
+          "44372:TX",
+          "7090:GA",
+          "8198:VA"
+        ],
+        "10_years": [
+          "13640:VA",
+          "14154:NY",
+          "16572:AZ",
+          "18976:TX",
+          "19325:OR",
+          "19604:AZ",
+          "19876:VA",
+          "20413:ND",
+          "3461:WY",
+          "4110:IL",
+          "44372:TX",
+          "7090:GA",
+          "7140:GA",
+          "7752:TX",
+          "803:AZ",
+          "8198:VA"
+        ]
+      },
+      "groups_if_started_earlier": {
+        "3_years": {
+          "early_hosts": 18,
+          "cohort_utilities": 40,
+          "late_hosts": 22
+        },
+        "5_years": {
+          "early_hosts": 19,
+          "cohort_utilities": 40,
+          "late_hosts": 21
+        },
+        "10_years": {
+          "early_hosts": 22,
+          "cohort_utilities": 37,
+          "late_hosts": 21
+        }
+      },
+      "groups_if_started_later": {
+        "2_years": {
+          "early_hosts": 21,
+          "cohort_utilities": 34,
+          "late_hosts": 22
+        },
+        "3_years": {
+          "early_hosts": 22,
+          "cohort_utilities": 32,
+          "late_hosts": 23
+        }
+      },
+      "also_dependent_if_started_later": [
+        "12341:IA",
+        "16534:CA",
+        "40228:VA"
+      ],
+      "of_which_treated_as_built_later": 3,
+      "groups_if_unsettled_sites_are_not_operating": {
+        "early_hosts": 19,
+        "cohort_utilities": 36,
+        "late_hosts": 25
+      },
+      "utilities_that_change_group_if_unsettled_sites_are_not_operating": [
+        "7140:GA"
+      ],
+      "utilities_that_stop_being_hosts_if_unsettled_sites_are_not_operating": [],
+      "treated_whose_timing_depends_on_none_of_the_three": 22,
+      "factor_held_at_its_built_value": {
+        "as_built": {
+          "early_hosts": 19,
+          "cohort_utilities": 36,
+          "late_hosts": 25
+        },
+        "treated_as_built": 36,
+        "treated_hosting_an_undated_large_site": 14,
+        "utilities_whose_timing_depends_on_undated_sites": 15,
+        "of_which_treated_as_built": 10,
+        "treated_whose_timing_does_not_depend_on_them": 26,
+        "treated_if_undated_sites_are_removed": 33,
+        "treated_if_started_earlier": {
+          "3_years": 40,
+          "5_years": 39,
+          "10_years": 37
+        },
+        "dependent_utilities": [
+          "13640:VA",
+          "14006:OH",
+          "14154:NY",
+          "16572:AZ",
+          "18976:TX",
+          "19325:OR",
+          "19876:VA",
+          "20413:ND",
+          "3461:WY",
+          "4110:IL",
+          "44372:TX",
+          "7090:GA",
+          "7140:GA",
+          "7752:TX",
+          "803:AZ"
+        ],
+        "dependent_utilities_by_years_earlier": {
+          "3_years": [
+            "14154:NY",
+            "18976:TX",
+            "19876:VA",
+            "20413:ND",
+            "3461:WY",
+            "44372:TX",
+            "7090:GA",
+            "7140:GA"
+          ],
+          "5_years": [
+            "13640:VA",
+            "14006:OH",
+            "14154:NY",
+            "16572:AZ",
+            "18976:TX",
+            "19876:VA",
+            "20413:ND",
+            "3461:WY",
+            "44372:TX",
+            "7090:GA",
+            "7140:GA",
+            "803:AZ"
+          ],
+          "10_years": [
+            "13640:VA",
+            "14006:OH",
+            "14154:NY",
+            "16572:AZ",
+            "18976:TX",
+            "19325:OR",
+            "19876:VA",
+            "20413:ND",
+            "3461:WY",
+            "4110:IL",
+            "44372:TX",
+            "7090:GA",
+            "7140:GA",
+            "7752:TX",
+            "803:AZ"
+          ]
+        },
+        "groups_if_started_earlier": {
+          "3_years": {
+            "early_hosts": 19,
+            "cohort_utilities": 40,
+            "late_hosts": 21
+          },
+          "5_years": {
+            "early_hosts": 21,
+            "cohort_utilities": 39,
+            "late_hosts": 20
+          },
+          "10_years": {
+            "early_hosts": 23,
+            "cohort_utilities": 37,
+            "late_hosts": 20
+          }
+        },
+        "groups_if_started_later": {
+          "2_years": {
+            "early_hosts": 19,
+            "cohort_utilities": 34,
+            "late_hosts": 24
+          },
+          "3_years": {
+            "early_hosts": 19,
+            "cohort_utilities": 33,
+            "late_hosts": 25
+          }
+        },
+        "also_dependent_if_started_later": [],
+        "of_which_treated_as_built_later": 0,
+        "groups_if_unsettled_sites_are_not_operating": {
+          "early_hosts": 19,
+          "cohort_utilities": 36,
+          "late_hosts": 25
+        },
+        "utilities_that_change_group_if_unsettled_sites_are_not_operating": [],
+        "utilities_that_stop_being_hosts_if_unsettled_sites_are_not_operating": [],
+        "treated_whose_timing_depends_on_none_of_the_three": 26
+      },
+      "changed_by_the_factor_recompute_alone": {
+        "3_years": {
+          "dependent_only_with_the_factor_recomputed": [
+            "19604:AZ",
+            "8198:VA"
+          ],
+          "dependent_only_with_the_factor_held": []
+        },
+        "5_years": {
+          "dependent_only_with_the_factor_recomputed": [
+            "19604:AZ",
+            "8198:VA"
+          ],
+          "dependent_only_with_the_factor_held": [
+            "14006:OH",
+            "7140:GA",
+            "803:AZ"
+          ]
+        },
+        "10_years": {
+          "dependent_only_with_the_factor_recomputed": [
+            "19604:AZ",
+            "8198:VA"
+          ],
+          "dependent_only_with_the_factor_held": [
+            "14006:OH"
+          ]
+        }
+      }
+    }
+  },
+  "factor": "recomputed in every case (D-58 rule 1.7, from step D); the figures with the factor held at its built value are under factor_held_at_its_built_value",
+  "state_factor_by_case": {
+    "3_years_earlier": {
+      "AZ": 0.24451656219450243,
+      "CA": 0.9480568446678316,
+      "CO": 0.8233898069292344,
+      "FL": 3.0,
+      "GA": 2.291359927119463,
+      "IA": 1.4797316784277725,
+      "IL": 1.0235757557621543,
+      "IN": 3.0,
+      "MA": 1.6120923546104597,
+      "ND": 0.2,
+      "NJ": 1.179779930656193,
+      "NY": 1.8157912705918935,
+      "OH": 0.425194669060939,
+      "OK": 3.0,
+      "OR": 0.36347347176170436,
+      "PA": 3.0,
+      "TX": 3.0,
+      "VA": 0.38341134626047546,
+      "WY": 1.6855053333665404
+    },
+    "5_years_earlier": {
+      "AZ": 0.24451656219450243,
+      "CA": 0.9480568446678316,
+      "CO": 0.8233898069292344,
+      "FL": 3.0,
+      "GA": 2.291359927119463,
+      "IA": 1.4797316784277725,
+      "IL": 1.0235757557621543,
+      "IN": 3.0,
+      "MA": 1.6120923546104597,
+      "ND": 0.2,
+      "NJ": 1.179779930656193,
+      "NY": 1.8157912705918935,
+      "OH": 0.425194669060939,
+      "OK": 3.0,
+      "OR": 0.36347347176170436,
+      "PA": 3.0,
+      "TX": 3.0,
+      "VA": 0.38341134626047546,
+      "WY": 1.6855053333665404
+    },
+    "10_years_earlier": {
+      "AZ": 0.24451656219450243,
+      "CA": 0.9480568446678316,
+      "CO": 0.8233898069292344,
+      "FL": 3.0,
+      "GA": 2.291359927119463,
+      "IA": 1.4797316784277725,
+      "IL": 1.0235757557621543,
+      "IN": 3.0,
+      "MA": 1.6120923546104597,
+      "ND": 0.2,
+      "NJ": 1.179779930656193,
+      "NY": 1.8157912705918935,
+      "OH": 0.425194669060939,
+      "OK": 3.0,
+      "OR": 0.36347347176170436,
+      "PA": 3.0,
+      "TX": 3.0,
+      "VA": 0.38341134626047546,
+      "WY": 1.6855053333665404
+    }
+  },
+  "fingerprint": {
+    "files": {
+      "pipeline/facilities/corrections.py": "d2124334732e7792475ba58fb74e1aef011314de3f68d2fdd80e5e684c673f18",
+      "pipeline/facilities/apply_verified.py": "a484adb63648112e0e8f9edc0e4bea55eb0c6c23a74beb2e83d47eb03aa547f4",
+      "pipeline/facilities/build_inventory.py": "6b6966e27a2399e1175d7ff4d134e78f0705e742fa44640f017d84bdd1a20d25",
+      "pipeline/facilities/timing.py": "de3dc49f9bd77955442e701727362b3181ce17321f52c71e17d837ae9afdc2d0",
+      "pipeline/facilities/dating_sensitivity.py": "8cc2576bb88c11bf88a517fec646a30e8bbd654674fe60c2084a3fb17453ca59",
+      "pipeline/facilities/ten_year.py": "891cf22339cba8f42e8ba1ec71a64ce576e2710452a1b213e3da196cdb6954d5",
+      "pipeline/facilities/later_start.py": "519c4aa3c34fcc1771d54e9c00b586d9884f1843045869e44b5a87435af60d4d",
+      "pipeline/facilities/treatment_bounds.py": "68054737b967aea7086d68e7959d1321be758c1b95559a7a0740bdb143302757",
+      "pipeline/facilities/step_d_check.py": "9eb97e8049b3785329e259597157668b71730c53921a3e78c8305399468eebc9",
+      "pipeline/facilities/pass_c_expand.py": "39aff611f1cee717f9cc386e790aa42a41780791c466f9aaa6bd3bc2897ee6c4",
+      "pipeline/facilities/pass_c_exact.py": "4b68d419dbfd80a12504828b5ae126259136f500c579d02d6e408bc3f81bf2de",
+      "pipeline/facilities/assignment.py": "bbde9a0ea9a6b4e35d931818692d62833a7b0dc62779635f54cc6d634853fd0c",
+      "pipeline/facilities/buildout.py": "cbd10bead4d245861cdbb8d257b8627535f4e1ec5d4145f07c3ac1f45fbcefc1",
+      "data/interim/facilities.parquet": "74d1ce37f3a3892995bc21407d384d9a69a50845b3bdaafb062eb413e6cc2394",
+      "data/interim/facility_year.parquet": "e15b56218b342704b8a5a88ae6741c2049d5488f021a3d17bf44b93f3bc12d50",
+      "data/interim/state_anchor.parquet": "ec9f894f88af3e1412d6979c3f6666d4fb117d9ba050cfe8d2692043363811a6"
+    },
+    "settings": {
+      "thresholds": [
+        0.02,
+        0.05
+      ],
+      "earlier": [
+        3,
+        5,
+        10
+      ],
+      "later": [
+        2,
+        3
+      ],
+      "min_mw": 20
+    }
+  }
+}

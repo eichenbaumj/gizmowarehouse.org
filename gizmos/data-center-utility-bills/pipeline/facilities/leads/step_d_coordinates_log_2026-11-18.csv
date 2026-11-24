@@ -1,0 +1,6 @@
+requested_at_utc,fid,parcel_id,url,http_status,bytes,features_returned,outcome
+2026-11-18T20:33:01+00:00,bi:910-0,1433662,https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0/query?where=PropID%3D1433662&outFields=%2A&returnGeometry=true&outSR=4326&f=json,200,5804,1,one parcel with geometry
+2026-11-18T20:33:02+00:00,bi:910-0,1433663,https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0/query?where=PropID%3D1433663&outFields=%2A&returnGeometry=true&outSR=4326&f=json,200,5160,1,one parcel with geometry
+2026-11-18T20:33:02+00:00,bi:910-0,1433664,https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0/query?where=PropID%3D1433664&outFields=%2A&returnGeometry=true&outSR=4326&f=json,200,9063,1,one parcel with geometry
+2026-11-18T20:33:03+00:00,bi:911-0,1433747,https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0/query?where=PropID%3D1433747&outFields=%2A&returnGeometry=true&outSR=4326&f=json,200,5713,1,one parcel with geometry
+2026-11-18T20:33:03+00:00,epoch:Microsoft SAT14,1370366,https://maps.bexar.org/arcgis/rest/services/Parcels/MapServer/0/query?where=PropID%3D1370366&outFields=%2A&returnGeometry=true&outSR=4326&f=json,200,7567,1,one parcel with geometry

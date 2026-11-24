@@ -1,0 +1,426 @@
+[
+ {
+  "fid": "bi:1185-0",
+  "operator": "Digital Realty",
+  "parcel_query": "https://www.gis.hctx.net/arcgishcpid/rest/services/HCAD/Parcels/MapServer/0/query?geometry=-95.416816%2C29.943321&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "Situs_Address=12001    NORTH FWY, HOUSTON, TX 77060",
+   "owner_name_1=DIGITAL GREENSPOINT LP"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "CenterPoint Energy Houston Electric, LLC"
+   ],
+   "COOP": [],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-95.416816%2C29.943321&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-95.416816%2C29.943321&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-95.416816%2C29.943321&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ },
+ {
+  "fid": "bi:1191-0",
+  "operator": "Equinix",
+  "parcel_query": "https://www.gis.hctx.net/arcgishcpid/rest/services/HCAD/Parcels/MapServer/0/query?geometry=-95.364293%2C29.936211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "Situs_Address=1515    ALDINE MEADOWS RD, HOUSTON, TX 770",
+   "owner_name_1=VERIZON DATA CENTERS I LLC"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "CenterPoint Energy Houston Electric, LLC"
+   ],
+   "COOP": [],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-95.364293%2C29.936211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-95.364293%2C29.936211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-95.364293%2C29.936211&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ },
+ {
+  "fid": "bi:889-0",
+  "operator": "DataBank",
+  "parcel_query": "https://www.gis.hctx.net/arcgishcpid/rest/services/HCAD/Parcels/MapServer/0/query?geometry=-95.445093%2C29.728509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "Situs_Address=4201    SOUTHWEST FWY, HOUSTON, TX 77027",
+   "owner_name_1=DATA CENTER HOUSTON LLC"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "CenterPoint Energy Houston Electric, LLC"
+   ],
+   "COOP": [],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "CenterPoint Energy Houston Electric, LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-95.445093%2C29.728509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-95.445093%2C29.728509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-95.445093%2C29.728509&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ },
+ {
+  "fid": "bi:1258-0",
+  "operator": "Amazon",
+  "parcel_query": "https://maps.dcad.org/prdwa/rest/services/Property/ParcelQuery/MapServer/4/query?geometry=-96.860147%2C32.624377&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "OWNERNME1=AMAZON DATA SERVICES INC",
+   "SITEADDRESS=201 EZELL DR"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "Oncor Electric Delivery Company LLC"
+   ],
+   "COOP": [],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-96.860147%2C32.624377&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-96.860147%2C32.624377&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-96.860147%2C32.624377&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ },
+ {
+  "fid": "bi:876-0",
+  "operator": "CyrusOne",
+  "parcel_query": "https://services2.arcgis.com/uXyoacYrZTPTKD3R/arcgis/rest/services/CCAD_Parcel_Feature_Set/FeatureServer/4/query?geometry=-96.660855%2C33.139042&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "dbaName=CYRUS ONE PH1 & PH2",
+   "ownerAddrCity=DALLAS",
+   "ownerAddrLine1=2850 N HARWOOD ST STE 2000",
+   "ownerAddrState=TX",
+   "ownerAddrZip=75201-2640",
+   "ownerName=C1 DALLAS - ALLEN (LOT 1) LLC",
+   "situsBldgNum=2300",
+   "situsCity=ALLEN",
+   "situsConcat=2300 CHELSEA BLVD , ALLEN, TX 75013",
+   "situsConcatShort=2300 CHELSEA BLVD",
+   "situsStreetName=CHELSEA",
+   "situsStreetSuffix=BLVD"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "Oncor Electric Delivery Company LLC"
+   ],
+   "COOP": [
+    "CoServ Electric Cooperative, Inc."
+   ],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-96.660855%2C33.139042&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-96.660855%2C33.139042&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-96.660855%2C33.139042&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ },
+ {
+  "fid": "bi:925-0",
+  "operator": "Flexential",
+  "parcel_query": "https://services2.arcgis.com/uXyoacYrZTPTKD3R/arcgis/rest/services/CCAD_Parcel_Feature_Set/FeatureServer/4/query?geometry=-96.666436%2C33.007816&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "dbaName=FLEXENTIAL",
+   "ownerAddrCity=DALLAS",
+   "ownerAddrLine1=ATTN: ASSET MANAGER",
+   "ownerAddrLine2=2001 ROSS AVE STE 3400",
+   "ownerAddrState=TX",
+   "ownerAddrZip=75201-2966",
+   "ownerName=LI PLANO LLC",
+   "ownerNameAddtl=C/O INVESCO REAL ESTATE",
+   "situsBldgNum=3500",
+   "situsCity=PLANO",
+   "situsConcat=3500 E PLANO PKWY , PLANO, TX 75074",
+   "situsConcatShort=3500 E PLANO PKWY"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "Oncor Electric Delivery Company LLC"
+   ],
+   "COOP": [
+    "Farmers Electric Cooperative, Inc."
+   ],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "Farmers Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "Farmers Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "Farmers Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "Farmers Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-96.666436%2C33.007816&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-96.666436%2C33.007816&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-96.666436%2C33.007816&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ },
+ {
+  "fid": "bi:932-0",
+  "operator": "Stack Infrastructure",
+  "parcel_query": "https://services2.arcgis.com/uXyoacYrZTPTKD3R/arcgis/rest/services/CCAD_Parcel_Feature_Set/FeatureServer/4/query?geometry=-96.809834%2C33.066664&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=*&returnGeometry=false&f=json",
+  "parcel": [
+   "dbaName=T5 @ DALLAS II",
+   "ownerAddrCity=DENVER",
+   "ownerAddrLine1=1700 BROADWAY STE 1750",
+   "ownerAddrState=CO",
+   "ownerAddrZip=80290-1501",
+   "ownerName=SI DFW01B, LLC",
+   "situsBldgNum=6715",
+   "situsCity=PLANO",
+   "situsConcat=6715 PINECREST DR , PLANO, TX 75024",
+   "situsConcatShort=6715 PINECREST DR",
+   "situsStreetName=PINECREST",
+   "situsStreetSuffix=DR"
+  ],
+  "n_parcel_records": 1,
+  "point": {
+   "IOU": [
+    "Oncor Electric Delivery Company LLC"
+   ],
+   "COOP": [
+    "CoServ Electric Cooperative, Inc."
+   ],
+   "MUNI": []
+  },
+  "probes": {
+   "N": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "S": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "E": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   },
+   "W": {
+    "IOU": [
+     "Oncor Electric Delivery Company LLC"
+    ],
+    "COOP": [
+     "CoServ Electric Cooperative, Inc."
+    ],
+    "MUNI": []
+   }
+  },
+  "urls": {
+   "IOU": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/IOU/FeatureServer/300/query?geometry=-96.809834%2C33.066664&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "COOP": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/COOP_DIST/FeatureServer/310/query?geometry=-96.809834%2C33.066664&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json",
+   "MUNI": "https://services6.arcgis.com/N6Lzvtb46cpxThhu/arcgis/rest/services/MUNI/FeatureServer/320/query?geometry=-96.809834%2C33.066664&geometryType=esriGeometryPoint&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=COMPANY_NAME&returnGeometry=false&f=json"
+  }
+ }
+]

@@ -1,0 +1,617 @@
+[
+ {
+  "fid": "bi:917-0",
+  "kind": "assign",
+  "to": [
+   16604,
+   "TX"
+  ],
+  "why": "verified onto the city's utility (batch_c_4)"
+ },
+ {
+  "fid": "bi:1250-0",
+  "kind": "assign",
+  "to": [
+   7977,
+   "OH"
+  ],
+  "why": "verified onto the city's system (batch_c_4)"
+ },
+ {
+  "fid": "bi:616-0",
+  "kind": "assign",
+  "to": [
+   10000,
+   "KS"
+  ],
+  "why": "moved to Evergy Metro (batch_c_1)"
+ },
+ {
+  "fid": "bi:615-0",
+  "kind": "assign",
+  "to": [
+   10000,
+   "KS"
+  ],
+  "why": "moved to Evergy Metro (batch_c_1)"
+ },
+ {
+  "fid": "bi:892-0",
+  "kind": "assign",
+  "to": "off_panel",
+  "why": "a wires company (batch_c_4)"
+ },
+ {
+  "fid": "bi:444-0",
+  "kind": "assign",
+  "to": [
+   3989,
+   "CO"
+  ],
+  "why": "verified in place on the utility's own map under D-63 rule 6 (batch_c_5), with two flags for Joe"
+ },
+ {
+  "fid": "bi:646-0",
+  "kind": "assign",
+  "to": [
+   5773,
+   "MN"
+  ],
+  "why": "verified in place (batch_c_1)"
+ },
+ {
+  "fid": "bi:941-0",
+  "kind": "assign",
+  "to": [
+   14354,
+   "UT"
+  ],
+  "why": "verified in place for what is delivered at the address (batch_c_1)"
+ },
+ {
+  "fid": "bi:19-0",
+  "kind": "assign",
+  "to": [
+   803,
+   "AZ"
+  ],
+  "why": "verified in place (batch_c_0)"
+ },
+ {
+  "fid": "bi:817-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2018,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "construction began 2012; the regulator describes an operating data center in 2018; the inventory's 2019 is ruled out",
+  "ends": "evidence"
+ },
+ {
+  "fid": "bi:848-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2018,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "construction began 2012; the regulator describes an operating data center in 2018; the inventory's 2024 is ruled out",
+  "ends": "evidence"
+ },
+ {
+  "fid": "bi:684-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "opened May 2015",
+  "ends": "evidence"
+ },
+ {
+  "fid": "bi:687-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2014,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "construction began late 2012; the inventory's 2014 is not ruled out",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:690-0",
+  "kind": "date",
+  "earliest": 2010,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "D-63 rule 3.4: the operator's page says the facility was originally constructed in 2010 and does not say what it was built as; the permit-based 2015 stays the labelled convention, and the test reaches down to 2010 (rule 3.5)",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:1123-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2014,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "the first building was operating by 2010 with no earliest year; the expansion opened in 2014; the row's capacity is probably the expansion",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:446-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2011,
+  "never_is_possible": false,
+  "convention": 2009,
+  "why": "one building operating by 2008, another opened 2011; which the row carries is not settled; the inventory's 2009 is not ruled out",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:445-0",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2012,
+  "never_is_possible": false,
+  "convention": 2012,
+  "why": "opened October 2012",
+  "ends": "evidence"
+ },
+ {
+  "fid": "bi:444-0",
+  "kind": "date",
+  "earliest": 2009,
+  "latest": 2013,
+  "never_is_possible": false,
+  "convention": 2013,
+  "why": "renovation began 2009; the inventory's 2013 is not ruled out",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:667-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2011,
+  "never_is_possible": false,
+  "convention": 2011,
+  "why": "a regulator's permit describes an operating data center in 2011; no earliest year; the inventory's 2022 is ruled out",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:646-0",
+  "kind": "date",
+  "earliest": 2006,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": 2020,
+  "why": "D-63 rule 3.4: the county's record gives a year built of 2006 for an industrial building and does not say what it was built as; the permit-based 2020 stays the labelled convention, and the test reaches down to 2006 (rule 3.5)",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:616-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2018,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "D-65 item 1: a present-day structure class does not show what the building was built as, so the permit-based 2018 stays the labelled convention (D-63 rule 3.4). The city's parcel record gives a year built of 2015, the tested lower end (rule 3.5)",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:615-0",
+  "kind": "date",
+  "earliest": 2023,
+  "latest": 2025,
+  "never_is_possible": false,
+  "convention": 2025,
+  "why": "D-65 item 1: a present-day structure class does not show what the building was built as, so the permit-based 2025 stays the labelled convention (D-63 rule 3.4). The city's parcel record gives a year built of 2023, the tested lower end (rule 3.5)",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:1250-0",
+  "kind": "date",
+  "earliest": null,
+  "latest": 2012,
+  "never_is_possible": false,
+  "convention": 2011,
+  "why": "leased and earning rent at the end of 2012; no earliest year; the inventory's 2011 is not ruled out",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:837-0",
+  "kind": "date",
+  "earliest": 2011,
+  "latest": 2019,
+  "never_is_possible": false,
+  "convention": null,
+  "why": "D-63 rule 3.4: built in 2011 with about half of today's generator capacity present then, so the permit on file is not the building's first, the permit-based 2019 is undermined and no convention is set. This entry dates the first phase; the capacity split beside it carries the rest. Neither phase's operating date is verified",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:833-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2019,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "operated since 2015 by the regulator's record; generators installed through 2019",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:832-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2022,
+  "why": "planned in 2021; the inventory's 2022 is not ruled out",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:852-0",
+  "kind": "date",
+  "earliest": 2024,
+  "latest": null,
+  "never_is_possible": true,
+  "convention": null,
+  "why": "not built and not operating through 2023 by the permit holder's statements; the start is unresolved and may fall outside the period",
+  "ends": "tested"
+ },
+ {
+  "fid": "bi:1062-0",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2017,
+  "never_is_possible": false,
+  "convention": 2015,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1074-0",
+  "kind": "date",
+  "earliest": 2006,
+  "latest": 2011,
+  "never_is_possible": false,
+  "convention": 2006,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1082-0",
+  "kind": "date",
+  "earliest": 2018,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": 2018,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1087-5",
+  "kind": "date",
+  "earliest": 2020,
+  "latest": 2021,
+  "never_is_possible": false,
+  "convention": 2020,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1090-5",
+  "kind": "date",
+  "earliest": 2014,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:950-5",
+  "kind": "date",
+  "earliest": 2014,
+  "latest": 2025,
+  "never_is_possible": false,
+  "convention": 2014,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:962-5",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:969-5",
+  "kind": "date",
+  "earliest": 2011,
+  "latest": 2012,
+  "never_is_possible": false,
+  "convention": 2011,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:970-1",
+  "kind": "date",
+  "earliest": 2020,
+  "latest": 2021,
+  "never_is_possible": false,
+  "convention": 2020,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:988-2",
+  "kind": "date",
+  "earliest": 2019,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": 2019,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:434-0",
+  "kind": "date",
+  "earliest": 2023,
+  "latest": 2024,
+  "never_is_possible": false,
+  "convention": 2023,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:15-0",
+  "kind": "date",
+  "earliest": 2023,
+  "latest": 2025,
+  "never_is_possible": false,
+  "convention": 2023,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:914-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:907-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:918-0",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2024,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1200-0",
+  "kind": "date",
+  "earliest": 2006,
+  "latest": 2009,
+  "never_is_possible": false,
+  "convention": 2006,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1280-0",
+  "kind": "date",
+  "earliest": 2022,
+  "latest": 2023,
+  "never_is_possible": false,
+  "convention": 2022,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:1089-2",
+  "kind": "date",
+  "earliest": 2021,
+  "latest": 2022,
+  "never_is_possible": false,
+  "convention": 2021,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:794-0",
+  "kind": "date",
+  "earliest": 2022,
+  "latest": 2023,
+  "never_is_possible": false,
+  "convention": 2022,
+  "why": "the inventory's start is a year built on a government record (D-61 addendum, point 1): tested at that year, its convention, and at the permit-based year",
+  "ends": "tested",
+  "convention_is": "provisional"
+ },
+ {
+  "fid": "bi:837-0",
+  "kind": "capacity_split",
+  "first_share": 0.495,
+  "rest_earliest": 2011,
+  "why": "D-65 item 1, D-66 section 1: 15.2 MW of generator capacity with the 2011 build and 15.5 MW added in 2016 (the regulator's record, date_evidence.csv). Generator installation sets no operating bound, so both histories are carried: the rest of the row may arrive in any year from the first phase's start to the inventory's 2019. 'The rest in 2016' is the generator-linked history and 'the rest with the first phase' is the earlier-load one. rest_earliest 2011 holds nothing back, since the first phase is not before 2011"
+ },
+ {
+  "fid": "bi:821-0",
+  "kind": "assign",
+  "to": [
+   19325,
+   "OR"
+  ],
+  "why": "session 13 (batch_c_6; D-88): the location is now tied to tax lot 04N25E110000800 by address and owner; both Oregon layers return the cooperative alone out to 1,500 m, against a parcel extent of 484 m; BPA's queue names the cooperative as requestor for 'PDX1&4'. Replaces the reopen of the D-65 file."
+ },
+ {
+  "fid": "bi:1021-3",
+  "kind": "date",
+  "earliest": 2019,
+  "latest": 2023,
+  "never_is_possible": false,
+  "convention": 2023,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2023) and its permit-based year is 2019; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:1086-3",
+  "kind": "date",
+  "earliest": 2012,
+  "latest": 2015,
+  "never_is_possible": false,
+  "convention": 2015,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2015) and its permit-based year is 2012; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:1091-4",
+  "kind": "date",
+  "earliest": 2016,
+  "latest": 2017,
+  "never_is_possible": false,
+  "convention": 2017,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2017) and its permit-based year is 2016; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:1274-0",
+  "kind": "date",
+  "earliest": 2010,
+  "latest": 2013,
+  "never_is_possible": false,
+  "convention": 2013,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2013) and its permit-based year is 2010; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:1281-1",
+  "kind": "date",
+  "earliest": 2011,
+  "latest": 2023,
+  "never_is_possible": false,
+  "convention": 2023,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2023) and its permit-based year is 2011; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:964-0",
+  "kind": "date",
+  "earliest": 2017,
+  "latest": 2020,
+  "never_is_possible": false,
+  "convention": 2020,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2020) and its permit-based year is 2017; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:989-6",
+  "kind": "date",
+  "earliest": 2015,
+  "latest": 2016,
+  "never_is_possible": false,
+  "convention": 2016,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2016) and its permit-based year is 2015; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:978-0",
+  "kind": "date",
+  "earliest": 2020,
+  "latest": 2021,
+  "never_is_possible": false,
+  "convention": 2021,
+  "ends": "tested",
+  "convention_is": "provisional",
+  "why": "D-65 on the 115, D-66 section 4: the inventory's start is a year built on a government record (2021) and its permit-based year is 2020; both are carried, with the year built as the provisional convention"
+ },
+ {
+  "fid": "bi:1123-0",
+  "kind": "candidates",
+  "candidates": [
+   3461,
+   19545,
+   27000,
+   27058
+  ],
+  "why": "D-66 section 1: the Wyoming commission's statewide map, on file, draws the line between Cheyenne Light and High West Energy through the side of the city where the row is; High West Energy is added to the inventory's three candidates. A widening on a lead"
+ },
+ {
+  "fid": "bi:817-0",
+  "kind": "assign",
+  "to": [
+   19325,
+   "OR"
+  ],
+  "why": "session 13 (batch_c_6; D-88): tied to tax lot 04N25E010000102 by address and owner; both Oregon layers return the cooperative alone out to 2,187 m, against a parcel extent of 361 m; BPA's queue names the cooperative as requestor for 'PDX1&4'; the operator's 2013 DEQ report names the cooperative's utility work"
+ },
+ {
+  "fid": "bi:910-0",
+  "kind": "candidates",
+  "candidates": [
+   1175,
+   7752,
+   10009,
+   14626,
+   16604
+  ],
+  "why": "session 13 (batch_c_6; D-88): the operator's account in a TCEQ record of 8 May 2025 names CPS Energy as the utility the site was planned around. CPS Energy (16604) is added; no candidate is removed. A widening; it verifies nothing"
+ },
+ {
+  "fid": "epoch:Microsoft SAT40",
+  "kind": "candidates",
+  "candidates": [
+   1175,
+   7752,
+   10009,
+   14626,
+   16604
+  ],
+  "why": "session 13 (batch_c_6; D-88): leads only (the parcel's 'RAFTER 2' plat and CPS Energy's planning documents naming a Rafter substation). Under D-72 item 5 a lead may add a candidate: CPS Energy (16604) is added; no candidate is removed. A widening on a lead"
+ }
+]

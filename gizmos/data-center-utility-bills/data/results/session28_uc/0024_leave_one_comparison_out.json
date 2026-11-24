@@ -1,0 +1,1307 @@
+{
+ "sequence": 24,
+ "kind": "entry",
+ "stage": "remaining",
+ "entry_id": "leave_one_comparison_out",
+ "estimated": true,
+ "written_at_utc": "2026-11-21T04:13:08+00:00",
+ "provenance": {
+  "frozen_commit": "ea426c4b3c971fcf826bdda1fd7a3f3e6bb9fb23",
+  "approved_specification_commit": "ed3a2ff20ececaf005b0a3256a63c5d1d930095a",
+  "plan": "the plan is frozen at commit ea426c4 (approved specification ed3a2ff), internally frozen and not externally preregistered",
+  "code": {
+   "commit": "4d453432e6b280b1607600f788aa6de75acf34bc",
+   "tree_clean": true,
+   "paths_checked": [
+    "pipeline",
+    "tests",
+    "PREANALYSIS.md"
+   ],
+   "uncommitted_lines": 0,
+   "established": true,
+   "why": null,
+   "tree_clean_means": "git status --porcelain -- pipeline tests PREANALYSIS.md, run in the gizmo folder, printed nothing (untracked files included), so the commit is the code that ran",
+   "code_identity": {
+    "pipeline": "4412d816da499ad6a272b6b20c39049c09066f06",
+    "tests": "fceb371bc335a03b435fd590c1bac7cbe80e97e5",
+    "PREANALYSIS.md": "a249a2ef425418943fb86d66ff056dc4968f9fef"
+   },
+   "code_identity_means": "git rev-parse --verify HEAD:./<path>, run in the gizmo folder, for pipeline, tests and PREANALYSIS.md: the git tree id of pipeline and of tests and the blob id of the plan at the commit. An id depends only on the content under its path, so with tree_clean true the three ids are the code and the plan that ran, whatever else the repository's commit holds. A resumed run is refused unless all three equal the manifest's (Joe, 2026-11-20, D-122: \"Compare code identity\"); the commit is recorded and not compared"
+  },
+  "gate": {
+   "gate_file": "GATE1_SIGNED",
+   "gate_file_exists": true,
+   "authorization_variable": "DCUB_OUTCOME_RUN_AUTHORIZED",
+   "authorization_variable_is_1": true
+  },
+  "outcome_file_hash": "ef22a31ca11fa424a67031f14fd5a00167e16a943552887093f57a93a7321974",
+  "outcome_file_hash_in_words": "frame_fingerprint of the outcome file as the reader returned it, from the door's record",
+  "inputs_are": "research_data_after_the_freeze",
+  "assembled_inputs_record_fingerprint": "7232705b770370af35e554ec45ce6fc5b602dd68494fc5679af43b5471e2124c",
+  "assembled_inputs_record_fingerprint_means": "sha256 of the assembler's record converted by the writer's rule, with clock readings left out (_seconds_by_source, assembled_at_utc, read_at_utc, seconds, time_utc, written_at_utc); None when no assembler record was given",
+  "interpreter": {
+   "executable": "./.venv/bin/python",
+   "version": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+   "python_version": "3.13.5"
+  },
+  "libraries": {
+   "numpy": "2.4.6",
+   "pandas": "2.2.3",
+   "scipy": "1.17.1",
+   "statsmodels": "0.14.6"
+  },
+  "pinned_package": {
+   "package": "diff-diff",
+   "pinned_version": "4.0.0",
+   "imports": true,
+   "version": "4.0.0",
+   "why_not": null
+  },
+  "platform": {
+   "platform": "macOS-26.5.1-arm64-arm-64bit-Mach-O",
+   "machine": "arm64",
+   "system": "Darwin"
+  },
+  "order_of_unblinding_starts": [
+   "reconciliation_row_U",
+   "reconciliation_row_C",
+   "inventory_against_sales"
+  ],
+  "order_enforcement": "run_outcomes.run and run_outcomes.run_all are not changed and do not check the order; the coordinator in pipeline/analysis/execute_outcomes.py is where the order is enforced",
+  "time_utc": "2026-11-21T04:12:19+00:00"
+ },
+ "body": {
+  "id": "leave_one_comparison_out",
+  "plan_section": "Other runs, listed in advance: Leave one comparison out (rule 7); Reported checks, Influence",
+  "sets": [
+   "headline_set at 2%"
+  ],
+  "builder": "design.build_with_rules under the headline rules, then influence.deletions and influence.leave_out per deletion",
+  "estimator": "outcome_analysis.estimate (CR2, Satterthwaite), outcome aligned by outcome_analysis.outcome_vector, one fit per deletion",
+  "labels": [
+   "labelled sensitivity",
+   "the agent's reading: the plan does not settle this (which sets)",
+   "under the procedure validated on the headline set; no validation was made on this design"
+  ],
+  "status": "built",
+  "reason": null,
+  "outcome": "log_residential_price",
+  "reads_an_outcome": true,
+  "needs_before_research_data": null,
+  "stopped_on_research_inputs": null,
+  "context_reported_as_the_papers": null,
+  "results": {
+   "headline_set at 2%": {
+    "estimated": true,
+    "validation": "under the procedure validated on the headline set; no validation was made on this design",
+    "full_design": {
+     "procedure": {
+      "name": "C",
+      "range": "90% CR2 t range with Satterthwaite degrees of freedom (Pustejovsky and Tipton 2018, arXiv v2 Eq. 4, 7, 8, 11)",
+      "early_years_test": "approximate Hotelling test on event years -6, -5 and -4 with CR2 (Eq. 10, 12, 13), failing at p below 0.10",
+      "told_from_zero": "the 90% CR2 t range lies entirely above zero"
+     },
+     "hosts_in_the_design": [
+      "803:AZ",
+      "6958:TX",
+      "14127:NE",
+      "14354:UT",
+      "15473:NM",
+      "17166:NV",
+      "20065:GA"
+     ],
+     "hosts_with_no_matches": [],
+     "numerical_failure": null,
+     "fuel_control": "gas_share_by_calendar_year",
+     "control_columns_left_out": [
+      {
+       "year": 2009,
+       "why": "the first calendar year of the stacked sample (normalization: a utility's share does not change, so the year columns sum to what the utility effects remove; D-59 item 7)"
+      }
+     ],
+     "hosts_fully_absorbed": [],
+     "absorbed_controls_option": null,
+     "controls_left_out_as_exactly_absorbed": [],
+     "columns": [
+      "event_year_-6",
+      "event_year_-5",
+      "event_year_-4",
+      "event_year_-2",
+      "event_year_-1",
+      "event_year_0",
+      "event_year_1",
+      "event_year_2",
+      "event_year_3",
+      "heating_degree_days",
+      "cooling_degree_days",
+      "gas_share_x_2010",
+      "gas_share_x_2011",
+      "gas_share_x_2012",
+      "gas_share_x_2013",
+      "gas_share_x_2014",
+      "gas_share_x_2015",
+      "gas_share_x_2016",
+      "gas_share_x_2017",
+      "gas_share_x_2018",
+      "gas_share_x_2019",
+      "gas_share_x_2020",
+      "gas_share_x_2021",
+      "gas_share_x_2022",
+      "gas_share_x_2023",
+      "gas_share_x_2024"
+     ],
+     "rows": 770,
+     "regressors": 26,
+     "clusters": 19,
+     "host_headline_weights": {
+      "803:AZ": 0.14398041024051586,
+      "6958:TX": 0.14771192124171217,
+      "14127:NE": 0.15350870955845367,
+      "14354:UT": 0.14952807041751578,
+      "15473:NM": 0.13660054086124543,
+      "17166:NV": 0.1207637766581045,
+      "20065:GA": 0.14790657102245208
+     },
+     "hosts_with_zero_weight": [],
+     "count_N": 7,
+     "event_year_coefficients": {
+      "-6": 0.015005674613785321,
+      "-5": 0.015272382464421256,
+      "-4": 0.02228055535633362,
+      "-3": 0.0,
+      "-2": 0.012246061391044984,
+      "-1": -0.010003898549598326,
+      "0": -0.0009093095287858715,
+      "1": -0.0004228463870641942,
+      "2": -0.01180127541668232,
+      "3": -0.02043590642409223
+     },
+     "headline": {
+      "log_points": -0.016118590920387275,
+      "percent": -1.5989381589364007,
+      "standard_error_log_points": 0.030347750541277523,
+      "degrees_of_freedom": 6.83900806235111,
+      "range_90_log_points": [
+       -0.0738190727874288,
+       0.04158189094665425
+      ],
+      "range_90_percent": [
+       -7.116026897696128,
+       4.245852627170334
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "event_years": [
+       2,
+       3
+      ]
+     },
+     "early_years_test": {
+      "Q": 2.7852545976581027,
+      "F": 0.6453796762415994,
+      "numerator_degrees_of_freedom": 3,
+      "denominator_degrees_of_freedom": 4.560366337781463,
+      "p_value": 0.6212552484504491,
+      "fails_at_p_below_0.10": false,
+      "event_years": [
+       -6,
+       -5,
+       -4
+      ]
+     },
+     "validation": "under the procedure validated on the headline set; no validation was made on this design",
+     "validation_check": {
+      "claimed": false,
+      "passed": null,
+      "why": "not claimed: the caller passed validated_design=False"
+     },
+     "outcome_alignment": "checked: the vector was built by outcome_vector for exactly the rows this fit stacks",
+     "numerical_failure_in_words": null,
+     "design": {
+      "hosts": [
+       {
+        "utility": "803:AZ",
+        "cohort": 2020,
+        "matches": [
+         "9191:ID",
+         "16868:WA",
+         "17470:WA",
+         "5701:TX",
+         "3660:WA",
+         "18429:WA",
+         "14354:WY",
+         "14354:WA",
+         "5701:NM",
+         "56146:CO"
+        ]
+       },
+       {
+        "utility": "6958:TX",
+        "cohort": 2017,
+        "matches": [
+         "2442:TX",
+         "11501:TX",
+         "2409:TX",
+         "17561:TX",
+         "3940:TX",
+         "3282:TX",
+         "13830:TX",
+         "13418:TX",
+         "12268:TX",
+         "12452:TX"
+        ]
+       },
+       {
+        "utility": "14127:NE",
+        "cohort": 2019,
+        "matches": [
+         "22500:KS",
+         "10005:KS",
+         "10000:MO",
+         "17718:TX",
+         "17698:LA",
+         "17698:TX",
+         "5860:MO",
+         "17833:MO",
+         "17718:NM",
+         "11292:TX"
+        ]
+       },
+       {
+        "utility": "14354:UT",
+        "cohort": 2015,
+        "matches": [
+         "9191:ID",
+         "16868:WA",
+         "17470:WA",
+         "5701:TX",
+         "3660:WA",
+         "18429:WA",
+         "56146:CO",
+         "5701:NM",
+         "6022:OR",
+         "6604:CO"
+        ]
+       },
+       {
+        "utility": "15473:NM",
+        "cohort": 2019,
+        "matches": [
+         "9191:ID",
+         "16868:WA",
+         "17470:WA",
+         "5701:TX",
+         "3660:WA",
+         "18429:WA",
+         "14354:WY",
+         "14354:WA",
+         "5701:NM",
+         "56146:CO"
+        ]
+       },
+       {
+        "utility": "17166:NV",
+        "cohort": 2017,
+        "matches": [
+         "5701:TX",
+         "17470:WA",
+         "16868:WA",
+         "9191:ID",
+         "3660:WA",
+         "18429:WA",
+         "5701:NM",
+         "56146:CO",
+         "6022:OR",
+         "6604:CO"
+        ]
+       },
+       {
+        "utility": "20065:GA",
+        "cohort": 2021,
+        "matches": [
+         "21632:NC",
+         "10623:FL",
+         "3046:SC",
+         "18445:FL",
+         "19898:TN",
+         "17832:GA",
+         "3408:TN",
+         "17543:SC",
+         "3757:FL",
+         "6909:FL"
+        ]
+       }
+      ],
+      "hosts_dropped": [],
+      "unresolved_ownership": [
+       {
+        "utility": "803:AZ",
+        "cohort": 2020,
+        "years": [
+         2014,
+         2015,
+         2016,
+         2017,
+         2018,
+         2019,
+         2020,
+         2021,
+         2022,
+         2023
+        ],
+        "reason_by_year": {
+         "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2023": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+        },
+        "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023",
+        "in_this_run": "kept"
+       },
+       {
+        "utility": "15473:NM",
+        "cohort": 2019,
+        "years": [
+         2013,
+         2014,
+         2015,
+         2016,
+         2017,
+         2018,
+         2019,
+         2020,
+         2021,
+         2022
+        ],
+        "reason_by_year": {
+         "2013": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2014": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2015": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2016": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2017": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2018": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2019": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2020": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2021": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)",
+         "2022": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis)"
+        },
+        "reason": "a row covering this year is assumed at both ends (from_year_basis and to_year_basis): 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022",
+        "in_this_run": "kept"
+       }
+      ],
+      "load_unknown_excluded": []
+     },
+     "estimated": true
+    },
+    "deletions": [
+     {
+      "removed": "2409:TX",
+      "units": [
+       "2409:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.015935027611048876,
+      "range_90_log_points": [
+       -0.07386573211770352,
+       0.041995676895605766
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "2442:TX",
+      "units": [
+       "2442:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.014580635871359628,
+      "range_90_log_points": [
+       -0.0727447093827691,
+       0.04358343764004985
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "3046:SC",
+      "units": [
+       "3046:SC"
+      ],
+      "net_weight_removed": 0.050714739107517226,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.014218368707925325,
+      "range_90_log_points": [
+       -0.07295352401738486,
+       0.044516786601534214
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "3282:TX",
+      "units": [
+       "3282:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016509233965083882,
+      "range_90_log_points": [
+       -0.07424480477970692,
+       0.041226336849539164
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "3408:TN",
+      "units": [
+       "3408:TN"
+      ],
+      "net_weight_removed": 0.05200457560500289,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.015908195918741132,
+      "range_90_log_points": [
+       -0.07274704245954033,
+       0.040930650622058064
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "3660:WA",
+      "units": [
+       "3660:WA"
+      ],
+      "net_weight_removed": 0.09191351556981728,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.02131368257026859,
+      "range_90_log_points": [
+       -0.08361698571534297,
+       0.04098962057480579
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "3757:FL",
+      "units": [
+       "3757:FL"
+      ],
+      "net_weight_removed": 0.061822043228189176,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016723826467232902,
+      "range_90_log_points": [
+       -0.0739776804424223,
+       0.04053002750795649
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "3940:TX",
+      "units": [
+       "3940:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.015316789126281984,
+      "range_90_log_points": [
+       -0.0732406123145048,
+       0.04260703406194082
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "5701:NM",
+      "units": [
+       "5701:NM"
+      ],
+      "net_weight_removed": 0.19688198261621942,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.028461551465379233,
+      "range_90_log_points": [
+       -0.07929320198432806,
+       0.022370099053569594
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "5701:TX",
+      "units": [
+       "5701:TX"
+      ],
+      "net_weight_removed": 0.23071730887656122,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.022728644098914487,
+      "range_90_log_points": [
+       -0.08620595164152794,
+       0.040748663443698964
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "5860:MO",
+      "units": [
+       "5860:MO"
+      ],
+      "net_weight_removed": 0.06644205471053675,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.015976462430470142,
+      "range_90_log_points": [
+       -0.07346393819551442,
+       0.04151101333457414
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "6022:OR",
+      "units": [
+       "6022:OR"
+      ],
+      "net_weight_removed": 0.11201637499540373,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016438787004824183,
+      "range_90_log_points": [
+       -0.07620353128825993,
+       0.043325957278611577
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "6604:CO",
+      "units": [
+       "6604:CO"
+      ],
+      "net_weight_removed": 0.07998095484708496,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.014629982061046102,
+      "range_90_log_points": [
+       -0.07227500787922031,
+       0.04301504375712811
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "6909:FL",
+      "units": [
+       "6909:FL"
+      ],
+      "net_weight_removed": 0.061822043228189176,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.013942162995306845,
+      "range_90_log_points": [
+       -0.07187206685395,
+       0.04398774086333631
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "9191:ID",
+      "units": [
+       "9191:ID"
+      ],
+      "net_weight_removed": 0.13224513348964903,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016364175103276923,
+      "range_90_log_points": [
+       -0.07664109059234187,
+       0.04391274038578801
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "10000:MO",
+      "units": [
+       "10000:MO"
+      ],
+      "net_weight_removed": 0.06644205471053675,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.019098397796067534,
+      "range_90_log_points": [
+       -0.07998312854497358,
+       0.041786332952838505
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "10005:KS",
+      "units": [
+       "10005:KS"
+      ],
+      "net_weight_removed": 0.05859911083429035,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016605854563175725,
+      "range_90_log_points": [
+       -0.07504439763204725,
+       0.0418326885056958
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "10623:FL",
+      "units": [
+       "10623:FL"
+      ],
+      "net_weight_removed": 0.061822043228189176,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01698295608515915,
+      "range_90_log_points": [
+       -0.07460146578808047,
+       0.04063555361776217
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "11292:TX",
+      "units": [
+       "11292:TX"
+      ],
+      "net_weight_removed": 0.05027792269649589,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.014951227799989822,
+      "range_90_log_points": [
+       -0.0720904722182434,
+       0.042188016618263754
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "11501:TX",
+      "units": [
+       "11501:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01597523075548269,
+      "range_90_log_points": [
+       -0.07383879522737417,
+       0.04188833371640879
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "12268:TX",
+      "units": [
+       "12268:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016117466143190276,
+      "range_90_log_points": [
+       -0.07391267423845693,
+       0.04167774195207638
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "12452:TX",
+      "units": [
+       "12452:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.017124728545245667,
+      "range_90_log_points": [
+       -0.07473406751008596,
+       0.040484610419594634
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "13418:TX",
+      "units": [
+       "13418:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.013237884820789872,
+      "range_90_log_points": [
+       -0.07182076118740224,
+       0.04534499154582249
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "13830:TX",
+      "units": [
+       "13830:TX"
+      ],
+      "net_weight_removed": 0.03327351437954362,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.020547553539324404,
+      "range_90_log_points": [
+       -0.0779743214430588,
+       0.03687921436440998
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "14354:WA",
+      "units": [
+       "14354:WA"
+      ],
+      "net_weight_removed": 0.0626884384326517,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.015844400849460198,
+      "range_90_log_points": [
+       -0.07294411512371653,
+       0.04125531342479613
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "14354:WY",
+      "units": [
+       "14354:WY"
+      ],
+      "net_weight_removed": 0.1158232769444355,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01634151712805538,
+      "range_90_log_points": [
+       -0.07053185538378309,
+       0.03784882112767234
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "16868:WA",
+      "units": [
+       "16868:WA"
+      ],
+      "net_weight_removed": 0.09191351556981728,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.006882061040442302,
+      "range_90_log_points": [
+       -0.06373066238969848,
+       0.04996654030881387
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17470:WA",
+      "units": [
+       "17470:WA"
+      ],
+      "net_weight_removed": 0.09191351556981728,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01596803392805235,
+      "range_90_log_points": [
+       -0.07455814115704798,
+       0.042622073300943274
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17543:SC",
+      "units": [
+       "17543:SC"
+      ],
+      "net_weight_removed": 0.050714739107517226,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01877667560522961,
+      "range_90_log_points": [
+       -0.07650445946171414,
+       0.03895110825125491
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17561:TX",
+      "units": [
+       "17561:TX"
+      ],
+      "net_weight_removed": 0.026488303879654715,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016229823670352615,
+      "range_90_log_points": [
+       -0.0740012712580746,
+       0.04154162391736936
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17698:LA",
+      "units": [
+       "17698:LA"
+      ],
+      "net_weight_removed": 0.07333725022554602,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.013732137544574955,
+      "range_90_log_points": [
+       -0.06899942958755739,
+       0.04153515449840749
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17698:TX",
+      "units": [
+       "17698:TX"
+      ],
+      "net_weight_removed": 0.05975080041311849,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.011313604995457603,
+      "range_90_log_points": [
+       -0.06613338741172964,
+       0.04350617742081444
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17718:NM",
+      "units": [
+       "17718:NM"
+      ],
+      "net_weight_removed": 0.07323904467020624,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.011782577652302631,
+      "range_90_log_points": [
+       -0.07407892869046512,
+       0.050513773385859856
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17718:TX",
+      "units": [
+       "17718:TX"
+      ],
+      "net_weight_removed": 0.05975080041311849,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016700143153263368,
+      "range_90_log_points": [
+       -0.07436368382786372,
+       0.040963397521336986
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17832:GA",
+      "units": [
+       "17832:GA"
+      ],
+      "net_weight_removed": 0.04866469593750694,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.013873979296979966,
+      "range_90_log_points": [
+       -0.07212944060881803,
+       0.0443814820148581
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "17833:MO",
+      "units": [
+       "17833:MO"
+      ],
+      "net_weight_removed": 0.06644205471053675,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016051924206972795,
+      "range_90_log_points": [
+       -0.07424801962751587,
+       0.04214417121357028
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "18429:WA",
+      "units": [
+       "18429:WA"
+      ],
+      "net_weight_removed": 0.09191351556981728,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01274560112965293,
+      "range_90_log_points": [
+       -0.07135166708389132,
+       0.04586046482458545
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "18445:FL",
+      "units": [
+       "18445:FL"
+      ],
+      "net_weight_removed": 0.061822043228189176,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016048930049824786,
+      "range_90_log_points": [
+       -0.07300376619998042,
+       0.04090590610033084
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "19898:TN",
+      "units": [
+       "19898:TN"
+      ],
+      "net_weight_removed": 0.05200457560500289,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.01607676773952059,
+      "range_90_log_points": [
+       -0.07295491220206579,
+       0.04080137672302462
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "21632:NC",
+      "units": [
+       "21632:NC"
+      ],
+      "net_weight_removed": 0.05583078223050009,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.017337945599599548,
+      "range_90_log_points": [
+       -0.07505605902432624,
+       0.040380167825127156
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "22500:KS",
+      "units": [
+       "22500:KS"
+      ],
+      "net_weight_removed": 0.05859911083429035,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.016981375727486356,
+      "range_90_log_points": [
+       -0.07582046063389984,
+       0.04185770917892713
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     },
+     {
+      "removed": "56146:CO",
+      "units": [
+       "56146:CO"
+      ],
+      "net_weight_removed": 0.1395881662690339,
+      "hosts_with_fewer_than_five_matches_inadequate_support": [],
+      "hosts_not_estimable_no_matches": [],
+      "hosts_not_estimable_zero_weight": [],
+      "estimable_by_the_rank_test_before_any_fit": true,
+      "estimate_log_points": -0.015172034449017864,
+      "range_90_log_points": [
+       -0.07401039998508914,
+       0.043666331087053416
+      ],
+      "status": "estimate with its 90% range under the selected procedure",
+      "count_N": 7,
+      "numerical_failure_in_words": null,
+      "validation": "under the procedure validated on the headline set; no validation was made on this design",
+      "range_includes_zero": true
+     }
+    ],
+    "company_rows": null,
+    "range_of_estimates_across_deletions": [
+     -0.028461551465379233,
+     -0.006882061040442302
+    ],
+    "deletion_that_moves_it_most": {
+     "removed": "5701:NM",
+     "estimate_log_points": -0.028461551465379233,
+     "moves_by_log_points": -0.012342960544991958
+    },
+    "deletions_with_inadequate_support": 0,
+    "deletions_with_a_host_not_estimable": 0,
+    "deletions_not_computed": [],
+    "zero_note": "a deletion that makes the range include zero is reported as that, not as a reversal (rule 7)"
+   }
+  },
+  "estimated": true,
+  "failures_in_words": {}
+ },
+ "not_serialized": [],
+ "manifest_file": "manifest.json",
+ "report_file": "report.txt"
+}

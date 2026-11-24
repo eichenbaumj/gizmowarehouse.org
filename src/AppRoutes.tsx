@@ -9,6 +9,7 @@ import DataPage from "@/pages/DataPage";
 import CategoryPage from "@/pages/CategoryPage";
 import MedicaidMethodology from "@/pages/MedicaidMethodology";
 import CompGapMethodology from "@/pages/CompGapMethodology";
+import DataCenterUtilityBillsTechnical from "@/pages/DataCenterUtilityBillsTechnical";
 import NotFound from "@/pages/NotFound";
 
 export default function AppRoutes() {
@@ -19,6 +20,7 @@ export default function AppRoutes() {
       {/* Public methodology pages (more specific than /gizmo/:slug). */}
       <Route path="/gizmo/medicaid-work-requirements/methodology" element={<MedicaidMethodology />} />
       <Route path="/gizmo/public-private-compensation-comparison/methodology" element={<CompGapMethodology />} />
+      <Route path="/gizmo/data-center-utility-bills/methodology" element={<DataCenterUtilityBillsTechnical />} />
       {/* The grocery update briefly went live at this slug; keep the old URL working. */}
       <Route path="/gizmo/nyc-public-grocery-math-30" element={<Navigate to="/gizmo/nyc-public-grocery-new-math" replace />} />
       <Route path="/gizmo/:slug" element={<GizmoPage />} />
